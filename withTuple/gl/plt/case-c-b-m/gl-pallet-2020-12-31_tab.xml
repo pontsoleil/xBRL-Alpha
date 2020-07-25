@@ -1,0 +1,16 @@
+<xbrll:linkbase xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd http://xbrl.org/2008/generic http://www.xbrl.org/2008/generic-link.xsd http://xbrl.org/2014/table http://www.xbrl.org/2014/table.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xbrll="http://www.xbrl.org/2003/linkbase" xmlns:gl-cor="http://www.xbrl.org/int/gl/cor/2020-12-31" xmlns:gen="http://xbrl.org/2008/generic" xmlns:table="http://xbrl.org/2014/table">
+	<xbrll:arcroleRef arcroleURI="http://xbrl.org/arcrole/2014/breakdown-tree" xlink:type="simple" xlink:href="http://www.xbrl.org/2014/table.xsd#breakdown-tree"/>
+	<xbrll:arcroleRef arcroleURI="http://xbrl.org/arcrole/2014/table-breakdown" xlink:type="simple" xlink:href="http://www.xbrl.org/2014/table.xsd#table-breakdown"/>
+	<xbrll:roleRef roleURI="http://www.xbrl.org/2008/role/link" xlink:type="simple" xlink:href="http://www.xbrl.org/2008/generic-link.xsd#standard-link-role"/>
+	<gen:link xlink:type="extended" xlink:role="http://www.xbrl.org/2008/role/link">
+		<table:breakdownTreeArc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/breakdown-tree" xlink:from="breakdown" xlink:to="conceptRelationshipNode"/>
+		<table:conceptRelationshipNode id="conceptRelationshipNode" xlink:type="resource" xlink:label="conceptRelationshipNode">
+			<table:relationshipSource>gl-cor:accountingEntries</table:relationshipSource>
+			<table:linkrole>http://www.xbrl.org/2003/role/link</table:linkrole>
+			<table:arcrole>http://www.xbrl.org/2003/arcrole/parent-child</table:arcrole>
+		</table:conceptRelationshipNode>
+		<table:tableBreakdownArc order="1.0" axis="y" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/table-breakdown" xlink:from="table" xlink:to="breakdown"/>
+		<table:breakdown id="breakdown" xlink:type="resource" xlink:label="breakdown"/>
+		<table:table id="table" xlink:type="resource" xlink:label="table"/>
+	</gen:link>
+</xbrll:linkbase>

@@ -1,0 +1,11 @@
+{
+	"balance_assertion": {
+		"satisfied": 0,
+		"satisfied-messages": [
+		],
+		"severity": "error",
+		"unsatisfied": 0,
+		"unsatisfied-messages": [
+		]
+	}
+}

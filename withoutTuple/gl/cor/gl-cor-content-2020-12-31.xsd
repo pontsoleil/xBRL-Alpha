@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2020 rel. 2 sp1 (x64) (http://www.altova.com) by SAMBUICHI Nobuyuki (Sambuichi Professional Engineers Office) -->
+<!-- (c) XBRL International.  See http://www.xbrl.org/legal -->
+<xs:schema targetNamespace="http://www.xbrl.org/int/gl/cor/2020-12-31" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xbrll="http://www.xbrl.org/2003/linkbase" xmlns:ref="http://www.xbrl.org/2004/ref" xmlns:gl-cor="http://www.xbrl.org/int/gl/cor/2020-12-31" xmlns:gl-gen="http://www.xbrl.org/int/gl/gen/2020-12-31" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:formula="http://xbrl.org/2008/formula" xmlns:gen="http://xbrl.org/2008/generic" xmlns:label="http://xbrl.org/2008/label" xmlns:variable="http://xbrl.org/2008/variable" xmlns:table="http://xbrl.org/2014/table">
+	<xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+	<xs:include schemaLocation="gl-cor-2020-12-31.xsd"/>
+	<xs:annotation>
+		<xs:appinfo>
+			<!--	<xbrll:linkbaseRef xlink:href="gl-cor-2020-12-31-presentation.xml" xlink:title="Presentation Links, all" xlink:type="simple" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/> -->
+			<xbrll:linkbaseRef xlink:href="gl-cor-2020-12-31-definition.xml" xlink:title="Definition Links, all" xlink:type="simple" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+		</xs:appinfo>
+	</xs:annotation>
+	<!-- Tuple Type -->
+	<xs:complexType name="accountingEntries.TupleType">
+		<xs:complexContent>
+			<xs:restriction base="xs:anyType">
+				<xs:sequence>
+					<xs:element ref="gl-cor:specified.documentInfo" minOccurs="1" maxOccurs="1"/>
+					<xs:element ref="gl-cor:specified.entityInformation" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:specified.entryHeader" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+				<xs:attribute name="id" type="xs:ID"/>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="documentInfo.TupleType">
+		<xs:complexContent>
+			<xs:restriction base="xs:anyType">
+				<xs:sequence>
+					<xs:element ref="gl-cor:entriesType" maxOccurs="1"/>
+					<xs:element ref="gl-cor:uniqueID" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:revisesUniqueID" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:revisesUniqueIDAction" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:language" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:creationDate" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:entriesComment" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:periodCoveredStart" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:periodCoveredEnd" minOccurs="0" maxOccurs="1"/>
+				</xs:sequence>
+				<xs:attribute name="id" type="xs:ID"/>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="entityInformation.TupleType">
+		<xs:complexContent>
+			<xs:restriction base="xs:anyType">
+				<xs:sequence/>
+				<xs:attribute name="id" type="xs:ID"/>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="entryHeader.TupleType">
+		<xs:complexContent>
+			<xs:restriction base="xs:anyType">
+				<xs:sequence>
+					<xs:element ref="gl-cor:postedDate" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:enteredBy" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:enteredDate" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:sourceJournalID" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:entryType" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:entryNumber" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:entryComment" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:qualifierEntry" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:qualifierEntryDescription" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:bookTaxDifference" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:entryNumberCounter" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:specified.entryDetail" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+				<xs:attribute name="id" type="xs:ID"/>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="entryDetail.TupleType">
+		<xs:complexContent>
+			<xs:restriction base="xs:anyType">
+				<xs:sequence>
+					<xs:element ref="gl-cor:lineNumber" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:lineNumberCounter" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:specified.account" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="gl-cor:amount" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:signOfAmount" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:debitCreditCode" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:postingDate" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:specified.identifierReference" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="gl-cor:documentType" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:documentTypeDescription" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:invoiceType" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:documentNumber" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:documentApplyToNumber" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:documentReference" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:documentDate" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:postingStatus" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:postingStatusDescription" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:specified.xbrlInfo" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="gl-cor:detailComment" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:dateAcknowledged" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:confirmedDate" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:shipFrom" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:shipReceivedDate" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:maturityDate" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:terms" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:specified.taxes" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+				<xs:attribute name="id" type="xs:ID"/>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="account.TupleType">
+		<xs:complexContent>
+			<xs:restriction base="xs:anyType">
+				<xs:sequence>
+					<xs:element ref="gl-cor:accountMainID" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:accountMainDescription" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:mainAccountType" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:mainAccountTypeDescription" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:parentAccountMainID" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:accountPurposeCode" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:accountPurposeDescription" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:accountType" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:accountTypeDescription" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:specified.accountSub" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="gl-cor:accountActive" minOccurs="0" maxOccurs="1"/>
+				</xs:sequence>
+				<xs:attribute name="id" type="xs:ID"/>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="accountSub.TupleType">
+		<xs:complexContent>
+			<xs:restriction base="xs:anyType">
+				<xs:sequence>
+					<xs:element ref="gl-cor:accountSubDescription" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:accountSubID" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:accountSubType" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:specified.segmentParent" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+				<xs:attribute name="id" type="xs:ID"/>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="segmentParent.TupleType">
+		<xs:complexContent>
+			<xs:restriction base="xs:anyType">
+				<xs:sequence>
+					<xs:element ref="gl-cor:parentSubaccountCode" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:parentSubaccountType" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:reportingTreeIdentifier" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:parentSubaccountProportion" minOccurs="0" maxOccurs="1"/>
+				</xs:sequence>
+				<xs:attribute name="id" type="xs:ID"/>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="identifierReference.TupleType">
+		<xs:complexContent>
+			<xs:restriction base="xs:anyType">
+				<xs:sequence>
+					<xs:element ref="gl-cor:identifierCode" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:specified.identifierExternalReference" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="gl-cor:identifierOrganizationType" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:identifierOrganizationTypeDescription" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:identifierDescription" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:identifierType" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:identifierCategory" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:specified.eMail" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="gl-cor:specified.phone" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="gl-cor:specified.fax" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="gl-cor:specified.contactInformation" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="gl-cor:identifierActive" minOccurs="0" maxOccurs="1"/>
+				</xs:sequence>
+				<xs:attribute name="id" type="xs:ID"/>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="identifierExternalReference.TupleType">
+		<xs:complexContent>
+			<xs:restriction base="xs:anyType">
+				<xs:sequence>
+					<xs:element ref="gl-cor:authorityCode" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:authority" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:authorityVerificationDate" minOccurs="0" maxOccurs="1"/>
+				</xs:sequence>
+				<xs:attribute name="id" type="xs:ID"/>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="eMail.TupleType">
+		<xs:complexContent>
+			<xs:restriction base="xs:anyType">
+				<xs:sequence>
+					<xs:element ref="gl-cor:emailAddressUsage" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:emailAddress" minOccurs="0" maxOccurs="1"/>
+				</xs:sequence>
+				<xs:attribute name="id" type="xs:ID"/>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="phone.TupleType">
+		<xs:complexContent>
+			<xs:restriction base="xs:anyType">
+				<xs:sequence>
+					<xs:element ref="gl-cor:phoneNumberDescription" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:phoneNumber" minOccurs="0" maxOccurs="1"/>
+				</xs:sequence>
+				<xs:attribute name="id" type="xs:ID"/>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="fax.TupleType">
+		<xs:complexContent>
+			<xs:restriction base="xs:anyType">
+				<xs:sequence>
+					<xs:element ref="gl-cor:faxNumberUsage" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:faxNumber" minOccurs="0" maxOccurs="1"/>
+				</xs:sequence>
+				<xs:attribute name="id" type="xs:ID"/>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="contactInformation.TupleType">
+		<xs:complexContent>
+			<xs:restriction base="xs:anyType">
+				<xs:sequence>
+					<xs:element ref="gl-cor:prefix" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:lastName" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:firstName" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:suffix" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:attentionLine" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:positionRole" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:specified.phone" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="gl-cor:specified.fax" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="gl-cor:specified.eMail" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="gl-cor:contactType" minOccurs="0" maxOccurs="1"/>
+				</xs:sequence>
+				<xs:attribute name="id" type="xs:ID"/>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="xbrlInfo.TupleType">
+		<xs:complexContent>
+			<xs:restriction base="xs:anyType">
+				<xs:sequence>
+					<xs:element ref="gl-cor:xbrlInclude" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:summaryReportingElement" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:detailMatchingElement" minOccurs="0" maxOccurs="1"/>
+				</xs:sequence>
+				<xs:attribute name="id" type="xs:ID"/>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="taxes.TupleType">
+		<xs:complexContent>
+			<xs:restriction base="xs:anyType">
+				<xs:sequence>
+					<xs:element ref="gl-cor:taxAuthority" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:taxTableCode" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:taxDescription" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:taxAmount" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:taxBasis" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:taxExchangeRate" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:taxPercentageRate" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:taxCode" minOccurs="0" maxOccurs="1"/>
+					<xs:element ref="gl-cor:taxCommentExemption" minOccurs="0" maxOccurs="1"/>
+				</xs:sequence>
+				<xs:attribute name="id" type="xs:ID"/>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<!--
+	tuple (ABIE) 
+-->
+	<xs:element name="account.Detail" id="gl-cor_account.Detail" type="gl-cor:account.TupleType" substitutionGroup="xbrli:tuple" nillable="true"/>
+	<xs:element name="accountingEntries.Detail" id="gl-cor_accountingEntries.Detail" type="gl-cor:accountingEntries.TupleType" substitutionGroup="xbrli:tuple" nillable="false"/>
+	<xs:element name="accountSub.Detail" id="gl-cor_accountSub.Detail" type="gl-cor:accountSub.TupleType" substitutionGroup="xbrli:tuple" nillable="true"/>
+	<xs:element name="entityInformation.Detail" id="gl-cor_entityInformation.Detail" type="gl-cor:entityInformation.TupleType" substitutionGroup="xbrli:tuple" nillable="true"/>
+	<xs:element name="entryDetail.Detail" id="gl-cor_entryDetail.Detail" type="gl-cor:entryDetail.TupleType" substitutionGroup="xbrli:tuple" nillable="true"/>
+	<xs:element name="entryHeader.Detail" id="gl-cor_entryHeader.Detail" type="gl-cor:entryHeader.TupleType" substitutionGroup="xbrli:tuple" nillable="true"/>
+	<xs:element name="eMail.Detail" id="gl-cor_eMail.Detail" type="gl-cor:eMail.TupleType" substitutionGroup="xbrli:tuple" nillable="true"/>
+	<xs:element name="phone.Detail" id="gl-cor_phone.Detail" type="gl-cor:phone.TupleType" substitutionGroup="xbrli:tuple" nillable="true"/>
+	<xs:element name="fax.Detail" id="gl-cor_fax.Detail" type="gl-cor:fax.TupleType" substitutionGroup="xbrli:tuple" nillable="true"/>
+	<xs:element name="identifierReference.Detail" id="gl-cor_identifierReference.Detail" type="gl-cor:identifierReference.TupleType" substitutionGroup="xbrli:tuple" nillable="true"/>
+	<xs:element name="identifierExternalReference.Detail" id="gl-cor_identifierExternalReference.Detail" type="gl-cor:identifierExternalReference.TupleType" substitutionGroup="xbrli:tuple" nillable="true"/>
+	<xs:element name="segmentParent.Detail" id="gl-cor_segmentParent.Detail" type="gl-cor:segmentParent.TupleType" substitutionGroup="xbrli:tuple" nillable="true"/>
+	<xs:element name="taxes.Detail" id="gl-cor_taxes.Detail" type="gl-cor:taxes.TupleType" substitutionGroup="xbrli:tuple" nillable="true"/>
+	<xs:element name="xbrlInfo.Detail" id="gl-cor_xbrlInfo.Detail" type="gl-cor:xbrlInfo.TupleType" substitutionGroup="xbrli:tuple" nillable="true"/>
+	<xs:element name="documentInfo.Detail" id="gl-cor_documentInfo.Detail" type="gl-cor:documentInfo.TupleType" substitutionGroup="xbrli:tuple" nillable="false"/>
+	<xs:element name="contactInformationStructure.Detail" id="gl-cor_contactInformationStructure.Detail" type="gl-cor:contactInformation.TupleType" substitutionGroup="xbrli:tuple" nillable="true"/>
+</xs:schema>

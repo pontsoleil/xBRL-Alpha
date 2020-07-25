@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2020 rel. 2 sp1 (x64) (http://www.altova.com) by SAMBUICHI Nobuyuki (Sambuichi Professional Engineers Office) -->
+<!-- (c) XBRL International.  See http://www.xbrl.org/legal -->
+<xs:schema targetNamespace="http://www.xbrl.org/int/gl/taf/2020-12-31" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xbrll="http://www.xbrl.org/2003/linkbase" xmlns:ref="http://www.xbrl.org/2004/ref" xmlns:gl-cor="http://www.xbrl.org/int/gl/cor/2020-12-31" xmlns:gl-gen="http://www.xbrl.org/int/gl/gen/2020-12-31" xmlns:gl-taf="http://www.xbrl.org/int/gl/taf/2020-12-31" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:formula="http://xbrl.org/2008/formula" xmlns:gen="http://xbrl.org/2008/generic" xmlns:label="http://xbrl.org/2008/label" xmlns:variable="http://xbrl.org/2008/variable" xmlns:table="http://xbrl.org/2014/table">
+	<xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+	<xs:include schemaLocation="gl-taf-2020-12-31.xsd"/>
+	<xs:annotation>
+		<xs:appinfo>
+			<!--<xbrll:linkbaseRef xlink:href="gl-taf-2020-12-31-presentation.xml" xlink:title="Presentation Links, all" xlink:type="simple" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/> -->
+			<xbrll:linkbaseRef xlink:type="simple" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="gl-taf-2020-12-31-definition.xml" xlink:title="Definition Links, all"/>
+		</xs:appinfo>
+	</xs:annotation>
+	<!-- tuple -->
+	<xs:complexType name="originatingDocument.TupleType">
+		<xs:complexContent>
+			<xs:restriction base="xs:anyType">
+				<xs:sequence minOccurs="1">
+					<xs:element ref="gl-taf:originatingDocumentType" minOccurs="0"/>
+					<xs:element ref="gl-taf:originatingDocumentNumber" minOccurs="0"/>
+					<xs:element ref="gl-taf:originatingDocumentDate" minOccurs="0"/>
+					<xs:element ref="gl-taf:originatingDocumentIdentifierType" minOccurs="0"/>
+					<xs:element ref="gl-taf:originatingDocumentIdentifierCode" minOccurs="0"/>
+					<xs:element ref="gl-taf:originatingDocumentIdentifierTaxCode" minOccurs="0"/>
+				</xs:sequence>
+				<xs:attribute name="id" type="xs:ID"/>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- 
+	ABIE
+-->
+	<xs:element name="originatingDocument.Detail" id="gl-taf_originatingDocument.Detail" substitutionGroup="xbrli:tuple" nillable="true" type="gl-taf:originatingDocument.TupleType"/>
+</xs:schema>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2020 rel. 2 sp1 (x64) (http://www.altova.com) by SAMBUICHI Nobuyuki (Sambuichi Professional Engineers Office) -->
+<!-- (c) XBRL International.  See http://www.xbrl.org/legal -->
+<xs:schema targetNamespace="http://www.xbrl.org/int/gl/bus/2020-12-31" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xbrll="http://www.xbrl.org/2003/linkbase" xmlns:ref="http://www.xbrl.org/2004/ref" xmlns:gl-bus="http://www.xbrl.org/int/gl/bus/2020-12-31" xmlns:gl-cor="http://www.xbrl.org/int/gl/cor/2020-12-31" xmlns:gl-gen="http://www.xbrl.org/int/gl/gen/2020-12-31" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:formula="http://xbrl.org/2008/formula" xmlns:gen="http://xbrl.org/2008/generic" xmlns:label="http://xbrl.org/2008/label" xmlns:variable="http://xbrl.org/2008/variable" xmlns:table="http://xbrl.org/2014/table">
+	<xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+	<xs:import namespace="http://www.xbrl.org/int/gl/cor/2020-12-31" schemaLocation="../cor/gl-cor-2020-12-31.xsd"/>
+	<xs:include schemaLocation="gl-bus-2020-12-31.xsd"/>
+	<xs:annotation>
+		<xs:appinfo>
+<!--				<xbrll:linkbaseRef xlink:href="gl-bus-2020-12-31-presentation.xml" xlink:title="Presentation Links, all" xlink:type="simple" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/> -->
+					<xbrll:linkbaseRef xlink:href="gl-bus-2020-12-31-definition.xml" xlink:title="Definition Links, all" xlink:type="simple" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+		</xs:appinfo>
+	</xs:annotation>
+	<!--
+	tuple type
+-->
+	<xs:complexType name="organizationIdentifiers.TupleType">
+		<xs:complexContent>
+			<xs:restriction base="xs:anyType">
+				<xs:sequence>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:organizationIdentifier"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:organizationDescription"/>
+				</xs:sequence>
+				<xs:attribute name="id" type="xs:ID"/>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="entityWebSite.TupleType">
+		<xs:complexContent>
+			<xs:restriction base="xs:anyType">
+				<xs:sequence>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:webSiteDescription"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:webSiteURL"/>
+				</xs:sequence>
+				<xs:attribute name="id" type="xs:ID"/>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="accountingMethod.TupleType">
+		<xs:complexContent>
+			<xs:restriction base="xs:anyType">
+				<xs:sequence>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:method"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:methodDescription"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:methodPurpose"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:methodPurposeDescription"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:methodStartDate"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:methodEndDate"/>
+				</xs:sequence>
+				<xs:attribute name="id" type="xs:ID"/>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="accountantInformation.TupleType">
+		<xs:complexContent>
+			<xs:restriction base="xs:anyType">
+				<xs:sequence>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:accountantName"/>
+					<xs:element minOccurs="0" maxOccurs="unbounded" ref="gl-bus:specified.address"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:engagementType"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:engagementTypeDescription"/>
+					<xs:element minOccurs="0" maxOccurs="unbounded" ref="gl-bus:specified.contactInformation"/>
+				</xs:sequence>
+				<xs:attribute name="id" type="xs:ID"/>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="address.TupleType">
+		<xs:complexContent>
+			<xs:restriction base="xs:anyType">
+				<xs:sequence>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:addressName"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:addressDescription"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:addressPurpose"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:locationIdentifier"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:buildingNumber"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:street"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:street2"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:city"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:stateOrProvince"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:country"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:zipOrPostalCode"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:accountantAddressActive"/>
+				</xs:sequence>
+				<xs:attribute name="id" type="xs:ID"/>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="contactInformation.TupleType">
+		<xs:complexContent>
+			<xs:restriction base="xs:anyType">
+				<xs:sequence>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-cor:prefix"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-cor:lastName"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-cor:firstName"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-cor:suffix"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:attentionLine"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-cor:positionRole"/>
+					<xs:element minOccurs="0" maxOccurs="unbounded" ref="gl-cor:specified.phone"/>
+					<xs:element minOccurs="0" maxOccurs="unbounded" ref="gl-cor:specified.fax"/>
+					<xs:element minOccurs="0" maxOccurs="unbounded" ref="gl-cor:specified.eMail"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-cor:contactType"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:locationIdentifierCrossReference"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:contactActive"/>
+				</xs:sequence>
+				<xs:attribute name="id" type="xs:ID"/>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="reportingCalendar.TupleType">
+		<xs:complexContent>
+			<xs:restriction base="xs:anyType">
+				<xs:sequence>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:reportingCalendarCode"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:reportingCalendarDescription"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:reportingCalendarTitle"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:reportingCalendarPeriodType"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:reportingCalendarPeriodTypeDescription"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:reportingCalendarOpenClosedStatus"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:reportingPurpose"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:reportingPurposeDescription"/>
+					<xs:element minOccurs="0" maxOccurs="unbounded" ref="gl-bus:specified.reportingCalendarPeriod"/>
+				</xs:sequence>
+				<xs:attribute name="id" type="xs:ID"/>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="reportingCalendarPeriod.TupleType">
+		<xs:complexContent>
+			<xs:restriction base="xs:anyType">
+				<xs:sequence>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:periodIdentifier"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:periodDescription"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:periodStart"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:periodEnd"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:periodClosedDate"/>
+				</xs:sequence>
+				<xs:attribute name="id" type="xs:ID"/>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="measurable.TupleType">
+		<xs:complexContent>
+			<xs:restriction base="xs:anyType">
+				<xs:sequence>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:measurableCode"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:measurableCodeDescription"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:measurableCategory"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:measurableID"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:measurableIDSchema"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:measurableIDOther"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:measurableIDOtherSchema"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:measurableDescription"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:measurableQuantity"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:measurableQualifier"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:measurableUnitOfMeasure"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:measurableCostPerUnit"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:measurableStartDateTime"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:measurableEndDateTime"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:measurableActive"/>
+				</xs:sequence>
+				<xs:attribute name="id" type="xs:ID"/>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="jobInfo.TupleType">
+		<xs:complexContent>
+			<xs:restriction base="xs:anyType">
+				<xs:sequence/>
+				<xs:attribute name="id" type="xs:ID"/>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="depreciationMortgage.TupleType">
+		<xs:complexContent>
+			<xs:restriction base="xs:anyType">
+				<xs:sequence>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:jurisdiction"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:methodType"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:lifeLength"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:comment"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:startDate"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-bus:endDate"/>
+					<xs:element minOccurs="0" maxOccurs="1" ref="gl-cor:amount"/>
+				</xs:sequence>
+				<xs:attribute name="id" type="xs:ID"/>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<!--
+	tuple (ABIE) 
+-->
+	<xs:element name="reportingCalendar.Detail" id="gl-bus_reportingCalendar.Detail" substitutionGroup="xbrli:tuple" nillable="true" type="gl-bus:reportingCalendar.TupleType"/>
+	<xs:element name="reportingCalendarPeriod.Detail" id="gl-bus_reportingCalendarPeriod.Detail" substitutionGroup="xbrli:tuple" nillable="true" type="gl-bus:reportingCalendarPeriod.TupleType"/>
+	<xs:element name="entityWebSite.Detail" id="gl-bus_entityWebSite.Detail" substitutionGroup="xbrli:tuple" nillable="true" type="gl-bus:entityWebSite.TupleType"/>
+	<xs:element name="address.Detail" id="gl-bus_address.Detail" substitutionGroup="xbrli:tuple" nillable="true" type="gl-bus:address.TupleType"/>
+	<xs:element name="jobInfo.Detail" id="gl-bus_jobInfo.Detail" substitutionGroup="xbrli:tuple" nillable="true" type="gl-bus:jobInfo.TupleType"/>
+	<xs:element name="measurable.Detail" id="gl-bus_measurable.Detail" substitutionGroup="xbrli:tuple" nillable="true" type="gl-bus:measurable.TupleType"/>
+	<xs:element name="accountingMethod.Detail" id="gl-bus_accountingMethod.Detail" substitutionGroup="xbrli:tuple" nillable="true" type="gl-bus:accountingMethod.TupleType"/>
+	<xs:element name="organizationIdentifiers.Detail" id="gl-bus_organizationIdentifiers.Detail" substitutionGroup="xbrli:tuple" nillable="true" type="gl-bus:organizationIdentifiers.TupleType"/>
+	<xs:element name="accountantInformation.Detail" id="gl-bus_accountantInformation.Detail" substitutionGroup="xbrli:tuple" nillable="true" type="gl-bus:accountantInformation.TupleType"/>
+	<xs:element name="contactInformation.Detail" id="gl-bus_contactInformation.Detail" substitutionGroup="xbrli:tuple" nillable="true" type="gl-bus:contactInformation.TupleType"/>
+	<xs:element name="depreciationMortgage.Detail" id="gl-bus_depreciationMortgage.Detail" substitutionGroup="xbrli:tuple" nillable="true" type="gl-bus:depreciationMortgage.TupleType"/>
+</xs:schema>

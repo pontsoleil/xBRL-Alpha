@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<xbrll:linkbase xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd http://xbrl.org/2008/generic http://www.xbrl.org/2008/generic-link.xsd http://xbrl.org/2014/table http://www.xbrl.org/2014/table.xsd http://xbrl.org/2008/label http://www.xbrl.org/2008/generic-label.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xbrll="http://www.xbrl.org/2003/linkbase" xmlns:gl-cor="http://www.xbrl.org/int/gl/cor/2020-12-31" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:gen="http://xbrl.org/2008/generic" xmlns:label="http://xbrl.org/2008/label" xmlns:table="http://xbrl.org/2014/table">
+	<xbrll:arcroleRef arcroleURI="http://xbrl.org/arcrole/2014/breakdown-tree" xlink:type="simple" xlink:href="http://www.xbrl.org/2014/table.xsd#breakdown-tree"/>
+	<xbrll:arcroleRef arcroleURI="http://xbrl.org/arcrole/2014/table-breakdown" xlink:type="simple" xlink:href="http://www.xbrl.org/2014/table.xsd#table-breakdown"/>
+	<xbrll:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/element-label" xlink:type="simple" xlink:href="http://www.xbrl.org/2008/generic-label.xsd#element-label"/>
+	<xbrll:roleRef roleURI="http://www.xbrl.org/2008/role/label" xlink:type="simple" xlink:href="http://www.xbrl.org/2008/generic-label.xsd#standard-label"/>
+	<xbrll:roleRef roleURI="http://www.xbrl.org/2008/role/link" xlink:type="simple" xlink:href="http://www.xbrl.org/2008/generic-link.xsd#standard-link-role"/>
+	<gen:link xlink:type="extended" xlink:role="http://www.xbrl.org/2008/role/link">
+		<table:breakdownTreeArc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/breakdown-tree" xlink:from="breakdown2" xlink:to="conceptRelationshipNode1"/>
+		<table:conceptRelationshipNode id="conceptRelationshipNode1" xlink:type="resource" xlink:label="conceptRelationshipNode1">
+			<table:relationshipSource>gl-cor:accountingEntries</table:relationshipSource>
+			<table:linkrole>http://www.xbrl.org/2003/role/link</table:linkrole>
+			<table:arcrole>http://www.xbrl.org/2003/arcrole/parent-child</table:arcrole>
+		</table:conceptRelationshipNode>
+		<table:tableBreakdownArc order="1.0" axis="y" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/table-breakdown" xlink:from="table1" xlink:to="breakdown2"/>
+		<table:breakdown id="breakdown2" xlink:type="resource" xlink:label="breakdown2"/>
+		<gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="table1" xlink:to="label1"/>
+		<label:label id="label1" xlink:type="resource" xlink:role="http://www.xbrl.org/2008/role/label" xlink:label="label1" xml:lang="en">gl-cor</label:label>
+		<table:table id="table1" xlink:type="resource" xlink:label="table1"/>
+		<table:breakdownTreeArc order="2.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/breakdown-tree" xlink:from="breakdown1" xlink:to="aspectNode1"/>
+		<table:aspectNode id="aspectNode1" xlink:type="resource" xlink:label="aspectNode1">
+			<table:dimensionAspect>xbrldt:dimensionItem</table:dimensionAspect>
+		</table:aspectNode>
+		<table:aspectNode id="aspectNode" xlink:type="resource" xlink:label="aspectNode">
+			<table:dimensionAspect>gl-cor:dEntryNumber</table:dimensionAspect>
+		</table:aspectNode>
+		<table:tableBreakdownArc order="0.0" axis="x" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/table-breakdown" xlink:from="table" xlink:to="breakdown1"/>
+		<table:breakdown id="breakdown1" xlink:type="resource" xlink:label="breakdown1"/>
+		<table:breakdownTreeArc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/breakdown-tree" xlink:from="breakdown" xlink:to="conceptRelationshipNode"/>
+		<table:conceptRelationshipNode id="conceptRelationshipNode" xlink:type="resource" xlink:label="conceptRelationshipNode">
+			<table:relationshipSource>gl-cor:accountingEntries</table:relationshipSource>
+			<table:linkrole>http://www.xbrl.org/2003/role/link</table:linkrole>
+			<table:arcrole>http://www.xbrl.org/2003/arcrole/parent-child</table:arcrole>
+			<table:generations>5</table:generations>
+		</table:conceptRelationshipNode>
+		<table:tableBreakdownArc order="1.0" axis="y" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/table-breakdown" xlink:from="table" xlink:to="breakdown"/>
+		<table:breakdown id="breakdown" xlink:type="resource" xlink:label="breakdown"/>
+		<gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="table" xlink:to="label"/>
+		<label:label id="label" xlink:type="resource" xlink:role="http://www.xbrl.org/2008/role/label" xlink:label="label" xml:lang="en">TrialBalance</label:label>
+		<table:table id="table" xlink:type="resource" xlink:label="table"/>
+	</gen:link>
+</xbrll:linkbase>
