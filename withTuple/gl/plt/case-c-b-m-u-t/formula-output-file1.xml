@@ -18,7 +18,7 @@
 			<xbrli:instant>2020-01-01</xbrli:instant>
 		</xbrli:period>
 	</xbrli:context>
-	<gl-cor:entriesComment contextRef="context1">specifiedIdentifier:1130</gl-cor:entriesComment>
+	<gl-cor:entriesComment contextRef="context1"> desc:Rettaler Property Ltd</gl-cor:entriesComment>
 	<xbrli:context id="context2">
 		<xbrli:entity>
 			<xbrli:identifier scheme="http://www.xbrl.org/xbrlgl/sample">SAMPLE</xbrli:identifier>
@@ -35,10 +35,10 @@
 			<xbrli:instant>2020-01-01</xbrli:instant>
 		</xbrli:period>
 	</xbrli:context>
-	<gl-cor:entriesComment contextRef="context2">specifiedIdentifier:1412</gl-cor:entriesComment>
-	<gl-cor:entriesComment contextRef="context2">specifiedIdentifier:1412</gl-cor:entriesComment>
-	<gl-cor:entriesComment contextRef="context1">specifiedIdentifier:1130</gl-cor:entriesComment>
-	<gl-cor:entriesComment contextRef="context1">specifiedIdentifier:1130</gl-cor:entriesComment>
-	<gl-cor:entriesComment contextRef="context2">specifiedIdentifier:1412</gl-cor:entriesComment>
-	<gl-cor:entriesComment contextRef="context2">specifiedIdentifier:1412</gl-cor:entriesComment>
+	<gl-cor:entriesComment contextRef="context2"> desc:Fitzsimmons Office Supplies</gl-cor:entriesComment>
+	<gl-cor:entriesComment contextRef="context2">identifierReference:1412</gl-cor:entriesComment>
+	<gl-cor:entriesComment contextRef="context2">identifierReference:1412</gl-cor:entriesComment>
+	<gl-cor:entriesComment contextRef="context2">identifierReference:1412</gl-cor:entriesComment>
+	<gl-cor:entriesComment contextRef="context1">identifierReference:1130</gl-cor:entriesComment>
+	<gl-cor:entriesComment contextRef="context1">identifierReference:1130</gl-cor:entriesComment>
 </xbrli:xbrl>
