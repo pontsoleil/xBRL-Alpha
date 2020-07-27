@@ -11,6 +11,31 @@
 	<link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/consistency-assertion-formula" xlink:type="simple" xlink:href="http://www.xbrl.org/2008/consistency-assertion.xsd#consistency-assertion-formula"/>
 	<link:roleRef roleURI="http://www.xbrl.org/2008/role/link" xlink:type="simple" xlink:href="http://www.xbrl.org/2008/generic-link.xsd#standard-link-role"/>
 	<gen:link xlink:type="extended" xlink:role="http://www.xbrl.org/2008/role/link">
+		<variable:variableFilterArc order="2.0" complement="false" cover="true" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="factVariable3" xlink:to="general2"/>
+		<gf:general id="general2" test="following-sibling::gl-cor:specified.identifierReference[1] ne &apos;&apos;" xlink:type="resource" xlink:label="general2"/>
+		<variable:variableFilterArc order="1.0" complement="false" cover="true" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="factVariable3" xlink:to="conceptName3"/>
+		<cf:conceptName id="conceptName3" xlink:type="resource" xlink:label="conceptName3">
+			<cf:concept>
+				<cf:qname>gl-cor:amount</cf:qname>
+			</cf:concept>
+		</cf:conceptName>
+		<variable:factVariable id="factVariable3" bindAsSequence="true" xlink:type="resource" xlink:label="factVariable3"/>
+		<variable:variableFilterArc order="1.0" complement="false" cover="true" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="factVariable2" xlink:to="conceptName2"/>
+		<cf:conceptName id="conceptName2" xlink:type="resource" xlink:label="conceptName2">
+			<cf:concept>
+				<cf:qname>gl-cor:identifierType</cf:qname>
+			</cf:concept>
+		</cf:conceptName>
+		<variable:variableArc name="identifierType" order="5.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="formula1" xlink:to="factVariable2"/>
+		<variable:factVariable id="factVariable2" bindAsSequence="false" xlink:type="resource" xlink:label="factVariable2"/>
+		<variable:variableFilterArc order="1.0" complement="false" cover="true" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="factVariable1" xlink:to="conceptName1"/>
+		<cf:conceptName id="conceptName1" xlink:type="resource" xlink:label="conceptName1">
+			<cf:concept>
+				<cf:qname>gl-cor:identifierCode</cf:qname>
+			</cf:concept>
+		</cf:conceptName>
+		<variable:variableArc name="identifierCode" order="4.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="formula1" xlink:to="factVariable1"/>
+		<variable:factVariable id="factVariable1" bindAsSequence="true" xlink:type="resource" xlink:label="factVariable1"/>
 		<!-- formula -->
 		<formula:formula id="formula" aspectModel="dimensional" implicitFiltering="true" value="concat(&apos;identifierReference:&apos;,$identifierReference)" source="formula:uncovered" xlink:type="resource" xlink:label="formula">
 			<formula:aspects>
@@ -22,14 +47,14 @@
 		<!-- variableArc -->
 		<variable:variableArc name="identifierReference" order="4.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="formula" xlink:to="factVariable"/>
 		<!-- factVariable -->
-<!--		<variable:factVariable id="factVariable4" bindAsSequence="true" xlink:type="resource" xlink:label="factVariable4"/>
+		<!--		<variable:factVariable id="factVariable4" bindAsSequence="true" xlink:type="resource" xlink:label="factVariable4"/>
 -->
-		<variable:factVariable id="factVariable" bindAsSequence="false" xlink:type="resource" xlink:label="factVariable"/>
+		<variable:factVariable id="factVariable" bindAsSequence="true" xlink:type="resource" xlink:label="factVariable"/>
 		<!-- variableFilterArc -->
-<!--		<variable:variableFilterArc order="1.0" complement="false" cover="true" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="factVariable4" xlink:to="conceptName5"/>
+		<!--		<variable:variableFilterArc order="1.0" complement="false" cover="true" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="factVariable4" xlink:to="conceptName5"/>
 		<variable:variableFilterArc order="2.0" complement="false" cover="true" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="factVariable4" xlink:to="general12"/>-->
-		<variable:variableFilterArc complement="false" cover="true" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="factVariable" xlink:to="conceptName"/>
-		<variable:variableFilterArc complement="false" cover="true" order="2.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="factVariable" xlink:to="general1"/>
+		<variable:variableFilterArc order="1.0" complement="false" cover="true" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="factVariable" xlink:to="conceptName"/>
+		<variable:variableFilterArc order="2.0" complement="false" cover="true" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="factVariable" xlink:to="general1"/>
 		<!-- filter -->
 		<cf:conceptName id="conceptName5" xlink:type="resource" xlink:label="conceptName5">
 			<cf:concept>
@@ -42,9 +67,8 @@
 			</cf:concept>
 		</cf:conceptName>
 		<gf:general id="general1" test="../gl-cor:amount &gt; 0" xlink:type="resource" xlink:label="general1"/>
-		
 		<!-- formula -->
-		<formula:formula id="formula1" aspectModel="dimensional" implicitFiltering="true" value="concat(&apos;identifierDescription:&apos;,$identifierDesc)" source="formula:uncovered" xlink:type="resource" xlink:label="formula1">
+		<formula:formula id="formula1" aspectModel="dimensional" implicitFiltering="true" value="concat(&apos;identifier &apos;,$identifierType,$identifierCode,&apos; &apos;,$identifierDesc)" source="formula:uncovered" xlink:type="resource" xlink:label="formula1">
 			<formula:aspects>
 				<formula:concept>
 					<formula:qname>gl-cor:entriesComment</formula:qname>
@@ -56,8 +80,8 @@
 		<!-- variable -->
 		<variable:factVariable id="factVariable6" bindAsSequence="true" xlink:type="resource" xlink:label="factVariable6"/>
 		<!-- variableFilterArc -->
-		<variable:variableFilterArc complement="false" cover="true" order="1.5" use="optional" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="factVariable6" xlink:to="general"/>
-		<variable:variableFilterArc complement="false" cover="true" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="factVariable6" xlink:to="conceptName11"/>
+		<variable:variableFilterArc order="1.5" use="optional" complement="false" cover="true" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="factVariable6" xlink:to="general"/>
+		<variable:variableFilterArc order="1.0" complement="false" cover="true" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="factVariable6" xlink:to="conceptName11"/>
 		<!-- filter -->
 		<gf:general id="general" test="../gl-cor:identifierCode/@contextRef ne &apos;&apos;" xlink:type="resource" xlink:label="general"/>
 		<cf:conceptName id="conceptName11" xlink:type="resource" xlink:label="conceptName11">

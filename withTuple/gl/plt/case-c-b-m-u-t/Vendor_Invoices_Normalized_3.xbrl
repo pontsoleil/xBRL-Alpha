@@ -17,7 +17,7 @@ xmlns:gl-bus="http://www.xbrl.org/int/gl/bus/2020-12-31"
 xmlns:gl-muc="http://www.xbrl.org/int/gl/muc/2020-12-31"
 xmlns:eg="http://www.xbrl.org/xbrlgl/sample"
 xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 gl-plt-all-2020-12-31.xsd">
-	<xbrll:schemaRef xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="gl-plt-all-2020-12-31a.xsd"/>
+	<xbrll:schemaRef xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="gl-plt-all-2020-12-31_3.xsd"/>
 	<!-- Contexts, mandatory according to the XBRL 2.1, Specification, are not meant to describe the information in XBRL GL and appear only by convention. All facts are instant and developers are encouraged to duplicate/provide the date the XBRL GL information is created as the period's date. -->
 	<xbrli:context id="now">
 		<xbrli:entity>
@@ -207,7 +207,7 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 gl-plt-all-2020-12
 			<xbrli:instant>2020-01-01</xbrli:instant>
 		</xbrli:period>
 	</xbrli:context>
-		<xbrli:context id="IN_4576">
+	<xbrli:context id="IN_4576">
 		<xbrli:entity>
 			<xbrli:identifier scheme="http://www.xbrl.org/xbrlgl/sample">SAMPLE</xbrli:identifier>
 			<xbrli:segment>
@@ -220,7 +220,7 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 gl-plt-all-2020-12
 			<xbrli:instant>2020-01-01</xbrli:instant>
 		</xbrli:period>
 	</xbrli:context>
-		<xbrli:context id="IN_4800">
+	<xbrli:context id="IN_4800">
 		<xbrli:entity>
 			<xbrli:identifier scheme="http://www.xbrl.org/xbrlgl/sample">SAMPLE</xbrli:identifier>
 			<xbrli:segment>
@@ -233,7 +233,7 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 gl-plt-all-2020-12
 			<xbrli:instant>2020-01-01</xbrli:instant>
 		</xbrli:period>
 	</xbrli:context>
-		<xbrli:context id="IN_120">
+	<xbrli:context id="IN_120">
 		<xbrli:entity>
 			<xbrli:identifier scheme="http://www.xbrl.org/xbrlgl/sample">SAMPLE</xbrli:identifier>
 			<xbrli:segment>
@@ -246,7 +246,6 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 gl-plt-all-2020-12
 			<xbrli:instant>2020-01-01</xbrli:instant>
 		</xbrli:period>
 	</xbrli:context>
-
 	<!-- Units of measure in XBRL GL are handled within the measurable or multicurrency elements. Units are provided by convention and should not be relied upon in interpreting XBRL GL data. -->
 	<xbrli:unit id="usd">
 		<xbrli:measure>iso4217:USD</xbrli:measure>
@@ -260,8 +259,8 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 gl-plt-all-2020-12
 	<gl-cor:accountingEntries.Detail>
 		<gl-cor:specified.documentInfo contextRef="now"/>
 		<gl-cor:specified.entityInformation contextRef="now"/>
-		<gl-cor:specified.entryHeader contextRef="H50"/>
-		<gl-cor:specified.entryHeader contextRef="H51"/>
+		<gl-cor:specified.entryHeader contextRef="now">H50</gl-cor:specified.entryHeader>
+		<gl-cor:specified.entryHeader contextRef="now">H51</gl-cor:specified.entryHeader>
 	</gl-cor:accountingEntries.Detail>	
 	<!-- Because entriesType is strongly suggested, documentInfo will be required. -->
 	<gl-cor:documentInfo.Detail>
@@ -325,7 +324,6 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 gl-plt-all-2020-12
 		<!-- Invoices from vendors require vendor information. This is held in the identifier structure. As systems may or may not store individual components of the structure all of the time - they may have the vendor's number but not the name or vice versa, the only "mandatory" field here is the identifierType to state without question that this is a vendor. It may be confusing that the vendor must be identified for each line of an invoice. Why isn't the vendor at the Header level? The answer - the generic nature of XBRL GL means it must accommodate both detail and summary style of entry. Rather than duplicate the identifier structure at both header and detail level, it is at the detail level.-->
 		<!-- The full vendor information is stored in the accountingEntries structure that represents the vendors master file. In addition to the code, the identifierType is included, to distinguish it from other counterparts with the same code (customers, employees etc.). -->
 		<gl-cor:specified.identifierReference contextRef="H50L1">V1130</gl-cor:specified.identifierReference>
-	
 		<!-- As noted previously, the identifierType of vendor and the documentType of voucher provide automated guidance that this batch of information has to do with invoices from vendors. Vouchers are invoices received from vendors. -->
 		<gl-cor:documentType contextRef="H50L1">voucher</gl-cor:documentType>
 		<!-- Document number in this representation is the number of the invoice. -->
@@ -349,14 +347,14 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 gl-plt-all-2020-12
 	</gl-cor:entryDetail.Detail>
 	<!-- The full vendor information is stored in the accountingEntries structure that represents the vendors master file. In addition to the code, the identifierType is included, to distinguish it from other counterparts with the same code (customers, employees etc.). -->
 	<gl-cor:identifierReference.Detail>
-		<gl-cor:identifierCode contextRef="V1130">1130</gl-cor:identifierCode>
-		<gl-cor:identifierType contextRef="V">V</gl-cor:identifierType>
+		<gl-cor:identifierCode contextRef="H50L1">1130</gl-cor:identifierCode>
+		<gl-cor:identifierType contextRef="H50L1">V</gl-cor:identifierType>
 	</gl-cor:identifierReference.Detail>
 	<!-- The full inventory item information is stored in the accountingEntries structure that represents the inventory master file. -->
 	<gl-bus:measurable.Detail>
-		<gl-bus:measurableCode contextRef="IN_Widget1">IN</gl-bus:measurableCode>
-		<gl-bus:measurableID contextRef="IN_Widget1">Widget1</gl-bus:measurableID>
-		<gl-bus:measurableQuantity contextRef="IN_Widget1" decimals="2" unitRef="NotUsed">100</gl-bus:measurableQuantity>
+		<gl-bus:measurableCode contextRef="H50L1">IN</gl-bus:measurableCode>
+		<gl-bus:measurableID contextRef="H50L1">Widget1</gl-bus:measurableID>
+		<gl-bus:measurableQuantity contextRef="H50L1" decimals="0" unitRef="NotUsed">100</gl-bus:measurableQuantity>
 	</gl-bus:measurable.Detail>
 	<!-- As noted above, the additional entryDetail lines will likely need to duplicate the typical header information necessary to support that which is truly at the line level - the amount, the line number, the measurable. With agreement, that information could be provided in one entryDetail line (e.g., the first line) and then other lines could inherit that information if applications were designed to do so. -->
 	<gl-cor:entryDetail.Detail>
@@ -376,6 +374,15 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 gl-plt-all-2020-12
 		<gl-cor:terms contextRef="H50L2">2% 10 Net 30</gl-cor:terms>
 		<gl-bus:specified.measurable contextRef="H50L2">IN_Gidget3</gl-bus:specified.measurable>
 	</gl-cor:entryDetail.Detail>
+	<gl-cor:identifierReference.Detail>
+		<gl-cor:identifierCode contextRef="H50L2">1130</gl-cor:identifierCode>
+		<gl-cor:identifierType contextRef="H50L2">V</gl-cor:identifierType>
+	</gl-cor:identifierReference.Detail>
+	<gl-bus:measurable.Detail>
+		<gl-bus:measurableCode contextRef="H50L2">IN</gl-bus:measurableCode>
+		<gl-bus:measurableID contextRef="H50L2">Gidget3</gl-bus:measurableID>
+		<gl-bus:measurableQuantity contextRef="H50L2" decimals="0" unitRef="NotUsed">200</gl-bus:measurableQuantity>
+	</gl-bus:measurable.Detail>
 	<!-- entryHeader -->
 	<gl-cor:entryHeader.Detail>
 		<gl-cor:postedDate contextRef="H51">2005-07-01</gl-cor:postedDate>
@@ -390,7 +397,7 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 gl-plt-all-2020-12
 		<gl-cor:specified.entryDetail contextRef="H51">H51L2</gl-cor:specified.entryDetail>
 		<gl-cor:specified.entryDetail contextRef="H51">H51L3</gl-cor:specified.entryDetail>
 	</gl-cor:entryHeader.Detail>
-		<gl-cor:entryDetail.Detail>
+	<gl-cor:entryDetail.Detail>
 		<gl-cor:lineNumber contextRef="H51L1">1</gl-cor:lineNumber>
 		<gl-cor:amount contextRef="H51L1" decimals="2" unitRef="usd">54000</gl-cor:amount>
 		<gl-cor:postingDate contextRef="H51L1">2005-06-30</gl-cor:postingDate>
@@ -407,6 +414,15 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 gl-plt-all-2020-12
 		<gl-cor:terms contextRef="H51L1">2% 10 Net 30</gl-cor:terms>
 		<gl-bus:specified.measurable contextRef="H51L1">IN_4576</gl-bus:specified.measurable>
 	</gl-cor:entryDetail.Detail>
+	<gl-cor:identifierReference.Detail>
+		<gl-cor:identifierCode contextRef="H51L1">1412</gl-cor:identifierCode>
+		<gl-cor:identifierType contextRef="H51L1">V</gl-cor:identifierType>
+	</gl-cor:identifierReference.Detail>
+	<gl-bus:measurable.Detail>
+		<gl-bus:measurableCode contextRef="H51L1">IN</gl-bus:measurableCode>
+		<gl-bus:measurableID contextRef="H51L1">4576</gl-bus:measurableID>
+		<gl-bus:measurableQuantity contextRef="H51L1" decimals="0" unitRef="NotUsed">24</gl-bus:measurableQuantity>
+	</gl-bus:measurable.Detail>
 	<gl-cor:entryDetail.Detail>
 		<gl-cor:lineNumber contextRef="H51L2">2</gl-cor:lineNumber>
 		<gl-cor:amount contextRef="H51L2" decimals="2" unitRef="usd">1500</gl-cor:amount>
@@ -424,6 +440,15 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 gl-plt-all-2020-12
 		<gl-cor:terms contextRef="H51L2">2% 10 Net 30</gl-cor:terms>
 		<gl-bus:specified.measurable contextRef="H51L2">IN_4800</gl-bus:specified.measurable>
 	</gl-cor:entryDetail.Detail>
+	<gl-cor:identifierReference.Detail>
+		<gl-cor:identifierCode contextRef="H51L2">1412</gl-cor:identifierCode>
+		<gl-cor:identifierType contextRef="H51L2">V</gl-cor:identifierType>
+	</gl-cor:identifierReference.Detail>
+	<gl-bus:measurable.Detail>
+		<gl-bus:measurableCode contextRef="H51L2">IN</gl-bus:measurableCode>
+		<gl-bus:measurableID contextRef="H51L2">4800</gl-bus:measurableID>
+		<gl-bus:measurableQuantity contextRef="H51L2" decimals="0" unitRef="NotUsed">12</gl-bus:measurableQuantity>
+	</gl-bus:measurable.Detail>
 	<gl-cor:entryDetail.Detail>
 		<gl-cor:lineNumber contextRef="H51L3">3</gl-cor:lineNumber>
 		<gl-cor:amount contextRef="H51L3" decimals="2" unitRef="usd">500</gl-cor:amount>
@@ -441,9 +466,18 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 gl-plt-all-2020-12
 		<gl-cor:terms contextRef="H51L3">2% 10 Net 30</gl-cor:terms>
 		<gl-bus:specified.measurable contextRef="H51L3">IN_120</gl-bus:specified.measurable>
 	</gl-cor:entryDetail.Detail>
+	<gl-cor:identifierReference.Detail>
+		<gl-cor:identifierCode contextRef="H51L3">1412</gl-cor:identifierCode>
+		<gl-cor:identifierType contextRef="H51L3">V</gl-cor:identifierType>
+	</gl-cor:identifierReference.Detail>
+	<gl-bus:measurable.Detail>
+		<gl-bus:measurableCode contextRef="H51L3">IN</gl-bus:measurableCode>
+		<gl-bus:measurableID contextRef="H51L3">120</gl-bus:measurableID>
+		<gl-bus:measurableQuantity contextRef="H51L3" decimals="0" unitRef="NotUsed">12</gl-bus:measurableQuantity>
+	</gl-bus:measurable.Detail>
 	<!-- The second accountingEntries structure represents the vendors master file. -->
 	<gl-cor:entryDetail.Detail>
-		<gl-cor:specified.account contextRef="V1130"/>
+		<gl-cor:specified.account contextRef="V1130">V</gl-cor:specified.account>
 		<gl-cor:specified.identifierReference contextRef="V1130">1130</gl-cor:specified.identifierReference>
 	</gl-cor:entryDetail.Detail>
 	<!-- The enumerated value of "account" in entriesType and of "vendor" in accountType are used to identify the vendors master file. -->
@@ -456,7 +490,7 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 gl-plt-all-2020-12
 		<gl-cor:identifierType contextRef="V1130">V</gl-cor:identifierType>
 	</gl-cor:identifierReference.Detail>
 	<gl-cor:entryDetail.Detail>
-		<gl-cor:specified.account contextRef="V"/>
+		<gl-cor:specified.account contextRef="V1412">V</gl-cor:specified.account>
 		<gl-cor:specified.identifierReference contextRef="V1412">1412</gl-cor:specified.identifierReference>
 	</gl-cor:entryDetail.Detail>
 	<gl-cor:account.Detail>

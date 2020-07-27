@@ -6,11 +6,11 @@
 		<xbrli:entity>
 			<xbrli:identifier scheme="http://www.xbrl.org/xbrlgl/sample">SAMPLE</xbrli:identifier>
 			<xbrli:segment>
-				<xbrldi:typedMember dimension="gl-bus:dAccount">
-					<gl-bus:Account>V</gl-bus:Account>
+				<xbrldi:typedMember dimension="gl-cor:dEntryNumber">
+					<gl-cor:EntryNumber>51</gl-cor:EntryNumber>
 				</xbrldi:typedMember>
-				<xbrldi:typedMember dimension="gl-bus:dIdentifierReference">
-					<gl-bus:IdentifierReference>1130</gl-bus:IdentifierReference>
+				<xbrldi:typedMember dimension="gl-cor:dLineNumber">
+					<gl-cor:LineNumber>L3</gl-cor:LineNumber>
 				</xbrldi:typedMember>
 			</xbrli:segment>
 		</xbrli:entity>
@@ -18,8 +18,24 @@
 			<xbrli:instant>2020-01-01</xbrli:instant>
 		</xbrli:period>
 	</xbrli:context>
-	<gl-cor:entriesComment contextRef="context1"> desc:Rettaler Property Ltd</gl-cor:entriesComment>
+	<gl-cor:entriesComment contextRef="context1">identifierReference:V1412</gl-cor:entriesComment>
 	<xbrli:context id="context2">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.xbrl.org/xbrlgl/sample">SAMPLE</xbrli:identifier>
+			<xbrli:segment>
+				<xbrldi:typedMember dimension="gl-cor:dEntryNumber">
+					<gl-cor:EntryNumber>51</gl-cor:EntryNumber>
+				</xbrldi:typedMember>
+				<xbrldi:typedMember dimension="gl-cor:dLineNumber">
+					<gl-cor:LineNumber>L2</gl-cor:LineNumber>
+				</xbrldi:typedMember>
+			</xbrli:segment>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:instant>2020-01-01</xbrli:instant>
+		</xbrli:period>
+	</xbrli:context>
+	<xbrli:context id="context3">
 		<xbrli:entity>
 			<xbrli:identifier scheme="http://www.xbrl.org/xbrlgl/sample">SAMPLE</xbrli:identifier>
 			<xbrli:segment>
@@ -35,10 +51,74 @@
 			<xbrli:instant>2020-01-01</xbrli:instant>
 		</xbrli:period>
 	</xbrli:context>
-	<gl-cor:entriesComment contextRef="context2"> desc:Fitzsimmons Office Supplies</gl-cor:entriesComment>
-	<gl-cor:entriesComment contextRef="context2">identifierReference:1412</gl-cor:entriesComment>
-	<gl-cor:entriesComment contextRef="context2">identifierReference:1412</gl-cor:entriesComment>
-	<gl-cor:entriesComment contextRef="context2">identifierReference:1412</gl-cor:entriesComment>
-	<gl-cor:entriesComment contextRef="context1">identifierReference:1130</gl-cor:entriesComment>
-	<gl-cor:entriesComment contextRef="context1">identifierReference:1130</gl-cor:entriesComment>
+	<gl-cor:entriesComment contextRef="context3">identifier Type:V Code:1412 Description:Fitzsimmons Office Supplies</gl-cor:entriesComment>
+	<gl-cor:entriesComment contextRef="context2">identifierReference:V1412</gl-cor:entriesComment>
+	<xbrli:context id="context4">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.xbrl.org/xbrlgl/sample">SAMPLE</xbrli:identifier>
+			<xbrli:segment>
+				<xbrldi:typedMember dimension="gl-cor:dEntryNumber">
+					<gl-cor:EntryNumber>51</gl-cor:EntryNumber>
+				</xbrldi:typedMember>
+				<xbrldi:typedMember dimension="gl-cor:dLineNumber">
+					<gl-cor:LineNumber>L1</gl-cor:LineNumber>
+				</xbrldi:typedMember>
+			</xbrli:segment>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:instant>2020-01-01</xbrli:instant>
+		</xbrli:period>
+	</xbrli:context>
+	<gl-cor:entriesComment contextRef="context4">identifierReference:V1412</gl-cor:entriesComment>
+	<xbrli:context id="context5">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.xbrl.org/xbrlgl/sample">SAMPLE</xbrli:identifier>
+			<xbrli:segment>
+				<xbrldi:typedMember dimension="gl-cor:dEntryNumber">
+					<gl-cor:EntryNumber>50</gl-cor:EntryNumber>
+				</xbrldi:typedMember>
+				<xbrldi:typedMember dimension="gl-cor:dLineNumber">
+					<gl-cor:LineNumber>L2</gl-cor:LineNumber>
+				</xbrldi:typedMember>
+			</xbrli:segment>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:instant>2020-01-01</xbrli:instant>
+		</xbrli:period>
+	</xbrli:context>
+	<xbrli:context id="context6">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.xbrl.org/xbrlgl/sample">SAMPLE</xbrli:identifier>
+			<xbrli:segment>
+				<xbrldi:typedMember dimension="gl-bus:dAccount">
+					<gl-bus:Account>V</gl-bus:Account>
+				</xbrldi:typedMember>
+				<xbrldi:typedMember dimension="gl-bus:dIdentifierReference">
+					<gl-bus:IdentifierReference>1130</gl-bus:IdentifierReference>
+				</xbrldi:typedMember>
+			</xbrli:segment>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:instant>2020-01-01</xbrli:instant>
+		</xbrli:period>
+	</xbrli:context>
+	<gl-cor:entriesComment contextRef="context6">identifier Type:V Code:1130 Description:Rettaler Property Ltd</gl-cor:entriesComment>
+	<gl-cor:entriesComment contextRef="context5">identifierReference:V1130</gl-cor:entriesComment>
+	<xbrli:context id="context7">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.xbrl.org/xbrlgl/sample">SAMPLE</xbrli:identifier>
+			<xbrli:segment>
+				<xbrldi:typedMember dimension="gl-cor:dEntryNumber">
+					<gl-cor:EntryNumber>50</gl-cor:EntryNumber>
+				</xbrldi:typedMember>
+				<xbrldi:typedMember dimension="gl-cor:dLineNumber">
+					<gl-cor:LineNumber>L1</gl-cor:LineNumber>
+				</xbrldi:typedMember>
+			</xbrli:segment>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:instant>2020-01-01</xbrli:instant>
+		</xbrli:period>
+	</xbrli:context>
+	<gl-cor:entriesComment contextRef="context7">identifierReference:V1130</gl-cor:entriesComment>
 </xbrli:xbrl>
