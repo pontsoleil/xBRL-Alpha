@@ -18,8 +18,8 @@
 	</annotation>
 	<!-- Hypercube -->
 	<element name="Hypercube" id="Hypercube" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" abstract="true" xbrli:periodType="instant"/>
-	<element name="Dimension" id="Dimension" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="instant"/>
-	<element name="Member" id="Member" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="instant"/>
+<!--	<element name="Dimension" id="Dimension" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="instant"/>
+	<element name="Member" id="Member" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="instant"/>-->
 	<!-- Domain -->
 	<element name="EntryNumber" id="gl-cor_EntryNumber">
 		<simpleType>

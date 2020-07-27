@@ -11,12 +11,6 @@ xmlns:link="http://www.xbrl.org/2003/linkbase">
 	<link:definitionLink xlink:type="extended" xlink:role="http://xbrl.org/role/gl-cor_structure">
 		<!-- Hypercube -->
 		<link:loc xlink:type="locator" xlink:href="gl-cor-2020-12-31.xsd#Hypercube" xlink:label="Hypercube" xlink:title="Hypercube"/>
-	<!--	<link:loc xlink:type="locator" xlink:href="gl-cor-2020-12-31.xsd#Dimension" xlink:label="Dimension" xlink:title="Axis"/>
-		<link:loc xlink:type="locator" xlink:href="gl-cor-2020-12-31.xsd#Member" xlink:label="Member" xlink:title="Member"/>
-		<link:definitionArc xlink:type="arc" xlink:from="Hypercube" xlink:to="Dimension" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:title="definition Hypercube to Dimension" use="optional" order="1.0"/>
-		<link:definitionArc xlink:type="arc" xlink:from="Dimension" xlink:to="Domain" xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domail" xlink:title="definition Dimension to Domain" use="optional" order="1.0"/>
-		<link:definitionArc xlink:type="arc" xlink:from="Domain" xlink:to="Member" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domail-member" xlink:title="definition Domain to Member" use="optional" order="1.0"/>
-		-->
 		<link:loc xlink:type="locator" xlink:href="gl-cor-2020-12-31.xsd#gl-cor_dEntryNumber" xlink:label="dim_EntryHeader" xlink:title="Axis entryHeader"/>
 		<link:loc xlink:type="locator" xlink:href="gl-cor-2020-12-31.xsd#gl-cor_dLineNumber" xlink:label="dim_EntryDetail" xlink:title="Axis entryDetail"/>
 		<link:definitionArc xlink:type="arc" xlink:from="Hypercube" xlink:to="dim_EntryHeader" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:title="definition Hypercube to typed Dimension entryHeader" use="optional" order="1.0"/>

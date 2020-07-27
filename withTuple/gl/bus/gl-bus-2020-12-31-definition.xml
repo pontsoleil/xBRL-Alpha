@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- edited with XMLSpy v2020 rel. 2 sp1 (x64) (http://www.altova.com) by SAMBUICHI Nobuyuki (Sambuichi Professional Engineers Office) -->
 <link:linkbase xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:link="http://www.xbrl.org/2003/linkbase">
+<link:roleRef xlink:type="simple" xlink:href="gl-bus-2020-12-31.xsd#gl-bus_structure" roleURI="http://xbrl.org/role/gl-bus_structure"/>
+	<link:arcroleRef xlink:type="simple" xlink:href="http://xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension" arcroleURI="http://xbrl.org/int/dim/arcrole/hypercube-dimension" />
+	<link:definitionLink xlink:type="extended" xlink:role="http://xbrl.org/role/gl-bus_structure">
+		<!-- Hypercube -->
+		<link:loc xlink:type="locator" xlink:href="../cor/gl-cor-2020-12-31.xsd#Hypercube" xlink:label="Hypercube" xlink:title="Hypercube"/>
+		<link:loc xlink:type="locator" xlink:href="gl-bus-2020-12-31.xsd#gl-bus_dAccount" xlink:label="dim_Account" xlink:title="Axis Account"/>
+		<link:loc xlink:type="locator" xlink:href="gl-bus-2020-12-31.xsd#gl-bus_dIdentifierReference" xlink:label="dim_IdentifierReference" xlink:title="Axis IdentifierReference"/>
+		<link:loc xlink:type="locator" xlink:href="gl-bus-2020-12-31.xsd#gl-bus_dMeasurable" xlink:label="dim_Measurable" xlink:title="Axis Measurable"/>
+		<link:definitionArc xlink:type="arc" xlink:from="Hypercube" xlink:to="dim_Account" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:title="definition Hypercube to typed Dimension account" use="optional" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:from="Hypercube" xlink:to="dim_IdentifierReference" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:title="definition Hypercube to typed Dimension iIdentifierReference" use="optional" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:from="Hypercube" xlink:to="dim_Measurable" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:title="definition Hypercube to typed Dimension measurable" use="optional" order="1.0"/>
+	</link:definitionLink>
 	<link:definitionLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
 		<link:loc xlink:type="locator" xlink:href="gl-bus-2020-12-31.xsd#gl-bus_specified.reportingCalendar" xlink:label="loc_gl-bus_specified.reportingCalendar_0"/>
 		<link:loc xlink:type="locator" xlink:href="gl-bus-content-2020-12-31.xsd#gl-bus_reportingCalendar.Detail" xlink:label="loc_gl-bus_reportingCalendar.Detail_0"/>
