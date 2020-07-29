@@ -11,46 +11,12 @@
 	<link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/consistency-assertion-formula" xlink:type="simple" xlink:href="http://www.xbrl.org/2008/consistency-assertion.xsd#consistency-assertion-formula"/>
 	<link:roleRef roleURI="http://www.xbrl.org/2008/role/link" xlink:type="simple" xlink:href="http://www.xbrl.org/2008/generic-link.xsd#standard-link-role"/>
 	<gen:link xlink:type="extended" xlink:role="http://www.xbrl.org/2008/role/link">
-		<variable:variableArc name="measurable" order="6.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="formula1" xlink:to="generalVariable12"/>
-		<variable:generalVariable id="generalVariable12" bindAsSequence="false" select="concat($measurableDescription,&apos;(&apos;,$measurableID,&apos;)&apos;)" xlink:type="resource" xlink:label="generalVariable12"/>
-		<variable:variableArc name="identifier" order="3.375" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="formula1" xlink:to="generalVariable11"/>
-		<variable:generalVariable id="generalVariable11" bindAsSequence="false" select="concat($identifierDescription,&apos;(&apos;,$identifierCode,&apos;)&apos;)" xlink:type="resource" xlink:label="generalVariable11"/>
-		<variable:variableArc name="measurableID" order="4.453125" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="formula1" xlink:to="generalVariable10"/>
-		<variable:generalVariable id="generalVariable10" bindAsSequence="false" select="//gl-bus:measurableID[@contextRef=$measurableRef]" xlink:type="resource" xlink:label="generalVariable10"/>
-		<variable:variableArc name="measurableDescription" order="4.40625" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="formula1" xlink:to="generalVariable9"/>
-		<variable:generalVariable id="generalVariable9" bindAsSequence="false" select="//gl-bus:measurableDescription[@contextRef=$measurableRef]" xlink:type="resource" xlink:label="generalVariable9"/>
-		<variable:variableArc name="identifierCode" order="4.125" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="formula1" xlink:to="generalVariable8"/>
-		<variable:generalVariable id="generalVariable8" bindAsSequence="false" select="//gl-cor:identifierCode[@contextRef=$identifierReference]" xlink:type="resource" xlink:label="generalVariable8"/>
-		<variable:variableArc name="identifierDescription" order="3.75" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="formula1" xlink:to="generalVariable7"/>
-		<variable:generalVariable id="generalVariable7" bindAsSequence="false" select="//gl-cor:identifierDescription[@contextRef=$identifierReference]" xlink:type="resource" xlink:label="generalVariable7"/>
-		<variable:variableArc name="unit" order="2.25" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="formula1" xlink:to="generalVariable6"/>
-		<variable:generalVariable id="generalVariable6" bindAsSequence="false" select="//xbrli:unit[@id=$amount/@unitRef]/xbrli:measure" xlink:type="resource" xlink:label="generalVariable6"/>
-		<variable:variableArc name="measurableCost" order="4.3125" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="formula1" xlink:to="generalVariable5"/>
-		<variable:generalVariable id="generalVariable5" bindAsSequence="false" select="$measurableCostPerUnit * $measurableQuantity" xlink:type="resource" xlink:label="generalVariable5"/>
-		<variable:variableArc name="measurableRef" order="2.75" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="formula1" xlink:to="generalVariable4"/>
-		<variable:generalVariable id="generalVariable4" bindAsSequence="false" select="$amount/../gl-bus:specified.measurable" xlink:type="resource" xlink:label="generalVariable4"/>
-		<variable:variableArc name="measurableQuantity" order="4.5" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="formula1" xlink:to="generalVariable3"/>
-		<variable:generalVariable id="generalVariable3" bindAsSequence="false" select="//gl-bus:measurableQuantity[@contextRef=$contextRef]" xlink:type="resource" xlink:label="generalVariable3"/>
-		<variable:variableArc name="measurableCostPerUnit" order="5.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="formula1" xlink:to="generalVariable2"/>
-		<variable:generalVariable id="generalVariable2" bindAsSequence="false" select="//gl-bus:measurableCostPerUnit[@contextRef=$measurableRef]" xlink:type="resource" xlink:label="generalVariable2"/>
-		<variable:variableArc name="contextRef" order="2.5" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="formula1" xlink:to="generalVariable1"/>
-		<variable:generalVariable id="generalVariable1" bindAsSequence="false" select="$amount/@contextRef" xlink:type="resource" xlink:label="generalVariable1"/>
-		<variable:variableArc name="identifierReference" order="3.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="formula1" xlink:to="generalVariable"/>
-		<variable:generalVariable id="generalVariable" bindAsSequence="false" select="$amount/../gl-cor:specified.identifierReference" xlink:type="resource" xlink:label="generalVariable"/>
-		<variable:variableFilterArc order="-1.0" use="optional" complement="false" cover="true" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="factVariable1" xlink:to="general12"/>
-		<variable:variableFilterArc order="1.0" complement="false" cover="true" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="factVariable1" xlink:to="conceptName2"/>
-		<cf:conceptName id="conceptName2" xlink:type="resource" xlink:label="conceptName2">
-			<cf:concept>
-				<cf:qname>gl-cor:amount</cf:qname>
-			</cf:concept>
-		</cf:conceptName>
-		<variable:variableArc name="amount" order="2.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="formula1" xlink:to="factVariable1"/>
-		<variable:factVariable id="factVariable1" bindAsSequence="false" xlink:type="resource" xlink:label="factVariable1"/>
-		<formula:formula id="formula1" aspectModel="dimensional" implicitFiltering="true" value="if ($measurableCost &gt; $amount) then
+		<!-- formula -->
+		<formula:formula id="formula_amount" aspectModel="dimensional" implicitFiltering="true" value="if ($measurableCost &gt; $amount) then
  concat(&apos;** COST OVERRUN ** &apos;,$identifier,&apos; &apos;,$measurable,&apos; &apos;,$unit,&apos; &apos;,$amount,&apos; Cost &apos;,$measurableCost,&apos;=&apos;,$measurableCostPerUnit,&apos;x&apos;,$measurableQuantity)
 else if ($measurableCost = $amount) then
   concat(&apos;** ZERO PROFIT ** &apos;,$identifier,&apos; &apos;,$measurable,&apos; &apos;,$unit,&apos; &apos;,$amount,&apos; Cost &apos;,$measurableCost,&apos;=&apos;,$measurableCostPerUnit,&apos;x&apos;,$measurableQuantity)
-else concat($identifier,&apos; &apos;,$measurable,&apos; &apos;,$unit,&apos; &apos;,$amount,&apos; Cost &apos;,$measurableCost,&apos;=&apos;,$measurableCostPerUnit,&apos;x&apos;,$measurableQuantity)" xlink:type="resource" xlink:label="formula1">
+else concat($identifier,&apos; &apos;,$measurable,&apos; &apos;,$unit,&apos; &apos;,$amount,&apos; Cost &apos;,$measurableCost,&apos;=&apos;,$measurableCostPerUnit,&apos;x&apos;,$measurableQuantity)" xlink:type="resource" xlink:label="formula_amount">
 			<formula:aspects>
 				<formula:period>
 					<formula:instant value="//xbrli:context[@id=&quot;now&quot;]/xbrli:period/xbrli:instant"/>
@@ -61,27 +27,79 @@ else concat($identifier,&apos; &apos;,$measurable,&apos; &apos;,$unit,&apos; &ap
 				</formula:concept>
 			</formula:aspects>
 		</formula:formula>
-		<!-- formula -->
 		<!-- variableArc -->
-		<!-- formula -->
-		<!-- variableArc -->
-		<!-- formula 
-		<formula:formula id="formula" aspectModel="dimensional" implicitFiltering="true" 
-value="if ($detail/gl-cor:specified.identifierReference[1] ne &apos;&apos;) then concat(&apos;specified.IdentifierReference:&apos;,$detail/gl-cor:specified.identifierReference[1],&apos; amount:&apos;,sum($detail/gl-cor:amount[1])) else null" source="formula:uncovered"
-xlink:type="resource" xlink:label="formula">
-			<formula:aspects>
-				<formula:entityIdentifier/>
-				<formula:period/>
-				<formula:concept>
-					<formula:qname>gl-cor:entriesComment</formula:qname>
-				</formula:concept>
-			</formula:aspects>
-		</formula:formula>
--->
-		<!-- variableArc -->
+		<variable:variableArc name="amount" order="2.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+		xlink:from="formula_amount" xlink:to="fV_amount"/>
 		<!-- factVariable -->
-		<!-- variableFilterArc -->
+		<variable:factVariable id="fV_amount" bindAsSequence="false" xlink:type="resource" xlink:label="fV_amount"/>
 		<!-- filter -->
-		<gf:general id="general12" test="following-sibling::gl-cor:specified.identifierReference[1] ne &apos;&apos;" xlink:type="resource" xlink:label="general12"/>
+		<variable:variableFilterArc order="-1.0" use="optional" complement="false" cover="true" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+		xlink:from="fV_amount" xlink:to="gF_amount"/>
+		<gf:general id="gF_amount" 
+		test="following-sibling::gl-cor:specified.identifierReference[1] ne &apos;&apos;" xlink:type="resource" xlink:label="gF_amount"/>
+		<variable:variableFilterArc order="1.0" complement="false" cover="true" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+		xlink:from="fV_amount" xlink:to="cN_amount"/>
+		<cf:conceptName id="cN_amount" xlink:type="resource" xlink:label="cN_amount">
+			<cf:concept>
+				<cf:qname>gl-cor:amount</cf:qname>
+			</cf:concept>
+		</cf:conceptName>
+		<!-- variableFilterArc -->
+		<!-- unit -->
+		<variable:variableArc name="unit" order="2.25" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+		xlink:from="formula_amount" xlink:to="gV_unit"/>
+		<variable:generalVariable id="gV_unit" bindAsSequence="false" 
+		select="//xbrli:unit[@id=$amount/@unitRef]/xbrli:measure" xlink:type="resource" xlink:label="gV_unit"/>
+		<!-- context -->
+		<variable:variableArc name="contextRef" order="2.5" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+		xlink:from="formula_amount" xlink:to="gV_contextRef"/>	
+		<variable:generalVariable id="gV_contextRef" bindAsSequence="false" 
+		select="$amount/@contextRef" xlink:type="resource" xlink:label="gV_contextRef"/>
+		<!-- identifier -->
+		<variable:variableArc name="identifierReference" order="3.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+		xlink:from="formula_amount" xlink:to="gV_identifierReference"/>
+		<variable:generalVariable id="gV_identifierReference" bindAsSequence="false" 
+		select="$amount/../gl-cor:specified.identifierReference" xlink:type="resource" xlink:label="gV_identifierReference"/>
+		<variable:variableArc name="identifier" order="3.375" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+		xlink:from="formula_amount" xlink:to="gV_identifier"/>
+		<variable:generalVariable id="gV_identifier" bindAsSequence="false" 
+		select="concat($identifierDescription,&apos;(&apos;,$identifierCode,&apos;)&apos;)" xlink:type="resource" xlink:label="gV_identifier"/>
+		<variable:variableArc name="identifierCode" order="4.125" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+		xlink:from="formula_amount" xlink:to="gV_identifierCode"/>
+		<variable:generalVariable id="gV_identifierCode" bindAsSequence="false" 
+		select="//gl-cor:identifierCode[@contextRef=$identifierReference]" xlink:type="resource" xlink:label="gV_identifierCode"/>
+		<variable:variableArc name="identifierDescription" order="3.75" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+		xlink:from="formula_amount" xlink:to="gV_identifierDescription"/>
+		<variable:generalVariable id="gV_identifierDescription" bindAsSequence="false" 
+		select="//gl-cor:identifierDescription[@contextRef=$identifierReference]" xlink:type="resource" xlink:label="gV_identifierDescription"/>
+		<!-- measurable -->
+		<variable:variableArc name="measurableRef" order="2.75" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+		xlink:from="formula_amount" xlink:to="gV_measurableRef"/>
+		<variable:generalVariable id="gV_measurableRef" bindAsSequence="false" 
+		select="$amount/../gl-bus:specified.measurable" xlink:type="resource" xlink:label="gV_measurableRef"/>
+		<variable:variableArc name="measurable" order="6.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+		xlink:from="formula_amount" xlink:to="gV_measurable"/>
+		<variable:generalVariable id="gV_measurable" bindAsSequence="false" 
+		select="concat($measurableDescription,&apos;(&apos;,$measurableID,&apos;)&apos;)" xlink:type="resource" xlink:label="gV_measurable"/>		
+		<variable:variableArc name="measurableDescription" order="4.40625" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+		xlink:from="formula_amount" xlink:to="gV_measurableDescription"/>
+		<variable:generalVariable id="gV_measurableDescription" bindAsSequence="false" 
+		select="//gl-bus:measurableDescription[@contextRef=$measurableRef]" xlink:type="resource" xlink:label="gV_measurableDescription"/>
+		<variable:variableArc name="measurableID" order="4.453125" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+		xlink:from="formula_amount" xlink:to="gV_measurableID"/>
+		<variable:generalVariable id="gV_measurableID" bindAsSequence="false" 
+		select="//gl-bus:measurableID[@contextRef=$measurableRef]" xlink:type="resource" xlink:label="gV_measurableID"/>
+		<variable:variableArc name="measurableCost" order="4.3125" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+		xlink:from="formula_amount" xlink:to="gV_measurableCost"/>
+		<variable:generalVariable id="gV_measurableCost" bindAsSequence="false" 
+		select="$measurableCostPerUnit * $measurableQuantity" xlink:type="resource" xlink:label="gV_measurableCost"/>
+		<variable:variableArc name="measurableQuantity" order="4.5" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+		xlink:from="formula_amount" xlink:to="gV_measurableQuantity"/>
+		<variable:generalVariable id="gV_measurableQuantity" bindAsSequence="false" 
+		select="//gl-bus:measurableQuantity[@contextRef=$contextRef]" xlink:type="resource" xlink:label="gV_measurableQuantity"/>
+		<variable:variableArc name="measurableCostPerUnit" order="5.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+		xlink:from="formula_amount" xlink:to="gV_measurableCostPerUnit"/>
+		<variable:generalVariable id="gV_measurableCostPerUnit" bindAsSequence="false" 
+		select="//gl-bus:measurableCostPerUnit[@contextRef=$measurableRef]" xlink:type="resource" xlink:label="gV_measurableCostPerUnit"/>
 	</gen:link>
 </link:linkbase>
