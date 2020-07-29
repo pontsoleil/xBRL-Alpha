@@ -521,27 +521,27 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 gl-plt-all-2020-12
 		<gl-bus:measurableID contextRef="IN_Gidget3">Gidget3</gl-bus:measurableID>
 		<gl-bus:measurableDescription contextRef="IN_Gidget3">Sally Field of Dreams Edition</gl-bus:measurableDescription>
 		<gl-bus:measurableUnitOfMeasure contextRef="IN_Gidget3">Each</gl-bus:measurableUnitOfMeasure>
-		<gl-bus:measurableCostPerUnit contextRef="IN_Gidget3" decimals="2" unitRef="usd">20</gl-bus:measurableCostPerUnit>
+		<gl-bus:measurableCostPerUnit contextRef="IN_Gidget3" decimals="2" unitRef="usd">2</gl-bus:measurableCostPerUnit>
 	</gl-bus:measurable.Detail>
 	<gl-bus:measurable.Detail>
 		<gl-bus:measurableCode contextRef="IN_4576">IN</gl-bus:measurableCode>
 		<gl-bus:measurableID contextRef="IN_4576">4576</gl-bus:measurableID>
 		<gl-bus:measurableDescription contextRef="IN_4576">Self Adjusting Paper Clips</gl-bus:measurableDescription>
 		<gl-bus:measurableUnitOfMeasure contextRef="IN_4576">Each</gl-bus:measurableUnitOfMeasure>
-		<gl-bus:measurableCostPerUnit contextRef="IN_4576" decimals="2" unitRef="usd">27</gl-bus:measurableCostPerUnit>
+		<gl-bus:measurableCostPerUnit contextRef="IN_4576" decimals="2" unitRef="usd">220</gl-bus:measurableCostPerUnit>
 	</gl-bus:measurable.Detail>
 	<gl-bus:measurable.Detail>
 		<gl-bus:measurableCode contextRef="IN_4800">IN</gl-bus:measurableCode>
 		<gl-bus:measurableID contextRef="IN_4800">4800</gl-bus:measurableID>
 		<gl-bus:measurableDescription contextRef="IN_4800">Self Expanding Paper Sheets</gl-bus:measurableDescription>
 		<gl-bus:measurableUnitOfMeasure contextRef="IN_4800">Each</gl-bus:measurableUnitOfMeasure>
-		<gl-bus:measurableCostPerUnit contextRef="IN_4800" decimals="2" unitRef="usd">15</gl-bus:measurableCostPerUnit>
+		<gl-bus:measurableCostPerUnit contextRef="IN_4800" decimals="2" unitRef="usd">120</gl-bus:measurableCostPerUnit>
 	</gl-bus:measurable.Detail>
 	<gl-bus:measurable.Detail>
 		<gl-bus:measurableCode contextRef="IN_120">IN</gl-bus:measurableCode>
 		<gl-bus:measurableID contextRef="IN_120">120</gl-bus:measurableID>
 		<gl-bus:measurableDescription contextRef="IN_120">Waste Basket</gl-bus:measurableDescription>
 		<gl-bus:measurableUnitOfMeasure contextRef="IN_120">Each</gl-bus:measurableUnitOfMeasure>
-		<gl-bus:measurableCostPerUnit contextRef="IN_120" decimals="2" unitRef="usd">10</gl-bus:measurableCostPerUnit>
+		<gl-bus:measurableCostPerUnit contextRef="IN_120" decimals="2" unitRef="usd">45</gl-bus:measurableCostPerUnit>
 	</gl-bus:measurable.Detail>
 </xbrli:xbrl>
