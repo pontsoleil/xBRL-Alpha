@@ -1,0 +1,16 @@
+{
+	"vAamount": {
+		"satisfied": 2,
+		"satisfied-messages": [
+			"H51L2 Fitzsimmons Office Supplies(1412) Self Expanding Paper Sheets(4800) iso4217:USD 1500/(1 + 0) > 1440 (= 120x12)",
+			"H51L1 Fitzsimmons Office Supplies(1412) Self Adjusting Paper Clips(4576) iso4217:USD 54000/(1 + 0) > 5280 (= 220x24)"
+		],
+		"severity": "error",
+		"unsatisfied": 3,
+		"unsatisfied-messages": [
+			"** COST OVERRUN ** H50L1 Rettaler Property Ltd(1130) Red Widger(Widget1) iso4217:USD 500/(1 + 0) <= 500 (= 5x100)",
+			"** COST OVERRUN ** H50L2 Rettaler Property Ltd(1130) Sally Field of Dreams Edition(Gidget3) iso4217:USD 300/(1 + 0) <= 400 (= 2x200)",
+			"** COST OVERRUN ** H51L3 Fitzsimmons Office Supplies(1412) Waste Basket(120) iso4217:USD 500/(1 + 0) <= 540 (= 45x12)"
+		]
+	}
+}

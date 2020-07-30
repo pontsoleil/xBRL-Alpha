@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- (c) XBRL International.  See http://www.xbrl.org/legal -->
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:gl-gen="http://www.xbrl.org/int/gl/gen/2020-12-31" xmlns:gl-cor="http://www.xbrl.org/int/gl/cor/2020-12-31" xmlns:gl-bus="http://www.xbrl.org/int/gl/bus/2020-12-31" targetNamespace="http://www.xbrl.org/int/gl/bus/2020-12-31" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:ref="http://www.xbrl.org/2004/ref" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:gen="http://xbrl.org/2008/generic" xmlns:label="http://xbrl.org/2008/label" xmlns:variable="http://xbrl.org/2008/variable" xmlns:formula="http://xbrl.org/2008/formula" xmlns:table="http://xbrl.org/2014/table" xmlns:gl-gen="http://www.xbrl.org/int/gl/gen/2020-12-31" xmlns:gl-cor="http://www.xbrl.org/int/gl/cor/2020-12-31" xmlns:gl-bus="http://www.xbrl.org/int/gl/bus/2020-12-31" targetNamespace="http://www.xbrl.org/int/gl/bus/2020-12-31" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+	<import namespace="http://www.xbrl.org/2004/ref" schemaLocation="http://www.xbrl.org/2004/ref-2004-08-10.xsd"/>
+	<import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
 	<import namespace="http://www.xbrl.org/int/gl/gen/2020-12-31" schemaLocation="../gen/gl-gen-2020-12-31.xsd"/>
 	<!--	<import namespace="http://www.xbrl.org/int/gl/cor/2020-12-31" schemaLocation="../cor/gl-cor-2020-12-31.xsd"/>
 -->
@@ -10,6 +12,26 @@
 			<link:linkbaseRef xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="gl-bus-2020-12-31-presentation.xml" xlink:title="Presentation Links, all" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef"/>
 		</appinfo>
 	</annotation>
+		<!-- Domain -->
+	<element name="Account" id="gl-bus_Account">
+		<simpleType>
+			<restriction base="string"/>
+		</simpleType>
+	</element>
+	<element name="IdentifierReference" id="gl-bus_IdentifierReference">
+		<simpleType>
+			<restriction base="string"/>
+		</simpleType>
+	</element>
+	<element name="Measurable" id="gl-bus_Measurable">
+		<simpleType>
+			<restriction base="string"/>
+		</simpleType>
+	</element>
+	<!-- Dimension -->
+	<element name="dAccount" id="gl-bus_dAccount" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#gl-bus_Account"/>
+	<element name="dIdentifierReference" id="gl-bus_dIdentifierReference" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#gl-bus_IdentifierReference"/>
+	<element name="dMeasurable" id="gl-bus_dMeasurable" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#gl-bus_Measurable"/>
 	<!-- 
 	item type 
 -->

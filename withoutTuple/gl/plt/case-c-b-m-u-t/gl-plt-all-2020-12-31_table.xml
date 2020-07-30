@@ -16,9 +16,9 @@
 			<table:arcrole>http://www.xbrl.org/2003/arcrole/parent-child</table:arcrole>
 			<table:formulaAxis>descendant-or-self</table:formulaAxis>
 		</table:conceptRelationshipNode>
-		<table:tableBreakdownArc order="2.0" axis="x" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/table-breakdown" xlink:from="table" xlink:to="breakdown3"/>
+		<table:tableBreakdownArc axis="x" order="2.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/table-breakdown" xlink:from="table" xlink:to="breakdown3"/>
 		<table:breakdown id="breakdown3" xlink:type="resource" xlink:label="breakdown3"/>
-		<table:tableBreakdownArc order="1.0" axis="y" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/table-breakdown" xlink:from="table" xlink:to="breakdown1"/>
+		<table:tableBreakdownArc axis="y" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/table-breakdown" xlink:from="table" xlink:to="breakdown1"/>
 		<table:breakdown id="breakdown1" xlink:type="resource" xlink:label="breakdown1"/>
 		<gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="table" xlink:to="label3"/>
 		<label:label id="label3" xlink:type="resource" xlink:role="http://www.xbrl.org/2008/role/label" xlink:label="label3" xml:lang="en">entryDetail</label:label>
@@ -27,7 +27,7 @@
 		<table:aspectNode id="aspectNode" xlink:type="resource" xlink:label="aspectNode">
 			<table:dimensionAspect>gl-cor:dEntryNumber</table:dimensionAspect>
 		</table:aspectNode>
-		<table:tableBreakdownArc order="2.0" axis="x" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/table-breakdown" xlink:from="table2" xlink:to="breakdown"/>
+		<table:tableBreakdownArc axis="x" order="2.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/table-breakdown" xlink:from="table2" xlink:to="breakdown"/>
 		<table:breakdown id="breakdown" xlink:type="resource" xlink:label="breakdown"/>
 		<gen:arc order="3.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="table2" xlink:to="label2"/>
 		<label:label id="label2" xlink:type="resource" xlink:role="http://www.xbrl.org/2008/role/label" xlink:label="label2" xml:lang="en">entryHeader</label:label>
@@ -37,7 +37,7 @@
 			<table:arcrole>http://www.xbrl.org/2003/arcrole/parent-child</table:arcrole>
 			<table:formulaAxis>descendant-or-self</table:formulaAxis>
 		</table:conceptRelationshipNode>
-		<table:tableBreakdownArc order="1.0" axis="y" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/table-breakdown" xlink:from="table2" xlink:to="breakdown2"/>
+		<table:tableBreakdownArc axis="y" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/table-breakdown" xlink:from="table2" xlink:to="breakdown2"/>
 		<table:breakdown id="breakdown2" xlink:type="resource" xlink:label="breakdown2"/>
 		<table:table id="table2" xlink:type="resource" xlink:label="table2"/>
 		<!-- table -->

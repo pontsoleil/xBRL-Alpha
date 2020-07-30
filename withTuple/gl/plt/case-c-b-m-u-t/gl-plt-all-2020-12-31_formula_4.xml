@@ -23,11 +23,10 @@
 				</formula:concept>
 			</formula:aspects>
 		</formula:formula>
-		<!-- variableArc -->
+		<!-- variableArc factVariable -->
 		<variable:variableArc name="amount" order="2.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="formula_amount" xlink:to="fV_amount"/>
-		<!-- factVariable -->
 		<variable:factVariable id="fV_amount" bindAsSequence="false" xlink:type="resource" xlink:label="fV_amount"/>
-		<!-- filter -->
+		<!-- variableFilterArc filter -->
 		<variable:variableFilterArc complement="false" cover="true" order="-1.0" use="optional" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="fV_amount" xlink:to="gF_amount"/>
 		<gf:general id="gF_amount" test="following-sibling::gl-cor:specified.identifierReference[1] ne &apos;&apos;" xlink:type="resource" xlink:label="gF_amount"/>
 		<variable:variableFilterArc complement="false" cover="true" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" xlink:from="fV_amount" xlink:to="cN_amount"/>
@@ -36,7 +35,7 @@
 				<cf:qname>gl-cor:amount</cf:qname>
 			</cf:concept>
 		</cf:conceptName>
-		<!-- variableFilterArc -->
+		<!-- variableArc generalVariable -->
 		<!-- unit -->
 		<variable:variableArc name="unit" order="2.25" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="formula_amount" xlink:to="gV_unit"/>
 		<variable:generalVariable id="gV_unit" bindAsSequence="false" select="//xbrli:unit[@id=$amount/@unitRef]/xbrli:measure" xlink:type="resource" xlink:label="gV_unit"/>
