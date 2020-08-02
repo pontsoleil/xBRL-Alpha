@@ -54,7 +54,7 @@
 		<variable:generalVariable id="gVidentifierDescription" bindAsSequence="true" select="//gl-cor:identifierDescription[@contextRef=$identifierReference]" xlink:type="resource" xlink:label="gVidentifierDescription"/>
 		<!-- measurable -->
 		<variable:variableArc name="measurableRef" order="9.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="vAamount" xlink:to="gVmeasurableRef"/>
-		<variable:generalVariable id="gVmeasurableRef" bindAsSequence="true" select="$amount/../gl-bus:specified.measurable" xlink:type="resource" xlink:label="gVmeasurableRef"/>
+		<variable:generalVariable id="gVmeasurableRef" bindAsSequence="true" select="//gl-bus:specified.measurable[@contextRef=$contextRef]" xlink:type="resource" xlink:label="gVmeasurableRef"/>
 		<variable:variableArc name="measurable" order="10.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="vAamount" xlink:to="gVmeasurable"/>
 		<variable:generalVariable id="gVmeasurable" bindAsSequence="true" select="concat($measurableDescription,&apos;(&apos;,$measurableID,&apos;)&apos;)" xlink:type="resource" xlink:label="gVmeasurable"/>
 		<variable:variableArc name="measurableDescription" order="11.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" xlink:from="vAamount" xlink:to="gVmeasurableDescription"/>

@@ -6,31 +6,34 @@
 	<link:roleRef roleURI="http://www.xbrl.org/2008/role/label" xlink:type="simple" xlink:href="http://www.xbrl.org/2008/generic-label.xsd#standard-label"/>
 	<link:roleRef roleURI="http://www.xbrl.org/2008/role/link" xlink:type="simple" xlink:href="http://www.xbrl.org/2008/generic-link.xsd#standard-link-role"/>
 	<gen:link xlink:type="extended" xlink:role="http://www.xbrl.org/2008/role/link">
+		<table:breakdownTreeArc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/breakdown-tree" xlink:from="breakdown1" xlink:to="aspectNode"/>
+		<table:aspectNode id="aspectNode" xlink:type="resource" xlink:label="aspectNode">
+			<table:entityIdentifierAspect/>
+		</table:aspectNode>
 		<!-- table -->
 		<table:table id="table" xlink:type="resource" xlink:label="table"/>
 		<table:table id="table1" xlink:type="resource" xlink:label="table1"/>
 		<!-- table label -->
 		<gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="table" xlink:to="label"/>
-		<label:label id="label" xlink:type="resource" xlink:role="http://www.xbrl.org/2008/role/label" xlink:label="label" xml:lang="en">Trial Balance</label:label>
+		<label:label id="label" xlink:type="resource" xlink:role="http://www.xbrl.org/2008/role/label" xlink:label="label" xml:lang="en">Trial Balance entryDetail</label:label>
 		<gen:arc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="table1" xlink:to="label1"/>
 		<label:label id="label1" xlink:type="resource" xlink:role="http://www.xbrl.org/2008/role/label" xlink:label="label1" xml:lang="en">gl-plt</label:label>
 		<!-- tableBreakdownArc -->
-		<table:tableBreakdownArc order="1.0" axis="y" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/table-breakdown" xlink:from="table" xlink:to="breakdown"/>
-		<table:tableBreakdownArc order="0.0" axis="x" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/table-breakdown" xlink:from="table" xlink:to="breakdown1"/>
-		<table:tableBreakdownArc order="1.0" axis="y" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/table-breakdown" xlink:from="table1" xlink:to="breakdown"/>
+		<table:tableBreakdownArc axis="y" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/table-breakdown" xlink:from="table" xlink:to="breakdown"/>
+		<table:tableBreakdownArc axis="x" order="0.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/table-breakdown" xlink:from="table" xlink:to="breakdown1"/>
+		<table:tableBreakdownArc axis="y" order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/table-breakdown" xlink:from="table1" xlink:to="breakdown"/>
 		<!-- breakdown -->
 		<table:breakdown id="breakdown" xlink:type="resource" xlink:label="breakdown"/>
 		<table:breakdown id="breakdown1" xlink:type="resource" xlink:label="breakdown1"/>
 		<!-- breakdownTreeArc -->
 		<table:breakdownTreeArc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/breakdown-tree" xlink:from="breakdown" xlink:to="conceptRelationshipNode"/>
 		<table:conceptRelationshipNode id="conceptRelationshipNode" xlink:type="resource" xlink:label="conceptRelationshipNode">
-			<table:relationshipSource>gl-cor:entryHeader</table:relationshipSource>
+			<table:relationshipSource>gl-cor:entryDetail</table:relationshipSource>
 			<table:linkrole>http://www.xbrl.org/2003/role/link</table:linkrole>
 			<table:arcrole>http://www.xbrl.org/2003/arcrole/parent-child</table:arcrole>
 			<table:formulaAxis>descendant-or-self</table:formulaAxis>
 			<table:generations>12</table:generations>
 		</table:conceptRelationshipNode>
-		<table:breakdownTreeArc order="1.0" xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2014/breakdown-tree" xlink:from="breakdown1" xlink:to="rn_EntryNumber"/>
-		<table:ruleNode id="rn_EntryNumber" tagSelector="gl-cor_LineNumber" xlink:type="resource" xlink:label="rn_EntryNumber"/>
+		<table:ruleNode id="rn_EntryNumber" xlink:type="resource" xlink:label="rn_EntryNumber"/>
 	</gen:link>
 </link:linkbase>
