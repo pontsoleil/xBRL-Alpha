@@ -6,14 +6,23 @@
 	<include schemaLocation="../../cor/gl-cor-2020-12-31.xsd"/>
 	<!-- Hypercube -->
 	<element name="Hypercube" id="Hypercube" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" abstract="true" xbrli:periodType="instant"/>
-	<!--	<element name="Dimension" id="Dimension" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="instant"/>
-	<element name="Member" id="Member" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="instant"/>-->
 	<!-- Domain -->
-	<element name="AccountingEntries" id="gl-cor_AccountingEntries" type="gl-cor:accountingEntriesComplexType" />
+	<element name="EntryNumber" id="gl-cor_EntryNumber">
+		<simpleType>
+			<restriction base="string"/>
+		</simpleType>
+	</element>
+	<element name="dEntryNumber" id="gl-cor_dEntryNumber" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#gl-cor_EntryNumber"/>
+	<element name="LineNumber" id="gl-cor_LineNumber">
+		<simpleType>
+			<restriction base="string"/>
+		</simpleType>
+	</element>
+	<element name="AccountingEntries" id="gl-cor_AccountingEntries" type="gl-cor:accountingEntriesComplexType"/>
 	<element name="dAccountingEntries" id="gl-cor_dAccountingEntries" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#gl-cor_AccountingEntries"/>
-	<element name="DocumentInfo" id="gl-cor_DocumentInfo" type="gl-cor:documentInfoComplexType" />
+	<element name="DocumentInfo" id="gl-cor_DocumentInfo" type="gl-cor:documentInfoComplexType"/>
 	<element name="dDocumentInfo" id="gl-cor_dDocumentInfo" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#gl-cor_DocumentInfo"/>
-	<element name="EntityInformation" id="gl-cor_EntityInformation" type="gl-cor:entityInformationComplexType" />
+	<element name="EntityInformation" id="gl-cor_EntityInformation" type="gl-cor:entityInformationComplexType"/>
 	<element name="dEntityInformation" id="gl-cor_dEntityInformation" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#gl-cor_EntityInformation"/>
 	<element name="EntryHeader" id="gl-cor_EntryHeader" type="gl-cor:entryHeaderComplexType"/>
 	<element name="dEntryHeader" id="gl-cor_dEntryHeader" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#gl-cor_EntryHeader"/>

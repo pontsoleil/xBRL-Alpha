@@ -5,14 +5,12 @@
 	<import namespace="http://www.xbrl.org/2004/ref" schemaLocation="http://www.xbrl.org/2004/ref-2004-08-10.xsd"/>
 	<import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
 	<import namespace="http://www.xbrl.org/int/gl/gen/2020-12-31" schemaLocation="../gen/gl-gen-2020-12-31.xsd"/>
-	<!--	<import namespace="http://www.xbrl.org/int/gl/cor/2020-12-31" schemaLocation="../cor/gl-cor-2020-12-31.xsd"/>
--->
 	<annotation>
 		<appinfo>
 			<link:linkbaseRef xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="gl-bus-2020-12-31-presentation.xml" xlink:title="Presentation Links, all" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef"/>
 		</appinfo>
 	</annotation>
-		<!-- Domain -->
+	<!-- Domain -->
 	<element name="Account" id="gl-bus_Account">
 		<simpleType>
 			<restriction base="string"/>

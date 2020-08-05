@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- (c) XBRL International.  See http://www.xbrl.org/legal -->
 <schema targetNamespace="http://www.xbrl.org/int/gl/cor/2020-12-31" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xbrll="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:gl-gen="http://www.xbrl.org/int/gl/gen/2020-12-31" xmlns:gl-cor="http://www.xbrl.org/int/gl/cor/2020-12-31">
-	<!--		<annotation>
-		<appinfo>
-		<xbrll:linkbaseRef xlink:type="simple" xlink:href="gl-cor-2020-12-31-presentation.xml" xlink:title="Presentation Links, all" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
-		</appinfo>
-	</annotation>-->
 	<import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
 	<import namespace="http://www.xbrl.org/int/gl/gen/2020-12-31" schemaLocation="../gen/gl-gen-2020-12-31.xsd"/>
 	<!-- item type -->
@@ -366,104 +361,104 @@
 		</simpleContent>
 	</complexType>
 	<!-- item -->
-	<element name="accountMainDescription" id="gl-cor_accountMainDescription" type="gl-cor:accountMainDescriptionItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="accountMainID" id="gl-cor_accountMainID" type="gl-cor:accountMainIDItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="accountPurposeCode" id="gl-cor_accountPurposeCode" type="gl-gen:accountPurposeCodeItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="accountPurposeDescription" id="gl-cor_accountPurposeDescription" type="gl-cor:accountPurposeDescriptionItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="accountActive" id="gl-cor_accountActive" type="gl-gen:activeItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="accountSubDescription" id="gl-cor_accountSubDescription" type="gl-cor:accountSubDescriptionItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="accountSubID" id="gl-cor_accountSubID" type="gl-cor:accountSubIDItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="accountSubType" id="gl-cor_accountSubType" type="gl-cor:accountSubTypeItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="accountType" id="gl-cor_accountType" type="gl-gen:accountTypeItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="amount" id="gl-cor_amount" type="gl-gen:amountItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="bookTaxDifference" id="gl-cor_bookTaxDifference" type="gl-gen:bookTaxDifferenceItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="confirmedDate" id="gl-cor_confirmedDate" type="gl-cor:confirmedDateItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="creationDate" id="gl-cor_creationDate" type="gl-cor:creationDateItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="dateAcknowledged" id="gl-cor_dateAcknowledged" type="gl-cor:dateAcknowledgedItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="debitCreditCode" id="gl-cor_debitCreditCode" type="gl-gen:debitCreditCodeItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="detailComment" id="gl-cor_detailComment" type="gl-cor:detailCommentItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="documentApplyToNumber" id="gl-cor_documentApplyToNumber" type="gl-cor:documentApplyToNumberItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="documentDate" id="gl-cor_documentDate" type="gl-cor:documentDateItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="documentNumber" id="gl-cor_documentNumber" type="gl-cor:documentNumberItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="invoiceType" id="gl-cor_invoiceType" type="gl-gen:invoiceTypeItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="documentReference" id="gl-cor_documentReference" type="gl-cor:documentReferenceItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="documentType" id="gl-cor_documentType" type="gl-gen:documentTypeItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="enteredBy" id="gl-cor_enteredBy" type="gl-cor:enteredByItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="enteredDate" id="gl-cor_enteredDate" type="gl-cor:enteredDateItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="entriesComment" id="gl-cor_entriesComment" type="gl-cor:entriesCommentItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="entriesType" id="gl-cor_entriesType" type="gl-gen:entriesTypeItemType" nillable="false" xbrli:periodType="instant"/>
-	<element name="entryComment" id="gl-cor_entryComment" type="gl-cor:entryCommentItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="entryNumberCounter" id="gl-cor_entryNumberCounter" type="gl-cor:counterItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="entryNumber" id="gl-cor_entryNumber" type="gl-cor:entryNumberItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="lineNumberCounter" id="gl-cor_lineNumberCounter" type="gl-cor:counterItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="entryType" id="gl-cor_entryType" type="gl-gen:entryTypeItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="identifierCategory" id="gl-cor_identifierCategory" type="gl-cor:identifierCategoryItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="identifierCode" id="gl-cor_identifierCode" type="gl-cor:identifierCodeItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="identifierDescription" id="gl-cor_identifierDescription" type="gl-cor:identifierDescriptionItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="identifierActive" id="gl-cor_identifierActive" type="gl-gen:activeItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="identifierEmailAddress" id="gl-cor_identifierEmailAddress" type="gl-gen:emailAddressItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="identifierEmailAddressUsage" id="gl-cor_identifierEmailAddressUsage" type="gl-gen:emailAddressUsageItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="identifierPhone" id="gl-cor_identifierPhone" type="gl-gen:phoneNumberItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="identifierPhoneNumberDescription" id="gl-cor_identifierPhoneNumberDescription" type="gl-gen:phoneNumberDescriptionItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="identifierFax" id="gl-cor_identifierFax" type="gl-gen:faxNumberItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="identifierFaxNumberUsage" id="gl-cor_identifierFaxNumberUsage" type="gl-gen:faxNumberUsageItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="identifierAuthorityCode" id="gl-cor_identifierAuthorityCode" type="gl-cor:identifierAuthorityCodeItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="identifierAuthority" id="gl-cor_identifierAuthority" type="gl-cor:identifierAuthorityItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="identifierAuthorityVerificationDate" id="gl-cor_identifierAuthorityVerificationDate" type="gl-cor:identifierAuthorityVerificationDateItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="identifierType" id="gl-cor_identifierType" type="gl-gen:identifierTypeItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="language" id="gl-cor_language" type="gl-cor:languageItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="lineNumber" id="gl-cor_lineNumber" type="gl-cor:lineNumberItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="mainAccountType" id="gl-cor_mainAccountType" type="gl-gen:mainAccountTypeItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="maturityDate" id="gl-cor_maturityDate" type="gl-cor:maturityDateItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="parentAccountMainID" id="gl-cor_parentAccountMainID" type="gl-cor:parentAccountMainIDItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="parentSubaccountCode" id="gl-cor_parentSubaccountCode" type="gl-cor:parentSubaccountCodeItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="parentSubaccountProportion" id="gl-cor_parentSubaccountProportion" type="gl-cor:parentSubaccountProportionItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="parentSubaccountType" id="gl-cor_parentSubaccountType" type="gl-cor:parentSubaccountTypeItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="periodCoveredStart" id="gl-cor_periodCoveredStart" type="gl-cor:periodCoveredStartItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="periodCoveredEnd" id="gl-cor_periodCoveredEnd" type="gl-cor:periodCoveredEndItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="postedDate" id="gl-cor_postedDate" type="gl-cor:postedDateItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="postingDate" id="gl-cor_postingDate" type="gl-cor:postingDateItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="postingStatus" id="gl-cor_postingStatus" type="gl-gen:postingStatusItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="qualifierEntry" id="gl-cor_qualifierEntry" type="gl-gen:qualifierEntryItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="reportingTreeIdentifier" id="gl-cor_reportingTreeIdentifier" type="gl-cor:reportingTreeIdentifierItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="revisesUniqueID" id="gl-cor_revisesUniqueID" type="gl-cor:revisesUniqueIDItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="revisesUniqueIDAction" id="gl-cor_revisesUniqueIDAction" type="gl-gen:revisesUniqueIDActionItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="shipReceivedDate" id="gl-cor_shipReceivedDate" type="gl-cor:shipReceivedDateItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="signOfAmount" id="gl-cor_signOfAmount" type="gl-gen:signOfAmountItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="taxAuthority" id="gl-cor_taxAuthority" type="gl-cor:taxAuthorityItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="taxTableCode" id="gl-cor_taxTableCode" type="gl-cor:taxTableCodeItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="taxAmount" id="gl-cor_taxAmount" type="gl-cor:taxAmountItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="taxBasis" id="gl-cor_taxBasis" type="gl-cor:taxBasisItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="taxCode" id="gl-cor_taxCode" type="gl-cor:taxCodeItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="taxCommentExemption" id="gl-cor_taxCommentExemption" type="gl-cor:taxCommentExemptionItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="taxDescription" id="gl-cor_taxDescription" type="gl-cor:taxDescriptionItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="sourceJournalID" id="gl-cor_sourceJournalID" type="gl-gen:sourceJournalIDItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="taxExchangeRate" id="gl-cor_taxExchangeRate" type="gl-cor:taxExchangeRateItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="taxPercentageRate" id="gl-cor_taxPercentageRate" type="gl-cor:taxPercentageRateItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="uniqueID" id="gl-cor_uniqueID" type="gl-cor:uniqueIDItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="xbrlInclude" id="gl-cor_xbrlInclude" type="gl-gen:xbrlIncludeItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="summaryReportingElement" id="gl-cor_summaryReportingElement" type="gl-cor:summaryReportingElementItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="detailMatchingElement" id="gl-cor_detailMatchingElement" type="gl-cor:detailMatchingElementItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="terms" id="gl-cor_terms" type="gl-cor:termsItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="shipFrom" id="gl-cor_shipFrom" type="gl-cor:shipFromItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="identifierContactPrefix" id="gl-cor_identifierContactPrefix" type="gl-cor:identifierContactPrefixItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="identifierContactFirstName" id="gl-cor_identifierContactFirstName" type="gl-cor:identifierContactFirstNameItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="identifierContactSuffix" id="gl-cor_identifierContactSuffix" type="gl-cor:identifierContactSuffixItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="identifierContactAttentionLine" id="gl-cor_identifierContactAttentionLine" type="gl-cor:identifierContactAttentionLineItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="identifierContactPositionRole" id="gl-cor_identifierContactPositionRole" type="gl-cor:identifierContactPositionRoleItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="identifierContactPhoneNumber" id="gl-cor_identifierContactPhoneNumber" type="gl-gen:phoneNumberItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="identifierContactPhoneNumberDescription" id="gl-cor_identifierContactPhoneNumberDescription" type="gl-gen:phoneNumberDescriptionItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="identifierContactFaxNumber" id="gl-cor_identifierContactFaxNumber" type="gl-gen:faxNumberItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="identifierContactFaxNumberUsage" id="gl-cor_identifierContactFaxNumberUsage" type="gl-gen:faxNumberUsageItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="identifierContactEmailAddress" id="gl-cor_identifierContactEmailAddress" type="gl-gen:emailAddressItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="identifierContactEmailAddressUsage" id="gl-cor_identifierContactEmailAddressUsage" type="gl-gen:emailAddressUsageItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="identifierContactType" id="gl-cor_identifierContactType" type="gl-cor:identifierContactTypeItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="identifierContactLastName" id="gl-cor_identifierContactLastName" type="gl-cor:identifierContactLastNameItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="identifierOrganizationType" id="gl-cor_identifierOrganizationType" type="gl-gen:identifierOrganizationTypeItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="documentTypeDescription" id="gl-cor_documentTypeDescription" type="gl-cor:documentTypeDescriptionItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="mainAccountTypeDescription" id="gl-cor_mainAccountTypeDescription" type="gl-cor:mainAccountTypeDescriptionItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="postingStatusDescription" id="gl-cor_postingStatusDescription" type="gl-cor:postingStatusDescriptionItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="qualifierEntryDescription" id="gl-cor_qualifierEntryDescription" type="gl-cor:qualifierEntryDescriptionItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="accountTypeDescription" id="gl-cor_accountTypeDescription" type="gl-cor:accountTypeDescriptionItemType" nillable="true" xbrli:periodType="instant"/>
-	<element name="identifierOrganizationTypeDescription" id="gl-cor_identifierOrganizationTypeDescription" type="gl-cor:identifierOrganizationTypeDescriptionItemType" nillable="true" xbrli:periodType="instant"/>
+	<element name="accountMainDescription" id="gl-cor_accountMainDescription" type="gl-cor:accountMainDescriptionItemType" nillable="true"/>
+	<element name="accountMainID" id="gl-cor_accountMainID" type="gl-cor:accountMainIDItemType" nillable="true"/>
+	<element name="accountPurposeCode" id="gl-cor_accountPurposeCode" type="gl-gen:accountPurposeCodeItemType" nillable="true"/>
+	<element name="accountPurposeDescription" id="gl-cor_accountPurposeDescription" type="gl-cor:accountPurposeDescriptionItemType" nillable="true"/>
+	<element name="accountActive" id="gl-cor_accountActive" type="gl-gen:activeItemType" nillable="true"/>
+	<element name="accountSubDescription" id="gl-cor_accountSubDescription" type="gl-cor:accountSubDescriptionItemType" nillable="true"/>
+	<element name="accountSubID" id="gl-cor_accountSubID" type="gl-cor:accountSubIDItemType" nillable="true"/>
+	<element name="accountSubType" id="gl-cor_accountSubType" type="gl-cor:accountSubTypeItemType" nillable="true"/>
+	<element name="accountType" id="gl-cor_accountType" type="gl-gen:accountTypeItemType" nillable="true"/>
+	<element name="amount" id="gl-cor_amount" type="gl-gen:amountItemType" nillable="true"/>
+	<element name="bookTaxDifference" id="gl-cor_bookTaxDifference" type="gl-gen:bookTaxDifferenceItemType" nillable="true"/>
+	<element name="confirmedDate" id="gl-cor_confirmedDate" type="gl-cor:confirmedDateItemType" nillable="true"/>
+	<element name="creationDate" id="gl-cor_creationDate" type="gl-cor:creationDateItemType" nillable="true"/>
+	<element name="dateAcknowledged" id="gl-cor_dateAcknowledged" type="gl-cor:dateAcknowledgedItemType" nillable="true"/>
+	<element name="debitCreditCode" id="gl-cor_debitCreditCode" type="gl-gen:debitCreditCodeItemType" nillable="true"/>
+	<element name="detailComment" id="gl-cor_detailComment" type="gl-cor:detailCommentItemType" nillable="true"/>
+	<element name="documentApplyToNumber" id="gl-cor_documentApplyToNumber" type="gl-cor:documentApplyToNumberItemType" nillable="true"/>
+	<element name="documentDate" id="gl-cor_documentDate" type="gl-cor:documentDateItemType" nillable="true"/>
+	<element name="documentNumber" id="gl-cor_documentNumber" type="gl-cor:documentNumberItemType" nillable="true"/>
+	<element name="invoiceType" id="gl-cor_invoiceType" type="gl-gen:invoiceTypeItemType" nillable="true"/>
+	<element name="documentReference" id="gl-cor_documentReference" type="gl-cor:documentReferenceItemType" nillable="true"/>
+	<element name="documentType" id="gl-cor_documentType" type="gl-gen:documentTypeItemType" nillable="true"/>
+	<element name="enteredBy" id="gl-cor_enteredBy" type="gl-cor:enteredByItemType" nillable="true"/>
+	<element name="enteredDate" id="gl-cor_enteredDate" type="gl-cor:enteredDateItemType" nillable="true"/>
+	<element name="entriesComment" id="gl-cor_entriesComment" type="gl-cor:entriesCommentItemType" nillable="true"/>
+	<element name="entriesType" id="gl-cor_entriesType" type="gl-gen:entriesTypeItemType" nillable="false"/>
+	<element name="entryComment" id="gl-cor_entryComment" type="gl-cor:entryCommentItemType" nillable="true"/>
+	<element name="entryNumberCounter" id="gl-cor_entryNumberCounter" type="gl-cor:counterItemType" nillable="true"/>
+	<element name="entryNumber" id="gl-cor_entryNumber" type="gl-cor:entryNumberItemType" nillable="true"/>
+	<element name="lineNumberCounter" id="gl-cor_lineNumberCounter" type="gl-cor:counterItemType" nillable="true"/>
+	<element name="entryType" id="gl-cor_entryType" type="gl-gen:entryTypeItemType" nillable="true"/>
+	<element name="identifierCategory" id="gl-cor_identifierCategory" type="gl-cor:identifierCategoryItemType" nillable="true"/>
+	<element name="identifierCode" id="gl-cor_identifierCode" type="gl-cor:identifierCodeItemType" nillable="true"/>
+	<element name="identifierDescription" id="gl-cor_identifierDescription" type="gl-cor:identifierDescriptionItemType" nillable="true"/>
+	<element name="identifierActive" id="gl-cor_identifierActive" type="gl-gen:activeItemType" nillable="true"/>
+	<element name="identifierEmailAddress" id="gl-cor_identifierEmailAddress" type="gl-gen:emailAddressItemType" nillable="true"/>
+	<element name="identifierEmailAddressUsage" id="gl-cor_identifierEmailAddressUsage" type="gl-gen:emailAddressUsageItemType" nillable="true"/>
+	<element name="identifierPhone" id="gl-cor_identifierPhone" type="gl-gen:phoneNumberItemType" nillable="true"/>
+	<element name="identifierPhoneNumberDescription" id="gl-cor_identifierPhoneNumberDescription" type="gl-gen:phoneNumberDescriptionItemType" nillable="true"/>
+	<element name="identifierFax" id="gl-cor_identifierFax" type="gl-gen:faxNumberItemType" nillable="true"/>
+	<element name="identifierFaxNumberUsage" id="gl-cor_identifierFaxNumberUsage" type="gl-gen:faxNumberUsageItemType" nillable="true"/>
+	<element name="identifierAuthorityCode" id="gl-cor_identifierAuthorityCode" type="gl-cor:identifierAuthorityCodeItemType" nillable="true"/>
+	<element name="identifierAuthority" id="gl-cor_identifierAuthority" type="gl-cor:identifierAuthorityItemType" nillable="true"/>
+	<element name="identifierAuthorityVerificationDate" id="gl-cor_identifierAuthorityVerificationDate" type="gl-cor:identifierAuthorityVerificationDateItemType" nillable="true"/>
+	<element name="identifierType" id="gl-cor_identifierType" type="gl-gen:identifierTypeItemType" nillable="true"/>
+	<element name="language" id="gl-cor_language" type="gl-cor:languageItemType" nillable="true"/>
+	<element name="lineNumber" id="gl-cor_lineNumber" type="gl-cor:lineNumberItemType" nillable="true"/>
+	<element name="mainAccountType" id="gl-cor_mainAccountType" type="gl-gen:mainAccountTypeItemType" nillable="true"/>
+	<element name="maturityDate" id="gl-cor_maturityDate" type="gl-cor:maturityDateItemType" nillable="true"/>
+	<element name="parentAccountMainID" id="gl-cor_parentAccountMainID" type="gl-cor:parentAccountMainIDItemType" nillable="true"/>
+	<element name="parentSubaccountCode" id="gl-cor_parentSubaccountCode" type="gl-cor:parentSubaccountCodeItemType" nillable="true"/>
+	<element name="parentSubaccountProportion" id="gl-cor_parentSubaccountProportion" type="gl-cor:parentSubaccountProportionItemType" nillable="true"/>
+	<element name="parentSubaccountType" id="gl-cor_parentSubaccountType" type="gl-cor:parentSubaccountTypeItemType" nillable="true"/>
+	<element name="periodCoveredStart" id="gl-cor_periodCoveredStart" type="gl-cor:periodCoveredStartItemType" nillable="true"/>
+	<element name="periodCoveredEnd" id="gl-cor_periodCoveredEnd" type="gl-cor:periodCoveredEndItemType" nillable="true"/>
+	<element name="postedDate" id="gl-cor_postedDate" type="gl-cor:postedDateItemType" nillable="true"/>
+	<element name="postingDate" id="gl-cor_postingDate" type="gl-cor:postingDateItemType" nillable="true"/>
+	<element name="postingStatus" id="gl-cor_postingStatus" type="gl-gen:postingStatusItemType" nillable="true"/>
+	<element name="qualifierEntry" id="gl-cor_qualifierEntry" type="gl-gen:qualifierEntryItemType" nillable="true"/>
+	<element name="reportingTreeIdentifier" id="gl-cor_reportingTreeIdentifier" type="gl-cor:reportingTreeIdentifierItemType" nillable="true"/>
+	<element name="revisesUniqueID" id="gl-cor_revisesUniqueID" type="gl-cor:revisesUniqueIDItemType" nillable="true"/>
+	<element name="revisesUniqueIDAction" id="gl-cor_revisesUniqueIDAction" type="gl-gen:revisesUniqueIDActionItemType" nillable="true"/>
+	<element name="shipReceivedDate" id="gl-cor_shipReceivedDate" type="gl-cor:shipReceivedDateItemType" nillable="true"/>
+	<element name="signOfAmount" id="gl-cor_signOfAmount" type="gl-gen:signOfAmountItemType" nillable="true"/>
+	<element name="taxAuthority" id="gl-cor_taxAuthority" type="gl-cor:taxAuthorityItemType" nillable="true"/>
+	<element name="taxTableCode" id="gl-cor_taxTableCode" type="gl-cor:taxTableCodeItemType" nillable="true"/>
+	<element name="taxAmount" id="gl-cor_taxAmount" type="gl-cor:taxAmountItemType" nillable="true"/>
+	<element name="taxBasis" id="gl-cor_taxBasis" type="gl-cor:taxBasisItemType" nillable="true"/>
+	<element name="taxCode" id="gl-cor_taxCode" type="gl-cor:taxCodeItemType" nillable="true"/>
+	<element name="taxCommentExemption" id="gl-cor_taxCommentExemption" type="gl-cor:taxCommentExemptionItemType" nillable="true"/>
+	<element name="taxDescription" id="gl-cor_taxDescription" type="gl-cor:taxDescriptionItemType" nillable="true"/>
+	<element name="sourceJournalID" id="gl-cor_sourceJournalID" type="gl-gen:sourceJournalIDItemType" nillable="true"/>
+	<element name="taxExchangeRate" id="gl-cor_taxExchangeRate" type="gl-cor:taxExchangeRateItemType" nillable="true"/>
+	<element name="taxPercentageRate" id="gl-cor_taxPercentageRate" type="gl-cor:taxPercentageRateItemType" nillable="true"/>
+	<element name="uniqueID" id="gl-cor_uniqueID" type="gl-cor:uniqueIDItemType" nillable="true"/>
+	<element name="xbrlInclude" id="gl-cor_xbrlInclude" type="gl-gen:xbrlIncludeItemType" nillable="true"/>
+	<element name="summaryReportingElement" id="gl-cor_summaryReportingElement" type="gl-cor:summaryReportingElementItemType" nillable="true"/>
+	<element name="detailMatchingElement" id="gl-cor_detailMatchingElement" type="gl-cor:detailMatchingElementItemType" nillable="true"/>
+	<element name="terms" id="gl-cor_terms" type="gl-cor:termsItemType" nillable="true"/>
+	<element name="shipFrom" id="gl-cor_shipFrom" type="gl-cor:shipFromItemType" nillable="true"/>
+	<element name="identifierContactPrefix" id="gl-cor_identifierContactPrefix" type="gl-cor:identifierContactPrefixItemType" nillable="true"/>
+	<element name="identifierContactFirstName" id="gl-cor_identifierContactFirstName" type="gl-cor:identifierContactFirstNameItemType" nillable="true"/>
+	<element name="identifierContactSuffix" id="gl-cor_identifierContactSuffix" type="gl-cor:identifierContactSuffixItemType" nillable="true"/>
+	<element name="identifierContactAttentionLine" id="gl-cor_identifierContactAttentionLine" type="gl-cor:identifierContactAttentionLineItemType" nillable="true"/>
+	<element name="identifierContactPositionRole" id="gl-cor_identifierContactPositionRole" type="gl-cor:identifierContactPositionRoleItemType" nillable="true"/>
+	<element name="identifierContactPhoneNumber" id="gl-cor_identifierContactPhoneNumber" type="gl-gen:phoneNumberItemType" nillable="true"/>
+	<element name="identifierContactPhoneNumberDescription" id="gl-cor_identifierContactPhoneNumberDescription" type="gl-gen:phoneNumberDescriptionItemType" nillable="true"/>
+	<element name="identifierContactFaxNumber" id="gl-cor_identifierContactFaxNumber" type="gl-gen:faxNumberItemType" nillable="true"/>
+	<element name="identifierContactFaxNumberUsage" id="gl-cor_identifierContactFaxNumberUsage" type="gl-gen:faxNumberUsageItemType" nillable="true"/>
+	<element name="identifierContactEmailAddress" id="gl-cor_identifierContactEmailAddress" type="gl-gen:emailAddressItemType" nillable="true"/>
+	<element name="identifierContactEmailAddressUsage" id="gl-cor_identifierContactEmailAddressUsage" type="gl-gen:emailAddressUsageItemType" nillable="true"/>
+	<element name="identifierContactType" id="gl-cor_identifierContactType" type="gl-cor:identifierContactTypeItemType" nillable="true"/>
+	<element name="identifierContactLastName" id="gl-cor_identifierContactLastName" type="gl-cor:identifierContactLastNameItemType" nillable="true"/>
+	<element name="identifierOrganizationType" id="gl-cor_identifierOrganizationType" type="gl-gen:identifierOrganizationTypeItemType" nillable="true"/>
+	<element name="documentTypeDescription" id="gl-cor_documentTypeDescription" type="gl-cor:documentTypeDescriptionItemType" nillable="true"/>
+	<element name="mainAccountTypeDescription" id="gl-cor_mainAccountTypeDescription" type="gl-cor:mainAccountTypeDescriptionItemType" nillable="true"/>
+	<element name="postingStatusDescription" id="gl-cor_postingStatusDescription" type="gl-cor:postingStatusDescriptionItemType" nillable="true"/>
+	<element name="qualifierEntryDescription" id="gl-cor_qualifierEntryDescription" type="gl-cor:qualifierEntryDescriptionItemType" nillable="true"/>
+	<element name="accountTypeDescription" id="gl-cor_accountTypeDescription" type="gl-cor:accountTypeDescriptionItemType" nillable="true"/>
+	<element name="identifierOrganizationTypeDescription" id="gl-cor_identifierOrganizationTypeDescription" type="gl-cor:identifierOrganizationTypeDescriptionItemType" nillable="true"/>
 </schema>

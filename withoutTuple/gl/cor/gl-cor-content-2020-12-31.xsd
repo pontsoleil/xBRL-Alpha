@@ -6,7 +6,6 @@
 	<xs:include schemaLocation="gl-cor-2020-12-31.xsd"/>
 	<xs:annotation>
 		<xs:appinfo>
-			<!--	<xbrll:linkbaseRef xlink:href="gl-cor-2020-12-31-presentation.xml" xlink:title="Presentation Links, all" xlink:type="simple" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/> -->
 			<xbrll:linkbaseRef xlink:href="gl-cor-2020-12-31-definition.xml" xlink:title="Definition Links, all" xlink:type="simple" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
 		</xs:appinfo>
 	</xs:annotation>
