@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c) XBRL International.  See http://www.xbrl.org/legal -->
+<schema 
+targetNamespace="http://www.xbrl.org/int/gl/taf/2020-12-31" 
+elementFormDefault="qualified" 
+attributeFormDefault="unqualified" 
+xmlns="http://www.w3.org/2001/XMLSchema" 
+xmlns:link="http://www.xbrl.org/2003/linkbase" 
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+xmlns:xbrli="http://www.xbrl.org/2003/instance" 
+xmlns:gl-gen="http://www.xbrl.org/int/gl/gen/2020-12-31" 
+xmlns:gl-taf="http://www.xbrl.org/int/gl/taf/2020-12-31">
+<!--	<annotation>
+		<appinfo>
+			<link:linkbaseRef xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="gl-taf-2020-12-31-presentation.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef"/>
+		</appinfo>
+	</annotation> -->
+	<import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+	<import namespace="http://www.xbrl.org/int/gl/gen/2020-12-31" schemaLocation="../gen/gl-gen-2020-12-31.xsd"/>
+	<!-- item type -->
+	<complexType name="tickingFieldItemType">
+		<simpleContent>
+			<restriction base="xbrli:booleanItemType"/>
+		</simpleContent>
+	</complexType>
+	<complexType name="documentRemainingBalanceItemType">
+		<simpleContent>
+			<restriction base="xbrli:monetaryItemType"/>
+		</simpleContent>
+	</complexType>
+	<complexType name="uniqueConsignmentReferenceItemType">
+		<simpleContent>
+			<restriction base="xbrli:stringItemType"/>
+		</simpleContent>
+	</complexType>
+	<complexType name="originatingDocumentNumberItemType">
+		<simpleContent>
+			<restriction base="xbrli:stringItemType"/>
+		</simpleContent>
+	</complexType>
+	<complexType name="originatingDocumentDateItemType">
+		<simpleContent>
+			<restriction base="xbrli:dateItemType"/>
+		</simpleContent>
+	</complexType>
+	<complexType name="originatingDocumentIdentifierCodeItemType">
+		<simpleContent>
+			<restriction base="xbrli:stringItemType"/>
+		</simpleContent>
+	</complexType>
+	<complexType name="originatingDocumentIdentifierTaxCodeItemType">
+		<simpleContent>
+			<restriction base="xbrli:stringItemType"/>
+		</simpleContent>
+	</complexType>
+	<!-- item -->
+	<element name="uniqueConsignmentReference" id="gl-taf_uniqueConsignmentReference" type="gl-taf:uniqueConsignmentReferenceItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<element name="originatingDocumentType" id="gl-taf_originatingDocumentType" type="gl-gen:documentTypeItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<element name="originatingDocumentNumber" id="gl-taf_originatingDocumentNumber" type="gl-taf:originatingDocumentNumberItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<element name="originatingDocumentDate" id="gl-taf_originatingDocumentDate" type="gl-taf:originatingDocumentDateItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<element name="originatingDocumentIdentifierType" id="gl-taf_originatingDocumentIdentifierType" type="gl-gen:identifierTypeItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<element name="originatingDocumentIdentifierCode" id="gl-taf_originatingDocumentIdentifierCode" type="gl-taf:originatingDocumentIdentifierCodeItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<element name="originatingDocumentIdentifierTaxCode" id="gl-taf_originatingDocumentIdentifierTaxCode" type="gl-taf:originatingDocumentIdentifierTaxCodeItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<element name="tickingField" id="gl-taf_tickingField" type="gl-taf:tickingFieldItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<element name="documentRemainingBalance" id="gl-taf_documentRemainingBalance" type="gl-taf:documentRemainingBalanceItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+</schema>

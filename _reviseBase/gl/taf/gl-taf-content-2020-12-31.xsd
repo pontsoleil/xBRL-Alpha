@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c) XBRL International.  See http://www.xbrl.org/legal -->
+<schema targetNamespace="http://www.xbrl.org/int/gl/taf/2020-12-31" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:gl-gen="http://www.xbrl.org/int/gl/gen/2020-12-31" xmlns:gl-taf="http://www.xbrl.org/int/gl/taf/2020-12-31">
+<!--	<annotation>
+		<appinfo>
+			<link:linkbaseRef xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="gl-taf-2020-12-31-presentation.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef"/>
+		</appinfo>
+	</annotation>-->
+	<import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+	<include schemaLocation="gl-taf-2020-12-31.xsd"/>
+	<!-- tuple type -->
+	<complexType name="originatingDocumentStructureComplexType">
+		<complexContent>
+			<restriction base="anyType">
+				<sequence minOccurs="1">
+					<element minOccurs="0" ref="gl-taf:originatingDocumentType"/>
+					<element minOccurs="0" ref="gl-taf:originatingDocumentNumber"/>
+					<element minOccurs="0" ref="gl-taf:originatingDocumentDate"/>
+					<element minOccurs="0" ref="gl-taf:originatingDocumentIdentifierType"/>
+					<element minOccurs="0" ref="gl-taf:originatingDocumentIdentifierCode"/>
+					<element minOccurs="0" ref="gl-taf:originatingDocumentIdentifierTaxCode"/>
+				</sequence>
+				<attribute name="id" type="ID"/>
+			</restriction>
+		</complexContent>
+	</complexType>
+	<!-- tuple -->
+	<element name="originatingDocumentStructure" id="gl-taf_originatingDocumentStructure" type="gl-taf:originatingDocumentStructureComplexType" substitutionGroup="xbrli:tuple" nillable="true"/>
+</schema>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c) XBRL International.  See http://www.xbrl.org/legal -->
+<schema elementFormDefault="qualified" xmlns:xbrll="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.xbrl.org/int/gl/gen/2020-12-31" attributeFormDefault="unqualified" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:gl-gen="http://www.xbrl.org/int/gl/gen/2020-12-31">
+	<import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+	<simpleType name="accountPurposeCodeItemType">
+		<restriction base="token">
+			<enumeration value="consolidating"/>
+			<enumeration value="european"/>
+			<enumeration value="ifrs"/>
+			<enumeration value="offsetting"/>
+			<enumeration value="primary"/>
+			<enumeration value="tax"/>
+			<enumeration value="usgaap"/>
+			<enumeration value="japanese"/>
+			<enumeration value="other"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="accountTypeItemType">
+		<restriction base="token">
+			<enumeration value="account"/>
+			<enumeration value="bank"/>
+			<enumeration value="employee"/>
+			<enumeration value="customer"/>
+			<enumeration value="job"/>
+			<enumeration value="vendor"/>
+			<enumeration value="measurable"/>
+			<enumeration value="statistical"/>
+			<enumeration value="other"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="bookTaxDifferenceItemType">
+		<restriction base="token">
+			<enumeration value="permanent"/>
+			<enumeration value="temporary"/>
+			<enumeration value="none"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="identifierOrganizationTypeItemType">
+		<restriction base="token">
+			<enumeration value="individual"/>
+			<enumeration value="organization"/>
+			<enumeration value="other"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="debitCreditCodeItemType">
+		<restriction base="token">
+			<enumeration value="D"/>
+			<enumeration value="C"/>
+			<enumeration value="debit"/>
+			<enumeration value="credit"/>
+			<enumeration value="undefined"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="documentTypeItemType">
+		<restriction base="token">
+			<enumeration value="check"/>
+			<enumeration value="debit-memo"/>
+			<enumeration value="credit-memo"/>
+			<enumeration value="finance-charge"/>
+			<enumeration value="invoice"/>
+			<enumeration value="order-customer"/>
+			<enumeration value="order-vendor"/>
+			<enumeration value="payment-other"/>
+			<enumeration value="reminder"/>
+			<enumeration value="tegata"/>
+			<enumeration value="voucher"/>
+			<enumeration value="shipment"/>
+			<enumeration value="receipt"/>
+			<enumeration value="manual-adjustment"/>
+			<enumeration value="other"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="invoiceTypeItemType">
+		<restriction base="token">
+			<enumeration value="ePos"/>
+			<enumeration value="self-billed"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="entriesTypeItemType">
+		<restriction base="token">
+			<enumeration value="account"/>
+			<enumeration value="balance"/>
+			<enumeration value="entries"/>
+			<enumeration value="journal"/>
+			<enumeration value="ledger"/>
+			<enumeration value="assets"/>
+			<enumeration value="trialbalance"/>
+			<enumeration value="taxtables"/>
+			<enumeration value="mapping"/>
+			<enumeration value="versioning"/>
+			<enumeration value="master_file"/>
+			<enumeration value="trade_documents"/>
+			<enumeration value="profile_compliant"/>
+			<enumeration value="other"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="entryTypeItemType">
+		<restriction base="token">
+			<enumeration value="adjusting"/>
+			<enumeration value="budget"/>
+			<enumeration value="comparative"/>
+			<enumeration value="external-accountant"/>
+			<enumeration value="standard"/>
+			<enumeration value="passed-adjusting"/>
+			<enumeration value="eliminating"/>
+			<enumeration value="proposed"/>
+			<enumeration value="recurring"/>
+			<enumeration value="reclassifying"/>
+			<enumeration value="simulated"/>
+			<enumeration value="tax"/>
+			<enumeration value="other"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="identifierTypeItemType">
+		<restriction base="token">
+			<enumeration value="C"/>
+			<enumeration value="customer"/>
+			<enumeration value="E"/>
+			<enumeration value="employee"/>
+			<enumeration value="V"/>
+			<enumeration value="vendor"/>
+			<enumeration value="O"/>
+			<enumeration value="other"/>
+			<enumeration value="I"/>
+			<enumeration value="salesperson-internal"/>
+			<enumeration value="X"/>
+			<enumeration value="salesperson-external"/>
+			<enumeration value="N"/>
+			<enumeration value="contractor"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="mainAccountTypeItemType">
+		<restriction base="token">
+			<enumeration value="asset"/>
+			<enumeration value="liability"/>
+			<enumeration value="equity"/>
+			<enumeration value="income"/>
+			<enumeration value="gain"/>
+			<enumeration value="expense"/>
+			<enumeration value="loss"/>
+			<enumeration value="contr-to-equity"/>
+			<enumeration value="distr-from-equity"/>
+			<enumeration value="comprehensive-income"/>
+			<enumeration value="other"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="postingStatusItemType">
+		<restriction base="token">
+			<enumeration value="deferred"/>
+			<enumeration value="posted"/>
+			<enumeration value="proposed"/>
+			<enumeration value="simulated"/>
+			<enumeration value="tax"/>
+			<enumeration value="unposted"/>
+			<enumeration value="cancelled"/>
+			<enumeration value="other"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="qualifierEntryItemType">
+		<restriction base="token">
+			<enumeration value="standard"/>
+			<enumeration value="balance-brought-forward"/>
+			<enumeration value="other"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="revisesUniqueIDActionItemType">
+		<restriction base="token">
+			<enumeration value="supplement"/>
+			<enumeration value="supersede"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="signOfAmountItemType">
+		<restriction base="token">
+			<enumeration value="+"/>
+			<enumeration value="-"/>
+			<enumeration value="plus"/>
+			<enumeration value="minus"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="sourceJournalIDItemType">
+		<restriction base="token">
+			<enumeration value="cd"/>
+			<enumeration value="cr"/>
+			<enumeration value="fa"/>
+			<enumeration value="gi"/>
+			<enumeration value="gj"/>
+			<enumeration value="im"/>
+			<enumeration value="jc"/>
+			<enumeration value="pj"/>
+			<enumeration value="pl"/>
+			<enumeration value="sj"/>
+			<enumeration value="se"/>
+			<enumeration value="ud"/>
+			<enumeration value="ot"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="xbrlIncludeItemType">
+		<restriction base="token">
+			<enumeration value="beginning_balance"/>
+			<enumeration value="ending_balance"/>
+			<enumeration value="period_change"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="phoneNumberDescriptionItemType">
+		<restriction base="token">
+			<enumeration value="bookkeeper"/>
+			<enumeration value="controller"/>
+			<enumeration value="direct"/>
+			<enumeration value="fax"/>
+			<enumeration value="investor-relations"/>
+			<enumeration value="main"/>
+			<enumeration value="switchboard"/>
+			<enumeration value="other"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="phoneNumberItemType">
+		<restriction base="string"/>
+	</simpleType>
+	<simpleType name="faxNumberUsageItemType">
+		<restriction base="string"/>
+	</simpleType>
+	<simpleType name="faxNumberItemType">
+		<restriction base="string"/>
+	</simpleType>
+	<simpleType name="emailAddressUsageItemType">
+		<restriction base="string"/>
+	</simpleType>
+	<simpleType name="emailAddressItemType">
+		<restriction base="string"/>
+	</simpleType>
+	<simpleType name="activeItemType">
+		<restriction base="boolean"/>
+	</simpleType>
+	<simpleType name="amountItemType">
+		<restriction base="decimal"/>
+	</simpleType>
+</schema>

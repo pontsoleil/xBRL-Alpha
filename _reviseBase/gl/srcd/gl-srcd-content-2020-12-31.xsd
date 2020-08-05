@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c) XBRL International.  See http://www.xbrl.org/legal -->
+<schema targetNamespace="http://www.xbrl.org/int/gl/srcd/2020-12-31" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gl-srcd="http://www.xbrl.org/int/gl/srcd/2020-12-31" xmlns:xbrll="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+	<import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+	<include schemaLocation="gl-srcd-2020-12-31.xsd"/>
+	<!-- tuple type -->
+	<complexType name="summarySegmentComplexType">
+		<complexContent>
+			<restriction base="anyType">
+				<sequence>
+					<element maxOccurs="unbounded" minOccurs="0" ref="gl-srcd:summarySegmentExplicitDimension"/>
+					<element maxOccurs="unbounded" minOccurs="0" ref="gl-srcd:summarySegmentTypedDimension"/>
+					<element maxOccurs="unbounded" minOccurs="0" ref="gl-srcd:summarySegmentSimpleElementContent"/>
+					<element maxOccurs="unbounded" minOccurs="0" ref="gl-srcd:summarySegmentContents"/>
+				</sequence>
+				<attribute name="id" type="ID"/>
+			</restriction>
+		</complexContent>
+	</complexType>
+	<complexType name="summaryScenarioComplexType">
+		<complexContent>
+			<restriction base="anyType">
+				<sequence>
+					<element maxOccurs="unbounded" minOccurs="0" ref="gl-srcd:summaryScenarioExplicitDimension"/>
+					<element maxOccurs="unbounded" minOccurs="0" ref="gl-srcd:summaryScenarioTypedDimension"/>
+					<element maxOccurs="unbounded" minOccurs="0" ref="gl-srcd:summaryScenarioSimpleElementContent"/>
+					<element maxOccurs="unbounded" minOccurs="0" ref="gl-srcd:summaryScenarioContents"/>
+				</sequence>
+				<attribute name="id" type="ID"/>
+			</restriction>
+		</complexContent>
+	</complexType>
+	<complexType name="summaryContextComplexType">
+		<complexContent>
+			<restriction base="anyType">
+				<sequence>
+					<element minOccurs="0" ref="gl-srcd:summaryEntity"/>
+					<element minOccurs="0" ref="gl-srcd:summaryPeriod"/>
+					<element minOccurs="0" ref="gl-srcd:summaryScenario"/>
+				</sequence>
+				<attribute name="id" type="ID"/>
+			</restriction>
+		</complexContent>
+	</complexType>
+	<complexType name="summaryEntityComplexType">
+		<complexContent>
+			<restriction base="anyType">
+				<sequence>
+					<element minOccurs="0" ref="gl-srcd:summaryIdentifier"/>
+					<element minOccurs="0" ref="gl-srcd:summaryScheme"/>
+					<element minOccurs="0" ref="gl-srcd:summarySegment"/>
+				</sequence>
+				<attribute name="id" type="ID"/>
+			</restriction>
+		</complexContent>
+	</complexType>
+	<complexType name="summaryPeriodComplexType">
+		<complexContent>
+			<restriction base="anyType">
+				<choice>
+					<element ref="gl-srcd:summaryInstant"/>
+					<sequence>
+						<element ref="gl-srcd:summaryStartDate"/>
+						<element ref="gl-srcd:summaryEndDate"/>
+					</sequence>
+					<element ref="gl-srcd:summaryForever"/>
+				</choice>
+				<attribute name="id" type="ID"/>
+			</restriction>
+		</complexContent>
+	</complexType>
+	<complexType name="summarySegmentExplicitDimensionComplexType">
+		<complexContent>
+			<restriction base="anyType">
+				<sequence>
+					<element ref="gl-srcd:summarySegmentExplicitDimensionElement"/>
+					<choice>
+						<element ref="gl-srcd:summarySegmentExplicitDimensionValue"/>
+						<element ref="gl-srcd:summarySegmentExplicitDimensionExpressionValue"/>
+					</choice>
+				</sequence>
+				<attribute name="id" type="ID"/>
+			</restriction>
+		</complexContent>
+	</complexType>
+	<complexType name="summaryScenarioExplicitDimensionComplexType">
+		<complexContent>
+			<restriction base="anyType">
+				<sequence>
+					<element ref="gl-srcd:summaryScenarioExplicitDimensionElement"/>
+					<choice>
+						<element ref="gl-srcd:summaryScenarioExplicitDimensionValue"/>
+						<element ref="gl-srcd:summaryScenarioExplicitDimensionExpressionValue"/>
+					</choice>
+				</sequence>
+				<attribute name="id" type="ID"/>
+			</restriction>
+		</complexContent>
+	</complexType>
+	<complexType name="summarySegmentTypedDimensionComplexType">
+		<complexContent>
+			<restriction base="anyType">
+				<sequence>
+					<element ref="gl-srcd:summarySegmentTypedDimensionElement"/>
+					<choice>
+						<element ref="gl-srcd:summarySegmentTypedDimensionValue"/>
+						<element ref="gl-srcd:summarySegmentTypedDimensionExpressionValue"/>
+					</choice>
+				</sequence>
+				<attribute name="id" type="ID"/>
+			</restriction>
+		</complexContent>
+	</complexType>
+	<complexType name="summaryScenarioTypedDimensionComplexType">
+		<complexContent>
+			<restriction base="anyType">
+				<sequence>
+					<element ref="gl-srcd:summaryScenarioTypedDimensionElement"/>
+					<choice>
+						<element ref="gl-srcd:summaryScenarioTypedDimensionValue"/>
+						<element ref="gl-srcd:summaryScenarioTypedDimensionExpressionValue"/>
+					</choice>
+				</sequence>
+				<attribute name="id" type="ID"/>
+			</restriction>
+		</complexContent>
+	</complexType>
+	<complexType name="summarySegmentSimpleElementContentComplexType">
+		<complexContent>
+			<restriction base="anyType">
+				<sequence>
+					<element ref="gl-srcd:summarySegmentSimpleElementContentElement"/>
+					<element ref="gl-srcd:summarySegmentSimpleElementValue"/>
+				</sequence>
+				<attribute name="id" type="ID"/>
+			</restriction>
+		</complexContent>
+	</complexType>
+	<complexType name="summaryScenarioSimpleElementContentComplexType">
+		<complexContent>
+			<restriction base="anyType">
+				<sequence>
+					<element ref="gl-srcd:summaryScenarioSimpleElementContentElement"/>
+					<element ref="gl-srcd:summaryScenarioSimpleElementValue"/>
+				</sequence>
+				<attribute name="id" type="ID"/>
+			</restriction>
+		</complexContent>
+	</complexType>
+	<complexType name="summaryUnitComplexType">
+		<complexContent>
+			<restriction base="anyType">
+				<sequence>
+					<element ref="gl-srcd:summaryNumerator"/>
+					<element minOccurs="0" ref="gl-srcd:summaryDenominator"/>
+				</sequence>
+				<attribute name="id" type="ID"/>
+			</restriction>
+		</complexContent>
+	</complexType>
+	<complexType name="summaryReportingTaxonomiesComplexType">
+		<complexContent>
+			<restriction base="anyType">
+				<sequence>
+					<element minOccurs="0" ref="gl-srcd:summaryReportingTaxonomyID"/>
+					<element minOccurs="0" ref="gl-srcd:summaryReportingTaxonomySchemaRefHref"/>
+					<element minOccurs="0" ref="gl-srcd:summaryReportingTaxonomyHeader"/>
+					<element minOccurs="0" ref="gl-srcd:summaryReportingTaxonomyDescription"/>
+				</sequence>
+				<attribute name="id" type="ID"/>
+			</restriction>
+		</complexContent>
+	</complexType>
+	<complexType name="richTextCommentComplexType">
+		<complexContent>
+			<restriction base="anyType">
+				<sequence>
+					<element minOccurs="0" ref="gl-srcd:richTextCommentCode"/>
+					<element minOccurs="0" ref="gl-srcd:richTextCommentDescription"/>
+					<element minOccurs="0" ref="gl-srcd:richTextCommentContent"/>
+					<element minOccurs="0" ref="gl-srcd:richTextCommentLocator"/>
+				</sequence>
+				<attribute name="id" type="ID"/>
+			</restriction>
+		</complexContent>
+	</complexType>
+	<!-- tuple -->
+	<element name="summaryPrecisionDecimals" id="gl-srcd_summaryPrecisionDecimals" type="gl-srcd:summaryPrecisionDecimalsComplexType" substitutionGroup="xbrli:tuple" nillable="true"/>
+	<element name="summaryContext" id="gl-srcd_summaryContext" type="gl-srcd:summaryContextComplexType" substitutionGroup="xbrli:tuple" nillable="true"/>
+	<element name="summaryEntity" id="gl-srcd_summaryEntity" type="gl-srcd:summaryEntityComplexType" substitutionGroup="xbrli:tuple" nillable="true"/>
+	<element name="summarySegment" id="gl-srcd_summarySegment" type="gl-srcd:summarySegmentComplexType" substitutionGroup="xbrli:tuple" nillable="true"/>
+	<element name="summarySegmentExplicitDimension" id="gl-srcd_summarySegmentExplicitDimension" type="gl-srcd:summarySegmentExplicitDimensionComplexType" substitutionGroup="xbrli:tuple" nillable="true"/>
+	<element name="summarySegmentTypedDimension" id="gl-srcd_summarySegmentTypedDimension" type="gl-srcd:summarySegmentTypedDimensionComplexType" substitutionGroup="xbrli:tuple" nillable="true"/>
+	<element name="summarySegmentSimpleElementContent" id="gl-srcd_summarySegmentSimpleElementContent" type="gl-srcd:summarySegmentSimpleElementContentComplexType" substitutionGroup="xbrli:tuple" nillable="true"/>
+	<element name="summaryPeriod" id="gl-srcd_summaryPeriod" type="gl-srcd:summaryPeriodComplexType" substitutionGroup="xbrli:tuple" nillable="true"/>
+	<element name="summaryScenario" id="gl-srcd_summaryScenario" type="gl-srcd:summaryScenarioComplexType" substitutionGroup="xbrli:tuple" nillable="true"/>
+	<element name="summaryScenarioExplicitDimension" id="gl-srcd_summaryScenarioExplicitDimension" type="gl-srcd:summaryScenarioExplicitDimensionComplexType" substitutionGroup="xbrli:tuple"/>
+	<element name="summaryScenarioTypedDimension" id="gl-srcd_summaryScenarioTypedDimension" type="gl-srcd:summaryScenarioTypedDimensionComplexType" substitutionGroup="xbrli:tuple"/>
+	<element name="summaryScenarioSimpleElementContent" id="gl-srcd_summaryScenarioSimpleElementContent" type="gl-srcd:summaryScenarioSimpleElementContentComplexType" substitutionGroup="xbrli:tuple"/>
+	<element name="summaryUnit" id="gl-srcd_summaryUnit" type="gl-srcd:summaryUnitComplexType" substitutionGroup="xbrli:tuple" nillable="true"/>
+	<element name="summaryReportingTaxonomies" id="gl-srcd_summaryReportingTaxonomies" type="gl-srcd:summaryReportingTaxonomiesComplexType" substitutionGroup="xbrli:tuple" nillable="true"/>
+	<element name="richTextComment" id="gl-srcd_richTextComment" type="gl-srcd:richTextCommentComplexType" substitutionGroup="xbrli:tuple" nillable="true"/>
+
+</schema>
