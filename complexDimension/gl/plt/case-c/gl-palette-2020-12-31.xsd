@@ -19,20 +19,7 @@ xmlns:gl-taf="http://www.xbrl.org/int/gl/taf/2020-12-31">
 	<import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
 	<import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
 	<include schemaLocation="../../cor/gl-cor-2020-12-31.xsd"/>
-	<!-- Hypercube -->
-	<element name="Hypercube" id="Hypercube" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" abstract="true" xbrli:periodType="instant"/>
-	<!-- Domain -->
-	<element name="EntryNumber" id="gl-cor_EntryNumber">
-		<simpleType>
-			<restriction base="string"/>
-		</simpleType>
-	</element>
-	<element name="dEntryNumber" id="gl-cor_dEntryNumber" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#gl-cor_EntryNumber"/>
-	<element name="LineNumber" id="gl-cor_LineNumber">
-		<simpleType>
-			<restriction base="string"/>
-		</simpleType>
-	</element>
+	<!-- dimension -->
 	<element name="AccountingEntries" id="gl-cor_AccountingEntries" type="gl-cor:accountingEntriesComplexType"/>
 	<element name="dAccountingEntries" id="gl-cor_dAccountingEntries" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#gl-cor_AccountingEntries"/>
 	<element name="DocumentInfo" id="gl-cor_DocumentInfo" type="gl-cor:documentInfoComplexType"/>

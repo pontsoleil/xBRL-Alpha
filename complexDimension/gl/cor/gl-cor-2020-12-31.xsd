@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- edited with XMLSpy v2020 rel. 2 sp1 (x64) (http://www.altova.com) by SAMBUICHI Nobuyuki (Sambuichi Professional Engineers Office) -->
 <!-- (c) XBRL International.  See http://www.xbrl.org/legal -->
-<schema targetNamespace="http://www.xbrl.org/int/gl/cor/2020-12-31" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xbrll="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:gl-gen="http://www.xbrl.org/int/gl/gen/2020-12-31" xmlns:gl-cor="http://www.xbrl.org/int/gl/cor/2020-12-31">
+<schema 
+targetNamespace="http://www.xbrl.org/int/gl/cor/2020-12-31" 
+elementFormDefault="qualified" 
+attributeFormDefault="unqualified" 
+xmlns="http://www.w3.org/2001/XMLSchema" 
+xmlns:xbrll="http://www.xbrl.org/2003/linkbase" 
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+xmlns:xbrli="http://www.xbrl.org/2003/instance" 
+xmlns:xbrldt="http://xbrl.org/2005/xbrldt" 
+xmlns:gl-gen="http://www.xbrl.org/int/gl/gen/2020-12-31" 
+xmlns:gl-cor="http://www.xbrl.org/int/gl/cor/2020-12-31">
 	<import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+	<import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
 	<import namespace="http://www.xbrl.org/int/gl/gen/2020-12-31" schemaLocation="../gen/gl-gen-2020-12-31.xsd"/>
+		<!-- Hypercube -->
+	<element name="Hypercube" id="Hypercube" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" abstract="true" xbrli:periodType="instant"/>
+	<!-- Domain -->
+	<element name="EntryNumber" id="gl-cor_EntryNumber">
+		<simpleType>
+			<restriction base="string"/>
+		</simpleType>
+	</element>
+	<element name="dEntryNumber" id="gl-cor_dEntryNumber" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#gl-cor_EntryNumber"/>
+	<element name="LineNumber" id="gl-cor_LineNumber">
+		<simpleType>
+			<restriction base="string"/>
+		</simpleType>
+	</element>
+
 	<!-- item type -->
 	<complexType name="creatorItemType">
 		<simpleContent>
