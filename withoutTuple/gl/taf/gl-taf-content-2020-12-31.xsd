@@ -4,7 +4,7 @@
 <xs:schema targetNamespace="http://www.xbrl.org/int/gl/taf/2020-12-31" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xbrll="http://www.xbrl.org/2003/linkbase" xmlns:ref="http://www.xbrl.org/2004/ref" xmlns:gl-cor="http://www.xbrl.org/int/gl/cor/2020-12-31" xmlns:gl-gen="http://www.xbrl.org/int/gl/gen/2020-12-31" xmlns:gl-taf="http://www.xbrl.org/int/gl/taf/2020-12-31" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:formula="http://xbrl.org/2008/formula" xmlns:gen="http://xbrl.org/2008/generic" xmlns:label="http://xbrl.org/2008/label" xmlns:variable="http://xbrl.org/2008/variable" xmlns:table="http://xbrl.org/2014/table">
 	<xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
 	<xs:include schemaLocation="gl-taf-2020-12-31.xsd"/>
-	<!-- tuple type -->
+	<!-- tuple type
 	<xs:complexType name="originatingDocument.TupleType">
 		<xs:complexContent>
 			<xs:restriction base="xs:anyType">
@@ -19,7 +19,7 @@
 				<xs:attribute name="id" type="xs:ID"/>
 			</xs:restriction>
 		</xs:complexContent>
-	</xs:complexType>
-	<!-- ABIE -->
-	<xs:element name="originatingDocument.Detail" id="gl-taf_originatingDocument.Detail" substitutionGroup="xbrli:tuple" nillable="true" type="gl-taf:originatingDocument.TupleType"/>
+	</xs:complexType> -->
+	<!-- ABIE
+	<xs:element name="originatingDocument.Detail" id="gl-taf_originatingDocument.Detail" substitutionGroup="xbrli:tuple" nillable="true" type="gl-taf:originatingDocument.TupleType"/> -->
 </xs:schema>
