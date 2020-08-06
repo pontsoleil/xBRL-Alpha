@@ -72,7 +72,7 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 ../plt/case-c/gl-p
 		<xbrli:entity>
 			<xbrli:identifier scheme="http://www.xbrl.org/xbrlgl/sample">SAMPLE</xbrli:identifier>
 			<xbrli:segment>
-				<xbrldi:typedMember dimension="gl-cor:dEntryHeader">
+			<!--	<xbrldi:typedMember dimension="gl-cor:dEntryHeader">
 					<gl-cor:EntryHeader>
 						<gl-cor:enteredBy>Otto Wellwood</gl-cor:enteredBy>
 						<gl-cor:enteredDate>2005-07-01T00:00:00</gl-cor:enteredDate>
@@ -83,6 +83,9 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 ../plt/case-c/gl-p
 						<gl-cor:qualifierEntry>standard</gl-cor:qualifierEntry>
 						<gl-cor:bookTaxDifference>temporary</gl-cor:bookTaxDifference>
 					</gl-cor:EntryHeader>
+				</xbrldi:typedMember>-->
+				<xbrldi:typedMember dimension="gl-cor:dEntryNumber">
+					<gl-cor:EntryNumber>H1</gl-cor:EntryNumber>
 				</xbrldi:typedMember>
 				<xbrldi:typedMember dimension="gl-cor:dEntryDetail">
 					<gl-cor:EntryDetail>
@@ -104,17 +107,8 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 ../plt/case-c/gl-p
 		<xbrli:entity>
 			<xbrli:identifier scheme="http://www.xbrl.org/xbrlgl/sample">SAMPLE</xbrli:identifier>
 			<xbrli:segment>
-				<xbrldi:typedMember dimension="gl-cor:dEntryHeader">
-					<gl-cor:EntryHeader>
-						<gl-cor:enteredBy>Otto Wellwood</gl-cor:enteredBy>
-						<gl-cor:enteredDate>2005-07-01T00:00:00</gl-cor:enteredDate>
-						<gl-cor:sourceJournalID>gj</gl-cor:sourceJournalID>
-						<gl-cor:entryType>standard</gl-cor:entryType>
-						<gl-cor:entryNumber>1</gl-cor:entryNumber>
-						<gl-cor:entryComment>Current period depreciation expense</gl-cor:entryComment>
-						<gl-cor:qualifierEntry>standard</gl-cor:qualifierEntry>
-						<gl-cor:bookTaxDifference>temporary</gl-cor:bookTaxDifference>
-					</gl-cor:EntryHeader>
+				<xbrldi:typedMember dimension="gl-cor:dEntryNumber">
+					<gl-cor:EntryNumber>H1</gl-cor:EntryNumber>
 				</xbrldi:typedMember>
 				<xbrldi:typedMember dimension="gl-cor:dEntryDetail">
 					<gl-cor:EntryDetail>
@@ -136,17 +130,8 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 ../plt/case-c/gl-p
 		<xbrli:entity>
 			<xbrli:identifier scheme="http://www.xbrl.org/xbrlgl/sample">SAMPLE</xbrli:identifier>
 			<xbrli:segment>
-				<xbrldi:typedMember dimension="gl-cor:dEntryHeader">
-					<gl-cor:EntryHeader>
-						<gl-cor:enteredBy>Otto Wellwood</gl-cor:enteredBy>
-						<gl-cor:enteredDate>2005-07-01T00:00:00</gl-cor:enteredDate>
-						<gl-cor:sourceJournalID>gj</gl-cor:sourceJournalID>
-						<gl-cor:entryType>standard</gl-cor:entryType>
-						<gl-cor:entryNumber>1</gl-cor:entryNumber>
-						<gl-cor:entryComment>Current period depreciation expense</gl-cor:entryComment>
-						<gl-cor:qualifierEntry>standard</gl-cor:qualifierEntry>
-						<gl-cor:bookTaxDifference>temporary</gl-cor:bookTaxDifference>
-					</gl-cor:EntryHeader>
+				<xbrldi:typedMember dimension="gl-cor:dEntryNumber">
+					<gl-cor:EntryNumber>H1</gl-cor:EntryNumber>
 				</xbrldi:typedMember>
 				<xbrldi:typedMember dimension="gl-cor:dEntryDetail">
 					<gl-cor:EntryDetail>
@@ -168,17 +153,8 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 ../plt/case-c/gl-p
 		<xbrli:entity>
 			<xbrli:identifier scheme="http://www.xbrl.org/xbrlgl/sample">SAMPLE</xbrli:identifier>
 			<xbrli:segment>
-				<xbrldi:typedMember dimension="gl-cor:dEntryHeader">
-					<gl-cor:EntryHeader>
-						<gl-cor:enteredBy>Otto Wellwood</gl-cor:enteredBy>
-						<gl-cor:enteredDate>2005-07-01T00:00:00</gl-cor:enteredDate>
-						<gl-cor:sourceJournalID>gj</gl-cor:sourceJournalID>
-						<gl-cor:entryType>standard</gl-cor:entryType>
-						<gl-cor:entryNumber>1</gl-cor:entryNumber>
-						<gl-cor:entryComment>Current period depreciation expense</gl-cor:entryComment>
-						<gl-cor:qualifierEntry>standard</gl-cor:qualifierEntry>
-						<gl-cor:bookTaxDifference>temporary</gl-cor:bookTaxDifference>
-					</gl-cor:EntryHeader>
+				<xbrldi:typedMember dimension="gl-cor:dEntryNumber">
+					<gl-cor:EntryNumber>H1</gl-cor:EntryNumber>
 				</xbrldi:typedMember>
 				<xbrldi:typedMember dimension="gl-cor:dEntryDetail">
 					<gl-cor:EntryDetail>
@@ -221,17 +197,8 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 ../plt/case-c/gl-p
 		<xbrli:entity>
 			<xbrli:identifier scheme="http://www.xbrl.org/xbrlgl/sample">SAMPLE</xbrli:identifier>
 			<xbrli:segment>
-				<xbrldi:typedMember dimension="gl-cor:dEntryHeader">
-					<gl-cor:EntryHeader>
-						<gl-cor:enteredBy>Otto Wellwood</gl-cor:enteredBy>
-						<gl-cor:enteredDate>2005-07-01T00:00:00</gl-cor:enteredDate>
-						<gl-cor:sourceJournalID>gj</gl-cor:sourceJournalID>
-						<gl-cor:entryType>standard</gl-cor:entryType>
-						<gl-cor:entryNumber>2</gl-cor:entryNumber>
-						<gl-cor:entryComment>Current period tax exempt interest</gl-cor:entryComment>
-						<gl-cor:qualifierEntry>standard</gl-cor:qualifierEntry>
-						<gl-cor:bookTaxDifference>permanent</gl-cor:bookTaxDifference>
-					</gl-cor:EntryHeader>
+				<xbrldi:typedMember dimension="gl-cor:dEntryNumber">
+					<gl-cor:EntryNumber>H2</gl-cor:EntryNumber>
 				</xbrldi:typedMember>
 				<xbrldi:typedMember dimension="gl-cor:dEntryDetail">
 					<gl-cor:EntryDetail>
@@ -253,17 +220,8 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 ../plt/case-c/gl-p
 		<xbrli:entity>
 			<xbrli:identifier scheme="http://www.xbrl.org/xbrlgl/sample">SAMPLE</xbrli:identifier>
 			<xbrli:segment>
-				<xbrldi:typedMember dimension="gl-cor:dEntryHeader">
-					<gl-cor:EntryHeader>
-						<gl-cor:enteredBy>Otto Wellwood</gl-cor:enteredBy>
-						<gl-cor:enteredDate>2005-07-01T00:00:00</gl-cor:enteredDate>
-						<gl-cor:sourceJournalID>gj</gl-cor:sourceJournalID>
-						<gl-cor:entryType>standard</gl-cor:entryType>
-						<gl-cor:entryNumber>2</gl-cor:entryNumber>
-						<gl-cor:entryComment>Current period tax exempt interest</gl-cor:entryComment>
-						<gl-cor:qualifierEntry>standard</gl-cor:qualifierEntry>
-						<gl-cor:bookTaxDifference>permanent</gl-cor:bookTaxDifference>
-					</gl-cor:EntryHeader>
+				<xbrldi:typedMember dimension="gl-cor:dEntryNumber">
+					<gl-cor:EntryNumber>H2</gl-cor:EntryNumber>
 				</xbrldi:typedMember>
 				<xbrldi:typedMember dimension="gl-cor:dEntryDetail">
 					<gl-cor:EntryDetail>
@@ -285,17 +243,8 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 ../plt/case-c/gl-p
 		<xbrli:entity>
 			<xbrli:identifier scheme="http://www.xbrl.org/xbrlgl/sample">SAMPLE</xbrli:identifier>
 			<xbrli:segment>
-				<xbrldi:typedMember dimension="gl-cor:dEntryHeader">
-					<gl-cor:EntryHeader>
-						<gl-cor:enteredBy>Otto Wellwood</gl-cor:enteredBy>
-						<gl-cor:enteredDate>2005-07-01T00:00:00</gl-cor:enteredDate>
-						<gl-cor:sourceJournalID>gj</gl-cor:sourceJournalID>
-						<gl-cor:entryType>standard</gl-cor:entryType>
-						<gl-cor:entryNumber>2</gl-cor:entryNumber>
-						<gl-cor:entryComment>Current period tax exempt interest</gl-cor:entryComment>
-						<gl-cor:qualifierEntry>standard</gl-cor:qualifierEntry>
-						<gl-cor:bookTaxDifference>permanent</gl-cor:bookTaxDifference>
-					</gl-cor:EntryHeader>
+				<xbrldi:typedMember dimension="gl-cor:dEntryNumber">
+					<gl-cor:EntryNumber>H2</gl-cor:EntryNumber>
 				</xbrldi:typedMember>
 				<xbrldi:typedMember dimension="gl-cor:dEntryDetail">
 					<gl-cor:EntryDetail>
@@ -317,17 +266,8 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 ../plt/case-c/gl-p
 		<xbrli:entity>
 			<xbrli:identifier scheme="http://www.xbrl.org/xbrlgl/sample">SAMPLE</xbrli:identifier>
 			<xbrli:segment>
-				<xbrldi:typedMember dimension="gl-cor:dEntryHeader">
-					<gl-cor:EntryHeader>
-						<gl-cor:enteredBy>Otto Wellwood</gl-cor:enteredBy>
-						<gl-cor:enteredDate>2005-07-01T00:00:00</gl-cor:enteredDate>
-						<gl-cor:sourceJournalID>gj</gl-cor:sourceJournalID>
-						<gl-cor:entryType>standard</gl-cor:entryType>
-						<gl-cor:entryNumber>2</gl-cor:entryNumber>
-						<gl-cor:entryComment>Current period tax exempt interest</gl-cor:entryComment>
-						<gl-cor:qualifierEntry>standard</gl-cor:qualifierEntry>
-						<gl-cor:bookTaxDifference>permanent</gl-cor:bookTaxDifference>
-					</gl-cor:EntryHeader>
+				<xbrldi:typedMember dimension="gl-cor:dEntryNumber">
+					<gl-cor:EntryNumber>H2</gl-cor:EntryNumber>
 				</xbrldi:typedMember>
 				<xbrldi:typedMember dimension="gl-cor:dEntryDetail">
 					<gl-cor:EntryDetail>
