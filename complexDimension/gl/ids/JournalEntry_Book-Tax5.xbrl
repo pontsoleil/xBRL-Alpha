@@ -292,6 +292,7 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 ../plt/case-c/gl-p
 		<xbrli:measure>pure</xbrli:measure>
 	</xbrli:unit>
 	<gl-cor:record contextRef="now_DocumentInfo"/>
+	<gl-cor:record contextRef="H1"/>
 	<gl-cor:record contextRef="H1L1"/>
 	<gl-cor:record contextRef="H1L2"/>
 	<gl-cor:record contextRef="H1L3"/>
@@ -300,4 +301,5 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 ../plt/case-c/gl-p
 	<gl-cor:record contextRef="H2L1"/>
 	<gl-cor:record contextRef="H2L2"/>
 	<gl-cor:record contextRef="H2L3"/>
+	<gl-cor:record contextRef="H2L4"/>
 </xbrli:xbrl>
