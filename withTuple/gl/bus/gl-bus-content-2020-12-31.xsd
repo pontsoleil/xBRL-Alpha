@@ -14,13 +14,10 @@ xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:xbrli="http://www.xbrl.org/2003/
 	<xs:include schemaLocation="gl-bus-2020-12-31.xsd"/>
 	<xs:annotation>
 		<xs:appinfo>
-			<!--				<xbrll:linkbaseRef xlink:href="gl-bus-2020-12-31-presentation.xml" xlink:title="Presentation Links, all" xlink:type="simple" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/> -->
 			<xbrll:linkbaseRef xlink:href="gl-bus-2020-12-31-definition.xml" xlink:title="Definition Links, all" xlink:type="simple" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
 		</xs:appinfo>
 	</xs:annotation>
-	<!--
-	tuple type
--->
+	<!-- tuple type -->
 	<xs:complexType name="organizationIdentifiers.TupleType">
 		<xs:complexContent>
 			<xs:restriction base="xs:anyType">
@@ -194,9 +191,7 @@ xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:xbrli="http://www.xbrl.org/2003/
 			</xs:restriction>
 		</xs:complexContent>
 	</xs:complexType>
-	<!--
-	tuple (ABIE) 
--->
+	<!-- tuple (ABIE) -->
 	<xs:element name="reportingCalendar.Detail" id="gl-bus_reportingCalendar.Detail" substitutionGroup="xbrli:tuple" nillable="true" type="gl-bus:reportingCalendar.TupleType"/>
 	<xs:element name="reportingCalendarPeriod.Detail" id="gl-bus_reportingCalendarPeriod.Detail" substitutionGroup="xbrli:tuple" nillable="true" type="gl-bus:reportingCalendarPeriod.TupleType"/>
 	<xs:element name="entityWebSite.Detail" id="gl-bus_entityWebSite.Detail" substitutionGroup="xbrli:tuple" nillable="true" type="gl-bus:entityWebSite.TupleType"/>

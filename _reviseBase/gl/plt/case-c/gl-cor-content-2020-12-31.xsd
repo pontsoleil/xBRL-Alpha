@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2020 rel. 2 sp1 (x64) (http://www.altova.com) by SAMBUICHI Nobuyuki (Sambuichi Professional Engineers Office) -->
 <!-- (c) XBRL International.  See http://www.xbrl.org/legal -->
 <schema xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:gl-cor="http://www.xbrl.org/int/gl/cor/2016-12-01" targetNamespace="http://www.xbrl.org/int/gl/cor/2016-12-01" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>

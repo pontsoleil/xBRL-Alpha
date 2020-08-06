@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2020 rel. 2 sp1 (x64) (http://www.altova.com) by SAMBUICHI Nobuyuki (Sambuichi Professional Engineers Office) -->
 <!-- (c) XBRL International.  See http://www.xbrl.org/legal -->
 <schema 
 targetNamespace="http://www.xbrl.org/int/gl/ehm/2020-12-31" 
@@ -10,11 +11,6 @@ xmlns:xbrli="http://www.xbrl.org/2003/instance"
 xmlns:link="http://www.xbrl.org/2003/linkbase" 
 xmlns:gl-gen="http://www.xbrl.org/int/gl/gen/2020-12-31" 
 xmlns:gl-ehm="http://www.xbrl.org/int/gl/ehm/2020-12-31">
-<!--	<annotation>
-		<appinfo>
-			<link:linkbaseRef xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="gl-ehm-2020-12-31-presentation.xml" xlink:title="Presentation Links, all" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef"/>
-		</appinfo>
-	</annotation>-->
 	<import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
 	<import namespace="http://www.xbrl.org/int/gl/gen/2020-12-31" schemaLocation="../gen/gl-gen-2020-12-31.xsd"/>
 	<!-- item type -->

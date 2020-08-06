@@ -1,5 +1,30 @@
 <?xml version="1.0"?>
-<link:linkbase xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd http://xbrl.org/2008/generic http://www.xbrl.org/2008/generic-link.xsd http://xbrl.org/2008/assertion/consistency http://www.xbrl.org/2008/consistency-assertion.xsd http://xbrl.org/2008/formula http://www.xbrl.org/2008/formula.xsd http://xbrl.org/2008/filter/tuple http://www.xbrl.org/2008/tuple-filter.xsd http://xbrl.org/2008/variable http://www.xbrl.org/2008/variable.xsd http://xbrl.org/2008/assertion/value http://www.xbrl.org/2008/value-assertion.xsd http://xbrl.org/2008/label http://www.xbrl.org/2008/generic-label.xsd http://xbrl.org/2008/reference http://www.xbrl.org/2008/generic-reference.xsd http://xbrl.org/2008/filter/dimension http://www.xbrl.org/2008/dimension-filter.xsd http://xbrl.org/2008/filter/concept http://www.xbrl.org/2008/concept-filter.xsd http://xbrl.org/2008/validation http://www.xbrl.org/2008/validation.xsd http://xbrl.org/2008/filter/relative http://www.xbrl.org/2008/relative-filter.xsd http://xbrl.org/2008/filter/general http://www.xbrl.org/2008/general-filter.xsd http://xbrl.org/2008/filter/period http://www.xbrl.org/2008/period-filter.xsd http://xbrl.org/2008/filter/match http://www.xbrl.org/2008/match-filter.xsd http://xbrl.org/2010/message http://www.xbrl.org/2010/generic-message.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:gl-bus="http://www.xbrl.org/int/gl/bus/2020-12-31" xmlns:gl-cor="http://www.xbrl.org/int/gl/cor/2020-12-31" xmlns:va="http://xbrl.org/2008/assertion/value" xmlns:cf="http://xbrl.org/2008/filter/concept" xmlns:gen="http://xbrl.org/2008/generic" xmlns:variable="http://xbrl.org/2008/variable" xmlns:msg="http://xbrl.org/2010/message">
+<!-- edited with XMLSpy v2020 rel. 2 sp1 (x64) (http://www.altova.com) by SAMBUICHI Nobuyuki (Sambuichi Professional Engineers Office) -->
+<link:linkbase 
+xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd 
+http://xbrl.org/2008/generic http://www.xbrl.org/2008/generic-link.xsd 
+http://xbrl.org/2008/assertion/consistency http://www.xbrl.org/2008/consistency-assertion.xsd 
+http://xbrl.org/2008/formula http://www.xbrl.org/2008/formula.xsd http://xbrl.org/2008/filter/tuple 
+http://www.xbrl.org/2008/tuple-filter.xsd http://xbrl.org/2008/variable http://www.xbrl.org/2008/variable.xsd 
+http://xbrl.org/2008/assertion/value http://www.xbrl.org/2008/value-assertion.xsd 
+http://xbrl.org/2008/label http://www.xbrl.org/2008/generic-label.xsd 
+http://xbrl.org/2008/reference http://www.xbrl.org/2008/generic-reference.xsd 
+http://xbrl.org/2008/filter/dimension http://www.xbrl.org/2008/dimension-filter.xsd 
+http://xbrl.org/2008/filter/concept http://www.xbrl.org/2008/concept-filter.xsd 
+http://xbrl.org/2008/validation http://www.xbrl.org/2008/validation.xsd 
+http://xbrl.org/2008/filter/relative http://www.xbrl.org/2008/relative-filter.xsd 
+http://xbrl.org/2008/filter/general http://www.xbrl.org/2008/general-filter.xsd 
+http://xbrl.org/2008/filter/period http://www.xbrl.org/2008/period-filter.xsd 
+http://xbrl.org/2008/filter/match http://www.xbrl.org/2008/match-filter.xsd 
+http://xbrl.org/2010/message http://www.xbrl.org/2010/generic-message.xsd" 
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:xbrli="http://www.xbrl.org/2003/instance" 
+xmlns:link="http://www.xbrl.org/2003/linkbase" 
+xmlns:gl-bus="http://www.xbrl.org/int/gl/bus/2020-12-31" 
+xmlns:gl-cor="http://www.xbrl.org/int/gl/cor/2020-12-31" 
+xmlns:va="http://xbrl.org/2008/assertion/value" 
+xmlns:cf="http://xbrl.org/2008/filter/concept" xmlns:gen="http://xbrl.org/2008/generic" xmlns:variable="http://xbrl.org/2008/variable" xmlns:msg="http://xbrl.org/2010/message">
 	<link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:type="simple" xlink:href="http://www.xbrl.org/2010/validation-message.xsd#assertion-unsatisfied-message"/>
 	<link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2010/assertion-satisfied-message" xlink:type="simple" xlink:href="http://www.xbrl.org/2010/validation-message.xsd#assertion-satisfied-message"/>
 	<link:roleRef roleURI="http://www.xbrl.org/2010/role/message" xlink:type="simple" xlink:href="http://www.xbrl.org/2010/generic-message.xsd#standard-message"/>

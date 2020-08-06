@@ -6,7 +6,6 @@
 	<include schemaLocation="gl-muc-2020-12-31.xsd"/>
 	<annotation>
 		<appinfo>
-			<!--<xbrll:linkbaseRef xlink:href="gl-muc-2020-12-31-presentation.xml" xlink:title="Presentation Links, all" xlink:type="simple" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/> -->
 			<xbrll:linkbaseRef xlink:href="gl-muc-2020-12-31-definition.xml" xlink:title="Definition Links, all" xlink:type="simple" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
 		</appinfo>
 	</annotation>
@@ -35,7 +34,6 @@
 			</restriction>
 		</complexContent>
 	</complexType>
-	<!-- 
-	ABIE -->
+	<!-- ABIE -->
 	<element name="multicurrency.Detail" id="gl-muc_multicurrency.Detail" substitutionGroup="xbrli:tuple" nillable="true" type="gl-muc:multicurrency.TupleType"/>
 </schema>

@@ -41,9 +41,7 @@
 	<element name="dEntryNumber" id="gl-cor_dEntryNumber" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#gl-cor_EntryNumber"/>
 	<element name="dLineNumber" id="gl-cor_dLineNumber" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#gl-cor_LineNumber"/>
 	<element name="dAccountMainID" id="gl-cor_dAccountMainID" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" abstract="true" xbrli:periodType="instant" xbrldt:typedDomainRef="#gl-cor_AccountMainID"/>
-	<!--
-	Item Type
--->
+	<!-- Item Type -->
 	<complexType name="uniqueID.ItemType">
 		<simpleContent>
 			<restriction base="xbrli:stringItemType"/>
@@ -379,9 +377,7 @@
 			<restriction base="xbrli:stringItemType"/>
 		</simpleContent>
 	</complexType>
-	<!--
-	item (Basic Business Information Entity)
--->
+	<!-- item (Basic Business Information Entity) -->
 	<element name="accountMainDescription" type="gl-cor:accountMainDescription.ItemType" substitutionGroup="xbrli:item" nillable="true" id="gl-cor_accountMainDescription" xbrli:periodType="instant"/>
 	<element name="accountMainID" type="gl-cor:accountMainID.ItemType" substitutionGroup="xbrli:item" nillable="true" id="gl-cor_accountMainID" xbrli:periodType="instant"/>
 	<element name="accountPurposeCode" type="gl-gen:accountPurposeCode.ItemType" substitutionGroup="xbrli:item" nillable="true" id="gl-cor_accountPurposeCode" xbrli:periodType="instant"/>
@@ -476,9 +472,7 @@
 	<element name="qualifierEntryDescription" type="gl-cor:qualifierEntryDescription.ItemType" substitutionGroup="xbrli:item" nillable="true" id="gl-cor_qualifierEntryDescription" xbrli:periodType="instant"/>
 	<element name="accountTypeDescription" type="gl-cor:accountTypeDescription.ItemType" substitutionGroup="xbrli:item" nillable="true" id="gl-cor_accountTypeDescription" xbrli:periodType="instant"/>
 	<element name="identifierOrganizationTypeDescription" type="gl-cor:identifierOrganizationTypeDescription.ItemType" substitutionGroup="xbrli:item" nillable="true" id="gl-cor_identifierOrganizationTypeDescription" xbrli:periodType="instant"/>
-	<!--
-	item for presentation linkbase (Agregate Business Information Entity)
--->
+	<!-- item for presentation linkbase (Agregate Business Information Entity) -->
 	<element name="accountingEntries" type="xbrli:QNameItemType" abstract="true" substitutionGroup="xbrli:item" nillable="false" id="gl-cor_accountingEntries" xbrli:periodType="instant"/>
 	<element name="documentInfo" type="xbrli:QNameItemType" abstract="true" substitutionGroup="xbrli:item" nillable="true" id="gl-cor_documentInfo" xbrli:periodType="instant"/>
 	<element name="entityInformation" type="xbrli:QNameItemType" abstract="true" substitutionGroup="xbrli:item" nillable="true" id="gl-cor_entityInformation" xbrli:periodType="instant"/>
@@ -495,9 +489,7 @@
 	<element name="fax" type="xbrli:QNameItemType" abstract="true" substitutionGroup="xbrli:item" nillable="true" id="gl-cor_fax" xbrli:periodType="instant"/>
 	<element name="identifierReference" type="xbrli:QNameItemType" abstract="true" substitutionGroup="xbrli:item" nillable="true" id="gl-cor_identifierReference" xbrli:periodType="instant"/>
 	<element name="taxes" type="xbrli:QNameItemType" abstract="true" substitutionGroup="xbrli:item" nillable="true" id="gl-cor_taxes" xbrli:periodType="instant"/>
-	<!--
-	ASsociation Business Information Entity 
--->
+	<!-- ASsociation Business Information Entity -->
 	<element name="specified.documentInfo" id="gl-cor_specified.documentInfo" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" abstract="false" xbrli:periodType="instant"/>
 	<element name="specified.entityInformation" id="gl-cor_specified.entityInformation" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" abstract="false" xbrli:periodType="instant"/>
 	<element name="specified.entryHeader" id="gl-cor_specified.entryHeader" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" abstract="false" xbrli:periodType="instant"/>

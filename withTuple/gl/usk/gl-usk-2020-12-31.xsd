@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2020 rel. 2 sp1 (x64) (http://www.altova.com) by SAMBUICHI Nobuyuki (Sambuichi Professional Engineers Office) -->
 <!-- (c) XBRL International.  See http://www.xbrl.org/legal -->
 <schema elementFormDefault="qualified" xmlns:xbrll="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.xbrl.org/int/gl/usk/2020-12-31" attributeFormDefault="unqualified" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:gl-cor="http://www.xbrl.org/int/gl/cor/2020-12-31" xmlns:gl-usk="http://www.xbrl.org/int/gl/usk/2020-12-31" xmlns:gl-gen="http://www.xbrl.org/int/gl/gen/2020-12-31">
 	<annotation>
@@ -8,9 +9,7 @@
 	</annotation>
 	<import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
 	<import namespace="http://www.xbrl.org/int/gl/gen/2020-12-31" schemaLocation="../gen/gl-gen-2020-12-31.xsd"/>
-<!-- 
-	item type 
--->
+<!-- item type -->
 	<complexType name="frequencyInterval.ItemType">
 		<simpleContent>
 			<restriction base="xbrli:decimalItemType"/>
@@ -81,9 +80,7 @@
 			<restriction base="xbrli:dateTimeItemType"/>
 		</simpleContent>
 	</complexType>
-<!--
-	item
--->
+<!-- item -->
 	<element name="frequencyInterval" id="gl-usk_frequencyInterval" type="gl-usk:frequencyInterval.ItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
 	<element name="frequencyUnit" id="gl-usk_frequencyUnit" type="gl-usk:frequencyUnit.ItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
 	<element name="jobCode" id="gl-usk_jobCode" type="gl-usk:jobCode.ItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>

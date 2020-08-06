@@ -17,44 +17,5 @@ xmlns:link="http://www.xbrl.org/2003/linkbase">
 		<link:definitionArc xlink:type="arc" xlink:from="Hypercube" xlink:to="dim_EntryDetail" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:title="definition Hypercube to Typed Dimension entryDetail" use="optional" order="1.0"/>
 	</link:definitionLink>
 	<link:definitionLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
-		<!-- Structure -->
-<!--
-		<link:loc xlink:type="locator" xlink:href="gl-cor-2020-12-31.xsd#gl-cor_specified.documentInfo" xlink:label="loc_gl-cor_specified.documentInfo_0"/>
-		<link:loc xlink:type="locator" xlink:href="gl-cor-content-2020-12-31.xsd#gl-cor_documentInfo.Detail" xlink:label="loc_gl-cor_documentInfo.Detail_0"/>
-		<link:definitionArc order="1.0" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/requires-element" xlink:from="loc_gl-cor_specified.documentInfo_0" xlink:to="loc_gl-cor_documentInfo.Detail_0"/>
-		<link:loc xlink:type="locator" xlink:href="gl-cor-2020-12-31.xsd#gl-cor_specified.entityInformation" xlink:label="loc_gl-cor_specified.entityInformation_0"/>
-		<link:loc xlink:type="locator" xlink:href="gl-cor-content-2020-12-31.xsd#gl-cor_entityInformation.Detail" xlink:label="loc_gl-cor_entityInformation.Detail_0"/>
-		<link:definitionArc order="1.0" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/requires-element" xlink:from="loc_gl-cor_specified.entityInformation_0" xlink:to="loc_gl-cor_entityInformation.Detail_0"/>
-		<link:loc xlink:type="locator" xlink:href="gl-cor-2020-12-31.xsd#gl-cor_specified.entryHeader" xlink:label="loc_gl-cor_specified.entryHeader_0"/>
-		<link:loc xlink:type="locator" xlink:href="gl-cor-content-2020-12-31.xsd#gl-cor_entryHeader.Detail" xlink:label="loc_gl-cor_entryHeader.Detail_0"/>
-		<link:definitionArc order="1.0" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/requires-element" xlink:from="loc_gl-cor_specified.entryHeader_0" xlink:to="loc_gl-cor_entryHeader.Detail_0"/>
-		<link:loc xlink:type="locator" xlink:href="gl-cor-2020-12-31.xsd#gl-cor_specified.identifierExternalReference" xlink:label="loc_gl-cor_specified.identifierExternalReference_0"/>
-		<link:loc xlink:type="locator" xlink:href="gl-cor-content-2020-12-31.xsd#gl-cor_identifierExternalReference.Detail" xlink:label="loc_gl-cor_identifierExternalReference.Detail_0"/>
-		<link:definitionArc order="1.0" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/requires-element" xlink:from="loc_gl-cor_specified.identifierExternalReference_0" xlink:to="loc_gl-cor_identifierExternalReference.Detail_0"/>
-		<link:loc xlink:type="locator" xlink:href="gl-cor-2020-12-31.xsd#gl-cor_specified.eMail" xlink:label="loc_gl-cor_specified.eMail_0"/>
-		<link:loc xlink:type="locator" xlink:href="gl-cor-content-2020-12-31.xsd#gl-cor_eMail.Detail" xlink:label="loc_gl-cor_eMail.Detail_0"/>
-		<link:definitionArc order="1.0" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/requires-element" xlink:from="loc_gl-cor_specified.eMail_0" xlink:to="loc_gl-cor_eMail.Detail_0"/>
-		<link:loc xlink:type="locator" xlink:href="gl-cor-2020-12-31.xsd#gl-cor_specified.phone" xlink:label="loc_gl-cor_specified.phone_0"/>
-		<link:loc xlink:type="locator" xlink:href="gl-cor-content-2020-12-31.xsd#gl-cor_phone.Detail" xlink:label="loc_gl-cor_phone.Detail_0"/>
-		<link:definitionArc order="1.0" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/requires-element" xlink:from="loc_gl-cor_specified.phone_0" xlink:to="loc_gl-cor_phone.Detail_0"/>
-		<link:loc xlink:type="locator" xlink:href="gl-cor-2020-12-31.xsd#gl-cor_specified.fax" xlink:label="loc_gl-cor_specified.fax_0"/>
-		<link:loc xlink:type="locator" xlink:href="gl-cor-content-2020-12-31.xsd#gl-cor_fax.Detail" xlink:label="loc_gl-cor_fax.Detail_0"/>
-		<link:definitionArc order="1.0" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/requires-element" xlink:from="loc_gl-cor_specified.fax_0" xlink:to="loc_gl-cor_fax.Detail_0"/>
-		<link:loc xlink:type="locator" xlink:href="gl-cor-2020-12-31.xsd#gl-cor_specified.accountSub" xlink:label="loc_gl-cor_specified.accountSub_0"/>
-		<link:loc xlink:type="locator" xlink:href="gl-cor-content-2020-12-31.xsd#gl-cor_accountSub.Detail" xlink:label="loc_gl-cor_accountSub.Detail_0"/>
-		<link:definitionArc order="1.0" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/requires-element" xlink:from="loc_gl-cor_specified.accountSub_0" xlink:to="loc_gl-cor_accountSub.Detail_0"/>
-		<link:loc xlink:type="locator" xlink:href="gl-cor-2020-12-31.xsd#gl-cor_specified.xbrlInfo" xlink:label="loc_gl-cor_specified.xbrlInfo_0"/>
-		<link:loc xlink:type="locator" xlink:href="gl-cor-content-2020-12-31.xsd#gl-cor_xbrlInfo.Detail" xlink:label="loc_gl-cor_xbrlInfo.Detail_0"/>
-		<link:definitionArc order="1.0" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/requires-element" xlink:from="loc_gl-cor_specified.xbrlInfo_0" xlink:to="loc_gl-cor_xbrlInfo.Detail_0"/>
-		<link:loc xlink:type="locator" xlink:href="gl-cor-2020-12-31.xsd#gl-cor_specified.segmentParent" xlink:label="loc_gl-cor_specified.segmentParent_0"/>
-		<link:loc xlink:type="locator" xlink:href="gl-cor-content-2020-12-31.xsd#gl-cor_segmentParent.Detail" xlink:label="loc_gl-cor_segmentParent.Detail_0"/>
-		<link:definitionArc order="1.0" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/requires-element" xlink:from="loc_gl-cor_specified.segmentParent_0" xlink:to="loc_gl-cor_segmentParent.Detail_0"/>
-		<link:loc xlink:type="locator" xlink:href="gl-cor-2020-12-31.xsd#gl-cor_specified.identifierReference" xlink:label="loc_gl-cor_specified.identifierReference_0"/>
-		<link:loc xlink:type="locator" xlink:href="gl-cor-content-2020-12-31.xsd#gl-cor_identifierReference.Detail" xlink:label="loc_gl-cor_identifierReference.Detail_0"/>
-		<link:definitionArc order="1.0" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/requires-element" xlink:from="loc_gl-cor_specified.identifierReference_0" xlink:to="loc_gl-cor_identifierReference.Detail_0"/>
-		<link:loc xlink:type="locator" xlink:href="gl-cor-2020-12-31.xsd#gl-cor_specified.taxes" xlink:label="loc_gl-cor_specified.taxes_0"/>
-		<link:loc xlink:type="locator" xlink:href="gl-cor-content-2020-12-31.xsd#gl-cor_taxes.Detail" xlink:label="loc_gl-cor_taxes.Detail_0"/>
-		<link:definitionArc order="1.0" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/requires-element" xlink:from="loc_gl-cor_specified.taxes_0" xlink:to="loc_gl-cor_taxes.Detail_0"/>
--->
 	</link:definitionLink>
 </link:linkbase>
