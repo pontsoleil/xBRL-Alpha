@@ -290,7 +290,7 @@
 		<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="gl-bus_depreciationMortgage" xlink:to="startDate_1130249158149_0" xlink:title="presentation: depreciationMortgage to startDate" order="50.0"/>
 		<loc xlink:type="locator" xlink:href="gl-bus-2020-12-31.xsd#gl-bus_endDate" xlink:label="endDate_1130249161574_0" xlink:title="endDate"/>
 		<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="gl-bus_depreciationMortgage" xlink:to="endDate_1130249161574_0" xlink:title="presentation: depreciationMortgage to endDate" order="60.0"/>
-		<loc xlink:type="locator" xlink:href="../cor/gl-cor-2020-12-31.xsd#gl-cor_amount" xlink:label="amount_1130249164628_0" xlink:title="amount"/>
+		<loc xlink:type="locator" xlink:href="gl-bus-2020-12-31.xsd#gl-bus_dmAmount" xlink:label="amount_1130249164628_0" xlink:title="dmAmount"/>
 		<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="gl-bus_depreciationMortgage" xlink:to="amount_1130249164628_0" xlink:title="presentation: depreciationMortgage to amount" order="70.0"/>
 		<loc xlink:type="locator" xlink:href="../cor/gl-cor-2020-12-31.xsd#gl-cor_account" xlink:label="account_1107629552606_1" xlink:title="presentation: account"/>
 		<loc xlink:type="locator" xlink:href="gl-bus-2020-12-31.xsd#gl-bus_entryAccountingMethod" xlink:label="entryAccountingMethod_1118890235453_0" xlink:title="entryAccountingMethod"/>

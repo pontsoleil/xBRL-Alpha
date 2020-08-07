@@ -688,7 +688,7 @@
 	<element name="comment" id="gl-bus_comment" type="gl-bus:comment.ItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
 	<element name="startDate" id="gl-bus_startDate" type="gl-bus:date.ItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
 	<element name="endDate" id="gl-bus_endDate" type="gl-bus:date.ItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
-	<element name="amount" id="gl-bus_amount" type="gl-gen:amount.ItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<element name="dmAmount" id="gl-bus_dmAmount" type="gl-gen:amount.ItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
 	<element name="documentChargeReimb" id="gl-bus_documentChargeReimb" type="gl-bus:documentChargeReimb.ItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
 	<element name="documentLocation" id="gl-bus_documentLocation" type="gl-bus:documentLocation.ItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
 	<element name="documentReceivedDate" id="gl-bus_documentReceivedDate" type="gl-bus:documentReceivedDate.ItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
