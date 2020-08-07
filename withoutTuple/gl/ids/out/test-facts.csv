@@ -1,0 +1,127 @@
+﻿id,concept,decimals,entity,period,unit,gl-cor_dAccountMainID,gl-cor_dEntryNumber,gl-cor_dLineNumber,value
+f3516,gl-cor:specified.documentInfo,,scheme:SAMPLE,2020-01-02T00:00:00,,,,,#empty
+f3517,gl-cor:specified.entityInformation,,scheme:SAMPLE,2020-01-02T00:00:00,,,,,#empty
+f3518,gl-cor:specified.entryHeader,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,,#empty
+f3519,gl-cor:specified.entryHeader,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,,#empty
+f3520,gl-cor:entriesType,,scheme:SAMPLE,2020-01-02T00:00:00,,,,,entries
+f3521,gl-cor:uniqueID,,scheme:SAMPLE,2020-01-02T00:00:00,,,,,001
+f3522,gl-cor:language,,scheme:SAMPLE,2020-01-02T00:00:00,,,,,iso639:en
+f3523,gl-cor:creationDate,,scheme:SAMPLE,2020-01-02T00:00:00,,,,,2005-07-05
+f3524,gl-bus:creator,,scheme:SAMPLE,2020-01-02T00:00:00,,,,,XBRL JAPAN GL Sub Working Group
+f3525,gl-cor:entriesComment,,scheme:SAMPLE,2020-01-02T00:00:00,,,,,A best practice example of entries with book to tax differences instance document
+f3526,gl-cor:periodCoveredStart,,scheme:SAMPLE,2020-01-02T00:00:00,,,,,2005-06-01
+f3527,gl-cor:periodCoveredEnd,,scheme:SAMPLE,2020-01-02T00:00:00,,,,,2005-06-30
+f3528,gl-bus:sourceApplication,,scheme:SAMPLE,2020-01-02T00:00:00,,,,,Sample ERP
+f3529,gl-muc:defaultCurrency,,scheme:SAMPLE,2020-01-02T00:00:00,,,,,iso4217:usd
+f3530,gl-bus:specified.organizationIdentifiers,,scheme:SAMPLE,2020-01-02T00:00:00,,,,,#empty
+f3531,gl-bus:organizationIdentifier,,scheme:SAMPLE,2020-01-02T00:00:00,,,,,ABC Company
+f3532,gl-bus:organizationDescription,,scheme:SAMPLE,2020-01-02T00:00:00,,,,,Company Name
+f3533,gl-cor:enteredBy,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,,Otto Wellwood
+f3534,gl-cor:enteredDate,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,,2005-07-01
+f3535,gl-cor:sourceJournalID,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,,gj
+f3536,gl-bus:sourceJournalDescription,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,,JE
+f3537,gl-cor:entryType,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,,standard
+f3538,gl-cor:entryNumber,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,,1
+f3539,gl-cor:entryComment,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,,Current period depreciation expense
+f3540,gl-cor:qualifierEntry,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,,standard
+f3541,gl-bus:totalDebit,2,scheme:SAMPLE,2020-01-02T00:00:00,iso4217:USD,,H1,,7700.00
+f3542,gl-bus:totalCredit,2,scheme:SAMPLE,2020-01-02T00:00:00,iso4217:USD,,H1,,7700.00
+f3543,gl-cor:bookTaxDifference,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,,temporary
+f3544,gl-cor:specified.entryDetail,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,,H1L1
+f3545,gl-cor:specified.entryDetail,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,,H1L2
+f3546,gl-cor:specified.entryDetail,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,,H1L3
+f3547,gl-cor:specified.entryDetail,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,,H1L4
+f3548,gl-cor:lineNumber,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,H1L1,L1
+f3549,gl-cor:specified.account,,scheme:SAMPLE,2020-01-02T00:00:00,,6200,,,#empty
+f3550,gl-cor:amount,2,scheme:SAMPLE,2020-01-02T00:00:00,iso4217:USD,,H1,H1L1,7000.00
+f3551,gl-cor:debitCreditCode,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,H1L1,D
+f3552,gl-cor:postingDate,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,H1L1,2005-06-30
+f3553,gl-cor:postingStatus,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,H1L1,posted
+f3554,gl-cor:detailComment,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,H1L1,Current period depreciation expense - books
+f3555,gl-cor:lineNumber,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,H1L2,L2
+f3556,gl-cor:specified.account,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,H1L2,ACCOUNT1451
+f3557,gl-cor:amount,2,scheme:SAMPLE,2020-01-02T00:00:00,iso4217:USD,,H1,H1L2,7000.00
+f3558,gl-cor:debitCreditCode,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,H1L2,C
+f3559,gl-cor:postingDate,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,H1L2,2005-06-30
+f3560,gl-cor:postingStatus,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,H1L2,posted
+f3561,gl-cor:detailComment,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,H1L2,Current period depreciation expense - books
+f3562,gl-cor:lineNumber,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,H1L3,L3
+f3563,gl-cor:specified.account,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,H1L3,ACCOUNT6200
+f3564,gl-cor:amount,2,scheme:SAMPLE,2020-01-02T00:00:00,iso4217:USD,,H1,H1L3,700.00
+f3565,gl-cor:debitCreditCode,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,H1L3,D
+f3566,gl-cor:postingDate,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,H1L3,2005-06-30
+f3567,gl-cor:postingStatus,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,H1L3,posted
+f3568,gl-cor:detailComment,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,H1L3,Current period depreciation expense - tax
+f3569,gl-cor:lineNumber,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,H1L4,L4
+f3570,gl-cor:specified.account,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,H1L4,ACCOUNT1421
+f3571,gl-cor:amount,2,scheme:SAMPLE,2020-01-02T00:00:00,iso4217:USD,,H1,H1L4,700.00
+f3572,gl-cor:debitCreditCode,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,H1L4,C
+f3573,gl-cor:postingDate,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,H1L4,2005-06-30
+f3574,gl-cor:postingStatus,,scheme:SAMPLE,2020-01-02T00:00:00,,,H1,H1L4,posted
+f3575,gl-cor:enteredBy,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,,Otto Wellwood
+f3576,gl-cor:enteredDate,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,,2005-07-01
+f3577,gl-cor:sourceJournalID,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,,gj
+f3578,gl-bus:sourceJournalDescription,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,,JE
+f3579,gl-cor:entryType,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,,standard
+f3580,gl-cor:entryNumber,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,,2
+f3581,gl-cor:entryComment,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,,Current period tax exempt interest
+f3582,gl-cor:qualifierEntry,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,,standard
+f3583,gl-bus:totalDebit,2,scheme:SAMPLE,2020-01-02T00:00:00,iso4217:USD,,H2,,550.00
+f3584,gl-bus:totalCredit,2,scheme:SAMPLE,2020-01-02T00:00:00,iso4217:USD,,H2,,550.00
+f3585,gl-cor:bookTaxDifference,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,,permanent
+f3586,gl-cor:specified.entryDetail,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,,H2L1
+f3587,gl-cor:specified.entryDetail,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,,H2L2
+f3588,gl-cor:specified.entryDetail,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,,H2L3
+f3589,gl-cor:specified.entryDetail,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,,H2L4
+f3590,gl-cor:lineNumber,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,H2L1,L1
+f3591,gl-cor:specified.account,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,H2L1,ACCOUNT1300
+f3592,gl-cor:amount,2,scheme:SAMPLE,2020-01-02T00:00:00,iso4217:USD,,H2,H2L1,500.00
+f3593,gl-cor:debitCreditCode,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,H2L1,D
+f3594,gl-cor:postingDate,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,H2L1,2005-06-30
+f3595,gl-cor:postingStatus,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,H2L1,posted
+f3596,gl-cor:detailComment,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,H2L1,Record current period interest earned
+f3597,gl-cor:lineNumber,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,H2L2,L2
+f3598,gl-cor:specified.account,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,H2L2,ACCOUNT5200
+f3599,gl-cor:amount,2,scheme:SAMPLE,2020-01-02T00:00:00,iso4217:USD,,H2,H2L2,500.00
+f3600,gl-cor:debitCreditCode,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,H2L2,C
+f3601,gl-cor:postingDate,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,H2L2,2005-06-30
+f3602,gl-cor:postingStatus,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,H2L2,posted
+f3603,gl-cor:detailComment,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,H2L2,Record current period interest earned
+f3604,gl-cor:lineNumber,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,H2L3,L3
+f3605,gl-cor:specified.account,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,H2L3,ACCOUNT1300
+f3606,gl-cor:amount,2,scheme:SAMPLE,2020-01-02T00:00:00,iso4217:USD,,H2,H2L3,50.00
+f3607,gl-cor:debitCreditCode,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,H2L3,D
+f3608,gl-cor:postingDate,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,H2L3,2005-06-30
+f3609,gl-cor:postingStatus,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,H2L3,posted
+f3610,gl-cor:detailComment,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,H2L3,Record current period tax exempt interest earned
+f3611,gl-cor:lineNumber,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,H2L4,L4
+f3612,gl-cor:specified.account,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,H2L4,ACCOUNT9999
+f3613,gl-cor:amount,2,scheme:SAMPLE,2020-01-02T00:00:00,iso4217:USD,,H2,H2L4,50.00
+f3614,gl-cor:debitCreditCode,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,H2L4,C
+f3615,gl-cor:postingDate,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,H2L4,2005-06-30
+f3616,gl-cor:postingStatus,,scheme:SAMPLE,2020-01-02T00:00:00,,,H2,H2L4,posted
+f3617,gl-cor:detailComment,,scheme:SAMPLE,2020-01-02T00:00:00,,,,,Record current period tax exempt interest earned
+f3618,gl-cor:accountMainID,,scheme:SAMPLE,2020-01-02T00:00:00,,1300,,,1300
+f3619,gl-cor:accountMainDescription,,scheme:SAMPLE,2020-01-02T00:00:00,,1300,,,Accrued Interest
+f3620,gl-cor:accountPurposeCode,,scheme:SAMPLE,2020-01-02T00:00:00,,1300,,,tax
+f3621,gl-cor:accountType,,scheme:SAMPLE,2020-01-02T00:00:00,,1300,,,account
+f3622,gl-cor:accountMainID,,scheme:SAMPLE,2020-01-02T00:00:00,,1421,,,1421
+f3623,gl-cor:accountMainDescription,,scheme:SAMPLE,2020-01-02T00:00:00,,1421,,,Accumulated Depreciation
+f3624,gl-cor:accountPurposeCode,,scheme:SAMPLE,2020-01-02T00:00:00,,1421,,,tax
+f3625,gl-cor:accountType,,scheme:SAMPLE,2020-01-02T00:00:00,,1421,,,account
+f3626,gl-cor:accountMainID,,scheme:SAMPLE,2020-01-02T00:00:00,,1451,,,1451
+f3627,gl-cor:accountMainDescription,,scheme:SAMPLE,2020-01-02T00:00:00,,1451,,,Accumulated Depreciation
+f3628,gl-cor:accountPurposeCode,,scheme:SAMPLE,2020-01-02T00:00:00,,1451,,,usgaap
+f3629,gl-cor:accountType,,scheme:SAMPLE,2020-01-02T00:00:00,,1451,,,account
+f3630,gl-cor:accountMainID,,scheme:SAMPLE,2020-01-02T00:00:00,,5200,,,5200
+f3631,gl-cor:accountMainDescription,,scheme:SAMPLE,2020-01-02T00:00:00,,5200,,,Interest income
+f3632,gl-cor:accountPurposeCode,,scheme:SAMPLE,2020-01-02T00:00:00,,5200,,,usgaap
+f3633,gl-cor:accountType,,scheme:SAMPLE,2020-01-02T00:00:00,,5200,,,account
+f3634,gl-cor:accountMainID,,scheme:SAMPLE,2020-01-02T00:00:00,,6200,,,6200
+f3635,gl-cor:accountMainDescription,,scheme:SAMPLE,2020-01-02T00:00:00,,6200,,,Depreciation Expense
+f3636,gl-cor:accountPurposeCode,,scheme:SAMPLE,2020-01-02T00:00:00,,6200,,,tax
+f3637,gl-cor:accountType,,scheme:SAMPLE,2020-01-02T00:00:00,,6200,,,account
+f3638,gl-cor:accountMainID,,scheme:SAMPLE,2020-01-02T00:00:00,,9999,,,9999
+f3639,gl-cor:accountMainDescription,,scheme:SAMPLE,2020-01-02T00:00:00,,9999,,,Clearing
+f3640,gl-cor:accountPurposeCode,,scheme:SAMPLE,2020-01-02T00:00:00,,9999,,,tax
+f3641,gl-cor:accountType,,scheme:SAMPLE,2020-01-02T00:00:00,,9999,,,account

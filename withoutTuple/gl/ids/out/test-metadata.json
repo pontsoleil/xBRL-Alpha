@@ -1,0 +1,52 @@
+{
+  "documentInfo": {
+    "documentType": "http://www.xbrl.org/WGWD/YYYY-MM-DD/xbrl-csv",
+    "namespaces": {
+      "": null,
+      "gl-bus": "http://www.xbrl.org/int/gl/bus/2020-12-31",
+      "gl-cor": "http://www.xbrl.org/int/gl/cor/2020-12-31",
+      "gl-muc": "http://www.xbrl.org/int/gl/muc/2020-12-31",
+      "iso4217": "http://www.xbrl.org/2003/iso4217",
+      "iso639": "http://www.xbrl.org/2005/iso639",
+      "scheme": "http://www.xbrl.org/xbrlgl/sample"
+    },
+    "taxonomy": [
+      "../plt/case-c-b-m-u-t/gl-plt-all-2020-12-31.xsd"
+    ]
+  },
+  "tables": {
+    "facts": {
+      "template": "facts",
+      "url": "test-facts.csv"
+    }
+  },
+  "tableTemplates": {
+    "facts": {
+      "rowIdColumn": "id",
+      "dimensions": {
+        "concept": "$concept",
+        "entity": "$entity",
+        "period": "$period",
+        "unit": "$unit",
+        "gl-cor:dAccountMainID": "$gl-cor_dAccountMainID",
+        "gl-cor:dEntryNumber": "$gl-cor_dEntryNumber",
+        "gl-cor:dLineNumber": "$gl-cor_dLineNumber"
+      },
+      "columns": {
+        "id": {},
+        "concept": {},
+        "decimals": {},
+        "entity": {},
+        "period": {},
+        "unit": {},
+        "gl-cor_dAccountMainID": {},
+        "gl-cor_dEntryNumber": {},
+        "gl-cor_dLineNumber": {},
+        "value": {
+          "dimensions": {}
+        }
+      },
+      "decimals": "$decimals"
+    }
+  }
+}
