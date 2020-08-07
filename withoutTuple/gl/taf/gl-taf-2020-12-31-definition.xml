@@ -3,9 +3,10 @@
 <!-- (c) XBRL International.  See http://www.xbrl.org/legal -->
 <link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink">
   <link:definitionLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
-	<!-- requires-element -->
+	<!-- requires-element 
     <link:loc xlink:type="locator" xlink:href="gl-taf-2020-12-31.xsd#gl-taf_specified.originatingDocument" xlink:label="loc_gl-taf_specified.originatingDocument_0"/>
 		<link:loc xlink:type="locator" xlink:href="gl-taf-content-2020-12-31.xsd#gl-taf_originatingDocument.Detail" xlink:label="loc_gl-taf_originatingDocument.Detail_0"/>
 		<link:definitionArc order="1.0" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/requires-element" xlink:from="loc_gl-taf_specified.originatingDocument_0" xlink:to="loc_gl-taf_originatingDocument.Detail_0"/>	
+-->
   </link:definitionLink>
 </link:linkbase>

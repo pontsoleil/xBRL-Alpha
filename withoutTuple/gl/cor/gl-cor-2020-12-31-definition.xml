@@ -13,8 +13,13 @@ xmlns:link="http://www.xbrl.org/2003/linkbase">
 		<link:loc xlink:type="locator" xlink:href="gl-cor-2020-12-31.xsd#Hypercube" xlink:label="Hypercube" xlink:title="Hypercube"/>
 		<link:loc xlink:type="locator" xlink:href="gl-cor-2020-12-31.xsd#gl-cor_dEntryNumber" xlink:label="dim_EntryHeader" xlink:title="Axis entryHeader"/>
 		<link:loc xlink:type="locator" xlink:href="gl-cor-2020-12-31.xsd#gl-cor_dLineNumber" xlink:label="dim_EntryDetail" xlink:title="Axis entryDetail"/>
-		<link:definitionArc xlink:type="arc" xlink:from="Hypercube" xlink:to="dim_EntryHeader" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:title="definition Hypercube to typed Dimension entryHeader" use="optional" order="1.0"/>
-		<link:definitionArc xlink:type="arc" xlink:from="Hypercube" xlink:to="dim_EntryDetail" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:title="definition Hypercube to Typed Dimension entryDetail" use="optional" order="1.0"/>
+		<link:loc xlink:type="locator" xlink:href="gl-cor-2020-12-31.xsd#gl-cor_dAccountMainID" xlink:label="dim_AccountMainID" xlink:title="Axis entryDetail"/>
+		<link:definitionArc xlink:type="arc" xlink:from="Hypercube" xlink:to="dim_EntryHeader" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" 
+		xlink:title="definition Hypercube to typed Dimension entryHeader" use="optional" order="1.0"/>
+		<link:definitionArc xlink:type="arc" xlink:from="Hypercube" xlink:to="dim_EntryDetail" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" 
+		xlink:title="definition Hypercube to Typed Dimension entryDetail" use="optional" order="2.0"/>
+		<link:definitionArc xlink:type="arc" xlink:from="Hypercube" xlink:to="dim_AccountMainID" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" 
+		xlink:title="definition Hypercube to Typed Dimension entryDetail" use="optional" order="3.0"/>
 	</link:definitionLink>
 	<link:definitionLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
 	</link:definitionLink>
