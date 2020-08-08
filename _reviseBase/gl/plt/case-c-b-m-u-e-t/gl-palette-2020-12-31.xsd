@@ -19,6 +19,7 @@
 	<import namespace="http://www.xbrl.org/int/gl/ehm/2020-12-31" schemaLocation="../../ehm/gl-ehm-content-2020-12-31.xsd"/>
 	<import namespace="http://www.xbrl.org/int/gl/taf/2020-12-31" schemaLocation="../../taf/gl-taf-content-2020-12-31.xsd"/>
 	<include schemaLocation="../../cor/gl-cor-2020-12-31.xsd"/>
+<!--
 	<complexType name="accountingEntriesComplexType">
 		<complexContent>
 			<restriction base="anyType">
@@ -413,7 +414,6 @@
 			</restriction>
 		</complexContent>
 	</complexType>
-	<!-- tuple -->
 	<element name="accountingEntries" id="gl-cor_accountingEntries" type="gl-cor:accountingEntriesComplexType" substitutionGroup="xbrli:tuple" nillable="false"/>
 	<element name="accountSub" id="gl-cor_accountSub" type="gl-cor:accountSubComplexType" substitutionGroup="xbrli:tuple" nillable="true"/>
 	<element name="entityInformation" id="gl-cor_entityInformation" type="gl-cor:entityInformationComplexType" substitutionGroup="xbrli:tuple" nillable="true"/>
@@ -433,4 +433,5 @@
 	<element name="identifierReference" id="gl-cor_identifierReference" type="gl-cor:identifierReferenceComplexType" substitutionGroup="xbrli:tuple" nillable="true"/>
 	<element name="segmentParentTuple" id="gl-cor_segmentParentTuple" type="gl-cor:segmentParentTupleComplexType" substitutionGroup="xbrli:tuple" nillable="true"/>
 	<element name="taxes" id="gl-cor_taxes" type="gl-cor:taxesComplexType" substitutionGroup="xbrli:tuple" nillable="true"/>
+-->
 </schema>

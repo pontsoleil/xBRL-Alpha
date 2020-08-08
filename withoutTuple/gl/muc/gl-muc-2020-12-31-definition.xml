@@ -3,13 +3,7 @@
 <!-- (c) XBRL International.  See http://www.xbrl.org/legal -->
 <link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink">
   <link:definitionLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
-	<!-- essence-alias -->
-<!--    <link:loc xlink:type="locator" xlink:href="gl-muc-2020-12-31.xsd#gl-muc_taxExchangeRate" xlink:label="taxExchangeRate" xlink:title="taxExchangeRate"/>
+    <link:loc xlink:type="locator" xlink:href="gl-muc-2020-12-31.xsd#gl-muc_taxExchangeRate" xlink:label="taxExchangeRate" xlink:title="taxExchangeRate"/>
     <link:loc xlink:type="locator" xlink:href="../cor/gl-cor-2020-12-31.xsd#gl-cor_taxExchangeRate" xlink:label="taxExchangeRate_2" xlink:title="taxExchangeRate"/>
-     <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/essence-alias" xlink:from="taxExchangeRate" xlink:to="taxExchangeRate_2" xlink:title="definition: taxExchangeRate to taxExchangeRate" order="1.0"/> -->
-	<!-- requires-element -->
-  <link:loc xlink:type="locator" xlink:href="gl-muc-2020-12-31.xsd#gl-muc_specified.multicurrency" xlink:label="loc_gl-muc_specified.multicurrency_0"/>
-	<link:loc xlink:type="locator" xlink:href="gl-muc-content-2020-12-31.xsd#gl-muc_multicurrency.Detail" xlink:label="loc_gl-muc_multicurrency.Detail_0"/>
-	<link:definitionArc order="1.0" xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/requires-element" xlink:from="loc_gl-muc_specified.multicurrency_0" xlink:to="loc_gl-muc_multicurrency.Detail_0"/>	
   </link:definitionLink>
 </link:linkbase>

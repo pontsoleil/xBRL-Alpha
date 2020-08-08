@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- edited with XMLSpy v2020 rel. 2 sp1 (x64) (http://www.altova.com) by SAMBUICHI Nobuyuki (Sambuichi Professional Engineers Office) -->
 <!-- (c) XBRL International.  See http://www.xbrl.org/legal -->
 <linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
 	<presentationLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
-	<loc xlink:type="locator" xlink:href="../cor/gl-cor-2020-12-31.xsd#gl-cor_entryDetail" xlink:label="entryDetail_1" xlink:title="entryDetail"/>
+	<loc xlink:type="locator" xlink:href="../cor/gl-cor-content-2020-12-31.xsd#gl-cor_entryDetail" xlink:label="entryDetail_1" xlink:title="entryDetail"/>
 	<loc xlink:type="locator" xlink:href="gl-ehm-2020-12-31.xsd#gl-ehm_measurableClassID" xlink:label="gl-ehm_measurableClassID" xlink:title="measurableClassID"/>
 	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="entryDetail_1" xlink:to="gl-ehm_measurableClassID" xlink:title="presentation: entryDetail to measurableClassID" order="204.0"/>
 	<loc xlink:type="locator" xlink:href="gl-ehm-2020-12-31.xsd#gl-ehm_measurableClassDescription" xlink:label="gl-ehm_measurableClassDescription" xlink:title="measurableClassDescription"/>
@@ -14,7 +13,7 @@
 	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="entryDetail_1" xlink:to="gl-ehm_costingMethodDescription" xlink:title="presentation: entryDetail to costingMethodDescription" order="207.0"/>
 	<loc xlink:type="locator" xlink:href="gl-ehm-2020-12-31.xsd#gl-ehm_geospatialCoordinate" xlink:label="gl-ehm_geospatialCoordinate" xlink:title="geospatialCoordinate"/>
 	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="entryDetail_1" xlink:to="gl-ehm_geospatialCoordinate" xlink:title="presentation: entryDetail to geospatialCoordinate" order="208.0"/>
-	<loc xlink:type="locator" xlink:href="gl-ehm-2020-12-31.xsd#gl-ehm_serialLot" xlink:label="gl-ehm_serialLot" xlink:title="presentation: serialLot to serialLotCode"/>
+	<loc xlink:type="locator" xlink:href="gl-ehm-content-2020-12-31.xsd#gl-ehm_serialLot" xlink:label="gl-ehm_serialLot" xlink:title="presentation: serialLot to serialLotCode"/>
     <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="entryDetail_1" xlink:to="gl-ehm_serialLot" xlink:title="presentation: entryDetail to serialLot" order="209.0"/>
     <loc xlink:type="locator" xlink:href="gl-ehm-2020-12-31.xsd#gl-ehm_serialLotCode" xlink:label="gl-ehm_serialLotCode" xlink:title="presentation: serialLot to serialLotCode"/>
     <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="gl-ehm_serialLot" xlink:to="gl-ehm_serialLotCode" xlink:title="presentation: serialLot to serialLotCode" use="optional" order="10.0"/>

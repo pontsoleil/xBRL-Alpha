@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- edited with XMLSpy v2020 rel. 2 sp1 (x64) (http://www.altova.com) by SAMBUICHI Nobuyuki (Sambuichi Professional Engineers Office) -->
 <!-- (c) XBRL International.  See http://www.xbrl.org/legal -->
-<schema elementFormDefault="qualified" xmlns:xbrll="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.xbrl.org/int/gl/gen/2020-12-31" attributeFormDefault="unqualified" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:gl-gen="http://www.xbrl.org/int/gl/gen/2020-12-31">
+<schema 
+targetNamespace="http://www.xbrl.org/int/gl/gen/2020-12-31" 
+elementFormDefault="qualified" 
+attributeFormDefault="unqualified" 
+xmlns="http://www.w3.org/2001/XMLSchema" 
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+xmlns:xbrli="http://www.xbrl.org/2003/instance" 
+xmlns:xbrll="http://www.xbrl.org/2003/linkbase" 
+xmlns:gl-gen="http://www.xbrl.org/int/gl/gen/2020-12-31">
 	<import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
-	<complexType name="accountPurposeCode.ItemType">
+	<complexType name="accountPurposeCodeItemType">
 		<simpleContent>
 			<restriction base="xbrli:tokenItemType">
 				<enumeration value="consolidating"/>
@@ -18,7 +26,7 @@
 			</restriction>
 		</simpleContent>
 	</complexType>
-	<complexType name="accountType.ItemType">
+	<complexType name="accountTypeItemType">
 		<simpleContent>
 			<restriction base="xbrli:tokenItemType">
 				<enumeration value="account"/>
@@ -33,7 +41,7 @@
 			</restriction>
 		</simpleContent>
 	</complexType>
-	<complexType name="bookTaxDifference.ItemType">
+	<complexType name="bookTaxDifferenceItemType">
 		<simpleContent>
 			<restriction base="xbrli:tokenItemType">
 				<enumeration value="permanent"/>
@@ -42,7 +50,7 @@
 			</restriction>
 		</simpleContent>
 	</complexType>
-	<complexType name="identifierOrganizationType.ItemType">
+	<complexType name="identifierOrganizationTypeItemType">
 		<simpleContent>
 			<restriction base="xbrli:tokenItemType">
 				<enumeration value="individual"/>
@@ -51,7 +59,7 @@
 			</restriction>
 		</simpleContent>
 	</complexType>
-	<complexType name="debitCreditCode.ItemType">
+	<complexType name="debitCreditCodeItemType">
 		<simpleContent>
 			<restriction base="xbrli:tokenItemType">
 				<enumeration value="D"/>
@@ -62,7 +70,7 @@
 			</restriction>
 		</simpleContent>
 	</complexType>
-	<complexType name="documentType.ItemType">
+	<complexType name="documentTypeItemType">
 		<simpleContent>
 			<restriction base="xbrli:tokenItemType">
 				<enumeration value="check"/>
@@ -83,7 +91,7 @@
 			</restriction>
 		</simpleContent>
 	</complexType>
-	<complexType name="invoiceType.ItemType">
+	<complexType name="invoiceTypeItemType">
 		<simpleContent>
 			<restriction base="xbrli:tokenItemType">
 				<enumeration value="ePos"/>
@@ -91,7 +99,7 @@
 			</restriction>
 		</simpleContent>
 	</complexType>
-	<complexType name="entriesType.ItemType">
+	<complexType name="entriesTypeItemType">
 		<simpleContent>
 			<restriction base="xbrli:tokenItemType">
 				<enumeration value="account"/>
@@ -111,7 +119,7 @@
 			</restriction>
 		</simpleContent>
 	</complexType>
-	<complexType name="entryType.ItemType">
+	<complexType name="entryTypeItemType">
 		<simpleContent>
 			<restriction base="xbrli:tokenItemType">
 				<enumeration value="adjusting"/>
@@ -130,7 +138,7 @@
 			</restriction>
 		</simpleContent>
 	</complexType>
-	<complexType name="identifierType.ItemType">
+	<complexType name="identifierTypeItemType">
 		<simpleContent>
 			<restriction base="xbrli:tokenItemType">
 				<enumeration value="C"/>
@@ -150,7 +158,7 @@
 			</restriction>
 		</simpleContent>
 	</complexType>
-	<complexType name="mainAccountType.ItemType">
+	<complexType name="mainAccountTypeItemType">
 		<simpleContent>
 			<restriction base="xbrli:tokenItemType">
 				<enumeration value="asset"/>
@@ -167,7 +175,7 @@
 			</restriction>
 		</simpleContent>
 	</complexType>
-	<complexType name="postingStatus.ItemType">
+	<complexType name="postingStatusItemType">
 		<simpleContent>
 			<restriction base="xbrli:tokenItemType">
 				<enumeration value="deferred"/>
@@ -181,7 +189,7 @@
 			</restriction>
 		</simpleContent>
 	</complexType>
-	<complexType name="qualifierEntry.ItemType">
+	<complexType name="qualifierEntryItemType">
 		<simpleContent>
 			<restriction base="xbrli:tokenItemType">
 				<enumeration value="standard"/>
@@ -190,7 +198,7 @@
 			</restriction>
 		</simpleContent>
 	</complexType>
-	<complexType name="revisesUniqueIDAction.ItemType">
+	<complexType name="revisesUniqueIDActionItemType">
 		<simpleContent>
 			<restriction base="xbrli:tokenItemType">
 				<enumeration value="supplement"/>
@@ -198,7 +206,7 @@
 			</restriction>
 		</simpleContent>
 	</complexType>
-	<complexType name="signOfAmount.ItemType">
+	<complexType name="signOfAmountItemType">
 		<simpleContent>
 			<restriction base="xbrli:tokenItemType">
 				<enumeration value="+"/>
@@ -208,7 +216,7 @@
 			</restriction>
 		</simpleContent>
 	</complexType>
-	<complexType name="sourceJournalID.ItemType">
+	<complexType name="sourceJournalIDItemType">
 		<simpleContent>
 			<restriction base="xbrli:tokenItemType">
 				<enumeration value="cd"/>
@@ -227,7 +235,7 @@
 			</restriction>
 		</simpleContent>
 	</complexType>
-	<complexType name="xbrlInclude.ItemType">
+	<complexType name="xbrlIncludeItemType">
 		<simpleContent>
 			<restriction base="xbrli:tokenItemType">
 				<enumeration value="beginning_balance"/>
@@ -236,7 +244,7 @@
 			</restriction>
 		</simpleContent>
 	</complexType>
-	<complexType name="phoneNumberDescription.ItemType">
+	<complexType name="phoneNumberDescriptionItemType">
 		<simpleContent>
 			<restriction base="xbrli:tokenItemType">
 				<enumeration value="bookkeeper"/>
@@ -250,43 +258,43 @@
 			</restriction>
 		</simpleContent>
 	</complexType>
-	<complexType name="phoneNumber.ItemType">
+	<complexType name="phoneNumberItemType">
 		<simpleContent>
 			<restriction base="xbrli:stringItemType">
 			</restriction>
 		</simpleContent>
 	</complexType>
-	<complexType name="faxNumberUsage.ItemType">
+	<complexType name="faxNumberUsageItemType">
 		<simpleContent>
 			<restriction base="xbrli:stringItemType">
 			</restriction>
 		</simpleContent>
 	</complexType>
-	<complexType name="faxNumber.ItemType">
+	<complexType name="faxNumberItemType">
 		<simpleContent>
 			<restriction base="xbrli:stringItemType">
 			</restriction>
 		</simpleContent>
 	</complexType>
-	<complexType name="emailAddressUsage.ItemType">
+	<complexType name="emailAddressUsageItemType">
 		<simpleContent>
 			<restriction base="xbrli:stringItemType">
 			</restriction>
 		</simpleContent>
 	</complexType>
-	<complexType name="emailAddress.ItemType">
+	<complexType name="emailAddressItemType">
 		<simpleContent>
 			<restriction base="xbrli:stringItemType">
 			</restriction>
 		</simpleContent>
 	</complexType>
-	<complexType name="active.ItemType">
+	<complexType name="activeItemType">
 		<simpleContent>
 			<restriction base="xbrli:booleanItemType">
 			</restriction>
 		</simpleContent>
 	</complexType>
-	<complexType name="amount.ItemType">
+	<complexType name="amountItemType">
 		<simpleContent>
 			<restriction base="xbrli:monetaryItemType">
 			</restriction>

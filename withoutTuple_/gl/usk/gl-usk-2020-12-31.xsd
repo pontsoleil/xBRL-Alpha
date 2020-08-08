@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2020 rel. 2 sp1 (x64) (http://www.altova.com) by SAMBUICHI Nobuyuki (Sambuichi Professional Engineers Office) -->
+<!-- (c) XBRL International.  See http://www.xbrl.org/legal -->
+<schema elementFormDefault="qualified" xmlns:xbrll="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.xbrl.org/int/gl/usk/2020-12-31" attributeFormDefault="unqualified" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:gl-cor="http://www.xbrl.org/int/gl/cor/2020-12-31" xmlns:gl-usk="http://www.xbrl.org/int/gl/usk/2020-12-31" xmlns:gl-gen="http://www.xbrl.org/int/gl/gen/2020-12-31">
+	<annotation>
+		<appinfo>
+			<xbrll:linkbaseRef xlink:href="gl-usk-2020-12-31-presentation.xml" xlink:title="Presentation Links, all" xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef"/>
+		</appinfo>
+	</annotation>
+	<import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+	<import namespace="http://www.xbrl.org/int/gl/gen/2020-12-31" schemaLocation="../gen/gl-gen-2020-12-31.xsd"/>
+	<!-- item type -->
+	<complexType name="frequencyInterval.ItemType">
+		<simpleContent>
+			<restriction base="xbrli:decimalItemType"/>
+		</simpleContent>
+	</complexType>
+	<complexType name="frequencyUnit.ItemType">
+		<simpleContent>
+			<restriction base="xbrli:stringItemType"/>
+		</simpleContent>
+	</complexType>
+	<complexType name="jobCode.ItemType">
+		<simpleContent>
+			<restriction base="xbrli:stringItemType"/>
+		</simpleContent>
+	</complexType>
+	<complexType name="jobDescription.ItemType">
+		<simpleContent>
+			<restriction base="xbrli:stringItemType"/>
+		</simpleContent>
+	</complexType>
+	<complexType name="jobPhaseCode.ItemType">
+		<simpleContent>
+			<restriction base="xbrli:stringItemType"/>
+		</simpleContent>
+	</complexType>
+	<complexType name="jobPhaseDescription.ItemType">
+		<simpleContent>
+			<restriction base="xbrli:stringItemType"/>
+		</simpleContent>
+	</complexType>
+	<complexType name="lastDateRepeat.ItemType">
+		<simpleContent>
+			<restriction base="xbrli:dateTimeItemType"/>
+		</simpleContent>
+	</complexType>
+	<complexType name="nextDateRepeat.ItemType">
+		<simpleContent>
+			<restriction base="xbrli:dateTimeItemType"/>
+		</simpleContent>
+	</complexType>
+	<complexType name="recurringStdDescription.ItemType">
+		<simpleContent>
+			<restriction base="xbrli:stringItemType"/>
+		</simpleContent>
+	</complexType>
+	<complexType name="repetitionsRemaining.ItemType">
+		<simpleContent>
+			<restriction base="xbrli:integerItemType"/>
+		</simpleContent>
+	</complexType>
+	<complexType name="reverseType.ItemType">
+		<simpleContent>
+			<restriction base="xbrli:booleanItemType"/>
+		</simpleContent>
+	</complexType>
+	<complexType name="reversingDate.ItemType">
+		<simpleContent>
+			<restriction base="xbrli:dateTimeItemType"/>
+		</simpleContent>
+	</complexType>
+	<complexType name="reversingStdId.ItemType">
+		<simpleContent>
+			<restriction base="xbrli:stringItemType"/>
+		</simpleContent>
+	</complexType>
+	<complexType name="endDateRepeatingEntry.ItemType">
+		<simpleContent>
+			<restriction base="xbrli:dateTimeItemType"/>
+		</simpleContent>
+	</complexType>
+	<!-- item -->
+	<element name="frequencyInterval" id="gl-usk_frequencyInterval" type="gl-usk:frequencyInterval.ItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<element name="frequencyUnit" id="gl-usk_frequencyUnit" type="gl-usk:frequencyUnit.ItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<element name="jobCode" id="gl-usk_jobCode" type="gl-usk:jobCode.ItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<element name="jobDescription" id="gl-usk_jobDescription" type="gl-usk:jobDescription.ItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<element name="jobPhaseCode" id="gl-usk_jobPhaseCode" type="gl-usk:jobPhaseCode.ItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<element name="jobPhaseDescription" id="gl-usk_jobPhaseDescription" type="gl-usk:jobPhaseDescription.ItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<element name="jobActive" id="gl-usk_jobActive" type="gl-gen:active.ItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<element name="lastDateRepeat" id="gl-usk_lastDateRepeat" type="gl-usk:lastDateRepeat.ItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<element name="nextDateRepeat" id="gl-usk_nextDateRepeat" type="gl-usk:nextDateRepeat.ItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<element name="recurringStdDescription" id="gl-usk_recurringStdDescription" type="gl-usk:recurringStdDescription.ItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<element name="repetitionsRemaining" id="gl-usk_repetitionsRemaining" type="gl-usk:repetitionsRemaining.ItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<element name="reverse" id="gl-usk_reverse" type="gl-usk:reverseType.ItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<element name="reversingDate" id="gl-usk_reversingDate" type="gl-usk:reversingDate.ItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<element name="reversingStdId" id="gl-usk_reversingStdId" type="gl-usk:reversingStdId.ItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<element name="endDateRepeatingEntry" id="gl-usk_endDateRepeatingEntry" type="gl-usk:endDateRepeatingEntry.ItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+</schema>
