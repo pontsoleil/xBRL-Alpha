@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- edited with XMLSpy v2020 rel. 2 sp1 (x64) (http://www.altova.com) by SAMBUICHI Nobuyuki (Sambuichi Professional Engineers Office) -->
 <!-- (c) XBRL International.  See http://www.xbrl.org/legal -->
-<schema targetNamespace="http://www.xbrl.org/int/gl/srcd/2020-12-31" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gl-srcd="http://www.xbrl.org/int/gl/srcd/2020-12-31" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+<schema 
+targetNamespace="http://www.xbrl.org/int/gl/srcd/2020-12-31" 
+attributeFormDefault="unqualified" 
+elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" 
+xmlns:gl-srcd="http://www.xbrl.org/int/gl/srcd/2020-12-31" 
+xmlns:xbrli="http://www.xbrl.org/2003/instance" 
+xmlns:link="http://www.xbrl.org/2003/linkbase" 
+xmlns:xlink="http://www.w3.org/1999/xlink">
+	<import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
 	<annotation>
 		<appinfo>
-			<link:linkbaseRef xlink:type="simple" xlink:href="gl-srcd-2020-12-31-presentation.xml" xlink:title="Presentation Links, all" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+			<link:linkbaseRef xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" 
+			xlink:href="gl-srcd-2020-12-31-presentation.xml" xlink:title="Presentation Links, all"/>
 		</appinfo>
 	</annotation>
-	<import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
 	<complexType name="summaryPrecisionDecimalsComplexType">
 		<choice>
 			<element ref="gl-srcd:summaryPrecision"/>
@@ -239,4 +247,20 @@
 	<element name="richTextCommentDescription" id="gl-srcd_richTextCommentDescription" type="gl-srcd:richTextCommentDescriptionItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
 	<element name="richTextCommentContent" id="gl-srcd_richTextCommentContent" type="gl-srcd:richTextCommentContentItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
 	<element name="richTextCommentLocator" id="gl-srcd_richTextCommentLocator" type="gl-srcd:richTextCommentLocatorItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<!-- tuple item -->
+	<element name="summaryPrecisionDecimals" id="gl-srcd_summaryPrecisionDecimals" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<element name="summaryContext" id="gl-srcd_summaryContext" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<element name="summaryEntity" id="gl-srcd_summaryEntity" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<element name="summarySegment" id="gl-srcd_summarySegment" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<element name="summarySegmentExplicitDimension" id="gl-srcd_summarySegmentExplicitDimension" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<element name="summarySegmentTypedDimension" id="gl-srcd_summarySegmentTypedDimension" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<element name="summarySegmentSimpleElementContent" id="gl-srcd_summarySegmentSimpleElementContent" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<element name="summaryPeriod" id="gl-srcd_summaryPeriod" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<element name="summaryScenario" id="gl-srcd_summaryScenario" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<element name="summaryScenarioExplicitDimension" id="gl-srcd_summaryScenarioExplicitDimension" type="xbrli:stringItemType" substitutionGroup="xbrli:item"/>
+	<element name="summaryScenarioTypedDimension" id="gl-srcd_summaryScenarioTypedDimension" type="xbrli:stringItemType" substitutionGroup="xbrli:item"/>
+	<element name="summaryScenarioSimpleElementContent" id="gl-srcd_summaryScenarioSimpleElementContent" type="xbrli:stringItemType" substitutionGroup="xbrli:item"/>
+	<element name="summaryUnit" id="gl-srcd_summaryUnit" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<element name="summaryReportingTaxonomies" id="gl-srcd_summaryReportingTaxonomies" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<element name="richTextComment" id="gl-srcd_richTextComment" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
 </schema>

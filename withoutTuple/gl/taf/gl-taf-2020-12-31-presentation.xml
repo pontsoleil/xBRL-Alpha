@@ -3,12 +3,12 @@
 <!-- (c) XBRL International.  See http://www.xbrl.org/legal -->
 <linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
   <presentationLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
-    <loc xlink:type="locator" xlink:href="../cor/gl-cor-content-2020-12-31.xsd#gl-cor_entryDetail" xlink:label="entryDetail_1109969275653_0" xlink:title="entryDetail"/>
+    <loc xlink:type="locator" xlink:href="../cor/gl-cor-2020-12-31.xsd#gl-cor_entryDetail" xlink:label="entryDetail_1109969275653_0" xlink:title="entryDetail"/>
     <loc xlink:type="locator" xlink:href="gl-taf-2020-12-31.xsd#gl-taf_tickingField" xlink:label="tickingField_1109969275653_1" xlink:title="tickingField"/>
     <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="entryDetail_1109969275653_0" xlink:to="tickingField_1109969275653_1" xlink:title="presentation: entryDetail to tickingField" order="301.0"/>
     <loc xlink:type="locator" xlink:href="gl-taf-2020-12-31.xsd#gl-taf_uniqueConsignmentReference" xlink:label="uniqueConsignmentReference_1109969289633_0" xlink:title="uniqueConsignmentReference"/>
     <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="entryDetail_1109969275653_0" xlink:to="uniqueConsignmentReference_1109969289633_0" xlink:title="presentation: entryDetail to uniqueConsignmentReference" order="303.0"/>
-    <loc xlink:type="locator" xlink:href="gl-taf-content-2020-12-31.xsd#gl-taf_originatingDocumentStructure" xlink:label="originatingDocumentStructure_1109969512894_0" xlink:title="originatingDocumentStructure"/>
+    <loc xlink:type="locator" xlink:href="gl-taf-2020-12-31.xsd#gl-taf_originatingDocumentStructure" xlink:label="originatingDocumentStructure_1109969512894_0" xlink:title="originatingDocumentStructure"/>
     <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="entryDetail_1109969275653_0" xlink:to="originatingDocumentStructure_1109969512894_0" xlink:title="presentation: entryDetail to originatingDocumentStructure" order="304.0"/>
     <loc xlink:type="locator" xlink:href="gl-taf-2020-12-31.xsd#gl-taf_originatingDocumentType" xlink:label="originatingDocumentType_1109969527395_0" xlink:title="originatingDocumentType"/>
     <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="originatingDocumentStructure_1109969512894_0" xlink:to="originatingDocumentType_1109969527395_0" xlink:title="presentation: originatingDocumentStructure to originatingDocumentType" order="1.0"/>

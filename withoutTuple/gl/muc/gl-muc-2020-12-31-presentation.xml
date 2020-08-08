@@ -2,11 +2,11 @@
 <!-- (c) XBRL International.  See http://www.xbrl.org/legal -->
 <linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
   <presentationLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
-    <loc xlink:type="locator" xlink:href="../cor/gl-cor-content-2020-12-31.xsd#gl-cor_documentInfo" xlink:label="documentInfo_1107631488479_0" xlink:title="documentInfo"/>
+    <loc xlink:type="locator" xlink:href="../cor/gl-cor-2020-12-31.xsd#gl-cor_documentInfo" xlink:label="documentInfo_1107631488479_0" xlink:title="documentInfo"/>
     <loc xlink:type="locator" xlink:href="gl-muc-2020-12-31.xsd#gl-muc_defaultCurrency" xlink:label="gl-muc_defaultCurrency"/>
     <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="documentInfo_1107631488479_0" xlink:to="gl-muc_defaultCurrency" xlink:title="presentation: documentInfo to defaultCurrency" order="140.0"/>
-    <loc xlink:type="locator" xlink:href="../cor/gl-cor-content-2020-12-31.xsd#gl-cor_entryDetail" xlink:label="entryDetail_1107631488479_0" xlink:title="entryDetail"/>
-    <loc xlink:type="locator" xlink:href="gl-muc-content-2020-12-31.xsd#gl-muc_multicurrencyDetail" xlink:label="gl-muc_multicurrencyDetail"/>
+    <loc xlink:type="locator" xlink:href="../cor/gl-cor-2020-12-31.xsd#gl-cor_entryDetail" xlink:label="entryDetail_1107631488479_0" xlink:title="entryDetail"/>
+    <loc xlink:type="locator" xlink:href="gl-muc-2020-12-31.xsd#gl-muc_multicurrencyDetail" xlink:label="gl-muc_multicurrencyDetail"/>
     <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="entryDetail_1107631488479_0" xlink:to="gl-muc_multicurrencyDetail" xlink:title="presentation: entryDetail to multicurrencyDetail" order="55.0"/>
     <loc xlink:type="locator" xlink:href="gl-muc-2020-12-31.xsd#gl-muc_amountRestatedExchangeRate" xlink:label="gl-muc_exchangeRate2"/>
     <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="gl-muc_multicurrencyDetail" xlink:to="gl-muc_exchangeRate2" use="optional" order="4.0"/>
@@ -64,7 +64,7 @@
     <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="entryDetail_1107631488479_0" xlink:to="originalExchangeRateTriangulationSource_1129841958902_0" xlink:title="presentation: entryDetail to originalExchangeRateTriangulationSource" order="38.8"/>
     <loc xlink:type="locator" xlink:href="gl-muc-2020-12-31.xsd#gl-muc_originalTriangulationExchangeRate" xlink:label="originalTriangulationExchangeRate_1129841984819_0" xlink:title="originalTriangulationExchangeRate"/>
     <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="entryDetail_1107631488479_0" xlink:to="originalTriangulationExchangeRate_1129841984819_0" xlink:title="presentation: entryDetail to originalTriangulationExchangeRate" order="38.7"/>
-    <loc xlink:type="locator" xlink:href="../cor/gl-cor-content-2020-12-31.xsd#gl-cor_taxes" xlink:label="taxes_1130081775023_0" xlink:title="presentation: entryDetail to taxes"/>
+    <loc xlink:type="locator" xlink:href="../cor/gl-cor-2020-12-31.xsd#gl-cor_taxes" xlink:label="taxes_1130081775023_0" xlink:title="presentation: entryDetail to taxes"/>
     <loc xlink:type="locator" xlink:href="gl-muc-2020-12-31.xsd#gl-muc_taxAmountForeignCurrency" xlink:label="taxAmountForeignCurrency_1130081715117_1" xlink:title="taxAmountForeignCurrency"/>
     <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="taxes_1130081775023_0" xlink:to="taxAmountForeignCurrency_1130081715117_1" xlink:title="presentation: taxes to taxAmountForeignCurrency" order="10.0"/>
     <loc xlink:type="locator" xlink:href="gl-muc-2020-12-31.xsd#gl-muc_taxCurrency" xlink:label="taxCurrency_1130081718582_0" xlink:title="taxCurrency"/>

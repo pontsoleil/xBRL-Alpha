@@ -13,8 +13,8 @@ xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
 xmlns:gl-cor="http://www.xbrl.org/int/gl/cor/2020-12-31"
 xmlns:gl-bus="http://www.xbrl.org/int/gl/bus/2020-12-31"
 xmlns:gl-muc="http://www.xbrl.org/int/gl/muc/2020-12-31" 
-xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 ../plt/case-c-b-m-u-t/gl-plt-all-2020-12-31.xsd">
-	<xbrll:schemaRef xlink:type="simple" xlink:href="../plt/case-c-b-m-u-t/gl-plt-all-2020-12-31.xsd" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 ../plt/case-c-b-m-u-e-t/gl-plt-all-2020-12-31.xsd">
+	<xbrll:schemaRef xlink:type="simple" xlink:href="../plt/case-c-b-m-u-e-t/gl-plt-all-2020-12-31.xsd" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
 	<!-- context -->
 	<xbrli:context id="now">
 		<xbrli:entity>
@@ -263,10 +263,10 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 ../plt/case-c-b-m-
 		<xbrli:measure>pure</xbrli:measure>
 	</xbrli:unit>
 	<!-- accountingEntries -->
-	<gl-cor:specified.documentInfo contextRef="now"/>
-	<gl-cor:specified.entityInformation contextRef="now"/>
-	<gl-cor:specified.entryHeader contextRef="H1"/>
-	<gl-cor:specified.entryHeader contextRef="H2"/>
+	<gl-cor:documentInfo contextRef="now"/>
+	<gl-cor:entityInformation contextRef="now"/>
+	<gl-cor:entryHeader contextRef="H1"/>
+	<gl-cor:entryHeader contextRef="H2"/>
 	<!-- documentInfo -->
 	<gl-cor:entriesType contextRef="now">entries</gl-cor:entriesType>
 	<gl-cor:uniqueID contextRef="now">001</gl-cor:uniqueID>
@@ -279,7 +279,7 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 ../plt/case-c-b-m-
 	<gl-bus:sourceApplication contextRef="now">Sample ERP</gl-bus:sourceApplication>
 	<gl-muc:defaultCurrency contextRef="now">iso4217:usd</gl-muc:defaultCurrency>
 	<!-- entityInformation -->
-	<gl-bus:specified.organizationIdentifiers contextRef="now"/>
+	<gl-bus:organizationIdentifiers contextRef="now"/>
 	<gl-bus:organizationIdentifier contextRef="now">ABC Company</gl-bus:organizationIdentifier>
 	<gl-bus:organizationDescription contextRef="now">Company Name</gl-bus:organizationDescription>
 	<!-- entryHeader -->
@@ -294,13 +294,13 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 ../plt/case-c-b-m-
 	<gl-bus:totalDebit decimals="2" contextRef="H1" unitRef="usd">7700.00</gl-bus:totalDebit>
 	<gl-bus:totalCredit decimals="2" contextRef="H1" unitRef="usd">7700.00</gl-bus:totalCredit>
 	<gl-cor:bookTaxDifference contextRef="H1">temporary</gl-cor:bookTaxDifference>
-	<gl-cor:specified.entryDetail contextRef="H1">H1L1</gl-cor:specified.entryDetail>
-	<gl-cor:specified.entryDetail contextRef="H1">H1L2</gl-cor:specified.entryDetail>
-	<gl-cor:specified.entryDetail contextRef="H1">H1L3</gl-cor:specified.entryDetail>
-	<gl-cor:specified.entryDetail contextRef="H1">H1L4</gl-cor:specified.entryDetail>
+	<gl-cor:entryDetail contextRef="H1">H1L1</gl-cor:entryDetail>
+	<gl-cor:entryDetail contextRef="H1">H1L2</gl-cor:entryDetail>
+	<gl-cor:entryDetail contextRef="H1">H1L3</gl-cor:entryDetail>
+	<gl-cor:entryDetail contextRef="H1">H1L4</gl-cor:entryDetail>
 	<!-- entryDetail -->
 	<gl-cor:lineNumber contextRef="H1L1">L1</gl-cor:lineNumber>
-	<gl-cor:specified.account contextRef="ACCOUNT6200"/>
+	<gl-cor:account contextRef="ACCOUNT6200"/>
 	<gl-cor:amount decimals="2" contextRef="H1L1" unitRef="usd">7000.00</gl-cor:amount>
 	<gl-cor:debitCreditCode contextRef="H1L1">D</gl-cor:debitCreditCode>
 	<gl-cor:postingDate contextRef="H1L1">2005-06-30</gl-cor:postingDate>
@@ -308,7 +308,7 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 ../plt/case-c-b-m-
 	<gl-cor:detailComment contextRef="H1L1">Current period depreciation expense - books</gl-cor:detailComment>
 	<!-- entryDetail -->
 	<gl-cor:lineNumber contextRef="H1L2">L2</gl-cor:lineNumber>
-	<gl-cor:specified.account contextRef="H1L2">ACCOUNT1451</gl-cor:specified.account>
+	<gl-cor:account contextRef="H1L2">ACCOUNT1451</gl-cor:account>
 	<gl-cor:amount decimals="2" contextRef="H1L2" unitRef="usd">7000.00</gl-cor:amount>
 	<gl-cor:debitCreditCode contextRef="H1L2">C</gl-cor:debitCreditCode>
 	<gl-cor:postingDate contextRef="H1L2">2005-06-30</gl-cor:postingDate>
@@ -316,7 +316,7 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 ../plt/case-c-b-m-
 	<gl-cor:detailComment contextRef="H1L2">Current period depreciation expense - books</gl-cor:detailComment>
 	<!-- entryDetail -->
 	<gl-cor:lineNumber contextRef="H1L3">L3</gl-cor:lineNumber>
-	<gl-cor:specified.account contextRef="H1L3">ACCOUNT6200</gl-cor:specified.account>
+	<gl-cor:account contextRef="H1L3">ACCOUNT6200</gl-cor:account>
 	<gl-cor:amount decimals="2" contextRef="H1L3" unitRef="usd">700.00</gl-cor:amount>
 	<gl-cor:debitCreditCode contextRef="H1L3">D</gl-cor:debitCreditCode>
 	<gl-cor:postingDate contextRef="H1L3">2005-06-30</gl-cor:postingDate>
@@ -324,7 +324,7 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 ../plt/case-c-b-m-
 	<gl-cor:detailComment contextRef="H1L3">Current period depreciation expense - tax</gl-cor:detailComment>
 	<!-- entryDetail -->
 	<gl-cor:lineNumber contextRef="H1L4">L4</gl-cor:lineNumber>
-	<gl-cor:specified.account contextRef="H1L4">ACCOUNT1421</gl-cor:specified.account>
+	<gl-cor:account contextRef="H1L4">ACCOUNT1421</gl-cor:account>
 	<gl-cor:amount decimals="2" contextRef="H1L4" unitRef="usd">700.00</gl-cor:amount>
 	<gl-cor:debitCreditCode contextRef="H1L4">C</gl-cor:debitCreditCode>
 	<gl-cor:postingDate contextRef="H1L4">2005-06-30</gl-cor:postingDate>
@@ -341,13 +341,13 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 ../plt/case-c-b-m-
 	<gl-bus:totalDebit decimals="2" contextRef="H2" unitRef="usd">550.00</gl-bus:totalDebit>
 	<gl-bus:totalCredit decimals="2" contextRef="H2" unitRef="usd">550.00</gl-bus:totalCredit>
 	<gl-cor:bookTaxDifference contextRef="H2">permanent</gl-cor:bookTaxDifference>
-	<gl-cor:specified.entryDetail contextRef="H2">H2L1</gl-cor:specified.entryDetail>
-	<gl-cor:specified.entryDetail contextRef="H2">H2L2</gl-cor:specified.entryDetail>
-	<gl-cor:specified.entryDetail contextRef="H2">H2L3</gl-cor:specified.entryDetail>
-	<gl-cor:specified.entryDetail contextRef="H2">H2L4</gl-cor:specified.entryDetail>
+	<gl-cor:entryDetail contextRef="H2">H2L1</gl-cor:entryDetail>
+	<gl-cor:entryDetail contextRef="H2">H2L2</gl-cor:entryDetail>
+	<gl-cor:entryDetail contextRef="H2">H2L3</gl-cor:entryDetail>
+	<gl-cor:entryDetail contextRef="H2">H2L4</gl-cor:entryDetail>
 	<!-- entryDetail -->
 	<gl-cor:lineNumber contextRef="H2L1">L1</gl-cor:lineNumber>
-	<gl-cor:specified.account contextRef="H2L1">ACCOUNT1300</gl-cor:specified.account>
+	<gl-cor:account contextRef="H2L1">ACCOUNT1300</gl-cor:account>
 	<gl-cor:amount decimals="2" contextRef="H2L1" unitRef="usd">500.00</gl-cor:amount>
 	<gl-cor:debitCreditCode contextRef="H2L1">D</gl-cor:debitCreditCode>
 	<gl-cor:postingDate contextRef="H2L1">2005-06-30</gl-cor:postingDate>
@@ -355,7 +355,7 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 ../plt/case-c-b-m-
 	<gl-cor:detailComment contextRef="H2L1">Record current period interest earned</gl-cor:detailComment>
 	<!-- entryDetail -->
 	<gl-cor:lineNumber contextRef="H2L2">L2</gl-cor:lineNumber>
-	<gl-cor:specified.account contextRef="H2L2">ACCOUNT5200</gl-cor:specified.account>
+	<gl-cor:account contextRef="H2L2">ACCOUNT5200</gl-cor:account>
 	<gl-cor:amount decimals="2" contextRef="H2L2" unitRef="usd">500.00</gl-cor:amount>
 	<gl-cor:debitCreditCode contextRef="H2L2">C</gl-cor:debitCreditCode>
 	<gl-cor:postingDate contextRef="H2L2">2005-06-30</gl-cor:postingDate>
@@ -363,7 +363,7 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 ../plt/case-c-b-m-
 	<gl-cor:detailComment contextRef="H2L2">Record current period interest earned</gl-cor:detailComment>
 	<!-- entryDetail -->
 	<gl-cor:lineNumber contextRef="H2L3">L3</gl-cor:lineNumber>
-	<gl-cor:specified.account contextRef="H2L3">ACCOUNT1300</gl-cor:specified.account>
+	<gl-cor:account contextRef="H2L3">ACCOUNT1300</gl-cor:account>
 	<gl-cor:amount decimals="2" contextRef="H2L3" unitRef="usd">50.00</gl-cor:amount>
 	<gl-cor:debitCreditCode contextRef="H2L3">D</gl-cor:debitCreditCode>
 	<gl-cor:postingDate contextRef="H2L3">2005-06-30</gl-cor:postingDate>
@@ -371,7 +371,7 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 ../plt/case-c-b-m-
 	<gl-cor:detailComment contextRef="H2L3">Record current period tax exempt interest earned</gl-cor:detailComment>
 	<!-- entryDetail -->
 	<gl-cor:lineNumber contextRef="H2L4">L4</gl-cor:lineNumber>
-	<gl-cor:specified.account contextRef="H2L4">ACCOUNT9999</gl-cor:specified.account>
+	<gl-cor:account contextRef="H2L4">ACCOUNT9999</gl-cor:account>
 	<gl-cor:amount decimals="2" contextRef="H2L4" unitRef="usd">50.00</gl-cor:amount>
 	<gl-cor:debitCreditCode contextRef="H2L4">C</gl-cor:debitCreditCode>
 	<gl-cor:postingDate contextRef="H2L4">2005-06-30</gl-cor:postingDate>

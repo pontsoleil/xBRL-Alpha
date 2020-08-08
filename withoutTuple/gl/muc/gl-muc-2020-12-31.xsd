@@ -16,6 +16,12 @@ xmlns:gl-gen="http://www.xbrl.org/int/gl/gen/2020-12-31"
 xmlns:gl-muc="http://www.xbrl.org/int/gl/muc/2020-12-31">
 	<import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
 	<import namespace="http://www.xbrl.org/int/gl/gen/2020-12-31" schemaLocation="../gen/gl-gen-2020-12-31.xsd"/>
+		<annotation>
+		<appinfo>
+			<link:linkbaseRef xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" 
+			xlink:href="gl-muc-2020-12-31-presentation.xml" xlink:title="Presentation Links, all"/>
+		</appinfo>
+	</annotation>
 	<!-- item type -->
 	<complexType name="currencyItemType">
 		<simpleContent>
@@ -94,4 +100,6 @@ xmlns:gl-muc="http://www.xbrl.org/int/gl/muc/2020-12-31">
 	<element name="taxForeignTriangulationExchangeRate" id="gl-muc_taxForeignTriangulationExchangeRate" type="gl-muc:exchangeRateItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
 	<element name="taxForeignTriangulationExchangeRateSource" id="gl-muc_taxForeignTriangulationExchangeRateSource" type="gl-muc:exchangeRateSourceItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
 	<element name="taxForeignTriangulationExchangeRateType" id="gl-muc_taxForeignTriangulationExchangeRateType" type="gl-muc:exchangeRateTypeItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+	<!-- tuple item -->
+	<element name="multicurrencyDetail" id="gl-muc_multicurrencyDetail" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
 </schema>
