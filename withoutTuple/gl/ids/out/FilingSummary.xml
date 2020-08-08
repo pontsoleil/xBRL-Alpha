@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<FilingSummary>
+  <Version>3.20.2</Version>
+  <ProcessingTime/>
+  <ReportFormat>html</ReportFormat>
+  <ContextCount>17</ContextCount>
+  <ElementCount>210</ElementCount>
+  <EntityCount>1</EntityCount>
+  <FootnotesReported>false</FootnotesReported>
+  <SegmentCount>3</SegmentCount>
+  <ScenarioCount>0</ScenarioCount>
+  <TuplesReported>false</TuplesReported>
+  <UnitCount>2</UnitCount>
+  <MyReports>
+    <Report instance="JournalEntry_Book-Tax.xbrl">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R1.htm</HtmlFileName>
+      <LongName>http://www.xbrl.org/2003/role/link</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.xbrl.org/2003/role/link</Role>
+      <ShortName></ShortName>
+      <MenuCategory>Cover</MenuCategory>
+      <Position>1</Position>
+    </Report>
+    <Report instance="JournalEntry_Book-Tax.xbrl">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R9999.htm</HtmlFileName>
+      <LongName>Uncategorized Items - JournalEntry_Book-Tax.xbrl</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://xbrl.sec.gov/role/uncategorizedFacts</Role>
+      <ShortName>Uncategorized Items - JournalEntry_Book-Tax.xbrl</ShortName>
+      <MenuCategory>Cover</MenuCategory>
+      <Position>2</Position>
+    </Report>
+    <Report>
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <LongName>All Reports</LongName>
+      <ReportType>Book</ReportType>
+      <ShortName>All Reports</ShortName>
+    </Report>
+  </MyReports>
+  <Logs>
+    <Log type="Warning">[info:duplicatedSchema] Schema file with same targetNamespace http://xbrl.org/2005/xbrldt loaded from http://xbrl.org/2005/xbrldt-2005.xsd and http://www.xbrl.org/2005/xbrldt-2005.xsd - ../cor/gl-cor-2020-12-31-definition.xml 10 - ../cor/gl-cor-2020-12-31-definition.xml 10</Log>
+    <Log type="Warning">[info:duplicatedSchema] Schema file with same targetNamespace http://xbrl.org/2005/xbrldt loaded from http://xbrl.org/2005/xbrldt-2005.xsd and http://www.xbrl.org/2005/xbrldt-2005.xsd - ../cor/gl-cor-2020-12-31-definition.xml 10 - ../cor/gl-cor-2020-12-31-definition.xml 10</Log>
+    <Log type="Error">[EFM.6.07.12] The definition ''http://www.xbrl.org/2003/role/link'' of role http://www.xbrl.org/2003/role/link does not match the expected format. Please check that the definition matches {number} - {type} - {text}. - JournalEntry_Book-Tax.xbrl  - JournalEntry_Book-Tax.xbrl </Log>
+  </Logs>
+  <InputFiles/>
+  <SupplementalFiles/>
+  <BaseTaxonomies>
+    <BaseTaxonomy>http://www.xbrl.org/int/gl/taf/2020-12-31</BaseTaxonomy>
+    <BaseTaxonomy>http://www.xbrl.org/int/gl/cor/2020-12-31</BaseTaxonomy>
+    <BaseTaxonomy>http://www.xbrl.org/int/gl/bus/2020-12-31</BaseTaxonomy>
+    <BaseTaxonomy>http://www.xbrl.org/int/gl/muc/2020-12-31</BaseTaxonomy>
+    <BaseTaxonomy>http://www.xbrl.org/int/gl/usk/2020-12-31</BaseTaxonomy>
+  </BaseTaxonomies>
+  <HasPresentationLinkbase>false</HasPresentationLinkbase>
+  <HasCalculationLinkbase>false</HasCalculationLinkbase>
+</FilingSummary>
