@@ -11,9 +11,10 @@ xmlns:xlink="http://www.w3.org/1999/xlink"
 xmlns:iso639="http://www.xbrl.org/2005/iso639" 
 xmlns:iso4217="http://www.xbrl.org/2003/iso4217" 
 xmlns:gl-cor="http://www.xbrl.org/int/gl/cor/2020-12-31"
-xsi:schemaLocation="http://www.xbrl.org/int/gl/cor/2020-12-31 ../cor/gl-cor-2020-12-31.xsd">
-	<xbrll:schemaRef xlink:type="simple" xlink:href="../cor/gl-cor-2020-12-31.xsd" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
-	<!-- <xbrll:schemaRef xlink:type="simple" xlink:href="../plt/case-c-b-m-u-e-t/gl-plt-all-2020-12-31.xsd" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/> -->
+xmlns:gl-bus="http://www.xbrl.org/int/gl/bus/2020-12-31"
+xmlns:gl-muc="http://www.xbrl.org/int/gl/muc/2020-12-31" 
+xsi:schemaLocation="http://www.xbrl.org/int/gl/plt/2020-12-31 ../plt/case-c-b-m-u-e-t/gl-plt-all-2020-12-31.xsd">
+	<xbrll:schemaRef xlink:type="simple" xlink:href="../plt/case-c-b-m-u-e-t/gl-plt-all-2020-12-31.xsd" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
 	<!-- context -->
 	<xbrli:context id="now">
 		<xbrli:entity>
@@ -177,7 +178,7 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/cor/2020-12-31 ../cor/gl-cor-2020
 			<xbrli:instant>2020-01-01</xbrli:instant>
 		</xbrli:period>
 	</xbrli:context>
-	<!-- <xbrli:context id="ACCOUNT1300">
+	<xbrli:context id="ACCOUNT1300">
 		<xbrli:entity>
 			<xbrli:identifier scheme="http://www.xbrl.org/xbrlgl/sample">SAMPLE</xbrli:identifier>
 			<xbrli:segment>
@@ -254,7 +255,7 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/cor/2020-12-31 ../cor/gl-cor-2020
 		<xbrli:period>
 			<xbrli:instant>2020-01-01</xbrli:instant>
 		</xbrli:period>
-	</xbrli:context> -->
+	</xbrli:context>
 	<xbrli:unit id="usd">
 		<xbrli:measure>iso4217:USD</xbrli:measure>
 	</xbrli:unit>
@@ -271,27 +272,27 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/cor/2020-12-31 ../cor/gl-cor-2020
 	<gl-cor:uniqueID contextRef="now">001</gl-cor:uniqueID>
 	<gl-cor:language contextRef="now">iso639:en</gl-cor:language>
 	<gl-cor:creationDate contextRef="now">2005-07-05</gl-cor:creationDate>
-	<!-- <gl-bus:creator contextRef="now">XBRL JAPAN GL Sub Working Group</gl-bus:creator> -->
+	<gl-bus:creator contextRef="now">XBRL JAPAN GL Sub Working Group</gl-bus:creator>
 	<gl-cor:entriesComment contextRef="now">A best practice example of entries with book to tax differences instance document</gl-cor:entriesComment>
 	<gl-cor:periodCoveredStart contextRef="now">2005-06-01</gl-cor:periodCoveredStart>
 	<gl-cor:periodCoveredEnd contextRef="now">2005-06-30</gl-cor:periodCoveredEnd>
-	<!-- <gl-bus:sourceApplication contextRef="now">Sample ERP</gl-bus:sourceApplication>
-	<gl-muc:defaultCurrency contextRef="now">iso4217:usd</gl-muc:defaultCurrency> -->
+	<gl-bus:sourceApplication contextRef="now">Sample ERP</gl-bus:sourceApplication>
+	<gl-muc:defaultCurrency contextRef="now">iso4217:usd</gl-muc:defaultCurrency>
 	<!-- entityInformation -->
-	<!-- <gl-bus:organizationIdentifiers contextRef="now"/>
+	<gl-bus:organizationIdentifiers contextRef="now"/>
 	<gl-bus:organizationIdentifier contextRef="now">ABC Company</gl-bus:organizationIdentifier>
-	<gl-bus:organizationDescription contextRef="now">Company Name</gl-bus:organizationDescription> -->
+	<gl-bus:organizationDescription contextRef="now">Company Name</gl-bus:organizationDescription>
 	<!-- entryHeader -->
 	<gl-cor:enteredBy contextRef="H1">Otto Wellwood</gl-cor:enteredBy>
 	<gl-cor:enteredDate contextRef="H1">2005-07-01</gl-cor:enteredDate>
 	<gl-cor:sourceJournalID contextRef="H1">gj</gl-cor:sourceJournalID>
-	<!-- <gl-bus:sourceJournalDescription contextRef="H1">JE</gl-bus:sourceJournalDescription> -->
+	<gl-bus:sourceJournalDescription contextRef="H1">JE</gl-bus:sourceJournalDescription>
 	<gl-cor:entryType contextRef="H1">standard</gl-cor:entryType>
 	<gl-cor:entryNumber contextRef="H1">1</gl-cor:entryNumber>
 	<gl-cor:entryComment contextRef="H1">Current period depreciation expense</gl-cor:entryComment>
 	<gl-cor:qualifierEntry contextRef="H2">standard</gl-cor:qualifierEntry>
-	<!-- <gl-bus:totalDebit decimals="2" contextRef="H1" unitRef="usd">7700.00</gl-bus:totalDebit>
-	<gl-bus:totalCredit decimals="2" contextRef="H1" unitRef="usd">7700.00</gl-bus:totalCredit> -->
+	<gl-bus:totalDebit decimals="2" contextRef="H1" unitRef="usd">7700.00</gl-bus:totalDebit>
+	<gl-bus:totalCredit decimals="2" contextRef="H1" unitRef="usd">7700.00</gl-bus:totalCredit>
 	<gl-cor:bookTaxDifference contextRef="H1">temporary</gl-cor:bookTaxDifference>
 	<gl-cor:entryDetail contextRef="H1">H1L1</gl-cor:entryDetail>
 	<gl-cor:entryDetail contextRef="H1">H1L2</gl-cor:entryDetail>
@@ -332,13 +333,13 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/cor/2020-12-31 ../cor/gl-cor-2020
 	<gl-cor:enteredBy contextRef="H2">Otto Wellwood</gl-cor:enteredBy>
 	<gl-cor:enteredDate contextRef="H2">2005-07-01</gl-cor:enteredDate>
 	<gl-cor:sourceJournalID contextRef="H2">gj</gl-cor:sourceJournalID>
-	<!-- <gl-bus:sourceJournalDescription contextRef="H2">JE</gl-bus:sourceJournalDescription> -->
+	<gl-bus:sourceJournalDescription contextRef="H2">JE</gl-bus:sourceJournalDescription>
 	<gl-cor:entryType contextRef="H2">standard</gl-cor:entryType>
 	<gl-cor:entryNumber contextRef="H2">2</gl-cor:entryNumber>
 	<gl-cor:entryComment contextRef="H2">Current period tax exempt interest</gl-cor:entryComment>
 	<gl-cor:qualifierEntry contextRef="H2">standard</gl-cor:qualifierEntry>
-	<!-- <gl-bus:totalDebit decimals="2" contextRef="H2" unitRef="usd">550.00</gl-bus:totalDebit>
-	<gl-bus:totalCredit decimals="2" contextRef="H2" unitRef="usd">550.00</gl-bus:totalCredit> -->
+	<gl-bus:totalDebit decimals="2" contextRef="H2" unitRef="usd">550.00</gl-bus:totalDebit>
+	<gl-bus:totalCredit decimals="2" contextRef="H2" unitRef="usd">550.00</gl-bus:totalCredit>
 	<gl-cor:bookTaxDifference contextRef="H2">permanent</gl-cor:bookTaxDifference>
 	<gl-cor:entryDetail contextRef="H2">H2L1</gl-cor:entryDetail>
 	<gl-cor:entryDetail contextRef="H2">H2L2</gl-cor:entryDetail>

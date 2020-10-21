@@ -11,7 +11,7 @@ xmlns:xbrli="http://www.xbrl.org/2003/instance"
 xmlns:link="http://www.xbrl.org/2003/linkbase" 
 xmlns:gl-cor="http://www.xbrl.org/int/gl/cor/2020-12-31">
 	<xsd:import namespace="http://www.xbrl.org/int/gl/cor/2020-12-31" schemaLocation="gl-palette-2020-12-31.xsd"/>
-		<xsd:annotation>
+	<xsd:annotation>
 		<xsd:appinfo>
 			<link:linkbaseRef xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="gl-plt-all-2020-12-31_formula_5.xml"/>
 			<link:linkbaseRef xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="gl-plt-all-2020-12-31_table.xml"/>
