@@ -177,7 +177,7 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/cor/2020-12-31 ../cor/gl-cor-2020
 			<xbrli:instant>2020-01-01</xbrli:instant>
 		</xbrli:period>
 	</xbrli:context>
-	<!-- <xbrli:context id="ACCOUNT1300">
+	<xbrli:context id="ACCOUNT1300">
 		<xbrli:entity>
 			<xbrli:identifier scheme="http://www.xbrl.org/xbrlgl/sample">SAMPLE</xbrli:identifier>
 			<xbrli:segment>
@@ -254,7 +254,7 @@ xsi:schemaLocation="http://www.xbrl.org/int/gl/cor/2020-12-31 ../cor/gl-cor-2020
 		<xbrli:period>
 			<xbrli:instant>2020-01-01</xbrli:instant>
 		</xbrli:period>
-	</xbrli:context> -->
+	</xbrli:context>
 	<xbrli:unit id="usd">
 		<xbrli:measure>iso4217:USD</xbrli:measure>
 	</xbrli:unit>
