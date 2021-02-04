@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbrli:xbrl
+    xmlns:link="http://www.xbrl.org/2003/linkbase"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:iso639="http://www.xbrl.org/2005/iso639"
+    xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+    xmlns:xbrli="http://www.xbrl.org/2003/instance"
+    xmlns:xbrldi="http://xbrl.org/2006/xbrldi"
+    xmlns:gl="http://www.GL.com">
+    <link:schemaRef xlink:type="simple" xlink:href="GLTaxonomy.xsd"/>
+    <xbrli:unit id="pure">
+        <xbrli:measure>xbrli:pure</xbrli:measure>
+    </xbrli:unit>
+    <xbrli:unit id="JPY">
+        <xbrli:measure>iso4217:JPY</xbrli:measure>
+    </xbrli:unit>
+    <xbrli:context id="cG1">
+        <xbrli:entity><xbrli:identifier scheme="http://eipa.jp">EIPA</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:instant>2020-11-26</xbrli:instant></xbrli:period>
+        <xbrli:scenario>
+            <xbrldi:typedMember dimension="gl:d1"><gl:_1>cG1</gl:_1></xbrldi:typedMember>
+        </xbrli:scenario>
+    </xbrli:context>
+
+    <xbrli:context id="cG1cG2">
+        <xbrli:entity><xbrli:identifier scheme="http://eipa.jp">EIPA</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:instant>2020-11-26</xbrli:instant></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="gl:d1"><gl:_1>cG1</gl:_1></xbrldi:typedMember>
+          <xbrldi:typedMember dimension="gl:d2"><gl:_2>cG2</gl:_2></xbrldi:typedMember>
+        </xbrli:scenario>
+    </xbrli:context>
+    <gl:cor-3 contextRef="cG1cG2">01</gl:cor-3>
+    <gl:cor-4 contextRef="cG1cG2">0001</gl:cor-4>
+    <gl:cor-5 contextRef="cG1cG2" unitRef="JPY" decimals="0">150</gl:cor-5> 
+
+    <xbrli:context id="cG1cG2.1">
+        <xbrli:entity><xbrli:identifier scheme="http://eipa.jp">EIPA</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:instant>2020-11-26</xbrli:instant></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="gl:d1"><gl:_1>cG1</gl:_1></xbrldi:typedMember>
+          <xbrldi:typedMember dimension="gl:d2"><gl:_2>cG2.1</gl:_2></xbrldi:typedMember>
+        </xbrli:scenario>
+    </xbrli:context>
+    <gl:cor-3 contextRef="cG1cG2.1">02</gl:cor-3>
+    <gl:cor-4 contextRef="cG1cG2.1">0002</gl:cor-4>
+    <gl:cor-5 contextRef="cG1cG2.1" unitRef="JPY" decimals="0">500</gl:cor-5>
+
+    <xbrli:context id="cG1cG2.2">
+        <xbrli:entity><xbrli:identifier scheme="http://eipa.jp">EIPA</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:instant>2020-11-26</xbrli:instant></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="gl:d1"><gl:_1>cG1</gl:_1></xbrldi:typedMember>
+          <xbrldi:typedMember dimension="gl:d2"><gl:_2>cG2.2</gl:_2></xbrldi:typedMember>
+        </xbrli:scenario>
+    </xbrli:context>
+    <gl:cor-3 contextRef="cG1cG2.2">03</gl:cor-3>
+    <gl:cor-4 contextRef="cG1cG2.2">0003</gl:cor-4>
+    <gl:cor-5 contextRef="cG1cG2.2" unitRef="JPY" decimals="0">300</gl:cor-5>
+
+    <xbrli:context id="cG1cG2.3">
+        <xbrli:entity><xbrli:identifier scheme="http://eipa.jp">EIPA</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:instant>2020-11-26</xbrli:instant></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="gl:d1"><gl:_1>cG1</gl:_1></xbrldi:typedMember>
+          <xbrldi:typedMember dimension="gl:d2"><gl:_2>cG2.3</gl:_2></xbrldi:typedMember>
+        </xbrli:scenario>
+    </xbrli:context>
+    <gl:cor-3 contextRef="cG1cG2.3">04</gl:cor-3>
+    <gl:cor-4 contextRef="cG1cG2.3">0003</gl:cor-4>
+    <gl:cor-5 contextRef="cG1cG2.3" unitRef="JPY" decimals="0">100</gl:cor-5>
+
+    <xbrli:context id="cG1cG2.4">
+        <xbrli:entity><xbrli:identifier scheme="http://eipa.jp">EIPA</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:instant>2020-11-26</xbrli:instant></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="gl:d1"><gl:_1>cG1</gl:_1></xbrldi:typedMember>
+          <xbrldi:typedMember dimension="gl:d2"><gl:_2>cG2.4</gl:_2></xbrldi:typedMember>
+        </xbrli:scenario>
+    </xbrli:context>
+    <gl:cor-3 contextRef="cG1cG2.4">05</gl:cor-3>
+    <gl:cor-4 contextRef="cG1cG2.4">0002</gl:cor-4>
+    <gl:cor-5 contextRef="cG1cG2.4" unitRef="JPY" decimals="0">400</gl:cor-5>
+</xbrli:xbrl>

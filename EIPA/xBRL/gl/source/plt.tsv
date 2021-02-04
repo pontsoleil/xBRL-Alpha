@@ -1,0 +1,202 @@
+seq	code	general	level	module	term	ID	BT	Card
+1	corG-1		1	cor	accountingEntries			
+2	corG-2		2	cor	documentInfo			
+3	cor-76		3	cor	documentNumber	BT-1	Invoice number	1..1
+4	cor-79		3	cor	documentDate	BT-2	Invoice issue date	1..1
+5	cor-73		3	cor	documentType	BT-3	Invoice type code	1..1
+6	cenG-16		3	cen	paymentInstructions	BG-16	PAYMENT INSTRUCTIONS	0..1
+7	cen-82		4	cen	paymentMeansText	BT-82	Payment means text	0..1
+8	cen-83		4	cen	remittanceInformation	BT-83	Remittance information	0..1
+9	cenG-17		4	cen	creditTransfer	BG-17	CREDIT TRANSFER	0..n
+10	cen-84		5	cen	paymentAccountIdentifier	BT-84	Payment account identifier	1..1
+11	cen-85		5	cen	paymentAccountName	BT-85	Payment account name	0..1
+12	cen-86		5	cen	paymentServiceProviderIdentifier	BT-86	Payment service provider identifier	0..1
+13	cenG-18		4	cen	paymentCardInformation	BG-18	PAYMENT CARD INFORMATION	0..1
+14	cen-87		5	cen	paymentCardPrimaryAccountNumber	BT-87	Payment card primary account number	1..1
+15	cen-88		5	cen	paymentCardHolderName	BT-88	Payment card holder name	0..1
+16	cenG-19		4	cen	directDebit	BG-19	DIRECT DEBIT	0..1
+17	cen-89		5	cen	mandateReferenceIdentifier	BT-89	Mandate reference identifier	0..1
+18	cen-90		5	cen	bankAssignedCreditorIdentifier	BT-90	Bank assigned creditor identifier	0..1
+19	cen-91		5	cen	debitedAccountIdentifier	BT-91	Debited account identifier	0..1
+20	tafG-1		3	taf	originatingDocumentStructure	BG-3	PRECEDING INVOICE REFERENCE	
+21	taf-4		4	taf	originatingDocumentType			
+22	taf-5		4	taf	originatingDocumentNumber	BT-25	Preceding Invoice reference	1..1
+23	cen-26	taf-6	4	cen	precedingInvoiceIssueDate	BT-26	Preceding Invoice issue date	0..1
+24	cen-132	taf-5	4	cen	referencedPurchaseOrderLineReference	BT-132	Referenced purchase order line reference	0..1
+25	cen-18		3	cen	invoicedObjectIdentifier	BT-18	Invoiced object identifier	0..1
+26	cenG-1		3	cen	invoiceNote	BG-1	INVOICE NOTE	0..n
+27	cen-21		4	cen	invoiceNoteSubjectCode	BT-21	Invoice note subject code	0..1
+28	cen-22		4	cen	invoiceNote	BT-22	Invoice note	1..1
+29	cenG-2		3	cen	processControl	BG-2	PROCESS CONTROL	1..1
+30	cen-23		4	cen	businessProcessType	BT-23	Business process type	0..1
+31	cen-24		4	cen	specificationIdentifier	BT-24	Specification identifier	1..1
+32	cen-133	taf-4	4	cen	invoiceLineBuyerAccountingReference	BT-133	Invoice line Buyer accounting reference	0..1
+33	cenG-24		3	cen	additionalSupportingDocuments	BG-24	ADDITIONAL SUPPORTING DOCUMENTS	0..n
+34	cen-122		4	cen	supportingDocumentReference	BT-122	Supporting document reference	1..1
+35	cen-123		4	cen	supportingDocumentDescription	BT-123	Supporting document description	0..1
+36	cen-124		4	cen	externalDocumentLocation	BT-124	External document location	0..1
+37	cen-125		4	cen	attachedDocument	BT-125	Attached document	0..1
+38	cen-125A		4	cen	attachedDocumentMimeCode	BT-125A	Attached document Mime code	1..1
+39	cen-125B		4	cen	attachedDocumentFilename	BT-125B	Attached document Filename	1..1
+40	corG-3		2	cor	entityInformation			
+41	cenG-4	corG-9	3	cen	seller	BG-4	SELLER	1..1
+42	cen-29	cor-44	4	cen	sellerIdentifier	BT-29	Seller identifier	0..n
+43	cen-30	cor-45	4	cen	sellerLegalRegistrationIdentifier	BT-30	Seller legal registration identifier	0..1
+44	cen-31	cor-45	4	cen	sellerVatIdentifier	BT-31	Seller VAT identifier	0..1
+45	cen-32	cor-45	4	cen	sellerTaxRegistrationIdentifier	BT-32	Seller tax registration identifier	0..1
+46	cen-27	cor-50	4	cen	sellerName	BT-27	Seller name	1..1
+47	cen-28		4	cen	sellerTradingName	BT-28	Seller trading name	0..1
+48	cen-33		4	cen	sellerAdditionalLegalInformation	BT-33	Seller additional legal information	0..1
+49	cenG-5	busG-20	4	cen	sellerPostalAddress	BG-5	SELLER POSTAL ADDRESS	1..1
+50	cen-35	bus-124	5	cen	sellerAddressLine1	BT-35	Seller address line 1	0..1
+51	cen-36	bus-125	5	cen	sellerAddressLine2	BT-36	Seller address line 2	0..1
+52	cen-162	cen-162	5	cen	sellerAddressLine3	BT-162	Seller address line 3	0..1
+53	cen-37	bus-126	5	cen	sellerCity	BT-37	Seller city	0..1
+54	cen-39	bus-127	5	cen	sellerCountrySubdivision	BT-39	Seller country subdivision	0..1
+55	cen-40	bus-128	5	cen	sellerCountryCode	BT-40	Seller country code	1..1
+56	cen-38	bus-129	5	cen	sellerPostCode	BT-38	Seller post code	0..1
+57	cenG-6	corG-14	5	cen	sellerContact	BG-6	SELLER CONTACT	0..1
+58	cen-41	cor-63	6	cen	sellerContactPoint	BT-41	Seller contact point	0..1
+59	cen-42	cor-66	6	cen	sellerContactTelephoneNumber	BT-42	Seller contact telephone number	0..1
+60	cen-34		6	cen	sellerElectronicAddress	BT-34	Seller electronic address	0..1
+61	cen-43	cor-70	6	cen	sellerContactEmailAddress	BT-43	Seller contact email address	0..1
+62	cenG-11	cor-51	4	cen	sellerTaxRepresentativeParty	BG-11	SELLER TAX REPRESENTATIVE PARTY	0..1
+63	cen-63	cor-45	4	cen	sellerTaxRepresentativeVatIdentifier	BT-63	Seller tax representative VAT identifier	1..1
+64	cen-62	cor-50	4	cen	sellerTaxRepresentativeName	BT-62	Seller tax representative name	1..1
+65	cenG-12	busG-20	4	cen	sellerTaxRepresentativePostalAddress	BG-12	SELLER TAX REPRESENTATIVE POSTAL ADDRESS	1..1
+66	cen-64	bus-124	5	cen	taxRepresentativeAddressLine1	BT-64	Tax representative address line 1	0..1
+67	cen-65	bus-125	5	cen	taxRepresentativeAddressLine2	BT-65	Tax representative address line 2	0..1
+68	cen-164	cen-162	5	cen	taxRepresentativeAddressLine3	BT-164	Tax representative address line 3	0..1
+69	cen-66	bus-126	5	cen	taxRepresentativeCity	BT-66	Tax representative city	0..1
+70	cen-68	bus-127	5	cen	taxRepresentativeCountrySubdivision	BT-68	Tax representative country subdivision	0..1
+71	cen-69	bus-128	5	cen	taxRepresentativeCountryCode	BT-69	Tax representative country code	1..1
+72	cen-67	bus-129	5	cen	taxRepresentativePostCode	BT-67	Tax representative post code	0..1
+73	cenG-7	cor-51	4	cen	buyer	BG-7	BUYER	1..1
+74	cen-46	cor-44	4	cen	buyerIdentifier	BT-46	Buyer identifier	0..1
+75	cen-47	cor-45	4	cen	buyerLegalRegistrationIdentifier	BT-47	Buyer legal registration identifier	0..1
+76	cen-48	cor-45	4	cen	buyerVatIdentifier	BT-48	Buyer VAT identifier	0..1
+77	cen-47A	cor-46	4	cen	schemeIdentifier	BT-47A	Scheme identifier	0..1
+78	cen-44	cor-50	4	cen	buyerName	BT-44	Buyer name	1..1
+79	cen-45	cen-28	4	cen	buyerTradingName	BT-45	Buyer trading name	0..1
+80	cenG-8	busG-20	4	cen	buyerPostalAddress	BG-8	BUYER POSTAL ADDRESS	1..1
+81	cen-50	bus-124	5	cen	buyerAddressLine1	BT-50	Buyer address line 1	0..1
+82	cen-51	bus-125	5	cen	buyerAddressLine2	BT-51	Buyer address line 2	0..1
+83	cen-163	cen-162	5	cen	buyerAddressLine3	BT-163	Buyer address line 3	0..1
+84	cen-52	bus-126	5	cen	buyerCity	BT-52	Buyer city	0..1
+85	cen-54	bus-127	5	cen	buyerCountrySubdivision	BT-54	Buyer country subdivision	0..1
+86	cen-55	bus-128	5	cen	buyerCountryCode	BT-55	Buyer country code	1..1
+87	cen-53	bus-129	5	cen	buyerPostCode	BT-53	Buyer post code	0..1
+88	cenG-9	corG-14	5	cen	buyerContact	BG-9	BUYER CONTACT 	0..1
+89	cen-56	cor-63	6	cen	buyerContactPoint	BT-56	Buyer contact point	0..1
+90	cen-57	cor-66	6	cen	buyerContactTelephoneNumber	BT-57	Buyer contact telephone number	0..1
+91	cen-49		6	cen	buyerElectronicAddress	BT-49	Buyer electronic address	0..1
+92	cen-58	cor-70	6	cen	buyerContactEmailAddress	BT-58	Buyer contact email address	0..1
+93	bus-35		6	bus	contactAttentionLine	BT-10	Buyer reference	0..1
+94	cen-60	cor-44	4	cen	payeeIdentifier	BT-60	Payee identifier	0..1
+95	cen-61	cor-45	4	cen	payeeLegalRegistrationIdentifier	BT-61	Payee legal registration identifier	0..1
+96	cen-61A	cor-46	4	cen	schemeIdentifier	BT-61A	Scheme identifier	0..1
+97	cen-59	cor-50	4	cen	payeeName	BT-59	Payee name	1..1
+98	cen-70	cor-50	4	cen	deliverToPartyName	BT-70	Deliver to party name	0..1
+99	cenG-15	busG-20	4	cen	deliverToAddress	BG-15	DELIVER TO ADDRESS	0..1
+100	cen-75	bus-124	5	cen	deliverToAddressLine1	BT-75	Deliver to address line 1	0..1
+101	cen-76	bus-125	5	cen	deliverToAddressLine2	BT-76	Deliver to address line 2	0..1
+102	cen-165	cen-162	5	cen	deliverToAddressLine3	BT-165	Deliver to address line 3	0..1
+103	cen-77	bus-126	5	cen	deliverToCity	BT-77	Deliver to city	0..1
+104	cen-79	bus-127	5	cen	deliverToCountrySubdivision	BT-79	Deliver to country subdivision	0..1
+105	cen-80	bus-128	5	cen	deliverToCountryCode	BT-80	Deliver to country code	1..1
+106	cen-78	bus-129	5	cen	deliverToPostCode	BT-78	Deliver to post code	0..1
+107	cen-71	bus-130	5	cen	deliverToLocationIdentifier	BT-71	Deliver to location identifier	0..1
+119	cenG-14		4	cen	invoicingPeriod	BG-14	INVOICING PERIOD	0..1
+120	cor-8		5	cor	periodCoveredStart	BT-73	Invoicing period start date	0..1
+121	cor-9		5	cor	periodCoveredEnd	BT-74	Invoicing period end date	0..1
+122	corG-4		2	cor	entryHeader			
+123	muc-4		3	muc	amountOriginalCurrency	BT-5	Invoice currency code	1..1
+124	muc-33		3	muc	taxCurrency	BT-6	VAT accounting currency code	0..1
+125	cor-43		3	cor	postingDate	BT-7	Value added tax point date	0..1
+126	cen-8		3	cen	valueAddedTaxPointDateCode	BT-8	Value added tax point date code	0..1
+127	cor-90		3	cor	maturityDate	BT-9	Payment due date	
+128	cenG-20		3	cen	documentLevelAllowances	BG-20	DOCUMENT LEVEL ALLOWANCES	0..n
+129	cen-92	cor-40	4	cen	documentLevelAllowanceAmount	BT-92	Document level allowance amount	1..1
+130	cen-95	cor-99	4	cen	documentLevelAllowanceVatCategoryCode	BT-95	Document level allowance VAT category code	1..1
+131	cen-96	cor-98	4	cen	documentLevelAllowanceVatRate	BT-96	Document level allowance VAT rate	0..1
+132	cen-93		4	cen	documentLevelAllowanceBaseAmount	BT-93	Document level allowance base amount	0..1
+133	cen-94		4	cen	documentLevelAllowancePercentage	BT-94	Document level allowance percentage	0..1
+134	cen-97		4	cen	documentLevelAllowanceReason	BT-97	Document level allowance reason	0..1
+135	cen-98		4	cen	documentLevelAllowanceReasonCode	BT-98	Document level allowance reason code	0..1
+136	cenG-21		3	cen	documentLevelCharges	BG-21	DOCUMENT LEVEL CHARGES	0..n
+137	cen-99	cor-40	4	cen	documentLevelChargeAmount	BT-99	Document level charge amount	1..1
+138	cen-102	cor-99	4	cen	documentLevelChargeVatCategoryCode	BT-102	Document level charge VAT category code	1..1
+139	cen-103	cor-98	4	cen	documentLevelChargeVatRate	BT-103	Document level charge VAT rate	0..1
+140	cen-100		4	cen	documentLevelChargeBaseAmount	BT-100	Document level charge base amount	0..1
+141	cen-101		4	cen	documentLevelChargePercentage	BT-101	Document level charge percentage	0..1
+142	cen-104		4	cen	documentLevelChargeReason	BT-104	Document level charge reason	0..1
+143	cen-105		4	cen	documentLevelChargeReasonCode	BT-105	Document level charge reason code	0..1
+144	cenG-22		3	cen	documentTotals	BG-22	DOCUMENT TOTALS	1..1
+145	cen-106	cor-40	4	cen	sumOfInvoiceLineNetAmount	BT-106	Sum of Invoice line net amount	1..1
+146	cen-107		4	cen	sumOfAllowancesOnDocumentLevel	BT-107	Sum of allowances on document level	0..1
+147	cen-108		4	cen	sumOfChargesOnDocumentLevel	BT-108	Sum of charges on document level	0..1
+148	cen-109		4	cen	invoiceTotalAmountWithoutVat	BT-109	Invoice total amount without VAT	1..1
+149	cen-111		4	cen	invoiceTotalVatAmountInAccountingCurrency	BT-111	Invoice total VAT amount in accounting currency	0..1
+150	cen-112		4	cen	invoiceTotalAmountWithVat	BT-112	Invoice total amount with VAT	1..1
+151	cen-113		4	cen	paidAmount	BT-113	Paid amount	0..1
+152	cen-114		4	cen	roundingAmount	BT-114	Rounding amount	0..1
+153	cen-115		4	cen	amountDueForPayment	BT-115	Amount due for payment	1..1
+154	cenG-23		3	cen	vatBreakdown	BG-23	VAT BREAKDOWN	1..n
+155	cen-116	cor-40	4	cen	vatCategoryTaxableAmount	BT-116	VAT category taxable amount	1..1
+156	cen-117	cor-95	4	cen	vatCategoryTaxAmount	BT-117	VAT category tax amount	1..1
+157	cen-118	cor-99	4	cen	vatCategoryCode	BT-118	VAT category code 	1..1
+158	cen-119	cor-98	4	cen	vatCategoryRate	BT-119	VAT category rate	0..1
+159	cen-120		4	cen	vatExemptionReasonText	BT-120	VAT exemption reason text	0..1
+160	cen-121		4	cen	vatExemptionReasonCode	BT-121	VAT exemption reason code	0..1
+161	corG-5		3	cor	entryDetail	BG-25	INVOICE LINE	1..n
+162	cor-21		4	cor	lineNumber	BT-128	Invoice line object identifier	0..1
+163	cor-22		4	cor	lineNumberCounter	BT-126	Invoice line identifier	1..1
+164	cor-23		4	cor	accountMainID	BT-19	Buyer accounting reference	0..1
+165	cen-131	cor-40	4	cen	invoiceLineNetAmount	BT-131	Invoice line net amount	1..1
+166	cen-136	cor-40	4	cen	invoiceLineAllowanceAmount	BT-136	Invoice line allowance amount	1..1
+167	cen-141	cor-40	4	cen	invoiceLineChargeAmount	BT-141	Invoice line charge amount	1..1
+168	bus-135		4	bus	paymentMethod	BT-81	Payment means type code	1..1
+169	cor-85		4	cor	detailComment	BT-127	Invoice line note	0..1
+170	cor-89		4	cor	shipReceivedDate	BT-72	Actual delivery date	0..1
+171	cor-90		4	cor	maturityDate	BT-9	Payment due date	0..1
+172	cor-91		4	cor	terms	BT-20	Payment terms	0..1
+173	cenG-29	busG-21	4	cen	priceDetails	BG-29	PRICE DETAILS	1..1
+174	cen-146		5	cen	itemNetPrice	BT-146	Item net price	1..1
+175	cen-147		5	cen	itemPriceDiscount	BT-147	Item price discount	0..1
+176	cen-148		5	cen	itemGrossPrice	BT-148	Item gross price	0..1
+177	cen-149	bus-144	5	cen	itemPriceBaseQuantity	BT-149	Item price base quantity	0..1
+178	cen-150	bus-146	5	cen	itemPriceBaseQuantityUnitOfMeasureCode	BT-150	Item price base quantity unit of measure code	0..1
+179	cenG-31	busG-21	4	cen	itemInformation	BG-31	ITEM INFORMATION	1..1
+180	bus-143		5	bus	measurableDescription	BT-153	Item name	1..1
+181	cen-155		6	cen	itemSeller'SIdentifier	BT-155	Item Seller's identifier	0..1
+182	cen-156		6	cen	itemBuyer'SIdentifier	BT-156	Item Buyer's identifier	0..1
+183	bus-139		5	bus	measurableID	BT-157	Item standard identifier	0..1
+184	bus-140		5	bus	measurableIDSchema	BT-157A	Scheme identifier	1..1
+185	cen-129	bus-144	5	cen	invoicedQuantity	BT-129	Invoiced quantity	1..1
+186	bus-145		5	bus	measurableQualifier	BT-158	Item classification identifier	0..n
+187	cen-159	bus-128	6	cen	itemCountryOfOrigin	BT-159	Item country of origin	0..1
+188	cen-130	bus-146	5	cen	invoicedQuantityUnitOfMeasureCode	BT-130	Invoiced quantity unit of measure code	1..1
+189	cenG-26		5	cen	invoiceLinePeriod	BG-26	INVOICE LINE PERIOD	0..1
+190	bus-148		5	bus	measurableStartDateTime	BT-134	Invoice line period start date	0..1
+191	bus-149		5	bus	measurableEndDateTime	BT-135	Invoice line period end date	0..1
+192	corG-19		4	cor	taxes	BG-30	LINE VAT INFORMATION	1..1
+193	cen-110	cor-95	5	cen	invoiceTotalVatAmount	BT-110	Invoice total VAT amount	0..1
+194	cen-117	cor-95	5	cen	vatCategoryTaxAmount	BT-117	VAT category tax amount	1..1
+195	cen-119	cor-98	5	cen	vatCategoryRate	BT-119	VAT category rate	0..1
+196	cen-152	cor-98	5	cen	invoicedItemVatRate	BT-152	Invoiced item VAT rate	0..1
+197	cen-118	cor-99	5	cen	vatCategoryCode	BT-118	VAT category code 	1..1
+198	cen-151	cor-99	5	cen	invoicedItemVatCategoryCode	BT-151	Invoiced item VAT category code	1..1
+199	cenG-27		5	cen	invoiceLineAllowances	BG-27	INVOICE LINE ALLOWANCES	0..n
+200	cen-137		6	cen	invoiceLineAllowanceBaseAmount	BT-137	Invoice line allowance base amount	0..1
+201	cen-138		6	cen	invoiceLineAllowancePercentage	BT-138	Invoice line allowance percentage	0..1
+202	cen-139		6	cen	invoiceLineAllowanceReason	BT-139	Invoice line allowance reason	0..1
+203	cen-140		6	cen	invoiceLineAllowanceReasonCode	BT-140	Invoice line allowance reason code	0..1
+204	cenG-28		5	cen	invoiceLineCharges	BG-28	INVOICE LINE CHARGES	0..n
+205	cen-142		6	cen	invoiceLineChargeBaseAmount	BT-142	Invoice line charge base amount	0..1
+206	cen-143		6	cen	invoiceLineChargePercentage	BT-143	Invoice line charge percentage	0..1
+207	cen-144		6	cen	invoiceLineChargeReason	BT-144	Invoice line charge reason	0..1
+208	cen-145		6	cen	invoiceLineChargeReasonCode	BT-145	Invoice line charge reason code	0..1
+209	cen-154		6	cen	itemDescription	BT-154	Item description	0..1
+210	cenG-32		4	cen	itemAttributes	BG-32	ITEM ATTRIBUTES	0..n
+211	cen-160		5	cen	itemAttributeName	BT-160	Item attribute name	1..1
+212	cen-161		5	cen	itemAttributeValue	BT-161	Item attribute value	1..1
