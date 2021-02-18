@@ -1,0 +1,1290 @@
+{
+    "documentInfo": {
+      "documentType": "https://xbrl.org/WGWD/YYYY-MM-DD/xbrl-json",
+      "namespaces": {
+        "c": "http://www.xbrl.org/int/gl/cor/2020-12-31",
+        "gl-bus": "http://www.xbrl.org/int/gl/bus/2020-12-31",
+        "ns0": "http://www.xbrlglco.com"
+      },
+      "taxonomy": [
+        "file:///home/pdw/github/xBRL-Alpha/EIPA/xBRL/gl/plt/case-srcd/gl-plt-2020-12-31.xsd"
+      ]
+    },
+    "facts": {
+      "gl.r_23.bus-93": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.7",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-93"
+        },
+        "value": "8"
+      },
+      "gl.r_13.bus-93": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.11",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-93"
+        },
+        "value": "12"
+      },
+      "gl.r_2.bus-93": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-93"
+        },
+        "value": "1"
+      },
+      "gl.r_15.bus-86": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-86"
+        },
+        "value": "Standard Calendar 2004"
+      },
+      "gl.r_5.bus-93": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.3",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-93"
+        },
+        "value": "4"
+      },
+      "gl.r_24.bus-96": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.8",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-96"
+        },
+        "value": "2004-09-30"
+      },
+      "gl.r_8.bus-94": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.6",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-94"
+        },
+        "value": "February"
+      },
+      "gl.r_26.bus-94": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.10",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-94"
+        },
+        "value": "November"
+      },
+      "gl.r_11.bus-95": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.9",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-95"
+        },
+        "value": "2003-10-01"
+      },
+      "gl.r_3.bus-95": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.1",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-95"
+        },
+        "value": "2003-02-01"
+      },
+      "gl.r_21.bus-95": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.5",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-95"
+        },
+        "value": "2004-06-01"
+      },
+      "gl.r_18.bus-94": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.2",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-94"
+        },
+        "value": "March"
+      },
+      "gl.r_6.bus-96": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.4",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-96"
+        },
+        "value": "2003-05-31"
+      },
+      "gl.r_16.bus-97": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-97"
+        },
+        "value": "2004-03-01"
+      },
+      "gl.r_10.bus-93": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.8",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-93"
+        },
+        "value": "9"
+      },
+      "gl.r_28.bus-93": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.12",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-93"
+        },
+        "value": "13"
+      },
+      "gl.r_23.bus-94": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.7",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-94"
+        },
+        "value": "August"
+      },
+      "gl.r_13.bus-94": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.11",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-94"
+        },
+        "value": "December"
+      },
+      "gl.r_20.bus-93": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.4",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-93"
+        },
+        "value": "5"
+      },
+      "gl.r_2.bus-94": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-94"
+        },
+        "value": "January"
+      },
+      "gl.r_5.bus-94": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.3",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-94"
+        },
+        "value": "April"
+      },
+      "gl.r_8.bus-95": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.6",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-95"
+        },
+        "value": "2003-07-01"
+      },
+      "gl.r_15.bus-85": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-85"
+        },
+        "value": "SC2004"
+      },
+      "gl.r_26.bus-95": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.10",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-95"
+        },
+        "value": "2004-11-01"
+      },
+      "gl.r_11.bus-96": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.9",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-96"
+        },
+        "value": "2003-10-31"
+      },
+      "gl.r_18.bus-95": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.2",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-95"
+        },
+        "value": "2004-03-01"
+      },
+      "gl.r_3.bus-96": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.1",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-96"
+        },
+        "value": "2003-02-28"
+      },
+      "gl.r_14.bus-95": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.12",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-95"
+        },
+        "value": "2003-12-31"
+      },
+      "gl.r_21.bus-96": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.5",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-96"
+        },
+        "value": "2004-06-30"
+      },
+      "gl.r_1.bus-85": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-85"
+        },
+        "value": "SC2003"
+      },
+      "gl.r_10.bus-94": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.8",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-94"
+        },
+        "value": "September"
+      },
+      "gl.r_25.bus-93": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.9",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-93"
+        },
+        "value": "10"
+      },
+      "gl.r_7.bus-93": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.5",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-93"
+        },
+        "value": "6"
+      },
+      "gl.r_17.bus-93": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.1",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-93"
+        },
+        "value": "2"
+      },
+      "gl.r_28.bus-94": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.12",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-94"
+        },
+        "value": "Year-End"
+      },
+      "gl.r_23.bus-95": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.7",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-95"
+        },
+        "value": "2004-08-01"
+      },
+      "gl.r_13.bus-95": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.11",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-95"
+        },
+        "value": "2003-12-01"
+      },
+      "gl.r_20.bus-94": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.4",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-94"
+        },
+        "value": "May"
+      },
+      "gl.r_2.bus-95": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-95"
+        },
+        "value": "2003-01-01"
+      },
+      "gl.r_5.bus-95": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.3",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-95"
+        },
+        "value": "2003-04-01"
+      },
+      "gl.r_8.bus-96": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.6",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-96"
+        },
+        "value": "2003-07-31"
+      },
+      "gl.r_15.bus-87": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-87"
+        },
+        "value": "Fiscal YE 2004"
+      },
+      "gl.r_26.bus-96": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.10",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-96"
+        },
+        "value": "2004-11-30"
+      },
+      "gl.r_18.bus-96": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.2",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-96"
+        },
+        "value": "2004-03-31"
+      },
+      "gl.r_1.bus-86": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-86"
+        },
+        "value": "Standard Calendar 2003"
+      },
+      "gl.r_22.bus-93": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.6",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-93"
+        },
+        "value": "7"
+      },
+      "gl.r_12.bus-93": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.10",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-93"
+        },
+        "value": "11"
+      },
+      "gl.r_4.bus-93": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.2",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-93"
+        },
+        "value": "3"
+      },
+      "gl.r_10.bus-95": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.8",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-95"
+        },
+        "value": "2003-09-01"
+      },
+      "gl.r_25.bus-94": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.9",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-94"
+        },
+        "value": "October"
+      },
+      "gl.r_7.bus-94": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.5",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-94"
+        },
+        "value": "June"
+      },
+      "gl.r_14.bus-96": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.12",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-96"
+        },
+        "value": "2003-12-31"
+      },
+      "gl.r_17.bus-94": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.1",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-94"
+        },
+        "value": "February"
+      },
+      "gl.r_23.bus-96": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.7",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-96"
+        },
+        "value": "2004-08-31"
+      },
+      "gl.r_28.bus-95": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.12",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-95"
+        },
+        "value": "2004-12-31"
+      },
+      "gl.r_20.bus-95": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.4",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-95"
+        },
+        "value": "2004-05-01"
+      },
+      "gl.r_2.bus-96": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-96"
+        },
+        "value": "2003-01-31"
+      },
+      "gl.r_5.bus-96": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.3",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-96"
+        },
+        "value": "2003-04-30"
+      },
+      "gl.r_1.bus-87": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-87"
+        },
+        "value": "Fiscal YE 2003"
+      },
+      "gl.r_15.bus-91": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-91"
+        },
+        "value": "book"
+      },
+      "gl.r_14.bus-93": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.12",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-93"
+        },
+        "value": "13"
+      },
+      "gl.r_9.bus-93": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.7",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-93"
+        },
+        "value": "8"
+      },
+      "gl.r_27.bus-93": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.11",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-93"
+        },
+        "value": "12"
+      },
+      "gl.r_22.bus-94": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.6",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-94"
+        },
+        "value": "February"
+      },
+      "gl.r_12.bus-94": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.10",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-94"
+        },
+        "value": "November"
+      },
+      "gl.r_19.bus-93": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.3",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-93"
+        },
+        "value": "4"
+      },
+      "gl.r_4.bus-94": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.2",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-94"
+        },
+        "value": "March"
+      },
+      "gl.r_10.bus-96": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.8",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-96"
+        },
+        "value": "2003-09-30"
+      },
+      "gl.r_25.bus-95": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.9",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-95"
+        },
+        "value": "2004-10-01"
+      },
+      "gl.r_7.bus-95": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.5",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-95"
+        },
+        "value": "2003-06-01"
+      },
+      "gl.r_17.bus-95": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.1",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-95"
+        },
+        "value": "2004-02-01"
+      },
+      "gl.r_28.bus-96": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.12",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-96"
+        },
+        "value": "2004-12-31"
+      },
+      "gl.r_16.bus-93": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-93"
+        },
+        "value": "1"
+      },
+      "gl.r_20.bus-96": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.4",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-96"
+        },
+        "value": "2004-05-31"
+      },
+      "gl.r_2.bus-97": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-97"
+        },
+        "value": "2003-02-22"
+      },
+      "gl.r_1.bus-88": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-88"
+        },
+        "value": "4-5-4"
+      },
+      "gl.r_15.bus-90": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-90"
+        },
+        "value": "open"
+      },
+      "gl.r_24.bus-93": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.8",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-93"
+        },
+        "value": "9"
+      },
+      "gl.r_14.bus-94": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.12",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-94"
+        },
+        "value": "Year-End"
+      },
+      "gl.r_6.bus-93": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.4",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-93"
+        },
+        "value": "5"
+      },
+      "gl.r_9.bus-94": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.7",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-94"
+        },
+        "value": "August"
+      },
+      "gl.r_27.bus-94": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.11",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-94"
+        },
+        "value": "December"
+      },
+      "gl.r_22.bus-95": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.6",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-95"
+        },
+        "value": "2004-07-01"
+      },
+      "gl.r_12.bus-95": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.10",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-95"
+        },
+        "value": "2003-11-01"
+      },
+      "gl.r_19.bus-94": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.3",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-94"
+        },
+        "value": "April"
+      },
+      "gl.r_4.bus-95": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.2",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-95"
+        },
+        "value": "2003-03-01"
+      },
+      "gl.r_25.bus-96": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.9",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-96"
+        },
+        "value": "2004-10-31"
+      },
+      "gl.r_16.bus-94": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-94"
+        },
+        "value": "January"
+      },
+      "gl.r_7.bus-96": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.5",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-96"
+        },
+        "value": "2003-06-30"
+      },
+      "gl.r_17.bus-96": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.1",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-96"
+        },
+        "value": "2004-02-29"
+      },
+      "gl.r_1.bus-90": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-90"
+        },
+        "value": "open"
+      },
+      "gl.r_11.bus-93": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.9",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-93"
+        },
+        "value": "10"
+      },
+      "gl.r_24.bus-94": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.8",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-94"
+        },
+        "value": "September"
+      },
+      "gl.r_3.bus-93": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.1",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-93"
+        },
+        "value": "2"
+      },
+      "gl.r_15.bus-88": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-88"
+        },
+        "value": "4-5-4"
+      },
+      "gl.r_21.bus-93": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.5",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-93"
+        },
+        "value": "6"
+      },
+      "gl.r_6.bus-94": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.4",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-94"
+        },
+        "value": "May"
+      },
+      "gl.r_9.bus-95": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.7",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-95"
+        },
+        "value": "2003-08-01"
+      },
+      "gl.r_27.bus-95": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.11",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-95"
+        },
+        "value": "2004-12-01"
+      },
+      "gl.r_22.bus-96": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.6",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-96"
+        },
+        "value": "2004-07-31"
+      },
+      "gl.r_12.bus-96": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.10",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-96"
+        },
+        "value": "2003-11-30"
+      },
+      "gl.r_16.bus-95": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-95"
+        },
+        "value": "2004-01-01"
+      },
+      "gl.r_4.bus-96": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.2",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-96"
+        },
+        "value": "2003-03-31"
+      },
+      "gl.r_19.bus-95": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.3",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-95"
+        },
+        "value": "2004-04-01"
+      },
+      "gl.r_1.bus-91": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-91"
+        },
+        "value": "book"
+      },
+      "gl.r_8.bus-93": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.6",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-93"
+        },
+        "value": "7"
+      },
+      "gl.r_26.bus-93": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.10",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-93"
+        },
+        "value": "11"
+      },
+      "gl.r_11.bus-94": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.9",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-94"
+        },
+        "value": "October"
+      },
+      "gl.r_24.bus-95": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.8",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-95"
+        },
+        "value": "2004-09-01"
+      },
+      "gl.r_18.bus-93": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.2",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-93"
+        },
+        "value": "3"
+      },
+      "gl.r_3.bus-94": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.1",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-94"
+        },
+        "value": "February"
+      },
+      "gl.r_21.bus-94": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.5",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-94"
+        },
+        "value": "June"
+      },
+      "gl.r_6.bus-95": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.4",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-95"
+        },
+        "value": "2003-05-01"
+      },
+      "gl.r_9.bus-96": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3",
+          "c:d3": "bG18.7",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-96"
+        },
+        "value": "2003-08-31"
+      },
+      "gl.r_27.bus-96": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.11",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-96"
+        },
+        "value": "2004-12-30"
+      },
+      "gl.r_16.bus-96": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-96"
+        },
+        "value": "2004-01-31"
+      },
+      "gl.r_19.bus-96": {
+        "dimensions": {
+          "c:d1": "cG1",
+          "c:d2": "bG3.1",
+          "c:d3": "bG18.3",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co.",
+          "concept": "gl-bus:bus-96"
+        },
+        "value": "2004-04-30"
+      }
+    }
+  }

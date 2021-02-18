@@ -1,0 +1,95 @@
+{
+    "documentInfo": {
+      "documentType": "https://xbrl.org/CR/2021-02-02/xbrl-csv",
+      "namespaces": {
+        "c": "http://www.xbrl.org/int/gl/cor/2020-12-31",
+        "gl-bus": "http://www.xbrl.org/int/gl/bus/2020-12-31",
+        "ns0": "http://www.xbrlglco.com"
+      },
+      "taxonomy": [
+        "file:///home/pdw/github/xBRL-Alpha/EIPA/xBRL/gl/plt/case-srcd/gl-plt-2020-12-31.xsd"
+      ]
+    },
+    "tableTemplates": {
+      "gl": {
+        "columns": {
+          "d1": {
+            
+          },
+          "d2": {
+            
+          },
+          "d3": {
+            
+          },
+          "bus-85": {
+            "dimensions": {
+              "concept": "gl-bus:bus-85"
+            }
+          },
+          "bus-86": {
+            "dimensions": {
+              "concept": "gl-bus:bus-86"
+            }
+          },
+          "bus-87": {
+            "dimensions": {
+              "concept": "gl-bus:bus-87"
+            }
+          },
+          "bus-88": {
+            "dimensions": {
+              "concept": "gl-bus:bus-88"
+            }
+          },
+          "bus-90": {
+            "dimensions": {
+              "concept": "gl-bus:bus-90"
+            }
+          },
+          "bus-91": {
+            "dimensions": {
+              "concept": "gl-bus:bus-91"
+            }
+          },
+          "bus-93": {
+            "dimensions": {
+              "concept": "gl-bus:bus-93"
+            }
+          },
+          "bus-94": {
+            "dimensions": {
+              "concept": "gl-bus:bus-94"
+            }
+          },
+          "bus-95": {
+            "dimensions": {
+              "concept": "gl-bus:bus-95"
+            }
+          },
+          "bus-96": {
+            "dimensions": {
+              "concept": "gl-bus:bus-96"
+            }
+          },
+          "bus-97": {
+            "dimensions": {
+              "concept": "gl-bus:bus-97"
+            }
+          }
+        },
+        "dimensions": {
+          "c:d1": "$d1",
+          "c:d2": "$d2",
+          "c:d3": "$d3",
+          "period": "2007-06-01T00:00:00",
+          "entity": "ns0:XBRL GL Co."
+        }
+      }
+    },
+    "tables": {
+      "gl": {
+        "url": "whyOrWhyNot.csv"
+      }
+    }
+  }
