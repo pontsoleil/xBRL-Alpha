@@ -10,7 +10,7 @@
       "iso4217": "http://www.xbrl.org/2003/iso4217"
     },
     "taxonomy": [
-      "file:////Users/pontsoleil/xBRL-alpha/xBRL/gl/plt/case-cen/gl-plt-2020-12-31.xsd"
+      "../xBRL/gl/plt/case-cen/gl-plt-2020-12-31.xsd"
     ]
   },
   "tableTemplates": {

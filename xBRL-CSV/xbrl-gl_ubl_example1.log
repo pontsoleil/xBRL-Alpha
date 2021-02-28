@@ -1,0 +1,5 @@
+[info] Activation of plug-in Load From OIM successful, version 1.2. - loadFromOIM 
+[info] Activation of plug-in Save Loadable OIM successful, version 1.2. - saveLoadableOIM 
+[info] loaded in 0.70 secs at 2021-02-28T15:40:55 - /Users/pontsoleil/xBRL-Alpha/xBRL-CSV/xbrl-gl_ubl_example1.xml 
+[] Formula xpath2 grammar initialized in 3.00 secs - 
+[info] validated in 4.01 secs - /Users/pontsoleil/xBRL-Alpha/xBRL-CSV/xbrl-gl_ubl_example1.xml 
