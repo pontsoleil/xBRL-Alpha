@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--extracted from OIM /Users/pontsoleil/xBRL-Alpha/xBRL-CSV/whyOrWhyNot-metadata.json-->
+<xbrl
+  xmlns="http://www.xbrl.org/2003/instance"
+  xmlns:c="http://www.xbrl.org/int/gl/cor/2020-12-31"
+  xmlns:gl-bus="http://www.xbrl.org/int/gl/bus/2020-12-31"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:xbrldi="http://xbrl.org/2006/xbrldi"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+    <link:schemaRef
+      xlink:href="file:///Users/pontsoleil/Documents/GitHub/xBRL-alpha/xBRL/gl/plt/case-srcd/gl-plt-2020-12-31.xsd"
+      xlink:type="simple"/>
+    <context id="c-01">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG1</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>bG3</c:_2>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <gl-bus:bus-85 contextRef="c-01" id="gl.r_1.bus-85">SC2003</gl-bus:bus-85>
+    <gl-bus:bus-86 contextRef="c-01" id="gl.r_1.bus-86">Standard Calendar 2003</gl-bus:bus-86>
+    <gl-bus:bus-87 contextRef="c-01" id="gl.r_1.bus-87">Fiscal YE 2003</gl-bus:bus-87>
+    <gl-bus:bus-88 contextRef="c-01" id="gl.r_1.bus-88">4-5-4</gl-bus:bus-88>
+    <gl-bus:bus-90 contextRef="c-01" id="gl.r_1.bus-90">open</gl-bus:bus-90>
+    <gl-bus:bus-91 contextRef="c-01" id="gl.r_1.bus-91">book</gl-bus:bus-91>
+    <context id="c-02">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG1</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>bG3</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>bG18</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <gl-bus:bus-93 contextRef="c-02" id="gl.r_2.bus-93">1</gl-bus:bus-93>
+    <gl-bus:bus-94 contextRef="c-02" id="gl.r_2.bus-94">January</gl-bus:bus-94>
+    <gl-bus:bus-95 contextRef="c-02" id="gl.r_2.bus-95">2003-01-01</gl-bus:bus-95>
+    <gl-bus:bus-96 contextRef="c-02" id="gl.r_2.bus-96">2003-01-31</gl-bus:bus-96>
+    <gl-bus:bus-97 contextRef="c-02" id="gl.r_2.bus-97">2003-02-22</gl-bus:bus-97>
+    <context id="c-03">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG1</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>bG3</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>bG18.1</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <gl-bus:bus-93 contextRef="c-03" id="gl.r_3.bus-93">2</gl-bus:bus-93>
+    <gl-bus:bus-94 contextRef="c-03" id="gl.r_3.bus-94">February</gl-bus:bus-94>
+    <gl-bus:bus-95 contextRef="c-03" id="gl.r_3.bus-95">2003-02-01</gl-bus:bus-95>
+    <gl-bus:bus-96 contextRef="c-03" id="gl.r_3.bus-96">2003-02-28</gl-bus:bus-96>
+    <context id="c-04">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG1</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>bG3</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>bG18.2</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <gl-bus:bus-93 contextRef="c-04" id="gl.r_4.bus-93">3</gl-bus:bus-93>
+    <gl-bus:bus-94 contextRef="c-04" id="gl.r_4.bus-94">March</gl-bus:bus-94>
+    <gl-bus:bus-95 contextRef="c-04" id="gl.r_4.bus-95">2003-03-01</gl-bus:bus-95>
+    <gl-bus:bus-96 contextRef="c-04" id="gl.r_4.bus-96">2003-03-31</gl-bus:bus-96>
+    <context id="c-05">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG1</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>bG3</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>bG18.3</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <gl-bus:bus-93 contextRef="c-05" id="gl.r_5.bus-93">4</gl-bus:bus-93>
+    <gl-bus:bus-94 contextRef="c-05" id="gl.r_5.bus-94">April</gl-bus:bus-94>
+    <gl-bus:bus-95 contextRef="c-05" id="gl.r_5.bus-95">2003-04-01</gl-bus:bus-95>
+    <gl-bus:bus-96 contextRef="c-05" id="gl.r_5.bus-96">2003-04-30</gl-bus:bus-96>
+    <context id="c-06">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG1</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>bG3</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>bG18.4</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <gl-bus:bus-93 contextRef="c-06" id="gl.r_6.bus-93">5</gl-bus:bus-93>
+    <gl-bus:bus-94 contextRef="c-06" id="gl.r_6.bus-94">May</gl-bus:bus-94>
+    <gl-bus:bus-95 contextRef="c-06" id="gl.r_6.bus-95">2003-05-01</gl-bus:bus-95>
+    <gl-bus:bus-96 contextRef="c-06" id="gl.r_6.bus-96">2003-05-31</gl-bus:bus-96>
+    <context id="c-07">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG1</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>bG3</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>bG18.5</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <gl-bus:bus-93 contextRef="c-07" id="gl.r_7.bus-93">6</gl-bus:bus-93>
+    <gl-bus:bus-94 contextRef="c-07" id="gl.r_7.bus-94">June</gl-bus:bus-94>
+    <gl-bus:bus-95 contextRef="c-07" id="gl.r_7.bus-95">2003-06-01</gl-bus:bus-95>
+    <gl-bus:bus-96 contextRef="c-07" id="gl.r_7.bus-96">2003-06-30</gl-bus:bus-96>
+    <context id="c-08">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG1</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>bG3</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>bG18.6</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <gl-bus:bus-93 contextRef="c-08" id="gl.r_8.bus-93">7</gl-bus:bus-93>
+    <gl-bus:bus-94 contextRef="c-08" id="gl.r_8.bus-94">February</gl-bus:bus-94>
+    <gl-bus:bus-95 contextRef="c-08" id="gl.r_8.bus-95">2003-07-01</gl-bus:bus-95>
+    <gl-bus:bus-96 contextRef="c-08" id="gl.r_8.bus-96">2003-07-31</gl-bus:bus-96>
+    <context id="c-09">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG1</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>bG3</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>bG18.7</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <gl-bus:bus-93 contextRef="c-09" id="gl.r_9.bus-93">8</gl-bus:bus-93>
+    <gl-bus:bus-94 contextRef="c-09" id="gl.r_9.bus-94">August</gl-bus:bus-94>
+    <gl-bus:bus-95 contextRef="c-09" id="gl.r_9.bus-95">2003-08-01</gl-bus:bus-95>
+    <gl-bus:bus-96 contextRef="c-09" id="gl.r_9.bus-96">2003-08-31</gl-bus:bus-96>
+    <context id="c-10">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG1</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>bG3</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>bG18.8</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <gl-bus:bus-93 contextRef="c-10" id="gl.r_10.bus-93">9</gl-bus:bus-93>
+    <gl-bus:bus-94 contextRef="c-10" id="gl.r_10.bus-94">September</gl-bus:bus-94>
+    <gl-bus:bus-95 contextRef="c-10" id="gl.r_10.bus-95">2003-09-01</gl-bus:bus-95>
+    <gl-bus:bus-96 contextRef="c-10" id="gl.r_10.bus-96">2003-09-30</gl-bus:bus-96>
+    <context id="c-11">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG1</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>bG3</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>bG18.9</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <gl-bus:bus-93 contextRef="c-11" id="gl.r_11.bus-93">10</gl-bus:bus-93>
+    <gl-bus:bus-94 contextRef="c-11" id="gl.r_11.bus-94">October</gl-bus:bus-94>
+    <gl-bus:bus-95 contextRef="c-11" id="gl.r_11.bus-95">2003-10-01</gl-bus:bus-95>
+    <gl-bus:bus-96 contextRef="c-11" id="gl.r_11.bus-96">2003-10-31</gl-bus:bus-96>
+    <context id="c-12">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG1</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>bG3</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>bG18.10</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <gl-bus:bus-93 contextRef="c-12" id="gl.r_12.bus-93">11</gl-bus:bus-93>
+    <gl-bus:bus-94 contextRef="c-12" id="gl.r_12.bus-94">November</gl-bus:bus-94>
+    <gl-bus:bus-95 contextRef="c-12" id="gl.r_12.bus-95">2003-11-01</gl-bus:bus-95>
+    <gl-bus:bus-96 contextRef="c-12" id="gl.r_12.bus-96">2003-11-30</gl-bus:bus-96>
+    <context id="c-13">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG1</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>bG3</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>bG18.11</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <gl-bus:bus-93 contextRef="c-13" id="gl.r_13.bus-93">12</gl-bus:bus-93>
+    <gl-bus:bus-94 contextRef="c-13" id="gl.r_13.bus-94">December</gl-bus:bus-94>
+    <gl-bus:bus-95 contextRef="c-13" id="gl.r_13.bus-95">2003-12-01</gl-bus:bus-95>
+    <context id="c-14">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG1</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>bG3</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>bG18.12</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <gl-bus:bus-93 contextRef="c-14" id="gl.r_14.bus-93">13</gl-bus:bus-93>
+    <gl-bus:bus-94 contextRef="c-14" id="gl.r_14.bus-94">Year-End</gl-bus:bus-94>
+    <gl-bus:bus-95 contextRef="c-14" id="gl.r_14.bus-95">2003-12-31</gl-bus:bus-95>
+    <gl-bus:bus-96 contextRef="c-14" id="gl.r_14.bus-96">2003-12-31</gl-bus:bus-96>
+    <context id="c-15">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG1</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>bG3.1</c:_2>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <gl-bus:bus-85 contextRef="c-15" id="gl.r_15.bus-85">SC2004</gl-bus:bus-85>
+    <gl-bus:bus-86 contextRef="c-15" id="gl.r_15.bus-86">Standard Calendar 2004</gl-bus:bus-86>
+    <gl-bus:bus-87 contextRef="c-15" id="gl.r_15.bus-87">Fiscal YE 2004</gl-bus:bus-87>
+    <gl-bus:bus-88 contextRef="c-15" id="gl.r_15.bus-88">4-5-4</gl-bus:bus-88>
+    <gl-bus:bus-90 contextRef="c-15" id="gl.r_15.bus-90">open</gl-bus:bus-90>
+    <gl-bus:bus-91 contextRef="c-15" id="gl.r_15.bus-91">book</gl-bus:bus-91>
+    <context id="c-16">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG1</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>bG3.1</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>bG18</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <gl-bus:bus-93 contextRef="c-16" id="gl.r_16.bus-93">1</gl-bus:bus-93>
+    <gl-bus:bus-94 contextRef="c-16" id="gl.r_16.bus-94">January</gl-bus:bus-94>
+    <gl-bus:bus-95 contextRef="c-16" id="gl.r_16.bus-95">2004-01-01</gl-bus:bus-95>
+    <gl-bus:bus-96 contextRef="c-16" id="gl.r_16.bus-96">2004-01-31</gl-bus:bus-96>
+    <gl-bus:bus-97 contextRef="c-16" id="gl.r_16.bus-97">2004-03-01</gl-bus:bus-97>
+    <context id="c-17">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG1</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>bG3.1</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>bG18.1</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <gl-bus:bus-93 contextRef="c-17" id="gl.r_17.bus-93">2</gl-bus:bus-93>
+    <gl-bus:bus-94 contextRef="c-17" id="gl.r_17.bus-94">February</gl-bus:bus-94>
+    <gl-bus:bus-95 contextRef="c-17" id="gl.r_17.bus-95">2004-02-01</gl-bus:bus-95>
+    <gl-bus:bus-96 contextRef="c-17" id="gl.r_17.bus-96">2004-02-29</gl-bus:bus-96>
+    <context id="c-18">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG1</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>bG3.1</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>bG18.2</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <gl-bus:bus-93 contextRef="c-18" id="gl.r_18.bus-93">3</gl-bus:bus-93>
+    <gl-bus:bus-94 contextRef="c-18" id="gl.r_18.bus-94">March</gl-bus:bus-94>
+    <gl-bus:bus-95 contextRef="c-18" id="gl.r_18.bus-95">2004-03-01</gl-bus:bus-95>
+    <gl-bus:bus-96 contextRef="c-18" id="gl.r_18.bus-96">2004-03-31</gl-bus:bus-96>
+    <context id="c-19">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG1</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>bG3.1</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>bG18.3</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <gl-bus:bus-93 contextRef="c-19" id="gl.r_19.bus-93">4</gl-bus:bus-93>
+    <gl-bus:bus-94 contextRef="c-19" id="gl.r_19.bus-94">April</gl-bus:bus-94>
+    <gl-bus:bus-95 contextRef="c-19" id="gl.r_19.bus-95">2004-04-01</gl-bus:bus-95>
+    <gl-bus:bus-96 contextRef="c-19" id="gl.r_19.bus-96">2004-04-30</gl-bus:bus-96>
+    <context id="c-20">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG1</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>bG3.1</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>bG18.4</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <gl-bus:bus-93 contextRef="c-20" id="gl.r_20.bus-93">5</gl-bus:bus-93>
+    <gl-bus:bus-94 contextRef="c-20" id="gl.r_20.bus-94">May</gl-bus:bus-94>
+    <gl-bus:bus-95 contextRef="c-20" id="gl.r_20.bus-95">2004-05-01</gl-bus:bus-95>
+    <gl-bus:bus-96 contextRef="c-20" id="gl.r_20.bus-96">2004-05-31</gl-bus:bus-96>
+    <context id="c-21">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG1</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>bG3.1</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>bG18.5</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <gl-bus:bus-93 contextRef="c-21" id="gl.r_21.bus-93">6</gl-bus:bus-93>
+    <gl-bus:bus-94 contextRef="c-21" id="gl.r_21.bus-94">June</gl-bus:bus-94>
+    <gl-bus:bus-95 contextRef="c-21" id="gl.r_21.bus-95">2004-06-01</gl-bus:bus-95>
+    <gl-bus:bus-96 contextRef="c-21" id="gl.r_21.bus-96">2004-06-30</gl-bus:bus-96>
+    <context id="c-22">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG1</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>bG3.1</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>bG18.6</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <gl-bus:bus-93 contextRef="c-22" id="gl.r_22.bus-93">7</gl-bus:bus-93>
+    <gl-bus:bus-94 contextRef="c-22" id="gl.r_22.bus-94">February</gl-bus:bus-94>
+    <gl-bus:bus-95 contextRef="c-22" id="gl.r_22.bus-95">2004-07-01</gl-bus:bus-95>
+    <gl-bus:bus-96 contextRef="c-22" id="gl.r_22.bus-96">2004-07-31</gl-bus:bus-96>
+    <context id="c-23">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG1</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>bG3.1</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>bG18.7</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <gl-bus:bus-93 contextRef="c-23" id="gl.r_23.bus-93">8</gl-bus:bus-93>
+    <gl-bus:bus-94 contextRef="c-23" id="gl.r_23.bus-94">August</gl-bus:bus-94>
+    <gl-bus:bus-95 contextRef="c-23" id="gl.r_23.bus-95">2004-08-01</gl-bus:bus-95>
+    <gl-bus:bus-96 contextRef="c-23" id="gl.r_23.bus-96">2004-08-31</gl-bus:bus-96>
+    <context id="c-24">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG1</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>bG3.1</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>bG18.8</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <gl-bus:bus-93 contextRef="c-24" id="gl.r_24.bus-93">9</gl-bus:bus-93>
+    <gl-bus:bus-94 contextRef="c-24" id="gl.r_24.bus-94">September</gl-bus:bus-94>
+    <gl-bus:bus-95 contextRef="c-24" id="gl.r_24.bus-95">2004-09-01</gl-bus:bus-95>
+    <gl-bus:bus-96 contextRef="c-24" id="gl.r_24.bus-96">2004-09-30</gl-bus:bus-96>
+    <context id="c-25">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG1</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>bG3.1</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>bG18.9</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <gl-bus:bus-93 contextRef="c-25" id="gl.r_25.bus-93">10</gl-bus:bus-93>
+    <gl-bus:bus-94 contextRef="c-25" id="gl.r_25.bus-94">October</gl-bus:bus-94>
+    <gl-bus:bus-95 contextRef="c-25" id="gl.r_25.bus-95">2004-10-01</gl-bus:bus-95>
+    <gl-bus:bus-96 contextRef="c-25" id="gl.r_25.bus-96">2004-10-31</gl-bus:bus-96>
+    <context id="c-26">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG1</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>bG3.1</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>bG18.10</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <gl-bus:bus-93 contextRef="c-26" id="gl.r_26.bus-93">11</gl-bus:bus-93>
+    <gl-bus:bus-94 contextRef="c-26" id="gl.r_26.bus-94">November</gl-bus:bus-94>
+    <gl-bus:bus-95 contextRef="c-26" id="gl.r_26.bus-95">2004-11-01</gl-bus:bus-95>
+    <gl-bus:bus-96 contextRef="c-26" id="gl.r_26.bus-96">2004-11-30</gl-bus:bus-96>
+    <context id="c-27">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG1</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>bG3.1</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>bG18.11</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <gl-bus:bus-93 contextRef="c-27" id="gl.r_27.bus-93">12</gl-bus:bus-93>
+    <gl-bus:bus-94 contextRef="c-27" id="gl.r_27.bus-94">December</gl-bus:bus-94>
+    <gl-bus:bus-95 contextRef="c-27" id="gl.r_27.bus-95">2004-12-01</gl-bus:bus-95>
+    <gl-bus:bus-96 contextRef="c-27" id="gl.r_27.bus-96">2004-12-30</gl-bus:bus-96>
+    <context id="c-28">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG1</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>bG3.1</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>bG18.12</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <gl-bus:bus-93 contextRef="c-28" id="gl.r_28.bus-93">13</gl-bus:bus-93>
+    <gl-bus:bus-94 contextRef="c-28" id="gl.r_28.bus-94">Year-End</gl-bus:bus-94>
+    <gl-bus:bus-95 contextRef="c-28" id="gl.r_28.bus-95">2004-12-31</gl-bus:bus-95>
+    <gl-bus:bus-96 contextRef="c-28" id="gl.r_28.bus-96">2004-12-31</gl-bus:bus-96>
+</xbrl>
