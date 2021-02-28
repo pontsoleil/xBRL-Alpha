@@ -1,0 +1,88 @@
+{
+  "documentInfo": {
+    "documentType": "https://xbrl.org/CR/2021-02-03/xbrl-csv",
+    "namespaces": {
+      "c": "http://www.xbrl.org/int/gl/cor/2020-12-31",
+      "ns0": "http://www.xbrlglco.com",
+      "iso4217": "http://www.xbrl.org/2003/iso4217"
+    },
+    "taxonomy": [
+      "file:////Users/pontsoleil/Documents/GitHub/xBRL-alpha/xBRL/gl/plt/case-srcd/gl-plt-2020-12-31.xsd"
+    ]
+  },
+  "tableTemplates": {
+    "gl": {
+      "columns": {
+        "d1": {
+          
+        },
+        "d2": {
+          
+        },
+        "cor-1": {
+          "dimensions": {
+            "concept": "c:cor-1"
+          }
+        },
+        "cor-6": {
+          "dimensions": {
+            "concept": "c:cor-6"
+          }
+        },
+        "cor-10": {
+          "dimensions": {
+            "concept": "c:cor-10"
+          }
+        },
+        "cor-14": {
+          "dimensions": {
+            "concept": "c:cor-14"
+          }
+        },
+        "cor-21": {
+          "dimensions": {
+            "concept": "c:cor-21"
+          }
+        },
+        "cor-23": {
+          "dimensions": {
+            "concept": "c:cor-23"
+          }
+        },
+        "cor-24": {
+          "dimensions": {
+            "concept": "c:cor-24"
+          }
+        },
+        "cor-40": {
+          "decimals": 0,
+          "dimensions": {
+            "concept": "c:cor-40",
+            "unit": "iso4217:JPY"
+          }
+        },
+        "cor-42": {
+          "dimensions": {
+            "concept": "c:cor-42"
+          }
+        },
+        "cor-84": {
+          "dimensions": {
+            "concept": "c:cor-84"
+          }
+        }
+      },
+      "dimensions": {
+        "c:d1": "$d1",
+        "c:d2": "$d2",
+        "period": "2007-06-01T00:00:00",
+        "entity": "ns0:XBRL GL Co."
+      }
+    }
+  },
+  "tables": {
+    "gl": {
+      "url": "srcdTarget.csv"
+    }
+  }
+}

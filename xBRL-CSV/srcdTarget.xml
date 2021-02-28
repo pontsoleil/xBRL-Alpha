@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--extracted from OIM /Users/pontsoleil/xBRL-Alpha/xBRL-CSV/srcdTarget-metadata.json-->
+<xbrl
+  xmlns="http://www.xbrl.org/2003/instance"
+  xmlns:c="http://www.xbrl.org/int/gl/cor/2020-12-31"
+  xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:xbrldi="http://xbrl.org/2006/xbrldi"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+    <link:schemaRef
+      xlink:href="file:////Users/pontsoleil/Documents/GitHub/xBRL-alpha/xBRL/gl/plt/case-srcd/gl-plt-2020-12-31.xsd"
+      xlink:type="simple"/>
+    <context id="c-01">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG2</c:_1>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <c:cor-1 contextRef="c-01" id="gl.r_1.cor-1">journal</c:cor-1>
+    <c:cor-6 contextRef="c-01" id="gl.r_1.cor-6">2014-05-26</c:cor-6>
+    <context id="c-02">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <c:cor-10 contextRef="c-02" id="gl.r_2.cor-10">2014-05-29</c:cor-10>
+    <c:cor-14 contextRef="c-02" id="gl.r_2.cor-14">other</c:cor-14>
+    <context id="c-03">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5</c:_2>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <c:cor-21 contextRef="c-03" id="gl.r_3.cor-21">001</c:cor-21>
+    <c:cor-23 contextRef="c-03" id="gl.r_3.cor-23">00000001</c:cor-23>
+    <c:cor-24 contextRef="c-03" id="gl.r_3.cor-24">ID00000001</c:cor-24>
+    <unit id="u-01">
+        <measure>iso4217:JPY</measure>
+    </unit>
+    <c:cor-40
+      contextRef="c-03"
+      decimals="0"
+      id="gl.r_3.cor-40"
+      unitRef="u-01">150</c:cor-40>
+    <c:cor-42 contextRef="c-03" id="gl.r_3.cor-42">C</c:cor-42>
+    <c:cor-84 contextRef="c-03" id="gl.r_3.cor-84">c:cor-40</c:cor-84>
+    <context id="c-04">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.1</c:_2>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <c:cor-21 contextRef="c-04" id="gl.r_4.cor-21">002</c:cor-21>
+    <c:cor-23 contextRef="c-04" id="gl.r_4.cor-23">00000002</c:cor-23>
+    <c:cor-24 contextRef="c-04" id="gl.r_4.cor-24">ID00000002</c:cor-24>
+    <c:cor-40
+      contextRef="c-04"
+      decimals="0"
+      id="gl.r_4.cor-40"
+      unitRef="u-01">500</c:cor-40>
+    <c:cor-42 contextRef="c-04" id="gl.r_4.cor-42">C</c:cor-42>
+    <c:cor-84 contextRef="c-04" id="gl.r_4.cor-84">c:cor-40</c:cor-84>
+    <context id="c-05">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.2</c:_2>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <c:cor-21 contextRef="c-05" id="gl.r_5.cor-21">003</c:cor-21>
+    <c:cor-23 contextRef="c-05" id="gl.r_5.cor-23">00000003</c:cor-23>
+    <c:cor-24 contextRef="c-05" id="gl.r_5.cor-24">ID00000003</c:cor-24>
+    <c:cor-40
+      contextRef="c-05"
+      decimals="0"
+      id="gl.r_5.cor-40"
+      unitRef="u-01">300</c:cor-40>
+    <c:cor-42 contextRef="c-05" id="gl.r_5.cor-42">C</c:cor-42>
+    <c:cor-84 contextRef="c-05" id="gl.r_5.cor-84">c:cor-40</c:cor-84>
+</xbrl>
