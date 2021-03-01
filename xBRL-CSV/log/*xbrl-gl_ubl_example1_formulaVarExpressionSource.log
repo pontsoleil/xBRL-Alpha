@@ -1,0 +1,10 @@
+[info] Activation of plug-in Load From OIM successful, version 1.2. - loadFromOIM 
+[info] Activation of plug-in Save Loadable OIM successful, version 1.2. - saveLoadableOIM 
+[info] loaded in 1.18 secs at 2021-03-01T09:19:32 - /Users/pontsoleil/xBRL-Alpha/xBRL-CSV/xbrl-gl_ubl_example1-metadata.json 
+[] Formula xpath2 grammar initialized in 3.01 secs - 
+[formula:trace] Source select $VAT_CategoryTaxAmount/@contextRef - ../xBRL/gl/plt/case-cen/gl-plt-2020-12-31-formula.xml 71
+[formula:trace] Source select //e:cen-116[@contextRef=$contextRef_VAT_CategoryTaxAmount] - ../xBRL/gl/plt/case-cen/gl-plt-2020-12-31-formula.xml 72
+[formula:trace] Source select //e:cen-119[@contextRef=$contextRef_VAT_CategoryTaxAmount] - ../xBRL/gl/plt/case-cen/gl-plt-2020-12-31-formula.xml 73
+[formula:trace] Source test string(c:_1)="cG4" - ../xBRL/gl/plt/case-cen/gl-plt-2020-12-31-formula.xml 112
+[formula:trace] Source test string(c:_2)="eG22" - ../xBRL/gl/plt/case-cen/gl-plt-2020-12-31-formula.xml 122
+[info] validated in 4.06 secs - /Users/pontsoleil/xBRL-Alpha/xBRL-CSV/xbrl-gl_ubl_example1-metadata.json 
