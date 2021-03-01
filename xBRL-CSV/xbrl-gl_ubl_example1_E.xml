@@ -1,0 +1,2277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--extracted from OIM /Users/pontsoleil/xBRL-Alpha/xBRL-CSV/xbrl-gl_ubl_example1_E-metadata.json-->
+<xbrl
+  xmlns="http://www.xbrl.org/2003/instance"
+  xmlns:b="http://www.xbrl.org/int/gl/bus/2020-12-31"
+  xmlns:c="http://www.xbrl.org/int/gl/cor/2020-12-31"
+  xmlns:e="http://www.xbrl.org/int/gl/cen/2020-12-31"
+  xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:m="http://www.xbrl.org/int/gl/muc/2020-12-31"
+  xmlns:xbrldi="http://xbrl.org/2006/xbrldi"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+    <link:schemaRef
+      xlink:href="../xBRL/gl/plt/case-cen/gl-plt-2020-12-31.xsd"
+      xlink:type="simple"/>
+    <context id="c-01">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG2</c:_1>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <c:cor-76 contextRef="c-01" id="gl.r_1.cor-76">12115118</c:cor-76>
+    <c:cor-79 contextRef="c-01" id="gl.r_1.cor-79">2015/1/9</c:cor-79>
+    <c:cor-73 contextRef="c-01" id="gl.r_1.cor-73">380</c:cor-73>
+    <context id="c-02">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG2</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>eG16</c:_2>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-81 contextRef="c-02" id="gl.r_2.cen-81">30</e:cen-81>
+    <e:cen-83 contextRef="c-02" id="gl.r_2.cen-83">Deb.10202.Fact.12115118</e:cen-83>
+    <context id="c-03">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG2</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>eG16</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG17</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-84 contextRef="c-03" id="gl.r_3.cen-84">NL57RABO0107307510</e:cen-84>
+    <context id="c-04">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG2</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>eG2</c:_2>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-24 contextRef="c-04" id="gl.r_4.cen-24">urn:cen.eu:en16931:2017</e:cen-24>
+    <context id="c-05">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG3</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>eG4</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG5</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-35 contextRef="c-05" id="gl.r_5.cen-35">Postbus7l</e:cen-35>
+    <e:cen-37 contextRef="c-05" id="gl.r_5.cen-37">Velsen-Noord</e:cen-37>
+    <e:cen-38 contextRef="c-05" id="gl.r_5.cen-38">1950AB</e:cen-38>
+    <e:cen-40 contextRef="c-05" id="gl.r_5.cen-40">NL</e:cen-40>
+    <context id="c-06">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG3</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>eG7</c:_2>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-46 contextRef="c-06" id="gl.r_6.cen-46">10202</e:cen-46>
+    <e:cen-44 contextRef="c-06" id="gl.r_6.cen-44">ODIN59</e:cen-44>
+    <context id="c-07">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG3</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>eG7</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG8</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-50 contextRef="c-07" id="gl.r_7.cen-50">POSTBUS367</e:cen-50>
+    <e:cen-52 contextRef="c-07" id="gl.r_7.cen-52">HEEMSKERK</e:cen-52>
+    <e:cen-53 contextRef="c-07" id="gl.r_7.cen-53">1960AJ</e:cen-53>
+    <e:cen-55 contextRef="c-07" id="gl.r_7.cen-55">NL</e:cen-55>
+    <context id="c-08">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <m:muc-4 contextRef="c-08" id="gl.r_8.muc-4">iso4217:EUR</m:muc-4>
+    <m:muc-33 contextRef="c-08" id="gl.r_8.muc-33">iso4217:EUR</m:muc-33>
+    <context id="c-09">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5</c:_2>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <unit id="u-01">
+        <measure>pure</measure>
+    </unit>
+    <c:cor-22
+      contextRef="c-09"
+      decimals="INF"
+      id="gl.r_9.cor-22"
+      unitRef="u-01">1</c:cor-22>
+    <e:cen-129
+      contextRef="c-09"
+      decimals="INF"
+      id="gl.r_9.cen-129"
+      unitRef="u-01">2</e:cen-129>
+    <unit id="u-02">
+        <measure>iso4217:EUR</measure>
+    </unit>
+    <e:cen-131
+      contextRef="c-09"
+      decimals="INF"
+      id="gl.r_9.cen-131"
+      unitRef="u-02">19.9</e:cen-131>
+    <context id="c-10">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>cG19</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-151 contextRef="c-10" id="gl.r_10.cen-151">S</e:cen-151>
+    <e:cen-152
+      contextRef="c-10"
+      decimals="INF"
+      id="gl.r_10.cen-152"
+      unitRef="u-01">0.06</e:cen-152>
+    <context id="c-11">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG29</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-146
+      contextRef="c-11"
+      decimals="INF"
+      id="gl.r_11.cen-146"
+      unitRef="u-02">9.95</e:cen-146>
+    <context id="c-12">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG31</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <b:bus-143 contextRef="c-12" id="gl.r_12.bus-143">PATATFRITES10MM10KG</b:bus-143>
+    <context id="c-13">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.1</c:_2>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <c:cor-22
+      contextRef="c-13"
+      decimals="INF"
+      id="gl.r_13.cor-22"
+      unitRef="u-01">2</c:cor-22>
+    <e:cen-129
+      contextRef="c-13"
+      decimals="INF"
+      id="gl.r_13.cen-129"
+      unitRef="u-01">1</e:cen-129>
+    <e:cen-131
+      contextRef="c-13"
+      decimals="INF"
+      id="gl.r_13.cen-131"
+      unitRef="u-02">9.85</e:cen-131>
+    <context id="c-14">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.1</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>cG19</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-151 contextRef="c-14" id="gl.r_14.cen-151">S</e:cen-151>
+    <e:cen-152
+      contextRef="c-14"
+      decimals="INF"
+      id="gl.r_14.cen-152"
+      unitRef="u-01">0.06</e:cen-152>
+    <context id="c-15">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.1</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG29</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-146
+      contextRef="c-15"
+      decimals="INF"
+      id="gl.r_15.cen-146"
+      unitRef="u-02">9.85</e:cen-146>
+    <context id="c-16">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.1</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG31</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <b:bus-143 contextRef="c-16" id="gl.r_16.bus-143">PKAAS50PL.JONGBEL.1KG</b:bus-143>
+    <context id="c-17">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.2</c:_2>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <c:cor-22
+      contextRef="c-17"
+      decimals="INF"
+      id="gl.r_17.cor-22"
+      unitRef="u-01">3</c:cor-22>
+    <e:cen-129
+      contextRef="c-17"
+      decimals="INF"
+      id="gl.r_17.cen-129"
+      unitRef="u-01">1</e:cen-129>
+    <e:cen-131
+      contextRef="c-17"
+      decimals="INF"
+      id="gl.r_17.cen-131"
+      unitRef="u-02">8.29</e:cen-131>
+    <context id="c-18">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.2</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>cG19</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-151 contextRef="c-18" id="gl.r_18.cen-151">S</e:cen-151>
+    <e:cen-152
+      contextRef="c-18"
+      decimals="INF"
+      id="gl.r_18.cen-152"
+      unitRef="u-01">0.06</e:cen-152>
+    <context id="c-19">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.2</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG29</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-146
+      contextRef="c-19"
+      decimals="INF"
+      id="gl.r_19.cen-146"
+      unitRef="u-02">8.29</e:cen-146>
+    <context id="c-20">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.2</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG31</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <b:bus-143 contextRef="c-20" id="gl.r_20.bus-143">POTKETCHUP3LT</b:bus-143>
+    <context id="c-21">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.3</c:_2>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <c:cor-22
+      contextRef="c-21"
+      decimals="INF"
+      id="gl.r_21.cor-22"
+      unitRef="u-01">4</c:cor-22>
+    <e:cen-129
+      contextRef="c-21"
+      decimals="INF"
+      id="gl.r_21.cen-129"
+      unitRef="u-01">2</e:cen-129>
+    <e:cen-131
+      contextRef="c-21"
+      decimals="INF"
+      id="gl.r_21.cen-131"
+      unitRef="u-02">14.46</e:cen-131>
+    <context id="c-22">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.3</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>cG19</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-151 contextRef="c-22" id="gl.r_22.cen-151">S</e:cen-151>
+    <e:cen-152
+      contextRef="c-22"
+      decimals="INF"
+      id="gl.r_22.cen-152"
+      unitRef="u-01">0.06</e:cen-152>
+    <context id="c-23">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.3</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG29</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-146
+      contextRef="c-23"
+      decimals="INF"
+      id="gl.r_23.cen-146"
+      unitRef="u-02">7.23</e:cen-146>
+    <context id="c-24">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.3</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG31</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <b:bus-143 contextRef="c-24" id="gl.r_24.bus-143">FRITESSAUS3LRR</b:bus-143>
+    <context id="c-25">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.4</c:_2>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <c:cor-22
+      contextRef="c-25"
+      decimals="INF"
+      id="gl.r_25.cor-22"
+      unitRef="u-01">5</c:cor-22>
+    <e:cen-129
+      contextRef="c-25"
+      decimals="INF"
+      id="gl.r_25.cen-129"
+      unitRef="u-01">1</e:cen-129>
+    <e:cen-131
+      contextRef="c-25"
+      decimals="INF"
+      id="gl.r_25.cen-131"
+      unitRef="u-02">35</e:cen-131>
+    <context id="c-26">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.4</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>cG19</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-151 contextRef="c-26" id="gl.r_26.cen-151">S</e:cen-151>
+    <e:cen-152
+      contextRef="c-26"
+      decimals="INF"
+      id="gl.r_26.cen-152"
+      unitRef="u-01">0.06</e:cen-152>
+    <context id="c-27">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.4</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG29</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-146
+      contextRef="c-27"
+      decimals="INF"
+      id="gl.r_27.cen-146"
+      unitRef="u-02">35</e:cen-146>
+    <context id="c-28">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.4</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG31</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <b:bus-143 contextRef="c-28" id="gl.r_28.bus-143">KOFFIEBLIK3.5KGSNELF</b:bus-143>
+    <context id="c-29">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.5</c:_2>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <c:cor-22
+      contextRef="c-29"
+      decimals="INF"
+      id="gl.r_29.cor-22"
+      unitRef="u-01">6</c:cor-22>
+    <e:cen-129
+      contextRef="c-29"
+      decimals="INF"
+      id="gl.r_29.cen-129"
+      unitRef="u-01">1</e:cen-129>
+    <e:cen-131
+      contextRef="c-29"
+      decimals="INF"
+      id="gl.r_29.cen-131"
+      unitRef="u-02">35</e:cen-131>
+    <context id="c-30">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.5</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>cG19</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-151 contextRef="c-30" id="gl.r_30.cen-151">S</e:cen-151>
+    <e:cen-152
+      contextRef="c-30"
+      decimals="INF"
+      id="gl.r_30.cen-152"
+      unitRef="u-01">0.06</e:cen-152>
+    <context id="c-31">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.5</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG29</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-146
+      contextRef="c-31"
+      decimals="INF"
+      id="gl.r_31.cen-146"
+      unitRef="u-02">35</e:cen-146>
+    <context id="c-32">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.5</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG31</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <b:bus-143 contextRef="c-32" id="gl.r_32.bus-143">KOFFIE3.5KGBLIKSTAND</b:bus-143>
+    <context id="c-33">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.6</c:_2>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <c:cor-22
+      contextRef="c-33"
+      decimals="INF"
+      id="gl.r_33.cor-22"
+      unitRef="u-01">7</c:cor-22>
+    <e:cen-129
+      contextRef="c-33"
+      decimals="INF"
+      id="gl.r_33.cen-129"
+      unitRef="u-01">1</e:cen-129>
+    <e:cen-131
+      contextRef="c-33"
+      decimals="INF"
+      id="gl.r_33.cen-131"
+      unitRef="u-02">10.65</e:cen-131>
+    <context id="c-34">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.6</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>cG19</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-151 contextRef="c-34" id="gl.r_34.cen-151">S</e:cen-151>
+    <e:cen-152
+      contextRef="c-34"
+      decimals="INF"
+      id="gl.r_34.cen-152"
+      unitRef="u-01">0.06</e:cen-152>
+    <context id="c-35">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.6</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG29</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-146
+      contextRef="c-35"
+      decimals="INF"
+      id="gl.r_35.cen-146"
+      unitRef="u-02">10.65</e:cen-146>
+    <context id="c-36">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.6</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG31</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <b:bus-143 contextRef="c-36" id="gl.r_36.bus-143">SUIKERKLONT</b:bus-143>
+    <context id="c-37">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.7</c:_2>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <c:cor-22
+      contextRef="c-37"
+      decimals="INF"
+      id="gl.r_37.cor-22"
+      unitRef="u-01">8</c:cor-22>
+    <e:cen-129
+      contextRef="c-37"
+      decimals="INF"
+      id="gl.r_37.cen-129"
+      unitRef="u-01">1</e:cen-129>
+    <e:cen-131
+      contextRef="c-37"
+      decimals="INF"
+      id="gl.r_37.cen-131"
+      unitRef="u-02">1.55</e:cen-131>
+    <context id="c-38">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.7</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>cG19</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-151 contextRef="c-38" id="gl.r_38.cen-151">S</e:cen-151>
+    <e:cen-152
+      contextRef="c-38"
+      decimals="INF"
+      id="gl.r_38.cen-152"
+      unitRef="u-01">0.06</e:cen-152>
+    <context id="c-39">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.7</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG29</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-146
+      contextRef="c-39"
+      decimals="INF"
+      id="gl.r_39.cen-146"
+      unitRef="u-02">1.55</e:cen-146>
+    <context id="c-40">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.7</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG31</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <b:bus-143 contextRef="c-40" id="gl.r_40.bus-143">1KGULBLOKJES</b:bus-143>
+    <context id="c-41">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.8</c:_2>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <c:cor-22
+      contextRef="c-41"
+      decimals="INF"
+      id="gl.r_41.cor-22"
+      unitRef="u-01">9</c:cor-22>
+    <e:cen-129
+      contextRef="c-41"
+      decimals="INF"
+      id="gl.r_41.cen-129"
+      unitRef="u-01">3</e:cen-129>
+    <e:cen-131
+      contextRef="c-41"
+      decimals="INF"
+      id="gl.r_41.cen-131"
+      unitRef="u-02">14.37</e:cen-131>
+    <context id="c-42">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.8</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>cG19</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-151 contextRef="c-42" id="gl.r_42.cen-151">S</e:cen-151>
+    <e:cen-152
+      contextRef="c-42"
+      decimals="INF"
+      id="gl.r_42.cen-152"
+      unitRef="u-01">0.06</e:cen-152>
+    <context id="c-43">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.8</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG29</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-146
+      contextRef="c-43"
+      decimals="INF"
+      id="gl.r_43.cen-146"
+      unitRef="u-02">4.79</e:cen-146>
+    <context id="c-44">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.8</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG31</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <b:bus-143 contextRef="c-44" id="gl.r_44.bus-143">BLOCKNOTEA5</b:bus-143>
+    <context id="c-45">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.9</c:_2>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <c:cor-22
+      contextRef="c-45"
+      decimals="INF"
+      id="gl.r_45.cor-22"
+      unitRef="u-01">10</c:cor-22>
+    <e:cen-129
+      contextRef="c-45"
+      decimals="INF"
+      id="gl.r_45.cen-129"
+      unitRef="u-01">1</e:cen-129>
+    <e:cen-131
+      contextRef="c-45"
+      decimals="INF"
+      id="gl.r_45.cen-131"
+      unitRef="u-02">8.29</e:cen-131>
+    <context id="c-46">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.9</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>cG19</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-151 contextRef="c-46" id="gl.r_46.cen-151">S</e:cen-151>
+    <e:cen-152
+      contextRef="c-46"
+      decimals="INF"
+      id="gl.r_46.cen-152"
+      unitRef="u-01">0.06</e:cen-152>
+    <context id="c-47">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.9</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG29</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-146
+      contextRef="c-47"
+      decimals="INF"
+      id="gl.r_47.cen-146"
+      unitRef="u-02">8.29</e:cen-146>
+    <context id="c-48">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.9</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG31</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <b:bus-143 contextRef="c-48" id="gl.r_48.bus-143">CHIPSNATKLEINZAKJES</b:bus-143>
+    <context id="c-49">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.10</c:_2>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <c:cor-22
+      contextRef="c-49"
+      decimals="INF"
+      id="gl.r_49.cor-22"
+      unitRef="u-01">11</c:cor-22>
+    <e:cen-129
+      contextRef="c-49"
+      decimals="INF"
+      id="gl.r_49.cen-129"
+      unitRef="u-01">2</e:cen-129>
+    <e:cen-131
+      contextRef="c-49"
+      decimals="INF"
+      id="gl.r_49.cen-131"
+      unitRef="u-02">16.58</e:cen-131>
+    <context id="c-50">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.10</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>cG19</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-151 contextRef="c-50" id="gl.r_50.cen-151">S</e:cen-151>
+    <e:cen-152
+      contextRef="c-50"
+      decimals="INF"
+      id="gl.r_50.cen-152"
+      unitRef="u-01">0.06</e:cen-152>
+    <context id="c-51">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.10</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG29</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-146
+      contextRef="c-51"
+      decimals="INF"
+      id="gl.r_51.cen-146"
+      unitRef="u-02">8.29</e:cen-146>
+    <context id="c-52">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.10</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG31</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <b:bus-143 contextRef="c-52" id="gl.r_52.bus-143">CHIPSPAPKLEINEZAKJES</b:bus-143>
+    <context id="c-53">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.11</c:_2>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <c:cor-22
+      contextRef="c-53"
+      decimals="INF"
+      id="gl.r_53.cor-22"
+      unitRef="u-01">12</c:cor-22>
+    <e:cen-129
+      contextRef="c-53"
+      decimals="INF"
+      id="gl.r_53.cen-129"
+      unitRef="u-01">1</e:cen-129>
+    <e:cen-131
+      contextRef="c-53"
+      decimals="INF"
+      id="gl.r_53.cen-131"
+      unitRef="u-02">9.95</e:cen-131>
+    <context id="c-54">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.11</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>cG19</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-151 contextRef="c-54" id="gl.r_54.cen-151">S</e:cen-151>
+    <e:cen-152
+      contextRef="c-54"
+      decimals="INF"
+      id="gl.r_54.cen-152"
+      unitRef="u-01">0.06</e:cen-152>
+    <context id="c-55">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.11</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG29</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-146
+      contextRef="c-55"
+      decimals="INF"
+      id="gl.r_55.cen-146"
+      unitRef="u-02">9.95</e:cen-146>
+    <context id="c-56">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.11</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG31</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <b:bus-143 contextRef="c-56" id="gl.r_56.bus-143">TRKLPAKJESAPPELSAP</b:bus-143>
+    <context id="c-57">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.12</c:_2>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <c:cor-22
+      contextRef="c-57"
+      decimals="INF"
+      id="gl.r_57.cor-22"
+      unitRef="u-01">13</c:cor-22>
+    <e:cen-129
+      contextRef="c-57"
+      decimals="INF"
+      id="gl.r_57.cen-129"
+      unitRef="u-01">2</e:cen-129>
+    <e:cen-131
+      contextRef="c-57"
+      decimals="INF"
+      id="gl.r_57.cen-131"
+      unitRef="u-02">3.3</e:cen-131>
+    <context id="c-58">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.12</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>cG19</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-151 contextRef="c-58" id="gl.r_58.cen-151">S</e:cen-151>
+    <e:cen-152
+      contextRef="c-58"
+      decimals="INF"
+      id="gl.r_58.cen-152"
+      unitRef="u-01">0.06</e:cen-152>
+    <context id="c-59">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.12</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG29</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-146
+      contextRef="c-59"
+      decimals="INF"
+      id="gl.r_59.cen-146"
+      unitRef="u-02">1.65</e:cen-146>
+    <context id="c-60">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.12</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG31</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <b:bus-143 contextRef="c-60" id="gl.r_60.bus-143">PKCHOCOLADEMEL</b:bus-143>
+    <context id="c-61">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.13</c:_2>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <c:cor-22
+      contextRef="c-61"
+      decimals="INF"
+      id="gl.r_61.cor-22"
+      unitRef="u-01">14</c:cor-22>
+    <e:cen-129
+      contextRef="c-61"
+      decimals="INF"
+      id="gl.r_61.cen-129"
+      unitRef="u-01">1</e:cen-129>
+    <e:cen-131
+      contextRef="c-61"
+      decimals="INF"
+      id="gl.r_61.cen-131"
+      unitRef="u-02">10.8</e:cen-131>
+    <context id="c-62">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.13</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>cG19</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-151 contextRef="c-62" id="gl.r_62.cen-151">S</e:cen-151>
+    <e:cen-152
+      contextRef="c-62"
+      decimals="INF"
+      id="gl.r_62.cen-152"
+      unitRef="u-01">0.21</e:cen-152>
+    <context id="c-63">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.13</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG29</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-146
+      contextRef="c-63"
+      decimals="INF"
+      id="gl.r_63.cen-146"
+      unitRef="u-02">10.8</e:cen-146>
+    <context id="c-64">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.13</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG31</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <b:bus-143 contextRef="c-64" id="gl.r_64.bus-143">KRATBIER</b:bus-143>
+    <context id="c-65">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.14</c:_2>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <c:cor-22
+      contextRef="c-65"
+      decimals="INF"
+      id="gl.r_65.cor-22"
+      unitRef="u-01">15</c:cor-22>
+    <e:cen-129
+      contextRef="c-65"
+      decimals="INF"
+      id="gl.r_65.cen-129"
+      unitRef="u-01">1</e:cen-129>
+    <e:cen-131
+      contextRef="c-65"
+      decimals="INF"
+      id="gl.r_65.cen-131"
+      unitRef="u-02">3.9</e:cen-131>
+    <context id="c-66">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.14</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>cG19</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-151 contextRef="c-66" id="gl.r_66.cen-151">S</e:cen-151>
+    <e:cen-152
+      contextRef="c-66"
+      decimals="INF"
+      id="gl.r_66.cen-152"
+      unitRef="u-01">0.06</e:cen-152>
+    <context id="c-67">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.14</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG29</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-146
+      contextRef="c-67"
+      decimals="INF"
+      id="gl.r_67.cen-146"
+      unitRef="u-02">3.9</e:cen-146>
+    <context id="c-68">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.14</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG31</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <b:bus-143 contextRef="c-68" id="gl.r_68.bus-143">STATIEGELD</b:bus-143>
+    <context id="c-69">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.15</c:_2>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <c:cor-22
+      contextRef="c-69"
+      decimals="INF"
+      id="gl.r_69.cor-22"
+      unitRef="u-01">16</c:cor-22>
+    <e:cen-129
+      contextRef="c-69"
+      decimals="INF"
+      id="gl.r_69.cen-129"
+      unitRef="u-01">2</e:cen-129>
+    <e:cen-131
+      contextRef="c-69"
+      decimals="INF"
+      id="gl.r_69.cen-131"
+      unitRef="u-02">7.6</e:cen-131>
+    <context id="c-70">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.15</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>cG19</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-151 contextRef="c-70" id="gl.r_70.cen-151">S</e:cen-151>
+    <e:cen-152
+      contextRef="c-70"
+      decimals="INF"
+      id="gl.r_70.cen-152"
+      unitRef="u-01">0.21</e:cen-152>
+    <context id="c-71">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.15</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG29</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-146
+      contextRef="c-71"
+      decimals="INF"
+      id="gl.r_71.cen-146"
+      unitRef="u-02">3.8</e:cen-146>
+    <context id="c-72">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.15</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG31</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <b:bus-143 contextRef="c-72" id="gl.r_72.bus-143">BLEEK3X750ML</b:bus-143>
+    <context id="c-73">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.16</c:_2>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <c:cor-22
+      contextRef="c-73"
+      decimals="INF"
+      id="gl.r_73.cor-22"
+      unitRef="u-01">17</c:cor-22>
+    <e:cen-129
+      contextRef="c-73"
+      decimals="INF"
+      id="gl.r_73.cen-129"
+      unitRef="u-01">2</e:cen-129>
+    <e:cen-131
+      contextRef="c-73"
+      decimals="INF"
+      id="gl.r_73.cen-131"
+      unitRef="u-02">9.34</e:cen-131>
+    <context id="c-74">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.16</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>cG19</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-151 contextRef="c-74" id="gl.r_74.cen-151">S</e:cen-151>
+    <e:cen-152
+      contextRef="c-74"
+      decimals="INF"
+      id="gl.r_74.cen-152"
+      unitRef="u-01">0.21</e:cen-152>
+    <context id="c-75">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.16</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG29</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-146
+      contextRef="c-75"
+      decimals="INF"
+      id="gl.r_75.cen-146"
+      unitRef="u-02">4.67</e:cen-146>
+    <context id="c-76">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.16</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG31</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <b:bus-143 contextRef="c-76" id="gl.r_76.bus-143">WCPAPIER</b:bus-143>
+    <context id="c-77">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.17</c:_2>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <c:cor-22
+      contextRef="c-77"
+      decimals="INF"
+      id="gl.r_77.cor-22"
+      unitRef="u-01">18</c:cor-22>
+    <e:cen-129
+      contextRef="c-77"
+      decimals="INF"
+      id="gl.r_77.cen-129"
+      unitRef="u-01">1</e:cen-129>
+    <e:cen-131
+      contextRef="c-77"
+      decimals="INF"
+      id="gl.r_77.cen-131"
+      unitRef="u-02">18.63</e:cen-131>
+    <context id="c-78">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.17</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>cG19</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-151 contextRef="c-78" id="gl.r_78.cen-151">S</e:cen-151>
+    <e:cen-152
+      contextRef="c-78"
+      decimals="INF"
+      id="gl.r_78.cen-152"
+      unitRef="u-01">0.21</e:cen-152>
+    <context id="c-79">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.17</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG29</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-146
+      contextRef="c-79"
+      decimals="INF"
+      id="gl.r_79.cen-146"
+      unitRef="u-02">18.63</e:cen-146>
+    <context id="c-80">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.17</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG31</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <b:bus-143 contextRef="c-80" id="gl.r_80.bus-143">BALPENNEN50STBLAUW</b:bus-143>
+    <context id="c-81">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.18</c:_2>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <c:cor-22
+      contextRef="c-81"
+      decimals="INF"
+      id="gl.r_81.cor-22"
+      unitRef="u-01">19</c:cor-22>
+    <e:cen-129
+      contextRef="c-81"
+      decimals="INF"
+      id="gl.r_81.cen-129"
+      unitRef="u-01">6</e:cen-129>
+    <e:cen-131
+      contextRef="c-81"
+      decimals="INF"
+      id="gl.r_81.cen-131"
+      unitRef="u-02">102.12</e:cen-131>
+    <context id="c-82">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.18</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>cG19</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-151 contextRef="c-82" id="gl.r_82.cen-151">S</e:cen-151>
+    <e:cen-152
+      contextRef="c-82"
+      decimals="INF"
+      id="gl.r_82.cen-152"
+      unitRef="u-01">0.06</e:cen-152>
+    <context id="c-83">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.18</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG29</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-146
+      contextRef="c-83"
+      decimals="INF"
+      id="gl.r_83.cen-146"
+      unitRef="u-02">17.02</e:cen-146>
+    <context id="c-84">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.18</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG31</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <b:bus-143 contextRef="c-84" id="gl.r_84.bus-143">EMFRITUURVET</b:bus-143>
+    <context id="c-85">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.19</c:_2>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <c:cor-22
+      contextRef="c-85"
+      decimals="INF"
+      id="gl.r_85.cor-22"
+      unitRef="u-01">20</c:cor-22>
+    <e:cen-129
+      contextRef="c-85"
+      decimals="INF"
+      id="gl.r_85.cen-129"
+      unitRef="u-01">6</e:cen-129>
+    <e:cen-131
+      contextRef="c-85"
+      decimals="INF"
+      id="gl.r_85.cen-131"
+      unitRef="u-02">-109.98</e:cen-131>
+    <context id="c-86">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.19</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>cG19</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-151 contextRef="c-86" id="gl.r_86.cen-151">S</e:cen-151>
+    <e:cen-152
+      contextRef="c-86"
+      decimals="INF"
+      id="gl.r_86.cen-152"
+      unitRef="u-01">0.06</e:cen-152>
+    <context id="c-87">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.19</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG29</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-146
+      contextRef="c-87"
+      decimals="INF"
+      id="gl.r_87.cen-146"
+      unitRef="u-02">18.33</e:cen-146>
+    <context id="c-88">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>cG5.19</c:_2>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d3">
+                    <c:_3>eG31</c:_3>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <b:bus-143 contextRef="c-88" id="gl.r_88.bus-143">FRITUURVET10KGRETOUR</b:bus-143>
+    <context id="c-89">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>eG22</c:_2>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-106
+      contextRef="c-89"
+      decimals="INF"
+      id="gl.r_89.cen-106"
+      unitRef="u-02">0</e:cen-106>
+    <e:cen-109
+      contextRef="c-89"
+      decimals="INF"
+      id="gl.r_89.cen-109"
+      unitRef="u-02">229.6</e:cen-109>
+    <e:cen-111
+      contextRef="c-89"
+      decimals="INF"
+      id="gl.r_89.cen-111"
+      unitRef="u-02">20.73</e:cen-111>
+    <e:cen-112
+      contextRef="c-89"
+      decimals="INF"
+      id="gl.r_89.cen-112"
+      unitRef="u-02">250.33</e:cen-112>
+    <e:cen-115
+      contextRef="c-89"
+      decimals="INF"
+      id="gl.r_89.cen-115"
+      unitRef="u-02">250.33</e:cen-115>
+    <context id="c-90">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>eG23</c:_2>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-116
+      contextRef="c-90"
+      decimals="INF"
+      id="gl.r_90.cen-116"
+      unitRef="u-02">183.23</e:cen-116>
+    <e:cen-117
+      contextRef="c-90"
+      decimals="INF"
+      id="gl.r_90.cen-117"
+      unitRef="u-02">0</e:cen-117>
+    <e:cen-118 contextRef="c-90" id="gl.r_90.cen-118">S</e:cen-118>
+    <e:cen-119
+      contextRef="c-90"
+      decimals="INF"
+      id="gl.r_90.cen-119"
+      unitRef="u-01">0.06</e:cen-119>
+    <context id="c-91">
+        <entity>
+            <identifier scheme="http://www.xbrlglco.com">XBRL GL Co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="c:d1">
+                    <c:_1>cG4</c:_1>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="c:d2">
+                    <c:_2>eG23.1</c:_2>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2007-05-31</instant>
+        </period>
+    </context>
+    <e:cen-116
+      contextRef="c-91"
+      decimals="INF"
+      id="gl.r_91.cen-116"
+      unitRef="u-02">46.37</e:cen-116>
+    <e:cen-117
+      contextRef="c-91"
+      decimals="INF"
+      id="gl.r_91.cen-117"
+      unitRef="u-02">9.74</e:cen-117>
+    <e:cen-118 contextRef="c-91" id="gl.r_91.cen-118">S</e:cen-118>
+    <e:cen-119
+      contextRef="c-91"
+      decimals="INF"
+      id="gl.r_91.cen-119"
+      unitRef="u-01">0.21</e:cen-119>
+</xbrl>

@@ -1,0 +1,9 @@
+[info] Activation of plug-in Load From OIM successful, version 1.2. - loadFromOIM 
+[info] Activation of plug-in Save Loadable OIM successful, version 1.2. - saveLoadableOIM 
+[info:duplicatedSchema] Schema file with same targetNamespace http://xbrl.org/2005/xbrldt loaded from http://www.xbrl.org/2005/xbrldt-2005.xsd and http://xbrl.org/2005/xbrldt-2005.xsd - ../xBRL/SRCD/frTaxonomy/FRTaxonomy.xsd 24
+[info] loaded in 1.15 secs at 2021-03-02T08:42:07 - /Users/pontsoleil/xBRL-Alpha/xBRL-CSV/whyOrWhyNot-metadata.json 
+[] Formula xpath2 grammar initialized in 2.31 secs - 
+[info:duplicatedSchema] Schema file with same targetNamespace http://xbrl.org/2005/xbrldt loaded from http://www.xbrl.org/2005/xbrldt-2005.xsd and http://xbrl.org/2005/xbrldt-2005.xsd - ../xBRL/SRCD/frTaxonomy/FRTaxonomy.xsd 24
+[formula:trace] Variable set PrimaryItem04 had no xpCtx.evaluations - ../xBRL/gl/plt/case-srcd/gl-plt-2020-12-31-formula.xml 47
+[formula:trace] Variable set PrimaryItem04 evaluations: 0 x 0 - ../xBRL/gl/plt/case-srcd/gl-plt-2020-12-31-formula.xml 47
+[info] validated in 3.21 secs - /Users/pontsoleil/xBRL-Alpha/xBRL-CSV/whyOrWhyNot-metadata.json 

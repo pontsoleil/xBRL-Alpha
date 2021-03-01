@@ -1,0 +1,221 @@
+{
+  "documentInfo": {
+    "documentType": "https://xbrl.org/CR/2021-02-03/xbrl-csv",
+    "namespaces": {
+      "c": "http://www.xbrl.org/int/gl/cor/2020-12-31",
+      "b": "http://www.xbrl.org/int/gl/bus/2020-12-31",
+      "m": "http://www.xbrl.org/int/gl/muc/2020-12-31",
+      "e": "http://www.xbrl.org/int/gl/cen/2020-12-31",
+      "ns0": "http://www.xbrlglco.com",
+      "iso4217": "http://www.xbrl.org/2003/iso4217"
+    },
+    "taxonomy": [
+      "../xBRL/gl/plt/case-cen/gl-plt-2020-12-31.xsd"
+    ]
+  },
+  "tableTemplates": {
+    "gl": {
+      "columns": {
+        "d1": {},
+        "d2": {},
+        "d3": {},
+        "cor-76": {
+          "dimensions": {
+            "concept": "c:cor-76"
+          }
+        },
+        "cor-79": {
+          "dimensions": {
+            "concept": "c:cor-79"
+          }
+        },
+        "cor-73": {
+          "dimensions": {
+            "concept": "c:cor-73"
+          }
+        },
+        "cen-81": {
+          "dimensions": {
+            "concept": "e:cen-81"
+          }
+        },
+        "cen-83": {
+          "dimensions": {
+            "concept": "e:cen-83"
+          }
+        },
+        "cen-84": {
+          "dimensions": {
+            "concept": "e:cen-84"
+          }
+        },
+        "cen-24": {
+          "dimensions": {
+            "concept": "e:cen-24"
+          }
+        },
+        "cen-35": {
+          "dimensions": {
+            "concept": "e:cen-35"
+          }
+        },
+        "cen-37": {
+          "dimensions": {
+            "concept": "e:cen-37"
+          }
+        },
+        "cen-38": {
+          "dimensions": {
+            "concept": "e:cen-38"
+          }
+        },
+        "cen-40": {
+          "dimensions": {
+            "concept": "e:cen-40"
+          }
+        },
+        "cen-46": {
+          "dimensions": {
+            "concept": "e:cen-46"
+          }
+        },
+        "cen-44": {
+          "dimensions": {
+            "concept": "e:cen-44"
+          }
+        },
+        "cen-50": {
+          "dimensions": {
+            "concept": "e:cen-50"
+          }
+        },
+        "cen-52": {
+          "dimensions": {
+            "concept": "e:cen-52"
+          }
+        },
+        "cen-53": {
+          "dimensions": {
+            "concept": "e:cen-53"
+          }
+        },
+        "cen-55": {
+          "dimensions": {
+            "concept": "e:cen-55"
+          }
+        },
+        "muc-4": {
+          "dimensions": {
+            "concept": "m:muc-4"
+          }
+        },
+        "muc-33": {
+          "dimensions": {
+            "concept": "m:muc-33"
+          }
+        },
+        "cor-22": {
+          "dimensions": {
+            "concept": "c:cor-22"
+          }
+        },
+        "cen-129": {
+          "dimensions": {
+            "concept": "e:cen-129"
+          }
+        },
+        "cen-131": {
+          "dimensions": {
+            "concept": "e:cen-131",
+            "unit": "iso4217:EUR"
+          }
+        },
+        "cen-151": {
+          "dimensions": {
+            "concept": "e:cen-151"
+          }
+        },
+        "cen-152": {
+          "dimensions": {
+            "concept": "e:cen-152"
+          }
+        },
+        "cen-146": {
+          "dimensions": {
+            "concept": "e:cen-146",
+            "unit": "iso4217:EUR"
+          }
+        },
+        "bus-143": {
+          "dimensions": {
+            "concept": "b:bus-143"
+          }
+        },
+        "cen-106": {
+          "dimensions": {
+            "concept": "e:cen-106",
+            "unit": "iso4217:EUR"
+          }
+        },
+        "cen-109": {
+          "dimensions": {
+            "concept": "e:cen-109",
+            "unit": "iso4217:EUR"
+          }
+        },
+        "cen-111": {
+          "dimensions": {
+            "concept": "e:cen-111",
+            "unit": "iso4217:EUR"
+          }
+        },
+        "cen-112": {
+          "dimensions": {
+            "concept": "e:cen-112",
+            "unit": "iso4217:EUR"
+          }
+        },
+        "cen-115": {
+          "dimensions": {
+            "concept": "e:cen-115",
+            "unit": "iso4217:EUR"
+          }
+        },
+        "cen-116": {
+          "dimensions": {
+            "concept": "e:cen-116",
+            "unit": "iso4217:EUR"
+          }
+        },
+        "cen-117": {
+          "dimensions": {
+            "concept": "e:cen-117",
+            "unit": "iso4217:EUR"
+          }
+        },
+        "cen-118": {
+          "dimensions": {
+            "concept": "e:cen-118"
+          }
+        },
+        "cen-119": {
+          "dimensions": {
+            "concept": "e:cen-119"
+          }
+        }
+      },
+      "dimensions": {
+        "c:d1": "$d1",
+        "c:d2": "$d2",
+        "c:d3": "$d3",
+        "period": "2007-06-01T00:00:00",
+        "entity": "ns0:XBRL GL Co."
+      }
+    }
+  },
+  "tables": {
+    "gl": {
+      "url": "xbrl-gl_ubl_example1_E.csv"
+    }
+  }
+}
