@@ -1,9 +1,0 @@
-[info] Activation of plug-in Load From OIM successful, version 1.2. - loadFromOIM 
-[info] Activation of plug-in Save Loadable OIM successful, version 1.2. - saveLoadableOIM 
-[info] loaded in 1.24 secs at 2021-03-01T08:28:39 - /Users/pontsoleil/xBRL-Alpha/xBRL-CSV/xbrl-gl_ubl_example1-metadata.json 
-[] Formula xpath2 grammar initialized in 2.20 secs - 
-[formula:trace] Variable set BR-CO-10, variables order: [invoiceLineNetAmount, sumOfInvoiceLineNetAmount] - ../xBRL/gl/plt/case-cen/gl-plt-2020-12-31-formula.xml 33
-[formula:trace] Variable set BR-CO-11, variables order: [documentLevelAllowanceAmount, sumOfAllowancesOnDocumentLevel] - ../xBRL/gl/plt/case-cen/gl-plt-2020-12-31-formula.xml 42
-[formula:trace] Variable set BR-CO-17, variables order: [VAT_CategoryTaxAmount, contextRef_VAT_CategoryTaxAmount, VAT_CategoryTaxableAmount, VAT_CategoryRate] - ../xBRL/gl/plt/case-cen/gl-plt-2020-12-31-formula.xml 50
-[formula:trace] Variable instances processing order: [instances:standard-output-instance, None] - xbrl-gl_ubl_example1-metadata.xbrl 
-[info] validated in 3.31 secs - /Users/pontsoleil/xBRL-Alpha/xBRL-CSV/xbrl-gl_ubl_example1-metadata.json 
