@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--extracted from OIM /Users/pontsoleil/xBRL-Alpha/xBRL-CSV/xbrl-gl_ubl_example1-metadata.json-->
+<!--extracted from OIM /Users/pontsoleil/xBRL-Alpha/xBRL-CSV/xbrl-gl_ubl_example1_E-metadata.json-->
 <xbrl
   xmlns="http://www.xbrl.org/2003/instance"
   xmlns:b="http://www.xbrl.org/int/gl/bus/2020-12-31"
@@ -27,7 +27,7 @@
         </period>
     </context>
     <c:cor-76 contextRef="c-01" id="gl.r_1.cor-76">12115118</c:cor-76>
-    <c:cor-79 contextRef="c-01" id="gl.r_1.cor-79">2015-01-09</c:cor-79>
+    <c:cor-79 contextRef="c-01" id="gl.r_1.cor-79">2015/1/9</c:cor-79>
     <c:cor-73 contextRef="c-01" id="gl.r_1.cor-73">380</c:cor-73>
     <context id="c-02">
         <entity>
@@ -2189,7 +2189,7 @@
       contextRef="c-89"
       decimals="INF"
       id="gl.r_89.cen-106"
-      unitRef="u-02">229.6</e:cen-106>
+      unitRef="u-02">0</e:cen-106>
     <e:cen-109
       contextRef="c-89"
       decimals="INF"
@@ -2235,7 +2235,7 @@
       contextRef="c-90"
       decimals="INF"
       id="gl.r_90.cen-117"
-      unitRef="u-02">10.99</e:cen-117>
+      unitRef="u-02">0</e:cen-117>
     <e:cen-118 contextRef="c-90" id="gl.r_90.cen-118">S</e:cen-118>
     <e:cen-119
       contextRef="c-90"

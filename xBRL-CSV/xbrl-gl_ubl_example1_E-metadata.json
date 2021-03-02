@@ -215,7 +215,7 @@
   },
   "tables": {
     "gl": {
-      "url": "xbrl-gl_ubl_example1.csv"
+      "url": "xbrl-gl_ubl_example1_E.csv"
     }
   }
 }
