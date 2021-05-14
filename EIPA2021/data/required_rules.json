@@ -1,0 +1,555 @@
+{
+"data":[{
+"num":1,
+"Rule_ID":"ibr-01",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-024",
+"Rule":"An Invoice shall have a Specification identifier (ibt-024)."
+},{
+"num":2,
+"Rule_ID":"ibr-02",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-001",
+"Rule":"An Invoice shall have an Invoice number (ibt-001)."
+},{
+"num":3,
+"Rule_ID":"ibr-03",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-002",
+"Rule":"An Invoice shall have an Invoice issue date (ibt-002)."
+},{
+"num":4,
+"Rule_ID":"ibr-04",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-003",
+"Rule":"An Invoice shall have an Invoice type code (ibt-003)."
+},{
+"num":5,
+"Rule_ID":"ibr-05",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-005",
+"Rule":"An Invoice shall have an Invoice currency code (ibt-005)."
+},{
+"num":6,
+"Rule_ID":"ibr-06",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-027",
+"Rule":"An Invoice shall contain the Seller name (ibt-027)."
+},{
+"num":7,
+"Rule_ID":"ibr-07",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-044",
+"Rule":"An Invoice shall contain the Buyer name (ibt-044)."
+},{
+"num":8,
+"Rule_ID":"ibr-08",
+"Severity":"Fatal",
+"PINT_IDs":"ibg-05",
+"Rule":"An Invoice shall contain the Seller postal address (ibg-05)."
+},{
+"num":9,
+"Rule_ID":"ibr-09",
+"Severity":"Fatal",
+"PINT_IDs":"ibg-05 ibt-040",
+"Rule":"The Seller postal address (ibg-05) shall contain a Seller country code (ibt-040)."
+},{
+"num":10,
+"Rule_ID":"ibr-10",
+"Severity":"Fatal",
+"PINT_IDs":"ibg-08",
+"Rule":"An Invoice shall contain the Buyer postal address (ibg-08)."
+},{
+"num":11,
+"Rule_ID":"ibr-11",
+"Severity":"Fatal",
+"PINT_IDs":"ibg-08 ibt-055",
+"Rule":"The Buyer postal address (ibg-08) shall contain a Buyer country code (ibt-055)."
+},{
+"num":12,
+"Rule_ID":"ibr-12",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-106",
+"Rule":"An Invoice shall have the Sum of Invoice line net amount (ibt-106)."
+},{
+"num":13,
+"Rule_ID":"ibr-13",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-109",
+"Rule":"An Invoice shall have the Invoice total amount without TAX (ibt-109)."
+},{
+"num":14,
+"Rule_ID":"ibr-14",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-112",
+"Rule":"An Invoice shall have the Invoice total amount with TAX (ibt-112)."
+},{
+"num":15,
+"Rule_ID":"ibr-15",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-115",
+"Rule":"An Invoice shall have the Amount due for payment (ibt-115)."
+},{
+"num":16,
+"Rule_ID":"ibr-16",
+"Severity":"Fatal",
+"PINT_IDs":"ibg-25",
+"Rule":"An Invoice shall have at least one Invoice line (ibg-25)."
+},{
+"num":17,
+"Rule_ID":"ibr-17",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-059 ibg-10 ibg-04",
+"Rule":"The Payee name (ibt-059) shall be provided in the Invoice, if the Payee (ibg-10) is different from the Seller (ibg-04)."
+},{
+"num":18,
+"Rule_ID":"ibr-18",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-062 ibg-04 ibg-11",
+"Rule":"The Seller tax representative name (ibt-062) shall be provided in the Invoice, if the Seller (ibg-04) has a Seller tax representative party (ibg-11)."
+},{
+"num":19,
+"Rule_ID":"ibr-19",
+"Severity":"Fatal",
+"PINT_IDs":"ibg-12 ibg-04 ibg-11",
+"Rule":"The Seller tax representative postal address (ibg-12) shall be provided in the Invoice, if the Seller (ibg-04) has a Seller tax representative party (ibg-11)."
+},{
+"num":20,
+"Rule_ID":"ibr-20",
+"Severity":"Fatal",
+"PINT_IDs":"ibg-12 ibt-069 ibg-04 ibg-11",
+"Rule":"The Seller tax representative postal address (ibg-12) shall contain a Tax representative country code (ibt-069), if the Seller (ibg-04) has a Seller tax representative party (ibg-11)."
+},{
+"num":21,
+"Rule_ID":"ibr-21",
+"Severity":"Fatal",
+"PINT_IDs":"ibg-25 ibt-126",
+"Rule":"Each Invoice line (ibg-25) shall have an Invoice line identifier (ibt-126)."
+},{
+"num":22,
+"Rule_ID":"ibr-22",
+"Severity":"Fatal",
+"PINT_IDs":"ibg-25 ibt-129",
+"Rule":"Each Invoice line (ibg-25) shall have an Invoiced quantity (ibt-129)."
+},{
+"num":23,
+"Rule_ID":"ibr-23",
+"Severity":"Fatal",
+"PINT_IDs":"ibg-25 ibt-130",
+"Rule":"An Invoice line (ibg-25) shall have an Invoiced quantity unit of measure code (ibt-130)."
+},{
+"num":24,
+"Rule_ID":"ibr-24",
+"Severity":"Fatal",
+"PINT_IDs":"ibg-25 ibt-131",
+"Rule":"Each Invoice line (ibg-25) shall have an Invoice line net amount (ibt-131)."
+},{
+"num":25,
+"Rule_ID":"ibr-25",
+"Severity":"Fatal",
+"PINT_IDs":"ibg-25 ibt-153",
+"Rule":"Each Invoice line (ibg-25) shall contain the Item name (ibt-153)."
+},{
+"num":26,
+"Rule_ID":"ibr-26",
+"Severity":"Fatal",
+"PINT_IDs":"ibg-25 ibt-146",
+"Rule":"Each Invoice line (ibg-25) shall contain the Item net price (ibt-146)."
+},{
+"num":27,
+"Rule_ID":"ibr-27",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-146",
+"Rule":"The Item net price (ibt-146) shall NOT be negative."
+},{
+"num":28,
+"Rule_ID":"ibr-28",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-148",
+"Rule":"The Item gross price (ibt-148) shall NOT be negative."
+},{
+"num":29,
+"Rule_ID":"ibr-29",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-073 ibt-074 ibt-074 ibt-073",
+"Rule":"If both Invoicing period start date (ibt-073) and Invoicing period end date (ibt-074) are given then the Invoicing period end date (ibt-074) shall be later or equal to the Invoicing period start date (ibt-073)."
+},{
+"num":30,
+"Rule_ID":"ibr-30",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-134 ibt-135 ibt-135 ibt-134",
+"Rule":"If both Invoice line period start date (ibt-134) and Invoice line period end date (ibt-135) are given, then the Invoice line period end date (ibt-135) shall be later or equal to the Invoice line period start date (ibt-134)."
+},{
+"num":31,
+"Rule_ID":"ibr-31",
+"Severity":"Fatal",
+"PINT_IDs":"ibg-20 ibt-092",
+"Rule":"Each Document level allowance (ibg-20) shall have a Document level allowance amount (ibt-092)."
+},{
+"num":32,
+"Rule_ID":"ibr-33",
+"Severity":"Fatal",
+"PINT_IDs":"ibg-20 ibt-097 ibt-098",
+"Rule":"Each Document level allowance (ibg-20) shall have a Document level allowance reason (ibt-097) or a Document level allowance reason code (ibt-098)."
+},{
+"num":33,
+"Rule_ID":"ibr-36",
+"Severity":"Fatal",
+"PINT_IDs":"ibg-21 ibt-099",
+"Rule":"Each Document level charge (ibg-21) shall have a Document level charge amount (ibt-099)."
+},{
+"num":34,
+"Rule_ID":"ibr-38",
+"Severity":"Fatal",
+"PINT_IDs":"ibg-21 ibt-104 ibt-105",
+"Rule":"Each Document level charge (ibg-21) shall have a Document level charge reason (ibt-104) or a Document level charge reason code (ibt-105)."
+},{
+"num":35,
+"Rule_ID":"ibr-41",
+"Severity":"Fatal",
+"PINT_IDs":"ibg-27 ibt-136",
+"Rule":"Each Invoice line allowance (ibg-27) shall have an Invoice line allowance amount (ibt-136)."
+},{
+"num":36,
+"Rule_ID":"ibr-42",
+"Severity":"Fatal",
+"PINT_IDs":"ibg-27 ibt-139 ibt-140",
+"Rule":"Each Invoice line allowance (ibg-27) shall have an Invoice line allowance reason (ibt-139) or an Invoice line allowance reason code (ibt-140)."
+},{
+"num":37,
+"Rule_ID":"ibr-43",
+"Severity":"Fatal",
+"PINT_IDs":"ibg-28 ibt-141",
+"Rule":"Each Invoice line charge (ibg-28) shall have an Invoice line charge amount (ibt-141)."
+},{
+"num":38,
+"Rule_ID":"ibr-44",
+"Severity":"Fatal",
+"PINT_IDs":"ibg-28 ibt-144 ibt-145",
+"Rule":"Each Invoice line charge (ibg-28) shall have an Invoice line charge reason (ibt-144) or an Invoice line charge reason code (ibt-145)."
+},{
+"num":39,
+"Rule_ID":"ibr-49",
+"Severity":"Fatal",
+"PINT_IDs":"ibg-16 ibt-081",
+"Rule":"A Payment instruction (ibg-16) shall specify the Payment means type code (ibt-081)."
+},{
+"num":40,
+"Rule_ID":"ibr-52",
+"Severity":"Fatal",
+"PINT_IDs":"ibg-24 ibt-122",
+"Rule":"Each Additional supporting document (ibg-24) shall contain a Supporting document reference (ibt-122)."
+},{
+"num":41,
+"Rule_ID":"ibr-53",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-006 ibt-111",
+"Rule":"If the TAX accounting currency code (ibt-006) is present, then the Invoice total TAX amount in accounting currency (ibt-111) shall be provided."
+},{
+"num":42,
+"Rule_ID":"ibr-54",
+"Severity":"Fatal",
+"PINT_IDs":"ibg-32 ibt-160 ibt-161",
+"Rule":"Each Item attribute (ibg-32) shall contain an Item attribute name (ibt-160) and an Item attribute value (ibt-161)."
+},{
+"num":43,
+"Rule_ID":"ibr-55",
+"Severity":"Fatal",
+"PINT_IDs":"ibg-03 ibt-025",
+"Rule":"Each Preceding Invoice reference (ibg-03) shall contain a Preceding Invoice reference (ibt-025)."
+},{
+"num":44,
+"Rule_ID":"ibr-56",
+"Severity":"Fatal",
+"PINT_IDs":"ibg-11 ibt-063",
+"Rule":"Each Seller tax representative party (ibg-11) shall have a Seller tax representative TAX identifier (ibt-063)."
+},{
+"num":45,
+"Rule_ID":"ibr-57",
+"Severity":"Fatal",
+"PINT_IDs":"ibg-15 ibt-080",
+"Rule":"Each Deliver to address (ibg-15) shall contain a Deliver to country code (ibt-080)."
+},{
+"num":46,
+"Rule_ID":"ibr-62",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-034",
+"Rule":"The Seller electronic address (ibt-034) shall have a Scheme identifier."
+},{
+"num":47,
+"Rule_ID":"ibr-63",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-049",
+"Rule":"The Buyer electronic address (ibt-049) shall have a Scheme identifier."
+},{
+"num":48,
+"Rule_ID":"ibr-64",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-157",
+"Rule":"The Item standard identifier (ibt-157) shall have a Scheme identifier"
+},{
+"num":49,
+"Rule_ID":"ibr-65",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-158",
+"Rule":"The Item classification identifier (ibt-158) shall have a Scheme identifier"
+},{
+"num":50,
+"Rule_ID":"ibr-66",
+"Severity":"Fatal",
+"PINT_IDs":"",
+"Rule":"The Tax scheme code shall be from list of allowed tax schemes."
+},{
+"num":51,
+"Rule_ID":"ibr-67",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-1152 decimals",
+"Rule":"Invoice amount due for payment (ibt-115) shall have no more than 2 decimals"
+},{
+"num":52,
+"Rule_ID":"ibr-co-5",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-098 ibt-097",
+"Rule":"Document level allowance reason code (ibt-098) and Document level allowance reason (ibt-097) shall indicate the same type of allowance."
+},{
+"num":53,
+"Rule_ID":"ibr-co-6",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-105 ibt-104",
+"Rule":"Document level charge reason code (ibt-105) and Document level charge reason (ibt-104) shall indicate the same type of charge."
+},{
+"num":54,
+"Rule_ID":"ibr-co-7",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-140 ibt-139",
+"Rule":"When both Invoice line allowance reason code (ibt-140) and Invoice line allowance reason (ibt-139) the definition of the code is normative."
+},{
+"num":55,
+"Rule_ID":"ibr-co-8",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-145 ibt-144",
+"Rule":"When both Invoice line charge reason code (ibt-145) and Invoice line charge reason (ibt-144) the definition of the code is normative."
+},{
+"num":56,
+"Rule_ID":"ibr-co-10",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-106= ∑ ibt-131",
+"Rule":"Sum of Invoice line net amount (ibt-106) = ∑ Invoice line net amount (ibt-131)."
+},{
+"num":57,
+"Rule_ID":"ibr-co-11",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-107= ∑ ibt-092",
+"Rule":"Sum of allowances on document level (ibt-107) = ∑ Document level allowance amount (ibt-092)."
+},{
+"num":58,
+"Rule_ID":"ibr-co-12",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-108= ∑ ibt-099",
+"Rule":"Sum of charges on document level (ibt-108) = ∑ Document level charge amount (ibt-099)."
+},{
+"num":59,
+"Rule_ID":"ibr-co-13",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-0109= ∑ ibt-131- ibt-107+ ibt-108",
+"Rule":"Invoice total amount without TAX (ibt-0109) = ∑ Invoice line net amount (ibt-131) - Sum of allowances on document level (ibt-107) + Sum of charges on document level (ibt-108)."
+},{
+"num":60,
+"Rule_ID":"ibr-co-14",
+"Severity":"Fatal",
+"PINT_IDs":"",
+"Rule":"Invoice total VAT amount (BT-110) = Σ VAT category tax amount (BT-117)"
+},{
+"num":61,
+"Rule_ID":"ibr-co-15",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-112= ibt-109+ ibt-110",
+"Rule":"Invoice total amount with TAX (ibt-112) = Invoice total amount without TAX (ibt-109) + Invoice total TAX amount (ibt-110)."
+},{
+"num":62,
+"Rule_ID":"ibr-co-16",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-115= ibt-112- ibt-113+ ibt-114",
+"Rule":"Amount due for payment (ibt-115) = Invoice total amount with TAX (ibt-112) -Paid amount (ibt-113) + Rounding amount (ibt-114)."
+},{
+"num":63,
+"Rule_ID":"ibr-co-19",
+"Severity":"Fatal",
+"PINT_IDs":"ibg-14 ibt-73 ibt-74",
+"Rule":"If Invoicing period (ibg-14) is used, the Invoicing period start date (ibt-73) or the Invoicing period end date (ibt-74) shall be filled, or both."
+},{
+"num":64,
+"Rule_ID":"ibr-co-20",
+"Severity":"Fatal",
+"PINT_IDs":"ibg-26 ibt-134 ibt-135",
+"Rule":"If Invoice line period (ibg-26) is used, the Invoice line period start date (ibt-134) or the Invoice line period end date (ibt-135) shall be filled, or both."
+},{
+"num":65,
+"Rule_ID":"ibr-co-21",
+"Severity":"Fatal",
+"PINT_IDs":"ibg-20 ibt-097 ibt-098",
+"Rule":"Each Document level allowance (ibg-20) shall contain a Document level allowance reason (ibt-097) or a Document level allowance reason code (ibt-098), or both."
+},{
+"num":66,
+"Rule_ID":"ibr-co-22",
+"Severity":"Fatal",
+"PINT_IDs":"ibg-21 ibt-104 ibt-105",
+"Rule":"Each Document level charge (ibg-21) shall contain a Document level charge reason (ibt-104) or a Document level charge reason code (ibt-105), or both."
+},{
+"num":67,
+"Rule_ID":"ibr-co-24",
+"Severity":"Fatal",
+"PINT_IDs":"ibg-28 ibt-144 ibt-145",
+"Rule":"Each Invoice line charge (ibg-28) shall contain an Invoice line charge reason (ibt-144) or an Invoice line charge reason code (ibt-145), or both."
+},{
+"num":68,
+"Rule_ID":"ibr-co-25",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-115 ibt-009 ibt-020",
+"Rule":"In case the Amount due for payment (ibt-115) is positive, either the Payment due date (ibt-009) or the Payment terms (ibt-020) shall be present."
+},{
+"num":69,
+"Rule_ID":"ibr-co-26",
+"Severity":"Fatal",
+"PINT_IDs":"ibt-029 ibt-030 ibt-031",
+"Rule":"In order for the buyer to automatically identify a supplier, the Seller identifier (ibt-029), the Seller legal registration identifier (ibt-030) and/or the Seller TAX identifier (ibt-031) shall be present."
+},{
+"num":70,
+"Rule_ID":"ibr-cl-01",
+"Severity":"Fatal",
+"PINT_IDs":"",
+"Rule":"The document type code MUST be coded by the invoice and credit note related code lists of UNTDID 1001."
+},{
+"num":71,
+"Rule_ID":"ibr-cl-03",
+"Severity":"Fatal",
+"PINT_IDs":"",
+"Rule":"currencyID MUST be coded using ISO code list 4217 alpha-3"
+},{
+"num":72,
+"Rule_ID":"ibr-cl-04",
+"Severity":"Fatal",
+"PINT_IDs":"",
+"Rule":"Invoice currency code MUST be coded using ISO code list 4217 alpha-3"
+},{
+"num":73,
+"Rule_ID":"ibr-cl-05",
+"Severity":"Fatal",
+"PINT_IDs":"",
+"Rule":"Tax currency code MUST be coded using ISO code list 4217 alpha-3"
+},{
+"num":74,
+"Rule_ID":"ibr-cl-07",
+"Severity":"Fatal",
+"PINT_IDs":"",
+"Rule":"Object identifier identification scheme identifier MUST be coded using a restriction of UNTDID 1153."
+},{
+"num":75,
+"Rule_ID":"ibr-cl-10",
+"Severity":"Fatal",
+"PINT_IDs":"",
+"Rule":"Any identifier identification scheme identifier MUST be coded using one of the ISO 6523 ICD list."
+},{
+"num":76,
+"Rule_ID":"ibr-cl-11",
+"Severity":"Fatal",
+"PINT_IDs":"",
+"Rule":"Any registration identifier identification scheme identifier MUST be coded using one of the ISO 6523 ICD list."
+},{
+"num":77,
+"Rule_ID":"ibr-cl-13",
+"Severity":"Fatal",
+"PINT_IDs":"",
+"Rule":"Item classification identifier identification scheme identifier MUST be coded using one of the UNTDID 7143 list."
+},{
+"num":78,
+"Rule_ID":"ibr-cl-14",
+"Severity":"Fatal",
+"PINT_IDs":"",
+"Rule":"Country codes in an invoice MUST be coded using ISO code list 3166-1"
+},{
+"num":79,
+"Rule_ID":"ibr-cl-15",
+"Severity":"Fatal",
+"PINT_IDs":"",
+"Rule":"Origin country codes in an invoice MUST be coded using ISO code list 3166-1"
+},{
+"num":80,
+"Rule_ID":"ibr-cl-16",
+"Severity":"Fatal",
+"PINT_IDs":"",
+"Rule":"Payment means in an invoice MUST be coded using extended UNCL4461 code list"
+},{
+"num":81,
+"Rule_ID":"ibr-cl-19",
+"Severity":"Fatal",
+"PINT_IDs":"",
+"Rule":"Coded allowance reasons MUST belong to the UNCL 5189 code list"
+},{
+"num":82,
+"Rule_ID":"ibr-cl-20",
+"Severity":"Fatal",
+"PINT_IDs":"",
+"Rule":"Coded charge reasons MUST belong to the UNCL 7161 code list"
+},{
+"num":83,
+"Rule_ID":"ibr-cl-21",
+"Severity":"Fatal",
+"PINT_IDs":"",
+"Rule":"Item standard identifier scheme identifier MUST belong to the ISO 6523 ICD code list"
+},{
+"num":84,
+"Rule_ID":"ibr-cl-23",
+"Severity":"Fatal",
+"PINT_IDs":"",
+"Rule":"Unit code MUST be coded according to the UN/ECE Recommendation 20 with Rec 21 extension"
+},{
+"num":85,
+"Rule_ID":"ibr-cl-24",
+"Severity":"Fatal",
+"PINT_IDs":"",
+"Rule":"For Mime code in attribute use restricted set of MIMEMediaType."
+},{
+"num":86,
+"Rule_ID":"ibr-cl-25",
+"Severity":"Fatal",
+"PINT_IDs":"",
+"Rule":"Endpoint identifier scheme identifier MUST belong to the CEF EAS code list"
+},{
+"num":87,
+"Rule_ID":"ibr-cl-26",
+"Severity":"Fatal",
+"PINT_IDs":"",
+"Rule":"Delivery location identifier scheme identifier MUST belong to the ISO 6523 ICD code list"
+},{
+"num":88,
+"Rule_ID":"PEPPOL-EN16931-CL001",
+"Severity":"Fatal",
+"PINT_IDs":"",
+"Rule":"Mime code must be according to subset of IANA code list."
+},{
+"num":89,
+"Rule_ID":"PEPPOL-EN16931-CL002",
+"Severity":"Fatal",
+"PINT_IDs":"",
+"Rule":"Reason code MUST be according to subset of UNCL 5189 D.16B."
+},{
+"num":90,
+"Rule_ID":"PEPPOL-EN16931-CL003",
+"Severity":"Fatal",
+"PINT_IDs":"",
+"Rule":"Reason code MUST be according to UNCL 7161 D.16B."
+},{
+"num":91,
+"Rule_ID":"PEPPOL-EN16931-CL006",
+"Severity":"Fatal",
+"PINT_IDs":"",
+"Rule":"Invoice period description code must be according to UNCL 2005 D.16B."
+},{
+"num":92,
+"Rule_ID":"PEPPOL-EN16931-CL007",
+"Severity":"Fatal",
+"PINT_IDs":"",
+"Rule":"Currency code must be according to ISO 4217:2005"
+}]
+}

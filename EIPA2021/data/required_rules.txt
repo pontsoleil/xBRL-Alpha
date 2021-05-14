@@ -1,0 +1,93 @@
+ID	Severity	Rule
+ibr-01	Fatal	An Invoice shall have a Specification identifier (ibt-024).
+ibr-02	Fatal	An Invoice shall have an Invoice number (ibt-001).
+ibr-03	Fatal	An Invoice shall have an Invoice issue date (ibt-002).
+ibr-04	Fatal	An Invoice shall have an Invoice type code (ibt-003).
+ibr-05	Fatal	An Invoice shall have an Invoice currency code (ibt-005).
+ibr-06	Fatal	An Invoice shall contain the Seller name (ibt-027).
+ibr-07	Fatal	An Invoice shall contain the Buyer name (ibt-044).
+ibr-08	Fatal	An Invoice shall contain the Seller postal address (ibg-05).
+ibr-09	Fatal	The Seller postal address (ibg-05) shall contain a Seller country code (ibt-040).
+ibr-10	Fatal	An Invoice shall contain the Buyer postal address (ibg-08).
+ibr-11	Fatal	The Buyer postal address (ibg-08) shall contain a Buyer country code (ibt-055).
+ibr-12	Fatal	An Invoice shall have the Sum of Invoice line net amount (ibt-106).
+ibr-13	Fatal	An Invoice shall have the Invoice total amount without TAX (ibt-109).
+ibr-14	Fatal	An Invoice shall have the Invoice total amount with TAX (ibt-112).
+ibr-15	Fatal	An Invoice shall have the Amount due for payment (ibt-115).
+ibr-16	Fatal	An Invoice shall have at least one Invoice line (ibg-25).
+ibr-17	Fatal	The Payee name (ibt-059) shall be provided in the Invoice, if the Payee (ibg-10) is different from the Seller (ibg-04).
+ibr-18	Fatal	The Seller tax representative name (ibt-062) shall be provided in the Invoice, if the Seller (ibg-04) has a Seller tax representative party (ibg-11).
+ibr-19	Fatal	The Seller tax representative postal address (ibg-12) shall be provided in the Invoice, if the Seller (ibg-04) has a Seller tax representative party (ibg-11).
+ibr-20	Fatal	The Seller tax representative postal address (ibg-12) shall contain a Tax representative country code (ibt-069), if the Seller (ibg-04) has a Seller tax representative party (ibg-11).
+ibr-21	Fatal	Each Invoice line (ibg-25) shall have an Invoice line identifier (ibt-126).
+ibr-22	Fatal	Each Invoice line (ibg-25) shall have an Invoiced quantity (ibt-129).
+ibr-23	Fatal	An Invoice line (ibg-25) shall have an Invoiced quantity unit of measure code (ibt-130).
+ibr-24	Fatal	Each Invoice line (ibg-25) shall have an Invoice line net amount (ibt-131).
+ibr-25	Fatal	Each Invoice line (ibg-25) shall contain the Item name (ibt-153).
+ibr-26	Fatal	Each Invoice line (ibg-25) shall contain the Item net price (ibt-146).
+ibr-27	Fatal	The Item net price (ibt-146) shall NOT be negative.
+ibr-28	Fatal	The Item gross price (ibt-148) shall NOT be negative.
+ibr-29	Fatal	If both Invoicing period start date (ibt-073) and Invoicing period end date (ibt-074) are given then the Invoicing period end date (ibt-074) shall be later or equal to the Invoicing period start date (ibt-073).
+ibr-30	Fatal	If both Invoice line period start date (ibt-134) and Invoice line period end date (ibt-135) are given, then the Invoice line period end date (ibt-135) shall be later or equal to the Invoice line period start date (ibt-134).
+ibr-31	Fatal	Each Document level allowance (ibg-20) shall have a Document level allowance amount (ibt-092).
+ibr-33	Fatal	Each Document level allowance (ibg-20) shall have a Document level allowance reason (ibt-097) or a Document level allowance reason code (ibt-098).
+ibr-36	Fatal	Each Document level charge (ibg-21) shall have a Document level charge amount (ibt-099).
+ibr-38	Fatal	Each Document level charge (ibg-21) shall have a Document level charge reason (ibt-104) or a Document level charge reason code (ibt-105).
+ibr-41	Fatal	Each Invoice line allowance (ibg-27) shall have an Invoice line allowance amount (ibt-136).
+ibr-42	Fatal	Each Invoice line allowance (ibg-27) shall have an Invoice line allowance reason (ibt-139) or an Invoice line allowance reason code (ibt-140).
+ibr-43	Fatal	Each Invoice line charge (ibg-28) shall have an Invoice line charge amount (ibt-141).
+ibr-44	Fatal	Each Invoice line charge (ibg-28) shall have an Invoice line charge reason (ibt-144) or an Invoice line charge reason code (ibt-145).
+ibr-49	Fatal	A Payment instruction (ibg-16) shall specify the Payment means type code (ibt-081).
+ibr-52	Fatal	Each Additional supporting document (ibg-24) shall contain a Supporting document reference (ibt-122).
+ibr-53	Fatal	If the TAX accounting currency code (ibt-006) is present, then the Invoice total TAX amount in accounting currency (ibt-111) shall be provided.
+ibr-54	Fatal	Each Item attribute (ibg-32) shall contain an Item attribute name (ibt-160) and an Item attribute value (ibt-161).
+ibr-55	Fatal	Each Preceding Invoice reference (ibg-03) shall contain a Preceding Invoice reference (ibt-025).
+ibr-56	Fatal	Each Seller tax representative party (ibg-11) shall have a Seller tax representative TAX identifier (ibt-063).
+ibr-57	Fatal	Each Deliver to address (ibg-15) shall contain a Deliver to country code (ibt-080).
+ibr-62	Fatal	The Seller electronic address (ibt-034) shall have a Scheme identifier.
+ibr-63	Fatal	The Buyer electronic address (ibt-049) shall have a Scheme identifier.
+ibr-64	Fatal	The Item standard identifier (ibt-157) shall have a Scheme identifier
+ibr-65	Fatal	The Item classification identifier (ibt-158) shall have a Scheme identifier
+ibr-66	Fatal	The Tax scheme code shall be from list of allowed tax schemes.
+ibr-67	Fatal	Invoice amount due for payment (ibt-115) shall have no more than 2 decimals
+ibr-co-5	Fatal	Document level allowance reason code (ibt-098) and Document level allowance reason (ibt-097) shall indicate the same type of allowance.
+ibr-co-6	Fatal	Document level charge reason code (ibt-105) and Document level charge reason (ibt-104) shall indicate the same type of charge.
+ibr-co-7	Fatal	When both Invoice line allowance reason code (ibt-140) and Invoice line allowance reason (ibt-139) the definition of the code is normative.
+ibr-co-8	Fatal	When both Invoice line charge reason code (ibt-145) and Invoice line charge reason (ibt-144) the definition of the code is normative.
+ibr-co-10	Fatal	Sum of Invoice line net amount (ibt-106) = ∑ Invoice line net amount (ibt-131).
+ibr-co-11	Fatal	Sum of allowances on document level (ibt-107) = ∑ Document level allowance amount (ibt-092).
+ibr-co-12	Fatal	Sum of charges on document level (ibt-108) = ∑ Document level charge amount (ibt-099).
+ibr-co-13	Fatal	Invoice total amount without TAX (ibt-0109) = ∑ Invoice line net amount (ibt-131) - Sum of allowances on document level (ibt-107) + Sum of charges on document level (ibt-108).
+ibr-co-14	Fatal	Invoice total VAT amount (BT-110) = Σ VAT category tax amount (BT-117)
+ibr-co-15	Fatal	Invoice total amount with TAX (ibt-112) = Invoice total amount without TAX (ibt-109) + Invoice total TAX amount (ibt-110).
+ibr-co-16	Fatal	Amount due for payment (ibt-115) = Invoice total amount with TAX (ibt-112) -Paid amount (ibt-113) + Rounding amount (ibt-114).
+ibr-co-19	Fatal	If Invoicing period (ibg-14) is used, the Invoicing period start date (ibt-73) or the Invoicing period end date (ibt-74) shall be filled, or both.
+ibr-co-20	Fatal	If Invoice line period (ibg-26) is used, the Invoice line period start date (ibt-134) or the Invoice line period end date (ibt-135) shall be filled, or both.
+ibr-co-21	Fatal	Each Document level allowance (ibg-20) shall contain a Document level allowance reason (ibt-097) or a Document level allowance reason code (ibt-098), or both.
+ibr-co-22	Fatal	Each Document level charge (ibg-21) shall contain a Document level charge reason (ibt-104) or a Document level charge reason code (ibt-105), or both.
+ibr-co-24	Fatal	Each Invoice line charge (ibg-28) shall contain an Invoice line charge reason (ibt-144) or an Invoice line charge reason code (ibt-145), or both.
+ibr-co-25	Fatal	In case the Amount due for payment (ibt-115) is positive, either the Payment due date (ibt-009) or the Payment terms (ibt-020) shall be present.
+ibr-co-26	Fatal	In order for the buyer to automatically identify a supplier, the Seller identifier (ibt-029), the Seller legal registration identifier (ibt-030) and/or the Seller TAX identifier (ibt-031) shall be present.
+ibr-cl-01	Fatal	The document type code MUST be coded by the invoice and credit note related code lists of UNTDID 1001.
+ibr-cl-03	Fatal	currencyID MUST be coded using ISO code list 4217 alpha-3
+ibr-cl-04	Fatal	Invoice currency code MUST be coded using ISO code list 4217 alpha-3
+ibr-cl-05	Fatal	Tax currency code MUST be coded using ISO code list 4217 alpha-3
+ibr-cl-07	Fatal	Object identifier identification scheme identifier MUST be coded using a restriction of UNTDID 1153.
+ibr-cl-10	Fatal	Any identifier identification scheme identifier MUST be coded using one of the ISO 6523 ICD list.
+ibr-cl-11	Fatal	Any registration identifier identification scheme identifier MUST be coded using one of the ISO 6523 ICD list.
+ibr-cl-13	Fatal	Item classification identifier identification scheme identifier MUST be coded using one of the UNTDID 7143 list.
+ibr-cl-14	Fatal	Country codes in an invoice MUST be coded using ISO code list 3166-1
+ibr-cl-15	Fatal	Origin country codes in an invoice MUST be coded using ISO code list 3166-1
+ibr-cl-16	Fatal	Payment means in an invoice MUST be coded using extended UNCL4461 code list
+ibr-cl-19	Fatal	Coded allowance reasons MUST belong to the UNCL 5189 code list
+ibr-cl-20	Fatal	Coded charge reasons MUST belong to the UNCL 7161 code list
+ibr-cl-21	Fatal	Item standard identifier scheme identifier MUST belong to the ISO 6523 ICD code list
+ibr-cl-23	Fatal	Unit code MUST be coded according to the UN/ECE Recommendation 20 with Rec 21 extension
+ibr-cl-24	Fatal	For Mime code in attribute use restricted set of MIMEMediaType.
+ibr-cl-25	Fatal	Endpoint identifier scheme identifier MUST belong to the CEF EAS code list
+ibr-cl-26	Fatal	Delivery location identifier scheme identifier MUST belong to the ISO 6523 ICD code list
+PEPPOL-EN16931-CL001	Fatal	Mime code must be according to subset of IANA code list.
+PEPPOL-EN16931-CL002	Fatal	Reason code MUST be according to subset of UNCL 5189 D.16B.
+PEPPOL-EN16931-CL003	Fatal	Reason code MUST be according to UNCL 7161 D.16B.
+PEPPOL-EN16931-CL006	Fatal	Invoice period description code must be according to UNCL 2005 D.16B.
+PEPPOL-EN16931-CL007	Fatal	Currency code must be according to ISO 4217:2005

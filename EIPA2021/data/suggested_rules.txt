@@ -1,0 +1,109 @@
+ID	Category	CommonRules	JapanImplementation
+ibr-S-01	Tax calculations	An Invoice that contains an Invoice line (ibg-25), a Document level allowance (ibg-20) or a Document level charge (ibg-21) where the VAT category code (ibt-151, ibt-95 or ibt-102) is “Standard rated” shall contain in the VAT breakdown (ibg-23) at least one VAT category code (ibt-118) equal with "Standard rated".	
+ibr-S-02	Tax calculations	An Invoice that contains an Invoice line (ibg-25) where the Invoiced item VAT category code (ibt-151) is “Standard rated” shall contain the Seller VAT Identifier (ibt-31), the Seller tax registration identifier (ibt-32) and/or the Seller tax representative VAT identifier (ibt-63).	
+ibr-S-03	Tax calculations	An Invoice that contains a Document level allowance (ibg-20) where the Document level allowance VAT category code (ibt-95) is “Standard rated” shall contain the Seller VAT Identifier (ibt-31), the Seller tax registration identifier (ibt-32) and/or the Seller tax representative VAT identifier (ibt-63).	
+ibr-S-04	Tax calculations	An Invoice that contains a Document level charge (ibg-21) where the Document level charge VAT category code (ibt-102) is “Standard rated” shall contain the Seller VAT Identifier (ibt-31), the Seller tax registration identifier (ibt-32) and/or the Seller tax representative VAT identifier (ibt-63).	
+ibr-S-05	Tax calculations	In an Invoice line (ibg-25) where the Invoiced item VAT category code (ibt-151) is "Standard rated" the Invoiced item VAT rate (ibt-152) shall be greater than zero.  	
+ibr-S-06	Tax calculations	In a Document level allowance (ibg-20) where the Document level allowance VAT category code (ibt-95) is "Standard rated" the Document level allowance VAT rate (ibt-96) shall be greater than zero.	
+ibr-S-07	Tax calculations	In a Document level charge (ibg-21) where the Document level charge VAT category code (ibt-102) is "Standard rated" the Document level charge VAT rate (ibt-103) shall be greater than zero. 	
+ibr-S-08	Tax calculations	For each different value of VAT category rate (ibt-119) where the VAT category code (ibt-118) is "Standard rated", the tax category taxable amount (ibt-116) in a VAT breakdown (ibg-23) shall equal the sum of Invoice line net amounts (ibt-131) plus the sum of document level charge amounts (ibt-99) minus the sum of document level allowance amounts (ibt-92) where the VAT category code (ibt-151, ibt-102, ibt-95) is “Standard rated” and the VAT rate (ibt-152, ibt-103, ibt-96) equals the VAT category rate (ibt-119).	
+ibr-S-09	Tax calculations	The VAT category tax amount (ibt-117) in a VAT breakdown (ibg-23) where VAT category code (ibt-118) is "Standard rated" shall equal the tax category taxable amount (ibt-116) multiplied by the VAT category rate (ibt-119).	
+ibr-S-10	Tax calculations	A VAT breakdown (ibg-23) with VAT Category code (ibt-118) "Standard rate" shall not have a VAT exemption reason code (ibt-121) or VAT exemption reason text (ibt-120).  	
+PEPPOL-COMMON-R040	Data value formats	GLN must have a valid format according to GS1 rules.	
+PEPPOL-COMMON-R041	Data value formats	Norwegian organization number MUST be stated in the correct format.	
+PEPPOL-COMMON-R042	Data value formats	Danish organization number (CVR) MUST be stated in the correct format.	
+PEPPOL-EN16931-CL001	Data value formats	Mime code must be according to subset of IANA code list.	
+PEPPOL-EN16931-CL002	Data value formats	Reason code MUST be according to subset of UNCL 5189 D.16B.	
+PEPPOL-EN16931-CL003	Data value formats	Reason code MUST be according to UNCL 7161 D.16B.	
+PEPPOL-EN16931-CL006	Data value formats	Invoice period description code must be according to UNCL 2005 D.16B.	
+PEPPOL-EN16931-CL007	Data value formats	Currency code must be according to ISO 4217:2005	
+PEPPOL-EN16931-CL008	Data value formats	Electronic address identifier scheme must be from the code list "Electronic Address Identifier Scheme"	
+PEPPOL-EN16931-F001	Data value formats	A date MUST be formatted YYYY-MM-DD.	
+PEPPOL-EN16931-P0100	Data value formats	Invoice type code MUST be set according to the profile.	
+PEPPOL-EN16931-P0101	Data value formats	Credit note type code MUST be set according to the profile.	
+PEPPOL-EN16931-R001	Data value formats	Business process MUST be provided.	
+PEPPOL-EN16931-R002	Data value formats	No more than one note is allowed on document level.	
+PEPPOL-EN16931-R003	Data value formats	A buyer reference or purchase order reference MUST be provided.	
+PEPPOL-EN16931-R004	Data value formats	Specification identifier MUST have the value 'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0'.	
+PEPPOL-EN16931-R005	Data value formats	VAT accounting currency code MUST be different from invoice currency code when provided.	
+PEPPOL-EN16931-R006	Data value formats	Only one invoiced object is allowed on document level	
+PEPPOL-EN16931-R007	Data value formats	Business process MUST be in the format 'urn:fdc:peppol.eu:2017:poacc:billing:NN:1.0' where NN indicates the process number.	
+PEPPOL-EN16931-R008	Data value formats	Document MUST not contain empty elements.	
+PEPPOL-EN16931-R010	Data value formats	Buyer electronic address MUST be provided	
+PEPPOL-EN16931-R020	Data value formats	Seller electronic address MUST be provided	
+PEPPOL-EN16931-R040	Data value formats	Allowance/charge amount must equal base amount * percentage/100 if base amount and percentage exists	
+PEPPOL-EN16931-R041	Data value formats	Allowance/charge base amount MUST be provided when allowance/charge percentage is provided.	
+PEPPOL-EN16931-R042	Data value formats	Allowance/charge percentage MUST be provided when allowance/charge base amount is provided.	
+PEPPOL-EN16931-R043	Data value formats	Allowance/charge ChargeIndicator value MUST equal 'true' or 'false'	
+PEPPOL-EN16931-R044	Data value formats	Charge on price level is NOT allowed. Only value 'false' allowed.	
+PEPPOL-EN16931-R046	Data value formats	Item net price MUST equal (Gross price - Allowance amount) when gross price is provided.	
+PEPPOL-EN16931-R051	Data value formats	All currencyID attributes must have the same value as the invoice currency code (BT-5), except for the invoice total VAT amount in accounting currency (BT-111)	
+PEPPOL-EN16931-R053	Data value formats	Only one tax total with tax subtotals MUST be provided.	
+PEPPOL-EN16931-R054	Data value formats	Only one tax total without tax subtotals MUST be provided when tax currency code is provided.	
+PEPPOL-EN16931-R055	Data value formats	Invoice total VAT amount and Invoice total VAT amount in accounting currency MUST have the same operational sign	
+PEPPOL-EN16931-R061	Data value formats	Mandate reference MUST be provided for direct debit.	
+PEPPOL-EN16931-R080	Data value formats	Only one project reference is allowed on document level	
+PEPPOL-EN16931-R100	Data value formats	Only one invoiced object is allowed per line	
+PEPPOL-EN16931-R101	Data value formats	Element Document reference can only be used for Invoice line object	
+PEPPOL-EN16931-R110	Data value formats	Start date of line period MUST be within invoice period.	
+PEPPOL-EN16931-R111	Data value formats	End date of line period MUST be within invoice period.	
+PEPPOL-EN16931-R120	Data value formats	Invoice line net amount MUST equal (Invoiced quantity * (Item net price/item price base quantity) + Sum of invoice line charge amount - sum of invoice line allowance amount	
+PEPPOL-EN16931-R121	Data value formats	Base quantity MUST be a positive number above zero.	
+PEPPOL-EN16931-R130	Data value formats	Unit code of price base quantity MUST be same as invoiced quantity.	
+UBL-CR-001 – UBL-CR-680	Code list rules	UBL-CR-001 to UBL-CR-679 refer to elements that exist in the OASIS UBL Invoice schema, however are not used in PEPPOL BIS Billing 3.0. If one of these elements is used, a warning message will be generated, other than UBL-CR-666 and UBL-CR-673 which are fatal errors. 	
+UBL-CR-666	Code list rules	[UBL-CR-666]-A UBL invoice should not include an AdditonalDocumentReference simultaneously referring to an Invoice Object Identifier and an Attachment.	
+UBL-CR-673	Code list rules	[UBL-CR-673]-A UBL invoice should not include an AdditionalDocumentReference simultaneously referring an Invoice Object Identifier and an Document Description	
+UBL-DT-01	Data type rules	[UBL-DT-01]-Amounts shall be decimal up to zero fraction digits	
+UBL-DT-02 to 05, UBL-DT-08 to 26	Data type rules	These rules will apply for the A-NZ extension. Refer to EN16931 model bound to UBL rules for details. 	
+UBL-DT-06	Data type rules	[UBL-DT-06]-Binary object elements shall contain the mime code attribute	
+UBL-DT-07	Data type rules	[UBL-DT-07]-Binary object elements shall contain the file name attribute	
+UBL-SR-01	UBL syntax rules	Contract identifier shall occur maximum once.	
+UBL-SR-02	UBL syntax rules	Receive advice identifier shall occur maximum once	
+UBL-SR-03	UBL syntax rules	Despatch advice identifier shall occur maximum once	
+UBL-SR-04	UBL syntax rules	Invoice object identifier shall occur maximum once	
+UBL-SR-05	UBL syntax rules	Payment terms shall occur maximum once	
+UBL-SR-06	UBL syntax rules	Preceding invoice reference shall occur maximum once	
+UBL-SR-07	UBL syntax rules	If there is a preceding invoice reference, the preceding invoice number shall be present	
+UBL-SR-08	UBL syntax rules	Invoice period shall occur maximum once	
+UBL-SR-09	UBL syntax rules	Seller name shall occur maximum once	
+UBL-SR-10	UBL syntax rules	Seller trader name shall occur maximum once	
+UBL-SR-11	UBL syntax rules	Seller legal registration identifier shall occur maximum once	
+UBL-SR-12	UBL syntax rules	[UBL-SR-12]-Seller VAT identifier shall occur maximum once	
+UBL-SR-13	UBL syntax rules	[UBL-SR-13]-Seller tax registration shall occur maximum once	
+UBL-SR-14	UBL syntax rules	Seller additional legal information shall occur maximum once	
+UBL-SR-15	UBL syntax rules	Buyer name shall occur maximum once	
+UBL-SR-16	UBL syntax rules	Buyer identifier shall occur maximum once	
+UBL-SR-17	UBL syntax rules	Buyer legal registration identifier shall occur maximum once	
+UBL-SR-18	UBL syntax rules	[UBL-SR-18]-Buyer VAT identifier shall occur maximum once	
+UBL-SR-19	UBL syntax rules	Payee name shall occur maximum once, if the Payee is different from the Seller	
+UBL-SR-20	UBL syntax rules	Payee identifier shall occur maximum once, if the Payee is different from the Seller	
+UBL-SR-21	UBL syntax rules	Payee legal registration identifier shall occur maximum once, if the Payee is different from the Seller	
+UBL-SR-22	UBL syntax rules	Seller tax representative name shall occur maximum once, if the Seller has a tax representative	
+UBL-SR-23	UBL syntax rules	[UBL-SR-23]-Seller tax representative VAT identifier shall occur maximum once, if the Seller has a tax representative	
+UBL-SR-24	UBL syntax rules	Deliver to information shall occur maximum once	
+UBL-SR-25	UBL syntax rules	Deliver to party name shall occur maximum once	
+UBL-SR-26	UBL syntax rules	Payment reference shall occur maximum once	
+UBL-SR-27	UBL syntax rules	Payment means text shall occur maximum once	
+UBL-SR-28	UBL syntax rules	Mandate reference identifier shall occur maximum once	
+UBL-SR-29	UBL syntax rules	Bank creditor reference shall occur maximum once	
+UBL-SR-30	UBL syntax rules	Document level allowance reason shall occur maximum once	
+UBL-SR-31	UBL syntax rules	Document level charge reason shall occur maximum once	
+UBL-SR-32	UBL syntax rules	[UBL-SR-32]-VAT exemption reason text shall occur maximum once	
+UBL-SR-33	UBL syntax rules	UBL-SR-33 to UBL-SR-37 apply for the A-NZ extension. Refer to EN16931 model bound to UBL rules for details. 	
+UBL-SR-34	UBL syntax rules	Invoice line note shall occur maximum once	
+UBL-SR-35	UBL syntax rules	Referenced purchase order line identifier shall occur maximum once	
+UBL-SR-36	UBL syntax rules	Invoice line period shall occur maximum once	
+UBL-SR-37	UBL syntax rules	Item price discount shall occur maximum once	
+UBL-SR-38	UBL syntax rules	[UBL-SR-38]-Invoiced item VAT exemption reason text shall occur maximum once	
+UBL-SR-39	UBL syntax rules	Project reference shall occur maximum once.	
+UBL-SR-40	UBL syntax rules	Buyer trade name shall occur maximum once	
+UBL-SR-41	UBL syntax rules	N/A	
+UBL-SR-42	UBL syntax rules	Party tax scheme shall occur maximum twice in accounting supplier party	
+UBL-SR-43	UBL syntax rules	Scheme identifier shall only be used for invoiced object (document type code with value 130)	
+UBL-SR-44	UBL syntax rules	Payment ID shall occur maximum once	
+UBL-SR-45	UBL syntax rules	Due Date shall occur maximum once	
+UBL-SR-46	UBL syntax rules	Payment means text shall occur maximum once	
+UBL-SR-47	UBL syntax rules	When there are more than one payment means code, they shall be equal	
+UBL-SR-48	UBL syntax rules	Invoice lines shall have one and only one classified tax category.	
+UBL-SR-49	UBL syntax rules	Value tax point date shall occur maximum once	
+UBL-SR-50	UBL syntax rules	Item description shall occur maximum once	
