@@ -1,0 +1,136 @@
+entryID	g0	s0	g1	s1	entriesType	uniqueID	sourceApplication	language	creationDate	creator	organizationIdentifier	organizationDescription	organizationAddressName	organizationAddressStreet	organizationAddressZipOrPostalCode	organizationAddressCountry	enteredDate	entryOrigin	sourceJournalID	sourceJournalDescription	entryNumber	entryType	phoneNumberDescription	phoneNumber	accountMainID	accountMainDescription	accountType	accountSubDescription	accountSubID	accountSubType	debitCreditCode	amount	amountCurrency	postingDate	postingStatus	xbrlElement	detailComment	identifierCode	identifierDescription	identifierType
+0001-20090430-287-229-1-919		0		0	entries	229-919	PCA会計９V.2-仕訳ﾃﾞｰﾀの受入	ISO693:ja	2012-12-26T17:38:03	pca	1	株式会社PCA商事	株式会社PCA商事	東京都千代田区富士見1-2-21	102-8171	Japan	39679	manual	gj	General	287	standard																																							
+0001-20090430-287-229-1-919	/cor:entityInformation/bus:entityPhoneNumber	0		0																			main	03-1111-1111																																					
+0001-20090430-287-229-1-919	/cor:entityInformation/bus:entityPhoneNumber	1		0																			fax	03-2222-2222																																					
+0001-20090430-287-229-1-919	/cor:entryHeader/cor:entryDetail	3		0																					541	商品仕入高	account				debit	2754292	ISO4217:JPY	2009-04-30	proposed	CostMerchandisePurchaseMerchandiseGross	09年4月1日～09年4月30日分仕入																								
+0001-20090430-287-229-1-919	/cor:entryHeader/cor:entryDetail	3	/cor:account/cor:accountSub	0																								大阪	40	部門																															
+0001-20090430-287-229-1-919	/cor:entryHeader/cor:entryDetail	4		0																					191	仮払消費税等	account				debit	137701	ISO4217:JPY	2009-04-30	tax	SuspenseAccountPaymentConsumptionTaxes																									
+0001-20090430-287-229-1-919	/cor:entryHeader/cor:entryDetail	4	/cor:account/cor:accountSub	0																								大阪	40	部門																															
+0001-20090430-287-229-1-919	/cor:entryHeader/cor:entryDetail	5		0																					312	買掛金	account				credit	2891993	ISO4217:JPY	2009-04-30	proposed	NotesPayableCustomerTradeAccountsPayable	09年4月1日～09年4月30日分仕入	10	鈴木販売㈱	vendor																					
+0001-20090430-287-229-1-919	/cor:entryHeader/cor:entryDetail	5	/cor:account/cor:accountSub	0																								共通部門	0	部門																															
+0001-20090430-287-229-1-919	/cor:entryHeader/cor:entryDetail	6		0																					551	仕入値引戻し高	account				debit	32940	ISO4217:JPY	2009-04-30	proposed	CostMerchandisePurchaseMerchandiseReturnsAllowances	09年4月1日～09年4月30日分仕入																								
+0001-20090430-287-229-1-919	/cor:entryHeader/cor:entryDetail	6	/cor:account/cor:accountSub	0																								大阪	40	部門																															
+0001-20090430-287-229-1-919	/cor:entryHeader/cor:entryDetail	7		0																					191	仮払消費税等	account				debit	1647	ISO4217:JPY	2009-04-30	tax	SuspenseAccountPaymentConsumptionTaxes																									
+0001-20090430-287-229-1-919	/cor:entryHeader/cor:entryDetail	7	/cor:account/cor:accountSub	0																								大阪	40	部門																															
+0001-20090430-287-229-1-919	/cor:entryHeader/cor:entryDetail	8		0																					312	買掛金	account				credit	34587	ISO4217:JPY	2009-04-30	proposed	NotesPayableCustomerTradeAccountsPayable	09年4月1日～09年4月30日分仕入	10	鈴木販売㈱	vendor																					
+0001-20090430-287-229-1-919	/cor:entryHeader/cor:entryDetail	8	/cor:account/cor:accountSub	0																								共通部門	0	部門																															
+0001-20090430-289-231-1-923		0		0	entries	231-923	PCA会計９V.2-仕訳ﾃﾞｰﾀの受入	ISO693:ja	2012-12-26T17:38:03	pca	1	株式会社PCA商事	株式会社PCA商事	東京都千代田区富士見1-2-21	102-8171	Japan	39679	manual	gj	General	289	standard																																							
+0001-20090430-289-231-1-923	/cor:entityInformation/bus:entityPhoneNumber	0		0																			main	03-1111-1111																																					
+0001-20090430-289-231-1-923	/cor:entityInformation/bus:entityPhoneNumber	1		0																			fax	03-2222-2222																																					
+0001-20090430-289-231-1-923	/cor:entryHeader/cor:entryDetail	0		0																					312	買掛金	account				debit	4640751	ISO4217:JPY	2009-04-30	proposed	NotesPayableCustomerTradeAccountsPayable	09年4月30日伝票No124鈴木販売株式会社	10	鈴木販売㈱	vendor																					
+0001-20090430-289-231-1-923	/cor:entryHeader/cor:entryDetail	0	/cor:account/cor:accountSub	0																								共通部門	0	部門																															
+0001-20090430-289-231-1-923	/cor:entryHeader/cor:entryDetail	1		0																					301	支払手形	account				credit	4640751	ISO4217:JPY	2009-04-30	proposed	NotesPayableCustomerTradeAccountsPayable	09年4月30日伝票No124鈴木販売株式会社																								
+0001-20090430-289-231-1-923	/cor:entryHeader/cor:entryDetail	1	/cor:account/cor:accountSub	0																								共通部門	0	部門																															
+0001-20090430-300-240-1-941		0		0	entries	240-941	PCA会計９V.2-仕訳ﾃﾞｰﾀの受入	ISO693:ja	2012-12-26T17:38:03	pca	1	株式会社PCA商事	株式会社PCA商事	東京都千代田区富士見1-2-21	102-8171	Japan	39679	manual	gj	General	300	standard																																							
+0001-20090430-300-240-1-941	/cor:entityInformation/bus:entityPhoneNumber	0		0																			main	03-1111-1111																																					
+0001-20090430-300-240-1-941	/cor:entityInformation/bus:entityPhoneNumber	1		0																			fax	03-2222-2222																																					
+0001-20090430-300-240-1-941	/cor:entryHeader/cor:entryDetail	4		0																					301	支払手形	account				debit	3900829	ISO4217:JPY	2009-04-30	proposed	NotesPayableCustomerTradeAccountsPayable	手形期日落日　鈴木販売																								
+0001-20090430-300-240-1-941	/cor:entryHeader/cor:entryDetail	4	/cor:account/cor:accountSub	0																								共通部門	0	部門																															
+0001-20090430-300-240-1-941	/cor:entryHeader/cor:entryDetail	5		0																					121	当座預金	account				credit	3900829	ISO4217:JPY	2009-04-30	proposed	CheckingAccounts	手形期日落日　鈴木販売																								
+0001-20090430-300-240-1-941	/cor:entryHeader/cor:entryDetail	5	/cor:account/cor:accountSub	0																								共通部門	0	部門																															
+0001-20090430-300-240-1-941	/cor:entryHeader/cor:entryDetail	5	/cor:account/cor:accountSub	2																								みずほ銀行	1	補助科目																															
+0001-20090531-128-465-1-1391		0		0	entries	465-1391	PCA会計９V.2-仕訳ﾃﾞｰﾀの受入	ISO693:ja	2012-12-26T17:38:07	pca	1	株式会社PCA商事	株式会社PCA商事	東京都千代田区富士見1-2-21	102-8171	Japan	39679	manual	gj	General	128	standard																																							
+0001-20090531-128-465-1-1391	/cor:entityInformation/bus:entityPhoneNumber	0		0																			main	03-1111-1111																																					
+0001-20090531-128-465-1-1391	/cor:entityInformation/bus:entityPhoneNumber	1		0																			fax	03-2222-2222																																					
+0001-20090531-128-465-1-1391	/cor:entryHeader/cor:entryDetail	0		0																					541	商品仕入高	account				debit	2886432	ISO4217:JPY	2009-05-31	proposed	CostMerchandisePurchaseMerchandiseGross	09年5月1日～09年5月31日分仕入																								
+0001-20090531-128-465-1-1391	/cor:entryHeader/cor:entryDetail	0	/cor:account/cor:accountSub	0																								大阪	40	部門																															
+0001-20090531-128-465-1-1391	/cor:entryHeader/cor:entryDetail	1		0																					191	仮払消費税等	account				debit	144285	ISO4217:JPY	2009-05-31	tax	SuspenseAccountPaymentConsumptionTaxes																									
+0001-20090531-128-465-1-1391	/cor:entryHeader/cor:entryDetail	1	/cor:account/cor:accountSub	0																								大阪	40	部門																															
+0001-20090531-128-465-1-1391	/cor:entryHeader/cor:entryDetail	2		0																					312	買掛金	account				credit	3030717	ISO4217:JPY	2009-05-31	proposed	NotesPayableCustomerTradeAccountsPayable	09年5月1日～09年5月31日分仕入	10	鈴木販売㈱	vendor																					
+0001-20090531-128-465-1-1391	/cor:entryHeader/cor:entryDetail	2	/cor:account/cor:accountSub	0																								共通部門	0	部門																															
+0001-20090531-128-465-1-1391	/cor:entryHeader/cor:entryDetail	15		0																					551	仕入値引戻し高	account				debit	53376	ISO4217:JPY	2009-05-31	proposed	CostMerchandisePurchaseMerchandiseReturnsAllowances	09年5月1日～09年5月31日分仕入																								
+0001-20090531-128-465-1-1391	/cor:entryHeader/cor:entryDetail	15	/cor:account/cor:accountSub	0																								大阪	40	部門																															
+0001-20090531-128-465-1-1391	/cor:entryHeader/cor:entryDetail	16		0																					191	仮払消費税等	account				debit	2668	ISO4217:JPY	2009-05-31	tax	SuspenseAccountPaymentConsumptionTaxes																									
+0001-20090531-128-465-1-1391	/cor:entryHeader/cor:entryDetail	16	/cor:account/cor:accountSub	0																								大阪	40	部門																															
+0001-20090531-128-465-1-1391	/cor:entryHeader/cor:entryDetail	17		0																					312	買掛金	account				credit	56044	ISO4217:JPY	2009-05-31	proposed	NotesPayableCustomerTradeAccountsPayable	09年5月1日～09年5月31日分仕入	10	鈴木販売㈱	vendor																					
+0001-20090531-128-465-1-1391	/cor:entryHeader/cor:entryDetail	17	/cor:account/cor:accountSub	0																								共通部門	0	部門																															
+0001-20090531-134-471-1-1403		0		0	entries	471-1403	PCA会計９V.2-仕訳ﾃﾞｰﾀの受入	ISO693:ja	2012-12-26T17:38:08	pca	1	株式会社PCA商事	株式会社PCA商事	東京都千代田区富士見1-2-21	102-8171	Japan	39679	manual	gj	General	134	standard																																							
+0001-20090531-134-471-1-1403	/cor:entityInformation/bus:entityPhoneNumber	0		0																			main	03-1111-1111																																					
+0001-20090531-134-471-1-1403	/cor:entityInformation/bus:entityPhoneNumber	1		0																			fax	03-2222-2222																																					
+0001-20090531-134-471-1-1403	/cor:entryHeader/cor:entryDetail	0		0																					312	買掛金	account				debit	2926580	ISO4217:JPY	2009-05-31	proposed	NotesPayableCustomerTradeAccountsPayable	09年5月31日伝票No150鈴木販売株式会社	10	鈴木販売㈱	vendor																					
+0001-20090531-134-471-1-1403	/cor:entryHeader/cor:entryDetail	0	/cor:account/cor:accountSub	0																								共通部門	0	部門																															
+0001-20090531-134-471-1-1403	/cor:entryHeader/cor:entryDetail	1		0																					131	普通預金	account				credit	2926580	ISO4217:JPY	2009-05-31	proposed	OrdinaryDeposit	09年5月31日伝票No150鈴木販売株式会社																								
+0001-20090531-134-471-1-1403	/cor:entryHeader/cor:entryDetail	1	/cor:account/cor:accountSub	0																								共通部門	0	部門																															
+0001-20090531-134-471-1-1403	/cor:entryHeader/cor:entryDetail	1	/cor:account/cor:accountSub	2																								みずほ　本店	20	補助科目																															
+0001-20090531-140-477-1-1415		0		0	entries	477-1415	PCA会計９V.2-仕訳ﾃﾞｰﾀの受入	ISO693:ja	2012-12-26T17:38:08	pca	1	株式会社PCA商事	株式会社PCA商事	東京都千代田区富士見1-2-21	102-8171	Japan	39679	manual	gj	General	140	standard																																							
+0001-20090531-140-477-1-1415	/cor:entityInformation/bus:entityPhoneNumber	0		0																			main	03-1111-1111																																					
+0001-20090531-140-477-1-1415	/cor:entityInformation/bus:entityPhoneNumber	1		0																			fax	03-2222-2222																																					
+0001-20090531-140-477-1-1415	/cor:entryHeader/cor:entryDetail	4		0																					301	支払手形	account				debit	3005608	ISO4217:JPY	2009-05-31	proposed	NotesPayableCustomerTradeAccountsPayable	手形期日落日　鈴木販売																								
+0001-20090531-140-477-1-1415	/cor:entryHeader/cor:entryDetail	4	/cor:account/cor:accountSub	0																								共通部門	0	部門																															
+0001-20090531-140-477-1-1415	/cor:entryHeader/cor:entryDetail	5		0																					121	当座預金	account				credit	3005608	ISO4217:JPY	2009-05-31	proposed	CheckingAccounts	手形期日落日　鈴木販売																								
+0001-20090531-140-477-1-1415	/cor:entryHeader/cor:entryDetail	5	/cor:account/cor:accountSub	0																								共通部門	0	部門																															
+0001-20090531-140-477-1-1415	/cor:entryHeader/cor:entryDetail	5	/cor:account/cor:accountSub	2																								みずほ銀行	1	補助科目																															
+0001-20090630-134-694-1-1849		0		0	entries	694-1849	PCA会計９V.2-仕訳ﾃﾞｰﾀの受入	ISO693:ja	2012-12-26T17:38:12	pca	1	株式会社PCA商事	株式会社PCA商事	東京都千代田区富士見1-2-21	102-8171	Japan	39679	manual	gj	General	134	standard																																							
+0001-20090630-134-694-1-1849	/cor:entityInformation/bus:entityPhoneNumber	0		0																			main	03-1111-1111																																					
+0001-20090630-134-694-1-1849	/cor:entityInformation/bus:entityPhoneNumber	1		0																			fax	03-2222-2222																																					
+0001-20090630-134-694-1-1849	/cor:entryHeader/cor:entryDetail	0		0																					541	商品仕入高	account				debit	2895572	ISO4217:JPY	2009-06-30	proposed	CostMerchandisePurchaseMerchandiseGross	09年6月1日～09年6月30日分仕入																								
+0001-20090630-134-694-1-1849	/cor:entryHeader/cor:entryDetail	0	/cor:account/cor:accountSub	0																								大阪	40	部門																															
+0001-20090630-134-694-1-1849	/cor:entryHeader/cor:entryDetail	1		0																					191	仮払消費税等	account				debit	144768	ISO4217:JPY	2009-06-30	tax	SuspenseAccountPaymentConsumptionTaxes																									
+0001-20090630-134-694-1-1849	/cor:entryHeader/cor:entryDetail	1	/cor:account/cor:accountSub	0																								大阪	40	部門																															
+0001-20090630-134-694-1-1849	/cor:entryHeader/cor:entryDetail	2		0																					312	買掛金	account				credit	3040340	ISO4217:JPY	2009-06-30	proposed	NotesPayableCustomerTradeAccountsPayable	09年6月1日～09年6月30日分仕入	10	鈴木販売㈱	vendor																					
+0001-20090630-134-694-1-1849	/cor:entryHeader/cor:entryDetail	2	/cor:account/cor:accountSub	0																								共通部門	0	部門																															
+0001-20090630-134-694-1-1849	/cor:entryHeader/cor:entryDetail	13		0																					541	商品仕入高	account				debit	332424	ISO4217:JPY	2009-06-30	proposed	CostMerchandisePurchaseMerchandiseGross	09年6月1日～09年6月30日分仕入																								
+0001-20090630-134-694-1-1849	/cor:entryHeader/cor:entryDetail	13	/cor:account/cor:accountSub	0																								大阪	40	部門																															
+0001-20090630-134-694-1-1849	/cor:entryHeader/cor:entryDetail	14		0																					191	仮払消費税等	account				debit	16618	ISO4217:JPY	2009-06-30	tax	SuspenseAccountPaymentConsumptionTaxes																									
+0001-20090630-134-694-1-1849	/cor:entryHeader/cor:entryDetail	14	/cor:account/cor:accountSub	0																								大阪	40	部門																															
+0001-20090630-134-694-1-1849	/cor:entryHeader/cor:entryDetail	15		0																					551	仕入値引戻し高	account				debit	19200	ISO4217:JPY	2009-06-30	proposed	CostMerchandisePurchaseMerchandiseReturnsAllowances	09年6月1日～09年6月30日分仕入																								
+0001-20090630-134-694-1-1849	/cor:entryHeader/cor:entryDetail	15	/cor:account/cor:accountSub	0																								大阪	40	部門																															
+0001-20090630-134-694-1-1849	/cor:entryHeader/cor:entryDetail	16		0																					191	仮払消費税等	account				debit	960	ISO4217:JPY	2009-06-30	tax	SuspenseAccountPaymentConsumptionTaxes																									
+0001-20090630-134-694-1-1849	/cor:entryHeader/cor:entryDetail	16	/cor:account/cor:accountSub	0																								大阪	40	部門																															
+0001-20090630-134-694-1-1849	/cor:entryHeader/cor:entryDetail	17		0																					312	買掛金	account				credit	20160	ISO4217:JPY	2009-06-30	proposed	NotesPayableCustomerTradeAccountsPayable	09年6月1日～09年6月30日分仕入	10	鈴木販売㈱	vendor																					
+0001-20090630-134-694-1-1849	/cor:entryHeader/cor:entryDetail	17	/cor:account/cor:accountSub	0																								共通部門	0	部門																															
+0001-20090630-140-700-1-1861		0		0	entries	700-1861	PCA会計９V.2-仕訳ﾃﾞｰﾀの受入	ISO693:ja	2012-12-26T17:38:12	pca	1	株式会社PCA商事	株式会社PCA商事	東京都千代田区富士見1-2-21	102-8171	Japan	39679	manual	gj	General	140	standard																																							
+0001-20090630-140-700-1-1861	/cor:entityInformation/bus:entityPhoneNumber	0		0																			main	03-1111-1111																																					
+0001-20090630-140-700-1-1861	/cor:entityInformation/bus:entityPhoneNumber	1		0																			fax	03-2222-2222																																					
+0001-20090630-140-700-1-1861	/cor:entryHeader/cor:entryDetail	0		0																					312	買掛金	account				debit	3086761	ISO4217:JPY	2009-06-30	proposed	NotesPayableCustomerTradeAccountsPayable	09年6月30日伝票No165鈴木販売株式会社	10	鈴木販売㈱	vendor																					
+0001-20090630-140-700-1-1861	/cor:entryHeader/cor:entryDetail	0	/cor:account/cor:accountSub	0																								共通部門	0	部門																															
+0001-20090630-140-700-1-1861	/cor:entryHeader/cor:entryDetail	1		0																					301	支払手形	account				credit	3086761	ISO4217:JPY	2009-06-30	proposed	NotesPayableCustomerTradeAccountsPayable	09年6月30日伝票No165鈴木販売株式会社																								
+0001-20090630-140-700-1-1861	/cor:entryHeader/cor:entryDetail	1	/cor:account/cor:accountSub	0																								共通部門	0	部門																															
+0001-20090630-146-706-1-1873		0		0	entries	706-1873	PCA会計９V.2-仕訳ﾃﾞｰﾀの受入	ISO693:ja	2012-12-26T17:38:12	pca	1	株式会社PCA商事	株式会社PCA商事	東京都千代田区富士見1-2-21	102-8171	Japan	39679	manual	gj	General	146	standard																																							
+0001-20090630-146-706-1-1873	/cor:entityInformation/bus:entityPhoneNumber	0		0																			main	03-1111-1111																																					
+0001-20090630-146-706-1-1873	/cor:entityInformation/bus:entityPhoneNumber	1		0																			fax	03-2222-2222																																					
+0001-20090630-146-706-1-1873	/cor:entryHeader/cor:entryDetail	4		0																					301	支払手形	account				debit	3129144	ISO4217:JPY	2009-06-30	proposed	NotesPayableCustomerTradeAccountsPayable	手形期日落日　鈴木販売																								
+0001-20090630-146-706-1-1873	/cor:entryHeader/cor:entryDetail	4	/cor:account/cor:accountSub	0																								共通部門	0	部門																															
+0001-20090630-146-706-1-1873	/cor:entryHeader/cor:entryDetail	5		0																					121	当座預金	account				credit	3129144	ISO4217:JPY	2009-06-30	proposed	CheckingAccounts	手形期日落日　鈴木販売																								
+0001-20090630-146-706-1-1873	/cor:entryHeader/cor:entryDetail	5	/cor:account/cor:accountSub	0																								共通部門	0	部門																															
+0001-20090630-146-706-1-1873	/cor:entryHeader/cor:entryDetail	5	/cor:account/cor:accountSub	2																								みずほ銀行	1	補助科目																															
+0001-20090731-127-927-1-2315		0		0	entries	927-2315	PCA会計９V.2-仕訳ﾃﾞｰﾀの受入	ISO693:ja	2012-12-26T17:38:17	pca	1	株式会社PCA商事	株式会社PCA商事	東京都千代田区富士見1-2-21	102-8171	Japan	39679	manual	gj	General	127	standard																																							
+0001-20090731-127-927-1-2315	/cor:entityInformation/bus:entityPhoneNumber	0		0																			main	03-1111-1111																																					
+0001-20090731-127-927-1-2315	/cor:entityInformation/bus:entityPhoneNumber	1		0																			fax	03-2222-2222																																					
+0001-20090731-127-927-1-2315	/cor:entryHeader/cor:entryDetail	6		0																					541	商品仕入高	account				debit	2998680	ISO4217:JPY	2009-07-31	proposed	CostMerchandisePurchaseMerchandiseGross	09年7月1日～09年7月31日分仕入																								
+0001-20090731-127-927-1-2315	/cor:entryHeader/cor:entryDetail	6	/cor:account/cor:accountSub	0																								大阪	40	部門																															
+0001-20090731-127-927-1-2315	/cor:entryHeader/cor:entryDetail	7		0																					191	仮払消費税等	account				debit	149923	ISO4217:JPY	2009-07-31	tax	SuspenseAccountPaymentConsumptionTaxes																									
+0001-20090731-127-927-1-2315	/cor:entryHeader/cor:entryDetail	7	/cor:account/cor:accountSub	0																								大阪	40	部門																															
+0001-20090731-127-927-1-2315	/cor:entryHeader/cor:entryDetail	8		0																					312	買掛金	account				credit	3148603	ISO4217:JPY	2009-07-31	proposed	NotesPayableCustomerTradeAccountsPayable	09年7月1日～09年7月31日分仕入	10	鈴木販売㈱	vendor																					
+0001-20090731-127-927-1-2315	/cor:entryHeader/cor:entryDetail	8	/cor:account/cor:accountSub	0																								共通部門	0	部門																															
+0001-20090731-133-933-1-2327		0		0	entries	933-2327	PCA会計９V.2-仕訳ﾃﾞｰﾀの受入	ISO693:ja	2012-12-26T17:38:17	pca	1	株式会社PCA商事	株式会社PCA商事	東京都千代田区富士見1-2-21	102-8171	Japan	39679	manual	gj	General	133	standard																																							
+0001-20090731-133-933-1-2327	/cor:entityInformation/bus:entityPhoneNumber	0		0																			main	03-1111-1111																																					
+0001-20090731-133-933-1-2327	/cor:entityInformation/bus:entityPhoneNumber	1		0																			fax	03-2222-2222																																					
+0001-20090731-133-933-1-2327	/cor:entryHeader/cor:entryDetail	0		0																					312	買掛金	account				debit	3060500	ISO4217:JPY	2009-07-31	proposed	NotesPayableCustomerTradeAccountsPayable	09年7月31日伝票No181鈴木販売株式会社	10	鈴木販売㈱	vendor																					
+0001-20090731-133-933-1-2327	/cor:entryHeader/cor:entryDetail	0	/cor:account/cor:accountSub	0																								共通部門	0	部門																															
+0001-20090731-133-933-1-2327	/cor:entryHeader/cor:entryDetail	1		0																					301	支払手形	account				credit	3060500	ISO4217:JPY	2009-07-31	proposed	NotesPayableCustomerTradeAccountsPayable	09年7月31日伝票No181鈴木販売株式会社																								
+0001-20090731-133-933-1-2327	/cor:entryHeader/cor:entryDetail	1	/cor:account/cor:accountSub	0																								共通部門	0	部門																															
+0001-20090731-140-939-1-2339		0		0	entries	939-2339	PCA会計９V.2-仕訳ﾃﾞｰﾀの受入	ISO693:ja	2012-12-26T17:38:17	pca	1	株式会社PCA商事	株式会社PCA商事	東京都千代田区富士見1-2-21	102-8171	Japan	39679	manual	gj	General	140	standard																																							
+0001-20090731-140-939-1-2339	/cor:entityInformation/bus:entityPhoneNumber	0		0																			main	03-1111-1111																																					
+0001-20090731-140-939-1-2339	/cor:entityInformation/bus:entityPhoneNumber	1		0																			fax	03-2222-2222																																					
+0001-20090731-140-939-1-2339	/cor:entryHeader/cor:entryDetail	4		0																					301	支払手形	account				debit	4640751	ISO4217:JPY	2009-07-31	proposed	NotesPayableCustomerTradeAccountsPayable	手形期日落日　鈴木販売																								
+0001-20090731-140-939-1-2339	/cor:entryHeader/cor:entryDetail	4	/cor:account/cor:accountSub	0																								共通部門	0	部門																															
+0001-20090731-140-939-1-2339	/cor:entryHeader/cor:entryDetail	5		0																					121	当座預金	account				credit	4640751	ISO4217:JPY	2009-07-31	proposed	CheckingAccounts	手形期日落日　鈴木販売																								
+0001-20090731-140-939-1-2339	/cor:entryHeader/cor:entryDetail	5	/cor:account/cor:accountSub	0																								共通部門	0	部門																															
+0001-20090731-140-939-1-2339	/cor:entryHeader/cor:entryDetail	5	/cor:account/cor:accountSub	2																								みずほ銀行	1	補助科目																															
+0001-20090831-124-1157-1-2775		0		0	entries	1157-2775	PCA会計９V.2-仕訳ﾃﾞｰﾀの受入	ISO693:ja	2012-12-26T17:38:22	pca	1	株式会社PCA商事	株式会社PCA商事	東京都千代田区富士見1-2-21	102-8171	Japan	39679	manual	gj	General	124	standard																																							
+0001-20090831-124-1157-1-2775	/cor:entityInformation/bus:entityPhoneNumber	0		0																			main	03-1111-1111																																					
+0001-20090831-124-1157-1-2775	/cor:entityInformation/bus:entityPhoneNumber	1		0																			fax	03-2222-2222																																					
+0001-20090831-124-1157-1-2775	/cor:entryHeader/cor:entryDetail	6		0																					541	商品仕入高	account				debit	2998680	ISO4217:JPY	2009-08-31	proposed	CostMerchandisePurchaseMerchandiseGross	09年8月1日～09年8月31日分仕入																								
+0001-20090831-124-1157-1-2775	/cor:entryHeader/cor:entryDetail	6	/cor:account/cor:accountSub	0																								大阪	40	部門																															
+0001-20090831-124-1157-1-2775	/cor:entryHeader/cor:entryDetail	7		0																					191	仮払消費税等	account				debit	149923	ISO4217:JPY	2009-08-31	tax	SuspenseAccountPaymentConsumptionTaxes																									
+0001-20090831-124-1157-1-2775	/cor:entryHeader/cor:entryDetail	7	/cor:account/cor:accountSub	0																								大阪	40	部門																															
+0001-20090831-124-1157-1-2775	/cor:entryHeader/cor:entryDetail	8		0																					312	買掛金	account				credit	3148603	ISO4217:JPY	2009-08-31	proposed	NotesPayableCustomerTradeAccountsPayable	09年8月1日～09年8月31日分仕入	10	鈴木販売㈱	vendor																					
+0001-20090831-124-1157-1-2775	/cor:entryHeader/cor:entryDetail	8	/cor:account/cor:accountSub	0																								共通部門	0	部門																															
+0001-20090831-130-1163-1-2787		0		0	entries	1163-2787	PCA会計９V.2-仕訳ﾃﾞｰﾀの受入	ISO693:ja	2012-12-26T17:38:22	pca	1	株式会社PCA商事	株式会社PCA商事	東京都千代田区富士見1-2-21	102-8171	Japan	39679	manual	gj	General	130	standard																																							
+0001-20090831-130-1163-1-2787	/cor:entityInformation/bus:entityPhoneNumber	0		0																			main	03-1111-1111																																					
+0001-20090831-130-1163-1-2787	/cor:entityInformation/bus:entityPhoneNumber	1		0																			fax	03-2222-2222																																					
+0001-20090831-130-1163-1-2787	/cor:entryHeader/cor:entryDetail	0		0																					312	買掛金	account				debit	3148603	ISO4217:JPY	2009-08-31	proposed	NotesPayableCustomerTradeAccountsPayable	09年8月31日伝票No214鈴木販売株式会社	10	鈴木販売㈱	vendor																					
+0001-20090831-130-1163-1-2787	/cor:entryHeader/cor:entryDetail	0	/cor:account/cor:accountSub	0																								共通部門	0	部門																															
+0001-20090831-130-1163-1-2787	/cor:entryHeader/cor:entryDetail	1		0																					301	支払手形	account				credit	3148603	ISO4217:JPY	2009-08-31	proposed	NotesPayableCustomerTradeAccountsPayable	09年8月31日伝票No214鈴木販売株式会社																								
+0001-20090831-130-1163-1-2787	/cor:entryHeader/cor:entryDetail	1	/cor:account/cor:accountSub	0																								共通部門	0	部門																															
