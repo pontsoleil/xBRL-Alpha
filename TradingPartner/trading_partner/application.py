@@ -5,6 +5,7 @@ from tkinter import ttk
 from tkinter import messagebox
 from tkinter import filedialog
 import re
+# from xmlrpc.server import _DispatchArity1
 import mojimoji
 
 from . import views as v
@@ -192,6 +193,32 @@ class Application(tk.Tk):
         correctedEntry[identifier][postingDate][accountMainID] = {'debit':0,'credit':0}
       return correctedEntry
     
+    def _switch_correctedEntry(correctedEntry,correctedList,n):
+      data = correctedList[n]
+      postingDate = data['postingDate']
+      accountMainID = data['accountMainID']
+      debitCreditCode = data['debitCreditCode']
+      identifier = f'{data["identifierType"]}_{data["identifierCode"]}'
+      correctedData = {}
+      for k,v in data.items():
+        correctedData[k] = v
+      if 'debit'==debitCreditCode:
+        debitCreditCode = 'credit'
+        correctedData['debitCreditCode'] = debitCreditCode
+        correctedData['accountMainID'] = f'*{accountMainID}'
+      elif 'credit'==debitCreditCode:
+        debitCreditCode = 'debit'
+        correctedData['debitCreditCode'] = debitCreditCode
+        correctedData['accountMainID'] = f'*{accountMainID}'
+      correctedList[n]['accountMainID'] = f'x{accountMainID}'
+      correctedList.append(correctedData)
+      if ''==correctedData['amount']:
+        amount = None
+      else:
+        amount = int(correctedData['amount'])
+      correctedEntry = _check_correctedEntry(correctedEntry,identifier,postingDate,accountMainID)
+      correctedEntry[identifier][postingDate][accountMainID][debitCreditCode] = amount
+
     def _setDrCrRecord(record,entry):
       if not record:
         record = {}
@@ -208,15 +235,16 @@ class Application(tk.Tk):
         if entry['detailComment']:
           record['detailComment'] = entry['detailComment']
       return record
-    # def markRecord(data,accountMainID,mark):
-    #   if data['accountMainID']:
-    #     data['accountMainID'] += mark
-    #   if 'debit'==data['debitCreditCode']:
-    #     data['debitAccountDescription'] = f'{mark}{data["accountMainDescription"]}'
-    #   elif 'credit'==data['debitCreditCode']:
-    #     data['creditAccountDescription'] = f'{mark}{data["accountMainDescription"]}'
-    #   data['accountMainID'] = f'{mark}{accountMainID}'
-    #   return data
+
+    def markRecord(data,accountMainID,mark):
+      if data['accountMainID']:
+        data['accountMainID'] += mark
+      if 'debit'==data['debitCreditCode']:
+        data['debitAccountDescription'] = f'{mark}{data["accountMainDescription"]}'
+      elif 'credit'==data['debitCreditCode']:
+        data['creditAccountDescription'] = f'{mark}{data["accountMainDescription"]}'
+      data['accountMainID'] = f'{mark}{accountMainID}'
+      return data
 
     def _parse_rows(rows):
       rows = sorted(rows,key=lambda x:f"{x['enteredDate']} {x['entryID']}")
@@ -278,16 +306,16 @@ class Application(tk.Tk):
       # '741':'支払手数料',
       # '821':'支払利息',
       tradingAccounts = ['111','121','131','150','152','191','301','312','335','511','521','523','541','551','733','741','821']
-      purchaseAccounts = ['541','551']    # '541':'商品仕入高','551':'仕入値引戻し高',
-      payableAccount = '312'              # '312':'買掛金',
-      salesAccounts = ['511','521','523'] # '511':'売上高','521':'売上値引戻り高','523':'売上割戻し高',
-      receivableAccount = '152'           # '152':'売掛金',
+      payableAccount = '312'                          # '312':'買掛金',
+      purchaseAccounts = ['312','541','551','191']    # '312':'買掛金','541':'商品仕入高','551':'仕入値引戻し高','191':'仮払消費税等',
+      receivableAccount = '152'                       # '152':'売掛金',
+      salesAccounts = ['152','511','521','523','335'] # '152':'売掛金',,'511':'売上高','521':'売上値引戻り高','523':'売上割戻し高','335':'仮受消費税等',
       otherAccounts = ['143','148','183','213','216','248','321','322','326','327','328','341','531','561','711','712','713','721','723','724','726','727','728','731','732','734','736','737','738','739','740','742','744','746','747','752','753','754','763','791']
       #
-      repurchaseAccount = '551'           # '551':'仕入値引戻し高',
-      repurchaseRelated = ['312','191']   # '312':'買掛金','191':'仮払消費税等',
-      salesreturnAccounts = ['521','523'] # '521':'売上値引戻り高','523':'売上割戻し高',
-      salesreturnRelated = ['152','335']  # '152':'売掛金','335':'仮受消費税等',
+      repurchaseAccounts = ['551']                   # '551':'仕入値引戻し高',
+      repurchaseRelated = ['312','551','191']        # '312':'買掛金','551':'仕入値引戻し高','191':'仮払消費税等',
+      salesreturnAccounts = ['521','523']            # '521':'売上値引戻り高','523':'売上割戻し高',
+      salesreturnRelated = ['152','521','523','335'] # '152':'売掛金','521':'売上値引戻り高','523':'売上割戻し高','335':'仮受消費税等',
       #
       cashAccounts = ['111','121','131','150','152','191','301','312','335','741','821']
       postingDate = ''
@@ -362,14 +390,13 @@ class Application(tk.Tk):
                  (accountMainID and not accountMainID in otherAccounts):
               data['identifierType'] = identifierType
               data['identifierCode'] = identifierCode
+          #
           # append corrected data
           correctedList.append(data)
           n = len(correctedList)-1
           # if DEBUG:
           #   print(f's0:{data["s0"]} s1:{data["s1"]} accountMainID:{data["accountMainID"]}\t{data["debitCreditCode"]}\t{data["amount"]}\t{data["identifierType"]} {data["identifierCode"]}\tjournal_id:{journal_id}')
           prev_journal_id = journal_id
-          accountMainID = data['accountMainID']
-          postingDate = data['postingDate']
           if data['identifierType']:
             identifier = f"{data['identifierType']}_{data['identifierCode']}"
           else:
@@ -401,130 +428,119 @@ class Application(tk.Tk):
               data0['identifierCode'] = identifierCode
               data1['identifierType'] = identifierType
               data1['identifierCode'] = identifierCode
-          # check repurchase or salesreturn
+        # n = len(correctedList)-1
+        #
+        # check repurchase or salesreturn
+        #
+        # n = 0
+        # for data in correctedList:
+        # accountMainID = data['accountMainID']
+        # postingDate = data['postingDate']
+        # if data['identifierType']:
+        #   identifier = f"{data['identifierType']}_{data['identifierCode']}"
+        # else:
+        #   identifier = ''
+        # prev_identifier = identifier
+        # if n > countAccountSub+2:
+        #   i = n - 1
+        #   while not correctedList[i]['amount']:
+        #     i -= 1
+        #   data1 = correctedList[i]
+        #   i -= 1
+        #   while not correctedList[i]['amount']:
+        #     i -= 1
+        #   data0 = correctedList[i]
+        if n > 2:
+          data_2 = correctedList[n-2]
+          accountMainID_2 = data_2['accountMainID']
+          amount_2 = data_2['amount']
+          DrCr_2 = data_2['debitCreditCode']
+          data_1 = correctedList[n-1]
+          accountMainID_1 = data_1['accountMainID']
+          amount_1 = data_1['amount']
+          DrCr_1 = data_1['debitCreditCode']
           data = correctedList[n]
-          # postingDate = data['postingDate']
-          if not accountMainID in repurchaseRelated:  # '312':'買掛金','191':'仮払消費税等',
-            repurchase = False
-          if not accountMainID in salesreturnRelated: # '152':'売掛金','335':'仮受消費税等',
-            salesreturn = False
-          #
-          # salesreturn
-          #
-          if accountMainID in salesreturnAccounts or salesreturn: # '521':'売上値引戻り高','523':'売上割戻し高',
-            salesreturn = True
-            debitCreditCode = data['debitCreditCode']
-            accountMainID = data["accountMainID"]
-            correctedData = {}
-            for k,v in data.items():
-              correctedData[k] = v
-            if 'debit'==debitCreditCode:
-              debitCreditCode = 'credit'
-              correctedData['debitCreditCode'] = debitCreditCode
-              correctedData['accountMainID'] = f'*{accountMainID}'
-            elif 'credit'==debitCreditCode:
-              debitCreditCode = 'debit'
-              correctedData['debitCreditCode'] = debitCreditCode
-              correctedData['accountMainID'] = f'*{accountMainID}'
-            correctedList[n]['accountMainID'] = f'x{data["accountMainID"]}'
-            if ''==correctedData['amount']:
-              amount = None
-            else:
-              amount = int(correctedData['amount'])
-            correctedEntry = _check_correctedEntry(correctedEntry,identifier,postingDate,accountMainID)
-            correctedEntry[identifier][postingDate][accountMainID][correctedData['debitCreditCode']] = amount
-            correctedList.append(correctedData)
-            n = len(correctedList)-1
-            # if DEBUG:
-            #   print(f'data  s0:{data["s0"]} s1:{data["s1"]} accountMainID:{data["accountMainID"]}\t{data["debitCreditCode"]}\t{data["amount"]}\t{data["identifierType"]} {data["identifierCode"]}')
-            #   print(f'crrct s0:{correctedData["s0"]} s1:{correctedData["s1"]} accountMainID:{correctedData["accountMainID"]}\t{correctedData["debitCreditCode"]}\t{correctedData["amount"]}\t{correctedData["identifierType"]} {correctedData["identifierCode"]}')
-            if accountMainID in salesreturnAccounts: # '521':'売上値引戻り高','523':'売上割戻し高',
-              i = n - 1
-              while not correctedList[i]['amount']:
-                i -= 1
-              data1 = correctedList[i]
-              j = i - 1
-              while not correctedList[j]['amount']:
-                j -= 1
-              data0 = correctedList[j]
-              debitCreditCode0 = data0['debitCreditCode']
-              accountMainID0 = data0["accountMainID"]
-              correctedData0 = {}
-              for k,v in data0.items():
-                correctedData0[k] = v
-              if 'debit'==debitCreditCode0:
-                debitCreditCode0 = 'credit'
-                correctedData0['debitCreditCode'] = debitCreditCode0
-                correctedData0['accountMainID'] = f'*{accountMainID0}'
-              elif 'credit'==debitCreditCode0:
-                debitCreditCode0 = 'debit'
-                correctedData0['debitCreditCode'] = debitCreditCode0
-                correctedData0['accountMainID'] = f'*{accountMainID0}'
-              correctedList[j]['accountMainID'] = f'x{data0["accountMainID"]}'
-              if ''==correctedData0['amount']:
-                amount0 = None
-              else:
-                amount0 = int(correctedData0['amount'])
-              correctedEntry = _check_correctedEntry(correctedEntry,identifier,postingDate,accountMainID0)
-              correctedEntry[identifier][postingDate][accountMainID0][correctedData0['debitCreditCode']] = amount0
-              correctedList.append(correctedData0)
-              #
-              debitCreditCode1 = data1['debitCreditCode']
-              accountMainID1 = data1["accountMainID"]
-              correctedData1 = {}
-              for k,v in data1.items():
-                correctedData1[k] = v
-              if 'debit'==debitCreditCode1:
-                debitCreditCode1 = 'credit'
-                correctedData1['debitCreditCode'] = debitCreditCode1
-                correctedData1['accountMainID'] = f'*{accountMainID1}'
-              elif 'credit'==debitCreditCode1:
-                debitCreditCode1 = 'debit'
-                correctedData1['debitCreditCode'] = debitCreditCode1
-                correctedData1['accountMainID'] = f'*{accountMainID1}'
-              correctedList[i]['accountMainID'] = f'x{data0["accountMainID"]}'
-              #
-              if ''==correctedData1['amount']:
-                amount1 = None
-              else:
-                amount1 = int(correctedData1['amount'])
-              correctedEntry = _check_correctedEntry(correctedEntry,identifier,postingDate,accountMainID1)
-              correctedEntry[identifier][postingDate][accountMainID1][correctedData1['debitCreditCode']] = amount1
-              correctedList.append(correctedData1)
-              n = len(correctedList)-1
-              # if DEBUG:
-              #   print(f'data0 s0:{data0["s0"]} s1:{data0["s1"]} accountMainID:{data0["accountMainID"]}\t{data0["debitCreditCode"]}\t{data0["amount"]}\t{data0["identifierType"]} {data0["identifierCode"]}')
-              #   print(f'crrct s0:{correctedData["s0"]} s1:{correctedData["s1"]} accountMainID:{correctedData["accountMainID"]}\t{correctedData["debitCreditCode"]}\t{correctedData["amount"]}\t{correctedData["identifierType"]} {correctedData["identifierCode"]}')
-          #
-          # repurchase
-          #
-          elif repurchaseAccount==accountMainID or repurchase: # '551':'仕入値引戻し高',
-            repurchase = True
-            debitCreditCode = data['debitCreditCode']
-            accountMainID = data["accountMainID"]
-            correctedData = {}
-            for k,v in data.items():
-              correctedData[k] = v
-            if 'debit'==debitCreditCode:
-              debitCreditCode = 'credit'
-              correctedData['debitCreditCode'] = debitCreditCode
-              correctedData['accountMainID'] = f'*{accountMainID}'
-            elif 'credit'==data['debitCreditCode']:
-              debitCreditCode = 'debit'
-              correctedData['debitCreditCode'] = debitCreditCode
-              correctedData['accountMainID'] = f'*{accountMainID}'
-            data['accountMainID'] = f'x{data["accountMainID"]}'
-            if ''==correctedData['amount']:
-              amount = None
-            else:
-              amount = int(correctedData['amount'])
-            correctedEntry = _check_correctedEntry(correctedEntry,identifier,postingDate,accountMainID)
-            correctedEntry[identifier][postingDate][accountMainID][correctedData['debitCreditCode']] = amount
-            correctedList.append(correctedData)
-            n = len(correctedList)-1
-            # if DEBUG:
-            #   print(f'data  s0:{data["s0"]} s1:{data["s1"]} accountMainID:{data["accountMainID"]}\t{data["debitCreditCode"]}\t{data["amount"]}\t{data["identifierType"]} {data["identifierCode"]}')
-            #   print(f'crrct s0:{correctedData["s0"]} s1:{correctedData["s1"]} accountMainID:{correctedData["accountMainID"]}\t{correctedData["debitCreditCode"]}\t{correctedData["amount"]}\t{correctedData["identifierType"]} {correctedData["identifierCode"]}')
+          amount = data['amount']
+          DrCr = data['debitCreditCode']
+          accountMainID = data['accountMainID']
+          data1 = None
+          accountMainID1 = None
+          amount1 = None
+          DrCr1 = None
+          if len(correctedList) > n+1:
+            data1 = correctedList[n+1]
+            accountMainID1 = data1['accountMainID']
+            amount1 = data1['amount']
+            DrCr1 = data1['debitCreditCode']
+          data2 = None
+          accountMainID2 = None
+          amount2 = None
+          DrCr2 = None
+          if len(correctedList) > n+2:
+            data2 = correctedList[n+2]
+            accountMainID2 = data2['accountMainID']
+            amount2 = data2['amount']
+            DrCr2 = data2['debitCreditCode']
+        if not accountMainID in repurchaseRelated:  # '312':'買掛金','191':'仮払消費税等','551':'仕入値引戻し高',
+          repurchase = False
+        if not accountMainID in salesreturnRelated: # '152':'売掛金','335':'仮受消費税等','521':'売上値引戻り高','523':'売上割戻し高',
+          salesreturn = False
+        #
+        # salesreturn
+        #
+        if accountMainID in salesreturnAccounts or salesreturn: # '521':'売上値引戻り高','523':'売上割戻し高',
+          salesreturn = True
+          # correctedData = {}
+          if DEBUG:
+            print(f'{accountMainID_2} {amount_2} {DrCr_2}\n{accountMainID_1} {amount_1} {DrCr_1}\n{accountMainID} {amount} {DrCr}\n{accountMainID1} {amount1} {DrCr1}\n{accountMainID2} {amount2} {DrCr2}\n')
+          if accountMainID_2 in salesreturnRelated and accountMainID_1 in salesreturnRelated and \
+              (int(amount)==int(amount_2)+int(amount_1) or int(amount_2)==int(amount_1)+int(amount) or int(amount_1)==int(amount)+int(amount_2)):
+            _switch_correctedEntry(correctedEntry,correctedList,n-2)
+            _switch_correctedEntry(correctedEntry,correctedList,n-1)
+          elif not 'identifierType' in data_1 and accountMainID_1 in salesreturnRelated and \
+              int(amount)==int(amount_1):
+            _switch_correctedEntry(correctedEntry,correctedList,n-1)
+          if data1 and \
+              accountMainID_1 in salesreturnRelated and accountMainID1 in salesreturnRelated and \
+              (int(amount)==int(amount_1)+int(amount1) or int(amount_1)==int(amount1)+int(amount) or int(amount1)==int(amount)+int(amount_1)):
+            _switch_correctedEntry(correctedEntry,correctedList,n-1)
+            _switch_correctedEntry(correctedEntry,correctedList,n+1)
+          elif data1 and not 'identifierType' in data1 and data1 and accountMainID1 in salesreturnRelated and \
+              int(amount)==int(amount1):
+            _switch_correctedEntry(correctedEntry,correctedList,n+1)
+          if data1 and data2 and \
+              accountMainID2 in salesreturnRelated and accountMainID1 in salesreturnRelated and \
+              (int(amount)==int(amount1)+int(amount2) or int(amount1)==int(amount2)+int(amount) or int(amount2)==int(amount)+int(amount )):
+            _switch_correctedEntry(correctedEntry,correctedList,n+1)
+            _switch_correctedEntry(correctedEntry,correctedList,n+2)
+        #
+        # repurchase
+        #
+        elif accountMainID in repurchaseAccounts or repurchase: # '551':'仕入値引戻し高',
+          repurchase = True
+          if DEBUG:
+            print(f'{accountMainID_2} {amount_2} {DrCr_2}\n{accountMainID_1} {amount_1} {DrCr_1}\n{accountMainID} {amount} {DrCr}\n{accountMainID1} {amount1} {DrCr1}\n{accountMainID2} {amount2} {DrCr2}\n')
+          if accountMainID_2 in repurchaseRelated and accountMainID_1 in repurchaseRelated and \
+              (int(amount)==int(amount_2)+int(amount_1) or int(amount_2)==int(amount_1)+int(amount) or int(amount_1)==int(amount)+int(amount_2)):
+            _switch_correctedEntry(correctedEntry,correctedList,n-2)
+            _switch_correctedEntry(correctedEntry,correctedList,n-1)
+          elif not 'identifierType' in data_1 and accountMainID_1 in repurchaseRelated and \
+              int(amount)==int(amount_1):
+            _switch_correctedEntry(correctedEntry,correctedList,n-1)
+          if data1 and \
+              accountMainID_1 in repurchaseRelated and accountMainID1 in repurchaseRelated and \
+              (int(amount)==int(amount_1)+int(amount1) or int(amount_1)==int(amount1)+int(amount) or int(amount1)==int(amount)+int(amount_1)):
+            _switch_correctedEntry(correctedEntry,correctedList,n-1)
+            _switch_correctedEntry(correctedEntry,correctedList,n+1)
+          elif data1 and not 'identifierType' in data1 and data1 and accountMainID1 in repurchaseRelated and \
+              int(amount)==int(amount1):
+            _switch_correctedEntry(correctedEntry,correctedList,n+1)
+          if data1 and data2 and \
+              accountMainID2 in repurchaseRelated and accountMainID1 in repurchaseRelated and \
+              (int(amount)==int(amount2)+int(amount1) or int(amount2)==int(amount1)+int(amount) or int(amount1)==int(amount)+int(amount2)):
+            _switch_correctedEntry(correctedEntry,correctedList,n+1)
+            _switch_correctedEntry(correctedEntry,correctedList,n+2)
+        n = len(correctedList)-1
 
       for data in correctedList:
         if data['identifierCode']:
@@ -542,20 +558,21 @@ class Application(tk.Tk):
       cashApplicatin = {}
       current_date = None
       record = None
-      for id,data in correctedEntry.items():
-        identifierType = id[:id.index('_')]
-        identifierCode = id[id.index('_')+1:]
+      date = None
+      for identifier,data in correctedEntry.items():
+        identifierType = identifier[:identifier.index('_')]
+        identifierCode = identifier[identifier.index('_')+1:]
         if 'vendor'==identifierType:
           for x in self.model.AP[identifierCode]:
             date = x['postingDate']
             if x['accountMainID'] in cashAccounts:
               if current_date!=date:
-                if not id in cashApplicatin:
-                  cashApplicatin[id] = {}
-                if not date in cashApplicatin[id]:
-                  cashApplicatin[id][date] = []
+                if not identifier in cashApplicatin:
+                  cashApplicatin[identifier] = {}
+                if not date in cashApplicatin[identifier]:
+                  cashApplicatin[identifier][date] = []
                 if record:
-                  cashApplicatin[id][date].append(record)   
+                  cashApplicatin[identifier][date].append(record)   
                 record= {'postingDate':date,'debitAccountID':None,'debitAccountDescription':None,'debitAmount':None,'creditAccountID':None,'creditAccountDescription':None,'creditAmount':None,'detailComment':None}
               record = _setDrCrRecord(record,x)
             current_date = date
@@ -564,30 +581,30 @@ class Application(tk.Tk):
             date = x['postingDate']
             if x['accountMainID'] in cashAccounts:
               if current_date!=date:
-                if not id in cashApplicatin:
-                  cashApplicatin[id] = {}
-                if not date in cashApplicatin[id]:
-                  cashApplicatin[id][date] = []
+                if not identifier in cashApplicatin:
+                  cashApplicatin[identifier] = {}
+                if not date in cashApplicatin[identifier]:
+                  cashApplicatin[identifier][date] = []
                 if record:
-                  cashApplicatin[id][date].append(record)   
+                  cashApplicatin[identifier][date].append(record)   
                 record= {'postingDate':date,'debitAccountID':None,'debitAccountDescription':None,'debitAmount':None,'creditAccountID':None,'creditAccountDescription':None,'creditAmount':None,'detailComment':None}
               record = _setDrCrRecord(record,x)
             current_date = date
-      if not date in cashApplicatin[id]:
-        cashApplicatin[id][date] = []
-      cashApplicatin[id][date].append(record)
+      if not date in cashApplicatin[identifier]:
+        cashApplicatin[identifier][date] = []
+      cashApplicatin[identifier][date].append(record)
 
-      for id,records in cashApplicatin.items():
+      for identifier,records in cashApplicatin.items():
         records = sorted(records.items())
-        cashApplicatin[id] = records
+        cashApplicatin[identifier] = records
 
       current_date = None
       adjustments = {}
-      for id,data in correctedEntry.items():
-        if id not in adjustments:
-          adjustments[id] = {}
-        identifierType = id[:id.index('_')]
-        identifierCode = id[id.index('_')+1:]
+      for identifier,data in correctedEntry.items():
+        if identifier not in adjustments:
+          adjustments[identifier] = {}
+        identifierType = identifier[:identifier.index('_')]
+        identifierCode = identifier[identifier.index('_')+1:]
         for date,v in data.items():
           record= {'postingDate':date,'debitAccountID':None,'debitAccountDescription':None,'debitAmount':None,'creditAccountID':None,'creditAccountDescription':None,'creditAmount':None,'detailComment':None}
           if 'vendor'==identifierType:
@@ -601,13 +618,13 @@ class Application(tk.Tk):
               if date==entry['postingDate'] and re.match(regex,entry['accountMainID']):
                 record = _setDrCrRecord(record,entry)
           current_date = date
-        if not date in adjustments[id]:
-          adjustments[id][date] = []                 
-        adjustments[id][date].append(record)
+        if not date in adjustments[identifier]:
+          adjustments[identifier][date] = []                 
+        adjustments[identifier][date].append(record)
 
-      for id,records in adjustments.items():
+      for identifier,records in adjustments.items():
         records = sorted(records.items())
-        adjustments[id] = records
+        adjustments[identifier] = records
 
       if DEBUG:
         print(adjustments)
