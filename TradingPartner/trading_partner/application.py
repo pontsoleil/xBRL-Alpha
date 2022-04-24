@@ -283,10 +283,12 @@ class Application(tk.Tk):
       salesAccounts = ['511','521','523'] # '511':'売上高','521':'売上値引戻り高','523':'売上割戻し高',
       receivableAccount = '152'           # '152':'売掛金',
       otherAccounts = ['143','148','183','213','216','248','321','322','326','327','328','341','531','561','711','712','713','721','723','724','726','727','728','731','732','734','736','737','738','739','740','742','744','746','747','752','753','754','763','791']
+      #
       repurchaseAccount = '551'           # '551':'仕入値引戻し高',
       repurchaseRelated = ['312','191']   # '312':'買掛金','191':'仮払消費税等',
       salesreturnAccounts = ['521','523'] # '521':'売上値引戻り高','523':'売上割戻し高',
       salesreturnRelated = ['152','335']  # '152':'売掛金','335':'仮受消費税等',
+      #
       cashAccounts = ['111','121','131','150','152','191','301','312','335','741','821']
       postingDate = ''
       accountMainID = ''
@@ -424,7 +426,7 @@ class Application(tk.Tk):
               debitCreditCode = 'debit'
               correctedData['debitCreditCode'] = debitCreditCode
               correctedData['accountMainID'] = f'*{accountMainID}'
-            data['accountMainID'] = f'x{data["accountMainID"]}'
+            correctedList[n]['accountMainID'] = f'x{data["accountMainID"]}'
             if ''==correctedData['amount']:
               amount = None
             else:
@@ -441,31 +443,54 @@ class Application(tk.Tk):
               while not correctedList[i]['amount']:
                 i -= 1
               data1 = correctedList[i]
-              i -= 1
-              while not correctedList[i]['amount']:
-                i -= 1
-              data0 = correctedList[i]
+              j = i - 1
+              while not correctedList[j]['amount']:
+                j -= 1
+              data0 = correctedList[j]
               debitCreditCode0 = data0['debitCreditCode']
               accountMainID0 = data0["accountMainID"]
-              correctedData = {}
+              correctedData0 = {}
               for k,v in data0.items():
-                correctedData[k] = v
+                correctedData0[k] = v
               if 'debit'==debitCreditCode0:
                 debitCreditCode0 = 'credit'
-                correctedData['debitCreditCode'] = debitCreditCode0
-                correctedData['accountMainID'] = f'*{accountMainID0}'
+                correctedData0['debitCreditCode'] = debitCreditCode0
+                correctedData0['accountMainID'] = f'*{accountMainID0}'
               elif 'credit'==debitCreditCode0:
                 debitCreditCode0 = 'debit'
-                correctedData['debitCreditCode'] = debitCreditCode0
-                correctedData['accountMainID'] = f'*{accountMainID0}'
-              data0['accountMainID'] = f'x{data0["accountMainID"]}'
-              if ''==correctedData['amount']:
-                amount = None
+                correctedData0['debitCreditCode'] = debitCreditCode0
+                correctedData0['accountMainID'] = f'*{accountMainID0}'
+              correctedList[j]['accountMainID'] = f'x{data0["accountMainID"]}'
+              if ''==correctedData0['amount']:
+                amount0 = None
               else:
-                amount = int(correctedData['amount'])
+                amount0 = int(correctedData0['amount'])
               correctedEntry = _check_correctedEntry(correctedEntry,identifier,postingDate,accountMainID0)
-              correctedEntry[identifier][postingDate][accountMainID0][correctedData['debitCreditCode']] = amount
-              correctedList.append(correctedData)
+              correctedEntry[identifier][postingDate][accountMainID0][correctedData0['debitCreditCode']] = amount0
+              correctedList.append(correctedData0)
+              #
+              debitCreditCode1 = data1['debitCreditCode']
+              accountMainID1 = data1["accountMainID"]
+              correctedData1 = {}
+              for k,v in data1.items():
+                correctedData1[k] = v
+              if 'debit'==debitCreditCode1:
+                debitCreditCode1 = 'credit'
+                correctedData1['debitCreditCode'] = debitCreditCode1
+                correctedData1['accountMainID'] = f'*{accountMainID1}'
+              elif 'credit'==debitCreditCode1:
+                debitCreditCode1 = 'debit'
+                correctedData1['debitCreditCode'] = debitCreditCode1
+                correctedData1['accountMainID'] = f'*{accountMainID1}'
+              correctedList[i]['accountMainID'] = f'x{data0["accountMainID"]}'
+              #
+              if ''==correctedData1['amount']:
+                amount1 = None
+              else:
+                amount1 = int(correctedData1['amount'])
+              correctedEntry = _check_correctedEntry(correctedEntry,identifier,postingDate,accountMainID1)
+              correctedEntry[identifier][postingDate][accountMainID1][correctedData1['debitCreditCode']] = amount1
+              correctedList.append(correctedData1)
               n = len(correctedList)-1
               # if DEBUG:
               #   print(f'data0 s0:{data0["s0"]} s1:{data0["s1"]} accountMainID:{data0["accountMainID"]}\t{data0["debitCreditCode"]}\t{data0["amount"]}\t{data0["identifierType"]} {data0["identifierCode"]}')
