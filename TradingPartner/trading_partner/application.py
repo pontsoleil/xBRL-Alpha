@@ -769,14 +769,6 @@ class Application(tk.Tk):
                 correctingEntry['amount'] += str(creditAmount*2)
               self.model.adjustments[identifier].append(correctingEntry)
 
-      # for identifier,records in self.model.adjustments.items():
-      #   records = sorted(records.items())
-      #   self.model.adjustments[identifier] = records
-
-      if DEBUG:
-        print(self.model.adjustments)
-        print(self.model.adjustments['customer_13'])
-
       return correctingList
 
     try:
