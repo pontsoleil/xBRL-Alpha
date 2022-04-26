@@ -55,6 +55,7 @@ class Application(tk.Tk):
       '<<ShowRecordlist>>': self._show_recordlist,
       '<<NewRecord>>': self._new_record,
       '<<SaveAccounts>>': self._save_accounts,
+      '<<SaveAdjustments>>': self._save_adjustments,
     }
     for sequence, callback in event_callbacks.items():
       self.bind(sequence, callback)
@@ -184,21 +185,46 @@ class Application(tk.Tk):
   def _populate_recordlist(self):
     """Parse rows and populate table in the recordform"""
 
-    def _check_correctedEntry(correctedEntry,identifier,postingDate,accountMainID):
-      if not identifier in correctedEntry:
-        correctedEntry[identifier] = {}
-      if not postingDate in correctedEntry[identifier]:
-        correctedEntry[identifier][postingDate] = {}
-      if not accountMainID in correctedEntry[identifier][postingDate]:
-        correctedEntry[identifier][postingDate][accountMainID] = {'debit':0,'credit':0}
-      return correctedEntry
+    def __parseAmount(amount):
+      if re.match(r'-?[0-9]+(\.[0-9]+)?',amount):
+        amount = int(amount)
+      else:
+        amount = 0
+      return amount
 
-    def _switch_correctedEntry(correctedEntry,correctingList,n):
+    def __setDrCrAmount(record,entry):
+      data = {
+        'debitCreditCode':None,
+        'accountMainID':None,
+        'amount':None,
+        'accountMainDescription':None,
+        'identifierType':None,
+        'identifierCode':None,
+        'detailComment':None,
+        'entryID':None,
+        'g0':None,
+        's0':None
+      }
+      for key in entry.keys():
+        if key in [
+            'entryID','g0','s0',
+            'debitCreditCode','accountMainID','accountMainDescription',
+            'identifierType','identifierCode',
+            'detailComment'
+          ]:
+          data[key] = entry[key]
+      data['amount'] =  __parseAmount(entry['amount'])
+      record[data['debitCreditCode']].append(data)
+      return record
+
+    def __switch_correctedEntry(correctedEntry,correctingList,n):
       data = correctingList[n]
       postingDate = data['postingDate']
       accountMainID = data['accountMainID']
       debitCreditCode = data['debitCreditCode']
       identifier = f'{data["identifierType"]}_{data["identifierCode"]}'
+
+      correctingList[n]['accountMainID'] = f'x{accountMainID}'
 
       correctedData = {}
       for k,v in data.items():
@@ -211,47 +237,30 @@ class Application(tk.Tk):
         debitCreditCode = 'debit'
         correctedData['debitCreditCode'] = debitCreditCode
         correctedData['accountMainID'] = f'*{accountMainID}'
-      correctingList[n]['accountMainID'] = f'x{accountMainID}'
-
       correctingList.append(correctedData)
-      correctedEntry = _check_correctedEntry(correctedEntry,identifier,postingDate,correctedData['accountMainID'])
-      correctedEntry[identifier][postingDate][correctedData['accountMainID']][correctedData['debitCreditCode']] = correctedData['amount']
 
-      if ''==correctedData['amount']:
-        amount = None
-      else:
-        amount = int(correctedData['amount'])
-      correctedEntry = _check_correctedEntry(correctedEntry,identifier,postingDate,accountMainID)
-      correctedEntry[identifier][postingDate][accountMainID][debitCreditCode] = amount
+      if not identifier in correctedEntry:
+        correctedEntry[identifier] = {}
+      if not postingDate in correctedEntry[identifier]:
+        correctedEntry[identifier][postingDate] = {
+          'debit':[],
+          'credit':[]
+        }
+      record =  correctedEntry[identifier][postingDate]
+      record = __setDrCrAmount(record,correctedData)
+      correctedEntry[identifier][postingDate] = record
 
-    def _setDrCrRecord(record,entry):
-      if not record:
-        record = {}
-      if 'debit'==entry['debitCreditCode']:
-        record['debitAccountID'] = entry['accountMainID']
-        record['debitAccountDescription'] = entry['accountMainDescription']
-        record['debitAmount'] = int(entry['amount'])
-        if entry['detailComment']:
-          record['detailComment'] = entry['detailComment']
-      elif 'credit'==entry['debitCreditCode']:
-        record['creditAccountID'] = entry['accountMainID']
-        record['creditAccountDescription'] = entry['accountMainDescription']
-        record['creditAmount'] = int(entry['amount'])
-        if entry['detailComment']:
-          record['detailComment'] = entry['detailComment']
-      return record
+    # def markRecord(data,accountMainID,mark):
+    #   if data['accountMainID']:
+    #     data['accountMainID'] += mark
+    #   if 'debit'==data['debitCreditCode']:
+    #     data['debitAccountDescription'] = f'{mark}{data["accountMainDescription"]}'
+    #   elif 'credit'==data['debitCreditCode']:
+    #     data['creditAccountDescription'] = f'{mark}{data["accountMainDescription"]}'
+    #   data['accountMainID'] = f'{mark}{accountMainID}'
+    #   return data
 
-    def markRecord(data,accountMainID,mark):
-      if data['accountMainID']:
-        data['accountMainID'] += mark
-      if 'debit'==data['debitCreditCode']:
-        data['debitAccountDescription'] = f'{mark}{data["accountMainDescription"]}'
-      elif 'credit'==data['debitCreditCode']:
-        data['creditAccountDescription'] = f'{mark}{data["accountMainDescription"]}'
-      data['accountMainID'] = f'{mark}{accountMainID}'
-      return data
-
-    def _parse_rows(rows):
+    def __parse_rows(rows):
       rows = sorted(rows,key=lambda x:f"{x['enteredDate']} {x['entryID']}")
       checkedJournal = {}
       for data in rows:
@@ -379,7 +388,7 @@ class Application(tk.Tk):
         data = correctingList[n]
         journal_id = data['entryID']
         accountMainID = data['accountMainID']
-        amount = data['amount']
+        amount = __parseAmount(data['amount'])
         if data['identifierType']:
           identifierType = data['identifierType']
           identifierCode = data['identifierCode']
@@ -420,7 +429,7 @@ class Application(tk.Tk):
           if n > 1: # n - 2
             data_2 = correctingList[n-2]
             accountMainID_2 = data_2['accountMainID']
-            amount_2 = data_2['amount']
+            amount_2 = __parseAmount(data_2['amount'])
             if accountMainID_2 in tradingAccounts and \
                 accountMainID_1 in tradingAccounts and \
                 accountMainID in tradingAccounts and \
@@ -459,7 +468,7 @@ class Application(tk.Tk):
         data = correctingList[n]
         journal_id = data['entryID']
         accountMainID = data['accountMainID']
-        amount = data['amount']
+        amount = __parseAmount(data['amount'])
         if data['identifierType']:
           identifierType = data['identifierType']
           identifierCode = data['identifierCode']
@@ -473,7 +482,7 @@ class Application(tk.Tk):
           if n > 0: # n - 1
             data_1 = correctingList[n-1]
             accountMainID_1 = data_1['accountMainID']
-            amount_1 = data_1['amount']
+            amount_1 = __parseAmount(data_1['amount'])
             if accountMainID_1 in repurchaseRelated and \
                 accountMainID in repurchaseRelated and \
                 int(amount_1)==int(amount):
@@ -483,8 +492,8 @@ class Application(tk.Tk):
               elif accountMainID in repurchaseAccounts:
                 repurchase = True
               if repurchase:
-                _switch_correctedEntry(correctedEntry,correctingList,n-1)
-                _switch_correctedEntry(correctedEntry,correctingList,n)
+                __switch_correctedEntry(correctedEntry,correctingList,n-1)
+                __switch_correctedEntry(correctedEntry,correctingList,n)
             elif accountMainID_1 in salesreturnRelated and \
                 accountMainID in salesreturnRelated and \
                 int(amount_1)==int(amount):
@@ -494,12 +503,12 @@ class Application(tk.Tk):
               elif accountMainID in salesreturnAccounts:
                 salesreturn = True
               if salesreturn:
-                _switch_correctedEntry(correctedEntry,correctingList,n-1)
-                _switch_correctedEntry(correctedEntry,correctingList,n)
+                __switch_correctedEntry(correctedEntry,correctingList,n-1)
+                __switch_correctedEntry(correctedEntry,correctingList,n)
           if n > 1: # n - 2
             data_2 = correctingList[n-2]
             accountMainID_2 = data_2['accountMainID']
-            amount_2 = data_2['amount']
+            amount_2 = __parseAmount(data_2['amount'])
             if accountMainID_2 in repurchaseRelated and \
                 accountMainID_1 in repurchaseRelated and \
                 accountMainID in repurchaseRelated and \
@@ -516,9 +525,9 @@ class Application(tk.Tk):
               elif accountMainID in repurchaseAccounts:
                 repurchase = True
               if repurchase:
-                _switch_correctedEntry(correctedEntry,correctingList,n-2)
-                _switch_correctedEntry(correctedEntry,correctingList,n-1)
-                _switch_correctedEntry(correctedEntry,correctingList,n)
+                __switch_correctedEntry(correctedEntry,correctingList,n-2)
+                __switch_correctedEntry(correctedEntry,correctingList,n-1)
+                __switch_correctedEntry(correctedEntry,correctingList,n)
             elif accountMainID_2 in salesreturnRelated and \
                 accountMainID_1 in salesreturnRelated and \
                 accountMainID in salesreturnRelated and \
@@ -535,9 +544,9 @@ class Application(tk.Tk):
               elif accountMainID in salesreturnAccounts:
                 salesreturn = True
               if salesreturn:
-                _switch_correctedEntry(correctedEntry,correctingList,n-2)
-                _switch_correctedEntry(correctedEntry,correctingList,n-1)
-                _switch_correctedEntry(correctedEntry,correctingList,n)
+                __switch_correctedEntry(correctedEntry,correctingList,n-2)
+                __switch_correctedEntry(correctedEntry,correctingList,n-1)
+                __switch_correctedEntry(correctedEntry,correctingList,n)
         prev_journal_id = journal_id
         prev_identifier = identifier
 
@@ -558,82 +567,215 @@ class Application(tk.Tk):
 
       cashApplication = {}
       current_date = None
+      current_identifier = None
       record = None
       date = None
       for identifier,data in correctedEntry.items():
         identifierType = identifier[:identifier.index('_')]
         identifierCode = identifier[identifier.index('_')+1:]
+        current_date = None
         if 'vendor'==identifierType:
           for x in self.model.AP[identifierCode]:
+            # if x['accountMainID'] in cashAccounts:
             date = x['postingDate']
-            if x['accountMainID'] in cashAccounts:
-              if current_date!=date:
-                if not identifier in cashApplication:
-                  cashApplication[identifier] = {}
-                if not date in cashApplication[identifier]:
-                  cashApplication[identifier][date] = []
-                if record:
-                  cashApplication[identifier][date].append(record)
-                record= {'postingDate':date,'debitAccountID':None,'debitAccountDescription':None,'debitAmount':None,'creditAccountID':None,'creditAccountDescription':None,'creditAmount':None,'detailComment':None}
-              record = _setDrCrRecord(record,x)
+            if current_identifier:
+              if not current_identifier in cashApplication:
+                cashApplication[current_identifier] = {}
+              if not current_date in cashApplication[current_identifier]:
+                cashApplication[current_identifier][current_date] = []
+            if current_date and current_date!=date:
+              cashApplication[current_identifier][current_date] = record
+              # cashApplication[current_identifier][current_date].append(record)
+              record = None
+            if not record:
+              record = {'postingDate':date,'debit':[],'credit':[]}
+            record = __setDrCrAmount(record,x)
             current_date = date
+            current_identifier = identifier
         if 'customer'==identifierType:
           for x in self.model.AR[identifierCode]:
+            # if x['accountMainID'] in cashAccounts:
             date = x['postingDate']
-            if x['accountMainID'] in cashAccounts:
-              if current_date!=date:
-                if not identifier in cashApplication:
-                  cashApplication[identifier] = {}
-                if not date in cashApplication[identifier]:
-                  cashApplication[identifier][date] = []
-                if record:
-                  cashApplication[identifier][date].append(record)
-                record= {'postingDate':date,'debitAccountID':None,'debitAccountDescription':None,'debitAmount':None,'creditAccountID':None,'creditAccountDescription':None,'creditAmount':None,'detailComment':None}
-              record = _setDrCrRecord(record,x)
+            if current_identifier:
+              if not current_identifier in cashApplication:
+                cashApplication[current_identifier] = {}
+              if not current_date in cashApplication[current_identifier]:
+                cashApplication[current_identifier][current_date] = []
+            if current_date and current_date!=date:
+              cashApplication[current_identifier][current_date].append(record)
+              record = None
+            if not record:
+              record= {'postingDate':date,'debit':[],'credit':[]}
+            record = __setDrCrAmount(record,x)
             current_date = date
+            current_identifier = identifier
+      # after loop
       if record:
-        identifier = f'{identifierType}_{identifierCode}'
-        if not identifier in cashApplication:
-          cashApplication[identifier] = {}
-        if not date in cashApplication[identifier]:
-          cashApplication[identifier][date] = []
-        cashApplication[identifier][date].append(record)
-
-      for identifier,records in cashApplication.items():
-        records = sorted(records.items())
-        cashApplication[identifier] = records
+        if not current_identifier in cashApplication:
+          cashApplication[current_identifier] = {}
+        cashApplication[current_identifier][current_date] = record
 
       current_date = None
-      adjustments = {}
+      debitAmounts = None
+      creditAmounts = None
+      debitAmount = None
+      creditAmount = None
+      self.model.adjustments = {}
       for identifier,data in correctedEntry.items():
-        if identifier not in adjustments:
-          adjustments[identifier] = {}
+        if identifier not in self.model.adjustments:
+          self.model.adjustments[identifier] = []
         identifierType = identifier[:identifier.index('_')]
         identifierCode = identifier[identifier.index('_')+1:]
         for date,v in data.items():
-          record= {'postingDate':date,'debitAccountID':None,'debitAccountDescription':None,'debitAmount':None,'creditAccountID':None,'creditAccountDescription':None,'creditAmount':None,'detailComment':None}
-          if 'vendor'==identifierType:
-            regex = r'\*'+payableAccount
-            for x in self.model.AP[identifierCode]:
-              if date==x['postingDate'] and re.match(regex,x['accountMainID']):
-                record = _setDrCrRecord(record,x)
+          debitList = v['debit']
+          creditList = v['credit']
+          identifierCashApp = cashApplication[identifier]
+          next_date =list(identifierCashApp.keys())[
+            list(identifierCashApp.keys()).index(date)+1:
+          ]
+          if 'customer'==identifierType:
+            cashAppNext = identifierCashApp[next_date[0]][0]
+            debitListNext = cashAppNext['debit']
+            creditListNext = cashAppNext['credit']
+            debitAmounts = [
+              {
+                'date':date,
+                'amount':x['amount'],'accountMainID':x['accountMainID'],'accountMainDescription':x['accountMainDescription'],
+                'entryID':x['entryID'],'g0':x['g0'],'s0':x['s0']
+              }
+              for x in debitList 
+              if receivableAccount in x['accountMainID']
+            ]
+            if len(debitAmounts) > 0:
+              debitAmount = debitAmounts[0]['amount']
+            creditAmounts = [
+              {
+                'date':date,
+                'amount':x['amount'],'accountMainID':x['accountMainID'],'accountMainDescription':x['accountMainDescription'],
+                'entryID':x['entryID'],'g0':x['g0'],'s0':x['s0']
+              }
+              for x in creditList 
+              if receivableAccount in x['accountMainID']
+            ]
+            if len(creditAmounts) > 0:
+              creditAmount = creditAmounts[0]['amount']
+            debitAmountsNexts = [
+              {
+                'date':date,
+                'amount':x['amount'],'accountMainID':x['accountMainID'],'accountMainDescription':x['accountMainDescription'],
+                'entryID':x['entryID'],'g0':x['g0'],'s0':x['s0']
+              }
+              for x in debitListNext 
+              if receivableAccount in x['accountMainID']
+            ]
+            if len(debitAmountsNexts) > 0:
+              debitAmountsNext = debitAmountsNexts[0]
+              correctingEntry = [
+                x for x in correctingList 
+                if x['entryID']==debitAmountsNext['entryID'] and x['g0']==debitAmountsNext['g0'] and x['s0']==debitAmountsNext['s0']
+              ][0]
+              correctingEntry['accountMainID'] += '*'
+              amount = __parseAmount(correctingEntry['amount'])
+              if debitAmount:
+                correctingEntry['amount'] = str(amount - 2*debitAmount)
+              if creditAmount:
+                correctingEntry['amount'] = str(amount + 2*creditAmount)
+              self.model.adjustments[identifier].append(correctingEntry)
+            creditAmountsNexts = [
+              {
+                'date':date,
+                'amount':x['amount'],'accountMainID':x['accountMainID'],'accountMainDescription':x['accountMainDescription'],
+                'entryID':x['entryID'],'g0':x['g0'],'s0':x['s0']
+              }
+              for x in creditListNext 
+              if receivableAccount in x['accountMainID']
+            ]
+            if len(creditAmountsNexts) > 0:
+              creditAmountsNext = creditAmountsNexts[0]
+              correctingEntry = [
+                x for x in correctingList 
+                if x['entryID']==creditAmountsNext['entryID'] and x['g0']==creditAmountsNext['g0'] and x['s0']==creditAmountsNext['s0']
+              ][0]
+              correctingEntry['accountMainID'] += '*'
+              amount = __parseAmount(correctingEntry['amount'])
+              if debitAmount:
+                correctingEntry['amount'] = str(amount + 2*debitAmount)
+              if creditAmount:
+                correctingEntry['amount'] = str(amount - 2*creditAmount)
+              self.model.adjustments[identifier].append(correctingEntry)
           elif 'customer'==identifierType:
-            regex = r'\*'+receivableAccount
-            for entry in self.model.AR[identifierCode]:
-              if date==entry['postingDate'] and re.match(regex,entry['accountMainID']):
-                record = _setDrCrRecord(record,entry)
-          current_date = date
-        if not date in adjustments[identifier]:
-          adjustments[identifier][date] = []
-        adjustments[identifier][date].append(record)
+            debitAmounts = [
+              {
+                'date':date,
+                'amount':x['amount'],'accountMainID':x['accountMainID'],'accountMainDescription':x['accountMainDescription'],
+                'entryID':x['entryID'],'g0':x['g0'],'s0':x['s0']
+              }
+              for x in debitList 
+              if payableAccount in x['accountMainID']
+            ]
+            if len(debitAmounts) > 0:
+              debitAmount = debitAmounts[0]['amount']
+            creditAmounts = [
+              {
+                'date':date,
+                'amount':x['amount'],'accountMainID':x['accountMainID'],'accountMainDescription':x['accountMainDescription'],
+                'entryID':x['entryID'],'g0':x['g0'],'s0':x['s0']
+              }
+              for x in creditList 
+              if payableAccount in x['accountMainID']
+            ]
+            if len(creditAmounts) > 0:
+              creditAmount = creditAmounts[0]['amount']
+            debitAmountsNexts = [
+              {
+                'date':date,
+                'amount':x['amount'],'accountMainID':x['accountMainID'],'accountMainDescription':x['accountMainDescription'],
+                'entryID':x['entryID'],'g0':x['g0'],'s0':x['s0']
+              }
+              for x in debitListNext 
+              if payableAccount in x['accountMainID']
+            ]
+            if len(debitAmountsNexts) > 0:
+              debitAmountsNext = debitAmountsNexts[0]
+              correctingEntry = [
+                x for x in correctingList 
+                if x['entryID']==debitAmountsNext['entryID'] and x['g0']==debitAmountsNext['g0'] and x['s0']==debitAmountsNext['s0']
+              ][0]
+              correctingEntry['accountMainID'] += '*'
+              if debitAmount:
+                correctingEntry['amount'] -= str(debitAmount*2)
+              if creditAmount:
+                correctingEntry['amount'] += str(creditAmount*2)
+              self.model.adjustments[identifier].append(correctingEntry)
+            creditAmountsNexts = [
+              {
+                'date':date,
+                'amount':x['amount'],'accountMainID':x['accountMainID'],'accountMainDescription':x['accountMainDescription'],
+                'entryID':x['entryID'],'g0':x['g0'],'s0':x['s0']
+              }
+              for x in creditListNext 
+              if payableAccount in x['accountMainID']
+            ]
+            if len(creditAmountsNexts) > 0:
+              creditAmountsNext = creditAmountsNexts[0]
+              correctingEntry = [
+                x for x in correctingList 
+                if x['entryID']==creditAmountsNext['entryID'] and x['g0']==creditAmountsNext['g0'] and x['s0']==creditAmountsNext['s0']
+              ][0]
+              correctingEntry['accountMainID'] += '*'
+              if debitAmount:
+                correctingEntry['amount'] += str(debitAmount*2)
+              if creditAmount:
+                correctingEntry['amount'] += str(creditAmount*2)
+              self.model.adjustments[identifier].append(correctingEntry)
 
-      for identifier,records in adjustments.items():
-        records = sorted(records.items())
-        adjustments[identifier] = records
+      # for identifier,records in self.model.adjustments.items():
+      #   records = sorted(records.items())
+      #   self.model.adjustments[identifier] = records
 
-      # if DEBUG:
-      #   print(adjustments)
-        # print(adjustments['customer_13'])
+      if DEBUG:
+        print(self.model.adjustments)
+        print(self.model.adjustments['customer_13'])
 
       return correctingList
 
@@ -646,14 +788,26 @@ class Application(tk.Tk):
         detail=str(e)
       )
     else:
-      rows = _parse_rows(rows)
+      rows = __parse_rows(rows)
       self.recordlist.populate(rows)
 
   def _save_accounts(self, *_):
-    """save AR/AP"""
-
+    """Save AR/AP"""
     try:
       self.model.save_accounts()
+    except Exception as e:
+      messagebox.showerror(
+        title='Error',
+        message='Problem reading file',
+        detail=str(e)
+      )
+    else:
+      pass
+
+  def _save_adjustments(self, *_):
+    """Save Adjustments"""
+    try:
+      self.model.save_adjustments()
     except Exception as e:
       messagebox.showerror(
         title='Error',

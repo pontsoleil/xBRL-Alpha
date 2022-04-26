@@ -36,6 +36,10 @@ class MainMenu(tk.Menu):
       command=self._event('<<SaveAccounts>>')
     )
     file_menu.add_command(
+      label="Save Adjustments",
+      command=self._event('<<SaveAdjustments>>')
+    )    
+    file_menu.add_command(
       label="Select file…",
       command=self._event('<<FileSelect>>')
     )

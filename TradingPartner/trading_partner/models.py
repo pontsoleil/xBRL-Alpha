@@ -272,6 +272,8 @@ class CSVModel:
     self.ARfile = Path(filename)
     filename = pre+'_AP.tsv' 
     self.APfile = Path(filename)
+    filename = pre+'_Adj.tsv' 
+    self.AdjustmentsFfile = Path(filename)
     
     # Check for append permissions:
     file_exists = os.access(self.file, os.F_OK)
@@ -334,6 +336,20 @@ class CSVModel:
         records.append(record)
     fields = list(d.keys())
     with open(self.APfile, 'w', encoding='utf-16', newline='') as fh:
+      csvwriter = csv.writer(fh, delimiter='\t')
+      csvwriter.writerow(fields)
+      for record in records:
+        csvwriter.writerow(record)
+
+  def save_adjustments(self):
+    """Save Adhustments record to the CSV file"""
+    records = []
+    for code,data in self.adjustments.items():
+      for d in data:
+        record = list(d.values())
+        records.append(record)
+    fields = list(d.keys())
+    with open(self.AdjustmentsFfile, 'w', encoding='utf-16', newline='') as fh:
       csvwriter = csv.writer(fh, delimiter='\t')
       csvwriter.writerow(fields)
       for record in records:
