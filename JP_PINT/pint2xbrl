@@ -109,6 +109,7 @@ if __name__ == '__main__':
     type = record['type']
     line = f'  <element name="{name}" id="{pint_id}" type="{type}" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>\n'
     lines.append(line)
+  lines.append('</scheme>')
 
   with open(f'{xbrl_base}{xbrl_pint_xsd}','w',encoding='utf_8', newline='') as f:
     f.writelines(lines)
