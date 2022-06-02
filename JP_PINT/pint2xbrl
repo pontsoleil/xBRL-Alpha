@@ -255,7 +255,7 @@ if __name__ == '__main__':
       lines.append(line)
     else:
       parent_hash = parentDict[parent_id]['hash']
-    line = f'    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="{parent_name}_{parent_hash}" xlink:to="{id}_{hash}" priority="1" xlink:title="presentation: {parent_name} to {id}" use="optional"/>\n'
+    line = f'    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="{parent_name}_{parent_hash}" xlink:to="{name}_{hash}" priority="1" xlink:title="presentation: {parent_name} to {name}" use="optional"/>\n'
     lines.append(line)
   lines.append('  </presentationLink>')
   lines.append('</linkbase>')
