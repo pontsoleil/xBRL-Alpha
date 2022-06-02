@@ -23,8 +23,8 @@
       <link:linkbaseRef xlink:href="xBRL-pint-2022-12-31-definition.xml" xlink:title="Definition Links, all" xlink:type="simple" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
       <link:linkbaseRef xlink:href="xBRL-pint-2022-12-31-label-en.xml" xlink:title="Label Links, en" xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef"/>
       <link:linkbaseRef xlink:href="xBRL-pint-2022-12-31-label-ja.xml" xlink:title="Label Links, ja" xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef"/>
-      <link:roleType id="xBRL-GL_structure" roleURI="http://xbrl.org/role/xBRL-GL_structure">
-        <link:definition>xBRL GL structure</link:definition>
+      <link:roleType id="xBRL-PINT_structure" roleURI="http://xbrl.org/role/xBRL-PINT_structure">
+        <link:definition>xBRL PINT structure</link:definition>
         <link:usedOn>link:presentationLink</link:usedOn>
         <link:usedOn>link:definitionLink</link:usedOn>
       </link:roleType>
