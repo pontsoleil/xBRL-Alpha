@@ -28,12 +28,12 @@
 			</xbrldi:typedMember>
 		</xbrli:scenario>
 	</xbrli:context>
-	<pint:ibt-001 contextRef="ibg-00">20150483</pint:ibt-1>
-	<pint:ibt-002 contextRef="ibg-00">2015-04-01</pint:ibt-2>
-	<pint:ibt-003 contextRef="ibg-00">380</pint:ibt-3>
-	<pint:ibt-005 contextRef="ibg-00">EUR</pint:ibt-5>
-	<pint:ibt-009 contextRef="ibg-00">2015-04-14</pint:ibt-9>
-	<pint:ibt-012 contextRef="ibg-00">iExpress 20110412</pint:ibt-12>
+	<pint:ibt-001 contextRef="ibg-00">20150483</pint:ibt-001>
+	<pint:ibt-002 contextRef="ibg-00">2015-04-01</pint:ibt-002>
+	<pint:ibt-003 contextRef="ibg-00">380</pint:ibt-003>
+	<pint:ibt-005 contextRef="ibg-00">EUR</pint:ibt-005>
+	<pint:ibt-009 contextRef="ibg-00">2015-04-14</pint:ibt-009>
+	<pint:ibt-012 contextRef="ibg-00">iExpress 20110412</pint:ibt-012>
 	<xbrli:context id="ibg-01_0">
 		<xbrli:entity>
 			<xbrli:identifier scheme="http://www.eipa.jp">SAMPLE</xbrli:identifier>
@@ -66,10 +66,10 @@
 			</xbrldi:typedMember>
 		</xbrli:scenario>
 	</xbrli:context>
-	<pint:ibt-035 contextRef="ibg-04_ibg-05">Lindeboomseweg 41</pint:ibt-35>
-	<pint:ibt-037 contextRef="ibg-04_ibg-05">Amersfoort</pint:ibt-37>
-	<pint:ibt-038 contextRef="ibg-04_ibg-05">3825 AL</pint:ibt-38>
-	<pint:ibt-040 contextRef="ibg-04_ibg-05">NL</pint:ibt-40>
+	<pint:ibt-035 contextRef="ibg-04_ibg-05">Lindeboomseweg 41</pint:ibt-035>
+	<pint:ibt-037 contextRef="ibg-04_ibg-05">Amersfoort</pint:ibt-037>
+	<pint:ibt-038 contextRef="ibg-04_ibg-05">3825 AL</pint:ibt-038>
+	<pint:ibt-040 contextRef="ibg-04_ibg-05">NL</pint:ibt-040>
 	<xbrli:context id="ibg-04_ibg-06">
 		<xbrli:entity>
 			<xbrli:identifier scheme="http://www.eipa.jp">SAMPLE</xbrli:identifier>
@@ -86,8 +86,8 @@
 			</xbrldi:typedMember>
 		</xbrli:scenario>
 	</xbrli:context>
-	<pint:ibt-042 contextRef="ibg-04_ibg-06">033-4549055</pint:ibt-42>
-	<pint:ibt-043 contextRef="ibg-04_ibg-06">info@bluem.nl</pint:ibt-43>
+	<pint:ibt-042 contextRef="ibg-04_ibg-06">033-4549055</pint:ibt-042>
+	<pint:ibt-043 contextRef="ibg-04_ibg-06">info@bluem.nl</pint:ibt-043>
 	<xbrli:context id="ibg-07_ibg-08">
 		<xbrli:entity>
 			<xbrli:identifier scheme="http://www.eipa.jp">SAMPLE</xbrli:identifier>
@@ -104,10 +104,10 @@
 			</xbrldi:typedMember>
 		</xbrli:scenario>
 	</xbrli:context>
-	<pint:ibt-050 contextRef="ibg-07_ibg-08">Henry Dunantweg 42</pint:ibt-50>
-	<pint:ibt-052 contextRef="ibg-07_ibg-08">Alphen aan den Rijn</pint:ibt-52>
-	<pint:ibt-053 contextRef="ibg-07_ibg-08">2402 NR</pint:ibt-53>
-	<pint:ibt-055 contextRef="ibg-07_ibg-08">NL</pint:ibt-55>
+	<pint:ibt-050 contextRef="ibg-07_ibg-08">Henry Dunantweg 42</pint:ibt-050>
+	<pint:ibt-052 contextRef="ibg-07_ibg-08">Alphen aan den Rijn</pint:ibt-052>
+	<pint:ibt-053 contextRef="ibg-07_ibg-08">2402 NR</pint:ibt-053>
+	<pint:ibt-055 contextRef="ibg-07_ibg-08">NL</pint:ibt-055>
 	<xbrli:context id="ibg-023_0">
 		<xbrli:entity>
 			<xbrli:identifier scheme="http://www.eipa.jp">SAMPLE</xbrli:identifier>
