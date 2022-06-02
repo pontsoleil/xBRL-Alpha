@@ -232,6 +232,8 @@ if __name__ == '__main__':
     '<presentationLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">\n']
   for record in records:
     pint_id = record['pint_id']
+    if 'ibg-00'==pint_id:
+      continue
     name = record['name']
     if 'hash' in parentDict[pint_id]:
       hash = parentDict[pint_id]['hash']
@@ -261,26 +263,5 @@ if __name__ == '__main__':
   lines.append('</linkbase>\n')
   with open(f'{xbrl_base}{xbrl_pint_presentation}','w',encoding='utf_8', newline='') as f:
     f.writelines(lines)
-
-#     printf "    <!-- %s -->\n", term;
-#     # print seq " 1." code " 2." p_module " 3." parent " 4." plt_module " 5." plt_parent " 6." mode;
-#     if (1!=loc_defined[parent] && ("a"==mode || "u"==mode)) {
-#       loc_defined[parent]=1;
-#       printf "    <loc xlink:type=\"locator\" xlink:href=\"../../%s/gl-%s-2022-12-31.xsd#gl-%s_%s\" xlink:label=\"gl-%s_%s\" xlink:title=\"presentation parent: %s\"/>\n", p_module, p_module, p_module, p_term, p_module, p_term, p_term;
-#     }
-#     if (1!=loc_defined[plt_parent] && "u"==mode) {
-#       loc_defined[plt_parent]=1;
-#       printf "    <loc xlink:type=\"locator\" xlink:href=\"../../%s/gl-%s-2022-12-31.xsd#gl-%s_%s\" xlink:label=\"gl-%s_%s\" xlink:title=\"presentation parent: %s\"/>\n", plt_module, plt_module, plt_module, plt_term, plt_module, plt_term, plt_term;
-#     }
-#     if (1!=loc_defined[code] && ("a"==mode || "u"==mode)) {
-#       loc_defined[code]=1;
-#       printf "    <loc xlink:type=\"locator\" xlink:href=\"../../%s/gl-%s-2022-12-31.xsd#gl-%s_%s\" xlink:label=\"gl-%s_%s\" xlink:title=\"presentation child: %s\"/>\n", module, module, module, term, module, term, term;
-#     }
-#     if ("u"==mode) {
-#       printf "    <presentationArc xlink:type=\"arc\" xlink:arcrole=\"http://www.xbrl.org/2003/arcrole/parent-child\" xlink:from=\"gl-%s_%s\" xlink:to=\"gl-%s_%s\" priority=\"1\" xlink:title=\"presentation: %s to %s\" use=\"prohibited\"/>\n", plt_module, plt_term, module, term, plt_term, term;
-#       printf "    <presentationArc xlink:type=\"arc\" xlink:arcrole=\"http://www.xbrl.org/2003/arcrole/parent-child\" xlink:from=\"gl-%s_%s\" xlink:to=\"gl-%s_%s\" priority=\"2\" xlink:title=\"presentation: %s to %s\" use=\"optional\" order=\"%s\"/>\n", p_module, p_term, module, term, p_term, term, seq;
-#     } else if ("a"==mode) {
-#       printf "    <presentationArc xlink:type=\"arc\" xlink:arcrole=\"http://www.xbrl.org/2003/arcrole/parent-child\" xlink:from=\"gl-%s_%s\" xlink:to=\"gl-%s_%s\" priority=\"2\" xlink:title=\"presentation: %s to %s\" use=\"optional\" order=\"%s\"/>\n", p_module, p_term, module, term, p_term, term, seq;
-#     }
 
   print('end')
