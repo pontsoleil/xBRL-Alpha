@@ -132,6 +132,10 @@ if __name__ == '__main__':
   for record in records:
     pint_id = record['pint_id']
     name = record['name']
+    if name in duplicateNames:
+      id = f'{name}{pint_id}'
+    else:
+      id = name
     if not pint_id in parentDict:
       parentDict[pint_id] = {'name':name, 'level':'', 'parent':''}
     if record['Level'] == level:
@@ -169,13 +173,17 @@ if __name__ == '__main__':
   for record in records:
     pint_id = record['pint_id']
     name = record['name']
+    if name in duplicateNames:
+      id = f'{name}{pint_id}'
+    else:
+      id = name
     BT = record['BT']
     Desc = record['Desc']
     line = f'  <!-- {pint_id} {name} -->\n'
     lines.append(line)
     dt_now = datetime.datetime.now()
     hash = hashlib.sha1(dt_now.isoformat().encode()).hexdigest()
-    line = f'    <link:loc xlink:type="locator" xlink:href="{xbrl_pint_xsd}#_{name}" xlink:label="{name}_{hash}"/>'
+    line = f'    <link:loc xlink:type="locator" xlink:href="{xbrl_pint_xsd}#{name}" xlink:label="{name}_{hash}"/>'
     lines.append(line)
     line = f'    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="{name}_{hash}" xlink:to="lbl_{pint_id}-en_{hash}"/>'
     lines.append(line)
@@ -197,13 +205,17 @@ if __name__ == '__main__':
   for record in records:
     pint_id = record['pint_id']
     name = record['name']
+    if name in duplicateNames:
+      id = f'{name}{pint_id}'
+    else:
+      id = name
     BT = record['BT_ja']
     Desc = record['Desc_ja']
     line = f'  <!-- {pint_id} {name} -->\n'
     lines.append(line)
     dt_now = datetime.datetime.now()
     hash = hashlib.sha1(dt_now.isoformat().encode()).hexdigest()
-    line = f'    <link:loc xlink:type="locator" xlink:href="{xbrl_pint_xsd}#_{name}" xlink:label="{name}_{hash}"/>'
+    line = f'    <link:loc xlink:type="locator" xlink:href="{xbrl_pint_xsd}#{name}" xlink:label="{name}_{hash}"/>'
     lines.append(line)
     line = f'    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="{name}_{hash}" xlink:to="lbl_{pint_id}-ja_{hash}"/>'
     lines.append(line)
@@ -224,19 +236,23 @@ if __name__ == '__main__':
   for record in records:
     pint_id = record['pint_id']
     name = record['name']
+    if name in duplicateNames:
+      id = f'{name}{pint_id}'
+    else:
+      id = name
     if 'hash' in parentDict[pint_id]:
       hash = parentDict[pint_id]['hash']
     else:
       dt_now = datetime.datetime.now()
       hash = hashlib.sha1(dt_now.isoformat().encode()).hexdigest()
-      line = f'    <loc xlink:type="locator" xlink:href="{xbrl_pint_xsd}#_{name}" xlink:label="{name}_{hash}" xlink:title="presentation parent: {name}"/>\n'
+      line = f'    <loc xlink:type="locator" xlink:href="{xbrl_pint_xsd}#{name}" xlink:label="{name}_{hash}" xlink:title="presentation parent: {name}"/>\n'
       lines.append(line)
     parent = parentDict[pint_id]['parent']
     parent_name = parentDict[parent_id]['name']
     if not 'hash' in parentDict[parent_id]:
       dt_now = datetime.datetime.now()
       parent_hash = hashlib.sha1(dt_now.isoformat().encode()).hexdigest()
-      line = f'    <loc xlink:type="locator" xlink:href="{xbrl_pint_xsd}#_{parent_name}" xlink:label="{parent_name}_{parent_hash}" xlink:title="presentation parent: {parent_name}"/>\n'
+      line = f'    <loc xlink:type="locator" xlink:href="{xbrl_pint_xsd}#{parent_name}" xlink:label="{parent_name}_{parent_hash}" xlink:title="presentation parent: {parent_name}"/>\n'
       lines.append(line)
     else:
       parent_hash = parentDict[parent_id]['hash']
