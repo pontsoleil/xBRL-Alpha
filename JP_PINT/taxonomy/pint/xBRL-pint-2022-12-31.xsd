@@ -308,15 +308,15 @@
   <element name="LINE_TAX_INFORMATION" id="ibg-30" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="invoicedItemTAXCategoryCode" id="ibt-151" type="pint:codeItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="invoicedItemTAXRate" id="ibt-152" type="pint:percentageItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
-  <element name="unitTAX(amount)" id="ibt-166" type="pint:percentageItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
+  <element name="unitTAXamount" id="ibt-166" type="pint:percentageItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="taxExemptionReasonText" id="ibt-185" type="pint:codeItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="taxExemptionReasonCode" id="ibt-186" type="pint:textItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="taxScheme" id="ibt-167" type="pint:codeItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ITEM_INFORMATION" id="ibg-31" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="itemName" id="ibt-153" type="pint:textItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="itemDescription" id="ibt-154" type="pint:textItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
-  <element name="itemSeller'sIdentifier" id="ibt-155" type="pint:identifierItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
-  <element name="itemBuyer'sIdentifier" id="ibt-156" type="pint:identifierItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
+  <element name="itemSellersIdentifier" id="ibt-155" type="pint:identifierItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
+  <element name="itemBuyersIdentifier" id="ibt-156" type="pint:identifierItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="itemStandardIdentifier" id="ibt-157" type="pint:identifierItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="itemClassificationIdentifier" id="ibt-158" type="pint:identifierItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="schemeIdentifier" id="ibt-158-1" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>

@@ -92,6 +92,7 @@ if __name__ == '__main__':
         type = datatypeMap[type]
       else:
         type = 'xbrli:stringItemType'
+      name = re.sub(r'[\'\(\)]','',name)
       record['name'] = name
       record['type'] = type
       record['pint_id'] = pint_id
