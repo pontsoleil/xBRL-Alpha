@@ -171,10 +171,10 @@ if __name__ == '__main__':
   # <link:label xlink:type="resource" xlink:label="lbl_cen-11-en_064655acf8b0a234045c61cb4930c4c6" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Project reference</link:label>
   # <link:label xlink:type="resource" xlink:label="lbl_cen-11-en_064655acf8b0a234045c61cb4930c4c6" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="en">The identification of the project the invoice refers to</link:label>
   # labelLink EN
-  lines = ['<?xml version="1.0" encoding="UTF-8"?>',
-    '<!-- 2022 (c) XBRL Japan -->',
-    '<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">',
-    '  <link:labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">']
+  lines = ['<?xml version="1.0" encoding="UTF-8"?>\n',
+    '<!-- 2022 (c) XBRL Japan -->\n',
+    '<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">\n',
+    '  <link:labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">\n']
   for record in records:
     pint_id = record['pint_id']
     name = record['name']
@@ -184,24 +184,24 @@ if __name__ == '__main__':
     lines.append(line)
     dt_now = datetime.datetime.now()
     hash = hashlib.sha1(dt_now.isoformat().encode()).hexdigest()
-    line = f'    <link:loc xlink:type="locator" xlink:href="{xbrl_pint_xsd}#{name}" xlink:label="{name}_{hash}"/>'
+    line = f'    <link:loc xlink:type="locator" xlink:href="{xbrl_pint_xsd}#{name}" xlink:label="{name}_{hash}"/>\n'
     lines.append(line)
-    line = f'    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="{name}_{hash}" xlink:to="lbl_{pint_id}-en_{hash}"/>'
+    line = f'    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="{name}_{hash}" xlink:to="lbl_{pint_id}-en_{hash}"/>\n'
     lines.append(line)
-    line = f'    <link:label xlink:type="resource" xlink:label="lbl_{pint_id}-en_{hash}" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">{BT}</link:label>'
+    line = f'    <link:label xlink:type="resource" xlink:label="lbl_{pint_id}-en_{hash}" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">{BT}</link:label>\n'
     lines.append(line)
-    line = f'    <link:label xlink:type="resource" xlink:label="lbl_{pint_id}-en_{hash}" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="en">{Desc}</link:label>'
+    line = f'    <link:label xlink:type="resource" xlink:label="lbl_{pint_id}-en_{hash}" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="en">{Desc}</link:label>\n'
     lines.append(line)
-  lines.append('  </link:labelLink>')
-  lines.append('</link:linkbase>')
+  lines.append('  </link:labelLink>\n')
+  lines.append('</link:linkbase>\n')
   
   with open(f'{xbrl_base}{xbrl_pint_label_en}','w',encoding='utf_8', newline='') as f:
     f.writelines(lines)
 
   # labelLink JA
-  lines = ['<?xml version="1.0" encoding="UTF-8"?>',
-    '<!-- 2022 (c) XBRL Japan -->',
-    '<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">',
+  lines = ['<?xml version="1.0" encoding="UTF-8"?>\n',
+    '<!-- 2022 (c) XBRL Japan -->\n',
+    '<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">\n',
     '  <link:labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">']
   for record in records:
     pint_id = record['pint_id']
@@ -212,24 +212,24 @@ if __name__ == '__main__':
     lines.append(line)
     dt_now = datetime.datetime.now()
     hash = hashlib.sha1(dt_now.isoformat().encode()).hexdigest()
-    line = f'    <link:loc xlink:type="locator" xlink:href="{xbrl_pint_xsd}#{name}" xlink:label="{name}_{hash}"/>'
+    line = f'    <link:loc xlink:type="locator" xlink:href="{xbrl_pint_xsd}#{name}" xlink:label="{name}_{hash}"/>\n'
     lines.append(line)
-    line = f'    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="{name}_{hash}" xlink:to="lbl_{pint_id}-ja_{hash}"/>'
+    line = f'    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="{name}_{hash}" xlink:to="lbl_{pint_id}-ja_{hash}"/>\n'
     lines.append(line)
-    line = f'    <link:label xlink:type="resource" xlink:label="lbl_{pint_id}-ja_{hash}" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="ja">{BT}</link:label>'
+    line = f'    <link:label xlink:type="resource" xlink:label="lbl_{pint_id}-ja_{hash}" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="ja">{BT}</link:label>\n'
     lines.append(line)
-    line = f'    <link:label xlink:type="resource" xlink:label="lbl_{pint_id}-ja_{hash}" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">{Desc}</link:label>'
+    line = f'    <link:label xlink:type="resource" xlink:label="lbl_{pint_id}-ja_{hash}" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">{Desc}</link:label>\n'
     lines.append(line)
-  lines.append('  </link:labelLink>')
-  lines.append('</link:linkbase>')
+  lines.append('  </link:labelLink>\n')
+  lines.append('</link:linkbase>\n')
   with open(f'{xbrl_base}{xbrl_pint_label_ja}','w',encoding='utf_8', newline='') as f:
     f.writelines(lines)
 
   #  presentationLink
-  lines = ['<?xml version="1.0" encoding="UTF-8"?>',
-    '<!-- 2022 (c) XBRL Japan -->',
-    '<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">',
-    '<presentationLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">']
+  lines = ['<?xml version="1.0" encoding="UTF-8"?>\n',
+    '<!-- 2022 (c) XBRL Japan -->\n',
+    '<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">\n',
+    '<presentationLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">\n']
   for record in records:
     pint_id = record['pint_id']
     name = record['name']
@@ -257,8 +257,8 @@ if __name__ == '__main__':
       parent_hash = parentDict[parent_id]['hash']
     line = f'    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="{parent_name}_{parent_hash}" xlink:to="{name}_{hash}" priority="1" xlink:title="presentation: {parent_name} to {name}" use="optional"/>\n'
     lines.append(line)
-  lines.append('  </presentationLink>')
-  lines.append('</linkbase>')
+  lines.append('  </presentationLink>\n')
+  lines.append('</linkbase>\n')
   with open(f'{xbrl_base}{xbrl_pint_presentation}','w',encoding='utf_8', newline='') as f:
     f.writelines(lines)
 
