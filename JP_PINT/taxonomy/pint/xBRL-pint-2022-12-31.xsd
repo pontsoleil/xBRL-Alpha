@@ -325,4 +325,4 @@
   <element name="ibg-32" id="ITEM_ATTRIBUTES" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibt-160" id="itemAttributeName" type="pint:textItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibt-161" id="itemAttributeValue" type="pint:textItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
-</scheme>
+</schema>

@@ -121,7 +121,7 @@ if __name__ == '__main__':
       id = name
     line = f'  <element name="{pint_id}" id="{id}" type="{type}" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>\n'
     lines.append(line)
-  lines.append('</scheme>')
+  lines.append('</schema>')
 
   with open(f'{xbrl_base}{xbrl_pint_xsd}','w',encoding='utf_8', newline='') as f:
     f.writelines(lines)
