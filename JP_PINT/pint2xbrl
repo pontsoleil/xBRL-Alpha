@@ -231,7 +231,7 @@ if __name__ == '__main__':
     lines.append(line)
   lines.append('  </presentationLink>')
   lines.append('</linkbase>')
-  with open(f'{xbrl_base}{xbrl_pint_label_ja}','w',encoding='utf_8', newline='') as f:
+  with open(f'{xbrl_base}{xbrl_pint_presentation}','w',encoding='utf_8', newline='') as f:
     f.writelines(lines)
 
 
