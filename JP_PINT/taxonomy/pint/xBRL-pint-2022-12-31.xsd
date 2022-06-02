@@ -83,7 +83,8 @@
     <simpleContent>
       <restriction base="xbrli:stringItemType"/>
     </simpleContent>
-  </complexType>  <element name="ibg-00" id="Invoice" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
+  </complexType>
+  <element name="ibg-00" id="Invoice" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibt-001" id="invoiceNumber" type="pint:identifierItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibt-002" id="invoiceIssueDate" type="pint:dateItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibt-168" id="invoiceIssueTime" type="pint:timeItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
