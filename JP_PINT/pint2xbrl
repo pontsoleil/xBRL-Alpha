@@ -108,7 +108,7 @@ if __name__ == '__main__':
     pint_id = record['pint_id']
     name = record['name']
     type = record['type']
-    if re.match(r'-[0-9]$',pint_id):
+    if re.match(r'^.*-[0-9]$',pint_id) and 'schemeIdentifier'==name:
       id = f'{name}{pint_id}'
     else:
       id = name
