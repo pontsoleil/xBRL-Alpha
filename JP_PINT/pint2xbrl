@@ -108,7 +108,7 @@ if __name__ == '__main__':
     pint_id = record['pint_id']
     name = record['name']
     type = record['type']
-    line = f'  <element name="{name}" id="{pint_id}" type="{type}" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>\n'
+    line = f'  <element name="{pint_id}" id="{name}" type="{type}" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>\n'
     lines.append(line)
   lines.append('</scheme>')
 
