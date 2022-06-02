@@ -10,13 +10,17 @@ import datetime
 
 shared_file = 'JP_PINT/semantic-model/main.yaml'
 jp_pint_file = 'JP_PINT/source/jp_pint.tsv'
-xbrl_pint_head = 'JP_PINT/source/head/xBRL-GL-pint-head.txt'
+
+xbrl_source = 'JP_PINT/source/head/'
+xbrl_pint_head = 'xBRL-PINT-head.txt'
+xbrl_pint_definition_head = 'xBRL-PINT-definition-head.txt'
 
 xbrl_base = 'JP_PINT/taxonomy/pint/'
 xbrl_pint_xsd = 'xBRL-pint-2022-12-31.xsd'
 xbrl_pint_label_en = 'xBRL-pint-2022-12-31-label-en.xml'
 xbrl_pint_label_ja = 'xBRL-pint-2022-12-31-label-ja.xml'
 xbrl_pint_presentation = 'xBRL-pint-2022-12-31-presentation.xml'
+xbrl_pint_definition = 'xBRL-pint-2022-12-31-definition.xml'
 
 shared_yaml = None
 
@@ -116,7 +120,7 @@ if __name__ == '__main__':
     pintDict[pint_id] = record
 
   lines = []
-  with open(xbrl_pint_head, encoding='utf_8', newline='') as f:
+  with open(f'{xbrl_source}{xbrl_pint_head}', encoding='utf_8', newline='') as f:
     lines = f.readlines()
 
   for record in records:
@@ -140,9 +144,7 @@ if __name__ == '__main__':
   for record in records:
     pint_id = record['pint_id']
     name = record['name']
-    # if not pint_id in parentDict:
     parentDict[pint_id] = {'name':name, 'level':'', 'parent':''}
-    # else:
     if record['Level'] == level:
       parentDict[pint_id]['parent'] = parent[level-1]
       parent[level] = record['pint_id']
@@ -165,14 +167,9 @@ if __name__ == '__main__':
         if i > level:
           parent[i] = None
 
-  # <!-- cen-11 gl-cen:projectReference -->
-  # <link:loc xlink:type="locator" xlink:href="gl-cen-2020-12-31.xsd#gl-cen_projectReference" xlink:label="gl-cen_projectReference_064655acf8b0a234045c61cb4930c4c6"/>
-  # <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="gl-cen_projectReference_064655acf8b0a234045c61cb4930c4c6" xlink:to="lbl_cen-11-en_064655acf8b0a234045c61cb4930c4c6"/>
-  # <link:label xlink:type="resource" xlink:label="lbl_cen-11-en_064655acf8b0a234045c61cb4930c4c6" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Project reference</link:label>
-  # <link:label xlink:type="resource" xlink:label="lbl_cen-11-en_064655acf8b0a234045c61cb4930c4c6" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="en">The identification of the project the invoice refers to</link:label>
   # labelLink EN
   lines = ['<?xml version="1.0" encoding="UTF-8"?>\n',
-    '<!-- 2022 (c) XBRL Japan -->\n',
+    '<!--  (c) 2022 XBRL Japan  inc. -->\n',
     '<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">\n',
     '  <link:labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">\n']
   for record in records:
@@ -200,7 +197,7 @@ if __name__ == '__main__':
 
   # labelLink JA
   lines = ['<?xml version="1.0" encoding="UTF-8"?>\n',
-    '<!-- 2022 (c) XBRL Japan -->\n',
+    '<!--  (c) 2022 XBRL Japan  inc. -->\n',
     '<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">\n',
     '  <link:labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">']
   for record in records:
@@ -227,9 +224,9 @@ if __name__ == '__main__':
 
   #  presentationLink
   lines = ['<?xml version="1.0" encoding="UTF-8"?>\n',
-    '<!-- 2022 (c) XBRL Japan -->\n',
+    '<!--  (c) 2022 XBRL Japan  inc. -->\n',
     '<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">\n',
-    '<presentationLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">\n']
+    '<presentationLink xlink:type="extended" xlink:role="http://xbrl.org/role/xBRL-PINT_structure">\n']
   for record in records:
     pint_id = record['pint_id']
     if 'ibg-00'==pint_id:
@@ -262,6 +259,30 @@ if __name__ == '__main__':
   lines.append('  </presentationLink>\n')
   lines.append('</linkbase>\n')
   with open(f'{xbrl_base}{xbrl_pint_presentation}','w',encoding='utf_8', newline='') as f:
+    f.writelines(lines)
+
+  lines = []
+  with open(f'{xbrl_source}{xbrl_pint_definition_head}', encoding='utf_8', newline='') as f:
+    lines = f.readlines()
+  # <!-- vatCategoryCode -->
+  # <link:loc xlink:type="locator" xlink:href="../../cen/gl-cen-2020-12-31.xsd#gl-cen_vatCategoryCode" xlink:label="gl-cen_vatCategoryCode" xlink:title="gl-cen_vatCategoryCode"/>
+  # <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="gl-cor_accountingEntries" xlink:to="gl-cen_vatCategoryCode" xlink:title="definition: gl-cor_accountingEntries to gl-cen_vatCategoryCode" order="0"/>
+  for record in records:
+    pint_id = record['pint_id']
+    name = record['name']
+    type = record['type']
+    if name in duplicateNames:
+      id = f'{name}{pint_id}'
+    else:
+      id = name
+    lines.append(f'    <!-- {name} -->\n')
+    line = f'    <link:loc xlink:type="locator" xlink:href="{xbrl_pint_xsd}#{name}" xlink:label="{name}" xlink:title="{name}e"/>\n'
+    lines.append(line)
+    line = f'    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="Invoice" xlink:to="{name}" xlink:title="definition: Invoice to {name}" order="0"/>\n'
+    lines.append(line)
+  lines.append('  </link:definitionLink>\n')
+  lines.append('</link:linkbase>\n')
+  with open(f'{xbrl_base}{xbrl_pint_definition}','w',encoding='utf_8', newline='') as f:
     f.writelines(lines)
 
   print('end')
