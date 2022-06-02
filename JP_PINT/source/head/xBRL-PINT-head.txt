@@ -2,15 +2,15 @@
 <!-- (c) 2022 XBRL Japan inc. -->
 <schema 
   targetNamespace="http://www.xbrl.org/int/pint/2022-12-31" 
-	attributeFormDefault="unqualified" 
-	elementFormDefault="qualified" 
-	xmlns:xs="http://www.w3.org/2001/XMLSchema" 
-	xmlns:xl="http://www.xbrl.org/2003/XLink" 
-	xmlns:link="http://www.xbrl.org/2003/linkbase" 
-	xmlns:xbrldt="http://xbrl.org/2005/xbrldt" 
-	xmlns:xbrldi="http://xbrl.org/2006/xbrldi" 
-	xmlns:xlink="http://www.w3.org/1999/xlink" 
-	xmlns:xbrli="http://www.xbrl.org/2003/instance" 
+  attributeFormDefault="unqualified" 
+  elementFormDefault="qualified" 
+  xmlns="http://www.w3.org/2001/XMLSchema" 
+  xmlns:xl="http://www.xbrl.org/2003/XLink" 
+  xmlns:link="http://www.xbrl.org/2003/linkbase" 
+  xmlns:xbrldt="http://xbrl.org/2005/xbrldt" 
+  xmlns:xbrldi="http://xbrl.org/2006/xbrldi" 
+  xmlns:xlink="http://www.w3.org/1999/xlink" 
+  xmlns:xbrli="http://www.xbrl.org/2003/instance" 
   xmlns:gen="http://www.xbrl.org/int/gl/gen/2022-12-31"
   xmlns:pint="http://www.xbrl.org/int/pint/2022-12-31">
   <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
