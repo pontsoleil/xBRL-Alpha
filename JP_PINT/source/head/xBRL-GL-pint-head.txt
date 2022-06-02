@@ -54,6 +54,11 @@
       <restriction base="xbrli:dateTimeItemType"/>
     </simpleContent>
   </complexType>
+	  <complexType name="timeItemType">
+    <simpleContent>
+      <restriction base="xbrli:dateTimeItemType"/>
+    </simpleContent>
+  </complexType>
   <complexType name="identifierItemType">
     <simpleContent>
       <restriction base="xbrli:tokenItemType"/>
@@ -64,7 +69,7 @@
       <restriction base="xbrli:tokenItemType"/>
     </simpleContent>
   </complexType>
-  <complexType name="binaryobjectItemType">
+  <complexType name="binaryObjectItemType">
     <simpleContent>
       <restriction base="xbrli:stringItemType"/>
     </simpleContent>
