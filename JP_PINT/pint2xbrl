@@ -36,6 +36,7 @@ datatypeMap = {
 
 duplicateNames = set()
 names = set()
+pintDict = {}
 
 def LC3(term):
   if not term:
@@ -107,6 +108,13 @@ if __name__ == '__main__':
 
   records = sorted(records,key=lambda x: x['SemSort'])
 
+  for record in records:
+    name = record['name']
+    pint_id = record['pint_id']
+    if name in duplicateNames:
+      record['name'] = f'{name}_{pint_id}'
+    pintDict[pint_id] = record
+
   lines = []
   with open(xbrl_pint_head, encoding='utf_8', newline='') as f:
     lines = f.readlines()
@@ -132,12 +140,9 @@ if __name__ == '__main__':
   for record in records:
     pint_id = record['pint_id']
     name = record['name']
-    if name in duplicateNames:
-      id = f'{name}{pint_id}'
-    else:
-      id = name
-    if not pint_id in parentDict:
-      parentDict[pint_id] = {'name':name, 'level':'', 'parent':''}
+    # if not pint_id in parentDict:
+    parentDict[pint_id] = {'name':name, 'level':'', 'parent':''}
+    # else:
     if record['Level'] == level:
       parentDict[pint_id]['parent'] = parent[level-1]
       parent[level] = record['pint_id']
@@ -154,8 +159,8 @@ if __name__ == '__main__':
         while level > len(parent) - 1:
           parent.append('')
       parent_id = record['pint_id']
-      if 'ibg'==parent_id[:3].lower():
-        parent[level] = record['pint_id']
+      # if 'ibg'==parent_id[:3].lower():
+      parent[level] = record['pint_id']
       for i in range(len(parent)):
         if i > level:
           parent[i] = None
@@ -173,10 +178,6 @@ if __name__ == '__main__':
   for record in records:
     pint_id = record['pint_id']
     name = record['name']
-    if name in duplicateNames:
-      id = f'{name}{pint_id}'
-    else:
-      id = name
     BT = record['BT']
     Desc = record['Desc']
     line = f'  <!-- {pint_id} {name} -->\n'
@@ -205,10 +206,6 @@ if __name__ == '__main__':
   for record in records:
     pint_id = record['pint_id']
     name = record['name']
-    if name in duplicateNames:
-      id = f'{name}{pint_id}'
-    else:
-      id = name
     BT = record['BT_ja']
     Desc = record['Desc_ja']
     line = f'  <!-- {pint_id} {name} -->\n'
@@ -236,10 +233,6 @@ if __name__ == '__main__':
   for record in records:
     pint_id = record['pint_id']
     name = record['name']
-    if name in duplicateNames:
-      id = f'{name}{pint_id}'
-    else:
-      id = name
     if 'hash' in parentDict[pint_id]:
       hash = parentDict[pint_id]['hash']
     else:
@@ -247,8 +240,14 @@ if __name__ == '__main__':
       hash = hashlib.sha1(dt_now.isoformat().encode()).hexdigest()
       line = f'    <loc xlink:type="locator" xlink:href="{xbrl_pint_xsd}#{name}" xlink:label="{name}_{hash}" xlink:title="presentation parent: {name}"/>\n'
       lines.append(line)
-    parent = parentDict[pint_id]['parent']
-    parent_name = parentDict[parent_id]['name']
+    parent_id = parentDict[pint_id]['parent']
+    if parent_id in parentDict:
+      if 'name' in parentDict[parent_id]:
+        parent_name = parentDict[parent_id]['name']
+      else:
+        print(parent_id)
+    else:
+      print(parent_id)
     if not 'hash' in parentDict[parent_id]:
       dt_now = datetime.datetime.now()
       parent_hash = hashlib.sha1(dt_now.isoformat().encode()).hexdigest()
@@ -256,13 +255,12 @@ if __name__ == '__main__':
       lines.append(line)
     else:
       parent_hash = parentDict[parent_id]['hash']
-    line = f'    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="{parent_name}_{parent_hash}" xlink:to="{name}_{hash}" priority="1" xlink:title="presentation: {parent_name} to {name}" use="optional"/>\n'
+    line = f'    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="{parent_name}_{parent_hash}" xlink:to="{id}_{hash}" priority="1" xlink:title="presentation: {parent_name} to {id}" use="optional"/>\n'
     lines.append(line)
   lines.append('  </presentationLink>')
   lines.append('</linkbase>')
   with open(f'{xbrl_base}{xbrl_pint_presentation}','w',encoding='utf_8', newline='') as f:
     f.writelines(lines)
-
 
 #     printf "    <!-- %s -->\n", term;
 #     # print seq " 1." code " 2." p_module " 3." parent " 4." plt_module " 5." plt_parent " 6." mode;
