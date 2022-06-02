@@ -15,7 +15,7 @@
 	<xbrli:unit id="EUR">
 		<xbrli:measure>iso4217:EUR</xbrli:measure>
 	</xbrli:unit>
-	<xbrli:context id="ibg-0">
+	<xbrli:context id="ibg-00">
 		<xbrli:entity>
 			<xbrli:identifier scheme="http://www.eipa.jp">SAMPLE</xbrli:identifier>
 		</xbrli:entity>
@@ -23,18 +23,18 @@
 			<xbrli:instant>2020-10-26</xbrli:instant>
 		</xbrli:period>
 		<xbrli:scenario>
-			<xbrldi:typedMember dimension="pint:dL1N">
-				<pint:_1>ibg-0</pint:_1>
+			<xbrldi:typedMember dimension="pint:d1">
+				<pint:_1>ibg-00</pint:_1>
 			</xbrldi:typedMember>
 		</xbrli:scenario>
 	</xbrli:context>
-	<pint:ibt-1 contextRef="ibg-0">20150483</pint:ibt-1>
-	<pint:ibt-2 contextRef="ibg-0">2015-04-01</pint:ibt-2>
-	<pint:ibt-3 contextRef="ibg-0">380</pint:ibt-3>
-	<pint:ibt-5 contextRef="ibg-0">EUR</pint:ibt-5>
-	<pint:ibt-9 contextRef="ibg-0">2015-04-14</pint:ibt-9>
-	<pint:ibt-12 contextRef="ibg-0">iExpress 20110412</pint:ibt-12>
-	<xbrli:context id="ibg-1_0">
+	<pint:ibt-1 contextRef="ibg-00">20150483</pint:ibt-1>
+	<pint:ibt-2 contextRef="ibg-00">2015-04-01</pint:ibt-2>
+	<pint:ibt-3 contextRef="ibg-00">380</pint:ibt-3>
+	<pint:ibt-5 contextRef="ibg-00">EUR</pint:ibt-5>
+	<pint:ibt-9 contextRef="ibg-00">2015-04-14</pint:ibt-9>
+	<pint:ibt-12 contextRef="ibg-00">iExpress 20110412</pint:ibt-12>
+	<xbrli:context id="ibg-01_0">
 		<xbrli:entity>
 			<xbrli:identifier scheme="http://www.eipa.jp">SAMPLE</xbrli:identifier>
 		</xbrli:entity>
@@ -42,15 +42,15 @@
 			<xbrli:instant>2020-10-26</xbrli:instant>
 		</xbrli:period>
 		<xbrli:scenario>
-			<xbrldi:typedMember dimension="pint:dL1N">
-				<pint:_1>ibg-1</pint:_1>
+			<xbrldi:typedMember dimension="pint:d1">
+				<pint:_1>ibg-01</pint:_1>
 			</xbrldi:typedMember>
-			<xbrldi:typedMember dimension="pint:dL2N">
+			<xbrldi:typedMember dimension="pint:d2">
 				<pint:_2>0</pint:_2>
 			</xbrldi:typedMember>
 		</xbrli:scenario>
 	</xbrli:context>
-	<xbrli:context id="ibg-4_ibg-5">
+	<xbrli:context id="ibg-04_ibg-05">
 		<xbrli:entity>
 			<xbrli:identifier scheme="http://www.eipa.jp">SAMPLE</xbrli:identifier>
 		</xbrli:entity>
@@ -58,19 +58,19 @@
 			<xbrli:instant>2020-10-26</xbrli:instant>
 		</xbrli:period>
 		<xbrli:scenario>
-			<xbrldi:typedMember dimension="pint:dL1N">
-				<pint:_1>ibg-4</pint:_1>
+			<xbrldi:typedMember dimension="pint:d1">
+				<pint:_1>ibg-04</pint:_1>
 			</xbrldi:typedMember>
-			<xbrldi:typedMember dimension="pint:dL2N">
-				<pint:_2>ibg-5</pint:_2>
+			<xbrldi:typedMember dimension="pint:d2">
+				<pint:_2>ibg-05</pint:_2>
 			</xbrldi:typedMember>
 		</xbrli:scenario>
 	</xbrli:context>
-	<pint:ibt-35 contextRef="ibg-4_ibg-5">Lindeboomseweg 41</pint:ibt-35>
-	<pint:ibt-37 contextRef="ibg-4_ibg-5">Amersfoort</pint:ibt-37>
-	<pint:ibt-38 contextRef="ibg-4_ibg-5">3825 AL</pint:ibt-38>
-	<pint:ibt-40 contextRef="ibg-4_ibg-5">NL</pint:ibt-40>
-	<xbrli:context id="ibg-4_ibg-6">
+	<pint:ibt-35 contextRef="ibg-04_ibg-05">Lindeboomseweg 41</pint:ibt-35>
+	<pint:ibt-37 contextRef="ibg-04_ibg-05">Amersfoort</pint:ibt-37>
+	<pint:ibt-38 contextRef="ibg-04_ibg-05">3825 AL</pint:ibt-38>
+	<pint:ibt-40 contextRef="ibg-04_ibg-05">NL</pint:ibt-40>
+	<xbrli:context id="ibg-04_ibg-06">
 		<xbrli:entity>
 			<xbrli:identifier scheme="http://www.eipa.jp">SAMPLE</xbrli:identifier>
 		</xbrli:entity>
@@ -78,17 +78,17 @@
 			<xbrli:instant>2020-10-26</xbrli:instant>
 		</xbrli:period>
 		<xbrli:scenario>
-			<xbrldi:typedMember dimension="pint:dL1N">
-				<pint:_1>ibg-4</pint:_1>
+			<xbrldi:typedMember dimension="pint:d1">
+				<pint:_1>ibg-04</pint:_1>
 			</xbrldi:typedMember>
-			<xbrldi:typedMember dimension="pint:dL2N">
-				<pint:_2>ibg-6</pint:_2>
+			<xbrldi:typedMember dimension="pint:d2">
+				<pint:_2>ibg-06</pint:_2>
 			</xbrldi:typedMember>
 		</xbrli:scenario>
 	</xbrli:context>
-	<pint:ibt-42 contextRef="ibg-4_ibg-6">033-4549055</pint:ibt-42>
-	<pint:ibt-43 contextRef="ibg-4_ibg-6">info@bluem.nl</pint:ibt-43>
-	<xbrli:context id="ibg-7_ibg-8">
+	<pint:ibt-42 contextRef="ibg-04_ibg-06">033-4549055</pint:ibt-42>
+	<pint:ibt-43 contextRef="ibg-04_ibg-06">info@bluem.nl</pint:ibt-43>
+	<xbrli:context id="ibg-07_ibg-08">
 		<xbrli:entity>
 			<xbrli:identifier scheme="http://www.eipa.jp">SAMPLE</xbrli:identifier>
 		</xbrli:entity>
@@ -96,19 +96,19 @@
 			<xbrli:instant>2020-10-26</xbrli:instant>
 		</xbrli:period>
 		<xbrli:scenario>
-			<xbrldi:typedMember dimension="pint:dL1N">
-				<pint:_1>ibg-7</pint:_1>
+			<xbrldi:typedMember dimension="pint:d1">
+				<pint:_1>ibg-07</pint:_1>
 			</xbrldi:typedMember>
-			<xbrldi:typedMember dimension="pint:dL2N">
-				<pint:_2>ibg-8</pint:_2>
+			<xbrldi:typedMember dimension="pint:d2">
+				<pint:_2>ibg-08</pint:_2>
 			</xbrldi:typedMember>
 		</xbrli:scenario>
 	</xbrli:context>
-	<pint:ibt-50 contextRef="ibg-7_ibg-8">Henry Dunantweg 42</pint:ibt-50>
-	<pint:ibt-52 contextRef="ibg-7_ibg-8">Alphen aan den Rijn</pint:ibt-52>
-	<pint:ibt-53 contextRef="ibg-7_ibg-8">2402 NR</pint:ibt-53>
-	<pint:ibt-55 contextRef="ibg-7_ibg-8">NL</pint:ibt-55>
-	<xbrli:context id="ibg-23_0">
+	<pint:ibt-50 contextRef="ibg-07_ibg-08">Henry Dunantweg 42</pint:ibt-50>
+	<pint:ibt-52 contextRef="ibg-07_ibg-08">Alphen aan den Rijn</pint:ibt-52>
+	<pint:ibt-53 contextRef="ibg-07_ibg-08">2402 NR</pint:ibt-53>
+	<pint:ibt-55 contextRef="ibg-07_ibg-08">NL</pint:ibt-55>
+	<xbrli:context id="ibg-023_0">
 		<xbrli:entity>
 			<xbrli:identifier scheme="http://www.eipa.jp">SAMPLE</xbrli:identifier>
 		</xbrli:entity>
@@ -116,19 +116,19 @@
 			<xbrli:instant>2020-10-26</xbrli:instant>
 		</xbrli:period>
 		<xbrli:scenario>
-			<xbrldi:typedMember dimension="pint:dL1N">
-				<pint:_1>ibg-23</pint:_1>
+			<xbrldi:typedMember dimension="pint:d1">
+				<pint:_1>ibg-023</pint:_1>
 			</xbrldi:typedMember>
-			<xbrldi:typedMember dimension="pint:dL2N">
+			<xbrldi:typedMember dimension="pint:d2">
 				<pint:_2>0</pint:_2>
 			</xbrldi:typedMember>
 		</xbrli:scenario>
 	</xbrli:context>
-	<pint:ibt-116 contextRef="ibg-23_0" decimals="INF" unitRef="EUR">147</pint:ibt-116>
-	<pint:ibt-117 contextRef="ibg-23_0" decimals="INF" unitRef="EUR">30.87</pint:ibt-117>
-	<pint:ibt-118 contextRef="ibg-23_0">S</pint:ibt-118>
-	<pint:ibt-119 contextRef="ibg-23_0" decimals="INF" unitRef="pure">21</pint:ibt-119>
-	<xbrli:context id="ibg-25_0">
+	<pint:ibt-116 contextRef="ibg-023_0" decimals="INF" unitRef="EUR">147</pint:ibt-116>
+	<pint:ibt-117 contextRef="ibg-023_0" decimals="INF" unitRef="EUR">30.87</pint:ibt-117>
+	<pint:ibt-118 contextRef="ibg-023_0">S</pint:ibt-118>
+	<pint:ibt-119 contextRef="ibg-023_0" decimals="INF" unitRef="pure">21</pint:ibt-119>
+	<xbrli:context id="ibg-025_0">
 		<xbrli:entity>
 			<xbrli:identifier scheme="http://www.eipa.jp">SAMPLE</xbrli:identifier>
 		</xbrli:entity>
@@ -136,15 +136,15 @@
 			<xbrli:instant>2020-10-26</xbrli:instant>
 		</xbrli:period>
 		<xbrli:scenario>
-			<xbrldi:typedMember dimension="pint:dL1N">
-				<pint:_1>ibg-25</pint:_1>
+			<xbrldi:typedMember dimension="pint:d1">
+				<pint:_1>ibg-025</pint:_1>
 			</xbrldi:typedMember>
-			<xbrldi:typedMember dimension="pint:dL2N">
+			<xbrldi:typedMember dimension="pint:d2">
 				<pint:_2>0</pint:_2>
 			</xbrldi:typedMember>
 		</xbrli:scenario>
 	</xbrli:context>
-	<pint:ibt-126 contextRef="ibg-25_0">1</pint:ibt-126>
-	<pint:ibt-129 contextRef="ibg-25_0" decimals="INF" unitRef="pure">3</pint:ibt-129>
-	<pint:ibt-131 contextRef="ibg-25_0" decimals="INF" unitRef="EUR">147</pint:ibt-131>
+	<pint:ibt-126 contextRef="ibg-025_0">1</pint:ibt-126>
+	<pint:ibt-129 contextRef="ibg-025_0" decimals="INF" unitRef="pure">3</pint:ibt-129>
+	<pint:ibt-131 contextRef="ibg-025_0" decimals="INF" unitRef="EUR">147</pint:ibt-131>
 </xbrli:xbrl>
