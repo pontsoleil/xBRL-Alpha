@@ -91,7 +91,7 @@ if __name__ == '__main__':
       if type in datatypeMap:
         type = datatypeMap[type]
       else:
-        type = ''
+        type = 'xbrli:stringItemType'
       record['name'] = name
       record['type'] = type
       record['pint_id'] = pint_id
