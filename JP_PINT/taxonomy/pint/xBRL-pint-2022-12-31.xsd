@@ -91,10 +91,10 @@
   <element name="ibt-010" id="buyerReference" type="pint:textItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibt-011" id="projectReference" type="pint:documentReferenceItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibt-012" id="contractReference" type="pint:documentReferenceItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
-  <element name="ibt-013" id="purchaseOrderReference" type="pint:documentReferenceItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
+  <element name="ibt-013" id="purchaseOrderReferenceibt-013" type="pint:documentReferenceItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibt-014" id="salesOrderReference" type="pint:documentReferenceItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibt-015" id="receivingAdviceReference" type="pint:documentReferenceItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
-  <element name="ibt-016" id="despatchAdviceReference" type="pint:documentReferenceItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
+  <element name="ibt-016" id="despatchAdviceReferenceibt-016" type="pint:documentReferenceItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibt-017" id="tenderOrLotReference" type="pint:documentReferenceItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibt-018" id="invoicedObjectIdentifier" type="pint:identifierItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibt-018-1" id="theIdentificationSchemeIdentifierOfTheInvoicedObjectIdentifier." type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
@@ -216,7 +216,7 @@
   <element name="ibt-091" id="debitedAccountIdentifier" type="pint:identifierItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibg-35" id="Paid_amounts" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibt-179" id="paymentIdentifier" type="pint:identifierItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
-  <element name="ibt-180" id="paidAmount" type="pint:amountItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
+  <element name="ibt-180" id="paidAmountibt-180" type="pint:amountItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibt-181" id="theDateWhenThePaidAmountIsDebitedToTheInvoice." type="pint:dateItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibt-182" id="paymentType" type="pint:codeItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibg-20" id="DOCUMENT_LEVEL_ALLOWANCES" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
@@ -246,7 +246,7 @@
   <element name="ibt-109" id="invoiceTotalAmountWithoutTAX" type="pint:amountItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibt-110" id="invoiceTotalTAXAmount" type="pint:amountItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibt-112" id="invoiceTotalAmountWithTAX" type="pint:amountItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
-  <element name="ibt-113" id="paidAmount" type="pint:amountItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
+  <element name="ibt-113" id="paidAmountibt-113" type="pint:amountItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibt-114" id="roundingAmount" type="pint:amountItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibt-115" id="amountDueForPayment" type="pint:amountItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibg-37" id="DOCUMENT_TOTALS_IN_TAX_ACCOUNTING_CURRENCY" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
@@ -260,8 +260,8 @@
   <element name="ibt-117" id="taxCategoryTaxAmount" type="pint:amountItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibt-118" id="taxCategoryCode" type="pint:codeItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibt-119" id="taxCategoryRate" type="pint:percentageItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
-  <element name="ibt-120" id="taxExemptionReasonText" type="pint:textItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
-  <element name="ibt-121" id="taxExemptionReasonCode" type="pint:codeItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
+  <element name="ibt-120" id="taxExemptionReasonTextibt-120" type="pint:textItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
+  <element name="ibt-121" id="taxExemptionReasonCodeibt-121" type="pint:codeItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibg-24" id="ADDITIONAL_SUPPORTING_DOCUMENTS" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibt-122" id="supportingDocumentReference" type="pint:documentReferenceItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibt-123" id="supportingDocumentDescription" type="pint:textItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
@@ -280,9 +280,9 @@
   <element name="ibt-129" id="invoicedQuantity" type="pint:quantityItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibt-130" id="invoicedQuantityUnitOfMeasureCode" type="pint:codeItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibt-131" id="invoiceLineNetAmount" type="pint:amountItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
-  <element name="ibt-183" id="purchaseOrderReference" type="pint:documentReferenceItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
+  <element name="ibt-183" id="purchaseOrderReferenceibt-183" type="pint:documentReferenceItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibt-132" id="referencedPurchaseOrderLineReference" type="pint:documentReferenceItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
-  <element name="ibt-184" id="despatchAdviceReference" type="pint:documentReferenceItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
+  <element name="ibt-184" id="despatchAdviceReferenceibt-184" type="pint:documentReferenceItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibt-133" id="invoiceLineBuyerAccountingReference" type="pint:textItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibg-26" id="INVOICE_LINE_PERIOD" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibt-134" id="invoiceLinePeriodStartDate" type="pint:dateItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
@@ -309,8 +309,8 @@
   <element name="ibt-151" id="invoicedItemTAXCategoryCode" type="pint:codeItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibt-152" id="invoicedItemTAXRate" type="pint:percentageItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibt-166" id="unitTAXamount" type="pint:percentageItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
-  <element name="ibt-185" id="taxExemptionReasonText" type="pint:codeItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
-  <element name="ibt-186" id="taxExemptionReasonCode" type="pint:textItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
+  <element name="ibt-185" id="taxExemptionReasonTextibt-185" type="pint:codeItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
+  <element name="ibt-186" id="taxExemptionReasonCodeibt-186" type="pint:textItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibt-167" id="taxScheme" type="pint:codeItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibg-31" id="ITEM_INFORMATION" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>
   <element name="ibt-153" id="itemName" type="pint:textItemType" substitutionGroup="xbrli:item" nillable="false" xbrli:periodType="instant"/>

@@ -34,6 +34,9 @@ datatypeMap = {
   'Percentage':'pint:percentageItemType'
 }
 
+duplicateNames = set()
+names = set()
+
 def LC3(term):
   if not term:
     return ''
@@ -93,6 +96,10 @@ if __name__ == '__main__':
       else:
         type = 'xbrli:stringItemType'
       name = re.sub(r'[\'\(\)]','',name)
+      if name in names:
+        duplicateNames.add(name)
+      else:
+        names.add(name)
       record['name'] = name
       record['type'] = type
       record['pint_id'] = pint_id
@@ -108,7 +115,7 @@ if __name__ == '__main__':
     pint_id = record['pint_id']
     name = record['name']
     type = record['type']
-    if re.match(r'^.*-[0-9]$',pint_id) and 'schemeIdentifier'==name:
+    if name in duplicateNames:
       id = f'{name}{pint_id}'
     else:
       id = name
