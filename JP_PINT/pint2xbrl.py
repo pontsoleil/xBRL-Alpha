@@ -29,6 +29,7 @@ datatypeMap = {
   'Code':'pint:codeItemType',
   'Date':'pint:dateItemType',
   'Binary object':'pint:binaryObjectItemType',
+  'Binary Object':'pint:binaryObjectItemType',
   'Time':'pint:timeItemType',
   'Identifier':'pint:identifierItemType',
   'Quantity':'pint:quantityItemType',
@@ -57,7 +58,7 @@ def LC3(term):
       name += terms[i][0].upper() + terms[i][1:]
   return name
 
-def C3(term):
+def SC(term):
   if not term:
     return ''
   terms = term.split(' ')
@@ -94,7 +95,7 @@ if __name__ == '__main__':
       if 'ibt'==pint_id[:3].lower():
         name = LC3(term)
       else:
-        name = C3(term)
+        name = SC(term)
       type = record['DT']
       if type in datatypeMap:
         type = datatypeMap[type]
@@ -168,10 +169,12 @@ if __name__ == '__main__':
           parent[i] = None
 
   # labelLink EN
-  lines = ['<?xml version="1.0" encoding="UTF-8"?>\n',
+  lines = [
+    '<?xml version="1.0" encoding="UTF-8"?>\n',
     '<!--  (c) 2022 XBRL Japan  inc. -->\n',
     '<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">\n',
-    '  <link:labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">\n']
+    '  <link:labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">\n'
+  ]
   for record in records:
     pint_id = record['pint_id']
     name = record['name']
@@ -196,10 +199,12 @@ if __name__ == '__main__':
     f.writelines(lines)
 
   # labelLink JA
-  lines = ['<?xml version="1.0" encoding="UTF-8"?>\n',
+  lines = [
+    '<?xml version="1.0" encoding="UTF-8"?>\n',
     '<!--  (c) 2022 XBRL Japan  inc. -->\n',
     '<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">\n',
-    '  <link:labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">']
+    '  <link:labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">'
+  ]
   for record in records:
     pint_id = record['pint_id']
     name = record['name']
@@ -223,10 +228,12 @@ if __name__ == '__main__':
     f.writelines(lines)
 
   #  presentationLink
-  lines = ['<?xml version="1.0" encoding="UTF-8"?>\n',
+  lines = [
+    '<?xml version="1.0" encoding="UTF-8"?>\n',
     '<!--  (c) 2022 XBRL Japan  inc. -->\n',
     '<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">\n',
-    '<presentationLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">\n']
+    '<presentationLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">\n'
+  ]
   for record in records:
     pint_id = record['pint_id']
     if 'ibg-00'==pint_id:
