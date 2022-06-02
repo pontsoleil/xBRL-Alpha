@@ -216,9 +216,9 @@ if __name__ == '__main__':
     lines.append(line)
     line = f'    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="{name}_{hash}" xlink:to="lbl_{pint_id}-ja_{hash}"/>'
     lines.append(line)
-    line = f'    <link:label xlink:type="resource" xlink:label="lbl_{pint_id}-ja_{hash}" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">{BT}</link:label>'
+    line = f'    <link:label xlink:type="resource" xlink:label="lbl_{pint_id}-ja_{hash}" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="ja">{BT}</link:label>'
     lines.append(line)
-    line = f'    <link:label xlink:type="resource" xlink:label="lbl_{pint_id}-ja_{hash}" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="en">{Desc}</link:label>'
+    line = f'    <link:label xlink:type="resource" xlink:label="lbl_{pint_id}-ja_{hash}" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">{Desc}</link:label>'
     lines.append(line)
   lines.append('  </link:labelLink>')
   lines.append('</link:linkbase>')
