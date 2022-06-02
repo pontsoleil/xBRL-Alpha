@@ -282,12 +282,13 @@ if __name__ == '__main__':
       id = f'{name}{pint_id}'
     else:
       id = name
+    if 'Invoice'==name:
+      continue
     lines.append(f'    <!-- {name} -->\n')
     line = f'    <link:loc xlink:type="locator" xlink:href="{xbrl_pint_xsd}#{name}" xlink:label="{name}" xlink:title="{name}e"/>\n'
     lines.append(line)
-    if 'Invoice'!=name:
-      line = f'    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="Invoice" xlink:to="{name}" xlink:title="definition: Invoice to {name}" order="0"/>\n'
-      lines.append(line)
+    line = f'    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="Invoice" xlink:to="{name}" xlink:title="definition: Invoice to {name}" order="0"/>\n'
+    lines.append(line)
   lines.append('  </link:definitionLink>\n')
   lines.append('</link:linkbase>\n')
   with open(f'{xbrl_base}{xbrl_pint_definition}','w',encoding='utf_8', newline='') as f:
