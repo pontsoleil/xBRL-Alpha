@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink"  xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">  <link:labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink"  xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+  <link:labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
     <!-- cen-11 gl-cen:projectReference -->
     <link:loc xlink:type="locator" xlink:href="gl-cen-2020-12-31.xsd#gl-cen_projectReference" xlink:label="gl-cen_projectReference_064655acf8b0a234045c61cb4930c4c6"/>
     <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="gl-cen_projectReference_064655acf8b0a234045c61cb4930c4c6" xlink:to="lbl_cen-11-en_064655acf8b0a234045c61cb4930c4c6"/>
