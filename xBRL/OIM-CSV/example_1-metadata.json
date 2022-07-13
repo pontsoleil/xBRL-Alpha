@@ -12,13 +12,13 @@
             "xlink": "http://www.w3.org/1999/xlink"
         },
         "taxonomy": [
-            "core.xsd"
+            "../taxonomy/pint/core.xsd"
         ]
     },
     "tableTemplates": {
         "pint": {
             "columns": {
-                "G00": {},
+                "_380": {},
                 "G23": {},
                 "G25": {},
                 "G32": {},
@@ -97,6 +97,11 @@
                         "concept": "pint:ibt-034"
                     }
                 },
+                "ibt-034-1": {
+                    "dimensions": {
+                        "concept": "pint:ibt-034-1"
+                    }
+                },
                 "ibt-035": {
                     "dimensions": {
                         "concept": "pint:ibt-035"
@@ -157,9 +162,19 @@
                         "concept": "pint:ibt-047"
                     }
                 },
+                "ibt-047-1": {
+                    "dimensions": {
+                        "concept": "pint:ibt-047-1"
+                    }
+                },
                 "ibt-049": {
                     "dimensions": {
                         "concept": "pint:ibt-049"
+                    }
+                },
+                "ibt-049-1": {
+                    "dimensions": {
+                        "concept": "pint:ibt-049-1"
                     }
                 },
                 "ibt-050": {
@@ -273,7 +288,7 @@
                     }
                 },
                 "ibt-092": {
-                    "decimals": "0",
+                    "decimals": 0,
                     "dimensions": {
                         "concept": "pint:ibt-092",
                         "unit": "iso4217:JPY"
@@ -289,13 +304,18 @@
                         "concept": "pint:ibt-095"
                     }
                 },
+                "ibt-095-1": {
+                    "dimensions": {
+                        "concept": "pint:ibt-095-1"
+                    }
+                },
                 "ibt-096": {
                     "dimensions": {
                         "concept": "pint:ibt-096"
                     }
                 },
                 "ibt-099": {
-                    "decimals": "0",
+                    "decimals": 0,
                     "dimensions": {
                         "concept": "pint:ibt-099",
                         "unit": "iso4217:JPY"
@@ -311,69 +331,74 @@
                         "concept": "pint:ibt-102"
                     }
                 },
+                "ibt-102-1": {
+                    "dimensions": {
+                        "concept": "pint:ibt-102-1"
+                    }
+                },
                 "ibt-103": {
                     "dimensions": {
                         "concept": "pint:ibt-103"
                     }
                 },
                 "ibt-106": {
-                    "decimals": "0",
+                    "decimals": 0,
                     "dimensions": {
                         "concept": "pint:ibt-106",
                         "unit": "iso4217:JPY"
                     }
                 },
                 "ibt-107": {
-                    "decimals": "0",
+                    "decimals": 0,
                     "dimensions": {
                         "concept": "pint:ibt-107",
                         "unit": "iso4217:JPY"
                     }
                 },
                 "ibt-108": {
-                    "decimals": "0",
+                    "decimals": 0,
                     "dimensions": {
                         "concept": "pint:ibt-108",
                         "unit": "iso4217:JPY"
                     }
                 },
                 "ibt-109": {
-                    "decimals": "0",
+                    "decimals": 0,
                     "dimensions": {
                         "concept": "pint:ibt-109",
                         "unit": "iso4217:JPY"
                     }
                 },
                 "ibt-110": {
-                    "decimals": "0",
+                    "decimals": 0,
                     "dimensions": {
                         "concept": "pint:ibt-110",
                         "unit": "iso4217:JPY"
                     }
                 },
                 "ibt-112": {
-                    "decimals": "0",
+                    "decimals": 0,
                     "dimensions": {
                         "concept": "pint:ibt-112",
                         "unit": "iso4217:JPY"
                     }
                 },
                 "ibt-115": {
-                    "decimals": "0",
+                    "decimals": 0,
                     "dimensions": {
                         "concept": "pint:ibt-115",
                         "unit": "iso4217:JPY"
                     }
                 },
                 "ibt-116": {
-                    "decimals": "0",
+                    "decimals": 0,
                     "dimensions": {
                         "concept": "pint:ibt-116",
                         "unit": "iso4217:JPY"
                     }
                 },
                 "ibt-117": {
-                    "decimals": "0",
+                    "decimals": 0,
                     "dimensions": {
                         "concept": "pint:ibt-117",
                         "unit": "iso4217:JPY"
@@ -410,7 +435,7 @@
                     }
                 },
                 "ibt-131": {
-                    "decimals": "0",
+                    "decimals": 0,
                     "dimensions": {
                         "concept": "pint:ibt-131",
                         "unit": "iso4217:JPY"
@@ -427,8 +452,10 @@
                     }
                 },
                 "ibt-146": {
+                    "decimals": 0,
                     "dimensions": {
-                        "concept": "pint:ibt-146"
+                        "concept": "pint:ibt-146",
+                        "unit": "iso4217:JPY"
                     }
                 },
                 "ibt-149": {
@@ -463,7 +490,7 @@
                 }
             },
             "dimensions": {
-                "pint:_380": "$G00",
+                "pint:_380": "$_380",
                 "period": "2023-12-01T00:00:00",
                 "entity": "ns0:Example co.",
                 "pint:G23": "$G23",
