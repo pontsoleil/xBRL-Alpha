@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--(c) 2022 XBRL Japan  inc. -->
+<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <link:roleRef roleURI="http://example.com/role/link" xlink:type="simple" xlink:href="example12.xsd#link"/>
+    <link:roleRef roleURI="http://example.com/role/cube1" xlink:type="simple" xlink:href="example12.xsd#cube1"/>
+    <link:roleRef roleURI="http://example.com/role/cube2" xlink:type="simple" xlink:href="example12.xsd#cube2"/>
+    <link:roleRef roleURI="http://example.com/role/cube3" xlink:type="simple" xlink:href="example12.xsd#cube3"/>
+    <link:roleRef roleURI="http://example.com/role/region1" xlink:type="simple" xlink:href="example12.xsd#region1"/>
+    <link:roleRef roleURI="http://example.com/role/region2" xlink:type="simple" xlink:href="example12.xsd#region2"/>
+    <link:roleRef roleURI="http://example.com/role/prod1" xlink:type="simple" xlink:href="example12.xsd#prod1"/>
+    <link:roleRef roleURI="http://example.com/role/prod2" xlink:type="simple" xlink:href="example12.xsd#prod2"/>
+    <link:arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/all" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#all"/>
+    <link:arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/notAll" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#notAll"/>
+    <link:arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/domain-member" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member"/>
+    <link:arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension"/>
+    <link:arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/dimension-domain" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain"/>
+    
+    <link:definitionLink xlink:type="extended" xlink:role="http://example.com/role/link" id="link">
+        <!-- loc -->
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#hc_Reg_x_Prod" xlink:label="hc_Reg_x_Prod" xlink:title="hc_Reg_x_Prod"/>
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#hc_ex_Reg_x_Prod" xlink:label="hc_ex_Reg_x_Prod" xlink:title="hc_ex_Reg_x_Prod"/>
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#hc_in_Reg" xlink:label="hc_in_Reg" xlink:title="hc_in_Reg"/>
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#Region_abstract" xlink:label="Region_abstract" xlink:title="Region_abstract"/>
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#Prod_abstract" xlink:label="Prod_abstract" xlink:title="Prod_abstract"/>
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#p_GrossProfit" xlink:label="GrossProfit" xlink:title="GrossProfit"/>
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#p_Sales" xlink:label="Sales" xlink:title="Sales"/>
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#p_CostOfGoods" xlink:label="CostOfGoods" xlink:title="CostOfGoods"/>
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#p_ImportedGoods" xlink:label="ImportedGoods" xlink:title="ImportedGoods"/>
+        <!-- all (has-hypercube) -->
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xbrldt:targetRole="http://example.com/role/cube1" xlink:from="GrossProfit" xlink:to="hc_Reg_x_Prod" xlink:title="definition: GrossProfit to hc_Reg_x_Prod" order="1.0" xbrldt:closed="true" xbrldt:contextElement="segment"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xbrldt:targetRole="http://example.com/role/cube3" xlink:from="ImportedGoods" xlink:to="hc_in_Reg" xlink:title="definition: ImportedGoods to hc_in_Reg" order="3.0" xbrldt:closed="true" xbrldt:contextElement="segment"/>
+        <!-- notAll (has-hypercube) -->
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/notAll" xbrldt:targetRole="http://example.com/role/cube2" xlink:from="CostOfGoods" xlink:to="hc_ex_Reg_x_Prod" xlink:title="definition: CostOfGoods to hc_ex_Reg_x_Prod" order="2.0" xbrldt:closed="true" xbrldt:contextElement="segment"/>
+        <!-- hypercube-dimension -->
+        <!-- domain-member -->
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GrossProfit" xlink:to="Sales" xlink:title="definition: GrossProfit to Sales" order="4.0"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="Sales" xlink:to="CostOfGoods" xlink:title="definition: Sales to CostOfGoods" order="5.0"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="CostOfGoods" xlink:to="ImportedGoods" xlink:title="definition: CostOfGoods to ImportedGoods" order="6.0"/>
+    </link:definitionLink>
+
+    <link:definitionLink xlink:type="extended" xlink:role="http://example.com/role/cube1" id="cube1">
+        <!-- loc -->
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#hc_Reg_x_Prod" xlink:label="hc_Reg_x_Prod" xlink:title="hc_Reg_x_Prod"/>
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#hc_RegionDim" xlink:label="hc_RegionDim" xlink:title="hc_RegionDim"/>
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#hc_ProdDim" xlink:label="hc_ProdDim" xlink:title="hc_ProdDim"/>
+        <!-- all (has-hypercube) -->
+        <!-- hypercube-dimension -->
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xbrldt:targetRole="http://example.com/role/region1" xlink:from="hc_Reg_x_Prod" xlink:to="hc_RegionDim" xlink:title="definition: hc_Reg_x_Prod to hc_RegionDim" order="1.0"/>  
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xbrldt:targetRole="http://example.com/role/prod1" xlink:from="hc_Reg_x_Prod" xlink:to="hc_ProdDim" xlink:title="definition: hc_Reg_x_Prod to hc_ProdDim" order="2.0"/>  
+        <!-- domain-member -->
+    </link:definitionLink>
+
+    <link:definitionLink xlink:type="extended" xlink:role="http://example.com/role/cube2" id="cube2">
+        <!-- loc -->
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#hc_ex_Reg_x_Prod" xlink:label="hc_ex_Reg_x_Prod" xlink:title="hc_ex_Reg_x_Prod"/>
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#hc_RegionDim" xlink:label="hc_RegionDim" xlink:title="hc_RegionDim"/>
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#hc_ProdDim" xlink:label="hc_ProdDim" xlink:title="hc_ProdDim"/>
+        <!-- all (has-hypercube) -->
+        <!-- hypercube-dimension -->
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xbrldt:targetRole="http://example.com/role/region2" xlink:from="hc_ex_Reg_x_Prod" xlink:to="hc_RegionDim" xlink:title="definition: hc_ex_Reg_x_Prod to hc_RegionDim" order="3.0"/>  
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xbrldt:targetRole="http://example.com/role/prod2" xlink:from="hc_ex_Reg_x_Prod" xlink:to="hc_ProdDim" xlink:title="definition: hc_ex_Reg_x_Prod to hc_ProdDim" order="4.0"/>  
+        <!-- domain-member -->
+    </link:definitionLink>
+
+    <link:definitionLink xlink:type="extended" xlink:role="http://example.com/role/cube3" id="cube3">
+        <!-- loc -->
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#hc_in_Reg" xlink:label="hc_in_Reg" xlink:title="hc_in_Reg"/>
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#hc_RegionDim" xlink:label="hc_RegionDim" xlink:title="hc_RegionDim"/>
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#hc_ProdDim" xlink:label="hc_ProdDim" xlink:title="hc_ProdDim"/>
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#Region_abstract" xlink:label="Region_abstract" xlink:title="Region_abstract"/>
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#Region_A" xlink:label="Region_A" xlink:title="Region_A"/>
+        <!-- all (has-hypercube) -->
+        <!-- hypercube-dimension -->
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="hc_in_Reg" xlink:to="hc_ProdDim" xlink:title="definition: hc_in_Reg to hc_ProdDim" order="1.0"/>
+        <!-- dimension-domain -->
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain" xlink:from="hc_RegionDim" xlink:to="Region_abstract" xlink:title="definition: hc_RegionDim to Region_abstract" order="1"/>
+        <!-- domain-member -->
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xbrldt:targetRole="http://example.com/role/prod1" xlink:from="Region_abstract" xlink:to="Region_A"  xlink:title="definition: Region_abstract to Region_A" order="2.0"/>
+    </link:definitionLink>
+
+    <link:definitionLink xlink:type="extended" xlink:role="http://example.com/role/region1" id="region1">
+        <!-- loc -->
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#hc_RegionDim" xlink:label="hc_RegionDim" xlink:title="hc_RegionDim"/>
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#Region_abstract" xlink:label="Region_abstract" xlink:title="Region_abstract"/>
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#Region_A" xlink:label="Region_A" xlink:title="Region_A"/>
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#Region_B" xlink:label="Region_B" xlink:title="Region_B"/>
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#Region_C" xlink:label="Region_C" xlink:title="Region_C"/>
+        <!-- all (has-hypercube) -->
+        <!-- hypercube-dimension -->
+        <!-- dimension-domain -->
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain" xlink:from="hc_RegionDim" xlink:to="Region_abstract" xlink:title="definition: hc_RegionDim to Region_abstract" order="1"/>
+        <!-- domain-member -->
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="Region_abstract" xlink:to="Region_A" xlink:title="definition: Region_abstract to Region_A" order="1.0"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="Region_abstract" xlink:to="Region_B" xlink:title="definition: Region_abstract to Region_B" order="2.0"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="Region_abstract" xlink:to="Region_C" xlink:title="definition: Region_abstract to Region_C" order="3.0"/>
+    </link:definitionLink>
+
+    <link:definitionLink xlink:type="extended" xlink:role="http://example.com/role/region2" id="region2">
+        <!-- loc -->
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#hc_RegionDim" xlink:label="hc_RegionDim" xlink:title="hc_RegionDim"/>
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#Region_abstract" xlink:label="Region_abstract" xlink:title="Region_abstract"/>
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#Region_A" xlink:label="Region_A" xlink:title="Region_A"/>
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#Region_B" xlink:label="Region_B" xlink:title="Region_B"/>
+        <!-- all (has-hypercube) -->
+        <!-- hypercube-dimension -->
+        <!-- dimension-domain -->
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain" xlink:from="hc_RegionDim" xlink:to="Region_abstract" xlink:title="definition: hc_RegionDim to Region_abstract" order="1"/>
+        <!-- domain-member -->
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="Region_abstract" xlink:to="Region_A" xlink:title="definition: Region_abstract to Region_A" order="1.0"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="Region_abstract" xlink:to="Region_B" xlink:title="definition: Region_abstract to Region_B" order="2.0"/>
+    </link:definitionLink>
+
+    <link:definitionLink xlink:type="extended" xlink:role="http://example.com/role/prod1" id="prod1">
+        <!-- loc -->
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#hc_ProdDim" xlink:label="hc_ProdDim" xlink:title="hc_ProdDim"/>
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#Prod_abstract" xlink:label="Prod_abstract" xlink:title="Prod_abstract"/>
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#Prod_1" xlink:label="Prod_1" xlink:title="Prod_1"/>
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#Prod_2" xlink:label="Prod_2" xlink:title="Prod_2"/>
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#Prod_3" xlink:label="Prod_3" xlink:title="Prod_3"/>
+        <!-- all (has-hypercube) -->
+        <!-- hypercube-dimension -->
+        <!-- dimension-domain -->
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain" xlink:from="hc_ProdDim" xlink:to="Prod_abstract" xlink:title="definition: hc_RegionDim to Region_abstract" order="1"/>
+        <!-- domain-member -->
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="Prod_abstract" xlink:to="Prod_1" xlink:title="definition: Prod_abstract to Prod_1" order="1.0"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="Prod_abstract" xlink:to="Prod_2" xlink:title="definition: Prod_abstract to Prod_2" order="2.0"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="Prod_abstract" xlink:to="Prod_3" xlink:title="definition: Prod_abstract to Prod_3" order="3.0"/>
+    </link:definitionLink>
+
+    <link:definitionLink xlink:type="extended" xlink:role="http://example.com/role/prod2" id="prod2">
+        <!-- loc -->
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#hc_ProdDim" xlink:label="hc_ProdDim" xlink:title="hc_ProdDim"/>
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#Prod_abstract" xlink:label="Prod_abstract" xlink:title="Prod_abstract"/>
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#Prod_1" xlink:label="Prod_1" xlink:title="Prod_1"/>
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#Prod_2" xlink:label="Prod_2" xlink:title="Prod_2"/>
+        <link:loc xlink:type="locator" xlink:href="example12.xsd#Prod_3" xlink:label="Prod_3" xlink:title="Prod_3"/>
+        <!-- all (has-hypercube) -->
+        <!-- hypercube-dimension -->
+        <!-- dimension-domain -->
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain" xlink:from="hc_ProdDim" xlink:to="Prod_abstract" xlink:title="definition: hc_RegionDim to Region_abstract" order="1"/>
+        <!-- domain-member -->
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="Prod_abstract" xlink:to="Prod_1" xlink:title="definition: Prod_abstract to Prod_1" order="1.0"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="Prod_abstract" xlink:to="Prod_2" xlink:title="definition: Prod_abstract to Prod_2" order="2.0"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="Prod_abstract" xlink:to="Prod_3" xlink:title="definition: Prod_abstract to Prod_3" order="3.0"/>
+    </link:definitionLink>
+
+</link:linkbase>

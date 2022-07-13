@@ -1,0 +1,157 @@
+<xbrli:xbrl xmlns:xbrll="http://www.xbrl.org/2003/linkbase"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:iso639="http://www.xbrl.org/2005/iso639" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:pint="http://www.xbrl.org/int/pint/2022-12-31">
+  <xbrll:schemaRef xlink:type="simple" xlink:href="../taxonomy/pint/xBRL-pint-2022-12-31.xsd" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+  <xbrli:unit id="pure">
+    <xbrli:measure>xbrli:pure</xbrli:measure>
+  </xbrli:unit>
+  <xbrli:unit id="JPY">
+    <xbrli:measure>iso4217:JPY</xbrli:measure>
+  </xbrli:unit>
+  <xbrli:context id="ibg-00">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.eipa.jp">PINT</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2023-11-01</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:typedMember dimension="pint:d1">
+        <pint:_1></pint:_1>
+      </xbrldi:typedMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <pint:ibt-024 contextRef="ibg-00">urn:fdc:peppol:jp:billing:3.0</pint:ibt-024>
+  <pint:ibt-023 contextRef="ibg-00">urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</pint:ibt-023>
+  <pint:ibt-001 contextRef="ibg-00">156</pint:ibt-001>
+  <pint:ibt-002 contextRef="ibg-00">2023-10-25</pint:ibt-002>
+  <pint:ibt-003 contextRef="ibg-00">380</pint:ibt-003>
+  <pint:ibt-005 contextRef="ibg-00">JPY</pint:ibt-005>
+  <pint:ibt-073 contextRef="ibg-00">2023-10-24</pint:ibt-073>
+  <pint:ibt-074 contextRef="ibg-00">2023-10-24</pint:ibt-074>
+  <pint:ibt-034 contextRef="ibg-00">1234567890123</pint:ibt-034>
+  <pint:ibt-034-1 contextRef="ibg-00">0188</pint:ibt-034-1>
+  <pint:ibt-090 contextRef="ibg-00">123456:000123:0147:1</pint:ibt-090>
+  <pint:ibt-028 contextRef="ibg-00">株式会社 〇〇商事</pint:ibt-028>
+  <pint:ibt-035 contextRef="ibg-00">四谷4-29-X</pint:ibt-035>
+  <pint:ibt-036 contextRef="ibg-00">〇〇商事ビル</pint:ibt-036>
+  <pint:ibt-037 contextRef="ibg-00">新宿区</pint:ibt-037>
+  <pint:ibt-038 contextRef="ibg-00">1600044</pint:ibt-038>
+  <pint:ibt-039 contextRef="ibg-00">東京都</pint:ibt-039>
+  <pint:ibt-040 contextRef="ibg-00">JP</pint:ibt-040>
+  <pint:ibt-031 contextRef="ibg-00">T1234567890123</pint:ibt-031>
+  <pint:ibt-032 contextRef="ibg-00">T1234567890123</pint:ibt-032>
+  <pint:ibt-027 contextRef="ibg-00">株式会社 〇〇商事</pint:ibt-027>
+  <pint:ibt-030 contextRef="ibg-00">1234567890123</pint:ibt-030>
+  <pint:ibt-030-1 contextRef="ibg-00">0188</pint:ibt-030-1>
+  <pint:ibt-033 contextRef="ibg-00">Private Limited Company</pint:ibt-033>
+  <pint:ibt-041 contextRef="ibg-00">青木 志郎</pint:ibt-041>
+  <pint:ibt-042 contextRef="ibg-00">03-3xxx-0001</pint:ibt-042>
+  <pint:ibt-043 contextRef="ibg-00">shirou_aoki@〇〇co.jp</pint:ibt-043>
+  <pint:ibt-049 contextRef="ibg-00">3210987654321</pint:ibt-049>
+  <pint:ibt-049-1 contextRef="ibg-00">0188</pint:ibt-049-1>
+  <pint:ibt-046 contextRef="ibg-00">654321:000321:0147:1</pint:ibt-046>
+  <pint:ibt-046-1 contextRef="ibg-00">0147</pint:ibt-046-1>
+  <pint:ibt-045 contextRef="ibg-00">株式会社 〇〇物産</pint:ibt-045>
+  <pint:ibt-050 contextRef="ibg-00">北区</pint:ibt-050>
+  <pint:ibt-051 contextRef="ibg-00">北十二条西76-X</pint:ibt-051>
+  <pint:ibt-052 contextRef="ibg-00">札幌市</pint:ibt-052>
+  <pint:ibt-053 contextRef="ibg-00">0010012</pint:ibt-053>
+  <pint:ibt-054 contextRef="ibg-00">北海道</pint:ibt-054>
+  <pint:ibt-055 contextRef="ibg-00">JP</pint:ibt-055>
+  <pint:ibt-048 contextRef="ibg-00">>T3210987654321</pint:ibt-048>
+  <pint:ibt-044 contextRef="ibg-00">株式会社 〇〇物産</pint:ibt-044>
+  <pint:ibt-047 contextRef="ibg-00">654321:000321:0147:1</pint:ibt-047>
+  <pint:ibt-047-1 contextRef="ibg-00">0147</pint:ibt-047-1>
+  <pint:ibt-056 contextRef="ibg-00">株式会社 〇〇物産</pint:ibt-056>
+  <pint:ibt-057 contextRef="ibg-00">011-757-1xxx</pint:ibt-057>
+  <pint:ibt-058 contextRef="ibg-00">purchaser@oobussan.co.jp</pint:ibt-058>
+  <pint:ibt-072 contextRef="ibg-00">2023-10-24</pint:ibt-072>
+  <pint:ibt-071 contextRef="ibg-00">123456:000123:0147:1</pint:ibt-071>
+  <pint:ibt-071-1 contextRef="ibg-00">0147</pint:ibt-071-1>
+  <pint:ibt-075 contextRef="ibg-00">北区</pint:ibt-075>
+  <pint:ibt-076 contextRef="ibg-00">北十二条西76-X</pint:ibt-076>
+  <pint:ibt-077 contextRef="ibg-00">札幌市</pint:ibt-077>
+  <pint:ibt-078 contextRef="ibg-00">0010012</pint:ibt-078>
+  <pint:ibt-079 contextRef="ibg-00">北海道</pint:ibt-079>
+  <pint:ibt-165 contextRef="ibg-00">Gate 15</pint:ibt-165>
+  <pint:ibt-080 contextRef="ibg-00">JP</pint:ibt-080>
+  <pint:ibt-070 contextRef="ibg-00">株式会社 〇〇物産 札幌支社</pint:ibt-070>
+  <pint:ibt-110 contextRef="ibg-00" decimals="INF" unitRef="JPY">-10000</pint:ibt-110>
+  <pint:ibt-106 contextRef="ibg-00" decimals="INF" unitRef="JPY">-100000</pint:ibt-106>
+  <pint:ibt-109 contextRef="ibg-00" decimals="INF" unitRef="JPY">-100000</pint:ibt-109>
+  <pint:ibt-112 contextRef="ibg-00" decimals="INF" unitRef="JPY">-110000</pint:ibt-112>
+  <pint:ibt-107 contextRef="ibg-00" decimals="INF" unitRef="JPY">0</pint:ibt-107>
+  <pint:ibt-108 contextRef="ibg-00" decimals="INF" unitRef="JPY">0</pint:ibt-108>
+  <pint:ibt-113 contextRef="ibg-00" decimals="INF" unitRef="JPY">0</pint:ibt-113>
+  <pint:ibt-114 contextRef="ibg-00" decimals="INF" unitRef="JPY">0</pint:ibt-114>
+  <pint:ibt-115 contextRef="ibg-00" decimals="INF" unitRef="JPY">-110000</pint:ibt-115>
+  <xbrli:context id="ibg-23_0">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.eipa.jp">PINT</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2023-11-01</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:typedMember dimension="pint:d1">
+        <pint:_1>0</pint:_1>
+      </xbrldi:typedMember>
+      <xbrldi:typedMember dimension="pint:d3">
+        <pint:_3>0</pint:_3>
+      </xbrldi:typedMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <pint:ibt-116 contextRef="ibg-23_0" decimals="INF" unitRef="JPY">-100000</pint:ibt-116>
+  <pint:ibt-117 contextRef="ibg-23_0" decimals="INF" unitRef="JPY">-10000</pint:ibt-117>
+  <pint:ibt-118 contextRef="ibg-23_0">S</pint:ibt-118>
+  <pint:ibt-119 contextRef="ibg-23_0" decimals="INF" unitRef="pure">10</pint:ibt-119>
+  <xbrli:context id="ibg-25_0">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.eipa.jp">PINT</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2023-11-01</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:typedMember dimension="pint:d1">
+        <pint:_1>0</pint:_1>
+      </xbrldi:typedMember>
+      <xbrldi:typedMember dimension="pint:d3">
+        <pint:_3>0</pint:_3>
+      </xbrldi:typedMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <pint:ibt-126 contextRef="ibg-25_0">1</pint:ibt-126>
+  <pint:ibt-127 contextRef="ibg-25_0">2023-10-18</pint:ibt-127>
+  <pint:ibt-129 contextRef="ibg-25_0" decimals="INF" unitRef="pure">2</pint:ibt-129>
+  <pint:ibt-130 contextRef="ibg-25_0">H87</pint:ibt-130>
+  <pint:ibt-131 contextRef="ibg-25_0" decimals="INF" unitRef="JPY">-100000</pint:ibt-131>
+  <pint:ibt-134 contextRef="ibg-25_0">2023-10-24</pint:ibt-134>
+  <pint:ibt-135 contextRef="ibg-25_0">2023-10-24</pint:ibt-135>
+  <pint:ibt-153 contextRef="ibg-25_0">デスクチェア</pint:ibt-153>
+  <pint:ibt-151 contextRef="ibg-25_0">S</pint:ibt-151>
+  <pint:ibt-152 contextRef="ibg-25_0" decimals="INF" unitRef="pure">10</pint:ibt-152>
+  <pint:ibt-167 contextRef="ibg-25_0">VAT</pint:ibt-167>
+  <pint:ibt-146 contextRef="ibg-25_0" decimals="INF" unitRef="JPY">-50000</pint:ibt-146>
+  <pint:ibt-149 contextRef="ibg-25_0" decimals="INF" unitRef="pure">1</pint:ibt-149>
+  <pint:ibt-150 contextRef="ibg-25_0">H87</pint:ibt-150>
+  <pint:ibt-147 contextRef="ibg-25_0" decimals="INF" unitRef="JPY">50000</pint:ibt-147>
+  <pint:ibt-148 contextRef="ibg-25_0" decimals="INF" unitRef="JPY">0</pint:ibt-148>
+  <xbrli:context id="ibg-25_0">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.eipa.jp">PINT</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2023-11-01</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:typedMember dimension="pint:d1">
+        <pint:_1>0</pint:_1>
+      </xbrldi:typedMember>
+      <xbrldi:typedMember dimension="pint:d3">
+        <pint:_3>0</pint:_3>
+      </xbrldi:typedMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <pint:ibt-160 contextRef="ibg-25_0">表示単位名称</pint:ibt-160>
+  <pint:ibt-161 contextRef="ibg-25_0">脚</pint:ibt-161>
+</xbrli:xbrl>

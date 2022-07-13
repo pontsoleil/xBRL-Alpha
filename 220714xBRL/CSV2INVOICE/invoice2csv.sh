@@ -1,0 +1,9 @@
+./invoice2csv data/examples/Example.xml -o data/examples/Example.csv -e shift_jis -v
+./invoice2csv data/examples/Example1.xml -o data/examples/Example1.csv -e shift_jis -v
+./invoice2csv data/examples/Example2-TaxAcctCur.xml -o data/examples/Example2-TaxAcctCur.csv -e shift_jis -v
+./invoice2csv data/examples/Example3-SumInv1.xml -o data/examples/Example3-SumInv1.csv -e shift_jis -v
+./invoice2csv data/examples/Example4-SumInv2.xml -o data/examples/Example4-SumInv2.csv -e shift_jis -v
+./invoice2csv data/examples/Example5-AllowanceCharge.xml -o data/examples/Example5-AllowanceCharge.csv -e shift_jis -v
+./invoice2csv data/examples/Example6-CorrInv.xml -o data/examples/Example6-CorrInv.csv -e shift_jis -v
+./invoice2csv data/examples/Example7-Return.Quan.xml -o data/examples/Example7-Return.Quan.csv -e shift_jis -v
+./invoice2csv data/examples/Example8-Return.ItPr.xml -o data/examples/Example8-Return.ItPr.csv -e shift_jis -v

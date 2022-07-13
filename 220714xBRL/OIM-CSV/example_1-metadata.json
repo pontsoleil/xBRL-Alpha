@@ -1,0 +1,480 @@
+{
+    "documentInfo": {
+        "documentType": "https://xbrl.org/2021/xbrl-csv",
+        "namespaces": {
+            "pint": "http://www.xbrl.jp/eipa/peppol/0.9",
+            "ns0": "http://www.example.com",
+            "link": "http://www.xbrl.org/2003/linkbase",
+            "iso4217": "http://www.xbrl.org/2003/iso4217",
+            "xsi": "http://www.w3.org/2001/XMLSchema-instance",
+            "xbrli": "http://www.xbrl.org/2003/instance",
+            "xbrldi": "http://xbrl.org/2006/xbrldi",
+            "xlink": "http://www.w3.org/1999/xlink"
+        },
+        "taxonomy": [
+            "core.xsd"
+        ]
+    },
+    "tableTemplates": {
+        "pint": {
+            "columns": {
+                "G00": {},
+                "G23": {},
+                "G25": {},
+                "G32": {},
+                "ibt-001": {
+                    "dimensions": {
+                        "concept": "pint:ibt-001"
+                    }
+                },
+                "ibt-002": {
+                    "dimensions": {
+                        "concept": "pint:ibt-002"
+                    }
+                },
+                "ibt-003": {
+                    "dimensions": {
+                        "concept": "pint:ibt-003"
+                    }
+                },
+                "ibt-005": {
+                    "dimensions": {
+                        "concept": "pint:ibt-005"
+                    }
+                },
+                "ibt-008": {
+                    "dimensions": {
+                        "concept": "pint:ibt-008"
+                    }
+                },
+                "ibt-009": {
+                    "dimensions": {
+                        "concept": "pint:ibt-009"
+                    }
+                },
+                "ibt-010": {
+                    "dimensions": {
+                        "concept": "pint:ibt-010"
+                    }
+                },
+                "ibt-013": {
+                    "dimensions": {
+                        "concept": "pint:ibt-013"
+                    }
+                },
+                "ibt-023": {
+                    "dimensions": {
+                        "concept": "pint:ibt-023"
+                    }
+                },
+                "ibt-024": {
+                    "dimensions": {
+                        "concept": "pint:ibt-024"
+                    }
+                },
+                "ibt-027": {
+                    "dimensions": {
+                        "concept": "pint:ibt-027"
+                    }
+                },
+                "ibt-028": {
+                    "dimensions": {
+                        "concept": "pint:ibt-028"
+                    }
+                },
+                "ibt-030": {
+                    "dimensions": {
+                        "concept": "pint:ibt-030"
+                    }
+                },
+                "ibt-031": {
+                    "dimensions": {
+                        "concept": "pint:ibt-031"
+                    }
+                },
+                "ibt-034": {
+                    "dimensions": {
+                        "concept": "pint:ibt-034"
+                    }
+                },
+                "ibt-035": {
+                    "dimensions": {
+                        "concept": "pint:ibt-035"
+                    }
+                },
+                "ibt-036": {
+                    "dimensions": {
+                        "concept": "pint:ibt-036"
+                    }
+                },
+                "ibt-037": {
+                    "dimensions": {
+                        "concept": "pint:ibt-037"
+                    }
+                },
+                "ibt-038": {
+                    "dimensions": {
+                        "concept": "pint:ibt-038"
+                    }
+                },
+                "ibt-039": {
+                    "dimensions": {
+                        "concept": "pint:ibt-039"
+                    }
+                },
+                "ibt-040": {
+                    "dimensions": {
+                        "concept": "pint:ibt-040"
+                    }
+                },
+                "ibt-041": {
+                    "dimensions": {
+                        "concept": "pint:ibt-041"
+                    }
+                },
+                "ibt-042": {
+                    "dimensions": {
+                        "concept": "pint:ibt-042"
+                    }
+                },
+                "ibt-043": {
+                    "dimensions": {
+                        "concept": "pint:ibt-043"
+                    }
+                },
+                "ibt-044": {
+                    "dimensions": {
+                        "concept": "pint:ibt-044"
+                    }
+                },
+                "ibt-046": {
+                    "dimensions": {
+                        "concept": "pint:ibt-046"
+                    }
+                },
+                "ibt-047": {
+                    "dimensions": {
+                        "concept": "pint:ibt-047"
+                    }
+                },
+                "ibt-049": {
+                    "dimensions": {
+                        "concept": "pint:ibt-049"
+                    }
+                },
+                "ibt-050": {
+                    "dimensions": {
+                        "concept": "pint:ibt-050"
+                    }
+                },
+                "ibt-052": {
+                    "dimensions": {
+                        "concept": "pint:ibt-052"
+                    }
+                },
+                "ibt-053": {
+                    "dimensions": {
+                        "concept": "pint:ibt-053"
+                    }
+                },
+                "ibt-054": {
+                    "dimensions": {
+                        "concept": "pint:ibt-054"
+                    }
+                },
+                "ibt-055": {
+                    "dimensions": {
+                        "concept": "pint:ibt-055"
+                    }
+                },
+                "ibt-056": {
+                    "dimensions": {
+                        "concept": "pint:ibt-056"
+                    }
+                },
+                "ibt-058": {
+                    "dimensions": {
+                        "concept": "pint:ibt-058"
+                    }
+                },
+                "ibt-070": {
+                    "dimensions": {
+                        "concept": "pint:ibt-070"
+                    }
+                },
+                "ibt-072": {
+                    "dimensions": {
+                        "concept": "pint:ibt-072"
+                    }
+                },
+                "ibt-073": {
+                    "dimensions": {
+                        "concept": "pint:ibt-073"
+                    }
+                },
+                "ibt-074": {
+                    "dimensions": {
+                        "concept": "pint:ibt-074"
+                    }
+                },
+                "ibt-075": {
+                    "dimensions": {
+                        "concept": "pint:ibt-075"
+                    }
+                },
+                "ibt-076": {
+                    "dimensions": {
+                        "concept": "pint:ibt-076"
+                    }
+                },
+                "ibt-077": {
+                    "dimensions": {
+                        "concept": "pint:ibt-077"
+                    }
+                },
+                "ibt-078": {
+                    "dimensions": {
+                        "concept": "pint:ibt-078"
+                    }
+                },
+                "ibt-079": {
+                    "dimensions": {
+                        "concept": "pint:ibt-079"
+                    }
+                },
+                "ibt-080": {
+                    "dimensions": {
+                        "concept": "pint:ibt-080"
+                    }
+                },
+                "ibt-081": {
+                    "dimensions": {
+                        "concept": "pint:ibt-081"
+                    }
+                },
+                "ibt-082": {
+                    "dimensions": {
+                        "concept": "pint:ibt-082"
+                    }
+                },
+                "ibt-083": {
+                    "dimensions": {
+                        "concept": "pint:ibt-083"
+                    }
+                },
+                "ibt-084": {
+                    "dimensions": {
+                        "concept": "pint:ibt-084"
+                    }
+                },
+                "ibt-085": {
+                    "dimensions": {
+                        "concept": "pint:ibt-085"
+                    }
+                },
+                "ibt-092": {
+                    "decimals": "0",
+                    "dimensions": {
+                        "concept": "pint:ibt-092",
+                        "unit": "iso4217:JPY"
+                    }
+                },
+                "ibt-097": {
+                    "dimensions": {
+                        "concept": "pint:ibt-097"
+                    }
+                },
+                "ibt-095": {
+                    "dimensions": {
+                        "concept": "pint:ibt-095"
+                    }
+                },
+                "ibt-096": {
+                    "dimensions": {
+                        "concept": "pint:ibt-096"
+                    }
+                },
+                "ibt-099": {
+                    "decimals": "0",
+                    "dimensions": {
+                        "concept": "pint:ibt-099",
+                        "unit": "iso4217:JPY"
+                    }
+                },
+                "ibt-104": {
+                    "dimensions": {
+                        "concept": "pint:ibt-104"
+                    }
+                },
+                "ibt-102": {
+                    "dimensions": {
+                        "concept": "pint:ibt-102"
+                    }
+                },
+                "ibt-103": {
+                    "dimensions": {
+                        "concept": "pint:ibt-103"
+                    }
+                },
+                "ibt-106": {
+                    "decimals": "0",
+                    "dimensions": {
+                        "concept": "pint:ibt-106",
+                        "unit": "iso4217:JPY"
+                    }
+                },
+                "ibt-107": {
+                    "decimals": "0",
+                    "dimensions": {
+                        "concept": "pint:ibt-107",
+                        "unit": "iso4217:JPY"
+                    }
+                },
+                "ibt-108": {
+                    "decimals": "0",
+                    "dimensions": {
+                        "concept": "pint:ibt-108",
+                        "unit": "iso4217:JPY"
+                    }
+                },
+                "ibt-109": {
+                    "decimals": "0",
+                    "dimensions": {
+                        "concept": "pint:ibt-109",
+                        "unit": "iso4217:JPY"
+                    }
+                },
+                "ibt-110": {
+                    "decimals": "0",
+                    "dimensions": {
+                        "concept": "pint:ibt-110",
+                        "unit": "iso4217:JPY"
+                    }
+                },
+                "ibt-112": {
+                    "decimals": "0",
+                    "dimensions": {
+                        "concept": "pint:ibt-112",
+                        "unit": "iso4217:JPY"
+                    }
+                },
+                "ibt-115": {
+                    "decimals": "0",
+                    "dimensions": {
+                        "concept": "pint:ibt-115",
+                        "unit": "iso4217:JPY"
+                    }
+                },
+                "ibt-116": {
+                    "decimals": "0",
+                    "dimensions": {
+                        "concept": "pint:ibt-116",
+                        "unit": "iso4217:JPY"
+                    }
+                },
+                "ibt-117": {
+                    "decimals": "0",
+                    "dimensions": {
+                        "concept": "pint:ibt-117",
+                        "unit": "iso4217:JPY"
+                    }
+                },
+                "ibt-118": {
+                    "dimensions": {
+                        "concept": "pint:ibt-118"
+                    }
+                },
+                "ibt-119": {
+                    "dimensions": {
+                        "concept": "pint:ibt-119"
+                    }
+                },
+                "ibt-126": {
+                    "dimensions": {
+                        "concept": "pint:ibt-126"
+                    }
+                },
+                "ibt-127": {
+                    "dimensions": {
+                        "concept": "pint:ibt-127"
+                    }
+                },
+                "ibt-129": {
+                    "dimensions": {
+                        "concept": "pint:ibt-129"
+                    }
+                },
+                "ibt-130": {
+                    "dimensions": {
+                        "concept": "pint:ibt-130"
+                    }
+                },
+                "ibt-131": {
+                    "decimals": "0",
+                    "dimensions": {
+                        "concept": "pint:ibt-131",
+                        "unit": "iso4217:JPY"
+                    }
+                },
+                "ibt-183": {
+                    "dimensions": {
+                        "concept": "pint:ibt-183"
+                    }
+                },
+                "ibt-132": {
+                    "dimensions": {
+                        "concept": "pint:ibt-132"
+                    }
+                },
+                "ibt-146": {
+                    "dimensions": {
+                        "concept": "pint:ibt-146"
+                    }
+                },
+                "ibt-149": {
+                    "dimensions": {
+                        "concept": "pint:ibt-149"
+                    }
+                },
+                "ibt-150": {
+                    "dimensions": {
+                        "concept": "pint:ibt-150"
+                    }
+                },
+                "ibt-151": {
+                    "dimensions": {
+                        "concept": "pint:ibt-151"
+                    }
+                },
+                "ibt-152": {
+                    "dimensions": {
+                        "concept": "pint:ibt-152"
+                    }
+                },
+                "ibt-167": {
+                    "dimensions": {
+                        "concept": "pint:ibt-167"
+                    }
+                },
+                "ibt-153": {
+                    "dimensions": {
+                        "concept": "pint:ibt-153"
+                    }
+                }
+            },
+            "dimensions": {
+                "pint:_380": "$G00",
+                "period": "2023-12-01T00:00:00",
+                "entity": "ns0:Example co.",
+                "pint:G23": "$G23",
+                "pint:G25": "$G25",
+                "pint:G32": "$G32"
+            }
+        }
+    },
+    "tables": {
+        "pint": {
+            "url": "example_1-oim.csv"
+        }
+    }
+}

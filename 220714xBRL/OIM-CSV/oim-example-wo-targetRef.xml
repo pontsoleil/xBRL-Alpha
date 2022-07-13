@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--extracted from OIM C:\Users\nobuy\OneDrive\ドキュメント\GitHub\e-invoice\xBRL\oim\oim-example-metadata.json-->
+<xbrl
+  xmlns="http://www.xbrl.org/2003/instance"
+  xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:pint="http://www.xbrl.jp/eipa/peppol/0.9"
+  xmlns:xbrldi="http://xbrl.org/2006/xbrldi"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+    <link:schemaRef xlink:href="core.xsd" xlink:type="simple"/>
+    <context id="c-01">
+        <entity>
+            <identifier scheme="http://www.example.com">Example co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="pint:_380">
+                    <pint:_v>156</pint:_v>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2023-10-31</instant>
+        </period>
+    </context>
+    <pint:ibt-001 contextRef="c-01" id="pint.r_1.ibt-001">156</pint:ibt-001>
+    <pint:ibt-002 contextRef="c-01" id="pint.r_1.ibt-002">2023-10-24</pint:ibt-002>
+    <pint:ibt-003 contextRef="c-01" id="pint.r_1.ibt-003">380</pint:ibt-003>
+    <pint:ibt-005 contextRef="c-01" id="pint.r_1.ibt-005">JPY</pint:ibt-005>
+    <pint:ibt-009 contextRef="c-01" id="pint.r_1.ibt-009">2023-11-20</pint:ibt-009>
+    <pint:ibt-010 contextRef="c-01" id="pint.r_1.ibt-010">0150abc</pint:ibt-010>
+    <pint:ibt-011 contextRef="c-01" id="pint.r_1.ibt-011">project333</pint:ibt-011>
+    <pint:ibt-012 contextRef="c-01" id="pint.r_1.ibt-012">framework no 1</pint:ibt-012>
+    <pint:ibt-013 contextRef="c-01" id="pint.r_1.ibt-013">O-998877</pint:ibt-013>
+    <pint:ibt-014 contextRef="c-01" id="pint.r_1.ibt-014">SO-12343</pint:ibt-014>
+    <pint:ibt-015 contextRef="c-01" id="pint.r_1.ibt-015">resadv-1</pint:ibt-015>
+    <pint:ibt-016 contextRef="c-01" id="pint.r_1.ibt-016">despadv-3</pint:ibt-016>
+    <pint:ibt-017 contextRef="c-01" id="pint.r_1.ibt-017">ppid-123</pint:ibt-017>
+    <pint:ibt-018 contextRef="c-01" id="pint.r_1.ibt-018">DR35141</pint:ibt-018>
+    <pint:ibt-018-1 contextRef="c-01" id="pint.r_1.ibt-018-1">ABT</pint:ibt-018-1>
+    <pint:ibt-019 contextRef="c-01" id="pint.r_1.ibt-019">4217:2323:2323</pint:ibt-019>
+    <pint:ibt-022 contextRef="c-01" id="pint.r_1.ibt-022">Ordered at trade show</pint:ibt-022>
+    <pint:ibt-023 contextRef="c-01" id="pint.r_1.ibt-023">urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</pint:ibt-023>
+    <pint:ibt-024 contextRef="c-01" id="pint.r_1.ibt-024">urn:fdc:peppol:jp:billing:3.0</pint:ibt-024>
+    <pint:ibt-027 contextRef="c-01" id="pint.r_1.ibt-027">株式会社 〇〇商事</pint:ibt-027>
+    <pint:ibt-028 contextRef="c-01" id="pint.r_1.ibt-028">株式会社 〇〇商事</pint:ibt-028>
+    <pint:ibt-030 contextRef="c-01" id="pint.r_1.ibt-030">1234570000000</pint:ibt-030>
+    <pint:ibt-030-1 contextRef="c-01" id="pint.r_1.ibt-030-1">0188</pint:ibt-030-1>
+    <pint:ibt-031 contextRef="c-01" id="pint.r_1.ibt-031">T1234567890123</pint:ibt-031>
+    <pint:ibt-032 contextRef="c-01" id="pint.r_1.ibt-032">T1234567890123</pint:ibt-032>
+    <pint:ibt-033 contextRef="c-01" id="pint.r_1.ibt-033">Private Limited Company</pint:ibt-033>
+    <pint:ibt-034 contextRef="c-01" id="pint.r_1.ibt-034">1234570000000</pint:ibt-034>
+    <pint:ibt-034-1 contextRef="c-01" id="pint.r_1.ibt-034-1">0188</pint:ibt-034-1>
+    <pint:ibt-090 contextRef="c-01" id="pint.r_1.ibt-090">654321:000123:0147:1</pint:ibt-090>
+    <pint:ibt-035 contextRef="c-01" id="pint.r_1.ibt-035">四谷4-29-X</pint:ibt-035>
+    <pint:ibt-036 contextRef="c-01" id="pint.r_1.ibt-036">〇〇商事ビル</pint:ibt-036>
+    <pint:ibt-162 contextRef="c-01" id="pint.r_1.ibt-162">Third address line</pint:ibt-162>
+    <pint:ibt-037 contextRef="c-01" id="pint.r_1.ibt-037">新宿区</pint:ibt-037>
+    <pint:ibt-038 contextRef="c-01" id="pint.r_1.ibt-038">1600044</pint:ibt-038>
+    <pint:ibt-039 contextRef="c-01" id="pint.r_1.ibt-039">東京都</pint:ibt-039>
+    <pint:ibt-040 contextRef="c-01" id="pint.r_1.ibt-040">JP</pint:ibt-040>
+    <pint:ibt-041 contextRef="c-01" id="pint.r_1.ibt-041">青木 志郎</pint:ibt-041>
+    <pint:ibt-042 contextRef="c-01" id="pint.r_1.ibt-042">03-3xxx-0001</pint:ibt-042>
+    <pint:ibt-043 contextRef="c-01" id="pint.r_1.ibt-043">shirou_aoki@〇〇co.jp</pint:ibt-043>
+    <pint:ibt-044 contextRef="c-01" id="pint.r_1.ibt-044">株式会社 〇〇物産</pint:ibt-044>
+    <pint:ibt-045 contextRef="c-01" id="pint.r_1.ibt-045">株式会社 〇〇物産</pint:ibt-045>
+    <pint:ibt-046 contextRef="c-01" id="pint.r_1.ibt-046">654321:000321:0147:1</pint:ibt-046>
+    <pint:ibt-046-1 contextRef="c-01" id="pint.r_1.ibt-046-1">0147</pint:ibt-046-1>
+    <pint:ibt-047 contextRef="c-01" id="pint.r_1.ibt-047">654321:000321:0147:1</pint:ibt-047>
+    <pint:ibt-047-1 contextRef="c-01" id="pint.r_1.ibt-047-1">0147</pint:ibt-047-1>
+    <pint:ibt-048 contextRef="c-01" id="pint.r_1.ibt-048">T3210987654321</pint:ibt-048>
+    <pint:ibt-049 contextRef="c-01" id="pint.r_1.ibt-049">3210990000000</pint:ibt-049>
+    <pint:ibt-049-1 contextRef="c-01" id="pint.r_1.ibt-049-1">0188</pint:ibt-049-1>
+    <pint:ibt-050 contextRef="c-01" id="pint.r_1.ibt-050">北区</pint:ibt-050>
+    <pint:ibt-051 contextRef="c-01" id="pint.r_1.ibt-051">北十二条西76-X</pint:ibt-051>
+    <pint:ibt-163 contextRef="c-01" id="pint.r_1.ibt-163">Third line</pint:ibt-163>
+    <pint:ibt-052 contextRef="c-01" id="pint.r_1.ibt-052">札幌市</pint:ibt-052>
+    <pint:ibt-053 contextRef="c-01" id="pint.r_1.ibt-053">10012</pint:ibt-053>
+    <pint:ibt-054 contextRef="c-01" id="pint.r_1.ibt-054">北海道</pint:ibt-054>
+    <pint:ibt-055 contextRef="c-01" id="pint.r_1.ibt-055">JP</pint:ibt-055>
+    <pint:ibt-056 contextRef="c-01" id="pint.r_1.ibt-056">株式会社 〇〇物産</pint:ibt-056>
+    <pint:ibt-057 contextRef="c-01" id="pint.r_1.ibt-057">011-757-1xxx</pint:ibt-057>
+    <pint:ibt-058 contextRef="c-01" id="pint.r_1.ibt-058">purchaser@oobussan.co.jp</pint:ibt-058>
+    <pint:ibt-059 contextRef="c-01" id="pint.r_1.ibt-059">Payee party</pint:ibt-059>
+    <pint:ibt-060 contextRef="c-01" id="pint.r_1.ibt-060">223456:000123:0147:1</pint:ibt-060>
+    <pint:ibt-060-1 contextRef="c-01" id="pint.r_1.ibt-060-1">0147</pint:ibt-060-1>
+    <pint:ibt-061 contextRef="c-01" id="pint.r_1.ibt-061">123456:000123:0147:1</pint:ibt-061>
+    <pint:ibt-061-1 contextRef="c-01" id="pint.r_1.ibt-061-1">0147</pint:ibt-061-1>
+    <pint:ibt-062 contextRef="c-01" id="pint.r_1.ibt-062">TaxRepresentative Name</pint:ibt-062>
+    <pint:ibt-063 contextRef="c-01" id="pint.r_1.ibt-063">T7654321098765</pint:ibt-063>
+    <pint:ibt-064 contextRef="c-01" id="pint.r_1.ibt-064">四谷4-32-X</pint:ibt-064>
+    <pint:ibt-065 contextRef="c-01" id="pint.r_1.ibt-065">〇〇商事ビル</pint:ibt-065>
+    <pint:ibt-164 contextRef="c-01" id="pint.r_1.ibt-164">Third line</pint:ibt-164>
+    <pint:ibt-066 contextRef="c-01" id="pint.r_1.ibt-066">新宿区</pint:ibt-066>
+    <pint:ibt-067 contextRef="c-01" id="pint.r_1.ibt-067">1600044</pint:ibt-067>
+    <pint:ibt-068 contextRef="c-01" id="pint.r_1.ibt-068">東京都</pint:ibt-068>
+    <pint:ibt-069 contextRef="c-01" id="pint.r_1.ibt-069">JP</pint:ibt-069>
+    <pint:ibt-070 contextRef="c-01" id="pint.r_1.ibt-070">株式会社 〇〇物産 札幌支社</pint:ibt-070>
+    <pint:ibt-071 contextRef="c-01" id="pint.r_1.ibt-071">123456:000123:0147:1</pint:ibt-071>
+    <pint:ibt-071-1 contextRef="c-01" id="pint.r_1.ibt-071-1">147</pint:ibt-071-1>
+    <pint:ibt-072 contextRef="c-01" id="pint.r_1.ibt-072">2023-10-18</pint:ibt-072>
+    <pint:ibt-073 contextRef="c-01" id="pint.r_1.ibt-073">2023-10-18</pint:ibt-073>
+    <pint:ibt-074 contextRef="c-01" id="pint.r_1.ibt-074">2023-10-18</pint:ibt-074>
+    <pint:ibt-075 contextRef="c-01" id="pint.r_1.ibt-075">北区</pint:ibt-075>
+    <pint:ibt-076 contextRef="c-01" id="pint.r_1.ibt-076">北十二条西76-X</pint:ibt-076>
+    <pint:ibt-165 contextRef="c-01" id="pint.r_1.ibt-165">Gate 15</pint:ibt-165>
+    <pint:ibt-077 contextRef="c-01" id="pint.r_1.ibt-077">札幌市</pint:ibt-077>
+    <pint:ibt-078 contextRef="c-01" id="pint.r_1.ibt-078">10012</pint:ibt-078>
+    <pint:ibt-079 contextRef="c-01" id="pint.r_1.ibt-079">北海道</pint:ibt-079>
+    <pint:ibt-080 contextRef="c-01" id="pint.r_1.ibt-080">JP</pint:ibt-080>
+    <unit id="u-01">
+        <measure>iso4217:JPY</measure>
+    </unit>
+    <pint:ibt-106
+      contextRef="c-01"
+      decimals="0"
+      id="pint.r_1.ibt-106"
+      unitRef="u-01">255990</pint:ibt-106>
+    <pint:ibt-107
+      contextRef="c-01"
+      decimals="0"
+      id="pint.r_1.ibt-107"
+      unitRef="u-01">179</pint:ibt-107>
+    <pint:ibt-108
+      contextRef="c-01"
+      decimals="0"
+      id="pint.r_1.ibt-108"
+      unitRef="u-01">7679</pint:ibt-108>
+    <pint:ibt-109
+      contextRef="c-01"
+      decimals="0"
+      id="pint.r_1.ibt-109"
+      unitRef="u-01">263490</pint:ibt-109>
+    <pint:ibt-110
+      contextRef="c-01"
+      decimals="0"
+      id="pint.r_1.ibt-110"
+      unitRef="u-01">26000</pint:ibt-110>
+    <pint:ibt-112
+      contextRef="c-01"
+      decimals="0"
+      id="pint.r_1.ibt-112"
+      unitRef="u-01">289490</pint:ibt-112>
+    <pint:ibt-113
+      contextRef="c-01"
+      decimals="0"
+      id="pint.r_1.ibt-113"
+      unitRef="u-01">0</pint:ibt-113>
+    <pint:ibt-114
+      contextRef="c-01"
+      decimals="0"
+      id="pint.r_1.ibt-114"
+      unitRef="u-01">0</pint:ibt-114>
+    <pint:ibt-115
+      contextRef="c-01"
+      decimals="0"
+      id="pint.r_1.ibt-115"
+      unitRef="u-01">289490</pint:ibt-115>
+    <context id="c-02">
+        <entity>
+            <identifier scheme="http://www.example.com">Example co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="pint:G33">
+                    <pint:_v>1</pint:_v>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="pint:_380">
+                    <pint:_v>156</pint:_v>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2023-10-31</instant>
+        </period>
+    </context>
+    <pint:ibt-020 contextRef="c-02" id="pint.r_2.ibt-020">月末締め翌月20日払い, 銀行手数料振込人負担</pint:ibt-020>
+    <context id="c-03">
+        <entity>
+            <identifier scheme="http://www.example.com">Example co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="pint:G03">
+                    <pint:_v>1</pint:_v>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="pint:_380">
+                    <pint:_v>156</pint:_v>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2023-10-31</instant>
+        </period>
+    </context>
+    <pint:ibt-025 contextRef="c-03" id="pint.r_3.ibt-025">123</pint:ibt-025>
+    <pint:ibt-026 contextRef="c-03" id="pint.r_3.ibt-026">2023-10-20</pint:ibt-026>
+    <context id="c-04">
+        <entity>
+            <identifier scheme="http://www.example.com">Example co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="pint:G16">
+                    <pint:_uncl4461>30</pint:_uncl4461>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="pint:_380">
+                    <pint:_v>156</pint:_v>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2023-10-31</instant>
+        </period>
+    </context>
+    <pint:ibt-081 contextRef="c-04" id="pint.r_4.ibt-081">30</pint:ibt-081>
+    <pint:ibt-082 contextRef="c-04" id="pint.r_4.ibt-082">Credit transfer</pint:ibt-082>
+    <pint:ibt-084 contextRef="c-04" id="pint.r_4.ibt-084">1234:567:1:3242394</pint:ibt-084>
+    <pint:ibt-084-1 contextRef="c-04" id="pint.r_4.ibt-084-1">ZENGIN</pint:ibt-084-1>
+    <pint:ibt-085 contextRef="c-04" id="pint.r_4.ibt-085">ｶ)ﾏﾙﾏﾙｼﾖｳｼﾞ</pint:ibt-085>
+    <context id="c-05">
+        <entity>
+            <identifier scheme="http://www.example.com">Example co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="pint:G20">
+                    <pint:_v>1</pint:_v>
+                </xbrldi:typedMember>
+                <xbrldi:explicitMember dimension="pint:G23">pint:G23_S10</xbrldi:explicitMember>
+                <xbrldi:typedMember dimension="pint:_380">
+                    <pint:_v>156</pint:_v>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2023-10-31</instant>
+        </period>
+    </context>
+    <pint:ibt-092
+      contextRef="c-05"
+      decimals="0"
+      id="pint.r_5.ibt-092"
+      unitRef="u-01">179</pint:ibt-092>
+    <pint:ibt-097 contextRef="c-05" id="pint.r_5.ibt-097">値引</pint:ibt-097>
+    <pint:ibt-098 contextRef="c-05" id="pint.r_5.ibt-098">95</pint:ibt-098>
+    <pint:ibt-095 contextRef="c-05" id="pint.r_5.ibt-095">S</pint:ibt-095>
+    <unit id="u-02">
+        <measure>pure</measure>
+    </unit>
+    <pint:ibt-096
+      contextRef="c-05"
+      decimals="0"
+      id="pint.r_5.ibt-096"
+      unitRef="u-02">10</pint:ibt-096>
+    <context id="c-06">
+        <entity>
+            <identifier scheme="http://www.example.com">Example co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="pint:G21">
+                    <pint:_v>1</pint:_v>
+                </xbrldi:typedMember>
+                <xbrldi:explicitMember dimension="pint:G23">pint:G23_S10</xbrldi:explicitMember>
+                <xbrldi:typedMember dimension="pint:_380">
+                    <pint:_v>156</pint:_v>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2023-10-31</instant>
+        </period>
+    </context>
+    <pint:ibt-099
+      contextRef="c-06"
+      decimals="0"
+      id="pint.r_6.ibt-099"
+      unitRef="u-01">7679</pint:ibt-099>
+    <pint:ibt-104 contextRef="c-06" id="pint.r_6.ibt-104">配送サービス</pint:ibt-104>
+    <pint:ibt-105 contextRef="c-06" id="pint.r_6.ibt-105">FC</pint:ibt-105>
+    <pint:ibt-102 contextRef="c-06" id="pint.r_6.ibt-102">S</pint:ibt-102>
+    <pint:ibt-103
+      contextRef="c-06"
+      decimals="0"
+      id="pint.r_6.ibt-103"
+      unitRef="u-02">10</pint:ibt-103>
+    <context id="c-07">
+        <entity>
+            <identifier scheme="http://www.example.com">Example co.</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="pint:G23">pint:G23_S10</xbrldi:explicitMember>
+                <xbrldi:typedMember dimension="pint:_380">
+                    <pint:_v>156</pint:_v>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2023-10-31</instant>
+        </period>
+    </context>
+    <pint:ibt-116
+      contextRef="c-07"
+      decimals="0"
+      id="pint.r_7.ibt-116"
+      unitRef="u-01">260000</pint:ibt-116>
+    <pint:ibt-117
+      contextRef="c-07"
+      decimals="0"
+      id="pint.r_7.ibt-117"
+      unitRef="u-01">26000</pint:ibt-117>
+    <pint:ibt-118 contextRef="c-07" id="pint.r_7.ibt-118">S</pint:ibt-118>
+    <pint:ibt-119
+      contextRef="c-07"
+      decimals="0"
+      id="pint.r_7.ibt-119"
+      unitRef="u-01">10</pint:ibt-119>
+    <context id="c-08">
+        <entity>
+            <identifier scheme="http://www.example.com">Example co.</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="pint:G23">pint:G23_E0</xbrldi:explicitMember>
+                <xbrldi:typedMember dimension="pint:_380">
+                    <pint:_v>156</pint:_v>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2023-10-31</instant>
+        </period>
+    </context>
+    <pint:ibt-116
+      contextRef="c-08"
+      decimals="0"
+      id="pint.r_8.ibt-116"
+      unitRef="u-01">3490</pint:ibt-116>
+    <pint:ibt-117
+      contextRef="c-08"
+      decimals="0"
+      id="pint.r_8.ibt-117"
+      unitRef="u-01">0</pint:ibt-117>
+    <pint:ibt-118 contextRef="c-08" id="pint.r_8.ibt-118">E</pint:ibt-118>
+    <pint:ibt-119
+      contextRef="c-08"
+      decimals="0"
+      id="pint.r_8.ibt-119"
+      unitRef="u-01">0</pint:ibt-119>
+    <context id="c-09">
+        <entity>
+            <identifier scheme="http://www.example.com">Example co.</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="pint:G23">pint:G23_S10</xbrldi:explicitMember>
+                <xbrldi:typedMember dimension="pint:G25">
+                    <pint:_v>L01</pint:_v>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="pint:_380">
+                    <pint:_v>156</pint:_v>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2023-10-31</instant>
+        </period>
+    </context>
+    <pint:ibt-126 contextRef="c-09" id="pint.r_9.ibt-126">1</pint:ibt-126>
+    <pint:ibt-127 contextRef="c-09" id="pint.r_9.ibt-127">The equipment has 3 year warranty.</pint:ibt-127>
+    <pint:ibt-128 contextRef="c-09" id="pint.r_9.ibt-128">AB-123</pint:ibt-128>
+    <pint:ibt-128-1 contextRef="c-09" id="pint.r_9.ibt-128-1">ABZ</pint:ibt-128-1>
+    <pint:ibt-129
+      contextRef="c-09"
+      decimals="0"
+      id="pint.r_9.ibt-129"
+      unitRef="u-02">5</pint:ibt-129>
+    <pint:ibt-130 contextRef="c-09" id="pint.r_9.ibt-130">H87</pint:ibt-130>
+    <pint:ibt-131
+      contextRef="c-09"
+      decimals="0"
+      id="pint.r_9.ibt-131"
+      unitRef="u-01">250000</pint:ibt-131>
+    <pint:ibt-183 contextRef="c-09" id="pint.r_9.ibt-183">1</pint:ibt-183>
+    <pint:ibt-132 contextRef="c-09" id="pint.r_9.ibt-132">1</pint:ibt-132>
+    <pint:ibt-184 contextRef="c-09" id="pint.r_9.ibt-184">789</pint:ibt-184>
+    <pint:ibt-133 contextRef="c-09" id="pint.r_9.ibt-133">Cost id 654</pint:ibt-133>
+    <pint:ibt-134 contextRef="c-09" id="pint.r_9.ibt-134">2023-10-18</pint:ibt-134>
+    <pint:ibt-135 contextRef="c-09" id="pint.r_9.ibt-135">2023-10-18</pint:ibt-135>
+    <pint:ibt-146
+      contextRef="c-09"
+      decimals="0"
+      id="pint.r_9.ibt-146"
+      unitRef="u-01">50000</pint:ibt-146>
+    <pint:ibt-149
+      contextRef="c-09"
+      decimals="INF"
+      id="pint.r_9.ibt-149"
+      unitRef="u-02">1</pint:ibt-149>
+    <pint:ibt-150 contextRef="c-09" id="pint.r_9.ibt-150">H87</pint:ibt-150>
+    <pint:ibt-153 contextRef="c-09" id="pint.r_9.ibt-153">デスクチェア</pint:ibt-153>
+    <pint:ibt-155 contextRef="c-09" id="pint.r_9.ibt-155">97iugug876</pint:ibt-155>
+    <pint:ibt-156 contextRef="c-09" id="pint.r_9.ibt-156">b-13214</pint:ibt-156>
+    <pint:ibt-157 contextRef="c-09" id="pint.r_9.ibt-157">4503990000000</pint:ibt-157>
+    <pint:ibt-158 contextRef="c-09" id="pint.r_9.ibt-158">86776</pint:ibt-158>
+    <pint:ibt-159 contextRef="c-09" id="pint.r_9.ibt-159">JP</pint:ibt-159>
+    <context id="c-10">
+        <entity>
+            <identifier scheme="http://www.example.com">Example co.</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="pint:G23">pint:G23_S10</xbrldi:explicitMember>
+                <xbrldi:typedMember dimension="pint:G25">
+                    <pint:_v>L01</pint:_v>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="pint:G30">
+                    <pint:_v>1</pint:_v>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="pint:_380">
+                    <pint:_v>156</pint:_v>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2023-10-31</instant>
+        </period>
+    </context>
+    <pint:ibt-151 contextRef="c-10" id="pint.r_10.ibt-151">S</pint:ibt-151>
+    <pint:ibt-152
+      contextRef="c-10"
+      decimals="INF"
+      id="pint.r_10.ibt-152"
+      unitRef="u-02">10</pint:ibt-152>
+    <pint:ibt-167 contextRef="c-10" id="pint.r_10.ibt-167">VAT</pint:ibt-167>
+    <context id="c-11">
+        <entity>
+            <identifier scheme="http://www.example.com">Example co.</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="pint:G23">pint:G23_S10</xbrldi:explicitMember>
+                <xbrldi:typedMember dimension="pint:G25">
+                    <pint:_v>L01</pint:_v>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="pint:G27">
+                    <pint:_v>1</pint:_v>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="pint:_380">
+                    <pint:_v>156</pint:_v>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2023-10-31</instant>
+        </period>
+    </context>
+    <pint:ibt-136
+      contextRef="c-11"
+      decimals="0"
+      id="pint.r_11.ibt-136"
+      unitRef="u-01">1500</pint:ibt-136>
+    <pint:ibt-139 contextRef="c-11" id="pint.r_11.ibt-139">値引</pint:ibt-139>
+    <pint:ibt-140 contextRef="c-11" id="pint.r_11.ibt-140">95</pint:ibt-140>
+    <context id="c-12">
+        <entity>
+            <identifier scheme="http://www.example.com">Example co.</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="pint:G23">pint:G23_S10</xbrldi:explicitMember>
+                <xbrldi:typedMember dimension="pint:G25">
+                    <pint:_v>L01</pint:_v>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="pint:G28">
+                    <pint:_v>1</pint:_v>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="pint:_380">
+                    <pint:_v>156</pint:_v>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2023-10-31</instant>
+        </period>
+    </context>
+    <pint:ibt-141
+      contextRef="c-12"
+      decimals="0"
+      id="pint.r_12.ibt-141"
+      unitRef="u-01">1500</pint:ibt-141>
+    <pint:ibt-144 contextRef="c-12" id="pint.r_12.ibt-144">クリーニング</pint:ibt-144>
+    <pint:ibt-145 contextRef="c-12" id="pint.r_12.ibt-145">CG</pint:ibt-145>
+    <context id="c-13">
+        <entity>
+            <identifier scheme="http://www.example.com">Example co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="pint:G25">
+                    <pint:_v>L01</pint:_v>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="pint:G32">
+                    <pint:_v>1</pint:_v>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="pint:_380">
+                    <pint:_v>156</pint:_v>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2023-10-31</instant>
+        </period>
+    </context>
+    <pint:ibt-160 contextRef="c-13" id="pint.r_13.ibt-160">表示単位名称</pint:ibt-160>
+    <pint:ibt-161 contextRef="c-13" id="pint.r_13.ibt-161">脚</pint:ibt-161>
+    <context id="c-14">
+        <entity>
+            <identifier scheme="http://www.example.com">Example co.</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="pint:G23">pint:G23_S10</xbrldi:explicitMember>
+                <xbrldi:typedMember dimension="pint:G25">
+                    <pint:_v>L02</pint:_v>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="pint:_380">
+                    <pint:_v>156</pint:_v>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2023-10-31</instant>
+        </period>
+    </context>
+    <pint:ibt-126 contextRef="c-14" id="pint.r_14.ibt-126">2</pint:ibt-126>
+    <pint:ibt-129
+      contextRef="c-14"
+      decimals="0"
+      id="pint.r_14.ibt-129"
+      unitRef="u-02">5</pint:ibt-129>
+    <pint:ibt-130 contextRef="c-14" id="pint.r_14.ibt-130">H87</pint:ibt-130>
+    <pint:ibt-131
+      contextRef="c-14"
+      decimals="0"
+      id="pint.r_14.ibt-131"
+      unitRef="u-01">2500</pint:ibt-131>
+    <pint:ibt-134 contextRef="c-14" id="pint.r_14.ibt-134">2023-10-18</pint:ibt-134>
+    <pint:ibt-135 contextRef="c-14" id="pint.r_14.ibt-135">2023-10-18</pint:ibt-135>
+    <pint:ibt-146
+      contextRef="c-14"
+      decimals="0"
+      id="pint.r_14.ibt-146"
+      unitRef="u-01">500</pint:ibt-146>
+    <pint:ibt-147
+      contextRef="c-14"
+      decimals="0"
+      id="pint.r_14.ibt-147"
+      unitRef="u-01">100</pint:ibt-147>
+    <pint:ibt-148
+      contextRef="c-14"
+      decimals="0"
+      id="pint.r_14.ibt-148"
+      unitRef="u-01">600</pint:ibt-148>
+    <pint:ibt-149
+      contextRef="c-14"
+      decimals="INF"
+      id="pint.r_14.ibt-149"
+      unitRef="u-02">1</pint:ibt-149>
+    <pint:ibt-150 contextRef="c-14" id="pint.r_14.ibt-150">H87</pint:ibt-150>
+    <pint:ibt-153 contextRef="c-14" id="pint.r_14.ibt-153">コピー用紙（A4）</pint:ibt-153>
+    <pint:ibt-155 contextRef="c-14" id="pint.r_14.ibt-155">Item3</pint:ibt-155>
+    <pint:ibt-157 contextRef="c-14" id="pint.r_14.ibt-157">1234570000000</pint:ibt-157>
+    <pint:ibt-158 contextRef="c-14" id="pint.r_14.ibt-158">43211503</pint:ibt-158>
+    <context id="c-15">
+        <entity>
+            <identifier scheme="http://www.example.com">Example co.</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="pint:G23">pint:G23_S10</xbrldi:explicitMember>
+                <xbrldi:typedMember dimension="pint:G25">
+                    <pint:_v>L02</pint:_v>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="pint:G30">
+                    <pint:_v>1</pint:_v>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="pint:_380">
+                    <pint:_v>156</pint:_v>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2023-10-31</instant>
+        </period>
+    </context>
+    <pint:ibt-151 contextRef="c-15" id="pint.r_15.ibt-151">S</pint:ibt-151>
+    <pint:ibt-152
+      contextRef="c-15"
+      decimals="INF"
+      id="pint.r_15.ibt-152"
+      unitRef="u-02">10</pint:ibt-152>
+    <pint:ibt-167 contextRef="c-15" id="pint.r_15.ibt-167">VAT</pint:ibt-167>
+    <context id="c-16">
+        <entity>
+            <identifier scheme="http://www.example.com">Example co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="pint:G25">
+                    <pint:_v>L02</pint:_v>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="pint:G32">
+                    <pint:_v>1</pint:_v>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="pint:_380">
+                    <pint:_v>156</pint:_v>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2023-10-31</instant>
+        </period>
+    </context>
+    <pint:ibt-160 contextRef="c-16" id="pint.r_16.ibt-160">表示単位名称</pint:ibt-160>
+    <pint:ibt-161 contextRef="c-16" id="pint.r_16.ibt-161">冊</pint:ibt-161>
+    <context id="c-17">
+        <entity>
+            <identifier scheme="http://www.example.com">Example co.</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="pint:G23">pint:G23_E0</xbrldi:explicitMember>
+                <xbrldi:typedMember dimension="pint:G25">
+                    <pint:_v>L03</pint:_v>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="pint:_380">
+                    <pint:_v>156</pint:_v>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2023-10-31</instant>
+        </period>
+    </context>
+    <pint:ibt-126 contextRef="c-17" id="pint.r_17.ibt-126">3</pint:ibt-126>
+    <pint:ibt-129
+      contextRef="c-17"
+      decimals="0"
+      id="pint.r_17.ibt-129"
+      unitRef="u-02">10</pint:ibt-129>
+    <pint:ibt-130 contextRef="c-17" id="pint.r_17.ibt-130">H87</pint:ibt-130>
+    <pint:ibt-131
+      contextRef="c-17"
+      decimals="0"
+      id="pint.r_17.ibt-131"
+      unitRef="u-01">3490</pint:ibt-131>
+    <pint:ibt-134 contextRef="c-17" id="pint.r_17.ibt-134">2023-10-18</pint:ibt-134>
+    <pint:ibt-135 contextRef="c-17" id="pint.r_17.ibt-135">2023-10-18</pint:ibt-135>
+    <pint:ibt-146
+      contextRef="c-17"
+      decimals="0"
+      id="pint.r_17.ibt-146"
+      unitRef="u-01">349</pint:ibt-146>
+    <pint:ibt-149
+      contextRef="c-17"
+      decimals="INF"
+      id="pint.r_17.ibt-149"
+      unitRef="u-02">1</pint:ibt-149>
+    <pint:ibt-150 contextRef="c-17" id="pint.r_17.ibt-150">H87</pint:ibt-150>
+    <pint:ibt-153 contextRef="c-17" id="pint.r_17.ibt-153">検定済教科書(算数)</pint:ibt-153>
+    <context id="c-18">
+        <entity>
+            <identifier scheme="http://www.example.com">Example co.</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="pint:G23">pint:G23_E0</xbrldi:explicitMember>
+                <xbrldi:typedMember dimension="pint:G25">
+                    <pint:_v>L03</pint:_v>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="pint:G30">
+                    <pint:_v>1</pint:_v>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="pint:_380">
+                    <pint:_v>156</pint:_v>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2023-10-31</instant>
+        </period>
+    </context>
+    <pint:ibt-151 contextRef="c-18" id="pint.r_18.ibt-151">E</pint:ibt-151>
+    <pint:ibt-152
+      contextRef="c-18"
+      decimals="INF"
+      id="pint.r_18.ibt-152"
+      unitRef="u-02">0</pint:ibt-152>
+    <pint:ibt-167 contextRef="c-18" id="pint.r_18.ibt-167">VAT</pint:ibt-167>
+    <context id="c-19">
+        <entity>
+            <identifier scheme="http://www.example.com">Example co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="pint:G25">
+                    <pint:_v>L03</pint:_v>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="pint:G32">
+                    <pint:_v>1</pint:_v>
+                </xbrldi:typedMember>
+                <xbrldi:typedMember dimension="pint:_380">
+                    <pint:_v>156</pint:_v>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2023-10-31</instant>
+        </period>
+    </context>
+    <pint:ibt-160 contextRef="c-19" id="pint.r_19.ibt-160">表示単位名称</pint:ibt-160>
+    <pint:ibt-161 contextRef="c-19" id="pint.r_19.ibt-161">冊</pint:ibt-161>
+</xbrl>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--extracted from OIM C:\Users\nobuy\OneDrive\ドキュメント\GitHub\e-invoice\xBRL\CSV2INVOICE\data\example_1-metadata.json-->
+<xbrl
+  xmlns="http://www.xbrl.org/2003/instance"
+  xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:pint="http://www.xbrl.jp/eipa/peppol/0.9"
+  xmlns:xbrldi="http://xbrl.org/2006/xbrldi"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+    <link:schemaRef xlink:href="../taxonomy/pint/core.xsd" xlink:type="simple"/>
+    <context id="c-01">
+        <entity>
+            <identifier scheme="http://www.example.com">Example co.</identifier>
+            <segment>
+                <xbrldi:typedMember dimension="pint:_380">
+                    <pint:_v>12345678</pint:_v>
+                </xbrldi:typedMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2023-11-30</instant>
+        </period>
+    </context>
+    <pint:ibt-001 contextRef="c-01" id="pint.r_1.ibt-001">12345678</pint:ibt-001>
+    <pint:ibt-002 contextRef="c-01" id="pint.r_1.ibt-002">2023-12-01</pint:ibt-002>
+    <pint:ibt-003 contextRef="c-01" id="pint.r_1.ibt-003">380</pint:ibt-003>
+    <pint:ibt-005 contextRef="c-01" id="pint.r_1.ibt-005">JPY</pint:ibt-005>
+    <pint:ibt-008 contextRef="c-01" id="pint.r_1.ibt-008">3</pint:ibt-008>
+    <pint:ibt-009 contextRef="c-01" id="pint.r_1.ibt-009">2024-01-31</pint:ibt-009>
+    <pint:ibt-010 contextRef="c-01" id="pint.r_1.ibt-010">abc−123</pint:ibt-010>
+    <pint:ibt-013 contextRef="c-01" id="pint.r_1.ibt-013">AA-123-BB</pint:ibt-013>
+    <pint:ibt-023 contextRef="c-01" id="pint.r_1.ibt-023">urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</pint:ibt-023>
+    <pint:ibt-024 contextRef="c-01" id="pint.r_1.ibt-024">urn:fdc:peppol:jp:billing:3.0</pint:ibt-024>
+    <pint:ibt-027 contextRef="c-01" id="pint.r_1.ibt-027">株式会社〇〇商事</pint:ibt-027>
+    <pint:ibt-028 contextRef="c-01" id="pint.r_1.ibt-028">株式会社〇〇商事</pint:ibt-028>
+    <pint:ibt-030 contextRef="c-01" id="pint.r_1.ibt-030">8700110005901</pint:ibt-030>
+    <pint:ibt-031 contextRef="c-01" id="pint.r_1.ibt-031">T8700110005901</pint:ibt-031>
+    <pint:ibt-034 contextRef="c-01" id="pint.r_1.ibt-034">JP8700110005901</pint:ibt-034>
+    <pint:ibt-034-1 contextRef="c-01" id="pint.r_1.ibt-034-1">0188</pint:ibt-034-1>
+    <pint:ibt-035 contextRef="c-01" id="pint.r_1.ibt-035">四谷4-29-X</pint:ibt-035>
+    <pint:ibt-036 contextRef="c-01" id="pint.r_1.ibt-036">〇〇商事ビル</pint:ibt-036>
+    <pint:ibt-037 contextRef="c-01" id="pint.r_1.ibt-037">新宿区</pint:ibt-037>
+    <pint:ibt-038 contextRef="c-01" id="pint.r_1.ibt-038">160−00xx</pint:ibt-038>
+    <pint:ibt-039 contextRef="c-01" id="pint.r_1.ibt-039">東京都</pint:ibt-039>
+    <pint:ibt-040 contextRef="c-01" id="pint.r_1.ibt-040">JP</pint:ibt-040>
+    <pint:ibt-041 contextRef="c-01" id="pint.r_1.ibt-041">法人営業2課</pint:ibt-041>
+    <pint:ibt-042 contextRef="c-01" id="pint.r_1.ibt-042">03-3xxx-1234</pint:ibt-042>
+    <pint:ibt-043 contextRef="c-01" id="pint.r_1.ibt-043">houjineigyou2@〇〇.co.jp</pint:ibt-043>
+    <pint:ibt-044 contextRef="c-01" id="pint.r_1.ibt-044">株式会社△山物産</pint:ibt-044>
+    <pint:ibt-046 contextRef="c-01" id="pint.r_1.ibt-046">789KH512</pint:ibt-046>
+    <pint:ibt-047 contextRef="c-01" id="pint.r_1.ibt-047">654321:321:247:1</pint:ibt-047>
+    <pint:ibt-047-1 contextRef="c-01" id="pint.r_1.ibt-047-1">0147</pint:ibt-047-1>
+    <pint:ibt-049 contextRef="c-01" id="pint.r_1.ibt-049">JP7700110005900</pint:ibt-049>
+    <pint:ibt-049-1 contextRef="c-01" id="pint.r_1.ibt-049-1">0188</pint:ibt-049-1>
+    <pint:ibt-050 contextRef="c-01" id="pint.r_1.ibt-050">北十二条西XX-X</pint:ibt-050>
+    <pint:ibt-052 contextRef="c-01" id="pint.r_1.ibt-052">札幌市</pint:ibt-052>
+    <pint:ibt-053 contextRef="c-01" id="pint.r_1.ibt-053">001−00xx</pint:ibt-053>
+    <pint:ibt-054 contextRef="c-01" id="pint.r_1.ibt-054">北海道</pint:ibt-054>
+    <pint:ibt-055 contextRef="c-01" id="pint.r_1.ibt-055">JP</pint:ibt-055>
+    <pint:ibt-056 contextRef="c-01" id="pint.r_1.ibt-056">株式会社△山物産札幌支社</pint:ibt-056>
+    <pint:ibt-058 contextRef="c-01" id="pint.r_1.ibt-058">purchaser@△yamabussan.co.jp</pint:ibt-058>
+    <pint:ibt-070 contextRef="c-01" id="pint.r_1.ibt-070">株式会社△山物産札幌支社</pint:ibt-070>
+    <pint:ibt-072 contextRef="c-01" id="pint.r_1.ibt-072">2023-11-04</pint:ibt-072>
+    <pint:ibt-073 contextRef="c-01" id="pint.r_1.ibt-073">2023-11-01</pint:ibt-073>
+    <pint:ibt-074 contextRef="c-01" id="pint.r_1.ibt-074">2023-11-30</pint:ibt-074>
+    <pint:ibt-075 contextRef="c-01" id="pint.r_1.ibt-075">北十二条西XX-X</pint:ibt-075>
+    <pint:ibt-076 contextRef="c-01" id="pint.r_1.ibt-076">札幌第３倉庫</pint:ibt-076>
+    <pint:ibt-077 contextRef="c-01" id="pint.r_1.ibt-077">札幌市</pint:ibt-077>
+    <pint:ibt-078 contextRef="c-01" id="pint.r_1.ibt-078">001−00xx</pint:ibt-078>
+    <pint:ibt-079 contextRef="c-01" id="pint.r_1.ibt-079">北海道</pint:ibt-079>
+    <pint:ibt-080 contextRef="c-01" id="pint.r_1.ibt-080">JP</pint:ibt-080>
+    <pint:ibt-081 contextRef="c-01" id="pint.r_1.ibt-081">3</pint:ibt-081>
+    <pint:ibt-082 contextRef="c-01" id="pint.r_1.ibt-082">Credit transfer</pint:ibt-082>
+    <pint:ibt-083 contextRef="c-01" id="pint.r_1.ibt-083">Snippet1</pint:ibt-083>
+    <pint:ibt-084 contextRef="c-01" id="pint.r_1.ibt-084">1234121123456780</pint:ibt-084>
+    <pint:ibt-085 contextRef="c-01" id="pint.r_1.ibt-085">ｶ)ﾏﾙﾏﾙｼｮｳｼﾞ</pint:ibt-085>
+    <unit id="u-01">
+        <measure>iso4217:JPY</measure>
+    </unit>
+    <pint:ibt-092
+      contextRef="c-01"
+      decimals="0"
+      id="pint.r_1.ibt-092"
+      unitRef="u-01">300</pint:ibt-092>
+    <pint:ibt-097 contextRef="c-01" id="pint.r_1.ibt-097">割引</pint:ibt-097>
+    <pint:ibt-095 contextRef="c-01" id="pint.r_1.ibt-095">S</pint:ibt-095>
+    <pint:ibt-095-1 contextRef="c-01" id="pint.r_1.ibt-095-1">VAT</pint:ibt-095-1>
+    <unit id="u-02">
+        <measure>pure</measure>
+    </unit>
+    <pint:ibt-096
+      contextRef="c-01"
+      decimals="INF"
+      id="pint.r_1.ibt-096"
+      unitRef="u-02">10</pint:ibt-096>
+    <pint:ibt-099
+      contextRef="c-01"
+      decimals="0"
+      id="pint.r_1.ibt-099"
+      unitRef="u-01">200</pint:ibt-099>
+    <pint:ibt-104 contextRef="c-01" id="pint.r_1.ibt-104">諸掛</pint:ibt-104>
+    <pint:ibt-102 contextRef="c-01" id="pint.r_1.ibt-102">S</pint:ibt-102>
+    <pint:ibt-102-1 contextRef="c-01" id="pint.r_1.ibt-102-1">VAT</pint:ibt-102-1>
+    <pint:ibt-103
+      contextRef="c-01"
+      decimals="INF"
+      id="pint.r_1.ibt-103"
+      unitRef="u-02">10</pint:ibt-103>
+    <pint:ibt-106
+      contextRef="c-01"
+      decimals="0"
+      id="pint.r_1.ibt-106"
+      unitRef="u-01">4000</pint:ibt-106>
+    <pint:ibt-107
+      contextRef="c-01"
+      decimals="0"
+      id="pint.r_1.ibt-107"
+      unitRef="u-01">300</pint:ibt-107>
+    <pint:ibt-108
+      contextRef="c-01"
+      decimals="0"
+      id="pint.r_1.ibt-108"
+      unitRef="u-01">200</pint:ibt-108>
+    <pint:ibt-109
+      contextRef="c-01"
+      decimals="0"
+      id="pint.r_1.ibt-109"
+      unitRef="u-01">3900</pint:ibt-109>
+    <pint:ibt-110
+      contextRef="c-01"
+      decimals="0"
+      id="pint.r_1.ibt-110"
+      unitRef="u-01">40</pint:ibt-110>
+    <pint:ibt-112
+      contextRef="c-01"
+      decimals="0"
+      id="pint.r_1.ibt-112"
+      unitRef="u-01">3940</pint:ibt-112>
+    <pint:ibt-115
+      contextRef="c-01"
+      decimals="0"
+      id="pint.r_1.ibt-115"
+      unitRef="u-01">3940</pint:ibt-115>
+    <pint:ibt-116
+      contextRef="c-01"
+      decimals="0"
+      id="pint.r_1.ibt-116"
+      unitRef="u-01">400</pint:ibt-116>
+    <pint:ibt-117
+      contextRef="c-01"
+      decimals="0"
+      id="pint.r_1.ibt-117"
+      unitRef="u-01">40</pint:ibt-117>
+    <pint:ibt-118 contextRef="c-01" id="pint.r_1.ibt-118">S</pint:ibt-118>
+    <pint:ibt-119
+      contextRef="c-01"
+      decimals="INF"
+      id="pint.r_1.ibt-119"
+      unitRef="u-02">10</pint:ibt-119>
+    <pint:ibt-126 contextRef="c-01" id="pint.r_1.ibt-126">1</pint:ibt-126>
+    <pint:ibt-127 contextRef="c-01" id="pint.r_1.ibt-127">ABC1234</pint:ibt-127>
+    <pint:ibt-129
+      contextRef="c-01"
+      decimals="INF"
+      id="pint.r_1.ibt-129"
+      unitRef="u-02">5000</pint:ibt-129>
+    <pint:ibt-130 contextRef="c-01" id="pint.r_1.ibt-130">XST</pint:ibt-130>
+    <pint:ibt-131
+      contextRef="c-01"
+      decimals="0"
+      id="pint.r_1.ibt-131"
+      unitRef="u-01">4000</pint:ibt-131>
+    <pint:ibt-183 contextRef="c-01" id="pint.r_1.ibt-183">2023-POU-8745</pint:ibt-183>
+    <pint:ibt-132 contextRef="c-01" id="pint.r_1.ibt-132">2023-POU-8745#001</pint:ibt-132>
+    <pint:ibt-146
+      contextRef="c-01"
+      decimals="0"
+      id="pint.r_1.ibt-146"
+      unitRef="u-01">800</pint:ibt-146>
+    <pint:ibt-149
+      contextRef="c-01"
+      decimals="INF"
+      id="pint.r_1.ibt-149"
+      unitRef="u-02">1000</pint:ibt-149>
+    <pint:ibt-150 contextRef="c-01" id="pint.r_1.ibt-150">XST</pint:ibt-150>
+    <pint:ibt-151 contextRef="c-01" id="pint.r_1.ibt-151">S</pint:ibt-151>
+    <pint:ibt-152
+      contextRef="c-01"
+      decimals="INF"
+      id="pint.r_1.ibt-152"
+      unitRef="u-02">10</pint:ibt-152>
+    <pint:ibt-167 contextRef="c-01" id="pint.r_1.ibt-167">VAT</pint:ibt-167>
+    <pint:ibt-153 contextRef="c-01" id="pint.r_1.ibt-153">原稿用紙(A4)</pint:ibt-153>
+</xbrl>

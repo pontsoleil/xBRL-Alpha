@@ -1,0 +1,1191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  (c) 2022 XBRL Japan inc. -->
+<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <link:roleRef roleURI="http://www.xbrl.jp/gd/R_AccountingEntries" xlink:type="simple" xlink:href="gl-cor.xsd#R_AccountingEntries"/>
+    <link:presentationLink xlink:type="extended" xlink:role="http://www.xbrl.jp/gd/R_AccountingEntries">
+        <!-- corG-01 accountingEntries -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-accountingEntries" xlink:label="cor-accountingEntries" xlink:title="presentation: cor-accountingEntries"/>
+        <!-- corG-02 documentInfo -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-documentInfo" xlink:label="cor-documentInfo" xlink:title="presentation: cor-documentInfo"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-accountingEntries" xlink:to="cor-documentInfo" order="1" xlink:title="presentation:  cor-accountingEntries to cor-documentInfo"/>
+        <!-- cor-001 entriesType -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-entriesType" xlink:label="cor-entriesType" xlink:title="presentation: cor-entriesType"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-documentInfo" xlink:to="cor-entriesType" order="1" xlink:title="presentation:  cor-documentInfo to cor-entriesType"/>
+        <!-- cor-002 uniqueID -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-uniqueID" xlink:label="cor-uniqueID" xlink:title="presentation: cor-uniqueID"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-documentInfo" xlink:to="cor-uniqueID" order="2" xlink:title="presentation:  cor-documentInfo to cor-uniqueID"/>
+        <!-- cor-003 revisesUniqueID -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-revisesUniqueID" xlink:label="cor-revisesUniqueID" xlink:title="presentation: cor-revisesUniqueID"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-documentInfo" xlink:to="cor-revisesUniqueID" order="3" xlink:title="presentation:  cor-documentInfo to cor-revisesUniqueID"/>
+        <!-- cor-004 revisesUniqueIDAction -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-revisesUniqueIDAction" xlink:label="cor-revisesUniqueIDAction" xlink:title="presentation: cor-revisesUniqueIDAction"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-documentInfo" xlink:to="cor-revisesUniqueIDAction" order="4" xlink:title="presentation:  cor-documentInfo to cor-revisesUniqueIDAction"/>
+        <!-- cor-005 language -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-language" xlink:label="cor-language" xlink:title="presentation: cor-language"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-documentInfo" xlink:to="cor-language" order="5" xlink:title="presentation:  cor-documentInfo to cor-language"/>
+        <!-- cor-006 creationDate -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-creationDate" xlink:label="cor-creationDate" xlink:title="presentation: cor-creationDate"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-documentInfo" xlink:to="cor-creationDate" order="6" xlink:title="presentation:  cor-documentInfo to cor-creationDate"/>
+        <!-- bus-001 creator -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-creator" xlink:label="bus-creator" xlink:title="presentation: bus-creator"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-documentInfo" xlink:to="bus-creator" order="7" xlink:title="presentation:  cor-documentInfo to bus-creator"/>
+        <!-- cor-007 entriesComment -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-entriesComment" xlink:label="cor-entriesComment" xlink:title="presentation: cor-entriesComment"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-documentInfo" xlink:to="cor-entriesComment" order="8" xlink:title="presentation:  cor-documentInfo to cor-entriesComment"/>
+        <!-- cor-008 periodCoveredStart -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-periodCoveredStart" xlink:label="cor-periodCoveredStart" xlink:title="presentation: cor-periodCoveredStart"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-documentInfo" xlink:to="cor-periodCoveredStart" order="9" xlink:title="presentation:  cor-documentInfo to cor-periodCoveredStart"/>
+        <!-- cor-009 periodCoveredEnd -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-periodCoveredEnd" xlink:label="cor-periodCoveredEnd" xlink:title="presentation: cor-periodCoveredEnd"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-documentInfo" xlink:to="cor-periodCoveredEnd" order="10" xlink:title="presentation:  cor-documentInfo to cor-periodCoveredEnd"/>
+        <!-- bus-002 periodCount -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-periodCount" xlink:label="bus-periodCount" xlink:title="presentation: bus-periodCount"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-documentInfo" xlink:to="bus-periodCount" order="11" xlink:title="presentation:  cor-documentInfo to bus-periodCount"/>
+        <!-- bus-003 periodUnit -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-periodUnit" xlink:label="bus-periodUnit" xlink:title="presentation: bus-periodUnit"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-documentInfo" xlink:to="bus-periodUnit" order="12" xlink:title="presentation:  cor-documentInfo to bus-periodUnit"/>
+        <!-- bus-004 periodUnitDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-periodUnitDescription" xlink:label="bus-periodUnitDescription" xlink:title="presentation: bus-periodUnitDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-documentInfo" xlink:to="bus-periodUnitDescription" order="13" xlink:title="presentation:  cor-documentInfo to bus-periodUnitDescription"/>
+        <!-- bus-005 sourceApplication -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-sourceApplication" xlink:label="bus-sourceApplication" xlink:title="presentation: bus-sourceApplication"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-documentInfo" xlink:to="bus-sourceApplication" order="14" xlink:title="presentation:  cor-documentInfo to bus-sourceApplication"/>
+        <!-- bus-006 targetApplication -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-targetApplication" xlink:label="bus-targetApplication" xlink:title="presentation: bus-targetApplication"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-documentInfo" xlink:to="bus-targetApplication" order="15" xlink:title="presentation:  cor-documentInfo to bus-targetApplication"/>
+        <!-- muc-001 defaultCurrency -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-defaultCurrency" xlink:label="muc-defaultCurrency" xlink:title="presentation: muc-defaultCurrency"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-documentInfo" xlink:to="muc-defaultCurrency" order="16" xlink:title="presentation:  cor-documentInfo to muc-defaultCurrency"/>
+        <!-- corG-03 entityInformation -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-entityInformation" xlink:label="cor-entityInformation" xlink:title="presentation: cor-entityInformation"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-accountingEntries" xlink:to="cor-entityInformation" order="2" xlink:title="presentation:  cor-accountingEntries to cor-entityInformation"/>
+        <!-- busG-01 entityPhoneNumber -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-entityPhoneNumber" xlink:label="bus-entityPhoneNumber" xlink:title="presentation: bus-entityPhoneNumber"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entityInformation" xlink:to="bus-entityPhoneNumber" order="1" xlink:title="presentation:  cor-entityInformation to bus-entityPhoneNumber"/>
+        <!-- bus-007 phoneNumberDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-phoneNumberDescription" xlink:label="bus-phoneNumberDescription" xlink:title="presentation: bus-phoneNumberDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-entityPhoneNumber" xlink:to="bus-phoneNumberDescription" order="1" xlink:title="presentation:  bus-entityPhoneNumber to bus-phoneNumberDescription"/>
+        <!-- bus-008 phoneNumber -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-phoneNumber" xlink:label="bus-phoneNumber" xlink:title="presentation: bus-phoneNumber"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-entityPhoneNumber" xlink:to="bus-phoneNumber" order="2" xlink:title="presentation:  bus-entityPhoneNumber to bus-phoneNumber"/>
+        <!-- busG-02 entityFaxNumberStructure -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-entityFaxNumberStructure" xlink:label="bus-entityFaxNumberStructure" xlink:title="presentation: bus-entityFaxNumberStructure"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entityInformation" xlink:to="bus-entityFaxNumberStructure" order="2" xlink:title="presentation:  cor-entityInformation to bus-entityFaxNumberStructure"/>
+        <!-- bus-009 entityFaxNumberUsage -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-entityFaxNumberUsage" xlink:label="bus-entityFaxNumberUsage" xlink:title="presentation: bus-entityFaxNumberUsage"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-entityFaxNumberStructure" xlink:to="bus-entityFaxNumberUsage" order="1" xlink:title="presentation:  bus-entityFaxNumberStructure to bus-entityFaxNumberUsage"/>
+        <!-- bus-010 entityFaxNumber -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-entityFaxNumber" xlink:label="bus-entityFaxNumber" xlink:title="presentation: bus-entityFaxNumber"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-entityFaxNumberStructure" xlink:to="bus-entityFaxNumber" order="2" xlink:title="presentation:  bus-entityFaxNumberStructure to bus-entityFaxNumber"/>
+        <!-- busG-03 entityEmailAddressStructure -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-entityEmailAddressStructure" xlink:label="bus-entityEmailAddressStructure" xlink:title="presentation: bus-entityEmailAddressStructure"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entityInformation" xlink:to="bus-entityEmailAddressStructure" order="3" xlink:title="presentation:  cor-entityInformation to bus-entityEmailAddressStructure"/>
+        <!-- bus-011 entityEmailAddressUsage -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-entityEmailAddressUsage" xlink:label="bus-entityEmailAddressUsage" xlink:title="presentation: bus-entityEmailAddressUsage"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-entityEmailAddressStructure" xlink:to="bus-entityEmailAddressUsage" order="1" xlink:title="presentation:  bus-entityEmailAddressStructure to bus-entityEmailAddressUsage"/>
+        <!-- bus-012 entityEmailAddress -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-entityEmailAddress" xlink:label="bus-entityEmailAddress" xlink:title="presentation: bus-entityEmailAddress"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-entityEmailAddressStructure" xlink:to="bus-entityEmailAddress" order="2" xlink:title="presentation:  bus-entityEmailAddressStructure to bus-entityEmailAddress"/>
+        <!-- bus-013 organizationAccountingMethodPurposeDefault -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-organizationAccountingMethodPurposeDefault" xlink:label="bus-organizationAccountingMethodPurposeDefault" xlink:title="presentation: bus-organizationAccountingMethodPurposeDefault"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entityInformation" xlink:to="bus-organizationAccountingMethodPurposeDefault" order="4" xlink:title="presentation:  cor-entityInformation to bus-organizationAccountingMethodPurposeDefault"/>
+        <!-- bus-014 organizationAccountingMethodPurposeDefaultDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-organizationAccountingMethodPurposeDefaultDescription" xlink:label="bus-organizationAccountingMethodPurposeDefaultDescription" xlink:title="presentation: bus-organizationAccountingMethodPurposeDefaultDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entityInformation" xlink:to="bus-organizationAccountingMethodPurposeDefaultDescription" order="5" xlink:title="presentation:  cor-entityInformation to bus-organizationAccountingMethodPurposeDefaultDescription"/>
+        <!-- busG-04 organizationIdentifiers -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-organizationIdentifiers" xlink:label="bus-organizationIdentifiers" xlink:title="presentation: bus-organizationIdentifiers"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entityInformation" xlink:to="bus-organizationIdentifiers" order="6" xlink:title="presentation:  cor-entityInformation to bus-organizationIdentifiers"/>
+        <!-- bus-015 organizationIdentifier -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-organizationIdentifier" xlink:label="bus-organizationIdentifier" xlink:title="presentation: bus-organizationIdentifier"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-organizationIdentifiers" xlink:to="bus-organizationIdentifier" order="1" xlink:title="presentation:  bus-organizationIdentifiers to bus-organizationIdentifier"/>
+        <!-- bus-016 organizationDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-organizationDescription" xlink:label="bus-organizationDescription" xlink:title="presentation: bus-organizationDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-organizationIdentifiers" xlink:to="bus-organizationDescription" order="2" xlink:title="presentation:  bus-organizationIdentifiers to bus-organizationDescription"/>
+        <!-- busG-05 organizationAddress -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-organizationAddress" xlink:label="bus-organizationAddress" xlink:title="presentation: bus-organizationAddress"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entityInformation" xlink:to="bus-organizationAddress" order="7" xlink:title="presentation:  cor-entityInformation to bus-organizationAddress"/>
+        <!-- bus-017 organizationAddressName -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-organizationAddressName" xlink:label="bus-organizationAddressName" xlink:title="presentation: bus-organizationAddressName"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-organizationAddress" xlink:to="bus-organizationAddressName" order="1" xlink:title="presentation:  bus-organizationAddress to bus-organizationAddressName"/>
+        <!-- bus-018 organizationAddressDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-organizationAddressDescription" xlink:label="bus-organizationAddressDescription" xlink:title="presentation: bus-organizationAddressDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-organizationAddress" xlink:to="bus-organizationAddressDescription" order="2" xlink:title="presentation:  bus-organizationAddress to bus-organizationAddressDescription"/>
+        <!-- bus-019 organizationAddressPurpose -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-organizationAddressPurpose" xlink:label="bus-organizationAddressPurpose" xlink:title="presentation: bus-organizationAddressPurpose"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-organizationAddress" xlink:to="bus-organizationAddressPurpose" order="3" xlink:title="presentation:  bus-organizationAddress to bus-organizationAddressPurpose"/>
+        <!-- bus-020 organizationAddressLocationIdentifier -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-organizationAddressLocationIdentifier" xlink:label="bus-organizationAddressLocationIdentifier" xlink:title="presentation: bus-organizationAddressLocationIdentifier"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-organizationAddress" xlink:to="bus-organizationAddressLocationIdentifier" order="4" xlink:title="presentation:  bus-organizationAddress to bus-organizationAddressLocationIdentifier"/>
+        <!-- bus-021 organizationBuildingNumber -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-organizationBuildingNumber" xlink:label="bus-organizationBuildingNumber" xlink:title="presentation: bus-organizationBuildingNumber"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-organizationAddress" xlink:to="bus-organizationBuildingNumber" order="5" xlink:title="presentation:  bus-organizationAddress to bus-organizationBuildingNumber"/>
+        <!-- bus-022 organizationAddressStreet -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-organizationAddressStreet" xlink:label="bus-organizationAddressStreet" xlink:title="presentation: bus-organizationAddressStreet"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-organizationAddress" xlink:to="bus-organizationAddressStreet" order="6" xlink:title="presentation:  bus-organizationAddress to bus-organizationAddressStreet"/>
+        <!-- bus-023 organizationAddressStreet2 -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-organizationAddressStreet2" xlink:label="bus-organizationAddressStreet2" xlink:title="presentation: bus-organizationAddressStreet2"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-organizationAddress" xlink:to="bus-organizationAddressStreet2" order="7" xlink:title="presentation:  bus-organizationAddress to bus-organizationAddressStreet2"/>
+        <!-- bus-024 organizationAddressCity -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-organizationAddressCity" xlink:label="bus-organizationAddressCity" xlink:title="presentation: bus-organizationAddressCity"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-organizationAddress" xlink:to="bus-organizationAddressCity" order="8" xlink:title="presentation:  bus-organizationAddress to bus-organizationAddressCity"/>
+        <!-- bus-025 organizationAddressStateOrProvince -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-organizationAddressStateOrProvince" xlink:label="bus-organizationAddressStateOrProvince" xlink:title="presentation: bus-organizationAddressStateOrProvince"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-organizationAddress" xlink:to="bus-organizationAddressStateOrProvince" order="9" xlink:title="presentation:  bus-organizationAddress to bus-organizationAddressStateOrProvince"/>
+        <!-- bus-026 organizationAddressZipOrPostalCode -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-organizationAddressZipOrPostalCode" xlink:label="bus-organizationAddressZipOrPostalCode" xlink:title="presentation: bus-organizationAddressZipOrPostalCode"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-organizationAddress" xlink:to="bus-organizationAddressZipOrPostalCode" order="10" xlink:title="presentation:  bus-organizationAddress to bus-organizationAddressZipOrPostalCode"/>
+        <!-- bus-027 organizationAddressCountry -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-organizationAddressCountry" xlink:label="bus-organizationAddressCountry" xlink:title="presentation: bus-organizationAddressCountry"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-organizationAddress" xlink:to="bus-organizationAddressCountry" order="11" xlink:title="presentation:  bus-organizationAddress to bus-organizationAddressCountry"/>
+        <!-- bus-028 organizationAddressActive -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-organizationAddressActive" xlink:label="bus-organizationAddressActive" xlink:title="presentation: bus-organizationAddressActive"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-organizationAddress" xlink:to="bus-organizationAddressActive" order="12" xlink:title="presentation:  bus-organizationAddress to bus-organizationAddressActive"/>
+        <!-- busG-06 entityWebSite -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-entityWebSite" xlink:label="bus-entityWebSite" xlink:title="presentation: bus-entityWebSite"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entityInformation" xlink:to="bus-entityWebSite" order="8" xlink:title="presentation:  cor-entityInformation to bus-entityWebSite"/>
+        <!-- bus-029 webSiteDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-webSiteDescription" xlink:label="bus-webSiteDescription" xlink:title="presentation: bus-webSiteDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-entityWebSite" xlink:to="bus-webSiteDescription" order="1" xlink:title="presentation:  bus-entityWebSite to bus-webSiteDescription"/>
+        <!-- bus-030 webSiteURL -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-webSiteURL" xlink:label="bus-webSiteURL" xlink:title="presentation: bus-webSiteURL"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-entityWebSite" xlink:to="bus-webSiteURL" order="2" xlink:title="presentation:  bus-entityWebSite to bus-webSiteURL"/>
+        <!-- busG-07 contactInformation -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-contactInformation" xlink:label="bus-contactInformation" xlink:title="presentation: bus-contactInformation"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entityInformation" xlink:to="bus-contactInformation" order="9" xlink:title="presentation:  cor-entityInformation to bus-contactInformation"/>
+        <!-- bus-031 contactPrefix -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-contactPrefix" xlink:label="bus-contactPrefix" xlink:title="presentation: bus-contactPrefix"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-contactInformation" xlink:to="bus-contactPrefix" order="1" xlink:title="presentation:  bus-contactInformation to bus-contactPrefix"/>
+        <!-- bus-032 contactLastName -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-contactLastName" xlink:label="bus-contactLastName" xlink:title="presentation: bus-contactLastName"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-contactInformation" xlink:to="bus-contactLastName" order="2" xlink:title="presentation:  bus-contactInformation to bus-contactLastName"/>
+        <!-- bus-033 contactFirstName -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-contactFirstName" xlink:label="bus-contactFirstName" xlink:title="presentation: bus-contactFirstName"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-contactInformation" xlink:to="bus-contactFirstName" order="3" xlink:title="presentation:  bus-contactInformation to bus-contactFirstName"/>
+        <!-- bus-034 contactSuffix -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-contactSuffix" xlink:label="bus-contactSuffix" xlink:title="presentation: bus-contactSuffix"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-contactInformation" xlink:to="bus-contactSuffix" order="4" xlink:title="presentation:  bus-contactInformation to bus-contactSuffix"/>
+        <!-- bus-035 contactAttentionLine -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-contactAttentionLine" xlink:label="bus-contactAttentionLine" xlink:title="presentation: bus-contactAttentionLine"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-contactInformation" xlink:to="bus-contactAttentionLine" order="5" xlink:title="presentation:  bus-contactInformation to bus-contactAttentionLine"/>
+        <!-- bus-036 contactPositionRole -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-contactPositionRole" xlink:label="bus-contactPositionRole" xlink:title="presentation: bus-contactPositionRole"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-contactInformation" xlink:to="bus-contactPositionRole" order="6" xlink:title="presentation:  bus-contactInformation to bus-contactPositionRole"/>
+        <!-- busG-08 contactPhone -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-contactPhone" xlink:label="bus-contactPhone" xlink:title="presentation: bus-contactPhone"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-contactInformation" xlink:to="bus-contactPhone" order="7" xlink:title="presentation:  bus-contactInformation to bus-contactPhone"/>
+        <!-- bus-037 contactPhoneNumberDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-contactPhoneNumberDescription" xlink:label="bus-contactPhoneNumberDescription" xlink:title="presentation: bus-contactPhoneNumberDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-contactPhone" xlink:to="bus-contactPhoneNumberDescription" order="1" xlink:title="presentation:  bus-contactPhone to bus-contactPhoneNumberDescription"/>
+        <!-- bus-038 contactPhoneNumber -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-contactPhoneNumber" xlink:label="bus-contactPhoneNumber" xlink:title="presentation: bus-contactPhoneNumber"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-contactPhone" xlink:to="bus-contactPhoneNumber" order="2" xlink:title="presentation:  bus-contactPhone to bus-contactPhoneNumber"/>
+        <!-- busG-09 contactFax -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-contactFax" xlink:label="bus-contactFax" xlink:title="presentation: bus-contactFax"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-contactInformation" xlink:to="bus-contactFax" order="8" xlink:title="presentation:  bus-contactInformation to bus-contactFax"/>
+        <!-- bus-039 contactFaxNumberUsage -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-contactFaxNumberUsage" xlink:label="bus-contactFaxNumberUsage" xlink:title="presentation: bus-contactFaxNumberUsage"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-contactFax" xlink:to="bus-contactFaxNumberUsage" order="1" xlink:title="presentation:  bus-contactFax to bus-contactFaxNumberUsage"/>
+        <!-- bus-040 contactFaxNumber -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-contactFaxNumber" xlink:label="bus-contactFaxNumber" xlink:title="presentation: bus-contactFaxNumber"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-contactFax" xlink:to="bus-contactFaxNumber" order="2" xlink:title="presentation:  bus-contactFax to bus-contactFaxNumber"/>
+        <!-- busG-10 contactEMail -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-contactEMail" xlink:label="bus-contactEMail" xlink:title="presentation: bus-contactEMail"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-contactInformation" xlink:to="bus-contactEMail" order="9" xlink:title="presentation:  bus-contactInformation to bus-contactEMail"/>
+        <!-- bus-041 contactEmailAddressUsage -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-contactEmailAddressUsage" xlink:label="bus-contactEmailAddressUsage" xlink:title="presentation: bus-contactEmailAddressUsage"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-contactEMail" xlink:to="bus-contactEmailAddressUsage" order="1" xlink:title="presentation:  bus-contactEMail to bus-contactEmailAddressUsage"/>
+        <!-- bus-042 contactEmailAddress -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-contactEmailAddress" xlink:label="bus-contactEmailAddress" xlink:title="presentation: bus-contactEmailAddress"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-contactEMail" xlink:to="bus-contactEmailAddress" order="2" xlink:title="presentation:  bus-contactEMail to bus-contactEmailAddress"/>
+        <!-- bus-043 contactType -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-contactType" xlink:label="bus-contactType" xlink:title="presentation: bus-contactType"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-contactInformation" xlink:to="bus-contactType" order="10" xlink:title="presentation:  bus-contactInformation to bus-contactType"/>
+        <!-- bus-044 contactLocationIdentifierCrossReference -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-contactLocationIdentifierCrossReference" xlink:label="bus-contactLocationIdentifierCrossReference" xlink:title="presentation: bus-contactLocationIdentifierCrossReference"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-contactInformation" xlink:to="bus-contactLocationIdentifierCrossReference" order="11" xlink:title="presentation:  bus-contactInformation to bus-contactLocationIdentifierCrossReference"/>
+        <!-- bus-045 contactActive -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-contactActive" xlink:label="bus-contactActive" xlink:title="presentation: bus-contactActive"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-contactInformation" xlink:to="bus-contactActive" order="12" xlink:title="presentation:  bus-contactInformation to bus-contactActive"/>
+        <!-- bus-046 businessDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-businessDescription" xlink:label="bus-businessDescription" xlink:title="presentation: bus-businessDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entityInformation" xlink:to="bus-businessDescription" order="10" xlink:title="presentation:  cor-entityInformation to bus-businessDescription"/>
+        <!-- bus-047 fiscalYearStart -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-fiscalYearStart" xlink:label="bus-fiscalYearStart" xlink:title="presentation: bus-fiscalYearStart"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entityInformation" xlink:to="bus-fiscalYearStart" order="11" xlink:title="presentation:  cor-entityInformation to bus-fiscalYearStart"/>
+        <!-- bus-048 fiscalYearEnd -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-fiscalYearEnd" xlink:label="bus-fiscalYearEnd" xlink:title="presentation: bus-fiscalYearEnd"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entityInformation" xlink:to="bus-fiscalYearEnd" order="12" xlink:title="presentation:  cor-entityInformation to bus-fiscalYearEnd"/>
+        <!-- busG-11 organizationAccountingMethodStructure -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-organizationAccountingMethodStructure" xlink:label="bus-organizationAccountingMethodStructure" xlink:title="presentation: bus-organizationAccountingMethodStructure"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entityInformation" xlink:to="bus-organizationAccountingMethodStructure" order="13" xlink:title="presentation:  cor-entityInformation to bus-organizationAccountingMethodStructure"/>
+        <!-- bus-049 organizationAccountingMethod -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-organizationAccountingMethod" xlink:label="bus-organizationAccountingMethod" xlink:title="presentation: bus-organizationAccountingMethod"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-organizationAccountingMethodStructure" xlink:to="bus-organizationAccountingMethod" order="1" xlink:title="presentation:  bus-organizationAccountingMethodStructure to bus-organizationAccountingMethod"/>
+        <!-- bus-050 organizationAccountingMethodDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-organizationAccountingMethodDescription" xlink:label="bus-organizationAccountingMethodDescription" xlink:title="presentation: bus-organizationAccountingMethodDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-organizationAccountingMethodStructure" xlink:to="bus-organizationAccountingMethodDescription" order="2" xlink:title="presentation:  bus-organizationAccountingMethodStructure to bus-organizationAccountingMethodDescription"/>
+        <!-- bus-051 organizationAccountingMethodPurpose -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-organizationAccountingMethodPurpose" xlink:label="bus-organizationAccountingMethodPurpose" xlink:title="presentation: bus-organizationAccountingMethodPurpose"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-organizationAccountingMethodStructure" xlink:to="bus-organizationAccountingMethodPurpose" order="3" xlink:title="presentation:  bus-organizationAccountingMethodStructure to bus-organizationAccountingMethodPurpose"/>
+        <!-- bus-052 organizationAccountingMethodPurposeDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-organizationAccountingMethodPurposeDescription" xlink:label="bus-organizationAccountingMethodPurposeDescription" xlink:title="presentation: bus-organizationAccountingMethodPurposeDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-organizationAccountingMethodStructure" xlink:to="bus-organizationAccountingMethodPurposeDescription" order="4" xlink:title="presentation:  bus-organizationAccountingMethodStructure to bus-organizationAccountingMethodPurposeDescription"/>
+        <!-- bus-053 organizationAccountingMethodStartDate -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-organizationAccountingMethodStartDate" xlink:label="bus-organizationAccountingMethodStartDate" xlink:title="presentation: bus-organizationAccountingMethodStartDate"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-organizationAccountingMethodStructure" xlink:to="bus-organizationAccountingMethodStartDate" order="5" xlink:title="presentation:  bus-organizationAccountingMethodStructure to bus-organizationAccountingMethodStartDate"/>
+        <!-- bus-054 organizationAccountingMethodEndDate -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-organizationAccountingMethodEndDate" xlink:label="bus-organizationAccountingMethodEndDate" xlink:title="presentation: bus-organizationAccountingMethodEndDate"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-organizationAccountingMethodStructure" xlink:to="bus-organizationAccountingMethodEndDate" order="6" xlink:title="presentation:  bus-organizationAccountingMethodStructure to bus-organizationAccountingMethodEndDate"/>
+        <!-- busG-12 accountantInformation -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantInformation" xlink:label="bus-accountantInformation" xlink:title="presentation: bus-accountantInformation"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entityInformation" xlink:to="bus-accountantInformation" order="14" xlink:title="presentation:  cor-entityInformation to bus-accountantInformation"/>
+        <!-- bus-055 accountantName -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantName" xlink:label="bus-accountantName" xlink:title="presentation: bus-accountantName"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantInformation" xlink:to="bus-accountantName" order="1" xlink:title="presentation:  bus-accountantInformation to bus-accountantName"/>
+        <!-- busG-13 accountantAddress -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantAddress" xlink:label="bus-accountantAddress" xlink:title="presentation: bus-accountantAddress"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantInformation" xlink:to="bus-accountantAddress" order="2" xlink:title="presentation:  bus-accountantInformation to bus-accountantAddress"/>
+        <!-- bus-056 accountantAddressName -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantAddressName" xlink:label="bus-accountantAddressName" xlink:title="presentation: bus-accountantAddressName"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantAddress" xlink:to="bus-accountantAddressName" order="1" xlink:title="presentation:  bus-accountantAddress to bus-accountantAddressName"/>
+        <!-- bus-057 accountantAddressDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantAddressDescription" xlink:label="bus-accountantAddressDescription" xlink:title="presentation: bus-accountantAddressDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantAddress" xlink:to="bus-accountantAddressDescription" order="2" xlink:title="presentation:  bus-accountantAddress to bus-accountantAddressDescription"/>
+        <!-- bus-058 accountantAddressPurpose -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantAddressPurpose" xlink:label="bus-accountantAddressPurpose" xlink:title="presentation: bus-accountantAddressPurpose"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantAddress" xlink:to="bus-accountantAddressPurpose" order="3" xlink:title="presentation:  bus-accountantAddress to bus-accountantAddressPurpose"/>
+        <!-- bus-059 accountantAddressLocationIdentifier -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantAddressLocationIdentifier" xlink:label="bus-accountantAddressLocationIdentifier" xlink:title="presentation: bus-accountantAddressLocationIdentifier"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantAddress" xlink:to="bus-accountantAddressLocationIdentifier" order="4" xlink:title="presentation:  bus-accountantAddress to bus-accountantAddressLocationIdentifier"/>
+        <!-- bus-060 accountantBuildingNumber -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantBuildingNumber" xlink:label="bus-accountantBuildingNumber" xlink:title="presentation: bus-accountantBuildingNumber"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantAddress" xlink:to="bus-accountantBuildingNumber" order="5" xlink:title="presentation:  bus-accountantAddress to bus-accountantBuildingNumber"/>
+        <!-- bus-061 accountantStreet -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantStreet" xlink:label="bus-accountantStreet" xlink:title="presentation: bus-accountantStreet"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantAddress" xlink:to="bus-accountantStreet" order="6" xlink:title="presentation:  bus-accountantAddress to bus-accountantStreet"/>
+        <!-- bus-062 accountantAddressStreet2 -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantAddressStreet2" xlink:label="bus-accountantAddressStreet2" xlink:title="presentation: bus-accountantAddressStreet2"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantAddress" xlink:to="bus-accountantAddressStreet2" order="7" xlink:title="presentation:  bus-accountantAddress to bus-accountantAddressStreet2"/>
+        <!-- bus-063 accountantCity -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantCity" xlink:label="bus-accountantCity" xlink:title="presentation: bus-accountantCity"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantAddress" xlink:to="bus-accountantCity" order="8" xlink:title="presentation:  bus-accountantAddress to bus-accountantCity"/>
+        <!-- bus-064 accountantStateOrProvince -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantStateOrProvince" xlink:label="bus-accountantStateOrProvince" xlink:title="presentation: bus-accountantStateOrProvince"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantAddress" xlink:to="bus-accountantStateOrProvince" order="9" xlink:title="presentation:  bus-accountantAddress to bus-accountantStateOrProvince"/>
+        <!-- bus-065 accountantCountry -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantCountry" xlink:label="bus-accountantCountry" xlink:title="presentation: bus-accountantCountry"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantAddress" xlink:to="bus-accountantCountry" order="10" xlink:title="presentation:  bus-accountantAddress to bus-accountantCountry"/>
+        <!-- bus-066 accountantZipOrPostalCode -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantZipOrPostalCode" xlink:label="bus-accountantZipOrPostalCode" xlink:title="presentation: bus-accountantZipOrPostalCode"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantAddress" xlink:to="bus-accountantZipOrPostalCode" order="11" xlink:title="presentation:  bus-accountantAddress to bus-accountantZipOrPostalCode"/>
+        <!-- bus-067 accountantAddressActive -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantAddressActive" xlink:label="bus-accountantAddressActive" xlink:title="presentation: bus-accountantAddressActive"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantAddress" xlink:to="bus-accountantAddressActive" order="12" xlink:title="presentation:  bus-accountantAddress to bus-accountantAddressActive"/>
+        <!-- bus-068 accountantEngagementType -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantEngagementType" xlink:label="bus-accountantEngagementType" xlink:title="presentation: bus-accountantEngagementType"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantInformation" xlink:to="bus-accountantEngagementType" order="3" xlink:title="presentation:  bus-accountantInformation to bus-accountantEngagementType"/>
+        <!-- bus-069 accountantEngagementTypeDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantEngagementTypeDescription" xlink:label="bus-accountantEngagementTypeDescription" xlink:title="presentation: bus-accountantEngagementTypeDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantInformation" xlink:to="bus-accountantEngagementTypeDescription" order="4" xlink:title="presentation:  bus-accountantInformation to bus-accountantEngagementTypeDescription"/>
+        <!-- busG-14 accountantContactInformation -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantContactInformation" xlink:label="bus-accountantContactInformation" xlink:title="presentation: bus-accountantContactInformation"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantInformation" xlink:to="bus-accountantContactInformation" order="5" xlink:title="presentation:  bus-accountantInformation to bus-accountantContactInformation"/>
+        <!-- bus-070 accountantContactPrefix -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantContactPrefix" xlink:label="bus-accountantContactPrefix" xlink:title="presentation: bus-accountantContactPrefix"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantContactInformation" xlink:to="bus-accountantContactPrefix" order="1" xlink:title="presentation:  bus-accountantContactInformation to bus-accountantContactPrefix"/>
+        <!-- bus-071 accountantContactLastName -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantContactLastName" xlink:label="bus-accountantContactLastName" xlink:title="presentation: bus-accountantContactLastName"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantContactInformation" xlink:to="bus-accountantContactLastName" order="2" xlink:title="presentation:  bus-accountantContactInformation to bus-accountantContactLastName"/>
+        <!-- bus-072 accountantContactFirstName -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantContactFirstName" xlink:label="bus-accountantContactFirstName" xlink:title="presentation: bus-accountantContactFirstName"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantContactInformation" xlink:to="bus-accountantContactFirstName" order="3" xlink:title="presentation:  bus-accountantContactInformation to bus-accountantContactFirstName"/>
+        <!-- bus-073 accountantContactSuffix -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantContactSuffix" xlink:label="bus-accountantContactSuffix" xlink:title="presentation: bus-accountantContactSuffix"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantContactInformation" xlink:to="bus-accountantContactSuffix" order="4" xlink:title="presentation:  bus-accountantContactInformation to bus-accountantContactSuffix"/>
+        <!-- bus-074 accountantContactAttentionLine -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantContactAttentionLine" xlink:label="bus-accountantContactAttentionLine" xlink:title="presentation: bus-accountantContactAttentionLine"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantContactInformation" xlink:to="bus-accountantContactAttentionLine" order="5" xlink:title="presentation:  bus-accountantContactInformation to bus-accountantContactAttentionLine"/>
+        <!-- bus-075 accountantContactPositionRole -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantContactPositionRole" xlink:label="bus-accountantContactPositionRole" xlink:title="presentation: bus-accountantContactPositionRole"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantContactInformation" xlink:to="bus-accountantContactPositionRole" order="6" xlink:title="presentation:  bus-accountantContactInformation to bus-accountantContactPositionRole"/>
+        <!-- busG-15 accountantContactPhone -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantContactPhone" xlink:label="bus-accountantContactPhone" xlink:title="presentation: bus-accountantContactPhone"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantContactInformation" xlink:to="bus-accountantContactPhone" order="7" xlink:title="presentation:  bus-accountantContactInformation to bus-accountantContactPhone"/>
+        <!-- bus-076 accountantContactPhoneNumberDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantContactPhoneNumberDescription" xlink:label="bus-accountantContactPhoneNumberDescription" xlink:title="presentation: bus-accountantContactPhoneNumberDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantContactPhone" xlink:to="bus-accountantContactPhoneNumberDescription" order="1" xlink:title="presentation:  bus-accountantContactPhone to bus-accountantContactPhoneNumberDescription"/>
+        <!-- bus-077 accountantContactPhoneNumber -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantContactPhoneNumber" xlink:label="bus-accountantContactPhoneNumber" xlink:title="presentation: bus-accountantContactPhoneNumber"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantContactPhone" xlink:to="bus-accountantContactPhoneNumber" order="2" xlink:title="presentation:  bus-accountantContactPhone to bus-accountantContactPhoneNumber"/>
+        <!-- busG-16 accountantContactFax -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantContactFax" xlink:label="bus-accountantContactFax" xlink:title="presentation: bus-accountantContactFax"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantContactInformation" xlink:to="bus-accountantContactFax" order="8" xlink:title="presentation:  bus-accountantContactInformation to bus-accountantContactFax"/>
+        <!-- bus-078 accountantContactFaxNumber -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantContactFaxNumber" xlink:label="bus-accountantContactFaxNumber" xlink:title="presentation: bus-accountantContactFaxNumber"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantContactFax" xlink:to="bus-accountantContactFaxNumber" order="1" xlink:title="presentation:  bus-accountantContactFax to bus-accountantContactFaxNumber"/>
+        <!-- bus-079 accountantContactFaxNumberUsage -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantContactFaxNumberUsage" xlink:label="bus-accountantContactFaxNumberUsage" xlink:title="presentation: bus-accountantContactFaxNumberUsage"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantContactFax" xlink:to="bus-accountantContactFaxNumberUsage" order="2" xlink:title="presentation:  bus-accountantContactFax to bus-accountantContactFaxNumberUsage"/>
+        <!-- busG-17 accountantContactEmail -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantContactEmail" xlink:label="bus-accountantContactEmail" xlink:title="presentation: bus-accountantContactEmail"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantContactInformation" xlink:to="bus-accountantContactEmail" order="9" xlink:title="presentation:  bus-accountantContactInformation to bus-accountantContactEmail"/>
+        <!-- bus-080 accountantContactEmailAddressUsage -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantContactEmailAddressUsage" xlink:label="bus-accountantContactEmailAddressUsage" xlink:title="presentation: bus-accountantContactEmailAddressUsage"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantContactEmail" xlink:to="bus-accountantContactEmailAddressUsage" order="1" xlink:title="presentation:  bus-accountantContactEmail to bus-accountantContactEmailAddressUsage"/>
+        <!-- bus-081 accountantContactEmailAddress -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantContactEmailAddress" xlink:label="bus-accountantContactEmailAddress" xlink:title="presentation: bus-accountantContactEmailAddress"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantContactEmail" xlink:to="bus-accountantContactEmailAddress" order="2" xlink:title="presentation:  bus-accountantContactEmail to bus-accountantContactEmailAddress"/>
+        <!-- bus-082 accountantContactType -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantContactType" xlink:label="bus-accountantContactType" xlink:title="presentation: bus-accountantContactType"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantContactInformation" xlink:to="bus-accountantContactType" order="10" xlink:title="presentation:  bus-accountantContactInformation to bus-accountantContactType"/>
+        <!-- bus-083 accountantLocationIdentifierCrossReference -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantLocationIdentifierCrossReference" xlink:label="bus-accountantLocationIdentifierCrossReference" xlink:title="presentation: bus-accountantLocationIdentifierCrossReference"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantContactInformation" xlink:to="bus-accountantLocationIdentifierCrossReference" order="11" xlink:title="presentation:  bus-accountantContactInformation to bus-accountantLocationIdentifierCrossReference"/>
+        <!-- bus-084 accountantContactActive -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-accountantContactActive" xlink:label="bus-accountantContactActive" xlink:title="presentation: bus-accountantContactActive"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-accountantContactInformation" xlink:to="bus-accountantContactActive" order="12" xlink:title="presentation:  bus-accountantContactInformation to bus-accountantContactActive"/>
+        <!-- corG-09 identifierReference -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierReference" xlink:label="cor-identifierReference" xlink:title="presentation: cor-identifierReference"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entityInformation" xlink:to="cor-identifierReference" order="15" xlink:title="presentation:  cor-entityInformation to cor-identifierReference"/>
+        <!-- cor-044 identifierCode -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierCode" xlink:label="cor-identifierCode" xlink:title="presentation: cor-identifierCode"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierReference" xlink:to="cor-identifierCode" order="1" xlink:title="presentation:  cor-identifierReference to cor-identifierCode"/>
+        <!-- corG-10 identifierExternalReference -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierExternalReference" xlink:label="cor-identifierExternalReference" xlink:title="presentation: cor-identifierExternalReference"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierReference" xlink:to="cor-identifierExternalReference" order="2" xlink:title="presentation:  cor-identifierReference to cor-identifierExternalReference"/>
+        <!-- cor-045 identifierAuthorityCode -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierAuthorityCode" xlink:label="cor-identifierAuthorityCode" xlink:title="presentation: cor-identifierAuthorityCode"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierExternalReference" xlink:to="cor-identifierAuthorityCode" order="1" xlink:title="presentation:  cor-identifierExternalReference to cor-identifierAuthorityCode"/>
+        <!-- cor-046 identifierAuthority -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierAuthority" xlink:label="cor-identifierAuthority" xlink:title="presentation: cor-identifierAuthority"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierExternalReference" xlink:to="cor-identifierAuthority" order="2" xlink:title="presentation:  cor-identifierExternalReference to cor-identifierAuthority"/>
+        <!-- cor-047 identifierAuthorityVerificationDate -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierAuthorityVerificationDate" xlink:label="cor-identifierAuthorityVerificationDate" xlink:title="presentation: cor-identifierAuthorityVerificationDate"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierExternalReference" xlink:to="cor-identifierAuthorityVerificationDate" order="3" xlink:title="presentation:  cor-identifierExternalReference to cor-identifierAuthorityVerificationDate"/>
+        <!-- cor-048 identifierOrganizationType -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierOrganizationType" xlink:label="cor-identifierOrganizationType" xlink:title="presentation: cor-identifierOrganizationType"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierReference" xlink:to="cor-identifierOrganizationType" order="3" xlink:title="presentation:  cor-identifierReference to cor-identifierOrganizationType"/>
+        <!-- cor-049 identifierOrganizationTypeDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierOrganizationTypeDescription" xlink:label="cor-identifierOrganizationTypeDescription" xlink:title="presentation: cor-identifierOrganizationTypeDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierReference" xlink:to="cor-identifierOrganizationTypeDescription" order="4" xlink:title="presentation:  cor-identifierReference to cor-identifierOrganizationTypeDescription"/>
+        <!-- cor-050 identifierDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierDescription" xlink:label="cor-identifierDescription" xlink:title="presentation: cor-identifierDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierReference" xlink:to="cor-identifierDescription" order="5" xlink:title="presentation:  cor-identifierReference to cor-identifierDescription"/>
+        <!-- cor-051 identifierType -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierType" xlink:label="cor-identifierType" xlink:title="presentation: cor-identifierType"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierReference" xlink:to="cor-identifierType" order="6" xlink:title="presentation:  cor-identifierReference to cor-identifierType"/>
+        <!-- cor-052 identifierCategory -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierCategory" xlink:label="cor-identifierCategory" xlink:title="presentation: cor-identifierCategory"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierReference" xlink:to="cor-identifierCategory" order="7" xlink:title="presentation:  cor-identifierReference to cor-identifierCategory"/>
+        <!-- corG-11 identifierEMail -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierEMail" xlink:label="cor-identifierEMail" xlink:title="presentation: cor-identifierEMail"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierReference" xlink:to="cor-identifierEMail" order="8" xlink:title="presentation:  cor-identifierReference to cor-identifierEMail"/>
+        <!-- cor-053 identifierEmailAddressUsage -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierEmailAddressUsage" xlink:label="cor-identifierEmailAddressUsage" xlink:title="presentation: cor-identifierEmailAddressUsage"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierEMail" xlink:to="cor-identifierEmailAddressUsage" order="1" xlink:title="presentation:  cor-identifierEMail to cor-identifierEmailAddressUsage"/>
+        <!-- cor-054 identifierEmailAddress -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierEmailAddress" xlink:label="cor-identifierEmailAddress" xlink:title="presentation: cor-identifierEmailAddress"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierEMail" xlink:to="cor-identifierEmailAddress" order="2" xlink:title="presentation:  cor-identifierEMail to cor-identifierEmailAddress"/>
+        <!-- corG-12 identifierPhoneNumber -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierPhoneNumber" xlink:label="cor-identifierPhoneNumber" xlink:title="presentation: cor-identifierPhoneNumber"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierReference" xlink:to="cor-identifierPhoneNumber" order="9" xlink:title="presentation:  cor-identifierReference to cor-identifierPhoneNumber"/>
+        <!-- cor-055 identifierPhoneNumberDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierPhoneNumberDescription" xlink:label="cor-identifierPhoneNumberDescription" xlink:title="presentation: cor-identifierPhoneNumberDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierPhoneNumber" xlink:to="cor-identifierPhoneNumberDescription" order="1" xlink:title="presentation:  cor-identifierPhoneNumber to cor-identifierPhoneNumberDescription"/>
+        <!-- cor-056 identifierPhone -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierPhone" xlink:label="cor-identifierPhone" xlink:title="presentation: cor-identifierPhone"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierPhoneNumber" xlink:to="cor-identifierPhone" order="2" xlink:title="presentation:  cor-identifierPhoneNumber to cor-identifierPhone"/>
+        <!-- corG-13 identifierFaxNumber -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierFaxNumber" xlink:label="cor-identifierFaxNumber" xlink:title="presentation: cor-identifierFaxNumber"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierReference" xlink:to="cor-identifierFaxNumber" order="10" xlink:title="presentation:  cor-identifierReference to cor-identifierFaxNumber"/>
+        <!-- cor-057 identifierFaxNumberUsage -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierFaxNumberUsage" xlink:label="cor-identifierFaxNumberUsage" xlink:title="presentation: cor-identifierFaxNumberUsage"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierFaxNumber" xlink:to="cor-identifierFaxNumberUsage" order="1" xlink:title="presentation:  cor-identifierFaxNumber to cor-identifierFaxNumberUsage"/>
+        <!-- cor-058 identifierFax -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierFax" xlink:label="cor-identifierFax" xlink:title="presentation: cor-identifierFax"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierFaxNumber" xlink:to="cor-identifierFax" order="2" xlink:title="presentation:  cor-identifierFaxNumber to cor-identifierFax"/>
+        <!-- bus-120 identifierPurpose -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-identifierPurpose" xlink:label="bus-identifierPurpose" xlink:title="presentation: bus-identifierPurpose"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierReference" xlink:to="bus-identifierPurpose" order="11" xlink:title="presentation:  cor-identifierReference to bus-identifierPurpose"/>
+        <!-- busG-20 identifierAddress -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-identifierAddress" xlink:label="bus-identifierAddress" xlink:title="presentation: bus-identifierAddress"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierReference" xlink:to="bus-identifierAddress" order="12" xlink:title="presentation:  cor-identifierReference to bus-identifierAddress"/>
+        <!-- bus-121 identifierAddressDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-identifierAddressDescription" xlink:label="bus-identifierAddressDescription" xlink:title="presentation: bus-identifierAddressDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-identifierAddress" xlink:to="bus-identifierAddressDescription" order="1" xlink:title="presentation:  bus-identifierAddress to bus-identifierAddressDescription"/>
+        <!-- bus-122 identifierAddressPurpose -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-identifierAddressPurpose" xlink:label="bus-identifierAddressPurpose" xlink:title="presentation: bus-identifierAddressPurpose"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-identifierAddress" xlink:to="bus-identifierAddressPurpose" order="2" xlink:title="presentation:  bus-identifierAddress to bus-identifierAddressPurpose"/>
+        <!-- bus-123 identifierBuildingNumber -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-identifierBuildingNumber" xlink:label="bus-identifierBuildingNumber" xlink:title="presentation: bus-identifierBuildingNumber"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-identifierAddress" xlink:to="bus-identifierBuildingNumber" order="3" xlink:title="presentation:  bus-identifierAddress to bus-identifierBuildingNumber"/>
+        <!-- bus-124 identifierStreet -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-identifierStreet" xlink:label="bus-identifierStreet" xlink:title="presentation: bus-identifierStreet"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-identifierAddress" xlink:to="bus-identifierStreet" order="4" xlink:title="presentation:  bus-identifierAddress to bus-identifierStreet"/>
+        <!-- bus-125 identifierAddressStreet2 -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-identifierAddressStreet2" xlink:label="bus-identifierAddressStreet2" xlink:title="presentation: bus-identifierAddressStreet2"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-identifierAddress" xlink:to="bus-identifierAddressStreet2" order="5" xlink:title="presentation:  bus-identifierAddress to bus-identifierAddressStreet2"/>
+        <!-- bus-126 identifierCity -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-identifierCity" xlink:label="bus-identifierCity" xlink:title="presentation: bus-identifierCity"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-identifierAddress" xlink:to="bus-identifierCity" order="6" xlink:title="presentation:  bus-identifierAddress to bus-identifierCity"/>
+        <!-- bus-127 identifierStateOrProvince -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-identifierStateOrProvince" xlink:label="bus-identifierStateOrProvince" xlink:title="presentation: bus-identifierStateOrProvince"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-identifierAddress" xlink:to="bus-identifierStateOrProvince" order="7" xlink:title="presentation:  bus-identifierAddress to bus-identifierStateOrProvince"/>
+        <!-- bus-128 identifierCountry -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-identifierCountry" xlink:label="bus-identifierCountry" xlink:title="presentation: bus-identifierCountry"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-identifierAddress" xlink:to="bus-identifierCountry" order="8" xlink:title="presentation:  bus-identifierAddress to bus-identifierCountry"/>
+        <!-- bus-129 identifierZipOrPostalCode -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-identifierZipOrPostalCode" xlink:label="bus-identifierZipOrPostalCode" xlink:title="presentation: bus-identifierZipOrPostalCode"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-identifierAddress" xlink:to="bus-identifierZipOrPostalCode" order="9" xlink:title="presentation:  bus-identifierAddress to bus-identifierZipOrPostalCode"/>
+        <!-- bus-130 identifierAddressLocationIdentifier -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-identifierAddressLocationIdentifier" xlink:label="bus-identifierAddressLocationIdentifier" xlink:title="presentation: bus-identifierAddressLocationIdentifier"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-identifierAddress" xlink:to="bus-identifierAddressLocationIdentifier" order="10" xlink:title="presentation:  bus-identifierAddress to bus-identifierAddressLocationIdentifier"/>
+        <!-- corG-14 identifierContactInformationStructure -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierContactInformationStructure" xlink:label="cor-identifierContactInformationStructure" xlink:title="presentation: cor-identifierContactInformationStructure"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierReference" xlink:to="cor-identifierContactInformationStructure" order="13" xlink:title="presentation:  cor-identifierReference to cor-identifierContactInformationStructure"/>
+        <!-- cor-059 identifierContactPrefix -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierContactPrefix" xlink:label="cor-identifierContactPrefix" xlink:title="presentation: cor-identifierContactPrefix"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierContactInformationStructure" xlink:to="cor-identifierContactPrefix" order="1" xlink:title="presentation:  cor-identifierContactInformationStructure to cor-identifierContactPrefix"/>
+        <!-- cor-060 identifierContactLastName -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierContactLastName" xlink:label="cor-identifierContactLastName" xlink:title="presentation: cor-identifierContactLastName"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierContactInformationStructure" xlink:to="cor-identifierContactLastName" order="2" xlink:title="presentation:  cor-identifierContactInformationStructure to cor-identifierContactLastName"/>
+        <!-- cor-061 identifierContactFirstName -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierContactFirstName" xlink:label="cor-identifierContactFirstName" xlink:title="presentation: cor-identifierContactFirstName"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierContactInformationStructure" xlink:to="cor-identifierContactFirstName" order="3" xlink:title="presentation:  cor-identifierContactInformationStructure to cor-identifierContactFirstName"/>
+        <!-- cor-062 identifierContactSuffix -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierContactSuffix" xlink:label="cor-identifierContactSuffix" xlink:title="presentation: cor-identifierContactSuffix"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierContactInformationStructure" xlink:to="cor-identifierContactSuffix" order="4" xlink:title="presentation:  cor-identifierContactInformationStructure to cor-identifierContactSuffix"/>
+        <!-- cor-063 identifierContactAttentionLine -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierContactAttentionLine" xlink:label="cor-identifierContactAttentionLine" xlink:title="presentation: cor-identifierContactAttentionLine"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierContactInformationStructure" xlink:to="cor-identifierContactAttentionLine" order="5" xlink:title="presentation:  cor-identifierContactInformationStructure to cor-identifierContactAttentionLine"/>
+        <!-- cor-064 identifierContactPositionRole -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierContactPositionRole" xlink:label="cor-identifierContactPositionRole" xlink:title="presentation: cor-identifierContactPositionRole"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierContactInformationStructure" xlink:to="cor-identifierContactPositionRole" order="6" xlink:title="presentation:  cor-identifierContactInformationStructure to cor-identifierContactPositionRole"/>
+        <!-- corG-15 identifierContactPhone -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierContactPhone" xlink:label="cor-identifierContactPhone" xlink:title="presentation: cor-identifierContactPhone"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierContactInformationStructure" xlink:to="cor-identifierContactPhone" order="7" xlink:title="presentation:  cor-identifierContactInformationStructure to cor-identifierContactPhone"/>
+        <!-- cor-065 identifierContactPhoneNumberDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierContactPhoneNumberDescription" xlink:label="cor-identifierContactPhoneNumberDescription" xlink:title="presentation: cor-identifierContactPhoneNumberDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierContactPhone" xlink:to="cor-identifierContactPhoneNumberDescription" order="1" xlink:title="presentation:  cor-identifierContactPhone to cor-identifierContactPhoneNumberDescription"/>
+        <!-- cor-066 identifierContactPhoneNumber -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierContactPhoneNumber" xlink:label="cor-identifierContactPhoneNumber" xlink:title="presentation: cor-identifierContactPhoneNumber"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierContactPhone" xlink:to="cor-identifierContactPhoneNumber" order="2" xlink:title="presentation:  cor-identifierContactPhone to cor-identifierContactPhoneNumber"/>
+        <!-- corG-16 identifierContactFax -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierContactFax" xlink:label="cor-identifierContactFax" xlink:title="presentation: cor-identifierContactFax"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierContactInformationStructure" xlink:to="cor-identifierContactFax" order="8" xlink:title="presentation:  cor-identifierContactInformationStructure to cor-identifierContactFax"/>
+        <!-- cor-067 identifierContactFaxNumberUsage -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierContactFaxNumberUsage" xlink:label="cor-identifierContactFaxNumberUsage" xlink:title="presentation: cor-identifierContactFaxNumberUsage"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierContactFax" xlink:to="cor-identifierContactFaxNumberUsage" order="1" xlink:title="presentation:  cor-identifierContactFax to cor-identifierContactFaxNumberUsage"/>
+        <!-- cor-068 identifierContactFaxNumber -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierContactFaxNumber" xlink:label="cor-identifierContactFaxNumber" xlink:title="presentation: cor-identifierContactFaxNumber"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierContactFax" xlink:to="cor-identifierContactFaxNumber" order="2" xlink:title="presentation:  cor-identifierContactFax to cor-identifierContactFaxNumber"/>
+        <!-- corG-17 identifierContactEmail -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierContactEmail" xlink:label="cor-identifierContactEmail" xlink:title="presentation: cor-identifierContactEmail"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierContactInformationStructure" xlink:to="cor-identifierContactEmail" order="9" xlink:title="presentation:  cor-identifierContactInformationStructure to cor-identifierContactEmail"/>
+        <!-- cor-069 identifierContactEmailAddressUsage -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierContactEmailAddressUsage" xlink:label="cor-identifierContactEmailAddressUsage" xlink:title="presentation: cor-identifierContactEmailAddressUsage"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierContactEmail" xlink:to="cor-identifierContactEmailAddressUsage" order="1" xlink:title="presentation:  cor-identifierContactEmail to cor-identifierContactEmailAddressUsage"/>
+        <!-- cor-070 identifierContactEmailAddress -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierContactEmailAddress" xlink:label="cor-identifierContactEmailAddress" xlink:title="presentation: cor-identifierContactEmailAddress"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierContactEmail" xlink:to="cor-identifierContactEmailAddress" order="2" xlink:title="presentation:  cor-identifierContactEmail to cor-identifierContactEmailAddress"/>
+        <!-- cor-071 identifierContactType -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierContactType" xlink:label="cor-identifierContactType" xlink:title="presentation: cor-identifierContactType"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierContactInformationStructure" xlink:to="cor-identifierContactType" order="10" xlink:title="presentation:  cor-identifierContactInformationStructure to cor-identifierContactType"/>
+        <!-- bus-131 identifierLocationIdentifierCrossReference -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-identifierLocationIdentifierCrossReference" xlink:label="bus-identifierLocationIdentifierCrossReference" xlink:title="presentation: bus-identifierLocationIdentifierCrossReference"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierContactInformationStructure" xlink:to="bus-identifierLocationIdentifierCrossReference" order="11" xlink:title="presentation:  cor-identifierContactInformationStructure to bus-identifierLocationIdentifierCrossReference"/>
+        <!-- cor-072 identifierActive -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-identifierActive" xlink:label="cor-identifierActive" xlink:title="presentation: cor-identifierActive"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-identifierReference" xlink:to="cor-identifierActive" order="14" xlink:title="presentation:  cor-identifierReference to cor-identifierActive"/>
+        <!-- busG-18 reportingCalendar -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-reportingCalendar" xlink:label="bus-reportingCalendar" xlink:title="presentation: bus-reportingCalendar"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entityInformation" xlink:to="bus-reportingCalendar" order="16" xlink:title="presentation:  cor-entityInformation to bus-reportingCalendar"/>
+        <!-- bus-085 reportingCalendarCode -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-reportingCalendarCode" xlink:label="bus-reportingCalendarCode" xlink:title="presentation: bus-reportingCalendarCode"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-reportingCalendar" xlink:to="bus-reportingCalendarCode" order="1" xlink:title="presentation:  bus-reportingCalendar to bus-reportingCalendarCode"/>
+        <!-- bus-086 reportingCalendarDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-reportingCalendarDescription" xlink:label="bus-reportingCalendarDescription" xlink:title="presentation: bus-reportingCalendarDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-reportingCalendar" xlink:to="bus-reportingCalendarDescription" order="2" xlink:title="presentation:  bus-reportingCalendar to bus-reportingCalendarDescription"/>
+        <!-- bus-087 reportingCalendarTitle -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-reportingCalendarTitle" xlink:label="bus-reportingCalendarTitle" xlink:title="presentation: bus-reportingCalendarTitle"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-reportingCalendar" xlink:to="bus-reportingCalendarTitle" order="3" xlink:title="presentation:  bus-reportingCalendar to bus-reportingCalendarTitle"/>
+        <!-- bus-088 reportingCalendarPeriodType -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-reportingCalendarPeriodType" xlink:label="bus-reportingCalendarPeriodType" xlink:title="presentation: bus-reportingCalendarPeriodType"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-reportingCalendar" xlink:to="bus-reportingCalendarPeriodType" order="4" xlink:title="presentation:  bus-reportingCalendar to bus-reportingCalendarPeriodType"/>
+        <!-- bus-089 reportingCalendarPeriodTypeDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-reportingCalendarPeriodTypeDescription" xlink:label="bus-reportingCalendarPeriodTypeDescription" xlink:title="presentation: bus-reportingCalendarPeriodTypeDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-reportingCalendar" xlink:to="bus-reportingCalendarPeriodTypeDescription" order="5" xlink:title="presentation:  bus-reportingCalendar to bus-reportingCalendarPeriodTypeDescription"/>
+        <!-- bus-090 reportingCalendarOpenClosedStatus -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-reportingCalendarOpenClosedStatus" xlink:label="bus-reportingCalendarOpenClosedStatus" xlink:title="presentation: bus-reportingCalendarOpenClosedStatus"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-reportingCalendar" xlink:to="bus-reportingCalendarOpenClosedStatus" order="6" xlink:title="presentation:  bus-reportingCalendar to bus-reportingCalendarOpenClosedStatus"/>
+        <!-- bus-091 reportingPurpose -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-reportingPurpose" xlink:label="bus-reportingPurpose" xlink:title="presentation: bus-reportingPurpose"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-reportingCalendar" xlink:to="bus-reportingPurpose" order="7" xlink:title="presentation:  bus-reportingCalendar to bus-reportingPurpose"/>
+        <!-- bus-092 reportingPurposeDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-reportingPurposeDescription" xlink:label="bus-reportingPurposeDescription" xlink:title="presentation: bus-reportingPurposeDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-reportingCalendar" xlink:to="bus-reportingPurposeDescription" order="8" xlink:title="presentation:  bus-reportingCalendar to bus-reportingPurposeDescription"/>
+        <!-- busG-19 reportingCalendarPeriod -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-reportingCalendarPeriod" xlink:label="bus-reportingCalendarPeriod" xlink:title="presentation: bus-reportingCalendarPeriod"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-reportingCalendar" xlink:to="bus-reportingCalendarPeriod" order="9" xlink:title="presentation:  bus-reportingCalendar to bus-reportingCalendarPeriod"/>
+        <!-- bus-093 periodIdentifier -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-periodIdentifier" xlink:label="bus-periodIdentifier" xlink:title="presentation: bus-periodIdentifier"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-reportingCalendarPeriod" xlink:to="bus-periodIdentifier" order="1" xlink:title="presentation:  bus-reportingCalendarPeriod to bus-periodIdentifier"/>
+        <!-- bus-094 periodDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-periodDescription" xlink:label="bus-periodDescription" xlink:title="presentation: bus-periodDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-reportingCalendarPeriod" xlink:to="bus-periodDescription" order="2" xlink:title="presentation:  bus-reportingCalendarPeriod to bus-periodDescription"/>
+        <!-- bus-095 periodStart -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-periodStart" xlink:label="bus-periodStart" xlink:title="presentation: bus-periodStart"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-reportingCalendarPeriod" xlink:to="bus-periodStart" order="3" xlink:title="presentation:  bus-reportingCalendarPeriod to bus-periodStart"/>
+        <!-- bus-096 periodEnd -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-periodEnd" xlink:label="bus-periodEnd" xlink:title="presentation: bus-periodEnd"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-reportingCalendarPeriod" xlink:to="bus-periodEnd" order="4" xlink:title="presentation:  bus-reportingCalendarPeriod to bus-periodEnd"/>
+        <!-- bus-097 periodClosedDate -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-periodClosedDate" xlink:label="bus-periodClosedDate" xlink:title="presentation: bus-periodClosedDate"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-reportingCalendarPeriod" xlink:to="bus-periodClosedDate" order="5" xlink:title="presentation:  bus-reportingCalendarPeriod to bus-periodClosedDate"/>
+        <!-- corG-04 entryHeader -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-entryHeader" xlink:label="cor-entryHeader" xlink:title="presentation: cor-entryHeader"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-accountingEntries" xlink:to="cor-entryHeader" order="3" xlink:title="presentation:  cor-accountingEntries to cor-entryHeader"/>
+        <!-- cor-010 postedDate -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-postedDate" xlink:label="cor-postedDate" xlink:title="presentation: cor-postedDate"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="cor-postedDate" order="1" xlink:title="presentation:  cor-entryHeader to cor-postedDate"/>
+        <!-- cor-011 enteredBy -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-enteredBy" xlink:label="cor-enteredBy" xlink:title="presentation: cor-enteredBy"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="cor-enteredBy" order="2" xlink:title="presentation:  cor-entryHeader to cor-enteredBy"/>
+        <!-- bus-098 enteredByModified -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-enteredByModified" xlink:label="bus-enteredByModified" xlink:title="presentation: bus-enteredByModified"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="bus-enteredByModified" order="3" xlink:title="presentation:  cor-entryHeader to bus-enteredByModified"/>
+        <!-- cor-012 enteredDate -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-enteredDate" xlink:label="cor-enteredDate" xlink:title="presentation: cor-enteredDate"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="cor-enteredDate" order="4" xlink:title="presentation:  cor-entryHeader to cor-enteredDate"/>
+        <!-- bus-099 entryResponsiblePerson -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-entryResponsiblePerson" xlink:label="bus-entryResponsiblePerson" xlink:title="presentation: bus-entryResponsiblePerson"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="bus-entryResponsiblePerson" order="5" xlink:title="presentation:  cor-entryHeader to bus-entryResponsiblePerson"/>
+        <!-- cor-013 sourceJournalID -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-sourceJournalID" xlink:label="cor-sourceJournalID" xlink:title="presentation: cor-sourceJournalID"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="cor-sourceJournalID" order="6" xlink:title="presentation:  cor-entryHeader to cor-sourceJournalID"/>
+        <!-- bus-100 sourceJournalDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-sourceJournalDescription" xlink:label="bus-sourceJournalDescription" xlink:title="presentation: bus-sourceJournalDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="bus-sourceJournalDescription" order="7" xlink:title="presentation:  cor-entryHeader to bus-sourceJournalDescription"/>
+        <!-- cor-014 entryType -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-entryType" xlink:label="cor-entryType" xlink:title="presentation: cor-entryType"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="cor-entryType" order="8" xlink:title="presentation:  cor-entryHeader to cor-entryType"/>
+        <!-- bus-101 entryOrigin -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-entryOrigin" xlink:label="bus-entryOrigin" xlink:title="presentation: bus-entryOrigin"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="bus-entryOrigin" order="9" xlink:title="presentation:  cor-entryHeader to bus-entryOrigin"/>
+        <!-- cor-015 entryNumber -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-entryNumber" xlink:label="cor-entryNumber" xlink:title="presentation: cor-entryNumber"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="cor-entryNumber" order="10" xlink:title="presentation:  cor-entryHeader to cor-entryNumber"/>
+        <!-- cor-016 entryComment -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-entryComment" xlink:label="cor-entryComment" xlink:title="presentation: cor-entryComment"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="cor-entryComment" order="11" xlink:title="presentation:  cor-entryHeader to cor-entryComment"/>
+        <!-- cor-017 qualifierEntry -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-qualifierEntry" xlink:label="cor-qualifierEntry" xlink:title="presentation: cor-qualifierEntry"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="cor-qualifierEntry" order="12" xlink:title="presentation:  cor-entryHeader to cor-qualifierEntry"/>
+        <!-- cor-018 qualifierEntryDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-qualifierEntryDescription" xlink:label="cor-qualifierEntryDescription" xlink:title="presentation: cor-qualifierEntryDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="cor-qualifierEntryDescription" order="13" xlink:title="presentation:  cor-entryHeader to cor-qualifierEntryDescription"/>
+        <!-- bus-102 postingCode -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-postingCode" xlink:label="bus-postingCode" xlink:title="presentation: bus-postingCode"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="bus-postingCode" order="14" xlink:title="presentation:  cor-entryHeader to bus-postingCode"/>
+        <!-- bus-103 batchID -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-batchID" xlink:label="bus-batchID" xlink:title="presentation: bus-batchID"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="bus-batchID" order="15" xlink:title="presentation:  cor-entryHeader to bus-batchID"/>
+        <!-- bus-104 batchDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-batchDescription" xlink:label="bus-batchDescription" xlink:title="presentation: bus-batchDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="bus-batchDescription" order="16" xlink:title="presentation:  cor-entryHeader to bus-batchDescription"/>
+        <!-- bus-105 numberOfEntries -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-numberOfEntries" xlink:label="bus-numberOfEntries" xlink:title="presentation: bus-numberOfEntries"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="bus-numberOfEntries" order="17" xlink:title="presentation:  cor-entryHeader to bus-numberOfEntries"/>
+        <!-- bus-106 totalDebit -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-totalDebit" xlink:label="bus-totalDebit" xlink:title="presentation: bus-totalDebit"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="bus-totalDebit" order="18" xlink:title="presentation:  cor-entryHeader to bus-totalDebit"/>
+        <!-- bus-107 totalCredit -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-totalCredit" xlink:label="bus-totalCredit" xlink:title="presentation: bus-totalCredit"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="bus-totalCredit" order="19" xlink:title="presentation:  cor-entryHeader to bus-totalCredit"/>
+        <!-- cor-019 bookTaxDifference -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-bookTaxDifference" xlink:label="cor-bookTaxDifference" xlink:title="presentation: cor-bookTaxDifference"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="cor-bookTaxDifference" order="20" xlink:title="presentation:  cor-entryHeader to cor-bookTaxDifference"/>
+        <!-- bus-108 eliminationCode -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-eliminationCode" xlink:label="bus-eliminationCode" xlink:title="presentation: bus-eliminationCode"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="bus-eliminationCode" order="21" xlink:title="presentation:  cor-entryHeader to bus-eliminationCode"/>
+        <!-- bus-109 budgetScenarioPeriodStart -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-budgetScenarioPeriodStart" xlink:label="bus-budgetScenarioPeriodStart" xlink:title="presentation: bus-budgetScenarioPeriodStart"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="bus-budgetScenarioPeriodStart" order="22" xlink:title="presentation:  cor-entryHeader to bus-budgetScenarioPeriodStart"/>
+        <!-- bus-110 budgetScenarioPeriodEnd -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-budgetScenarioPeriodEnd" xlink:label="bus-budgetScenarioPeriodEnd" xlink:title="presentation: bus-budgetScenarioPeriodEnd"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="bus-budgetScenarioPeriodEnd" order="23" xlink:title="presentation:  cor-entryHeader to bus-budgetScenarioPeriodEnd"/>
+        <!-- bus-111 budgetScenarioText -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-budgetScenarioText" xlink:label="bus-budgetScenarioText" xlink:title="presentation: bus-budgetScenarioText"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="bus-budgetScenarioText" order="24" xlink:title="presentation:  cor-entryHeader to bus-budgetScenarioText"/>
+        <!-- bus-112 budgetScenario -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-budgetScenario" xlink:label="bus-budgetScenario" xlink:title="presentation: bus-budgetScenario"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="bus-budgetScenario" order="25" xlink:title="presentation:  cor-entryHeader to bus-budgetScenario"/>
+        <!-- bus-113 budgetAllocationCode -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-budgetAllocationCode" xlink:label="bus-budgetAllocationCode" xlink:title="presentation: bus-budgetAllocationCode"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="bus-budgetAllocationCode" order="26" xlink:title="presentation:  cor-entryHeader to bus-budgetAllocationCode"/>
+        <!-- usk-001 reversingStdId -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#usk-reversingStdId" xlink:label="usk-reversingStdId" xlink:title="presentation: usk-reversingStdId"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="usk-reversingStdId" order="27" xlink:title="presentation:  cor-entryHeader to usk-reversingStdId"/>
+        <!-- usk-002 recurringStdDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#usk-recurringStdDescription" xlink:label="usk-recurringStdDescription" xlink:title="presentation: usk-recurringStdDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="usk-recurringStdDescription" order="28" xlink:title="presentation:  cor-entryHeader to usk-recurringStdDescription"/>
+        <!-- usk-003 frequencyInterval -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#usk-frequencyInterval" xlink:label="usk-frequencyInterval" xlink:title="presentation: usk-frequencyInterval"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="usk-frequencyInterval" order="29" xlink:title="presentation:  cor-entryHeader to usk-frequencyInterval"/>
+        <!-- usk-004 frequencyUnit -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#usk-frequencyUnit" xlink:label="usk-frequencyUnit" xlink:title="presentation: usk-frequencyUnit"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="usk-frequencyUnit" order="30" xlink:title="presentation:  cor-entryHeader to usk-frequencyUnit"/>
+        <!-- usk-005 repetitionsRemaining -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#usk-repetitionsRemaining" xlink:label="usk-repetitionsRemaining" xlink:title="presentation: usk-repetitionsRemaining"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="usk-repetitionsRemaining" order="31" xlink:title="presentation:  cor-entryHeader to usk-repetitionsRemaining"/>
+        <!-- usk-006 nextDateRepeat -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#usk-nextDateRepeat" xlink:label="usk-nextDateRepeat" xlink:title="presentation: usk-nextDateRepeat"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="usk-nextDateRepeat" order="32" xlink:title="presentation:  cor-entryHeader to usk-nextDateRepeat"/>
+        <!-- usk-007 lastDateRepeat -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#usk-lastDateRepeat" xlink:label="usk-lastDateRepeat" xlink:title="presentation: usk-lastDateRepeat"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="usk-lastDateRepeat" order="33" xlink:title="presentation:  cor-entryHeader to usk-lastDateRepeat"/>
+        <!-- usk-008 endDateRepeatingEntry -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#usk-endDateRepeatingEntry" xlink:label="usk-endDateRepeatingEntry" xlink:title="presentation: usk-endDateRepeatingEntry"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="usk-endDateRepeatingEntry" order="34" xlink:title="presentation:  cor-entryHeader to usk-endDateRepeatingEntry"/>
+        <!-- usk-009 reverse -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#usk-reverse" xlink:label="usk-reverse" xlink:title="presentation: usk-reverse"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="usk-reverse" order="35" xlink:title="presentation:  cor-entryHeader to usk-reverse"/>
+        <!-- usk-010 reversingDate -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#usk-reversingDate" xlink:label="usk-reversingDate" xlink:title="presentation: usk-reversingDate"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="usk-reversingDate" order="36" xlink:title="presentation:  cor-entryHeader to usk-reversingDate"/>
+        <!-- cor-020 entryNumberCounter -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-entryNumberCounter" xlink:label="cor-entryNumberCounter" xlink:title="presentation: cor-entryNumberCounter"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="cor-entryNumberCounter" order="37" xlink:title="presentation:  cor-entryHeader to cor-entryNumberCounter"/>
+        <!-- corG-05 entryDetail -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-entryDetail" xlink:label="cor-entryDetail" xlink:title="presentation: cor-entryDetail"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryHeader" xlink:to="cor-entryDetail" order="38" xlink:title="presentation:  cor-entryHeader to cor-entryDetail"/>
+        <!-- cor-021 lineNumber -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-lineNumber" xlink:label="cor-lineNumber" xlink:title="presentation: cor-lineNumber"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="cor-lineNumber" order="1" xlink:title="presentation:  cor-entryDetail to cor-lineNumber"/>
+        <!-- cor-022 lineNumberCounter -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-lineNumberCounter" xlink:label="cor-lineNumberCounter" xlink:title="presentation: cor-lineNumberCounter"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="cor-lineNumberCounter" order="2" xlink:title="presentation:  cor-entryDetail to cor-lineNumberCounter"/>
+        <!-- corG-06 account -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-account" xlink:label="cor-account" xlink:title="presentation: cor-account"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="cor-account" order="3" xlink:title="presentation:  cor-entryDetail to cor-account"/>
+        <!-- cor-023 accountMainID -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-accountMainID" xlink:label="cor-accountMainID" xlink:title="presentation: cor-accountMainID"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-account" xlink:to="cor-accountMainID" order="1" xlink:title="presentation:  cor-account to cor-accountMainID"/>
+        <!-- cor-024 accountMainDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-accountMainDescription" xlink:label="cor-accountMainDescription" xlink:title="presentation: cor-accountMainDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-account" xlink:to="cor-accountMainDescription" order="2" xlink:title="presentation:  cor-account to cor-accountMainDescription"/>
+        <!-- cor-025 mainAccountType -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-mainAccountType" xlink:label="cor-mainAccountType" xlink:title="presentation: cor-mainAccountType"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-account" xlink:to="cor-mainAccountType" order="3" xlink:title="presentation:  cor-account to cor-mainAccountType"/>
+        <!-- cor-026 mainAccountTypeDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-mainAccountTypeDescription" xlink:label="cor-mainAccountTypeDescription" xlink:title="presentation: cor-mainAccountTypeDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-account" xlink:to="cor-mainAccountTypeDescription" order="4" xlink:title="presentation:  cor-account to cor-mainAccountTypeDescription"/>
+        <!-- cor-027 parentAccountMainID -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-parentAccountMainID" xlink:label="cor-parentAccountMainID" xlink:title="presentation: cor-parentAccountMainID"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-account" xlink:to="cor-parentAccountMainID" order="5" xlink:title="presentation:  cor-account to cor-parentAccountMainID"/>
+        <!-- cor-028 accountPurposeCode -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-accountPurposeCode" xlink:label="cor-accountPurposeCode" xlink:title="presentation: cor-accountPurposeCode"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-account" xlink:to="cor-accountPurposeCode" order="6" xlink:title="presentation:  cor-account to cor-accountPurposeCode"/>
+        <!-- cor-029 accountPurposeDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-accountPurposeDescription" xlink:label="cor-accountPurposeDescription" xlink:title="presentation: cor-accountPurposeDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-account" xlink:to="cor-accountPurposeDescription" order="7" xlink:title="presentation:  cor-account to cor-accountPurposeDescription"/>
+        <!-- cor-030 accountType -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-accountType" xlink:label="cor-accountType" xlink:title="presentation: cor-accountType"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-account" xlink:to="cor-accountType" order="8" xlink:title="presentation:  cor-account to cor-accountType"/>
+        <!-- cor-031 accountTypeDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-accountTypeDescription" xlink:label="cor-accountTypeDescription" xlink:title="presentation: cor-accountTypeDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-account" xlink:to="cor-accountTypeDescription" order="9" xlink:title="presentation:  cor-account to cor-accountTypeDescription"/>
+        <!-- bus-114 entryAccountingMethod -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-entryAccountingMethod" xlink:label="bus-entryAccountingMethod" xlink:title="presentation: bus-entryAccountingMethod"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-account" xlink:to="bus-entryAccountingMethod" order="10" xlink:title="presentation:  cor-account to bus-entryAccountingMethod"/>
+        <!-- bus-115 entryAccountingMethodDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-entryAccountingMethodDescription" xlink:label="bus-entryAccountingMethodDescription" xlink:title="presentation: bus-entryAccountingMethodDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-account" xlink:to="bus-entryAccountingMethodDescription" order="11" xlink:title="presentation:  cor-account to bus-entryAccountingMethodDescription"/>
+        <!-- bus-116 entryAccountingMethodPurpose -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-entryAccountingMethodPurpose" xlink:label="bus-entryAccountingMethodPurpose" xlink:title="presentation: bus-entryAccountingMethodPurpose"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-account" xlink:to="bus-entryAccountingMethodPurpose" order="12" xlink:title="presentation:  cor-account to bus-entryAccountingMethodPurpose"/>
+        <!-- bus-117 entryAccountingMethodPurposeDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-entryAccountingMethodPurposeDescription" xlink:label="bus-entryAccountingMethodPurposeDescription" xlink:title="presentation: bus-entryAccountingMethodPurposeDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-account" xlink:to="bus-entryAccountingMethodPurposeDescription" order="13" xlink:title="presentation:  cor-account to bus-entryAccountingMethodPurposeDescription"/>
+        <!-- corG-07 accountSub -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-accountSub" xlink:label="cor-accountSub" xlink:title="presentation: cor-accountSub"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-account" xlink:to="cor-accountSub" order="14" xlink:title="presentation:  cor-account to cor-accountSub"/>
+        <!-- cor-032 accountSubDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-accountSubDescription" xlink:label="cor-accountSubDescription" xlink:title="presentation: cor-accountSubDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-accountSub" xlink:to="cor-accountSubDescription" order="1" xlink:title="presentation:  cor-accountSub to cor-accountSubDescription"/>
+        <!-- cor-033 accountSubID -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-accountSubID" xlink:label="cor-accountSubID" xlink:title="presentation: cor-accountSubID"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-accountSub" xlink:to="cor-accountSubID" order="2" xlink:title="presentation:  cor-accountSub to cor-accountSubID"/>
+        <!-- cor-034 accountSubType -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-accountSubType" xlink:label="cor-accountSubType" xlink:title="presentation: cor-accountSubType"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-accountSub" xlink:to="cor-accountSubType" order="3" xlink:title="presentation:  cor-accountSub to cor-accountSubType"/>
+        <!-- corG-08 segmentParentTuple -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-segmentParentTuple" xlink:label="cor-segmentParentTuple" xlink:title="presentation: cor-segmentParentTuple"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-accountSub" xlink:to="cor-segmentParentTuple" order="4" xlink:title="presentation:  cor-accountSub to cor-segmentParentTuple"/>
+        <!-- cor-035 parentSubaccountCode -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-parentSubaccountCode" xlink:label="cor-parentSubaccountCode" xlink:title="presentation: cor-parentSubaccountCode"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-segmentParentTuple" xlink:to="cor-parentSubaccountCode" order="1" xlink:title="presentation:  cor-segmentParentTuple to cor-parentSubaccountCode"/>
+        <!-- cor-036 parentSubaccountType -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-parentSubaccountType" xlink:label="cor-parentSubaccountType" xlink:title="presentation: cor-parentSubaccountType"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-segmentParentTuple" xlink:to="cor-parentSubaccountType" order="2" xlink:title="presentation:  cor-segmentParentTuple to cor-parentSubaccountType"/>
+        <!-- cor-037 reportingTreeIdentifier -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-reportingTreeIdentifier" xlink:label="cor-reportingTreeIdentifier" xlink:title="presentation: cor-reportingTreeIdentifier"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-segmentParentTuple" xlink:to="cor-reportingTreeIdentifier" order="3" xlink:title="presentation:  cor-segmentParentTuple to cor-reportingTreeIdentifier"/>
+        <!-- cor-038 parentSubaccountProportion -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-parentSubaccountProportion" xlink:label="cor-parentSubaccountProportion" xlink:title="presentation: cor-parentSubaccountProportion"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-segmentParentTuple" xlink:to="cor-parentSubaccountProportion" order="4" xlink:title="presentation:  cor-segmentParentTuple to cor-parentSubaccountProportion"/>
+        <!-- cor-039 accountActive -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-accountActive" xlink:label="cor-accountActive" xlink:title="presentation: cor-accountActive"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-account" xlink:to="cor-accountActive" order="15" xlink:title="presentation:  cor-account to cor-accountActive"/>
+        <!-- cor-040 amount -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-amount" xlink:label="cor-amount" xlink:title="presentation: cor-amount"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="cor-amount" order="4" xlink:title="presentation:  cor-entryDetail to cor-amount"/>
+        <!-- muc-002 amountCurrency -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-amountCurrency" xlink:label="muc-amountCurrency" xlink:title="presentation: muc-amountCurrency"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="muc-amountCurrency" order="5" xlink:title="presentation:  cor-entryDetail to muc-amountCurrency"/>
+        <!-- muc-006 amountOriginalExchangeRateDate -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-amountOriginalExchangeRateDate" xlink:label="muc-amountOriginalExchangeRateDate" xlink:title="presentation: muc-amountOriginalExchangeRateDate"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="muc-amountOriginalExchangeRateDate" order="6" xlink:title="presentation:  cor-entryDetail to muc-amountOriginalExchangeRateDate"/>
+        <!-- muc-003 amountOriginalAmount -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-amountOriginalAmount" xlink:label="muc-amountOriginalAmount" xlink:title="presentation: muc-amountOriginalAmount"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="muc-amountOriginalAmount" order="7" xlink:title="presentation:  cor-entryDetail to muc-amountOriginalAmount"/>
+        <!-- muc-004 amountOriginalCurrency -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-amountOriginalCurrency" xlink:label="muc-amountOriginalCurrency" xlink:title="presentation: muc-amountOriginalCurrency"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="muc-amountOriginalCurrency" order="8" xlink:title="presentation:  cor-entryDetail to muc-amountOriginalCurrency"/>
+        <!-- muc-005 amountOriginalExchangeRate -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-amountOriginalExchangeRate" xlink:label="muc-amountOriginalExchangeRate" xlink:title="presentation: muc-amountOriginalExchangeRate"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="muc-amountOriginalExchangeRate" order="9" xlink:title="presentation:  cor-entryDetail to muc-amountOriginalExchangeRate"/>
+        <!-- muc-007 amountOriginalExchangeRateSource -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-amountOriginalExchangeRateSource" xlink:label="muc-amountOriginalExchangeRateSource" xlink:title="presentation: muc-amountOriginalExchangeRateSource"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="muc-amountOriginalExchangeRateSource" order="10" xlink:title="presentation:  cor-entryDetail to muc-amountOriginalExchangeRateSource"/>
+        <!-- muc-008 amountOriginalExchangeRateComment -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-amountOriginalExchangeRateComment" xlink:label="muc-amountOriginalExchangeRateComment" xlink:title="presentation: muc-amountOriginalExchangeRateComment"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="muc-amountOriginalExchangeRateComment" order="11" xlink:title="presentation:  cor-entryDetail to muc-amountOriginalExchangeRateComment"/>
+        <!-- muc-009 amountOriginalTriangulationAmount -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-amountOriginalTriangulationAmount" xlink:label="muc-amountOriginalTriangulationAmount" xlink:title="presentation: muc-amountOriginalTriangulationAmount"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="muc-amountOriginalTriangulationAmount" order="12" xlink:title="presentation:  cor-entryDetail to muc-amountOriginalTriangulationAmount"/>
+        <!-- muc-010 amountOriginalTriangulationCurrency -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-amountOriginalTriangulationCurrency" xlink:label="muc-amountOriginalTriangulationCurrency" xlink:title="presentation: muc-amountOriginalTriangulationCurrency"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="muc-amountOriginalTriangulationCurrency" order="13" xlink:title="presentation:  cor-entryDetail to muc-amountOriginalTriangulationCurrency"/>
+        <!-- muc-011 amountOriginalTriangulationExchangeRate -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-amountOriginalTriangulationExchangeRate" xlink:label="muc-amountOriginalTriangulationExchangeRate" xlink:title="presentation: muc-amountOriginalTriangulationExchangeRate"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="muc-amountOriginalTriangulationExchangeRate" order="14" xlink:title="presentation:  cor-entryDetail to muc-amountOriginalTriangulationExchangeRate"/>
+        <!-- muc-012 amountOriginalTriangulationExchangeRateSource -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-amountOriginalTriangulationExchangeRateSource" xlink:label="muc-amountOriginalTriangulationExchangeRateSource" xlink:title="presentation: muc-amountOriginalTriangulationExchangeRateSource"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="muc-amountOriginalTriangulationExchangeRateSource" order="15" xlink:title="presentation:  cor-entryDetail to muc-amountOriginalTriangulationExchangeRateSource"/>
+        <!-- muc-013 amountOriginalTriangulationExchangeRateType -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-amountOriginalTriangulationExchangeRateType" xlink:label="muc-amountOriginalTriangulationExchangeRateType" xlink:title="presentation: muc-amountOriginalTriangulationExchangeRateType"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="muc-amountOriginalTriangulationExchangeRateType" order="16" xlink:title="presentation:  cor-entryDetail to muc-amountOriginalTriangulationExchangeRateType"/>
+        <!-- muc-014 originalTriangulationExchangeRate -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-originalTriangulationExchangeRate" xlink:label="muc-originalTriangulationExchangeRate" xlink:title="presentation: muc-originalTriangulationExchangeRate"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="muc-originalTriangulationExchangeRate" order="17" xlink:title="presentation:  cor-entryDetail to muc-originalTriangulationExchangeRate"/>
+        <!-- muc-015 originalExchangeRateTriangulationSource -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-originalExchangeRateTriangulationSource" xlink:label="muc-originalExchangeRateTriangulationSource" xlink:title="presentation: muc-originalExchangeRateTriangulationSource"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="muc-originalExchangeRateTriangulationSource" order="18" xlink:title="presentation:  cor-entryDetail to muc-originalExchangeRateTriangulationSource"/>
+        <!-- muc-016 originalExchangeRateTriangulationType -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-originalExchangeRateTriangulationType" xlink:label="muc-originalExchangeRateTriangulationType" xlink:title="presentation: muc-originalExchangeRateTriangulationType"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="muc-originalExchangeRateTriangulationType" order="19" xlink:title="presentation:  cor-entryDetail to muc-originalExchangeRateTriangulationType"/>
+        <!-- cor-041 signOfAmount -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-signOfAmount" xlink:label="cor-signOfAmount" xlink:title="presentation: cor-signOfAmount"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="cor-signOfAmount" order="20" xlink:title="presentation:  cor-entryDetail to cor-signOfAmount"/>
+        <!-- cor-042 debitCreditCode -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-debitCreditCode" xlink:label="cor-debitCreditCode" xlink:title="presentation: cor-debitCreditCode"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="cor-debitCreditCode" order="21" xlink:title="presentation:  cor-entryDetail to cor-debitCreditCode"/>
+        <!-- cor-043 postingDate -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-postingDate" xlink:label="cor-postingDate" xlink:title="presentation: cor-postingDate"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="cor-postingDate" order="22" xlink:title="presentation:  cor-entryDetail to cor-postingDate"/>
+        <!-- bus-118 amountMemo -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-amountMemo" xlink:label="bus-amountMemo" xlink:title="presentation: bus-amountMemo"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="bus-amountMemo" order="23" xlink:title="presentation:  cor-entryDetail to bus-amountMemo"/>
+        <!-- bus-119 allocationCode -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-allocationCode" xlink:label="bus-allocationCode" xlink:title="presentation: bus-allocationCode"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="bus-allocationCode" order="24" xlink:title="presentation:  cor-entryDetail to bus-allocationCode"/>
+        <!-- mucG-01 multicurrencyDetail -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-multicurrencyDetail" xlink:label="muc-multicurrencyDetail" xlink:title="presentation: muc-multicurrencyDetail"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="muc-multicurrencyDetail" order="25" xlink:title="presentation:  cor-entryDetail to muc-multicurrencyDetail"/>
+        <!-- muc-017 multicurrencyDetailExchangeRateDate -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-multicurrencyDetailExchangeRateDate" xlink:label="muc-multicurrencyDetailExchangeRateDate" xlink:title="presentation: muc-multicurrencyDetailExchangeRateDate"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="muc-multicurrencyDetail" xlink:to="muc-multicurrencyDetailExchangeRateDate" order="1" xlink:title="presentation:  muc-multicurrencyDetail to muc-multicurrencyDetailExchangeRateDate"/>
+        <!-- muc-018 amountRestatedAmount -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-amountRestatedAmount" xlink:label="muc-amountRestatedAmount" xlink:title="presentation: muc-amountRestatedAmount"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="muc-multicurrencyDetail" xlink:to="muc-amountRestatedAmount" order="2" xlink:title="presentation:  muc-multicurrencyDetail to muc-amountRestatedAmount"/>
+        <!-- muc-019 amountRestatedCurrency -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-amountRestatedCurrency" xlink:label="muc-amountRestatedCurrency" xlink:title="presentation: muc-amountRestatedCurrency"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="muc-multicurrencyDetail" xlink:to="muc-amountRestatedCurrency" order="3" xlink:title="presentation:  muc-multicurrencyDetail to muc-amountRestatedCurrency"/>
+        <!-- muc-020 amountRestatedExchangeRate -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-amountRestatedExchangeRate" xlink:label="muc-amountRestatedExchangeRate" xlink:title="presentation: muc-amountRestatedExchangeRate"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="muc-multicurrencyDetail" xlink:to="muc-amountRestatedExchangeRate" order="4" xlink:title="presentation:  muc-multicurrencyDetail to muc-amountRestatedExchangeRate"/>
+        <!-- muc-021 amountRestatedExchangeRateSource -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-amountRestatedExchangeRateSource" xlink:label="muc-amountRestatedExchangeRateSource" xlink:title="presentation: muc-amountRestatedExchangeRateSource"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="muc-multicurrencyDetail" xlink:to="muc-amountRestatedExchangeRateSource" order="5" xlink:title="presentation:  muc-multicurrencyDetail to muc-amountRestatedExchangeRateSource"/>
+        <!-- muc-022 amountRestatedExchangeRateType -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-amountRestatedExchangeRateType" xlink:label="muc-amountRestatedExchangeRateType" xlink:title="presentation: muc-amountRestatedExchangeRateType"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="muc-multicurrencyDetail" xlink:to="muc-amountRestatedExchangeRateType" order="6" xlink:title="presentation:  muc-multicurrencyDetail to muc-amountRestatedExchangeRateType"/>
+        <!-- muc-023 amountTriangulationAmount -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-amountTriangulationAmount" xlink:label="muc-amountTriangulationAmount" xlink:title="presentation: muc-amountTriangulationAmount"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="muc-multicurrencyDetail" xlink:to="muc-amountTriangulationAmount" order="7" xlink:title="presentation:  muc-multicurrencyDetail to muc-amountTriangulationAmount"/>
+        <!-- muc-024 amountTriangulationCurrency -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-amountTriangulationCurrency" xlink:label="muc-amountTriangulationCurrency" xlink:title="presentation: muc-amountTriangulationCurrency"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="muc-multicurrencyDetail" xlink:to="muc-amountTriangulationCurrency" order="8" xlink:title="presentation:  muc-multicurrencyDetail to muc-amountTriangulationCurrency"/>
+        <!-- muc-025 amountTriangulationExchangeRate -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-amountTriangulationExchangeRate" xlink:label="muc-amountTriangulationExchangeRate" xlink:title="presentation: muc-amountTriangulationExchangeRate"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="muc-multicurrencyDetail" xlink:to="muc-amountTriangulationExchangeRate" order="9" xlink:title="presentation:  muc-multicurrencyDetail to muc-amountTriangulationExchangeRate"/>
+        <!-- muc-026 amountTriangulationExchangeRateSource -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-amountTriangulationExchangeRateSource" xlink:label="muc-amountTriangulationExchangeRateSource" xlink:title="presentation: muc-amountTriangulationExchangeRateSource"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="muc-multicurrencyDetail" xlink:to="muc-amountTriangulationExchangeRateSource" order="10" xlink:title="presentation:  muc-multicurrencyDetail to muc-amountTriangulationExchangeRateSource"/>
+        <!-- muc-027 amountTriangulationExchangeRateType -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-amountTriangulationExchangeRateType" xlink:label="muc-amountTriangulationExchangeRateType" xlink:title="presentation: muc-amountTriangulationExchangeRateType"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="muc-multicurrencyDetail" xlink:to="muc-amountTriangulationExchangeRateType" order="11" xlink:title="presentation:  muc-multicurrencyDetail to muc-amountTriangulationExchangeRateType"/>
+        <!-- muc-028 restatedTriangulationExchangeRate -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-restatedTriangulationExchangeRate" xlink:label="muc-restatedTriangulationExchangeRate" xlink:title="presentation: muc-restatedTriangulationExchangeRate"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="muc-multicurrencyDetail" xlink:to="muc-restatedTriangulationExchangeRate" order="12" xlink:title="presentation:  muc-multicurrencyDetail to muc-restatedTriangulationExchangeRate"/>
+        <!-- muc-029 restatedExchangeRateTriangulationSource -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-restatedExchangeRateTriangulationSource" xlink:label="muc-restatedExchangeRateTriangulationSource" xlink:title="presentation: muc-restatedExchangeRateTriangulationSource"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="muc-multicurrencyDetail" xlink:to="muc-restatedExchangeRateTriangulationSource" order="13" xlink:title="presentation:  muc-multicurrencyDetail to muc-restatedExchangeRateTriangulationSource"/>
+        <!-- muc-030 restatedExchangeRateTriangulationType -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-restatedExchangeRateTriangulationType" xlink:label="muc-restatedExchangeRateTriangulationType" xlink:title="presentation: muc-restatedExchangeRateTriangulationType"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="muc-multicurrencyDetail" xlink:to="muc-restatedExchangeRateTriangulationType" order="14" xlink:title="presentation:  muc-multicurrencyDetail to muc-restatedExchangeRateTriangulationType"/>
+        <!-- muc-031 multicurrencyDetailComment -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-multicurrencyDetailComment" xlink:label="muc-multicurrencyDetailComment" xlink:title="presentation: muc-multicurrencyDetailComment"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="muc-multicurrencyDetail" xlink:to="muc-multicurrencyDetailComment" order="15" xlink:title="presentation:  muc-multicurrencyDetail to muc-multicurrencyDetailComment"/>
+        <!-- cor-073 documentType -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-documentType" xlink:label="cor-documentType" xlink:title="presentation: cor-documentType"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="cor-documentType" order="26" xlink:title="presentation:  cor-entryDetail to cor-documentType"/>
+        <!-- cor-074 documentTypeDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-documentTypeDescription" xlink:label="cor-documentTypeDescription" xlink:title="presentation: cor-documentTypeDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="cor-documentTypeDescription" order="27" xlink:title="presentation:  cor-entryDetail to cor-documentTypeDescription"/>
+        <!-- cor-075 invoiceType -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-invoiceType" xlink:label="cor-invoiceType" xlink:title="presentation: cor-invoiceType"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="cor-invoiceType" order="28" xlink:title="presentation:  cor-entryDetail to cor-invoiceType"/>
+        <!-- cor-076 documentNumber -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-documentNumber" xlink:label="cor-documentNumber" xlink:title="presentation: cor-documentNumber"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="cor-documentNumber" order="29" xlink:title="presentation:  cor-entryDetail to cor-documentNumber"/>
+        <!-- cor-077 documentApplyToNumber -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-documentApplyToNumber" xlink:label="cor-documentApplyToNumber" xlink:title="presentation: cor-documentApplyToNumber"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="cor-documentApplyToNumber" order="30" xlink:title="presentation:  cor-entryDetail to cor-documentApplyToNumber"/>
+        <!-- cor-078 documentReference -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-documentReference" xlink:label="cor-documentReference" xlink:title="presentation: cor-documentReference"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="cor-documentReference" order="31" xlink:title="presentation:  cor-entryDetail to cor-documentReference"/>
+        <!-- cor-079 documentDate -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-documentDate" xlink:label="cor-documentDate" xlink:title="presentation: cor-documentDate"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="cor-documentDate" order="32" xlink:title="presentation:  cor-entryDetail to cor-documentDate"/>
+        <!-- bus-132 documentReceivedDate -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-documentReceivedDate" xlink:label="bus-documentReceivedDate" xlink:title="presentation: bus-documentReceivedDate"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="bus-documentReceivedDate" order="33" xlink:title="presentation:  cor-entryDetail to bus-documentReceivedDate"/>
+        <!-- bus-133 documentChargeReimb -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-documentChargeReimb" xlink:label="bus-documentChargeReimb" xlink:title="presentation: bus-documentChargeReimb"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="bus-documentChargeReimb" order="34" xlink:title="presentation:  cor-entryDetail to bus-documentChargeReimb"/>
+        <!-- bus-134 documentLocation -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-documentLocation" xlink:label="bus-documentLocation" xlink:title="presentation: bus-documentLocation"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="bus-documentLocation" order="35" xlink:title="presentation:  cor-entryDetail to bus-documentLocation"/>
+        <!-- bus-135 paymentMethod -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-paymentMethod" xlink:label="bus-paymentMethod" xlink:title="presentation: bus-paymentMethod"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="bus-paymentMethod" order="36" xlink:title="presentation:  cor-entryDetail to bus-paymentMethod"/>
+        <!-- cor-080 postingStatus -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-postingStatus" xlink:label="cor-postingStatus" xlink:title="presentation: cor-postingStatus"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="cor-postingStatus" order="37" xlink:title="presentation:  cor-entryDetail to cor-postingStatus"/>
+        <!-- cor-081 postingStatusDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-postingStatusDescription" xlink:label="cor-postingStatusDescription" xlink:title="presentation: cor-postingStatusDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="cor-postingStatusDescription" order="38" xlink:title="presentation:  cor-entryDetail to cor-postingStatusDescription"/>
+        <!-- corG-18 xbrlInfo -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-xbrlInfo" xlink:label="cor-xbrlInfo" xlink:title="presentation: cor-xbrlInfo"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="cor-xbrlInfo" order="39" xlink:title="presentation:  cor-entryDetail to cor-xbrlInfo"/>
+        <!-- cor-082 xbrlInclude -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-xbrlInclude" xlink:label="cor-xbrlInclude" xlink:title="presentation: cor-xbrlInclude"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-xbrlInfo" xlink:to="cor-xbrlInclude" order="1" xlink:title="presentation:  cor-xbrlInfo to cor-xbrlInclude"/>
+        <!-- cor-083 summaryReportingElement -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-summaryReportingElement" xlink:label="cor-summaryReportingElement" xlink:title="presentation: cor-summaryReportingElement"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-xbrlInfo" xlink:to="cor-summaryReportingElement" order="2" xlink:title="presentation:  cor-xbrlInfo to cor-summaryReportingElement"/>
+        <!-- cor-084 detailMatchingElement -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-detailMatchingElement" xlink:label="cor-detailMatchingElement" xlink:title="presentation: cor-detailMatchingElement"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-xbrlInfo" xlink:to="cor-detailMatchingElement" order="3" xlink:title="presentation:  cor-xbrlInfo to cor-detailMatchingElement"/>
+        <!-- cor-085 detailComment -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-detailComment" xlink:label="cor-detailComment" xlink:title="presentation: cor-detailComment"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="cor-detailComment" order="40" xlink:title="presentation:  cor-entryDetail to cor-detailComment"/>
+        <!-- cor-086 dateAcknowledged -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-dateAcknowledged" xlink:label="cor-dateAcknowledged" xlink:title="presentation: cor-dateAcknowledged"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="cor-dateAcknowledged" order="41" xlink:title="presentation:  cor-entryDetail to cor-dateAcknowledged"/>
+        <!-- cor-087 confirmedDate -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-confirmedDate" xlink:label="cor-confirmedDate" xlink:title="presentation: cor-confirmedDate"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="cor-confirmedDate" order="42" xlink:title="presentation:  cor-entryDetail to cor-confirmedDate"/>
+        <!-- cor-088 shipFrom -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-shipFrom" xlink:label="cor-shipFrom" xlink:title="presentation: cor-shipFrom"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="cor-shipFrom" order="43" xlink:title="presentation:  cor-entryDetail to cor-shipFrom"/>
+        <!-- cor-089 shipReceivedDate -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-shipReceivedDate" xlink:label="cor-shipReceivedDate" xlink:title="presentation: cor-shipReceivedDate"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="cor-shipReceivedDate" order="44" xlink:title="presentation:  cor-entryDetail to cor-shipReceivedDate"/>
+        <!-- cor-090 maturityDate -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-maturityDate" xlink:label="cor-maturityDate" xlink:title="presentation: cor-maturityDate"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="cor-maturityDate" order="45" xlink:title="presentation:  cor-entryDetail to cor-maturityDate"/>
+        <!-- cor-091 terms -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-terms" xlink:label="cor-terms" xlink:title="presentation: cor-terms"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="cor-terms" order="46" xlink:title="presentation:  cor-entryDetail to cor-terms"/>
+        <!-- busG-21 measurable -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-measurable" xlink:label="bus-measurable" xlink:title="presentation: bus-measurable"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="bus-measurable" order="47" xlink:title="presentation:  cor-entryDetail to bus-measurable"/>
+        <!-- bus-136 measurableCode -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-measurableCode" xlink:label="bus-measurableCode" xlink:title="presentation: bus-measurableCode"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-measurable" xlink:to="bus-measurableCode" order="1" xlink:title="presentation:  bus-measurable to bus-measurableCode"/>
+        <!-- bus-137 measurableCodeDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-measurableCodeDescription" xlink:label="bus-measurableCodeDescription" xlink:title="presentation: bus-measurableCodeDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-measurable" xlink:to="bus-measurableCodeDescription" order="2" xlink:title="presentation:  bus-measurable to bus-measurableCodeDescription"/>
+        <!-- bus-138 measurableCategory -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-measurableCategory" xlink:label="bus-measurableCategory" xlink:title="presentation: bus-measurableCategory"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-measurable" xlink:to="bus-measurableCategory" order="3" xlink:title="presentation:  bus-measurable to bus-measurableCategory"/>
+        <!-- bus-139 measurableID -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-measurableID" xlink:label="bus-measurableID" xlink:title="presentation: bus-measurableID"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-measurable" xlink:to="bus-measurableID" order="4" xlink:title="presentation:  bus-measurable to bus-measurableID"/>
+        <!-- bus-140 measurableIDSchema -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-measurableIDSchema" xlink:label="bus-measurableIDSchema" xlink:title="presentation: bus-measurableIDSchema"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-measurable" xlink:to="bus-measurableIDSchema" order="5" xlink:title="presentation:  bus-measurable to bus-measurableIDSchema"/>
+        <!-- bus-141 measurableIDOther -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-measurableIDOther" xlink:label="bus-measurableIDOther" xlink:title="presentation: bus-measurableIDOther"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-measurable" xlink:to="bus-measurableIDOther" order="6" xlink:title="presentation:  bus-measurable to bus-measurableIDOther"/>
+        <!-- bus-142 measurableIDOtherSchema -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-measurableIDOtherSchema" xlink:label="bus-measurableIDOtherSchema" xlink:title="presentation: bus-measurableIDOtherSchema"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-measurable" xlink:to="bus-measurableIDOtherSchema" order="7" xlink:title="presentation:  bus-measurable to bus-measurableIDOtherSchema"/>
+        <!-- bus-143 measurableDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-measurableDescription" xlink:label="bus-measurableDescription" xlink:title="presentation: bus-measurableDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-measurable" xlink:to="bus-measurableDescription" order="8" xlink:title="presentation:  bus-measurable to bus-measurableDescription"/>
+        <!-- bus-144 measurableQuantity -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-measurableQuantity" xlink:label="bus-measurableQuantity" xlink:title="presentation: bus-measurableQuantity"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-measurable" xlink:to="bus-measurableQuantity" order="9" xlink:title="presentation:  bus-measurable to bus-measurableQuantity"/>
+        <!-- bus-145 measurableQualifier -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-measurableQualifier" xlink:label="bus-measurableQualifier" xlink:title="presentation: bus-measurableQualifier"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-measurable" xlink:to="bus-measurableQualifier" order="10" xlink:title="presentation:  bus-measurable to bus-measurableQualifier"/>
+        <!-- bus-146 measurableUnitOfMeasure -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-measurableUnitOfMeasure" xlink:label="bus-measurableUnitOfMeasure" xlink:title="presentation: bus-measurableUnitOfMeasure"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-measurable" xlink:to="bus-measurableUnitOfMeasure" order="11" xlink:title="presentation:  bus-measurable to bus-measurableUnitOfMeasure"/>
+        <!-- bus-147 measurableCostPerUnit -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-measurableCostPerUnit" xlink:label="bus-measurableCostPerUnit" xlink:title="presentation: bus-measurableCostPerUnit"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-measurable" xlink:to="bus-measurableCostPerUnit" order="12" xlink:title="presentation:  bus-measurable to bus-measurableCostPerUnit"/>
+        <!-- bus-148 measurableStartDateTime -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-measurableStartDateTime" xlink:label="bus-measurableStartDateTime" xlink:title="presentation: bus-measurableStartDateTime"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-measurable" xlink:to="bus-measurableStartDateTime" order="13" xlink:title="presentation:  bus-measurable to bus-measurableStartDateTime"/>
+        <!-- bus-149 measurableEndDateTime -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-measurableEndDateTime" xlink:label="bus-measurableEndDateTime" xlink:title="presentation: bus-measurableEndDateTime"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-measurable" xlink:to="bus-measurableEndDateTime" order="14" xlink:title="presentation:  bus-measurable to bus-measurableEndDateTime"/>
+        <!-- bus-150 measurableActive -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-measurableActive" xlink:label="bus-measurableActive" xlink:title="presentation: bus-measurableActive"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-measurable" xlink:to="bus-measurableActive" order="15" xlink:title="presentation:  bus-measurable to bus-measurableActive"/>
+        <!-- ehm-001 measurableClassID -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#ehm-measurableClassID" xlink:label="ehm-measurableClassID" xlink:title="presentation: ehm-measurableClassID"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-measurable" xlink:to="ehm-measurableClassID" order="16" xlink:title="presentation:  bus-measurable to ehm-measurableClassID"/>
+        <!-- ehm-002 measurableClassDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#ehm-measurableClassDescription" xlink:label="ehm-measurableClassDescription" xlink:title="presentation: ehm-measurableClassDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-measurable" xlink:to="ehm-measurableClassDescription" order="17" xlink:title="presentation:  bus-measurable to ehm-measurableClassDescription"/>
+        <!-- ehm-003 costingMethodCode -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#ehm-costingMethodCode" xlink:label="ehm-costingMethodCode" xlink:title="presentation: ehm-costingMethodCode"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-measurable" xlink:to="ehm-costingMethodCode" order="18" xlink:title="presentation:  bus-measurable to ehm-costingMethodCode"/>
+        <!-- ehm-004 costingMethodDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#ehm-costingMethodDescription" xlink:label="ehm-costingMethodDescription" xlink:title="presentation: ehm-costingMethodDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-measurable" xlink:to="ehm-costingMethodDescription" order="19" xlink:title="presentation:  bus-measurable to ehm-costingMethodDescription"/>
+        <!-- ehm-005 geospatialCoordinate -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#ehm-geospatialCoordinate" xlink:label="ehm-geospatialCoordinate" xlink:title="presentation: ehm-geospatialCoordinate"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-measurable" xlink:to="ehm-geospatialCoordinate" order="20" xlink:title="presentation:  bus-measurable to ehm-geospatialCoordinate"/>
+        <!-- ehmG-01 serialLot -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#ehm-serialLot" xlink:label="ehm-serialLot" xlink:title="presentation: ehm-serialLot"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-measurable" xlink:to="ehm-serialLot" order="21" xlink:title="presentation:  bus-measurable to ehm-serialLot"/>
+        <!-- ehm-006 serialLotCode -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#ehm-serialLotCode" xlink:label="ehm-serialLotCode" xlink:title="presentation: ehm-serialLotCode"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ehm-serialLot" xlink:to="ehm-serialLotCode" order="1" xlink:title="presentation:  ehm-serialLot to ehm-serialLotCode"/>
+        <!-- ehm-007 serialLotDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#ehm-serialLotDescription" xlink:label="ehm-serialLotDescription" xlink:title="presentation: ehm-serialLotDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ehm-serialLot" xlink:to="ehm-serialLotDescription" order="2" xlink:title="presentation:  ehm-serialLot to ehm-serialLotDescription"/>
+        <!-- ehm-008 serialLotNumber -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#ehm-serialLotNumber" xlink:label="ehm-serialLotNumber" xlink:title="presentation: ehm-serialLotNumber"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ehm-serialLot" xlink:to="ehm-serialLotNumber" order="3" xlink:title="presentation:  ehm-serialLot to ehm-serialLotNumber"/>
+        <!-- ehm-009 nextSerialLotNumber -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#ehm-nextSerialLotNumber" xlink:label="ehm-nextSerialLotNumber" xlink:title="presentation: ehm-nextSerialLotNumber"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ehm-serialLot" xlink:to="ehm-nextSerialLotNumber" order="4" xlink:title="presentation:  ehm-serialLot to ehm-nextSerialLotNumber"/>
+        <!-- ehm-010 serialLotQuantity -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#ehm-serialLotQuantity" xlink:label="ehm-serialLotQuantity" xlink:title="presentation: ehm-serialLotQuantity"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ehm-serialLot" xlink:to="ehm-serialLotQuantity" order="5" xlink:title="presentation:  ehm-serialLot to ehm-serialLotQuantity"/>
+        <!-- ehm-011 serialLotOriginalQuantity -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#ehm-serialLotOriginalQuantity" xlink:label="ehm-serialLotOriginalQuantity" xlink:title="presentation: ehm-serialLotOriginalQuantity"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ehm-serialLot" xlink:to="ehm-serialLotOriginalQuantity" order="6" xlink:title="presentation:  ehm-serialLot to ehm-serialLotOriginalQuantity"/>
+        <!-- ehm-012 serialLotRemainingQuantity -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#ehm-serialLotRemainingQuantity" xlink:label="ehm-serialLotRemainingQuantity" xlink:title="presentation: ehm-serialLotRemainingQuantity"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ehm-serialLot" xlink:to="ehm-serialLotRemainingQuantity" order="7" xlink:title="presentation:  ehm-serialLot to ehm-serialLotRemainingQuantity"/>
+        <!-- ehm-013 serialLotOrigination -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#ehm-serialLotOrigination" xlink:label="ehm-serialLotOrigination" xlink:title="presentation: ehm-serialLotOrigination"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ehm-serialLot" xlink:to="ehm-serialLotOrigination" order="8" xlink:title="presentation:  ehm-serialLot to ehm-serialLotOrigination"/>
+        <!-- ehm-014 serialLotExpiration -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#ehm-serialLotExpiration" xlink:label="ehm-serialLotExpiration" xlink:title="presentation: ehm-serialLotExpiration"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ehm-serialLot" xlink:to="ehm-serialLotExpiration" order="9" xlink:title="presentation:  ehm-serialLot to ehm-serialLotExpiration"/>
+        <!-- ehm-015 serialLotManufacturer -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#ehm-serialLotManufacturer" xlink:label="ehm-serialLotManufacturer" xlink:title="presentation: ehm-serialLotManufacturer"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ehm-serialLot" xlink:to="ehm-serialLotManufacturer" order="10" xlink:title="presentation:  ehm-serialLot to ehm-serialLotManufacturer"/>
+        <!-- ehm-016 serialLotBatchDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#ehm-serialLotBatchDescription" xlink:label="ehm-serialLotBatchDescription" xlink:title="presentation: ehm-serialLotBatchDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ehm-serialLot" xlink:to="ehm-serialLotBatchDescription" order="11" xlink:title="presentation:  ehm-serialLot to ehm-serialLotBatchDescription"/>
+        <!-- ehm-017 serialLotWarrantyStartDate -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#ehm-serialLotWarrantyStartDate" xlink:label="ehm-serialLotWarrantyStartDate" xlink:title="presentation: ehm-serialLotWarrantyStartDate"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ehm-serialLot" xlink:to="ehm-serialLotWarrantyStartDate" order="12" xlink:title="presentation:  ehm-serialLot to ehm-serialLotWarrantyStartDate"/>
+        <!-- ehm-018 serialLotWarrantyEndDate -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#ehm-serialLotWarrantyEndDate" xlink:label="ehm-serialLotWarrantyEndDate" xlink:title="presentation: ehm-serialLotWarrantyEndDate"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ehm-serialLot" xlink:to="ehm-serialLotWarrantyEndDate" order="13" xlink:title="presentation:  ehm-serialLot to ehm-serialLotWarrantyEndDate"/>
+        <!-- ehm-019 serialLotWarrantyPeriod -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#ehm-serialLotWarrantyPeriod" xlink:label="ehm-serialLotWarrantyPeriod" xlink:title="presentation: ehm-serialLotWarrantyPeriod"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ehm-serialLot" xlink:to="ehm-serialLotWarrantyPeriod" order="14" xlink:title="presentation:  ehm-serialLot to ehm-serialLotWarrantyPeriod"/>
+        <!-- ehm-020 serialLotWarrantyPeriodUnit -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#ehm-serialLotWarrantyPeriodUnit" xlink:label="ehm-serialLotWarrantyPeriodUnit" xlink:title="presentation: ehm-serialLotWarrantyPeriodUnit"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ehm-serialLot" xlink:to="ehm-serialLotWarrantyPeriodUnit" order="15" xlink:title="presentation:  ehm-serialLot to ehm-serialLotWarrantyPeriodUnit"/>
+        <!-- ehm-021 serialLotWarrantyVendor -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#ehm-serialLotWarrantyVendor" xlink:label="ehm-serialLotWarrantyVendor" xlink:title="presentation: ehm-serialLotWarrantyVendor"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ehm-serialLot" xlink:to="ehm-serialLotWarrantyVendor" order="16" xlink:title="presentation:  ehm-serialLot to ehm-serialLotWarrantyVendor"/>
+        <!-- ehm-022 serialLotWarrantyContract -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#ehm-serialLotWarrantyContract" xlink:label="ehm-serialLotWarrantyContract" xlink:title="presentation: ehm-serialLotWarrantyContract"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ehm-serialLot" xlink:to="ehm-serialLotWarrantyContract" order="17" xlink:title="presentation:  ehm-serialLot to ehm-serialLotWarrantyContract"/>
+        <!-- ehm-023 serialLotComment -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#ehm-serialLotComment" xlink:label="ehm-serialLotComment" xlink:title="presentation: ehm-serialLotComment"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="ehm-serialLot" xlink:to="ehm-serialLotComment" order="18" xlink:title="presentation:  ehm-serialLot to ehm-serialLotComment"/>
+        <!-- busG-22 jobInfo -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-jobInfo" xlink:label="bus-jobInfo" xlink:title="presentation: bus-jobInfo"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="bus-jobInfo" order="48" xlink:title="presentation:  cor-entryDetail to bus-jobInfo"/>
+        <!-- usk-011 jobCode -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#usk-jobCode" xlink:label="usk-jobCode" xlink:title="presentation: usk-jobCode"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-jobInfo" xlink:to="usk-jobCode" order="1" xlink:title="presentation:  bus-jobInfo to usk-jobCode"/>
+        <!-- usk-012 jobDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#usk-jobDescription" xlink:label="usk-jobDescription" xlink:title="presentation: usk-jobDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-jobInfo" xlink:to="usk-jobDescription" order="2" xlink:title="presentation:  bus-jobInfo to usk-jobDescription"/>
+        <!-- usk-013 jobPhaseCode -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#usk-jobPhaseCode" xlink:label="usk-jobPhaseCode" xlink:title="presentation: usk-jobPhaseCode"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-jobInfo" xlink:to="usk-jobPhaseCode" order="3" xlink:title="presentation:  bus-jobInfo to usk-jobPhaseCode"/>
+        <!-- usk-014 jobPhaseDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#usk-jobPhaseDescription" xlink:label="usk-jobPhaseDescription" xlink:title="presentation: usk-jobPhaseDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-jobInfo" xlink:to="usk-jobPhaseDescription" order="4" xlink:title="presentation:  bus-jobInfo to usk-jobPhaseDescription"/>
+        <!-- usk-015 jobActive -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#usk-jobActive" xlink:label="usk-jobActive" xlink:title="presentation: usk-jobActive"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-jobInfo" xlink:to="usk-jobActive" order="5" xlink:title="presentation:  bus-jobInfo to usk-jobActive"/>
+        <!-- busG-23 depreciationMortgage -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-depreciationMortgage" xlink:label="bus-depreciationMortgage" xlink:title="presentation: bus-depreciationMortgage"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="bus-depreciationMortgage" order="49" xlink:title="presentation:  cor-entryDetail to bus-depreciationMortgage"/>
+        <!-- bus-151 dmJurisdiction -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-dmJurisdiction" xlink:label="bus-dmJurisdiction" xlink:title="presentation: bus-dmJurisdiction"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-depreciationMortgage" xlink:to="bus-dmJurisdiction" order="1" xlink:title="presentation:  bus-depreciationMortgage to bus-dmJurisdiction"/>
+        <!-- bus-152 dmMethodType -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-dmMethodType" xlink:label="bus-dmMethodType" xlink:title="presentation: bus-dmMethodType"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-depreciationMortgage" xlink:to="bus-dmMethodType" order="2" xlink:title="presentation:  bus-depreciationMortgage to bus-dmMethodType"/>
+        <!-- bus-153 dmLifeLength -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-dmLifeLength" xlink:label="bus-dmLifeLength" xlink:title="presentation: bus-dmLifeLength"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-depreciationMortgage" xlink:to="bus-dmLifeLength" order="3" xlink:title="presentation:  bus-depreciationMortgage to bus-dmLifeLength"/>
+        <!-- bus-154 dmComment -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-dmComment" xlink:label="bus-dmComment" xlink:title="presentation: bus-dmComment"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-depreciationMortgage" xlink:to="bus-dmComment" order="4" xlink:title="presentation:  bus-depreciationMortgage to bus-dmComment"/>
+        <!-- bus-155 dmStartDate -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-dmStartDate" xlink:label="bus-dmStartDate" xlink:title="presentation: bus-dmStartDate"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-depreciationMortgage" xlink:to="bus-dmStartDate" order="5" xlink:title="presentation:  bus-depreciationMortgage to bus-dmStartDate"/>
+        <!-- bus-156 dmEndDate -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-dmEndDate" xlink:label="bus-dmEndDate" xlink:title="presentation: bus-dmEndDate"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-depreciationMortgage" xlink:to="bus-dmEndDate" order="6" xlink:title="presentation:  bus-depreciationMortgage to bus-dmEndDate"/>
+        <!-- bus-157 dmAmount -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#bus-dmAmount" xlink:label="bus-dmAmount" xlink:title="presentation: bus-dmAmount"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="bus-depreciationMortgage" xlink:to="bus-dmAmount" order="7" xlink:title="presentation:  bus-depreciationMortgage to bus-dmAmount"/>
+        <!-- corG-19 taxes -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-taxes" xlink:label="cor-taxes" xlink:title="presentation: cor-taxes"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="cor-taxes" order="50" xlink:title="presentation:  cor-entryDetail to cor-taxes"/>
+        <!-- cor-092 taxAuthority -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-taxAuthority" xlink:label="cor-taxAuthority" xlink:title="presentation: cor-taxAuthority"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-taxes" xlink:to="cor-taxAuthority" order="1" xlink:title="presentation:  cor-taxes to cor-taxAuthority"/>
+        <!-- cor-093 taxTableCode -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-taxTableCode" xlink:label="cor-taxTableCode" xlink:title="presentation: cor-taxTableCode"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-taxes" xlink:to="cor-taxTableCode" order="2" xlink:title="presentation:  cor-taxes to cor-taxTableCode"/>
+        <!-- cor-094 taxDescription -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-taxDescription" xlink:label="cor-taxDescription" xlink:title="presentation: cor-taxDescription"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-taxes" xlink:to="cor-taxDescription" order="3" xlink:title="presentation:  cor-taxes to cor-taxDescription"/>
+        <!-- cor-095 taxAmount -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-taxAmount" xlink:label="cor-taxAmount" xlink:title="presentation: cor-taxAmount"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-taxes" xlink:to="cor-taxAmount" order="4" xlink:title="presentation:  cor-taxes to cor-taxAmount"/>
+        <!-- cor-096 taxBasis -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-taxBasis" xlink:label="cor-taxBasis" xlink:title="presentation: cor-taxBasis"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-taxes" xlink:to="cor-taxBasis" order="5" xlink:title="presentation:  cor-taxes to cor-taxBasis"/>
+        <!-- cor-097 taxExchangeRate -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-taxExchangeRate" xlink:label="cor-taxExchangeRate" xlink:title="presentation: cor-taxExchangeRate"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-taxes" xlink:to="cor-taxExchangeRate" order="6" xlink:title="presentation:  cor-taxes to cor-taxExchangeRate"/>
+        <!-- cor-098 taxPercentageRate -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-taxPercentageRate" xlink:label="cor-taxPercentageRate" xlink:title="presentation: cor-taxPercentageRate"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-taxes" xlink:to="cor-taxPercentageRate" order="7" xlink:title="presentation:  cor-taxes to cor-taxPercentageRate"/>
+        <!-- cor-099 taxCode -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-taxCode" xlink:label="cor-taxCode" xlink:title="presentation: cor-taxCode"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-taxes" xlink:to="cor-taxCode" order="8" xlink:title="presentation:  cor-taxes to cor-taxCode"/>
+        <!-- cor-100 taxCommentExemption -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#cor-taxCommentExemption" xlink:label="cor-taxCommentExemption" xlink:title="presentation: cor-taxCommentExemption"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-taxes" xlink:to="cor-taxCommentExemption" order="9" xlink:title="presentation:  cor-taxes to cor-taxCommentExemption"/>
+        <!-- muc-032 taxAmountForeignCurrency -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-taxAmountForeignCurrency" xlink:label="muc-taxAmountForeignCurrency" xlink:title="presentation: muc-taxAmountForeignCurrency"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-taxes" xlink:to="muc-taxAmountForeignCurrency" order="10" xlink:title="presentation:  cor-taxes to muc-taxAmountForeignCurrency"/>
+        <!-- muc-033 taxCurrency -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-taxCurrency" xlink:label="muc-taxCurrency" xlink:title="presentation: muc-taxCurrency"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-taxes" xlink:to="muc-taxCurrency" order="11" xlink:title="presentation:  cor-taxes to muc-taxCurrency"/>
+        <!-- muc-034 taxExchangeRateDate -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-taxExchangeRateDate" xlink:label="muc-taxExchangeRateDate" xlink:title="presentation: muc-taxExchangeRateDate"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-taxes" xlink:to="muc-taxExchangeRateDate" order="12" xlink:title="presentation:  cor-taxes to muc-taxExchangeRateDate"/>
+        <!-- muc-035 taxExchangeRate -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-taxExchangeRate" xlink:label="muc-taxExchangeRate" xlink:title="presentation: muc-taxExchangeRate"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-taxes" xlink:to="muc-taxExchangeRate" order="13" xlink:title="presentation:  cor-taxes to muc-taxExchangeRate"/>
+        <!-- muc-036 taxExchangeRateSource -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-taxExchangeRateSource" xlink:label="muc-taxExchangeRateSource" xlink:title="presentation: muc-taxExchangeRateSource"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-taxes" xlink:to="muc-taxExchangeRateSource" order="14" xlink:title="presentation:  cor-taxes to muc-taxExchangeRateSource"/>
+        <!-- muc-037 taxExchangeRateType -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-taxExchangeRateType" xlink:label="muc-taxExchangeRateType" xlink:title="presentation: muc-taxExchangeRateType"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-taxes" xlink:to="muc-taxExchangeRateType" order="15" xlink:title="presentation:  cor-taxes to muc-taxExchangeRateType"/>
+        <!-- muc-038 taxExchangeRateComment -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-taxExchangeRateComment" xlink:label="muc-taxExchangeRateComment" xlink:title="presentation: muc-taxExchangeRateComment"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-taxes" xlink:to="muc-taxExchangeRateComment" order="16" xlink:title="presentation:  cor-taxes to muc-taxExchangeRateComment"/>
+        <!-- muc-039 taxAmountTriangulationCurrency -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-taxAmountTriangulationCurrency" xlink:label="muc-taxAmountTriangulationCurrency" xlink:title="presentation: muc-taxAmountTriangulationCurrency"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-taxes" xlink:to="muc-taxAmountTriangulationCurrency" order="17" xlink:title="presentation:  cor-taxes to muc-taxAmountTriangulationCurrency"/>
+        <!-- muc-040 taxTriangulationCurrency -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-taxTriangulationCurrency" xlink:label="muc-taxTriangulationCurrency" xlink:title="presentation: muc-taxTriangulationCurrency"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-taxes" xlink:to="muc-taxTriangulationCurrency" order="18" xlink:title="presentation:  cor-taxes to muc-taxTriangulationCurrency"/>
+        <!-- muc-041 taxTriangulationExchangeRate -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-taxTriangulationExchangeRate" xlink:label="muc-taxTriangulationExchangeRate" xlink:title="presentation: muc-taxTriangulationExchangeRate"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-taxes" xlink:to="muc-taxTriangulationExchangeRate" order="19" xlink:title="presentation:  cor-taxes to muc-taxTriangulationExchangeRate"/>
+        <!-- muc-042 taxTriangulationExchangeRateSource -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-taxTriangulationExchangeRateSource" xlink:label="muc-taxTriangulationExchangeRateSource" xlink:title="presentation: muc-taxTriangulationExchangeRateSource"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-taxes" xlink:to="muc-taxTriangulationExchangeRateSource" order="20" xlink:title="presentation:  cor-taxes to muc-taxTriangulationExchangeRateSource"/>
+        <!-- muc-043 taxTriangulationExchangeRateType -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-taxTriangulationExchangeRateType" xlink:label="muc-taxTriangulationExchangeRateType" xlink:title="presentation: muc-taxTriangulationExchangeRateType"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-taxes" xlink:to="muc-taxTriangulationExchangeRateType" order="21" xlink:title="presentation:  cor-taxes to muc-taxTriangulationExchangeRateType"/>
+        <!-- muc-044 taxForeignTriangulationExchangeRate -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-taxForeignTriangulationExchangeRate" xlink:label="muc-taxForeignTriangulationExchangeRate" xlink:title="presentation: muc-taxForeignTriangulationExchangeRate"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-taxes" xlink:to="muc-taxForeignTriangulationExchangeRate" order="22" xlink:title="presentation:  cor-taxes to muc-taxForeignTriangulationExchangeRate"/>
+        <!-- muc-045 taxForeignTriangulationExchangeRateSource -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-taxForeignTriangulationExchangeRateSource" xlink:label="muc-taxForeignTriangulationExchangeRateSource" xlink:title="presentation: muc-taxForeignTriangulationExchangeRateSource"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-taxes" xlink:to="muc-taxForeignTriangulationExchangeRateSource" order="23" xlink:title="presentation:  cor-taxes to muc-taxForeignTriangulationExchangeRateSource"/>
+        <!-- muc-046 taxForeignTriangulationExchangeRateType -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#muc-taxForeignTriangulationExchangeRateType" xlink:label="muc-taxForeignTriangulationExchangeRateType" xlink:title="presentation: muc-taxForeignTriangulationExchangeRateType"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-taxes" xlink:to="muc-taxForeignTriangulationExchangeRateType" order="24" xlink:title="presentation:  cor-taxes to muc-taxForeignTriangulationExchangeRateType"/>
+        <!-- taf-001 tickingField -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#taf-tickingField" xlink:label="taf-tickingField" xlink:title="presentation: taf-tickingField"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="taf-tickingField" order="51" xlink:title="presentation:  cor-entryDetail to taf-tickingField"/>
+        <!-- taf-002 documentRemainingBalance -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#taf-documentRemainingBalance" xlink:label="taf-documentRemainingBalance" xlink:title="presentation: taf-documentRemainingBalance"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="taf-documentRemainingBalance" order="52" xlink:title="presentation:  cor-entryDetail to taf-documentRemainingBalance"/>
+        <!-- taf-003 uniqueConsignmentReference -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#taf-uniqueConsignmentReference" xlink:label="taf-uniqueConsignmentReference" xlink:title="presentation: taf-uniqueConsignmentReference"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="taf-uniqueConsignmentReference" order="53" xlink:title="presentation:  cor-entryDetail to taf-uniqueConsignmentReference"/>
+        <!-- tafG-01 originatingDocumentStructure -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#taf-originatingDocumentStructure" xlink:label="taf-originatingDocumentStructure" xlink:title="presentation: taf-originatingDocumentStructure"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="cor-entryDetail" xlink:to="taf-originatingDocumentStructure" order="54" xlink:title="presentation:  cor-entryDetail to taf-originatingDocumentStructure"/>
+        <!-- taf-004 originatingDocumentType -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#taf-originatingDocumentType" xlink:label="taf-originatingDocumentType" xlink:title="presentation: taf-originatingDocumentType"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="taf-originatingDocumentStructure" xlink:to="taf-originatingDocumentType" order="1" xlink:title="presentation:  taf-originatingDocumentStructure to taf-originatingDocumentType"/>
+        <!-- taf-005 originatingDocumentNumber -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#taf-originatingDocumentNumber" xlink:label="taf-originatingDocumentNumber" xlink:title="presentation: taf-originatingDocumentNumber"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="taf-originatingDocumentStructure" xlink:to="taf-originatingDocumentNumber" order="2" xlink:title="presentation:  taf-originatingDocumentStructure to taf-originatingDocumentNumber"/>
+        <!-- taf-006 originatingDocumentDate -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#taf-originatingDocumentDate" xlink:label="taf-originatingDocumentDate" xlink:title="presentation: taf-originatingDocumentDate"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="taf-originatingDocumentStructure" xlink:to="taf-originatingDocumentDate" order="3" xlink:title="presentation:  taf-originatingDocumentStructure to taf-originatingDocumentDate"/>
+        <!-- taf-007 originatingDocumentIdentifierType -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#taf-originatingDocumentIdentifierType" xlink:label="taf-originatingDocumentIdentifierType" xlink:title="presentation: taf-originatingDocumentIdentifierType"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="taf-originatingDocumentStructure" xlink:to="taf-originatingDocumentIdentifierType" order="4" xlink:title="presentation:  taf-originatingDocumentStructure to taf-originatingDocumentIdentifierType"/>
+        <!-- taf-008 originatingDocumentIdentifierCode -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#taf-originatingDocumentIdentifierCode" xlink:label="taf-originatingDocumentIdentifierCode" xlink:title="presentation: taf-originatingDocumentIdentifierCode"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="taf-originatingDocumentStructure" xlink:to="taf-originatingDocumentIdentifierCode" order="5" xlink:title="presentation:  taf-originatingDocumentStructure to taf-originatingDocumentIdentifierCode"/>
+        <!-- taf-009 originatingDocumentIdentifierTaxCode -->
+        <link:loc xlink:type="locator" xlink:href="gl-cor.xsd#taf-originatingDocumentIdentifierTaxCode" xlink:label="taf-originatingDocumentIdentifierTaxCode" xlink:title="presentation: taf-originatingDocumentIdentifierTaxCode"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="taf-originatingDocumentStructure" xlink:to="taf-originatingDocumentIdentifierTaxCode" order="6" xlink:title="presentation:  taf-originatingDocumentStructure to taf-originatingDocumentIdentifierTaxCode"/>
+  </link:presentationLink>
+</link:linkbase>

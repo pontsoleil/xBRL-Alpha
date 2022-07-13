@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited by Nobuyuki SAMBUICHI 2022 -->
+<xbrl 
+  xmlns:eg="http://example.com/dimensions" 
+  xmlns="http://www.xbrl.org/2003/instance" 
+  xmlns:link="http://www.xbrl.org/2003/linkbase" 
+  xmlns:iso4217="http://www.xbrl.org/2003/iso4217" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns:xbrldi="http://xbrl.org/2006/xbrldi" 
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <link:schemaRef xlink:type="simple" xlink:href="example11.xsd" />
+
+  <unit id="pure">
+    <measure>pure</measure>
+  </unit>
+  <unit id="JPY">
+    <measure>iso4217:JPY</measure>
+  </unit>
+ 
+  <context id="ctx1">
+    <entity>
+      <identifier scheme="http://example.com/dimensions">12345678</identifier>
+    </entity>
+    <period>
+      <startDate>2023-01-01</startDate>
+      <endDate>2023-12-31</endDate>
+    </period>
+    <scenario>
+      <xbrldi:typedMember dimension="eg:dimOne">
+        <eg:_v>AQZ</eg:_v>
+      </xbrldi:typedMember>
+    </scenario>
+  </context>
+  
+  <context id="ctx2">
+    <entity>
+      <identifier scheme="http://example.com/dimensions">12345678</identifier>
+    </entity>
+    <period>
+      <startDate>2023-01-01</startDate>
+      <endDate>2023-12-31</endDate>
+    </period>
+    <scenario>
+      <xbrldi:typedMember dimension="eg:dimTwo">
+        <eg:_v>456</eg:_v>
+      </xbrldi:typedMember>
+    </scenario>
+  </context>
+
+  <context id="ctx3">
+    <entity>
+      <identifier scheme="http://example.com/dimensions">12345678</identifier>
+    </entity>
+    <period>
+      <startDate>2023-01-01</startDate>
+      <endDate>2023-12-31</endDate>
+    </period>
+    <scenario>
+      <xbrldi:typedMember dimension="eg:dimThree">
+        <eg:_v>abc-47</eg:_v>
+      </xbrldi:typedMember>
+    </scenario>
+  </context>
+
+  <eg:p_PrimaryParent unitRef="JPY" decimals="0" contextRef="ctx1">123</eg:p_PrimaryParent>
+  
+  <eg:p_FirstChild unitRef="JPY" decimals="0" contextRef="ctx1">456</eg:p_FirstChild>
+  <eg:p_FirstChild unitRef="JPY" decimals="0" contextRef="ctx2">456</eg:p_FirstChild> 
+  
+  <eg:p_SecondChild unitRef="JPY" decimals="0" contextRef="ctx1">789</eg:p_SecondChild>
+  <eg:p_SecondChild unitRef="JPY" decimals="0" contextRef="ctx2">789</eg:p_SecondChild>
+  <eg:p_SecondChild unitRef="JPY" decimals="0" contextRef="ctx3">789</eg:p_SecondChild>
+  
+  <eg:p_ThirdChild unitRef="JPY" decimals="0" contextRef="ctx1">654</eg:p_ThirdChild>
+  <eg:p_ThirdChild unitRef="JPY" decimals="0" contextRef="ctx2">654</eg:p_ThirdChild>
+  <eg:p_ThirdChild unitRef="JPY" decimals="0" contextRef="ctx3">654</eg:p_ThirdChild>
+
+</xbrl>

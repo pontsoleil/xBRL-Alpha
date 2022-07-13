@@ -1,0 +1,10 @@
+[xbrlxe:unexpectedContextContent] Contexts not used for dimensions must not contain content in segment: ctx_A_1, ctx_C_2 - example12.xml 13, 27
+validated in 0.02 secs
+loaded in 0.03 secs
+no relationships for Presentation
+no relationships for Calculation
+views 0.06 secs
+[xbrldie:PrimaryItemDimensionallyInvalidError] Fact eg:p_CostOfGoods context ctx_A_1 dimensionally not valid - example12.xml 43
+[xbrldie:PrimaryItemDimensionallyInvalidError] Fact eg:p_ImportedGoods context ctx_A_1 dimensionally not valid - example12.xml 44
+[xbrldie:PrimaryItemDimensionallyInvalidError] Fact eg:p_ImportedGoods context ctx_C_2 dimensionally not valid - example12.xml 49
+validated in 0.04 secs

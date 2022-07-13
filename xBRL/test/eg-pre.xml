@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  (c) 2022 XBRL Japan  inc. -->
+<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <link:roleRef roleURI="http://example.com/presentation" xlink:type="simple" xlink:href="eg.xsd#presentation"/>
+    <link:presentationLink xlink:type="extended" xlink:role="http://example.com/presentation">
+        <link:loc xlink:type="locator" xlink:href="eg.xsd#p_PrimaryParent" xlink:label="p_PrimaryParent" xlink:title="presentation: p_PrimaryParent"/>
+        <link:loc xlink:type="locator" xlink:href="eg.xsd#p_FirstChild" xlink:label="p_FirstChild" xlink:title="presentation: p_FirstChild"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="p_PrimaryParent" xlink:to="p_FirstChild" order="1.0" xlink:title="presentation: p_PrimaryParent to p_FirstChild"/>
+        <link:loc xlink:type="locator" xlink:href="eg.xsd#p_SecondChild" xlink:label="p_SecondChild" xlink:title="presentation: p_SecondChild"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="p_PrimaryParent" xlink:to="p_SecondChild" order="1.0" xlink:title="presentation: p_PrimaryParent to p_SecondChild"/>
+        <link:loc xlink:type="locator" xlink:href="eg.xsd#p_ThirdChild" xlink:label="p_ThirdChild" xlink:title="presentation: p_ThirdChild"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="p_PrimaryParent" xlink:to="p_ThirdChild" order="1.0" xlink:title="presentation: p_PrimaryParent to p_ThirdChild"/>
+        <link:loc xlink:type="locator" xlink:href="eg.xsd#p_FourthChild" xlink:label="p_FourthChild" xlink:title="presentation: p_FourthChild"/>
+        <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="p_PrimaryParent" xlink:to="p_FourthChild" order="1.0" xlink:title="presentation: p_PrimaryParent to p_FourthChild"/>    
+    </link:presentationLink>
+</link:linkbase>

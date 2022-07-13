@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited by Nobuyuki SAMBUICHI 2022 -->
+<xbrl 
+    xmlns:eg="http://example.com/dimensions" 
+    xmlns:link="http://www.xbrl.org/2003/linkbase" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:iso4217="http://www.xbrl.org/2003/iso4217" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" 
+    xmlns:xbrldi="http://xbrl.org/2006/xbrldi" 
+    xmlns="http://www.xbrl.org/2003/instance">
+    <link:schemaRef xlink:type="simple" xlink:href="example12.xsd" />
+
+    <unit id="pure">
+        <measure>pure</measure>
+    </unit>
+    <unit id="JPY">
+        <measure>iso4217:JPY</measure>
+    </unit>
+
+    <context id="ctx_A_1">
+        <entity>
+            <identifier scheme="http://example.com/dimensions">12345678</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="eg:hc_RegionDim">eg:Region_A</xbrldi:explicitMember>
+                <xbrldi:explicitMember dimension="eg:hc_ProdDim">eg:Prod_1</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2023-01-01</startDate>
+            <endDate>2023-12-31</endDate>
+        </period>
+    </context>
+
+    <context id="ctx_C_2">
+        <entity>
+            <identifier scheme="http://example.com/dimensions">12345678</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="eg:hc_RegionDim">eg:Region_C</xbrldi:explicitMember>
+                <xbrldi:explicitMember dimension="eg:hc_ProdDim">eg:Prod_2</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <startDate>2023-01-01</startDate>
+            <endDate>2023-12-31</endDate>
+        </period>
+    </context>
+
+    <eg:p_GrossProfit decimals="0" contextRef="ctx_A_1" unitRef="JPY">68</eg:p_GrossProfit>
+    <eg:p_Sales decimals="0" contextRef="ctx_A_1" unitRef="JPY">210</eg:p_Sales>
+    <eg:p_CostOfGoods decimals="0" contextRef="ctx_A_1" unitRef="JPY">142</eg:p_CostOfGoods>
+    <eg:p_ImportedGoods decimals="0" contextRef="ctx_A_1" unitRef="JPY">42</eg:p_ImportedGoods>
+
+    <eg:p_GrossProfit decimals="0" contextRef="ctx_C_2" unitRef="JPY">68</eg:p_GrossProfit>
+    <eg:p_Sales decimals="0" contextRef="ctx_C_2" unitRef="JPY">210</eg:p_Sales>
+    <eg:p_CostOfGoods decimals="0" contextRef="ctx_C_2" unitRef="JPY">142</eg:p_CostOfGoods>
+    <eg:p_ImportedGoods decimals="0" contextRef="ctx_C_2" unitRef="JPY">42</eg:p_ImportedGoods>
+
+</xbrl>
