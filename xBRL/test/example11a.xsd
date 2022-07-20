@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c) 2022 XBRL Japan  inc. -->
+<schema
+	targetNamespace="http://example.com/dimensions" 
+	elementFormDefault="qualified" 
+	xmlns="http://www.w3.org/2001/XMLSchema" 
+	xmlns:xbrli="http://www.xbrl.org/2003/instance" 
+	xmlns:link="http://www.xbrl.org/2003/linkbase"
+	xmlns:altovaext="http://www.altova.com/xslt-extensions" 
+	xmlns:altova-xfi="http://www.altova.com/xslt-extensions/xbrl" 
+	xmlns:model="http://www.eurofiling.info/xbrl/ext/model" 
+	xmlns:xlink="http://www.w3.org/1999/xlink" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:pint="http://www.xbrl.jp/eipa/peppol/0.9" 
+	xmlns:xl="http://www.xbrl.org/2003/XLink" 
+	xmlns:xfi="http://www.xbrl.org/2008/function/instance" 
+	xmlns:xff="http://www.xbrl.org/2010/function/formula" 
+	xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" 
+	xmlns:num="http://www.xbrl.org/dtr/type/numeric" 
+	xmlns:xbrldt="http://xbrl.org/2005/xbrldt" 
+	xmlns:ca="http://xbrl.org/2008/assertion/consistency" 
+	xmlns:ea="http://xbrl.org/2008/assertion/existence" 
+	xmlns:va="http://xbrl.org/2008/assertion/value" 
+	xmlns:bf="http://xbrl.org/2008/filter/boolean" 
+	xmlns:cf="http://xbrl.org/2008/filter/concept" 
+	xmlns:df="http://xbrl.org/2008/filter/dimension" 
+	xmlns:ef="http://xbrl.org/2008/filter/entity" 
+	xmlns:gf="http://xbrl.org/2008/filter/general" 
+	xmlns:mf="http://xbrl.org/2008/filter/match" 
+	xmlns:pf="http://xbrl.org/2008/filter/period" 
+	xmlns:rf="http://xbrl.org/2008/filter/relative" 
+	xmlns:ssf="http://xbrl.org/2008/filter/segment-scenario" 
+	xmlns:tf="http://xbrl.org/2008/filter/tuple" 
+	xmlns:uf="http://xbrl.org/2008/filter/unit" 
+	xmlns:vf="http://xbrl.org/2008/filter/value" 
+	xmlns:formula="http://xbrl.org/2008/formula" 
+	xmlns:gen="http://xbrl.org/2008/generic" 
+	xmlns:label="http://xbrl.org/2008/label" 
+	xmlns:reference="http://xbrl.org/2008/reference" 
+	xmlns:validation="http://xbrl.org/2008/validation" 
+	xmlns:variable="http://xbrl.org/2008/variable" 
+	xmlns:msg="http://xbrl.org/2010/message" 
+	xmlns:valm="http://xbrl.org/2010/message/validation"
+	xmlns:table="http://xbrl.org/2014/table" 
+	xmlns:sev="http://xbrl.org/2016/assertion-severity">
+	<annotation>
+		<appinfo>
+			<link:linkbaseRef xlink:type="simple" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="example11a-def.xml"/>
+			<!-- 
+				 role type
+			-->
+			<link:roleType id="link1" roleURI="http://example.com/role/link1">
+				<link:definition>link1</link:definition>
+				<link:usedOn>link:definitionLink</link:usedOn>
+			</link:roleType>
+			<link:roleType id="link2" roleURI="http://example.com/role/link2">
+				<link:definition>link2</link:definition>
+				<link:usedOn>link:definitionLink</link:usedOn>
+			</link:roleType>
+			<link:roleType id="link3" roleURI="http://example.com/role/link3">
+				<link:definition>link3</link:definition>
+			<link:usedOn>link:definitionLink</link:usedOn>
+		</link:roleType>
+		</appinfo>
+	</annotation>
+	<import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+	<import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+	<import namespace="http://www.xbrl.org/dtr/type/numeric" schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd"/>
+	<import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd"/>
+	<!-- member type -->
+	<element name="_v" id="_v">
+		<simpleType>
+			<restriction base="string"/>
+		</simpleType>
+	</element>
+	<!-- Hypercube -->
+	<element name="hc_One" id="hc_One" substitutionGroup="xbrldt:hypercubeItem" nillable="true" abstract="true" xbrli:periodType="duration"/>
+	<element name="hc_Two" id="hc_Two" substitutionGroup="xbrldt:hypercubeItem" nillable="true" abstract="true" xbrli:periodType="duration"/>
+	<element name="hc_Three" id="hc_Three" substitutionGroup="xbrldt:hypercubeItem" nillable="true" abstract="true" xbrli:periodType="duration"/>
+	<!-- Dimension -->
+	<element name="dimOne" id="dimOne" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" nillable="true" abstract="true" xbrli:periodType="duration" xbrldt:typedDomainRef="#_v"/>
+	<element name="dimTwo" id="dimTwo" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" nillable="true" abstract="true" xbrli:periodType="duration" xbrldt:typedDomainRef="#_v"/>
+	<element name="dimThree" id="dimThree" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" nillable="true" abstract="true" xbrli:periodType="duration" xbrldt:typedDomainRef="#_v"/>
+	<!-- item -->
+	<element name="p_PrimaryParent" id="p_PrimaryParent" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="false" abstract="false" xbrli:periodType="duration"/>
+	<element name="p_FirstChild" id="p_FirstChild" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="false" abstract="false" xbrli:periodType="duration"/>
+	<element name="p_SecondChild" id="p_SecondChild" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="false" abstract="false" xbrli:periodType="duration"/>
+	<element name="p_ThirdChild" id="p_ThirdChild" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="false" abstract="false" xbrli:periodType="duration"/>
+</schema>

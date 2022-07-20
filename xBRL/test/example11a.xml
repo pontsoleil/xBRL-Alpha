@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited by Nobuyuki SAMBUICHI 2022 -->
+<xbrl 
+    xmlns:eg="http://example.com/dimensions" 
+    xmlns:link="http://www.xbrl.org/2003/linkbase" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:iso4217="http://www.xbrl.org/2003/iso4217" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" 
+    xmlns:xbrldi="http://xbrl.org/2006/xbrldi" 
+    xmlns="http://www.xbrl.org/2003/instance">
+    <link:schemaRef xlink:type="simple" xlink:href="example11a.xsd" />
+    <context id="ctx1">
+        <entity>
+            <identifier scheme="http://example.com/dimensions">12345678</identifier>
+        </entity>
+        <period>
+            <startDate>2023-01-01</startDate>
+            <endDate>2023-12-31</endDate>
+        </period>
+        <scenario>
+            <xbrldi:typedMember dimension="eg:dimOne">
+                <eg:_v>AQZ</eg:_v>
+            </xbrldi:typedMember>
+        </scenario>
+    </context>
+    <context id="ctx2">
+        <entity>
+            <identifier scheme="http://example.com/dimensions">12345678</identifier>
+        </entity>
+        <period>
+            <startDate>2023-01-01</startDate>
+            <endDate>2023-12-31</endDate>
+        </period>
+        <scenario>
+            <xbrldi:typedMember dimension="eg:dimTwo">
+                <eg:_v>456</eg:_v>
+            </xbrldi:typedMember>
+        </scenario>
+    </context>
+    <context id="ctx3">
+        <entity>
+            <identifier scheme="http://example.com/dimensions">12345678</identifier>
+        </entity>
+        <period>
+            <startDate>2023-01-01</startDate>
+            <endDate>2023-12-31</endDate>
+        </period>
+        <scenario>
+            <xbrldi:typedMember dimension="eg:dimThree">
+                <eg:_v>abc-47</eg:_v>
+            </xbrldi:typedMember>
+        </scenario>
+    </context>
+    <unit id="pure">
+        <measure>pure</measure>
+    </unit>
+    <unit id="JPY">
+        <measure>iso4217:JPY</measure>
+    </unit>
+    <eg:p_PrimaryParent decimals="0" contextRef="ctx1" unitRef="JPY">123</eg:p_PrimaryParent>
+
+    <eg:p_FirstChild decimals="0" contextRef="ctx1" unitRef="JPY">456</eg:p_FirstChild>
+    <eg:p_FirstChild decimals="0" contextRef="ctx2" unitRef="JPY">456</eg:p_FirstChild>
+
+    <eg:p_SecondChild decimals="0" contextRef="ctx1" unitRef="JPY">789</eg:p_SecondChild>
+    <eg:p_SecondChild decimals="0" contextRef="ctx2" unitRef="JPY">789</eg:p_SecondChild>
+    <eg:p_SecondChild decimals="0" contextRef="ctx3" unitRef="JPY">789</eg:p_SecondChild>
+
+    <eg:p_ThirdChild decimals="0" contextRef="ctx1" unitRef="JPY">654</eg:p_ThirdChild>
+    <eg:p_ThirdChild decimals="0" contextRef="ctx2" unitRef="JPY">654</eg:p_ThirdChild>
+    <eg:p_ThirdChild decimals="0" contextRef="ctx3" unitRef="JPY">654</eg:p_ThirdChild>
+</xbrl>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--(c) 2022 XBRL Japan  inc. -->
+<link:linkbase 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:link="http://www.xbrl.org/2003/linkbase" 
+	xmlns:xbrldt="http://xbrl.org/2005/xbrldt" 
+	xmlns:xlink="http://www.w3.org/1999/xlink" 
+	xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+    <link:roleRef roleURI="http://example.com/role/link" xlink:type="simple" xlink:href="eg.xsd#link"/>
+    <link:roleRef roleURI="http://example.com/role/link1" xlink:type="simple" xlink:href="eg.xsd#link1"/>
+    <link:roleRef roleURI="http://example.com/role/link2" xlink:type="simple" xlink:href="eg.xsd#link2"/>
+    <link:roleRef roleURI="http://example.com/role/link3" xlink:type="simple" xlink:href="eg.xsd#link3"/>
+    <link:arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/all" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#all"/>
+    <link:arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/domain-member" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member"/>
+    <link:arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension"/>
+    <link:arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/dimension-domain" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain"/>
+
+    <link:definitionLink xlink:type="extended" xlink:role="http://example.com/role/link" id="link">
+        <!-- all -->
+        <link:loc xlink:type="locator" xlink:href="eg.xsd#hc_Zero" xlink:label="hc_Zero" xlink:title="hc_Zero"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="FourthChild" xlink:to="hc_Zero" xlink:title="definition: FourthChild to hc_Zero" order="1.0" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
+        <!-- hypercube-dimension -->
+        <link:loc xlink:type="locator" xlink:href="eg.xsd#dimProhibited" xlink:label="dimProhibited" xlink:title="dimProhibited"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="hc_Zero" xlink:to="dimProhibited" xlink:title="definition: dimProhibited to dimOne" order="1.0"/>
+        <!-- domain-member -->
+        <link:loc xlink:type="locator" xlink:href="eg.xsd#p_FourthChild" xlink:label="FourthChild" xlink:title="FourthChild"/>
+	</link:definitionLink>
+    <link:definitionLink xlink:type="extended" xlink:role="http://example.com/role/link" id="link1">
+        <!-- all -->
+        <link:loc xlink:type="locator" xlink:href="eg.xsd#hc_One" xlink:label="hc_One" xlink:title="hc_One"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="PrimaryParent" xlink:to="hc_One" xlink:title="definition: PrimaryParent to hc_One" order="1.0" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
+        <!-- hypercube-dimension -->
+        <link:loc xlink:type="locator" xlink:href="eg.xsd#dimOne" xlink:label="dimOne" xlink:title="dimOne"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="hc_One" xlink:to="dimOne" xlink:title="definition: hc_One to dimOne" order="1.0"/>
+        <!-- domain-member -->
+        <link:loc xlink:type="locator" xlink:href="eg.xsd#p_PrimaryParent" xlink:label="PrimaryParent" xlink:title="PrimaryParent"/>
+        <!-- <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SecondChild" xlink:to="ThirdChild" xlink:title="definition: SecondChild to ThirdChild" order="3.0"/>
+        <link:loc xlink:type="locator" xlink:href="eg.xsd#p_FirstChild" xlink:label="FirstChild" xlink:title="FirstChild"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrimaryParent" xlink:to="FirstChild" xlink:title="definition: PrimaryParent to FirstChild" order="1.0"/>
+        <link:loc xlink:type="locator" xlink:href="eg.xsd#p_SecondChild" xlink:label="SecondChild" xlink:title="SecondChild"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xbrldt:targetRole="http://example.com/role/link2" xlink:from="FirstChild" xlink:to="SecondChild" xlink:title="definition: FirstChild to SecondChild" order="2.0"/>
+        <link:loc xlink:type="locator" xlink:href="eg.xsd#p_ThirdChild" xlink:label="ThirdChild" xlink:title="ThirdChild"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SecondChild" xlink:to="ThirdChild" xlink:title="definition: SecondChild to ThirdChild" order="3.0"/> -->
+    </link:definitionLink>
+    
+    <link:definitionLink xlink:type="extended" xlink:role="http://example.com/role/link2" id="link2">
+        <!-- all -->
+        <link:loc xlink:type="locator" xlink:href="eg.xsd#hc_Two" xlink:label="hc_Two" xlink:title="hc_Two"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="FirstChild" xlink:to="hc_Two" xlink:title="definition: FirstChild to hc_Two" order="3.0" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
+        <!-- hypercube-dimension -->
+        <link:loc xlink:type="locator" xlink:href="eg.xsd#dimOne" xlink:label="dimOne" xlink:title="dimOne"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="hc_Two" xlink:to="dimOne" xlink:title="definition: hc_Two to dimOne" order="1.0"/>
+        <link:loc xlink:type="locator" xlink:href="eg.xsd#dimTwo" xlink:label="dimTwo" xlink:title="dimTwo"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="hc_Two" xlink:to="dimTwo" xlink:title="definition: hc_Two to dimTwo" order="2.0"/>
+        <!-- domain-member -->
+        <link:loc xlink:type="locator" xlink:href="eg.xsd#p_FirstChild" xlink:label="FirstChild" xlink:title="FirstChild"/>
+        <!-- <link:loc xlink:type="locator" xlink:href="eg.xsd#p_SecondChild" xlink:label="SecondChild" xlink:title="SecondChild"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xbrldt:targetRole="http://example.com/role/link2" xlink:from="FirstChild" xlink:to="SecondChild" xlink:title="definition: FirstChild to SecondChild" order="1.0"/>
+        <link:loc xlink:type="locator" xlink:href="eg.xsd#p_ThirdChild" xlink:label="ThirdChild" xlink:title="ThirdChild"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SecondChild" xlink:to="ThirdChild" xlink:title="definition: SecondChild to ThirdChild" order="2.0"/> -->
+    </link:definitionLink>
+    
+    <link:definitionLink xlink:type="extended" xlink:role="http://example.com/role/link3" id="link3">
+        <!-- all -->
+        <link:loc xlink:type="locator" xlink:href="eg.xsd#hc_Three" xlink:label="hc_Three" xlink:title="hc_Three"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="SecondChild" xlink:to="hc_Three" xlink:title="definition: SecondChild to hc_Three" order="1.0" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
+        <!-- hypercube-dimension -->
+        <link:loc xlink:type="locator" xlink:href="eg.xsd#dimOne" xlink:label="dimOne" xlink:title="dimOne"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="hc_Three" xlink:to="dimOne" xlink:title="definition: hc_Three to dimOne" order="1.0"/>
+        <link:loc xlink:type="locator" xlink:href="eg.xsd#dimTwo" xlink:label="dimTwo" xlink:title="dimTwo"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="hc_Three" xlink:to="dimTwo" xlink:title="definition: hc_Three to dimTwo" order="2.0"/>
+        <link:loc xlink:type="locator" xlink:href="eg.xsd#dimThree" xlink:label="dimThree" xlink:title="dimThree"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="hc_Three" xlink:to="dimThree" xlink:title="definition: hc_Three to dimThree" order="3.0"/>  
+        <!-- domain-member -->
+        <link:loc xlink:type="locator" xlink:href="eg.xsd#p_SecondChild" xlink:label="SecondChild" xlink:title="SecondChild"/>
+        <link:loc xlink:type="locator" xlink:href="eg.xsd#p_ThirdChild" xlink:label="ThirdChild" xlink:title="ThirdChild"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SecondChild" xlink:to="ThirdChild" xlink:title="definition: SecondChild to ThirdChild" order="1.0"/>
+    </link:definitionLink>
+
+</link:linkbase>

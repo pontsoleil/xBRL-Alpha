@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--(c) 2022 XBRL Japan  inc. -->
+<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <link:roleRef roleURI="http://www.xbrl.jp/peppol/none" xlink:type="simple" xlink:href="core.xsd#none" />
+    <link:roleRef roleURI="http://www.xbrl.jp/peppol/invoice" xlink:type="simple" xlink:href="core.xsd#invoice" />
+    <link:roleRef roleURI="http://www.xbrl.jp/peppol/invoice/Line" xlink:type="simple" xlink:href="core.xsd#invoiceLine" />
+    <link:roleRef roleURI="http://www.xbrl.jp/peppol/invoice/taxCategory" xlink:type="simple" xlink:href="core.xsd#invoiceTaxCategory" />
+    <link:roleRef roleURI="http://www.xbrl.jp/peppol/invoice/additionalSupportingDocuments" xlink:type="simple" xlink:href="core.xsd#additionalSupportingDocuments" />
+    <link:roleRef roleURI="http://www.xbrl.jp/peppol/invoice/documentAllowance" xlink:type="simple" xlink:href="core.xsd#documentAllowance" />
+    <link:roleRef roleURI="http://www.xbrl.jp/peppol/invoice/documentCharge" xlink:type="simple" xlink:href="core.xsd#documentCharge" />
+    <link:roleRef roleURI="http://www.xbrl.jp/peppol/invoice/invoiceTerm" xlink:type="simple" xlink:href="core.xsd#invoiceTerm" />
+    <link:roleRef roleURI="http://www.xbrl.jp/peppol/invoice/lineAllowance" xlink:type="simple" xlink:href="core.xsd#lineAllowance" />
+    <link:roleRef roleURI="http://www.xbrl.jp/peppol/invoice/lineCharge" xlink:type="simple" xlink:href="core.xsd#lineCharfge" />
+    <link:roleRef roleURI="http://www.xbrl.jp/peppol/invoice/paidAmounts" xlink:type="simple" xlink:href="core.xsd#paidAmounts" />
+    <link:roleRef roleURI="http://www.xbrl.jp/peppol/invoice/preceedingInvoiceReference" xlink:type="simple" xlink:href="core.xsd#preceedingInvoiceReference" />
+    <link:roleRef roleURI="http://www.xbrl.jp/peppol/invoice/itemAttribute" xlink:type="simple" xlink:href="core.xsd#itemAttribute" />
+    <link:roleRef roleURI="http://www.xbrl.jp/peppol/invoice/paymentInstruction" xlink:type="simple" xlink:href="core.xsd#paymentInstruction" />
+    <link:arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/all" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#all" />
+    <link:arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/domain-member" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member" />
+    <link:arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension" />
+    <link:arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/dimension-domain" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain" />
+
+    <link:definitionLink xlink:type="extended" xlink:role="http://www.xbrl.jp/peppol/none" id="none">
+        <link:loc xlink:type="locator" xlink:href="core.xsd#pint_ibt-120" xlink:label="ibt-120" xlink:title="ibt-120" />
+        <link:loc xlink:type="locator" xlink:href="core.xsd#pint_ibt-121" xlink:label="ibt-121" xlink:title="ibt-121" />
+        <!-- all -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#H_none" xlink:label="H_none" xlink:title="H_none"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="ibt-120" xlink:to="H_none" xlink:title="definition: ibt-120 to H_none" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="ibt-121" xlink:to="H_none" xlink:title="definition: ibt-121 to H_none" order="1" xbrldt:closed="true" xbrldt:contextElement="scenario"/>
+        <!-- hypercube-dimension -->
+        <link:loc xlink:type="locator" xlink:href="core.xsd#dimProhibited" xlink:label="dimProhibited" xlink:title="dimProhibited"/>
+        <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="H_none" xlink:to="dimProhibited" xlink:title="definition: dimProhibited to dimOne" order="1"/>
+    </link:definitionLink>
+    
+    <link:definitionLink xlink:type="extended" xlink:role="http://www.xbrl.jp/peppol/invoice">
+        <link:loc xlink:type="locator" xlink:href="core.xsd#pint_ibg-23" xlink:label="ibg-23" xlink:title="ibg-23" />
+        <link:loc xlink:type="locator" xlink:href="core.xsd#pint_ibt-120" xlink:label="ibt-120" xlink:title="ibt-120" />
+        <link:definitionArc use="prohibited" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ibg-23" xlink:to="ibt-120" xlink:title="definition: ibg-23 to ibt-120" order="1.0"  priority="2"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#pint_ibt-121" xlink:label="ibt-121" xlink:title="ibt-121" />
+        <link:definitionArc use="prohibited" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ibg-23" xlink:to="ibt-121" xlink:title="definition: ibg-23 to ibt-121" order="1.0"  priority="2"/>
+    </link:definitionLink>
+
+    <link:definitionLink xlink:type="extended" xlink:role="http://www.xbrl.jp/peppol/invoice/taxCategory">
+        <link:loc xlink:type="locator" xlink:href="core.xsd#pint_ibg-23" xlink:label="ibg-23" xlink:title="ibg-23" />
+        <link:loc xlink:type="locator" xlink:href="core.xsd#pint_ibt-120" xlink:label="ibt-120" xlink:title="ibt-120" />
+        <link:definitionArc use="prohibited" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ibg-23" xlink:to="ibt-120" xlink:title="definition: ibg-23 to ibt-120" order="1.0" priority="2"/>
+        <link:loc xlink:type="locator" xlink:href="core.xsd#pint_ibt-121" xlink:label="ibt-121" xlink:title="ibt-121" />
+        <link:definitionArc use="prohibited" xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ibg-23" xlink:to="ibt-121" xlink:title="definition: ibg-23 to ibt-121" order="1.0"  priority="2"/>
+    </link:definitionLink>
+</link:linkbase>

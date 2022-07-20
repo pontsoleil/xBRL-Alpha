@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c) 2022 XBRL Japan  inc. -->
+<schema
+	targetNamespace="http://example.com/dimensions" 
+	elementFormDefault="qualified" 
+	xmlns="http://www.w3.org/2001/XMLSchema" 
+	xmlns:pint="http://www.xbrl.jp/eipa/peppol/0.9" 
+	xmlns:xbrli="http://www.xbrl.org/2003/instance" 
+	xmlns:xlink="http://www.w3.org/1999/xlink" 
+	xmlns:xl="http://www.xbrl.org/2003/XLink"
+	xmlns:link="http://www.xbrl.org/2003/linkbase"	
+	xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" 
+	xmlns:num="http://www.xbrl.org/dtr/type/numeric"
+	xmlns:xbrldt="http://xbrl.org/2005/xbrldt" >
+	<!-- xmlns:altovaext="http://www.altova.com/xslt-extensions" 
+	xmlns:altova-xfi="http://www.altova.com/xslt-extensions/xbrl" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:model="http://www.eurofiling.info/xbrl/ext/model" 
+	xmlns:xfi="http://www.xbrl.org/2008/function/instance" 
+	xmlns:xff="http://www.xbrl.org/2010/function/formula" 
+	xmlns:ca="http://xbrl.org/2008/assertion/consistency" 
+	xmlns:ea="http://xbrl.org/2008/assertion/existence" 
+	xmlns:va="http://xbrl.org/2008/assertion/value" 
+	xmlns:bf="http://xbrl.org/2008/filter/boolean" 
+	xmlns:cf="http://xbrl.org/2008/filter/concept" 
+	xmlns:df="http://xbrl.org/2008/filter/dimension" 
+	xmlns:ef="http://xbrl.org/2008/filter/entity" 
+	xmlns:gf="http://xbrl.org/2008/filter/general" 
+	xmlns:mf="http://xbrl.org/2008/filter/match" 
+	xmlns:pf="http://xbrl.org/2008/filter/period" 
+	xmlns:rf="http://xbrl.org/2008/filter/relative" 
+	xmlns:ssf="http://xbrl.org/2008/filter/segment-scenario" 
+	xmlns:tf="http://xbrl.org/2008/filter/tuple" 
+	xmlns:uf="http://xbrl.org/2008/filter/unit" 
+	xmlns:vf="http://xbrl.org/2008/filter/value" 
+	xmlns:formula="http://xbrl.org/2008/formula" 
+	xmlns:gen="http://xbrl.org/2008/generic" 
+	xmlns:label="http://xbrl.org/2008/label" 
+	xmlns:reference="http://xbrl.org/2008/reference" 
+	xmlns:validation="http://xbrl.org/2008/validation" 
+	xmlns:variable="http://xbrl.org/2008/variable" 
+	xmlns:msg="http://xbrl.org/2010/message" 
+	xmlns:valm="http://xbrl.org/2010/message/validation"
+	xmlns:table="http://xbrl.org/2014/table" 
+	xmlns:sev="http://xbrl.org/2016/assertion-severity"
+	> -->
+	<annotation>
+		<appinfo>
+			<link:linkbaseRef xlink:type="simple" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="example12-def.xml"/>
+			<!-- 
+				 role type
+			-->
+			<link:roleType id="link" roleURI="http://example.com/role/link">
+				<link:definition>link</link:definition>
+				<link:usedOn>link:definitionLink</link:usedOn>
+			</link:roleType>
+			<link:roleType id="cube1" roleURI="http://example.com/role/cube1">
+				<link:definition>cube1</link:definition>
+				<link:usedOn>link:definitionLink</link:usedOn>
+			</link:roleType>
+			<link:roleType id="cube2" roleURI="http://example.com/role/cube2">
+				<link:definition>cube2</link:definition>
+				<link:usedOn>link:definitionLink</link:usedOn>
+			</link:roleType>
+			<link:roleType id="cube3" roleURI="http://example.com/role/cube3">
+				<link:definition>cube3</link:definition>
+				<link:usedOn>link:definitionLink</link:usedOn>
+			</link:roleType>
+			<link:roleType id="region1" roleURI="http://example.com/role/region1">
+				<link:definition>region1</link:definition>
+				<link:usedOn>link:definitionLink</link:usedOn>
+			</link:roleType>
+			<link:roleType id="region2" roleURI="http://example.com/role/region2">
+				<link:definition>region2</link:definition>
+				<link:usedOn>link:definitionLink</link:usedOn>
+			</link:roleType>
+			<link:roleType id="prod1" roleURI="http://example.com/role/prod1">
+				<link:definition>prod1</link:definition>
+				<link:usedOn>link:definitionLink</link:usedOn>
+			</link:roleType>
+			<link:roleType id="prod2" roleURI="http://example.com/role/prod2">
+				<link:definition>prod2</link:definition>
+				<link:usedOn>link:definitionLink</link:usedOn>
+			</link:roleType>
+		</appinfo>
+	</annotation>
+	<import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+	<import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+	<import namespace="http://www.xbrl.org/dtr/type/numeric" schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd"/>
+	<import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd"/>
+	<!-- Hypercube -->
+	<element name="hc_Reg_x_Prod" id="hc_Reg_x_Prod" substitutionGroup="xbrldt:hypercubeItem" nillable="true" abstract="true" xbrli:periodType="duration"/>
+	<element name="hc_ex_Reg_x_Prod" id="hc_ex_Reg_x_Prod" substitutionGroup="xbrldt:hypercubeItem" nillable="true" abstract="true" xbrli:periodType="duration"/>
+	<element name="hc_in_Reg" id="hc_in_Reg" substitutionGroup="xbrldt:hypercubeItem" nillable="true" abstract="true" xbrli:periodType="duration"/>
+	<!-- Dimension -->
+	<element name="hc_RegionDim" id="hc_RegionDim" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" nillable="true" abstract="true" xbrli:periodType="duration"/>
+	<element name="hc_ProdDim" id="hc_ProdDim" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" nillable="true" abstract="true" xbrli:periodType="duration"/>
+	<!-- Domain item -->
+	<element name="Region_abstract" id="Region_abstract" substitutionGroup="xbrli:item" nillable="false" abstract="true" type="nonnum:domainItemType" xbrli:periodType="duration"/>
+	<element name="Prod_abstract" id="Prod_abstract" substitutionGroup="xbrli:item" nillable="false" abstract="true" type="nonnum:domainItemType" xbrli:periodType="duration"/>
+	<element name="Region_A" id="Region_A" substitutionGroup="xbrli:item" nillable="true" abstract="false" type="nonnum:domainItemType" xbrli:periodType="duration"/>
+	<element name="Region_B" id="Region_B" substitutionGroup="xbrli:item" nillable="true" abstract="false" type="nonnum:domainItemType" xbrli:periodType="duration"/>
+	<element name="Region_C" id="Region_C" substitutionGroup="xbrli:item" nillable="true" abstract="false" type="nonnum:domainItemType" xbrli:periodType="duration"/>
+	<element name="Prod_1" id="Prod_1" substitutionGroup="xbrli:item" nillable="true" abstract="false" type="nonnum:domainItemType" xbrli:periodType="duration"/>
+	<element name="Prod_2" id="Prod_2" substitutionGroup="xbrli:item" nillable="true" abstract="false" type="nonnum:domainItemType" xbrli:periodType="duration"/>
+	<element name="Prod_3" id="Prod_3" substitutionGroup="xbrli:item" nillable="true" abstract="false" type="nonnum:domainItemType" xbrli:periodType="duration"/>
+	<!-- item -->
+	<element name="p_GrossProfit" id="p_GrossProfit" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="false" abstract="false" xbrli:periodType="duration"/>
+	<element name="p_Sales" id="p_Sales" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="false" abstract="false" xbrli:periodType="duration"/>
+	<element name="p_CostOfGoods" id="p_CostOfGoods" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="false" abstract="false" xbrli:periodType="duration"/>
+	<element name="p_ImportedGoods" id="p_ImportedGoods" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="false" abstract="false" xbrli:periodType="duration"/>
+</schema>

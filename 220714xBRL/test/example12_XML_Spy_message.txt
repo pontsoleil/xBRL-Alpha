@@ -1,0 +1,13 @@
+File C:\Users\nobuy\OneDrive\ドキュメント\GitHub\e-invoice\xBRL\test\example12.xml is not valid.
+	In context <context id="ctx_A_1">, primary item <eg:p_ImportedGoods> contains invalid hypercubes in all base sets.
+		Error location: xbrl / eg:p_ImportedGoods
+		Details
+			xbrldie:PrimaryItemDimensionallyInvalidError: In context <context id="ctx_A_1">, primary item <eg:p_ImportedGoods> contains invalid hypercubes in all base sets.
+	In context <context id="ctx_A_1">, primary item <eg:p_CostOfGoods> contains invalid hypercubes in all base sets.
+		Error location: xbrl / eg:p_CostOfGoods
+		Details
+			xbrldie:PrimaryItemDimensionallyInvalidError: In context <context id="ctx_A_1">, primary item <eg:p_CostOfGoods> contains invalid hypercubes in all base sets.
+	In context <context id="ctx_C_2">, primary item <eg:p_ImportedGoods> contains invalid hypercubes in all base sets.
+		Error location: xbrl / eg:p_ImportedGoods
+		Details
+			xbrldie:PrimaryItemDimensionallyInvalidError: In context <context id="ctx_C_2">, primary item <eg:p_ImportedGoods> contains invalid hypercubes in all base sets.

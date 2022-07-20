@@ -1,0 +1,58 @@
+[MESSAGE] インスタンスを読み込んでいます。 (C:\Users\nobuy\OneDrive\ドキュメント\GitHub\e-invoice\xBRL\test\example12.xml)
+[MESSAGE] タクソノミーセットの構築を行っています。
+[MESSAGE] スキーマを読み込んでいます。 (file:///C:/Users/nobuy/OneDrive/ドキュメント/GitHub/e-invoice/xBRL/test/example12.xsd)
+[MESSAGE] スキーマを読み込んでいます。 (http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd)
+[MESSAGE] スキーマを読み込んでいます。 (http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd)
+[MESSAGE] スキーマを読み込んでいます。 (http://www.xbrl.org/2003/xl-2003-12-31.xsd)
+[MESSAGE] スキーマを読み込んでいます。 (http://www.xbrl.org/2003/xlink-2003-12-31.xsd)
+[MESSAGE] スキーマの処理を行っています。 (http://www.xbrl.org/2003/xlink-2003-12-31.xsd)
+[MESSAGE] スキーマの処理を行っています。 (http://www.xbrl.org/2003/xl-2003-12-31.xsd)
+[MESSAGE] スキーマの処理を行っています。 (http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd)
+[MESSAGE] スキーマの処理を行っています。 (http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd)
+[MESSAGE] スキーマを読み込んでいます。 (http://www.xbrl.org/2005/xbrldt-2005.xsd)
+[MESSAGE] スキーマの処理を行っています。 (http://www.xbrl.org/2005/xbrldt-2005.xsd)
+[MESSAGE] スキーマを読み込んでいます。 (http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd)
+[MESSAGE] スキーマの処理を行っています。 (http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd)
+[MESSAGE] スキーマを読み込んでいます。 (http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd)
+[MESSAGE] スキーマの処理を行っています。 (http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd)
+[MESSAGE] スキーマの処理を行っています。 (file:///C:/Users/nobuy/OneDrive/ドキュメント/GitHub/e-invoice/xBRL/test/example12.xsd)
+[MESSAGE] リンクベースを読み込んでいます。 (file:///C:/Users/nobuy/OneDrive/ドキュメント/GitHub/e-invoice/xBRL/test/example12-def.xml)
+[MESSAGE] リンクの処理を開始します：presentation
+[MESSAGE] リンクの解析を行っています。 (http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd)
+[MESSAGE] リンクの解析を行っています。 (http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd)
+[MESSAGE] リンクの解析を行っています。 (file:///C:/Users/nobuy/OneDrive/ドキュメント/GitHub/e-invoice/xBRL/test/example12.xsd)
+[MESSAGE] リンクの処理を開始します：calculation
+[MESSAGE] リンクの解析を行っています。 (http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd)
+[MESSAGE] リンクの解析を行っています。 (http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd)
+[MESSAGE] リンクの解析を行っています。 (file:///C:/Users/nobuy/OneDrive/ドキュメント/GitHub/e-invoice/xBRL/test/example12.xsd)
+[MESSAGE] リンクの処理を開始します：definition
+[MESSAGE] リンクの解析を行っています。 (http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd)
+[MESSAGE] リンクの解析を行っています。 (http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd)
+[MESSAGE] リンクの解析を行っています。 (file:///C:/Users/nobuy/OneDrive/ドキュメント/GitHub/e-invoice/xBRL/test/example12.xsd)
+[MESSAGE] リンクの解析を行っています。 (file:///C:/Users/nobuy/OneDrive/ドキュメント/GitHub/e-invoice/xBRL/test/example12-def.xml)
+[MESSAGE] リンクの処理を開始します：label
+[MESSAGE] リンクの解析を行っています。 (http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd)
+[MESSAGE] リンクの解析を行っています。 (http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd)
+[MESSAGE] リンクの解析を行っています。 (file:///C:/Users/nobuy/OneDrive/ドキュメント/GitHub/e-invoice/xBRL/test/example12.xsd)
+[MESSAGE] リンクの処理を開始します：reference
+[MESSAGE] リンクの解析を行っています。 (http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd)
+[MESSAGE] リンクの解析を行っています。 (http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd)
+[MESSAGE] リンクの解析を行っています。 (file:///C:/Users/nobuy/OneDrive/ドキュメント/GitHub/e-invoice/xBRL/test/example12.xsd)
+[MESSAGE] リンクの処理を開始します：user-defined
+[MESSAGE] リンクの解析を行っています。 (http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd)
+[MESSAGE] リンクの解析を行っています。 (http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd)
+[MESSAGE] リンクの解析を行っています。 (file:///C:/Users/nobuy/OneDrive/ドキュメント/GitHub/e-invoice/xBRL/test/example12.xsd)
+[MESSAGE] インスタンスの処理を行っています。 (C:\Users\nobuy\OneDrive\ドキュメント\GitHub\e-invoice\xBRL\test\example12.xml)
+[MESSAGE] リンクの処理を開始します：footnote
+[MESSAGE] リンクの解析を行っています。 (C:\Users\nobuy\OneDrive\ドキュメント\GitHub\e-invoice\xBRL\test\example12.xml)
+[MESSAGE] ロードが完了しました(132 ms)
+[MESSAGE] Domain memberの処理を行っています。
+[WARNING] fje:ConsecutiveRelationshipNotFoundWarning : The consecutive arc does not exist in the extended link indicated in the xbrldt:targetRole attribute. : targetRole = http://example.com/role/prod1, role = http://example.com/role/cube3, source element = {http://example.com/dimensions}Region_abstract, target element = {http://example.com/dimensions}Region_A
+[MESSAGE] Dimensionの処理を行っています。
+[MESSAGE] Hypercubeの処理を行っています。
+[MESSAGE] Primary itemの処理を行っています。
+[MESSAGE] インスタンス文書の処理を行っています。
+[ERROR] [Ins Err, 2] xbrldie:PrimaryItemDimensionallyInvalidError : The primary item contains invalid hypercubes in all base sets. : element = {http://example.com/dimensions}p_CostOfGoods, context = ctx_A_1, value = 142, Invalid dimension combination : {(dimension = eg:hc_RegionDim, member = eg:Region_A), (dimension = eg:hc_ProdDim, member = eg:Prod_1)}
+[ERROR] [Ins Err, 2] xbrldie:PrimaryItemDimensionallyInvalidError : The primary item contains invalid hypercubes in all base sets. : element = {http://example.com/dimensions}p_ImportedGoods, context = ctx_A_1, value = 42, Invalid dimension combination : {(dimension = eg:hc_RegionDim, member = eg:Region_A), (dimension = eg:hc_ProdDim, member = eg:Prod_1)}
+[ERROR] [Ins Err, 2] xbrldie:PrimaryItemDimensionallyInvalidError : The primary item contains invalid hypercubes in all base sets. : element = {http://example.com/dimensions}p_ImportedGoods, context = ctx_C_2, value = 42, Invalid domain member : dimension = eg:hc_ProdDim, member = eg:Prod_2
+[MESSAGE] XBRL Dimensions バリデーションが完了しました(4ms)

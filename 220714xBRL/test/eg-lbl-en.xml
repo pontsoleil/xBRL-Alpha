@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  (c) 2022 XBRL Japan  inc. -->
+<link:linkbase
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+  <link:labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <link:loc xlink:type="locator" xlink:href="eg.xsd#p_PrimaryParent" xlink:label="PrimaryParent" xlink:title="PrimaryParent"/>
+    <link:label xlink:type="resource" xlink:label="label_PrimaryParent" xlink:title="label_PrimaryParent" id="label_PrimaryParent" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">Primary Parent</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="PrimaryParent" xlink:to="label_PrimaryParent" xlink:title="label: PrimaryParent to label_PrimaryParent"/>
+    <link:loc xlink:type="locator" xlink:href="eg.xsd#p_FirstChild" xlink:label="FirstChild" xlink:title="FirstChild"/>
+    <link:label xlink:type="resource" xlink:label="label_FirstChild" xlink:title="label_FirstChild" id="label_FirstChild" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">The First Child</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="FirstChild" xlink:to="label_FirstChild" xlink:title="label: FirstChild to label_FirstChild"/>
+    <link:loc xlink:type="locator" xlink:href="eg.xsd#p_SecondChild" xlink:label="SecondChild" xlink:title="SecondChild"/>
+    <link:label xlink:type="resource" xlink:label="label_SecondChild" xlink:title="label_SecondChild" id="label_SecondChild" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">The Second Child</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="SecondChild" xlink:to="label_SecondChild" xlink:title="label: SecondChild to label_SecondChild"/>
+    <link:loc xlink:type="locator" xlink:href="eg.xsd#p_ThirdChild" xlink:label="ThirdChild" xlink:title="ThirdChild"/>
+    <link:label xlink:type="resource" xlink:label="label_ThirdChild" xlink:title="label_ThirdChild" id="label_ThirdChild" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">The Third Child</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="ThirdChild" xlink:to="label_ThirdChild" xlink:title="label: ThirdChild to label_ThirdChild"/>
+    <link:loc xlink:type="locator" xlink:href="eg.xsd#p_FourthChild" xlink:label="FourthChild" xlink:title="FourthChild"/>
+    <link:label xlink:type="resource" xlink:label="label_FourthChild" xlink:title="label_FourthChild" id="label_FourthChild" xml:lang="en" xlink:role="http://www.xbrl.org/2003/role/label">The Fourth Child</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="FourthChild" xlink:to="label_FourthChild" xlink:title="label: FourthChild to label_FourthChild"/>
+    </link:labelLink>
+</link:linkbase>

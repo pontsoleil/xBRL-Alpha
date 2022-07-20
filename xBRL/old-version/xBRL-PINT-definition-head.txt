@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c) 2022 XBRL Japan inc. -->
+<link:linkbase
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:xbrldt="http://xbrl.org/2005/xbrldt"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <link:roleRef roleURI="http://xbrl.org/role/xBRL-PINT_structure" xlink:type="simple" xlink:href="xBRL-pint-2022-12-31.xsd#xBRL-PINT_structure"/>
+  <link:arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/all" xlink:type="simple" xlink:href="http://xbrl.org/2005/xbrldt-2005.xsd#all"/>
+  <link:arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:type="simple" xlink:href="http://xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension"/>
+  <link:arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/dimension-domain" xlink:type="simple" xlink:href="http://xbrl.org/2005/xbrldt-2005.xsd#dimension-domain"/>
+  <link:arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/domain-member" xlink:type="simple" xlink:href="http://xbrl.org/2005/xbrldt-2005.xsd#domain-member"/>
+  <link:definitionLink xlink:type="extended" xlink:role="http://xbrl.org/role/xBRL-PINT_structure">
+    <!-- Hypercube -->
+    <link:loc xlink:type="locator" xlink:href="xBRL-pint-2022-12-31.xsd#Hypercube" xlink:label="Hypercube" xlink:title="Hypercube"/>
+    <!-- Typed Dimension -->
+    <link:loc xlink:type="locator" xlink:href="xBRL-pint-2022-12-31.xsd#d1" xlink:label="dim1" xlink:title="Axis 1"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="Hypercube" xlink:to="dim1" xlink:title="definition Hypercube to typed Dimension 1" use="optional" order="1.0"/>
+    <!-- root ( Invoice ) to Hypercube -->
+    <link:loc xlink:type="locator" xlink:href="xBRL-pint-2022-12-31.xsd#Invoice" xlink:label="Invoice" xlink:title="Invoice"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="Invoice" xlink:to="Hypercube" xlink:title="definition: Invoice to Hypercube" order="2.0" xbrldt:contextElement="segment" /> 

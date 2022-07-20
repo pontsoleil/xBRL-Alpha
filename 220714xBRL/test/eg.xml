@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited by Nobuyuki SAMBUICHI -->
+<xbrli:xbrl 
+  xmlns:eg="http://example.com/dimensions" 
+  xmlns:link="http://www.xbrl.org/2003/linkbase" 
+  xmlns:iso4217="http://www.xbrl.org/2003/iso4217" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns:xbrli="http://www.xbrl.org/2003/instance" 
+  xmlns:xbrldi="http://xbrl.org/2006/xbrldi" 
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <link:schemaRef xlink:type="simple" xlink:href="eg.xsd" />
+
+  <xbrli:unit id="pure">
+    <xbrli:measure>xbrli:pure</xbrli:measure>
+  </xbrli:unit>
+  <xbrli:unit id="JPY">
+    <xbrli:measure>iso4217:JPY</xbrli:measure>
+  </xbrli:unit>
+
+  <xbrli:context id="_156">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://example.com/dimensions">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2023-01-01</xbrli:startDate>
+      <xbrli:endDate>2023-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:typedMember dimension="eg:dimZero">
+        <eg:_v>156</eg:_v>
+      </xbrldi:typedMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <eg:p_PrimaryParent unitRef="JPY" decimals="0" contextRef="_156">123</eg:p_PrimaryParent>
+  <eg:p_FirstChild unitRef="JPY" decimals="0" contextRef="_156">456</eg:p_FirstChild>
+  <eg:p_SecondChild unitRef="JPY" decimals="0" contextRef="_156">789</eg:p_SecondChild>
+  <eg:p_ThirdChild unitRef="JPY" decimals="0" contextRef="_156">654</eg:p_ThirdChild>
+ 
+  <xbrli:context id="_AQZ">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://example.com/dimensions">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2023-01-01</xbrli:startDate>
+      <xbrli:endDate>2023-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:typedMember dimension="eg:dimOne">
+        <eg:_v>AQZ</eg:_v>
+      </xbrldi:typedMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <eg:p_PrimaryParent unitRef="JPY" decimals="0" contextRef="_AQZ">123</eg:p_PrimaryParent> <!-- This line reports the error as expected. -->
+  <eg:p_FirstChild unitRef="JPY" decimals="0" contextRef="_AQZ">456</eg:p_FirstChild>
+  <eg:p_SecondChild unitRef="JPY" decimals="0" contextRef="_AQZ">789</eg:p_SecondChild>
+  <eg:p_ThirdChild unitRef="JPY" decimals="0" contextRef="_AQZ">654</eg:p_ThirdChild> 
+ 
+  <xbrli:context id="_ab24">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://example.com/dimensions">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2023-01-01</xbrli:startDate>
+      <xbrli:endDate>2023-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:typedMember dimension="eg:dimTwo">
+        <eg:_v>ab24</eg:_v>
+      </xbrldi:typedMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <eg:p_PrimaryParent unitRef="JPY" decimals="0" contextRef="_ab24">123</eg:p_PrimaryParent> <!-- This line reports the error as expected. -->
+  <eg:p_FirstChild unitRef="JPY" decimals="0" contextRef="_ab24">456</eg:p_FirstChild> <!-- This line reports the error as expected. -->
+  <eg:p_SecondChild unitRef="JPY" decimals="0" contextRef="_ab24">789</eg:p_SecondChild>
+  <eg:p_ThirdChild unitRef="JPY" decimals="0" contextRef="_ab24">654</eg:p_ThirdChild>
+  
+  <xbrli:context id="_156_AQZ">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://example.com/dimensions">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2023-01-01</xbrli:startDate>
+      <xbrli:endDate>2023-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:typedMember dimension="eg:dimZero">
+        <eg:_v>156</eg:_v>
+      </xbrldi:typedMember>
+      <xbrldi:typedMember dimension="eg:dimOne">
+        <eg:_v>AQZ</eg:_v>
+      </xbrldi:typedMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <eg:p_PrimaryParent unitRef="JPY" decimals="0" contextRef="_156_AQZ">123</eg:p_PrimaryParent> <!-- This line reports the error as expected. -->
+  <eg:p_FirstChild unitRef="JPY" decimals="0" contextRef="_156_AQZ">456</eg:p_FirstChild>
+  <eg:p_SecondChild unitRef="JPY" decimals="0" contextRef="_156_AQZ">789</eg:p_SecondChild>
+  <eg:p_ThirdChild unitRef="JPY" decimals="0" contextRef="_156_AQZ">654</eg:p_ThirdChild>
+  
+  <xbrli:context id="_156_AQZ_ab24">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://example.com/dimensions">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2023-01-01</xbrli:startDate>
+      <xbrli:endDate>2023-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:typedMember dimension="eg:dimZero">
+        <eg:_v>156</eg:_v>
+      </xbrldi:typedMember>
+      <xbrldi:typedMember dimension="eg:dimOne">
+        <eg:_v>AQZ</eg:_v>
+      </xbrldi:typedMember>
+      <xbrldi:typedMember dimension="eg:dimTwo">
+        <eg:_v>ab24</eg:_v>
+      </xbrldi:typedMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <eg:p_PrimaryParent unitRef="JPY" decimals="0" contextRef="_156_AQZ_ab24">123</eg:p_PrimaryParent> <!-- This line reports the error as expected. -->
+  <eg:p_FirstChild unitRef="JPY" decimals="0" contextRef="_156_AQZ_ab24">456</eg:p_FirstChild> <!-- This line reports the error as expected. -->
+  <eg:p_SecondChild unitRef="JPY" decimals="0" contextRef="_156_AQZ_ab24">789</eg:p_SecondChild>
+  <eg:p_ThirdChild unitRef="JPY" decimals="0" contextRef="_156_AQZ_ab24">654</eg:p_ThirdChild>
+
+  <!-- Folowing lines report the error as expected. -->
+  <!--
+  <eg:p_FourthChild unitRef="JPY" decimals="0" contextRef="_156">123456</eg:p_FourthChild>
+  <eg:p_FourthChild unitRef="JPY" decimals="0" contextRef="_156_AQZ">123456</eg:p_FourthChild> 
+  <eg:p_FourthChild unitRef="JPY" decimals="0" contextRef="_156_AQZ_ab24">123456</eg:p_FourthChild>-->
+
+</xbrli:xbrl>
